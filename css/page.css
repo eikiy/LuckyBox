@@ -478,7 +478,7 @@ p { padding: 0; margin: 0;}
 
 .h2,h2 { font-size: 1.25rem; line-height: 1.6;}
 
-.h3,h3 { font-size: 1.6875rem; line-height: 1.6;}
+.h3,h3 { font-size: 1.4rem; line-height: 1.6;}
 
 .h4,h4 { line-height: 2.0625; font-size: 1.2rem;}}
 
@@ -526,7 +526,7 @@ a,a:active,a:visited { color: inherit;}
 .absolute .ampstart-dropdown-items { z-index: 200;}
 .ampstart-dropdown-item { background-color: #fff; color: #fff; opacity: .9;}
 .ampstart-dropdown-item:active,.ampstart-dropdown-item:hover { opacity: 1;}
-.ampstart-footer { background-color: #fff; color: #000; padding-top: 5rem; padding-bottom: 5rem;}
+.ampstart-footer { background-color: #fff; color: #000; padding-top: 3rem; padding-bottom: 5rem;}
 .ampstart-footer .ampstart-icon { fill: #000;}
 .ampstart-footer .ampstart-social-follow li:last-child { margin-right: 0;}
 .ampstart-image-fullpage-hero { color: #000;}
