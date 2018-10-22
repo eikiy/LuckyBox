@@ -661,4 +661,5 @@ amp-carousel .ampstart-image-with-caption { margin-bottom: 0;}
 .ampstart-readmore:after { content: " "; border: 2px solid #000; border-width: 0 2px 2px 0; bottom: 2rem; display: block; height: 10px; left: calc(50% - 5px); position: absolute; -webkit-transform: rotate(45deg); transform: rotate(45deg); width: 10px;}
 .ampstart-dropcap:first-letter { color: #000; font-size: 3.59375rem; font-weight: inherit; line-height: 1.14782;}
 
-.the_add_friend{ position: fixed; bottom: 35px; left:calc(50% - 62px); z-index: 150; }
+.the_add_friend{ position: fixed; bottom: 30px; left:calc(50% - 71.5px); z-index: 150; }
+.ad_320x480{ width: 320px; height: 480px; display: block; background-color: #888; }
