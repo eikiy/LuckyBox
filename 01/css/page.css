@@ -529,7 +529,7 @@ a,a:active,a:visited { color: inherit;}
 .absolute .ampstart-dropdown-items { z-index: 200;}
 .ampstart-dropdown-item { background-color: #fff; color: #fff; opacity: .9;}
 .ampstart-dropdown-item:active,.ampstart-dropdown-item:hover { opacity: 1;}
-.ampstart-footer { background-color: #fff; color: #000; padding-top: 1rem; padding-bottom:5rem;}
+.ampstart-footer { background-color: #fff; color: #000; padding-top: 1rem; padding-bottom:2rem;}
 .ampstart-footer .ampstart-icon { fill: #000;}
 .ampstart-footer .ampstart-social-follow li:last-child { margin-right: 0;}
 .ampstart-image-fullpage-hero { color: #000;}
@@ -656,4 +656,4 @@ amp-carousel .ampstart-image-with-caption { margin-bottom: 0;}
 .ampstart-dropcap:first-letter { color: #000; font-size: 3.59375rem; font-weight: inherit; line-height: 1.14782;}
 
 .the_add_friend{ position: fixed; bottom: 30px; left:calc(50% - 82px); z-index: 150; }
-.ad_320x480{ width: 320px; display: block; margin: 0 auto; text-align: center;}
+.ad_320x480{ width: 320px; display: block; margin: 0 auto; text-align: center; padding-bottom: 100px;}
