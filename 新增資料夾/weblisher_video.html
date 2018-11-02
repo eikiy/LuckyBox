@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>holkee</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<!-- bg video -->
+<link rel="stylesheet" href="dist/jquery.vidbacking.css" type="text/css">
+<script src="dist/jquery.vidbacking.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.video-back').vidbacking();
+    });
+</script>
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+   <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</head>
+<body class="page">
+    <div class="mobile-nav" id="sideMenu">
+        <ul class="Oneself">
+            <!-- <li><p><a class="go00">HOME</a></p></li> -->
+            <li><p><a class="go01">CAPABILITY</a></p></li>
+            <li><p><a class="go02">ABOUT</a></p></li>
+            <li><p><a class="go03">VIDEO</a></p></li>
+            <li><p><a href="http://www.weblisher.com.tw/tw/news" target="_blank">NEWS</a></p></li>
+            <li><p><a class="go04">SCENERY</a></p></li>
+            <li><p><a class="go05">CONTACT US</a></p></li>
+            <li><p><a class="go06">follow us</a></p></li>
+        </ul>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
+    <script src="js/script-right.js"></script>
+
+
+
+<header class="HeaderBox">
+    <nav class="Menu ContentsBox clearfix">
+        <h1 class="logo weblisher-logo"><a><img src="images/logo.png" alt="weblisher"></a></h1>
+        <div class="TopBox clearfix">
+            <ul class="top_menu clearfix">
+                <!-- <li><h3><a class="go00">HOME</a></h3></li> -->
+                <li><h3><a class="go01">CAPABILITY</a></h3></li>
+                <li><h3><a class="go02">ABOUT</a></h3></li>
+                <li><h3><a class="go03">VIDEO</a></h3></li>
+                <li><h3><a href="http://www.weblisher.com.tw/tw/news" target="_blank">NEWS</a></h3></li>
+                <li><h3><a class="go04">SCENERY</a></h3></li>
+                <li><h3><a class="go05">CONTACT US</a></h3></li>
+                <li><h3><a class="go06">follow us</a></h3></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="main_contents">
+
+<section class="KVbox br_weblisher">
+    <div class="video-back the_videoBox">
+        <video autoplay muted loop class="vidbacking">
+            <source src="assets/Blurry Video Of People Working.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="ContentsBox">
+        <div class="KVlogo"><img src="images/banner1-text-en.png"></div>
+        <!-- <h2 class="top_title">SHOP</h2>
+        <h3 class="main_title">SHOP</h3> -->
+        <!-- <p class="sub_title">We Are Cake prides itself on customer satisfaction.</p> -->
+        <p class="btn"><a class="go01">More</a></p>
+    </div>
+</section>
+<section class="shopBox" id="goThe01">
+    <h3 class="main_title">CAPABILITY</h3>
+    <p class="sub_title">Google provides holistic marketing solutions 
+to meet all you need.</p>
+    <section class="slider">
+        <div class="flexslider carousel">
+          <ul class="slides">
+            <li>
+                <a href="http://www.weblisher.com.tw/en/service/yahoo" target="_blank" class="good_photo"><img src="images/weblisher_logos_01.png" /></a>
+                <div class="info">
+                    <div class="goods_name"><p>Weblisher Y! Marketing</p></div>
+                    <div class="goods_buy"><p><a class="order" href="http://www.weblisher.com.tw/en/service/yahoo" target="_blank">More</a></p></div>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.weblisher.com.tw/en/service/google" target="_blank" class="good_photo"><img src="images/weblisher_logos_02.png" /></a>
+                <div class="info">
+                    <div class="goods_name"><p>Google Adwords</p></div>
+                    <div class="goods_buy"><p><a class="order" href="http://www.weblisher.com.tw/en/service/google" target="_blank">More</a></p></div>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.weblisher.com.tw/en/service/facebook" target="_blank" class="good_photo"><img src="images/weblisher_logos_03.png" /></a>
+                <div class="info">
+                    <div class="goods_name"><p>Facebook New marketing platform</p></div>
+                    <div class="goods_buy"><p><a class="order" href="http://www.weblisher.com.tw/en/service/facebook" target="_blank">More</a></p></div>
+                </div>
+            </li>
+            <li>
+                <a href="http://www.weblisher.com.tw/en/service/baidu" target="_blank" class="good_photo"><img src="images/weblisher_logos_04.png" /></a>
+                <div class="info">
+                    <div class="goods_name"><p>Baidu</p></div>
+                    <div class="goods_buy"><p><a class="order" href="http://www.weblisher.com.tw/en/service/baidu" target="_blank">More</a></p></div>
+                </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+</section>
+
+<section class="about_us_box" id="goThe02">
+    <div class="ContentsBox clearfix">
+        <div class="lBox">
+            <div class="foodBox">
+                <img src="images/about-believe-1.jpg" width="100%">
+            </div>
+        </div>
+        <div class="rBox">
+            <div>
+            <h3 class="main_title">Weblisher believes in our profession and service on digital marketing, which we will create value with for you!</h3>
+            <p class="sub_title">
+            Weblisher’s predecessor was Taiwan branch of Asiacontent.com and Double Click. <br>
+            Since 1999, we have operated about 10,000 digital marketing cases.<br>
+            Therefore, better to listen to our clients’ comments than listen to ourselves. <br>
+            <br>
+            According to current digital marketing trends, <br>
+            Weblisher also put heart and soul into technology development.<br>
+            We hope our service can make you on the cutting edge of digital trends, <br>
+            and sail towards the blue ocean of Internet. <br>
+            <br>
+            We believes our capabilities can provide you with holistic marketing solutions. <br>
+        We will bring you the most beneficial marketing and media performance, and add value to your business.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video_box" id="goThe03" style="background: url(images/about-banner-bg.jpg) center center no-repeat; background-attachment: fixed; background-size: cover;">
+    <div>
+        <h3 class="main_title s-animation-page-slide_in" style="color: #fff;">VIDEO</h3>
+    <p class="sub_title" style="color: #fff;">Did You Know?</p>
+    <div class="youtubeBox">
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ChlW5uAs1A0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <iframe src="https://www.youtube.com/embed/Etp9hiVwsTU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    </div>
+</section>
+
+<section class="map_box" id="goThe04">
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1530762701821!6m8!1m7!1sCAoSLEFGMVFpcE9CcmExT2tpdGhDQTZrOVN6TFFPRnFSWUtvRGcweWlXVzZvcU5n!2m2!1d25.082055351345!2d121.48006461508!3f110.33!4f0!5f0.5970117501821992"  frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<section class="contact_us" id="goThe05">
+    <div class="ContentsBox clearfix">
+        <div class="rBox">
+            <h3 class="main_title s-animation-page-slide_in">Contact Us</h3>
+            <p class="sub_title">Weblisher Co., Ltd.</p>
+            <ul class="info">
+                <li><p class="add">5F., No.63, Sec. 3, Nanjing E. Rd., Jhongshan Dirstrict, Taipei City 104, Taiwan</p></li>
+                <li><p class="photo">02-2502-1980</p></li>
+                <li><p class="time">09:00 AM - 06:00 PM</p></li>
+                <li><p class="mail"><a href="#">marketing@weblisher.com.tw</a></p></li>
+            </ul>
+        </div>
+        <div class="lBox">
+            <div class="mapBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.462906061184!2d121.53603331487989!3d25.05229498396386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf952f1991%3A0xd36da118137745e!2z6Iux5bGs57at5Lqs576k5bO25ZWG5byY5pel5pW45L2N56eR5oqA6IKh5Lu95pyJ6ZmQ5YWs5Y-46Ie654Gj5YiG5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1531389439614" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="follow_us" id="goThe06">
+    <div class="ContentsBox">
+        <h3 class="main_title s-animation-page-slide_in">Connect With Us</h3>
+        <p class="sub_title">Make sure to add links to the icons!</p>
+        <ul class="follow_us_icon web">
+            <li><a href="https://www.facebook.com/Weblisher/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+            <li><a href="https://www.instagram.com/explore/locations/305463994/weblisher/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCYtcUAwqGki-Ld2CSxZOcYQ/videos" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://plus.google.com/+WeblisherTw?hl=zh_tw" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+            <!-- <li><a href="#"><i class="fab fa-weixin"></i></a></li> -->
+        </ul>
+    </div>
+</section>
+
+</main>
+
+
+
+
+<footer class="FooterBox">
+    <div class="ContentsBox clearfix">
+        <p>Copyright© 2018 Weblisher Co., Ltd. All Rights Reserved, Designed By Tellustek.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+

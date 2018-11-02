@@ -1,0 +1,54 @@
+html,body{width:100%;margin:0;padding:0}
+.page{width:100%;min-height:100%;overflow:auto;z-index:100;position:relative;}
+.mobile-nav{ display:none;}
+.mobile-nav ul{margin:0 0 25px; padding:0px;}
+.mobile-nav ul li{list-style:none}
+.mobile-nav h3{ font-size: 16px; text-align: center; }
+.mobile-nav h3.menu{padding: 10px 0;}
+ul.submenu{ padding-top:10px;}
+
+.hamburger{ position: fixed; display: none; top:18px; right: 10px;  padding:10px 15px 9px; cursor:pointer; z-index:200;}
+.hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
+.hamburger .bar{width:24px;height:2px;background:#fff;position:absolute;top:0}
+.hamburger .bar.bar2,.hamburger .bar.bar3{top:9px; }
+.hamburger .bar.bar4{top:18px; }
+.hamburger.open{position: fixed; top: 5px;}
+.hamburger.open .bar1,.hamburger.open .bar4{display:none}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
+
+
+.mobile-nav{ width:260px !important; background-color:#333; z-index:100;}
+.mobile-nav a.accesskey{ color: #0177bb; }
+.mobile-nav ul.Oneself{ width:100%; padding-top: 50px;}
+.mobile-nav ul.Oneself li{ padding: 10px 20px; border-bottom: 1px solid #ffffff21; }
+.mobile-nav ul.Oneself::after{content:""; position:absolute; left:50%; top:10px; width:40px; height:54px; display: block; background: url(../images/icon_mushrooms.png) center top no-repeat; background-size: contain; margin-left:-20px; z-index: 6;}
+.mobile-nav ul.Oneself li p.subMenu{ font-size: 14px; padding: 10px 0; border-bottom: 1px #7bc4b6 dashed;}
+.mobile-nav ul.Oneself li p.subMenu a{ width: 50%; float: left; }
+.mobile-nav ul.Oneself li.no_line{ border: none;  margin-bottom: 10px;}
+.mobile-nav ul.Oneself li.noOnline h3 a{ color: #cf934c; }
+.mobile-nav ul.Oneself li h3.menu{background:url(../images/logo.png) center center no-repeat; background-size: contain; text-indent: -9999px;}
+.mobile-nav ul.Oneself li p {line-height: 45px; font-size: 17px;}
+.mobile-nav ul.Oneself li p a{ color: #fafafa; cursor: pointer; }
+
+.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
+.mobile-nav .infoBox{ padding: 15px; text-align: center; }
+.mobile-nav p.user{ color: #acacac; padding-bottom: 15px; font-size: 18px; }
+.mobile-nav p.btn{ font-size: 18px; display: none; }
+.mobile-nav p.btn a{background-color: #ff517e; color: #fff; padding: 10px 25px; display: inline-block; cursor: pointer; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px;}
+
+.mobile-nav ul.iconBox{ text-align: left; padding:40px 0 20px 0; }
+.mobile-nav ul.iconBox li{ display: inline-block; padding: 0 5px; }
+.mobile-nav ul.iconBox li a{ width: 32px; height: 32px; display: block; cursor: pointer; display: inline-block; background-position: center center; background-repeat: no-repeat; }
+.mobile-nav ul.iconBox li a.icon_01{ background: url(../images/icons_01_w.png); background-size: contain; }
+.mobile-nav ul.iconBox li a.icon_02{ background: url(../images/icons_02_w.png); background-size: contain; }
+.mobile-nav ul.iconBox li a.icon_03{ background: url(../images/icons_03_w.png); background-size: contain; }
+.mobile-nav ul.iconBox li a.icon_04{ background: url(../images/icons_04_w.png); background-size: contain; }
+.mobile-nav ul.iconBox li a.icon_05{ background: url(../images/icons_05_w.png); background-size: contain; }
+.mobile-nav ul.iconBox li a:hover{ opacity: .9; }
+
+
+@media (max-width:1000px){.hamburger{ display:block;}}
+@media (max-width:750px){
+	.hamburger{ position: fixed; top: 20px; }
+	.mobile-nav p.btn{ display: block; }
+}
