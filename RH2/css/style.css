@@ -66,6 +66,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .company_info p.p_info{ font-size: 18px; line-height: 36px; text-align: justify; }
 .company_info p.p_info span.blue_line{ position: relative; padding-left: 2em; display: block; }
 .company_info p.p_info span.blue_line::after{ content: ""; position: absolute; top: 0; left:0; width: 3px; height:100%; display: block; background-color: #00acdb;}
+.company_info p.h24{ line-height: 26px; }
 
 .imgBox{ text-align: center; }
 .imgBox img{ max-width: 706px; display: inline-block; }
