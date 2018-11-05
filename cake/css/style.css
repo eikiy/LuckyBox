@@ -49,11 +49,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', e
 .HeaderBox h1.weblisher-logo{ width: 170px; padding-top: 7px; }
 
 /*main_contents*/
-.KVlogo{ max-width: 500px; margin: 0 auto 30px auto; }
+.KVlogo{ max-width: 500px; margin: 0 auto 30px auto; width: 100%; }
 .KVlogo img{ max-width: 100%; min-height: 100%; }
 h2.top_title{text-align: center; font-size: 40px;}
 h3.main_title{text-align: center; padding-bottom: 20px;}
-p.sub_title{ text-align: center; font-size: 22px; width:calc(100 - 40px); margin: 0 auto; max-width: 1000px; }
+p.sub_title{ text-align: center; font-size: 22px; width:calc(100% - 40px); margin: 0 auto; max-width: 1000px; }
 p.btn{ text-align: center; padding-top: 50px; }
 p.btn a{ /*border-radius: 60px;*/ cursor: pointer; color: #fff; display: inline-block; padding: 12px 25px; border:1px solid #fff; min-width: 130px; /*background-color: #fff;*/ }
 p.btn a:hover{ background-color: #fff; color: #333; }
