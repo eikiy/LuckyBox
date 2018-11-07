@@ -114,7 +114,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .product_list ul li:last-child{ border: none; }
 .product_list ul li .photo{ float: left; width: 250px; height: 214px; display: block; background-repeat: no-repeat; background-position: center top; background-size: contain; }
 .product_list ul li .p_01{ background-image: url(../images/products/pic_product_temperature_patch.png); }
-.product_list ul li .p_02{ background-image: url(../images/products/pic_product_glucose_patch.png); }
+.product_list ul li .p_02{ background-image: url(../images/products/pic_product_glucose_patch.jpg); }
 
 .product_list ul li .info{ width: calc( 100% - 250px) ; padding-left: 50px; float: left;}
 .product_list ul li .info h3, .recruitBox .both h3{ color: #00467F; padding-bottom: 15px; font-size: 20px; font-weight: bold;}
@@ -180,6 +180,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .FooterBox .copyrightBox ul.social_media li a.twitter{ background-image: url(../images/icon_social_media_twitter.png); }
 .FooterBox .copyrightBox ul.social_media li a.facebook{ background-image: url(../images/icon_social_media_facebook.png); }
 .FooterBox .copyrightBox ul.social_media li a.youtube{ background-image: url(../images/icon_social_media_youtube.png); }
+.FooterBox ul.for_en li{ margin: 0 22px;}
 
 /*==== RWD ====*/
 @media (max-width:1220px){
