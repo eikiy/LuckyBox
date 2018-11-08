@@ -180,6 +180,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .FooterBox .copyrightBox ul.social_media li a.twitter{ background-image: url(../images/icon_social_media_twitter.png); }
 .FooterBox .copyrightBox ul.social_media li a.facebook{ background-image: url(../images/icon_social_media_facebook.png); }
 .FooterBox .copyrightBox ul.social_media li a.youtube{ background-image: url(../images/icon_social_media_youtube.png); }
+.FooterBox ul.for_en li{ margin: 0 22px;}
 
 /*==== RWD ====*/
 @media (max-width:1220px){
