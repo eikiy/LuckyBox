@@ -47,8 +47,6 @@ abbr, acronym {border:0;}
 *:first-child + html .clearfix  {min-height: 1%;}
 
 /**gogogo**/
-body{ background:url(../images/top_bg_00-1.jpg) 0 0 repeat; background-attachment: fixed; overflow-x: hidden; }
-
 p.go_top{ position:absolute; right:2%; top:-320px; cursor:pointer; z-index:50; text-indent:-9999px;}
 p.go_top a{ width:60px; height:60px; display:block; background:url(../images/top.png) 0 0 no-repeat;}
 
@@ -397,7 +395,7 @@ a.line:hover{ background: #03d63c;  }
   .foodinfo .infoBox .box_for2{padding: 30px 20px;}
   .foodinfo .infoBox .box_for2 .infoBoxright{padding-left: 0;}
   .foodinfo .infoBox .box_for2 .infoBoxright p{text-align: center;}
-  .foodinfo .infoBox .box_for2 .noteBox p{letter-spacing: 0; text-align: left; font-size: 13px;}
+  .foodinfo .infoBox .box_for2 .noteBox p{letter-spacing: 0; text-align: left; font-size: 13px; line-height: 20px;}
   .fb_share_button{width: initial; max-width: initial; text-align: center;}
   .fb_share_button a{ display: inline-block; float: none; }
   a.fbButtom{margin: 10px auto;}
@@ -413,7 +411,9 @@ a.line:hover{ background: #03d63c;  }
   .foodinfo .infoBox .box_for2{ max-width: 86%; }
   .foodinfo .infoBox .box_for2::before{ width: 180px; height: 120px;}
 }
-
+@media (max-width:650px){
+  .foodinfo .infoBox .box_for2{ width: 100%; }
+}
 
 @media (max-width:599px){
 	p.logo{left: 0;width: 250px;}
@@ -466,4 +466,7 @@ a.line:hover{ background: #03d63c;  }
 @media (max-width:400px){
   .foodinfo .infoBox .youtubeBox span.no{ display: inline-block; }
   .foodinfo .infoBox .youtubeBox span.b{display: initial;}
+}
+@media (max-width:350px){
+  .footerBox .fbBox{ width:100%;}
 }
