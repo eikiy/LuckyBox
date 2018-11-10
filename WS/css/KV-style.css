@@ -168,9 +168,9 @@ svg {  display: block; overflow: visible;}
 
   .slide__overlay {  display: none; }
   .slide:nth-child(1) .slide__bg {  background-image: url("../images/food_01.jpg"); }
-  .slide:nth-child(2) .slide__bg {  background-image: url("../images/food_04.jpg"); }
-  .slide:nth-child(3) .slide__bg {  background-image: url("../images/food_02.jpg"); }
-  .slide:nth-child(4) .slide__bg {  background-image: url("../images/food_03.jpg"); }
+  .slide:nth-child(2) .slide__bg {  background-image: url("../images/food_02.jpg"); }
+  .slide:nth-child(3) .slide__bg {  background-image: url("../images/food_03.jpg"); }
+  .slide:nth-child(4) .slide__bg {  background-image: url("../images/food_04.jpg"); }
 }
 
 .slide__overlay path { opacity: 0.4;}
