@@ -128,9 +128,12 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .newsBox ul li{ width: 100%; padding: 20px 0; border-bottom: 1px dashed #e7e7e7;}
 .newsBox ul li p{ line-height: 26px; text-align: justify; }
 .newsBox ul li p.day{ float: left; width: 120px; color: #00abdd; padding-bottom: 15px; font-size: 17px; }
+.newsBox ul li p a{ color: #333; }
+.newsBox ul li p a:hover{ color: #00467F;  text-decoration: underline; }
 .newsBox ul li .new_info{ width: calc(100% - 120px); float: left; }
 .newsBox ul li:hover .new_info p{ color: #00467F; } 
 .newsBox h2.new_main_title {font-size: 28px; text-align: left; font-weight: bold; padding-bottom: 20px;}
+.newsBox ul.gray_line li{ border-color: #bbbbbb; }
 
 .recruitBox p.p_info{ padding: 30px 0; }
 .recruit_list{ width: 100%; padding: 30px 0 10px 0;}
