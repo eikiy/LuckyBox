@@ -95,7 +95,8 @@ h1.KV_title{ position: absolute; z-index: 20; left:4vw; top: 14vh; width: 250px;
 .DataBox .box_title p{ color: #f4d5a7; font-size: 18px;  line-height: 36px; padding: 20px 0; text-align: center; font-weight: normal; margin: 0 auto;}
 .DataBox .sub_box_title{ width: 100%; padding: 15px 0; position: absolute; top: 98px; z-index: 10; border-bottom: 1px solid #c49d65; background-color: rgba(0,0,0,.5);}
 .DataBox .sub_box_title p{ text-align: center; color: #fff; line-height: 36px; font-size: 17px; color: #f4d5a7;}
-
+.sub_box_title span.no{ display: none; }
+.sub_box_title span.b{display: block;}
 
 
 .map{ padding: 50px 0; }
@@ -147,7 +148,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 150px; color: #f4b4cf; di
 .Chef ul.ChefBox li .info b{ font-size: 24px; font-weight: normal; line-height: 40px;}
 
 
-.Chef ul.ChefBox li p.btn_more a{ color: #fff;  background: url(../images/arr_w.png) center center no-repeat transparent; background-size: contain; border: 1px solid #fff; }
+.Chef ul.ChefBox li p.btn_more a{ color: #fff;  background: url(../images/arr_w.png) center center no-repeat transparent; background-size: contain; border: 1px solid #fff; border-radius: 50px; }
 .Chef ul.ChefBox li p.btn_more a:hover{ color: #fff;  background: url(../images/arr_w.png) center center no-repeat #ff9800; background-size: contain; border: 1px solid #e0a715; }
 
 .pop_info h4{ color: #000; font-size: 20px; text-align: center;   padding: 10px 0;}
@@ -279,7 +280,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 150px; color: #f4b4cf; di
 .foodinfo .infoBox p a{color: #ff5e6c; font-weight: bold;}
 .foodinfo .infoBox p a:hover{ text-decoration: underline; }
 .fb_share_button{ width: 100%; padding: 15px 0; max-width: 500px; margin: 0 auto;}
-.fb_share_button a{ float: left; text-shadow: 0 0 10px rgba(0,0,0,.3);  padding: 0px; width: 100%; max-width: 190px; font-size: 18px; text-align: center; color: #fff; border-radius: 4px; display: block; box-shadow: 0 0 10px rgba(0,0,0,.5); }
+.fb_share_button a{ float: left; text-shadow: 0 0 10px rgba(0,0,0,.3);  padding: 0px; width: 100%; max-width: 190px; font-size: 18px; text-align: center; color: #fff; border-radius: 40px; display: block; box-shadow: 0 0 10px rgba(0,0,0,.5); }
 .fb_share_button a span{padding: 15px 20px 15px 50px; display: inline-block;}
 
 a.fbButtom{ background-color: #365899; border: 1px solid #4267b2; margin: 0 12px 12px 0; }
@@ -308,7 +309,7 @@ a.line:hover{ background: #03d63c;  }
 .footerBox .infoBox p span.ss{font-size: 14px;}
 .footerBox .infoBox p span.red{ color: #da022b; font-weight: bold; }
 .footerBox .infoBox p.btn{ font-size: 16px; padding: 30px 0; font-weight: bold; }
-.footerBox .infoBox p.btn a{ cursor: pointer; color: #ff9800; padding: 10px 20px; border: 1px solid #ff9800; margin-right: 10px;} 
+.footerBox .infoBox p.btn a{ cursor: pointer; color: #ff9800; padding: 10px 20px; border: 1px solid #ff9800; margin-right: 10px; border-radius: 50px;}
 .footerBox .infoBox p.btn a:hover{ background-color: #ff9800; color: #fff; }
 
 .mediaBox{ width: 100%; background:url(../images/top_bg_00.jpg) center center no-repeat; background-attachment: fixed; background-size: cover;}
@@ -362,6 +363,7 @@ a.line:hover{ background: #03d63c;  }
 	.footerBox .infoBox{ float: none; margin: 0 auto; max-width: 100%; }
 	.footerBox .fbBox{position: initial;margin: 0 auto;}
 	.footerBox .infoBox p{ text-align: center; font-size: 16px;}
+  .DataBox .box_title h3::after{ width: 90px; height: 54px; top: 16px;}
 }
 @media (max-width:840px){
 	.foodinfo{padding: 10px 0 30px 0;}
@@ -382,11 +384,14 @@ a.line:hover{ background: #03d63c;  }
   .foodinfo .infoBox .box_for2 .infoBoxleft, .foodinfo .infoBox .box_for2 .infoBoxright{width: 100%;}
   .foodinfo .infoBox .box_for2 .logo-25{max-width: 300px;}
   .foodinfo h4.t09-2{ background-position: center; }
+  .foodinfo .infoBox p{ line-height: 24px; }
+  .foodinfo .infoBox .box_for2{padding: 30px 20px;}
+  .foodinfo .infoBox .box_for2 .infoBoxright{padding-left: 0;}
   .foodinfo .infoBox .box_for2 .infoBoxright p{text-align: center;}
   .foodinfo .infoBox .box_for2 .noteBox p{letter-spacing: 0; text-align: left; font-size: 13px;}
   .fb_share_button{width: initial; max-width: initial; text-align: center;}
   .fb_share_button a{ display: inline-block; float: none; }
-  .fbButtom{margin: 0 auto;}
+  a.fbButtom{margin: 10px auto;}
 }
 @media (max-width:700px){
 	.map .mBox .lBox, .map .mBox .rBox{ width: 100%; float: none;}
@@ -395,7 +400,9 @@ a.line:hover{ background: #03d63c;  }
 	.map p.btn_more{ width: 50%; float: left; }
 	.map p.btn_more a{ float: none; }
 	h1.KV_title{ height:69vw; width: 40vw;}
-  .foodinfo .infoBox{ max-width: 100%; padding: 120px 0 0 0; }
+  .foodinfo .infoBox{ max-width: 100%; padding: 150px 0 0 0; }
+  .foodinfo .infoBox .box_for2{ max-width: 86%; }
+  .foodinfo .infoBox .box_for2::before{ width: 180px; height: 120px;}
 }
 
 
@@ -422,7 +429,10 @@ a.line:hover{ background: #03d63c;  }
 	.slides li .info p{ font-size:14px;}
 	.pop_info p{font-size: 14px;}
 	.pop_info h5{font-size: 15px; }
-
+}
+@media (max-width:550px){
+  .sub_box_title span.no{ display: inline-block; }
+  .sub_box_title span.b{ display: initial; }
 }
 @media (max-width:499px){
 	.DataBox .p_subtitle p, .DataBox .sub_box_title p{font-size: 15px; line-height: 26px; width: 94%;}
