@@ -47,6 +47,7 @@ abbr, acronym {border:0;}
 *:first-child + html .clearfix  {min-height: 1%;}
 
 /**gogogo**/
+
 p.go_top{ position:absolute; right:2%; top:-320px; cursor:pointer; z-index:50; text-indent:-9999px;}
 p.go_top a{ width:60px; height:60px; display:block; background:url(../images/top.png) 0 0 no-repeat;}
 
@@ -70,6 +71,7 @@ h1.KV_title{ position: absolute; z-index: 20; left:4vw; top: 14vh; width: 250px;
 .DataBox .box_title{ width: 100%; background-color: #e8bf62; /*background: url(../images/flower_01_br.png) center top no-repeat;*//* padding: 32px 0 34px 0;*/}
 .DataBox .box_title h3{ width: 100%; max-width:600px; height:98px; position: relative; display: block; background-position:  center center; background-repeat: no-repeat; margin: 0 auto ; text-indent: -9999px; }
 .DataBox .box_title h3::after{ content: ""; top:20px; z-index: 50; left: 0; position: absolute; width: 130px; height: 90px; display: block; background: url(../images/bg_flower_03.png) center center no-repeat; background-size: contain; }
+.DataBox .box_title h3.t02{ background-image: url(../images/h3_title_02.png );  background-size: 64%;}
 .DataBox .box_title h3.t03{ background-image: url(../images/h3_title_03.png );  background-size: 64%;}
 .DataBox .box_title h3.t04{ background-image: url(../images/h3_title_04.png );  background-size: 64%;}
 .DataBox .box_title h3.t05{ background-image: url(../images/h3_title_05.png );  background-size: 64%;}
@@ -313,11 +315,12 @@ a.line:hover{ background: #03d63c;  }
 .footerBox .infoBox p.btn a{ cursor: pointer; color: #ff9800; padding: 10px 20px; border: 1px solid #ff9800; margin-right: 10px; border-radius: 50px;}
 .footerBox .infoBox p.btn a:hover{ background-color: #ff9800; color: #fff; }
 
-.mediaBox{ width: 100%; background:url(../images/top_bg_00.jpg) center center no-repeat; background-attachment: fixed; background-size: cover;}
+.mediaBox{ width: 100%; background:url(../images/br_08.png) center center no-repeat; background-attachment: fixed; background-size: cover;}
 .mediaBox ul.MBox{ width: 100%; margin: 0 auto; padding: 30px 0; max-width: 1870px;}
-.mediaBox ul.MBox li{ float: left; width: 25%; padding: 0 1%; }
+.mediaBox ul.MBox li{ float: left; width: 50%; padding: 15px 2%; }
 .mediaBox ul.MBox li a{ display: block; padding: 10px 0; width: 100%; }
 .mediaBox ul.MBox li a:hover{ opacity: .9; }
+
 .foodinfo h4.t09-1{ width: 100%; max-width:500px; height:75px;display: block; background: url(../images/h3_title_09-1.png) center center no-repeat; background-size: contain;text-indent: -9999px; margin: 0 auto; }
 .foodinfo h4.t09-2{ width: 100%; max-width:500px; height:75px;display: block; background: url(../images/h3_title_09-2.png) left center no-repeat; background-size: contain;text-indent: -9999px; margin: 0 auto; }
 
