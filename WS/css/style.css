@@ -55,7 +55,7 @@ p.go_top a{ width:60px; height:60px; display:block; background:url(../images/top
 
 .titleBox{position: absolute; top: 0; }
 
-p.logo{ position: absolute; z-index: 15; left:75px; top: 1vh; width: 295px; height: 70px; display: block; background: url(../images/logo_wangSteak.png ) center top no-repeat;  text-indent: -9999px; background-size: contain; }
+p.logo{ position: absolute; z-index: 15; left:60px; top: 1vh; width: 320px; height: 76px; display: block; background: url(../images/logo_wangSteak.png ) center top no-repeat;  text-indent: -9999px; background-size: contain; }
 h1.KV_title{ position: absolute; z-index: 20; left:4vw; top: 14vh; width: 250px; height: 450px; display: block; background: url(../images/KV-title.png ) center top no-repeat;  text-indent: -9999px; background-size: contain; }
 .flower_01{ position: absolute; z-index: 15; left:12vw; top: 12vh; width: 120px; height: 120px; display: block; background: url(../images/bg_flower_01.png ) center top no-repeat;  text-indent: -9999px; background-size: contain; }
 .flower_02{ position: absolute; z-index: 15; left:2vw; bottom: 26vh; width: 150px; height: 150px; display: block; background: url(../images/bg_flower_02.png ) center top no-repeat;  text-indent: -9999px; background-size: contain; }
@@ -419,7 +419,7 @@ a.line:hover{ background: #03d63c;  }
 }
 
 @media (max-width:599px){
-	p.logo{left: 0;width: 250px;}
+	p.logo{left: 0;width: 285px;}
 	.DataBox .box_title h3{height:60px; }
 	.DataBox .p_subtitle p {font-size: 16px; line-height: 28px;}
 	/*。*/
