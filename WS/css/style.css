@@ -312,7 +312,7 @@ a.line:hover{ background: #03d63c;  }
 .footerBox .infoBox p.btn a{ cursor: pointer; color: #ff9800; padding: 10px 20px; border: 1px solid #ff9800; margin-right: 10px; border-radius: 50px;}
 .footerBox .infoBox p.btn a:hover{ background-color: #ff9800; color: #fff; }
 
-.mediaBox{ width: 100%; background:url(../images/br_08.png) center center no-repeat; background-attachment: fixed; background-size: cover;}
+.mediaBox{ width: 100%; background-image:url(../images/br_08.png); background-position: center center; background-repeat: repeat; background-attachment: fixed;}
 .mediaBox ul.MBox{ width: 100%; margin: 0 auto; padding: 30px 0; max-width: 1870px;}
 .mediaBox ul.MBox li{ float: left; width: 50%; padding: 15px 2%; }
 .mediaBox ul.MBox li a{ display: block; padding: 10px 0; width: 100%; }
