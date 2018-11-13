@@ -351,8 +351,8 @@ a.line:hover{ background: #03d63c;  }
 }
 
 @media (max-device-width:1200px) {
-	.mediaBox, .foodinfo{ background-attachment: inherit; background: url(../images/top_bg_00_s.jpg) center center no-repeat; background-size: cover;}
-  .br00{ background-attachment: inherit;}
+	.mediaBox, .foodinfo{ background-attachment: inherit;}
+  .br00{ background-attachment: inherit; background: url(../images/top_bg_00_s.jpg) center center no-repeat; background-size: cover;}
 }
 @media (min-width:1200px) and (max-height:700px) {
 	h1.KV_title{height: 520px;}
