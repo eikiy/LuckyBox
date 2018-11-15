@@ -194,10 +194,14 @@ html[xmlns] .flexslider .slides {
   content: '\f003';
 }
 .flex-control-nav {
-  width: 100%;
+  width: 40%;
   position: absolute;
+  left: 0;
   bottom: 30px;
   text-align: center;
+}
+@media (max-width:850px){
+  .flex-control-nav { width: 100%; bottom: 20px;}
 }
 .flex-control-nav li {
   margin: 0 6px;

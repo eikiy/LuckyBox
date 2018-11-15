@@ -45,15 +45,16 @@ p.go_top a{ width:60px; height:60px; display:block; background:url(../images/top
 .MainBanner .abox{ width: 90%; margin: 0 auto; }
 .MainBanner h1{ width: 100%; height: 260px; display: block; background: url(../images/main_title.png ) center center no-repeat;  text-indent: -9999px; background-size:  contain;}
 .MainBanner p.logo{ position: absolute;z-index: 1; left:10px; top: 4vh; width: 295px; height: 70px; display: block; background: url(../images/logo_wangSteak.png ) center top no-repeat;  text-indent: -9999px; background-size: contain; }
-.MainBanner .img55{ position: absolute; z-index: 0; left: 20px; bottom:0; width: 16vw; height: 100%; max-height: 600px; display: block;  background: url(../images/img55.png ) left bottom no-repeat; background-size: contain;}
+.MainBanner .img55{ position: absolute; z-index: 0; left: 20px; bottom:5px; width: 16vw; height: 100%; max-height: 600px; display: block;  background: url(../images/img55.png ) bottom center no-repeat; background-size: contain;}
 
-.MainBanner p.btn{ width: 100%; padding-top: 7vh; text-align:  center; font-size: 18px;  font-weight: bold; margin: 0 auto;}
-.MainBanner p.btn a{ color: #dccba4; display: inline-block; text-align:  center;  padding: 10px 32px; border: 1px solid #dccba4; /*border-radius: 40px;*/ border-width: 1px 0 1px 0; margin: 0 -3px; cursor: pointer; box-shadow: 0px 0px 15px rgba(0%,0%,0%,0.2);}
+.MainBanner .menu{ width: 100%; max-width: 530px; margin-top: 7vh; margin: 0 auto; border-radius: 4px 0 4px 0; box-shadow: 0px 0px 15px rgba(0%,0%,0%,0.2); background: url(../images/sub_title_br.png) center top no-repeat;}
+.MainBanner p.btn{  width: 100%; font-size: 17px; font-weight: bold; text-align: center; font-family: "微軟正黑體",'SabonLTStd-Roman','Hiragino Mincho ProN', 'MingLiU', "MS PMincho", "MS 明朝" ,'LiHeiPro', Helvetica, Arial, sans-serif;}
+.MainBanner p.btn a{ width: 25%; float: left; color: #333; display: inline-block; text-align:  center; padding:12px 10px;}
 .MainBanner p.btn a:hover{ color: #fff; background-color: #b38342; border-color: #b38342; }
 
 .DataBox{ width: 100%;position: relative; }
 .DataBox .box_title{ width: 100%; /*border:1px solid #c49d65; border-width: 1px 0 1px 0;*/ background: url(../images/sub_title_br.png) center top no-repeat;/* padding: 32px 0 34px 0;*/position: sticky; background-size: cover;
-    top: 0px; z-index: 80;
+    top: 0px; z-index: 1;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -171,7 +172,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 .f_title p::before{ content: "」"; position: absolute; bottom: 0; right: 0; font-size: 40px;}
 
 .slides li .info{ max-width: 90%; min-height:140px; padding:20px;	clear: both; /*background: url(../images/br_k.png) 0 0 repeat;*/}
-.slides li .info h3{ color: #e2cfa6; width:100%; font-family: "微軟正黑體",'SabonLTStd-Roman','Hiragino Mincho ProN', 'MingLiU', "MS PMincho", "MS 明朝" ,'LiHeiPro', Helvetica, Arial, sans-serif; text-align: center; /*height: 80px;*/ font-size: 20px; font-weight: bold;/* text-indent: -9999px*/;text-shadow: 0px 0px 10px rgba(0,0,0,0.5);margin: 0; /*font-family: 'cwTeXHei', serif;*/}
+.slides li .info h3{ color: #f5d6a4; width:100%; font-family: "微軟正黑體",'SabonLTStd-Roman','Hiragino Mincho ProN', 'MingLiU', "MS PMincho", "MS 明朝" ,'LiHeiPro', Helvetica, Arial, sans-serif; text-align: center; /*height: 80px;*/ font-size: 20px; font-weight: bold;/* text-indent: -9999px*/;text-shadow: 0px 0px 10px rgba(0,0,0,0.5);margin: 0; /*font-family: 'cwTeXHei', serif;*/}
 .slides li .info h3 span{ font-weight: normal; font-size: 14px; font-family: 'Lora', serif;}
 .slides li .info p { color: #fff; text-shadow: 0px 0px 10px rgba(0,0,0,0.4); line-height: 28px; padding-top: 20px; font-size: 15px; text-align: center; margin: 0 auto;}
 .slides li .info p.btn{ padding-top: 30px; }
@@ -209,7 +210,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 
 .footerBox{ border-bottom: 94px solid #b38441; padding:80px 0 50px 0;}
 .footerBox .ContentsBox{ position: relative;}
-.footerBox .fbBox{ width: 337px; height: 400px;position: absolute; bottom: -144px; right: 0; box-shadow: 0px 0px 15px rgba(0%,0%,0%,0.2);  }
+.footerBox .fbBox{ width: 337px; height: 400px; overflow: hidden; position: absolute; bottom: -144px; right: 0; box-shadow: 0px 0px 15px rgba(0%,0%,0%,0.2);  }
 .footerBox .fbBox iframe{ width: 100%; height: 400px; }
 .footerBox .logoimg{ float: left; max-width: 180px; padding-right: 60px; }
 
@@ -223,10 +224,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 
 .mediaBox{ width: 100%; padding: 40px 0;}
 .mediaBox ul.MBox{ width: 100%; margin: 0 auto; padding: 20px 0; max-width: 1870px;}
-.mediaBox ul.MBox li{ float: left; width: 18%; margin: 0 1%; }
-.mediaBox ul.MBox li a{ display: block; padding: 10px 0; width: 100%; }
-.mediaBox ul.MBox li a.mob{ display: none; }
-.mediaBox ul.MBox li a:hover{ opacity: .8; }
+.mediaBox ul.MBox li{ float: left; width: 23%;padding: 10px 0; margin: 0 1%; }
 
 /*RWD*/
 @media (max-width:1880px){.mediaBox ul.MBox{ width: 90%; }}
@@ -274,19 +272,20 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
   .slides li, .ArticlesList .food_photo{ height: 480px; }
   .ArticlesList .lbox_infoBox{ position: absolute; width: 100%; bottom: 0; left: 0; height: initial; background-color: rgba(0,0,0,.5); padding-bottom: 45px; }
   .ArticlesList .food_photo{ width: 100%;}
-  .slides li .info p{ font-size: 14px; padding-top: 10px; }
-  .flex-control-nav {bottom: 20px;}
+  .slides li .info p{ font-size: 14px; padding-top: 10px; list-style: 22px; }
 }
 @media (max-width:840px){.foodinfo{padding: 40px 0;}
 	.foodinfo .aBox .photo,.foodinfo .aBox .info { position: initial; margin: 0 auto;}
 	.foodinfo .aBox .info{ float: none; max-width: 90%;}
 	.foodinfo .r01 .photo .pBox h4.tilte{ right: initial; right: -35px; top: initial; bottom: -45px; }
 	.foodinfo .r01 .info{ padding-bottom: 50px; }
-	.MainBanner p.btn{max-width: 300px;}
-	.MainBanner p.btn a{ width:calc(46% - 2px); display: block; float: left; padding: 10px 0; margin: 5px 2%;}
+  .MainBanner .menu{ max-width: 430px;  border-radius: 0;}
+  .MainBanner p.btn{ font-size: 14px; }
+  .MainBanner p.btn a{ padding: 14px 0;}
 }
 @media (max-width:800px){
 	.DataBox .box_title p.t01{ width:75%; }
+  .mediaBox ul.MBox{padding: 0;}
 	.mediaBox ul.MBox li{ width: 48%; }
 	.mediaBox ul.MBox li a.pc{ display: none; }
 	.mediaBox ul.MBox li a.mob{ display: block; }
@@ -308,8 +307,8 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 	.MainBanner{/*background: url(../images/br_01_S.jpg) center top no-repeat #000; background-size: cover;*/ min-height: inherit;}
 	.MainBanner h1{ height: 186px}
 	.MainBanner h2{ position:  static;  width: 380px; margin: 0 auto;}
-	.MainBanner p.btn{padding-top: 0vh; font-size: 15px ; max-width: 138px;}
-	.MainBanner p.btn a{width:calc(96% - 2px);}
+	/*.MainBanner p.btn{padding-top: 0vh; font-size: 15px ; max-width: 138px;}
+	.MainBanner p.btn a{width:calc(96% - 2px);}*/
 	.MainBanner .img54, .MainBanner .img54_2{width: 27vw;}
 	.DataBox .box_title h3{height:50px; }
 	.DataBox .p_subtitle p {font-size: 16px; line-height: 28px;}
@@ -343,12 +342,17 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 	.banner_food_0 .food_photo6{ background: url(../images/banner_06s.jpg) center center no-repeat; background-size:cover;}
   .Chef ul.ChefBox li.food_01 .info{ width: 100%; top: initial; bottom: 0; left: 0; padding: 12px 15px; }
   .Chef ul.ChefBox li.food_01 .info p{ float: left; }
+  .MainBanner .abox{ width: 100%;}
+  .MainBanner .img55{ height: 300px; bottom: 58px; }
+  .MainBanner .menu{ position: fixed; bottom: 0; left: 0; max-width: 100%; z-index: 200; }
 }
 @media (max-width:499px){
 	.DataBox .p_subtitle p{font-size: 15px; line-height: 26px;}
 	.map p.btn_more a {padding: 10px 20px;}
 	.PreferentialBox p.ex{ width: 80%; text-align: justify; margin: 0 auto; }
 	.foodinfo .aBox .info p{ font-size: 15px; line-height: 28px; }
+  .Chef ul.ChefBox li .info p{ font-size: 14px; }
+  .Chef ul.ChefBox li .info p b{ font-size: 16px; line-height: 26px; }
 }
 @media (max-width:450px){
 	.map2 .mBox .btnBox{ right: 0;border-radius:0px; padding: 10px; height: inherit;right: initial; left: 0; top:40%;}
@@ -359,7 +363,6 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 }
 @media (max-width:420px){.MainBanner h1{ width: 100%;}
 	.MainBanner h2{ width: 100%; margin: 0 auto;}
-	.MainBanner p.btn a{ display: block; margin-bottom: 10px;}
 	.videoBox iframe{ min-height: 210px;}
 }
 @media (max-width:400px){
