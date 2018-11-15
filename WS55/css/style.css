@@ -88,7 +88,7 @@ p.go_top a{ width:60px; height:60px; display:block; background:url(../images/top
 
 .DataBox .box_title p{ color: #f4d5a7; font-size: 18px;  line-height: 36px; padding: 20px 0; text-align: center; font-weight: normal; margin: 0 auto;}
 .DataBox .sub_box_title{ width: 100%; background: url(../images/br_k.png) 0 0 repeat; padding: 25px 0; position: absolute; top: 84px; z-index: 10;}
-.DataBox .sub_box_title p{ text-align: center; color: #fff; line-height: 36px; font-size: 20px; }
+.DataBox .sub_box_title p{ text-align: center; color: #f4d5a7; line-height: 36px; font-size: 18px; }
 .videoBox{padding:20px 0 60px 0;}
 .videoBox iframe{ width: 90%; height: 75vh; margin: 0 auto; display: block; min-height: 315px; max-width: 1000px;}
 
@@ -331,7 +331,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 	.Chef ul.ChefBox li .info p{ font-size: 14px; max-width: calc(100% - 100px);}
 	.Chef ul.ChefBox li .info p b{ font-size: 20px; }
 	.foodinfo .aBox .info .topTitleBox h5.subTitle{ width: 120px;}
-	 .slides li .info{ width:80%; /*margin: 100px auto 0 auto;*/ min-height:120px;}
+	 .slides li .info{ width:100%; /*margin: 100px auto 0 auto;*/ min-height:120px;}
 	.slides li .info h3{ font-size:19px;}
 	.slides li .info h3 span{font-size: 15px;}
 	.slides li .info p{ font-size:14px;}
