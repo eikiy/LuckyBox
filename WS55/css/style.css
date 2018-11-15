@@ -53,7 +53,7 @@ p.go_top a{ width:60px; height:60px; display:block; background:url(../images/top
 .MainBanner p.btn a:hover{ color: #fff; background-color: #b38342; border-color: #b38342; }
 
 .DataBox{ width: 100%;position: relative; }
-.DataBox .box_title{ width: 100%; /*border:1px solid #c49d65; border-width: 1px 0 1px 0;*/ background: url(../images/sub_title_br.png) center top no-repeat;/* padding: 32px 0 34px 0;*/position: sticky; background-size: cover;
+.DataBox .box_title{ width: 100%; background: url(../images/sub_title_br.png) center top no-repeat;/* padding: 32px 0 34px 0;*/position: sticky; background-size: cover;
     top: 0px; z-index: 1;
     position: -webkit-sticky;
     position: -moz-sticky;
@@ -113,7 +113,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #e0a715; di
 .map2{ max-width: 100%; overflow-y: hidden; display: block; width: 100%; }
 .map2 .mBox{ width: 100%; position: relative; min-height: 450px;}
 .map2 .mBox p{ padding: 20px 0; color: #fbf7f8; font-size: 15px; }
-.map2 .mBox .btnBox{ position: absolute; right: 120px; top:155px; width: 152px; height: 246px; /*border-radius: 200px;*/; /*background: url(../images/br_k.png) 0 0 repeat;*/display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
+.map2 .mBox .btnBox{ position: absolute; right: 120px; top:155px; width: 152px; height: 246px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
 .map2 .mBox .btnBox .bothBox{ width: 150px; }
 .map2 iframe{ width: 100%; height: 450px; position: absolute; top:0;}
 
@@ -124,10 +124,9 @@ p.btn_more{ text-align: center;font-size: 18px; font-weight: bold;}
 p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; display: block; border: 1px solid #f4b4cf; margin: 0 auto;}
 
 .map2 p.btn_more{ width: 100%; padding: 10px 0;}
-.map2 p.btn_more a{/* float: right;*/ padding: 15px; border:2px solid #f9c957;  background-color: transparent; color: #f9c957; background-color: #f9c957; color: #222;}
+.map2 p.btn_more a{ padding: 15px; border:2px solid #f9c957;  background-color: transparent; color: #f9c957; background-color: #f9c957; color: #222;}
 .map2 p.btn_more a:hover{ border-color: #222;}
 
-.Chef{/* overflow: hidden; */}
 .Chef ul.ChefBox{ width: 100%; }
 .Chef ul.ChefBox li{ position: relative; float: left; height: 400px; width: 50%; overflow: hidden;  -webkit-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; background-size: 116%; background-position: center; background-repeat: no-repeat;}
 .Chef ul.ChefBox li.food_01{ width: 100%; background-image: url(../images/food_01.jpg);}
@@ -147,7 +146,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 .Chef ul.ChefBox li p.btn_more a{ color: #fff; border-radius: 50px; padding: 8px 20px; border: 1px solid #fff; margin: 0; }
 .Chef ul.ChefBox li p.btn_more a:hover{ color: #fff; background-color: #e0a715; border: 1px solid #e0a715; }
 .Chef ul.ChefBox li.food_01 .info{ width: initial; padding: 40px; bottom: initial; top: 100px; left: calc(25% - 190px); }
-/*.the_middle{ position: relative; max-width: 700px; margin: 0 auto; }*/
+
 .Chef ul.ChefBox li.food_01 .info p{float: none;}
 .Chef ul.ChefBox li.food_01 .info p.btn_more{ position: initial; padding-top: 25px; }
 
@@ -166,12 +165,12 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 .ArticlesList .food_photo{ width: 60%; float: left;}
 .slides li, .ArticlesList .lbox_infoBox, .ArticlesList .food_photo{ height: 490px; }
 
-.f_title{ /*position: absolute; top: 40px; width: 40%; z-index: 100;*/  padding: 40px;}
+.f_title{  padding: 40px;}
 .f_title p{ color: #fff; font-size: 20px; text-align: center; position: relative;  padding: 20px; font-style: italic ; font-family: "微軟正黑體",'SabonLTStd-Roman','Hiragino Mincho ProN', 'MingLiU', "MS PMincho", "MS 明朝" ,'LiHeiPro', Helvetica, Arial, sans-serif;}
 .f_title p::after{ content: "「"; position: absolute; top: 0; left: 0; font-size: 40px; }
 .f_title p::before{ content: "」"; position: absolute; bottom: 0; right: 0; font-size: 40px;}
 
-.slides li .info{ max-width: 90%; min-height:140px; padding:20px;	clear: both; /*background: url(../images/br_k.png) 0 0 repeat;*/}
+.slides li .info{ max-width: 90%; min-height:140px; padding:20px;	clear: both; }
 .slides li .info h3{ color: #f5d6a4; width:100%; font-family: "微軟正黑體",'SabonLTStd-Roman','Hiragino Mincho ProN', 'MingLiU', "MS PMincho", "MS 明朝" ,'LiHeiPro', Helvetica, Arial, sans-serif; text-align: center; /*height: 80px;*/ font-size: 20px; font-weight: bold;/* text-indent: -9999px*/;text-shadow: 0px 0px 10px rgba(0,0,0,0.5);margin: 0; /*font-family: 'cwTeXHei', serif;*/}
 .slides li .info h3 span{ font-weight: normal; font-size: 14px; font-family: 'Lora', serif;}
 .slides li .info p { color: #fff; text-shadow: 0px 0px 10px rgba(0,0,0,0.4); line-height: 28px; padding-top: 20px; font-size: 15px; text-align: center; margin: 0 auto;}
@@ -228,8 +227,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 
 /*RWD*/
 @media (max-width:1880px){.mediaBox ul.MBox{ width: 90%; }}
-@media (max-width:1535px){.MainBanner h1{height: 230px;} /*.MainBanner .img54, .MainBanner .img54_2{ max-height: 380px;}*/}
-@media (max-width:1440px){.map2 .mBox .btnBox{ right: 150px;}}
+@media (max-width:1535px){.MainBanner h1{height: 230px;}}
 @media (max-width:1300px){.map2 .mBox .btnBox{ right:100px; }}
 @media (max-width:1280px){.MainBanner .img54, .MainBanner .img54_2 { max-height: 500px; }}
 @media (max-width:1215px){.ContentsBox{ width: 90%;}.map2{width: 100%;}
@@ -258,7 +256,6 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 
 @media (max-width:980px){.mediaBox ul.MBox li{ width: 31%; }}
 @media (max-width:850px){
-	/*.MainBanner {background: url(../images/br_01_M.jpg) center top no-repeat #000; background-size: cover;}*/
 	.map2 .mBox .btnBox{ right: 72px;}
 	.footerBox{ padding-bottom: 0; border-bottom: 40px solid #c49d65;}
 	.footerBox .logoimg{ margin: 0 auto; padding-right: 0; }
@@ -304,23 +301,14 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 
 
 @media (max-width:599px){
-	.MainBanner{/*background: url(../images/br_01_S.jpg) center top no-repeat #000; background-size: cover;*/ min-height: inherit;}
+	.MainBanner{ min-height: inherit;}
 	.MainBanner h1{ height: 186px}
 	.MainBanner h2{ position:  static;  width: 380px; margin: 0 auto;}
-	/*.MainBanner p.btn{padding-top: 0vh; font-size: 15px ; max-width: 138px;}
-	.MainBanner p.btn a{width:calc(96% - 2px);}*/
 	.MainBanner .img54, .MainBanner .img54_2{width: 27vw;}
 	.DataBox .box_title h3{height:50px; }
 	.DataBox .p_subtitle p {font-size: 16px; line-height: 28px;}
 	.DataBox .box_title p.t02, .DataBox .box_title p.t01{ width: 85%; }
   .DataBox .box_title h3{ background-size: cover; }
-/*	.DataBox .box_title h3.t01{ background-image: url(../images/h3_title_01s.png );}
-	.DataBox .box_title h3.t02{ background-image: url(../images/h3_title_02s.png );}
-	.DataBox .box_title h3.t03{ background-image: url(../images/h3_title_03s.png );}
-	.DataBox .box_title h3.t04{ background-image: url(../images/h3_title_04s.png );}
-	.DataBox .box_title h3.t05{ background-image: url(../images/h3_title_05s.png );}
-	.DataBox .box_title h3.t06{ background-image: url(../images/h3_title_06s.png );}
-	.DataBox .box_title h3.t08{ background-image: url(../images/h3_title_08s.png );}*/
 	.DataBox .box_title p{font-size: 16px;}
 	.DataBox .box_title p.t02, .DataBox .box_title p.t01{ width: 85%; }
 	.DataBox .sub_box_title{ top: 52px; }
@@ -331,7 +319,7 @@ p.btn_more a{padding: 12px 40px 12px 25px;  max-width: 100px; color: #f4b4cf; di
 	.Chef ul.ChefBox li .info p{ font-size: 14px; max-width: calc(100% - 100px);}
 	.Chef ul.ChefBox li .info p b{ font-size: 20px; }
 	.foodinfo .aBox .info .topTitleBox h5.subTitle{ width: 120px;}
-	 .slides li .info{ width:100%; /*margin: 100px auto 0 auto;*/ min-height:120px;}
+	 .slides li .info{ width:100%;  min-height:120px;}
 	.slides li .info h3{ font-size:19px;}
 	.slides li .info h3 span{font-size: 15px;}
 	.slides li .info p{ font-size:14px;}

@@ -37,3 +37,35 @@
 	//$('.btm02').click(function(){ $('html,body').animate({scrollTop:$('#section2').offset().top}, 800); }); 
 	return false;	 
  });
+
+
+ $(function(){
+ 	var body = $("body");
+	var width = body.width() // Get position of the body
+
+	if(width < 650)
+	{
+        $('#banner').bgStretcher({
+      images: ['images/top_bg_00s.jpg', 'images/top_bg_02s.jpg', 'images/top_bg_03s.jpg'],
+      imageWidth: 750,
+      imageHeight: 1000,
+      slideDirection: 'N',
+      slideShowSpeed: 1000,
+      transitionEffect: 'fade',
+      sequenceMode: 'normal',
+    });
+	}
+	if(width > 650)
+	{
+        $('#banner').bgStretcher({
+      images: ['images/top_bg_00.jpg', 'images/top_bg_02.jpg', 'images/top_bg_03.jpg'],
+      imageWidth: 2200,
+      imageHeight: 1280,
+      slideDirection: 'N',
+      slideShowSpeed: 1000,
+      transitionEffect: 'fade',
+      sequenceMode: 'normal',
+    });
+	}
+	return false;
+ });
