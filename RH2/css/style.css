@@ -61,8 +61,8 @@ html, body{ height: 100%; }
 .w_triangle::after{ content: ""; position: absolute; bottom: -30px; left: calc(50% - 35px); z-index: 10; width: 0; height: 0; border-style: solid; border-width: 30px 35px 0 35px; border-color: #ffffff transparent transparent transparent;
 line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
 .company_info .ContentsBox{padding: 60px 0 85px 0;}
-.company_info h2.main_title{ font-size: 34px; color: #333; text-align: center; font-weight: bold; padding:15px 0;}
-.company_info h4.sub_title{ font-size: 16px; text-align: center; padding-bottom: 20px; margin-bottom: 30px; color: #a4a4a4;  border-bottom: 1px solid #b3b3b3; }
+.company_info h2.main_title{ font-size: 34px; color: #333; text-align: center; font-weight: bold; padding:15px 0; border-bottom: 1px solid #b3b3b3; margin-bottom: 30px;  }
+/*.company_info h4.sub_title{ font-size: 16px; text-align: center; padding-bottom: 20px;color: #a4a4a4; }*/
 .company_info p.p_info{ font-size: 18px; line-height: 36px; text-align: justify; }
 .company_info p.p_info span.blue_line{ position: relative; padding-left: 2em; display: block; }
 .company_info p.p_info span.blue_line::after{ content: ""; position: absolute; top: 0; left:0; width: 3px; height:100%; display: block; background-color: #00acdb;}
@@ -74,7 +74,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 
 .imgBox{ text-align: center; }
 .imgBox img{ max-width: 706px; display: inline-block; }
-
+.company_info .imgBox img{ max-width: 1000px;}
 .box{ position: relative; }
 .box::after{ content: ""; position: absolute; top: 0; left:0; width: 40px; height: 40px; display: block; border:1px solid #fff; border-width: 1px 0 0 1px; }
 .box::before{ content: ""; position: absolute; bottom: 0; right:0; width: 40px; height: 40px; display: block; border:1px solid #fff; border-width: 0 1px 1px 0; }
@@ -141,7 +141,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .recruit_list .both::before{ content: ""; position: absolute; width: 90px; height: 90px; display: block; border-radius: 50%; top: 0; left: 0; background-repeat: no-repeat; background-size: contain; background-position: center center; background-color: #F1F1F1;}
 .recruit_list .both:first-child::before{ background-image: url(../images/ic_contact_rd.png); }
 .recruit_list .both:last-child::before{ background-image: url(../images/ic_contact_medical_regulations.png); }
-.recruit_list .both ul{ list-style-type: decimal; padding-left: 20px; }
+.recruit_list .both ul{ list-style-type: disc; padding-left: 20px; }
 .recruit_list .both ul li{padding-bottom: 10px;}
 
 .contact_us{background: url(../images/pic_contact_earth.png) center center no-repeat #F1F1F1; background-size: contain; }
@@ -156,8 +156,10 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .contact_us ul li p.phone::after{ background-image: url(../images/contact_icon_phone.png); }
 .contact_us ul li p.mail::after{ background-image: url(../images/contact_icon_mail.png); }
 
-.google_map{ width: 100%; border-top: 4px solid #fff; }
-.google_map iframe{ width: 100%; height: 500px; }
+.google_map{ width: 100%; height: 500px; border-top: 4px solid #fff; background-image: url(../images/img_google_map.jpg); background-position: center center; background-repeat:no-repeat; background-size: cover;  }
+.google_map a{ width: 100%; height: 100%; display: block; }
+/*.google_map iframe{ width: 100%; height: 500px; }*/
+.map_en{ background-image: url(../images/img_google_map_en.jpg);}
 
 /*FooterBox*/
 .FooterBox{ width: 100%; background-color: #494949; padding:75px 0 50px 0;border-top: 4px solid #00acdb;}
@@ -240,20 +242,20 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 	.recruit_list .both{ width: 100%; padding-bottom: 40px; }
 	.contact_us ul{padding: 0;}
 	.contact_us ul li{margin: 20px 0;}
-	.google_map iframe{ height: 400px; }
+	.google_map{ height: 400px; }
 }
 @media (max-width:600px){
 	.product_list ul li .info{ width: calc(100% - 50px);}
 	.newsBox .ContentsBox{ width: 80%; }
 	.newsBox h2.new_main_title{ text-align: center; }
 	.newsBox ul li p.day, .newsBox ul li .new_info{ width: 100%; }
-	.google_map iframe{ height: 300px; }
+	.google_map{ height: 300px; }
 }
 @media (max-width:450px){
 	.company_info h2.main_title{ font-size: 30px; padding-bottom: 10px; }
 	.main_contents .bannerBox .ContentsBox h3.banner_title{ font-size: 26px; padding-bottom: 15%; }
 	.main_contents .bannerBox .flexslider, .main_contents .bannerBox .flexslider ul li {height: 300px;}
-	.google_map iframe{ height: 250px; }
+	.google_map{ height: 250px; }
 }
 
 @media (max-device-width:1200px) {
