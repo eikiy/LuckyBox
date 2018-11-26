@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"%>
+<!DOCTYPE html>
+
+
+
+<html dir="ltr" lang="zh_tw">
+<head id="myHead" runat="server">
+	<title>中欣工程設備</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/base.css" />
+	<script src="js/jquery-1.8.2.js"></script>
+	<script src="js/blockui.js"></script>
+	<script src="js/jquery.datepick.js"></script>
+	<script src="js/base.js"></script>
+	
+	
+	<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	
+	
+	<style>
+	html, body {
+		height: 100%;
+	}
+	</style>
+	
+</head>
+
+<body onload="" class="homePage">
+
+
+	
+    <div id="wrap">
+
+    <div id="header">
+	<div class="blockTop">
+	<div class="wrap zindex2"><!--BEGIN wrap-->
+		<img src="images/logo.png" title="中欣工程設備維護管理系統" />
+		
+		<ul class="nav">
+			<li><a href="javascript:;">保養計畫</a>
+				<ul style="display:none;">
+					<!-- <li><a href="javascript:void(0);">內層目錄</a></li> -->
+				</ul>
+			</li>
+			<li><a href="javascript:;">保養維運</a>
+				<ul style="display:none;">
+					<!-- <li><a href="javascript:void(0);">內層目錄</a></li> -->
+				</ul>
+			</li>
+			<li><a href="javascript:;">簽核</a>
+				<ul style="display:none;">
+					<!-- <li><a href="javascript:void(0);">內層目錄</a></li> -->
+				</ul>
+			</li>
+			<li><a href="javascript:;">維運資料</a>
+				<ul style="display:none;">
+					<!-- <li><a href="javascript:void(0);">內層目錄</a></li> -->
+				</ul>
+			</li>
+			<li><a href="manage_system_list.aspx">系統管理</a>
+				<ul style="display:none;">
+					<li><a href="factoryArea_list.aspx">廠區分類(分區)管理</a></li>
+					<li><a href="factory_list.aspx">廠區管理</a></li>
+					<li><a href="facility_list.aspx">設備管理</a></li>
+					<li><a href="employee_list.aspx">人員管理</a></li>
+					<li><a href="categoryA_list.aspx">大分類管理</a></li>
+					<li><a href="categoryB_list.aspx">分類別管理</a></li>
+					<li><a href="planYear_list.aspx">保養項目管理(年)</a></li>
+					<li><a href="planMonth_list.aspx">保養項目管理(月)</a></li>
+				</ul>
+			</li>
+			<li><a href="javascript:;">首頁</a></li>
+			<li class="last"><a href="javascript:;"><%--登出--%></a></li>
+		</ul>
+	</div><!--END OF wrap-->
+</div>
+
+<div class="blockBottom">
+	<div class="wrap zindex1"><!--BEGIN wrap-->
+		<ul class="nav">
+			<li><a href="../index.aspx">首頁</a></li>
+		</ul>
+		
+		<ul class="status">
+			<li><!--登入：高宇翔&nbsp; 101/09/18/10:30--></li>
+			<li><!--待處理專案：6 筆--></li>
+		</ul>
+		
+	</div><!--END OF wrap-->
+</div>
+  </div>
+   
+			
+		
+
+
+    <div id="container">
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  
+                  
+                  
+              </asp:ContentPlaceHolder>
+             
+   
+	</div>	
+	</div>
+	
+</body>
+</html>

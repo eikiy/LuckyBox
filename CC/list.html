@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>後端管理系統</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="js/navmenu.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+</head>
+
+<body id="list">
+
+<div id="wrapper">
+	<div class="menu">
+		<div class="bg">
+			<div class="logo"><img src="images/logo.png" width="176" height="33" /></div>
+                <div class="navmenu">
+                <dl>
+                  <dt><a href="#">商品管理</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="#">11111</a></li>
+                      <li><a href="#">22222</a></li>
+                    </ul>
+                  </dd>
+                  <dt><a href="#">顧客管理</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="#">11111</a></li>
+                      <li><a href="#">22222</a></li>
+                    </ul>
+                  </dd>
+                    <dt><a href="#">電子報</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="#">11111</a></li>
+                      <li><a href="#">22222</a></li>
+                    </ul>
+                  </dd>
+                      <dt><a href="#">商品物流</a></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="#">11111</a></li>
+                      <li><a href="#">22222</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+                </div>
+		</div>
+</div>
+
+<div class="list_all">
+<div class="list_option">
+<div class="list_title">訂單查詢</div>
+<div class="list_input"><div class="input_title">訂單號碼</div><input type="text" class="input"/>
+</div>
+<div class="list_input"><div class="input_title">會員姓名</div><input type="text" class="input"/>
+</div>
+<div class="list_input"><div class="input_title">狀態</div><select>
+ <option>待確認貨款</option>
+ <option>已送貨</option>
+ <option >待送貨</option>
+</select>
+</div>
+<div class="list_input"><div class="input_title">查詢時間</div><p><input type="date" class="date"/>
+<a href="#" class="date_icon"></a></p><p style="margin:5px;">~</p><p>
+<input type="date" class="date"/><a href="#" class="date_icon"></a></p></div>
+<div class="list_input"><div class="input_title">總價區價</div><input type="text" class="input"/>
+</div>
+<div class="list_input"><div class="input_title">關鍵字</div><input type="text" class="input"/>
+</div>
+<div class="btn"><a href="#" class="send_btn"></a><a href="#" class="cancel_btn"></a></div>
+</div>
+</div>
+
+<div class="list_result_all">
+<div class="list_result_smb"><p>查詢商品：</p><p class="c1">石英磚</p>
+<p style="padding-left:5px;"> 共</p><p class="c1">165</p><p>筆</p></div>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"  id="one">
+  <tr>
+    <td width="2%" bgcolor="#CCCCCC">&nbsp;</td>
+    <td width="3%" bgcolor="#CCCCCC">#</td>
+    <td width="13%" bgcolor="#CCCCCC">訂單號碼</td>
+    <td width="10%" bgcolor="#CCCCCC">訂購會員</td>
+    <td width="10%" bgcolor="#CCCCCC">狀  態</td>
+    <td width="10%" bgcolor="#CCCCCC">總   價</td>
+    <td width="55%" bgcolor="#CCCCCC">運送資料</td>
+    <td width="10%" bgcolor="#CCCCCC">建立時間</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle"><img src="images/new.gif" width="11" height="11" /></td>
+    <td align="center" valign="middle">1</td>
+    <td align="center" valign="middle"> 12345678901234</td>
+    <td align="center" valign="middle"> 王小明</td>
+    <td align="center" valign="middle"> 待處理</td>
+    <td align="center" valign="middle"> 9999,9999</td>
+    <td align="center" valign="middle"> 012台北市忠孝東路五段101巷15弄5號5f-2        </td>
+    <td align="center" valign="middle">2013-01-05 PM14:02</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle">2</td>
+    <td align="center" valign="middle"> 12345678901234</td>
+    <td align="center" valign="middle"> 王小明</td>
+    <td align="center" valign="middle"> 待處理</td>
+    <td align="center" valign="middle"> 9999,9999</td>
+    <td align="center" valign="middle"> 012台北市忠孝東路五段101巷15弄5號5f-2 </td>
+    <td align="center" valign="middle">2013-01-05 PM14:02</td>
+    </tr>
+  <tr>
+    <td align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle">3</td>
+    <td align="center" valign="middle"> 12345678901234</td>
+    <td align="center" valign="middle"> 王小明</td>
+    <td align="center" valign="middle"> 待處理</td>
+    <td align="center" valign="middle"> 9999,9999</td>
+    <td align="center" valign="middle"> 012台北市忠孝東路五段101巷15弄5號5f-2 </td>
+    <td align="center" valign="middle">2013-01-05 PM14:02</td>
+    </tr>
+  <tr>
+    <td align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle">4</td>
+    <td align="center" valign="middle"> 12345678901234</td>
+    <td align="center" valign="middle"> 王小明</td>
+    <td align="center" valign="middle"> 待處理</td>
+    <td align="center" valign="middle"> 9999,9999</td>
+    <td align="center" valign="middle"> 012台北市忠孝東路五段101巷15弄5號5f-2 </td>
+    <td align="center" valign="middle">2013-01-05 PM14:02</td>
+    </tr>
+</table>
+<div class="page"><a href="#"><</a>．<a href="#">1</a>．<a href="#">2</a>．<a href="#">3</a>．<a href="#">4</a>．<a href="#">5</a>．<a href="#">6</a>．<a href="#">></a></div>
+</div>
+
+<div class="footer">
+<p>Copyright © 2013 CAMPAC</p>
+</div>
+
+</div>
+</body>
+</html>
