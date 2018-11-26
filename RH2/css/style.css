@@ -25,7 +25,7 @@ select, input, textarea, button {  /*font-family:'Roboto', 'Noto Sans TC',Arial,
 html, body{ height: 100%; }
 
 /*===== start ======*/
-.ContentsBox{ max-width: 1000px; margin: 0 auto; min-width: 320px;}
+.ContentsBox{ max-width: 1000px; margin: 0 auto; min-width: 300px;}
 
 /*header*/
 .HeaderBox{ width: 100%;}
@@ -92,7 +92,7 @@ line-height: 0px; _border-color: #ffffff #000000 #000000 #000000; _filter: progi
 .purpose ul.vision li:hover h4::before{ background-size: 100%;}
 
 .purpose ul.vision li p.p_info{ font-size: 14px; line-height: 24px; }
-.purpose ul.vision li p.p_en{ text-align: left; }
+.p_en{ text-align: left !important; }
 
 .align_flex{display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .service{ background: url(../images/products/inside_service.jpg) center center no-repeat; background-size: cover; background-attachment: fixed; height:100vh; min-height: 350px; }
