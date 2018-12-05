@@ -1,0 +1,12 @@
+
+/* ---------- basic theme: these are the most necessary styles --------------------------------- */
+
+.scrollbar-pane { margin-right: 0px; }
+.scrollbar-handle-container { background: #EEE; width: 20px; }
+.scrollbar-handle { width: 20px; background: #999; }
+.scrollbar-handle:hover { background: #666; }
+.scrollbar-handle.move { background: #111; }
+.scrollbar-handle-up { width: 20px; height: 20px; background: #DDD; }
+.scrollbar-handle-up:hover { background: #666; }
+.scrollbar-handle-down { width: 20px; height: 20px; background: #DDD; }
+.scrollbar-handle-down:hover { background: #666; }

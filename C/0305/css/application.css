@@ -1,0 +1,42 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+a.btna{background:url(../images/product/btn_v.png) no-repeat 0px -3px; width:108px;height:30px; position:absolute; top:5%; right:11%; z-index:79999;text-indent:-99999px;}
+
+a.btna:hover{background-position:0px -38px;}
+
+a.btnb{background:url(../images/product/btn_v.png) no-repeat -108px -3px; width:110px;height:30px; position:absolute; top:5%; right:2%; z-index:79999;text-indent:-99999px;}
+
+a.btnb:hover{background-position:-108px -38px;}
+
+a.btnc{background:url(../images/product/btn_v.png) no-repeat -216px -3px; width:112px;height:30px; position:absolute; top:5%; right:-8%; z-index:79999;text-indent:-99999px;}
+
+a.btnc:hover{background-position:-216px -38px;}
+
+
+/*文字區塊*/
+
+.shop{
+	width:260px;	
+	background:#fff;
+    background-color:#000;
+	color:#FFF;
+	padding:5px;
+	position:fixed;
+	bottom:170px;
+	right:30px;
+    padding:15px;
+    opacity:.8;
+    filter: alpha(opacity=80);
+}
+
+.shop .title{
+	font-size:24px;
+	font-weight:bold;
+}
+
+.shop .text{
+	font-size:14px;
+    margin-top:15px;
+}
+
