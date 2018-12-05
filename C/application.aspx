@@ -19,12 +19,11 @@
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
 		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
-		
-		
+
     <asp:Literal ID="lt_img" runat="server"></asp:Literal>
 
 	</head>
-	
+
 	<style type="text/css">
         ul#demo-block {
             margin: 0 15px 15px 15px;
@@ -46,8 +45,7 @@
                     font-weight: bold;
                 }
     </style>
-	
-	
+
 
 <body>
 	<!--文字區塊-->
@@ -57,7 +55,7 @@
 </div>
     </div>-->
 	<!--選單列-->
-	
+
     <div class="nav" id="menunav">
     	<h1><a href="index.html"></a></h1>
         <ul>
@@ -83,44 +81,42 @@
 	<!--Thumbnail Navigation-->
 	<div id="prevthumb"></div>
 	<div id="nextthumb"></div>
-	
+
 	<!--Arrow Navigation-->
     <!--
 	<a id="prevslide" class="load-item"></a>
 	<a id="nextslide" class="load-item"></a>
     -->
-	
+
   <div id="thumb-tray" class="load-item">
 		<div id="thumb-back"></div>
 		<div id="thumb-forward"></div>
 	</div>
-	
+
 	<!--Time Bar-->
 	<!--<div id="progress-back" class="load-item">
 		<div id="progress-bar"></div>
 	</div>
-	
 	<!--Control Bar-->
    <div id="controls-wrapper" class="load-item">
 		<div id="controls">
-			
+
 			<!--<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>-->
-		
+
 			<!--Slide counter
 		<div id="slidecounter">
 				<span class="slidenumber"></span><span class="totalslides"></span>
 			</div>-->
-			
-			
+
+
 			<!--Thumb Tray button-->
 			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
-			
+
 			<!--Navigation
 			<ul id="slide-list"></ul>-->
-			
+
 		</div>
 </div>
-	
 <!--	<div class="footer"><p class="copyright"></p></div>-->
 
 </body>

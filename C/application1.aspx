@@ -59,7 +59,7 @@
     	  <li class="navAbout"><a href="about.html"></a></li>
           <li class="navProduct"><a href="product.html"></a></li>
           <li class="navApplication">
-          <a href="application.aspx"></a>
+          <a href="application1.aspx"></a>
           <ul>
           <li><a href="application1.aspx" class="app1Btn">居家應用</a></li>
           <li><a href="application2.aspx" class="app2Btn">商業空間</a></li>
