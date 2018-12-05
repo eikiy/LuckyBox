@@ -19,28 +19,33 @@
     <form id="form1" runat="server">
     <div id="wrapper">
         <!--Slides-->
-        <div id="supersize">
-            <a>
- <a><img src="images/bg/bg01.jpg" title=""/></a>
-	<a><img src="images/bg/bg02.jpg" title=""/></a>
-    <a><img src="images/bg/bg02-1.jpg" title=""/></a>
-    <a><img src="images/bg/bg02-2.jpg" title=""/></a>
-    <a><img src="images/bg/bg02-3.jpg" title=""/></a>
-                    
-                    
-        </div>
+<div id="supersize">
+  <a><img src="images/banner/banner-1.jpg" title=""/></a>
+  <a><img src="images/banner/banner-2.jpg" title=""/></a>
+  <a><img src="images/banner/banner-3.jpg" title=""/></a>
+  <a><img src="images/banner/banner-4.jpg" title=""/></a>
+  <a><img src="images/banner/banner-5.jpg" title=""/></a>
+  <a><img src="images/banner/banner-6.jpg" title=""/></a>
+</div>
+        <div class="COMPAC_logo"></div>
         <div class="nav" id="menunav">
     	<h1><a href="index.html"></a></h1>
         <ul>
-    	  <li class="navAbout"><a href="about.html"></a></li>
-          <li class="navProduct"><a href="product.html"></a></li>
+          <li class="navAbout"><a href="about.html">公司簡介</a></li>
+          <li class="navProduct"><a href="product.html">產品介紹</a></li>
           <li class="navApplication">
-          <a href="application.aspx"></a>
+              <a>產品應用</a>
+              <ul>
+                  <li><a href="application1.aspx">居家應用</a></li>
+                  <li><a href="application2.aspx">商業空間</a></li>
+                  <li><a href="application3.aspx">康沛石專賣店</a></li>
+                  <li><a href="application4.aspx">活動紀事</a></li>
+              </ul>
           </li>
-          <li class="navTech"><a href="tech.html"></a></li>
-          <li class="navContact"><a href="contact.aspx"></a></li>
+          <li class="navTech"><a href="tech.html">技術規格</a></li>
+          <li class="navContact"><a href="contact.aspx">聯絡我們</a></li>
           <li class="navScroll"></li>
-    	</ul>
+        </ul>
 	</div>
         <div class="footer">
             <p class="copyright">

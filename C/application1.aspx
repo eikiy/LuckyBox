@@ -56,19 +56,19 @@
     <div class="nav" id="menunav">
     	<h1><a href="index.html"></a></h1>
         <ul>
-    	  <li class="navAbout"><a href="about.html"></a></li>
-          <li class="navProduct"><a href="product.html"></a></li>
+    	  <li class="navAbout"><a href="about.html">公司簡介</a></li>
+          <li class="navProduct"><a href="product.html">產品介紹</a></li>
           <li class="navApplication">
-          <a href="application1.aspx"></a>
-          <ul>
-          <li><a href="application1.aspx" class="app1Btn">居家應用</a></li>
-          <li><a href="application2.aspx" class="app2Btn">商業空間</a></li>
-          <li><a href="application3.aspx" class="app3Btn">康沛石專賣店</a></li>
-          <li><a href="application4.aspx" class="app4Btn">活動紀事</a></li>
-          </ul>
+	          <a>產品應用</a>
+	          <ul>
+	              <li><a href="application1.aspx">居家應用</a></li>
+	              <li><a href="application2.aspx">商業空間</a></li>
+	              <li><a href="application3.aspx">康沛石專賣店</a></li>
+	              <li><a href="application4.aspx">活動紀事</a></li>
+	          </ul>
           </li>
-          <li class="navTech"><a href="tech.html"></a></li>
-          <li class="navContact"><a href="contact.aspx"></a></li>
+          <li class="navTech"><a href="tech.html">技術規格</a></li>
+          <li class="navContact"><a href="contact.aspx">聯絡我們</a></li>
           <li class="navScroll"></li>
     	</ul>
 	</div>
@@ -116,7 +116,7 @@
 		</div>
 </div>
 	
-<!--	<div class="footer"><p class="copyright"></p></div>-->
+<!--	<div class="footer"><p class="copyright">©COMPAC.ALL Rights Reserved</p></div>-->
 
 </body>
 </html>

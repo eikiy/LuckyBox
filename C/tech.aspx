@@ -33,15 +33,21 @@
   <div class="nav" id="menunav">
     	<h1><a href="index.aspx"></a></h1>
         <ul>
-    	  <li class="navAbout"><a href="about.aspx"></a></li>
-          <li class="navProduct"><a href="product.aspx"></a></li>
+        <li class="navAbout"><a href="about.html">公司簡介</a></li>
+          <li class="navProduct"><a href="product.html">產品介紹</a></li>
           <li class="navApplication">
-          <a href="application.aspx"></a>
+            <a>產品應用</a>
+            <ul>
+                <li><a href="application1.aspx">居家應用</a></li>
+                <li><a href="application2.aspx">商業空間</a></li>
+                <li><a href="application3.aspx">康沛石專賣店</a></li>
+                <li><a href="application4.aspx">活動紀事</a></li>
+            </ul>
           </li>
-          <li class="navTech"><a href="tech.aspx"></a></li>
-          <li class="navContact"><a href="contact.aspx"></a></li>
+          <li class="navTech"><a href="tech.html">技術規格</a></li>
+          <li class="navContact"><a href="contact.aspx">聯絡我們</a></li>
           <li class="navScroll"></li>
-    	</ul>
+      </ul>
 	</div>
   <div class="fix_close"></div>
   <div class="content">
