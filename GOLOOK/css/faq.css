@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Microsoft JhengHei;
+	}
+h3{
+	color:#ea6d52;
+	}
+
+.faq_menu{
+	margin-top:50px;
+}
+
+.faq_menu_xs{
+	margin-top:50px;
+	}
+	
+@media (max-width: 768px) {
+	.banner{
+		background-image:url(../image/company_banner_xs-04.png);}
+}
+	
+
+.qa_title{
+	margin-top:15px;
+	margin-left:15px;
+	}
+	
+.qa_quastion{
+	
+	}
+	
+.qa_question:hover{
+	color:#ea6d52;
+	}

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Microsoft JhengHei;
+	}
+h3{
+	color:#ea6d52;
+	}
+
+.banner{
+	height:550px;
+	width:100%;
+	background-image:url(../image/company_banner.jpg);
+	background-size:cover;
+	margin-top:50px;
+	padding-top:50px;
+	}
+
+@media (max-width: 768px) {
+	.banner{
+		background-image:url(../image/company_banner_xs-04.png);}
+}
+
+#company_logo{
+	background-color:rgba(119, 217, 195, 0.7);
+	width:250px;
+	height:100px;
+	margin:0 auto;
+	padding:20px;
+	}
+
+.company_applyform_input{
+	padding-right:10px;
+	padding-left:10px;
+	}
+
+
+.welfare {background-image: url(../image/br_l_shop.jpg);}
+.welfare #company_logo{ background-color: #ffd8cf; }
+
+.contract_banner{ height: 250px; background-image: url(../image/bg_contract.jpg); }
+
+.contract_list{ border-top: 1px solid #dfdfdf; padding-bottom: 50px; }
+.contract_list h3{ padding: 50px 0 15px 0; }
+.contract_list p{ font-size: 17px; }
+.contract_list ul.nb{ list-style-type: decimal; padding-inline-start: 30px;}
+.contract_list ul.nb li ul.abc{ list-style-type: upper-alpha;}
+.contract_list span.under_line{ border-bottom: 1px solid #ea6d52; color: #ea6d52; margin: 0 5px; letter-spacing: 2px; }
+
+.company_information{ width: 100%;  text-align: left; padding-top:50px; }
+.company_information table{ display: inline-block; padding:0 40px 20px 0; }
+
+.service_specialist{ width: 100%; margin-top: 30px; padding-top:30px; border-top: 1px solid #dfdfdf;}
+.service_specialist p.ex{ font-size: 14px; padding-top: 10px; }
+.service_specialist h4{ font-size: 17px; font-weight: bold; color: #333; padding-top: 25px; }
+
+.online_pay{ border-top: 1px solid #dfdfdf; padding-top: 30px;}
+.online_pay h3{ margin-bottom: 20px; }
+
+/*popup - style*/
+.white-popup { position: relative; background: #FFF; padding:50px 30px; width: auto; max-width: 1200px; margin: 20px auto;}
+.mfp-fade.mfp-bg {  opacity: 0; -webkit-transition: all 0.15s ease-out; -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
+.mfp-fade.mfp-bg.mfp-ready { opacity: 0.5;}
+.mfp-fade.mfp-bg.mfp-removing { opacity: 0;}
+.mfp-fade.mfp-wrap .mfp-content { opacity: 0; -webkit-transition: all 0.15s ease-out;  -moz-transition: all 0.15s ease-out;  transition: all 0.15s ease-out;}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content { opacity: 1;}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content { opacity: 0;}
+
+#popup iframe{ width: 100%; height: 400px}
+/*popup - style END*/

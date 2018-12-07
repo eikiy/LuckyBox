@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Microsoft JhengHei;
+	}
+h3{
+	color:#ea6d52;
+	}
+
+.banner{
+	height:550px;
+	width:100%;
+	background-image:url(../image/individual/banner.jpg);
+	background-size:cover;
+	margin-top:50px;
+	padding-top:50px;
+	}
+	
+@media (max-width: 768px) {
+	.banner{
+		background-image:url(../image/individual/banner_xs.jpg);}
+}
+	
+#company_logo{
+	background-color:rgba(255, 215, 136, 0.7);
+	width:250px;
+	height:100px;
+	margin:0 auto;
+	padding:20px;
+	}
+	
+.individual_menu_1{
+	background-image:url(../image/individual/icon1_1.png);
+	width:200px;
+	height:200px;
+	margin-left:25px;
+	}
+	
+.individual_menu_1:hover{
+	background-image:url(../image/individual/icon2_1.png);
+	}
+	
+.individual_menu_2{
+	background-image:url(../image/individual/icon1_2.png);
+	width:200px;
+	height:200px;
+	margin-left:25px;
+	}
+	
+.individual_menu_2:hover{
+	background-image:url(../image/individual/icon_2_2.png);
+	}	
+	
+.individual_menu_3{
+	background-image:url(../image/individual/icon1_3.png);
+	width:200px;
+	height:200px;
+	margin-left:25px;
+	}
+	
+.individual_menu_3:hover{
+	background-image:url(../image/individual/icon_2_3.png);
+	}	
+	
+.individual_menu_4{
+	background-image:url(../image/individual/icon1_4.png);
+	width:200px;
+	height:200px;
+	margin-left:25px;
+	}
+	
+.individual_menu_4:hover{
+	background-image:url(../image/individual/icon_2_4.png);
+	}

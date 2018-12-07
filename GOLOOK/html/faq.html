@@ -1,0 +1,382 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="..\css\index.css" rel="stylesheet" type="text/css">
+    <link href="..\css\faq.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script type="text/javascript" src="..\js\menu.js"></script>
+    <!-- app interduce -->
+    <script>
+      var slideIndex = 1;
+                                                                                                                                                                                      showDivs(slideIndex);
+                                                                                                                                                                                      
+                                                                                                                                                                                      function plusDivs(n) {
+                                                                                                                                                                                        showDivs(slideIndex += n);
+                                                                                                                                                                                      }
+                                                                                                                                                                                      
+                                                                                                                                                                                      function currentDiv(n) {
+                                                                                                                                                                                        showDivs(slideIndex = n);
+                                                                                                                                                                                      }
+                                                                                                                                                                                      
+                                                                                                                                                                                      function showDivs(n) {
+                                                                                                                                                                                        var i;
+                                                                                                                                                                                        var x = document.getElementsByClassName("index_mobile");
+                                                                                                                                                                                        var dots = document.getElementsByClassName("demo");
+                                                                                                                                                                                        if (n > x.length) {slideIndex = 1}    
+                                                                                                                                                                                        if (n < 1) {slideIndex = x.length}
+                                                                                                                                                                                        for (i = 0; i < x.length; i++) {
+                                                                                                                                                                                           x[i].style.display = "none";  
+                                                                                                                                                                                        }
+                                                                                                                                                                                        for (i = 0; i < dots.length; i++) {
+                                                                                                                                                                                           dots[i].className = dots[i].className.replace("", "");
+                                                                                                                                                                                        }
+                                                                                                                                                                                        x[slideIndex-1].style.display = "block";  
+                                                                                                                                                                                        dots[slideIndex-1].className += "";
+                                                                                                                                                                                      }
+    </script>
+    <!--captcha-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head><body>
+    <!--facebook fance clube-->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+                                                                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                                                                if (d.getElementById(id)) return;
+                                                                                                js = d.createElement(s); js.id = id;
+                                                                                                js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.7";
+                                                                                                fjs.parentNode.insertBefore(js, fjs);
+                                                                                              }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-static-top menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" id="menu_logo" class="svg"><embed src="..\image\golook.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" class="menu_logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right w3-medium">
+            <li class="menu_text">
+              <a href="#footer_download">下載</a>
+            </li>
+            <!--<li class="menu_text">
+              <a href="#">常見問題</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--question menu-->
+    <div class="faq_menu hidden-sm hidden-xs section">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center w3-text-grey w3-margin-bottom">常見問題</h3>
+          <div class="col-md-4 w3-margin-bottom">
+            <a href="#qa_section1"><img src="../image/faq/faq_menu1.png" class="img-responsive"></a>
+            <div class="w3-display-topmiddle w3-container w3-margin-top">
+              <h3 class="w3-text-white">電子會員卡</h3>
+            </div>
+          </div>
+          <div class="col-md-4 w3-margin-bottom">
+            <a href="#qa_section2"><img src="../image/faq/faq_menu2.png" class="img-responsive"></a>
+            <div class="w3-display-topmiddle w3-container w3-margin-top">
+              <h3 class="w3-text-white">電子識別證</h3>
+            </div>
+          </div>
+          <div class="col-md-4 w3-margin-bottom">
+            <a href="#qa_section3"><img src="../image/faq/faq_menu3.png" class="img-responsive"></a>
+            <div class="w3-display-topmiddle w3-container w3-margin-top">
+              <h3 class="w3-text-white">軟體操作</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--mobile menu-->
+    <div class="hidden-lg hidden-md">
+      <h3 class="text-center w3-text-grey w3-margin-bottom faq_menu_xs">常見問題</h3>
+      <div>
+        <a href="#qa_section1"><img src="../image/faq/faq_menu1_xs.png" class="img-responsive w3-margin-bottom"></a>
+      </div>
+      <div>
+        <a href="#qa_section2"><img src="../image/faq/faq_menu2_xs.png" class="img-responsive w3-margin-bottom"></a>
+      </div>
+      <div>
+        <a href="#qa_section3"><img src="../image/faq/faq_menu3_xs.png" class="img-responsive"></a>
+      </div>
+    </div>
+    <!--question-->
+    <div class="section" id="qa_section1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 w3-padding-top">
+            <h3 class="text-center typo w3-margin-bottom w3-padding-bottom">電子會員卡</h3>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion" href="#collapse1" class="qa_question" data-toggle="collapse"><p>
+                      
+                      收藏電子會員卡需要個人資料嗎？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>收藏電子會員卡完全不需要填寫額外的個人資料喔！GOLOOK考量到我們申請會員卡時，常常需要填寫許多申請表，而有個資外流的疑慮，為了讓大家享有會員優惠的同時，也能確保個人資料的隱私，因此GOLOOK的合作商家，都是只需收藏電子會員卡即成為會員囉！</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion" href="#collapse2" class="qa_question" data-toggle="collapse"><p>
+                     如何發行電子會員卡？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>謝謝您願意進一步了解GOLOOK，歡迎您至http://goo.gl/ms1EZ填入您的聯絡資料，我們將於48小時內提供您所需的說明或資料。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion" href="#collapse3" class="qa_question" data-toggle="collapse"><p>
+                      
+                      出示會員卡之後，業者不給使用怎麼辦？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>在正常情況下，電子會員卡都是可以被識別與使用的。當然也會有例外狀況，發生在電子會員卡於門市出示時，遭店員以卡片過期或其他理由拒絕使用。我們建議您當下記錄人、事、時、地、物等事件，並直接與該企業總部反映，通常都可以獲得不錯的回應與補償。
+                      <br>您可進行下列步驟：
+                      <br>(1) 撥打總部申訴電話，您可至該企業官方網站查詢，多數會有免付費專線
+                      <br>(2) 清楚說明人、事、時、地、物，讓該公司能清楚判斷是否為它們的過失
+                      <br>(3) 說明您的消費者權益已經受損
+                      <br>由於GOLOOK是電子卡發卡中心，這項服務是由業者提出申請使用，因此本中心並無立場代表消費者向業者提出申訴。但在平台經營的立場下，我們會協助消費者進行權益受損的溝通，並請業者落實內部教育訓練，避免同樣的事情再度發生。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="qa_section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 w3-padding-top">
+            <h3 class="text-center typo w3-margin-bottom w3-padding-bottom">電子識別證</h3>
+            <div class="panel-group" id="accordion1">
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion1" href="#collapse4" class="qa_question" data-toggle="collapse"><p>
+                      
+                      什麼是電子識別證？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>電子識別證是因應智慧型手機普及趨勢所產生的新形態服務，主要為解決和提升現有實體識別證享受優惠的問題，歡迎各企業福委或相關單位申請使用，創造貴單位價值。
+                      <br>電子識別證的特色和功能如下：
+                      <br>1.「特約優惠管理系統」方便族群團體管理特約優惠資料。
+                      <br>2. 藉由收藏於手機的電子識別證可隨時查詢附近的特約商家，手機帶出門，即是將優惠帶出門。
+                      <br>3. 我方將不定期提供品牌特約優惠，擴大福利範圍。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion1" href="#collapse5" class="qa_question" data-toggle="collapse"><p>
+                     電子識別證需要費用嗎？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>電子識別證主要協助福委或相關單位提升成員福利，達到服務加分和提升貴單位價值！</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion1" href="#collapse6" class="qa_question" data-toggle="collapse"><p>
+                      
+                      如何申請電子識別證？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>此服務需要簽屬簡單的合約，因此與需要和貴單位的福委或相關窗口接洽。歡迎於企業頁面填寫申請聯絡資料，或是來信golook.service@gmail.com，我們將於兩個工作天內與您聯繫唷。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion1" href="#collapse7" class="qa_question" data-toggle="collapse"><p>
+                      
+                      我已經有公司的電子識別証了，還需要收藏其他的電子會員卡嗎？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>若您是該品牌的愛好者，您可以再收藏專屬的電子會員卡，除了直接成為該品牌的會員，也能第一時間收到商家的優惠通知或活動訊息喔！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="qa_section3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 w3-padding-top">
+            <h3 class="text-center typo w3-margin-bottom w3-padding-bottom">軟體操作</h3>
+            <div class="panel-group" id="accordion2">
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion2" href="#collapse8" class="qa_question" data-toggle="collapse"><p>
+                      
+                      智慧型裝置支援系統</p></a>
+                  </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>以下是GOLOOK軟體適用版本與系統安裝建議
+                      <br>系統平台：Android 4.1 以上版本
+                      <br>系統平台 : iOS 8.0 以上</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion2" href="#collaps9" class="qa_question" data-toggle="collapse"><p>
+                     如果手機遺失或更換，該怎麼辦？</p></a>
+                  </h4>
+                </div>
+                <div id="collaps9" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>任何擁有的卡片以及相關的活動資訊，都會被記錄在個人帳號上，即使更換設備，只要使用同一個帳號登入都能延續過往累積的資料唷。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="qa_title">
+                  <h4 class="panel-title w3-text-black">
+                    <a data-parent="#accordion2" href="#collapse10" class="qa_question" data-toggle="collapse"><p>
+                      
+                      如何查詢可使用的優惠？</p></a>
+                  </h4>
+                </div>
+                <div id="collapse10" class="panel-collapse collapse //in">
+                  <div class="panel-body">
+                    <p>開啟GOLOOK的APP，點選您的電子識別證請點選下方的功能列選擇「可用據點」，電子識別證會依您現在的所在位置(需開啟裝置定位功能)，由近而遠排序推薦在您附近的特約優惠，或您也可以選擇右上方的地圖，切換成地圖模式以便您前往。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <h3 class="hidden-sm hidden-xs text-center">
+            <span class="w3-text-black">若以上的資訊尚無法解決您的疑問，我們很樂意協助您的問題，
+              <br>您可以寄信至</span>golook.service@gmail.com</h3>
+          <h5 class="hidden-lg hidden-md text-center w3-text-black">若以上的資訊尚無法解決您的疑問，我們很樂意協助您的問題， 您可以寄信至
+            <span class="redtext">golook.service@gmail.com</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="footer">
+      <div class="container">
+        <div class="row footer">
+          <div class="col-md-6">
+            <embed src="..\image\golook_w.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" class="menu_logo">
+            <h4 class="typo">用簡單豐富生活</h4>
+            <div class="col-md-3 footer_contactus_text">
+              <p>服務單位</p>
+            </div>
+            <div class="col-md-9">
+              <p>第一美卡事業股份有限公司 行動商務小組</p>
+            </div>
+            <div class="col-md-3 footer_contactus_text">
+              <p>服務據點</p>
+            </div>
+            <div class="col-md-9">
+              <p>台北市大安區金山南路2段222號5樓</p>
+            </div>
+            <div class="col-md-3 footer_contactus_text">
+              <p>服務信箱</p>
+            </div>
+            <div class="col-md-9">
+              <p>golook.service@gmail.com</p>
+            </div>
+            <div class="col-md-3 footer_contactus_text">
+              <p>連絡電話</p>
+            </div>
+            <div class="col-md-9">
+              <p>02 33222836</p>
+            </div>
+            <div class="col-md-3 footer_contactus_text ">
+              <p>傳真電話</p>
+            </div>
+            <div class="col-md-9">
+              <p>02 33222836</p>
+            </div>
+            <div class="hidden-lg hidden-md">
+              <a href="https://www.facebook.com/golook.fans/?fref=ts"><span class="yellowtext">GOLOOK+粉絲專頁</span></a>
+            </div>
+            <div class="row w3-margin-bottom" id="footer_download">
+              <div class="col-md-4">
+                <img src="..\image\googleplay_qrcode.png" class="center-block footerqucode_img hidden-sm hidden-xs img-responsive">
+                <a href="https://play.google.com/store/apps/details?id=com.simsix.golook.plus&amp;hl=zh_TW"><h3 class="text-center w3-text-white">Google play</h3></a>
+              </div>
+              <div class="col-md-4">
+                <img src="..\image\appstore_qrcode.png" class="center-block footerqucode_img hidden-sm hidden-xs img-responsive">
+                <a href="https://itunes.apple.com/tw/app/golook+/id908662369?mt=8"><h3 class="text-center w3-text-white">App store</h3></a>
+              </div>
+            </div>
+            <a href="https://plus.google.com/share?url=http%3A//192.168.1.5/NewWeb/html/index.html%23footer_download"><i class="-plus fa fa-2x fa-fw fa-google-plus-square"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//192.168.1.5/NewWeb/html/index.html%23footer_download"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+            <a href="http://service.weibo.com/share/share.php?appkey=&amp;url="><i class="fa fa-2x fa-fw fa-weibo"></i></a>
+            <a href="https://twitter.com/home?status=http%3A//192.168.1.5/NewWeb/html/index.html%23footer_download"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
+          </div>
+          <!-- facebook fance clube -->
+          <div class="col-md-6 hidden-xs">
+            <div class="fb-page" data-href="https://www.facebook.com/golook.fans/?fref=ts" data-tabs="timeline" data-width="500" data-height="100%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/golook.fans/?fref=ts" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/golook.fans/?fref=ts">Golook 電子會員卡</a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <span class="greytext">
+          <p>Copyright © 2018 Beautiful Card Corporation. All rights reserved.</p>
+        </span>
+      </div>
+    </div>
+  
+
+</body></html>
