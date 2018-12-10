@@ -67,4 +67,9 @@ h3{
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content { opacity: 0;}
 
 #popup iframe{ width: 100%; height: 400px}
+
 /*popup - style END*/
+
+.out_link a{ text-decoration: underline; }
+.out_link a:hover{ color: #898989; text-decoration: none; }
+.special_store {background-image: url(../image/bn_r_cafe.jpg);}
