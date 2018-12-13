@@ -47,6 +47,7 @@ h3{
 .contract_list ul.nb{ list-style-type: decimal; padding-inline-start: 30px;}
 .contract_list ul.nb li ul.abc{ list-style-type: upper-alpha;}
 .contract_list span.under_line{ border-bottom: 1px solid #ea6d52; color: #ea6d52; margin: 0 5px; letter-spacing: 2px; }
+.contract_list input{padding: 3px 10px; margin: 0 5px; border-radius: 4px; border:1px solid #dfdfdf; color: #eb7960;}
 
 .company_information{ width: 100%;  text-align: left; padding-top:50px; }
 .company_information table{ display: inline-block; padding:0 40px 20px 0; }
