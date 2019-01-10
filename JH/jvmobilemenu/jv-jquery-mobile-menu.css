@@ -10,18 +10,26 @@ ul.submenu{ padding-top:10px;}
 .hamburger .bar{width:24px;height:2px;background:#4d4d4d;position:absolute;top:0}
 .hamburger .bar.bar2,.hamburger .bar.bar3{top:9px; }
 .hamburger .bar.bar4{top:18px; }
-.hamburger.open{position: fixed; top: 5px;}
+.hamburger.open{position: fixed; top: 5px;  z-index:220;}
 .hamburger.open .bar1,.hamburger.open .bar4{display:none}
-.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #333;}
 
+.mobile-nav ul.socialBox{ width: 100%; text-align: center; padding: 60px 0 0; }
+.mobile-nav ul.socialBox li{ display: inline-block; margin: 0 3px; }
+.mobile-nav ul.socialBox li a{ width: 40px; height: 40px; display: block; border-radius: 50%; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.2); background-position: center center; background-repeat: no-repeat; background-size: 40%;  }
+.mobile-nav ul.socialBox li a.map{ background-image: url(../images/icon_add.png); }
+.mobile-nav ul.socialBox li a.phone{ background-image: url(../images/icon_phone.png); }
+.mobile-nav ul.socialBox li a.fb{ background-image: url(../images/icon_facebook.png); }
 
-.mobile-nav{ width:260px !important; background-color:#636363; z-index:16;}
-.mobile-nav ul.Oneself{ width:100%; padding-top: 50px;}
-.mobile-nav ul.Oneself li{ padding: 10px 20px; border-bottom: 1px solid #ffffff17; }
+.mobile-nav{ width:260px !important; background-color:#ececec; z-index:210;}
+.mobile-nav ul.Oneself{ width:100%;}
+.mobile-nav ul.Oneself li{ padding: 0px 20px 5px 20px; }
 .mobile-nav ul.Oneself li:last-child{ border:none; }
-.mobile-nav ul.Oneself li h3{ color: #c3c6c7; font-size: 17px; padding: 10px; }
-.mobile-nav ul.Oneself li h3 a{ color: #fff; }
-
+.mobile-nav ul.Oneself li h3{ color: #c3c6c7; font-size: 15px; padding: 10px 0 10px 10px; }
+.mobile-nav ul.Oneself li h3 a{ color: #333; }
+.mobile-nav ul.Oneself li .submenu{ padding-left: 92px; }
+.mobile-nav ul.Oneself li p{ font-size: 13px; }
+.mobile-nav ul.Oneself li p a{ color: #6E6E6E; padding: 3px 0; display: block;}
 .mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
 
 @media (max-width:1000px){.hamburger{ display:block;}}
