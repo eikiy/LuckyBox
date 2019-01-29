@@ -1,11 +1,41 @@
-@media (max-width: 768px) {
-  .orderpreview {
-    display: none;
-    }
-  }
+@charset "utf-8";
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img, abbr, acronym { border:0;}
+ol, ul { list-style:none;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
+p{ font-size: 15px;}
+a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+a:hover{ text-decoration:none;}
+select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{ padding: 0; width: 100%; margin: 0; height: 100%; }
+
+
+  .shop_contents{ width: 100%; height: 100%; }
+  .top_step_contents{ width: 100%; }
+
+  .wellbox{ padding: 20px; background-color: #f5f5f5; border: 1px solid #e3e3e3;}
+  .orderpreview h3.top_title{ margin: 0 0 25px 0; font-size: 20px; font-weight: bold; }
+  .orderpreview h3.top_title span{ border-bottom: 2px solid #fddb5a; padding-bottom: 5px; }
+  .orderpreview .a_list{ width: 100%; padding-bottom:8px; border-bottom: 1px dashed #bebebe; margin-bottom: 8px; vertical-align: middle; }
+  .orderpreview p{ width: calc(100% - 124px); float: left; padding: 5px 10px; height: 100%; }
+  .orderpreview p.left_item{ float: left; width: 124px; background-color: #fddb5a;}
+
+
   .orderpreview {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 30%; /* Set the width of the sidebar */
+    width: 355px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -17,7 +47,10 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding: 150px 2% 0px 1%;
   }
+
+@media (max-width: 768px) {.orderpreview { display: none; }}
   
+
   .footer {
     position: fixed;
     left: 0;
@@ -29,6 +62,8 @@
     text-align: center;
     z-index:10;
   }
+  .footer p{ color: #fff; }
+
   .amount-text {
     vertical-align: bottom;
     cursor: pointer;
@@ -59,7 +94,7 @@
   /* 因為orderpreview太小時會隱藏，所以要對應更改margin */
   @media (max-width: 768px) {
   .iiot-main-form {
-    margin: 30px 0 100px 0; 
+    margin: 30px 0 100px 0
     }
   }
   @media screen and (min-width: 768px) {
@@ -69,9 +104,9 @@
 
     /* 增加preview區域以後 */
     margin: 30px 30% 100px 0;
+    }
   }
-  }
-  
+
 
   /* for nav bar */
   .stepwizard-step p {
@@ -94,29 +129,43 @@
   }
 
   .stepwizard-row:before {
-    top: 14px;
-    bottom: 0;
+    top: 25px;
+    left: 12.5%;
     position: absolute;
     content: " ";
-    width: 100%;
+    width: 75%;
     height: 1px;
-    background-color: #ccc;
-    z-order: 0;
+    background-color: #fff;
+    z-index: 1;
   }
 
   .stepwizard-step {
+    padding: 10px 0;
+    background-color: #fddb5a;
+    width: 25%;
     display: table-cell;
     text-align: center;
     position: relative;
+    padding-top: 40px;
   }
 
   .btn-circle {
+    position: absolute;
     width: 30px;
     height: 30px;
     text-align: center;
+    font-weight: bold;
     padding: 6px 0;
     font-size: 12px;
     line-height: 1.428571429;
     border-radius: 15px;
+    z-index: 2;
+    left:calc(50% - 15px);
+    top: 12px;
+    opacity: 1;
   }
+  .btn-default{ color: #333; background-color: #fff; }
+  .btn-warning{ background-color: #03A9F4; color: #fff; border-color: #03A9F4; }
+  .btn-warning:hover{ opacity: initial; border-color: #03A9F4; background-color: #03A9F4; }
+  .btn.disabled, .btn[disabled], fieldset[disabled] .btn{ opacity: 1; }
   /* for nav bar end */
