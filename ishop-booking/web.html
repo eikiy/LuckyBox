@@ -18,7 +18,7 @@
   <meta property="og:description" content="">
 
   <title>
-    JETFI JP | 
+    JETFI JP |
   </title>
 
   <!-- Bootstrap core CSS -->
@@ -33,6 +33,15 @@
 
   <link rel='stylesheet' href='https://wifiotg-kay.iiot.io/styles/formio.full.min.css'>
   <script src='https://wifiotg-kay.iiot.io/scripts/formio.full.min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(".mob_cart").click(function(){
+        $(this).parent().find('.orderpreview').slideToggle(800);
+      });
+      return false;
+    });
+  </script>
 
   <!-- moment -->
   <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
@@ -282,16 +291,14 @@
 <body>
 
   <div class="shop_contents">
-    <!-- <div class="header">
-      <div class="wrap">
+    <div class="header">
         <div class="newLogo">
           <a href="https://www.iiot.io">
             <img class="iiot-logo-image" src="https://userfiles-dev.iiot.io/businesses/p8WGlOzZ6/U_NLM0gEw0z">
           </a>
         </div>
-      </div>
-    </div> -->
-
+    </div>
+    <a class="mob_cart" href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
     <!-- 新增nav bar -->
     <div class="top_step_contents clearfix">
       <div class="">
