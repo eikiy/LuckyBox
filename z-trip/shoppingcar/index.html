@@ -25,6 +25,7 @@
         </ul>
     </section>
 
+    <!-- 選擇商品 - 內容 -->
     <section class="buy_list">
         <ul class="contents_box">
             <li class="clearfix">
@@ -55,7 +56,7 @@
                     </div>
                 </div>
                 <div class="product_subtotal">
-                    <div class="exbox">
+                    <div class="exbox clearfix">
                         <p class="s_money">小 計 <span>$ 4,300</span></p>
                         <p class="note_code">優惠碼折抵 $500</p>
                     </div>
@@ -80,7 +81,7 @@
                         </div>
                         <div class="voucher">
                             <input class="error" type="text" name="" placeholder="請輸入優惠碼" value="EGW9E13">
-                            <div class="code_note" style=" width: 335px;"><p><span>您的優惠碼無效 ! </span>可能已過期或商品金額未達折扣標準</p></div>
+                            <div class="code_note for_w_more"><p><span>您的優惠碼無效 ! </span>可能已過期或商品金額未達折扣標準</p></div>
                         </div>
                         <div class="redbox-checkbox clearfix">
                             <input id="iknow2" type="checkbox" name="" value="">
@@ -90,7 +91,7 @@
                     </div>
                 </div>
                 <div class="product_subtotal">
-                    <div class="exbox">
+                    <div class="exbox clearfix">
                         <p class="s_money">小 計 <span>$ 8,000</span></p>
                         <p class="note_code">優惠碼折抵 $500</p>
                     </div>
@@ -124,7 +125,7 @@
                     </div>
                 </div>
                 <div class="product_subtotal">
-                    <div class="exbox">
+                    <div class="exbox clearfix">
                         <p class="s_money">小 計 <span>$ 4,300</span></p>
                         <p class="note_code">優惠碼折抵 $500</p>
                     </div>
@@ -153,7 +154,7 @@
                     </div>
                 </div>
                 <div class="product_subtotal">
-                    <div class="exbox">
+                    <div class="exbox clearfix">
                         <p class="s_money">小 計 <span>$ 5,480</span></p>
                         <p class="note_code">優惠碼折抵 $500</p>
                     </div>
@@ -161,14 +162,17 @@
             </li>
         </ul>
         <div class="contents_box total_amount clearfix">
-            <p>運費 $ 160優惠</p>
-            <p>已折扣 - $ 1,380</p>
-            <p>特殊折扣 - $ 1,380</p>
+            <p class="pc">運費 $ 160優惠</p>
+            <p class="pc">已折扣 - $ 1,380</p>
+            <p class="pc">特殊折扣 - $ 1,380</p>
+
+            <p class="mob">已折扣 $ 1,380</p> <!-- 以上三行看是併成一行還是? -->
             <p class="all">結帳金額 <span>$ 17,420</span></p>
         </div>
         <p class="btn_org"><a href="#">下一步</a></p>
     </section>
 
+    <!-- 填寫資訊 - 內容 -->
     <section class="fill_info">
         <form class="shoppingcar_form_box">
             <div class="group clearfix">
@@ -353,6 +357,7 @@
         <p class="btn_org"><a href="#">下一步</a></p>
     </section>
 
+    <!-- 付款/發票資訊 - 內容 -->
     <section class="pay_info">
         <form class="shoppingcar_form_box">
             <div class="group clearfix">
@@ -375,7 +380,7 @@
             </div>
             <div class="group clearfix">
                 <label class="left_label">信用卡卡號</label>
-                <div class="right_fillbox">
+                <div class="right_fillbox for_w100">
                    <div id="tappay-iframe" class="fbox" style="padding: 6px;">
                         <iframe frameborder="0" allowtransparency="true" scrolling="no" style="border: none; margin: 0px; padding: 0px; width: 1px; min-width: 100%; overflow: hidden; display: block; height: 24px;" src="https://js.tappaysdk.com/tpdirect/v4/card-view/html?%7B%22appKey%22%3A%22app_4R0lByKiPVDYQOqemZ8ERcmsIn5TJB16B8G5R7BUQPmGESOjjdLlwl00zGT8%22%2C%22appID%22%3A13155%2C%22serverType%22%3A%22sandbox%22%2C%22hostname%22%3A%22test.z-trip.com%22%2C%22origin%22%3A%22https%3A%2F%2Ftest.z-trip.com%22%2C%22style%22%3A%7B%22color%22%3A%22rgb(0%2C0%2C0)%22%2C%22fontSize%22%3A%2215px%22%2C%22lineHeight%22%3A%2224px%22%2C%22fontWeight%22%3A%22300%22%2C%22errorColor%22%3A%22red%22%2C%22placeholderColor%22%3A%22%22%7D%7D"></iframe>
                     </div>
@@ -429,7 +434,7 @@
             </li>
         </ul>
 
-        <p class="btn_org btn_red"><a href="#">確認送出</a></p>
+        <p class="btn_org btn_red no_function"><a href="#">確認送出</a></p>
     </section>
 </main>
 
