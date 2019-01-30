@@ -9,7 +9,7 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/goto.js"></script>
 </head>
 
@@ -17,18 +17,21 @@
 <body>
 
 <main class="main_shoppingcar">
-    <section class="top_step">
+    <section class="top_step" id="top_step">
         <ul class="contents_box clearfix">
-            <li class="btn_in"><p><span>Step1.</span> 選擇商品</p></li>
-            <li><p><span>Step2.</span> 填寫資訊</p></li>
-            <li><p><span>Step3.</span> 付款/發票資訊</p></li>
+            <li class="step-1 btn_in"><p><span>Step1.</span> 選擇商品</p></li>
+            <li class="step-2"><p><span>Step2.</span> 填寫資訊</p></li>
+            <li class="step-3"><p><span>Step3.</span> 付款/發票資訊</p></li>
         </ul>
     </section>
 
     <!-- 選擇商品 - 內容 -->
-    <section class="buy_list">
+    <section class="buy_list" id="buy_list">
         <ul class="contents_box">
-            <li class="clearfix">
+            <!-- 租才會有 the_switch -->
+            <li class="clearfix the_switch">
+                <a class="show_info"></a>
+                <a class="hide_info"></a>
                 <a class="delete" title="刪除"></a>
                 <div class="product_photo">
                     <a href="#" target="_blank">
@@ -63,7 +66,9 @@
                 </div>
             </li>
 
-            <li class="clearfix">
+            <li class="clearfix the_switch">
+                <a class="show_info"></a>
+                <a class="hide_info"></a>
                 <a class="delete" title="刪除"></a>
                 <div class="product_photo">
                     <a href="#" target="_blank">
@@ -98,7 +103,9 @@
                 </div>
             </li>
 
-            <li class="clearfix">
+            <li class="clearfix the_switch">
+                <a class="show_info"></a>
+                <a class="hide_info"></a>
                 <a class="delete" title="刪除"></a>
                 <div class="product_photo">
                     <a href="#" target="_blank">
@@ -162,18 +169,16 @@
             </li>
         </ul>
         <div class="contents_box total_amount clearfix">
-            <p class="pc">運費 $ 160優惠</p>
-            <p class="pc">已折扣 - $ 1,380</p>
-            <p class="pc">特殊折扣 - $ 1,380</p>
-
-            <p class="mob">已折扣 $ 1,380</p> <!-- 以上三行看是併成一行還是? -->
+            <p>運費 $ 160優惠</p>
+            <p>已折扣 - $ 1,380</p>
+            <p>特殊折扣 - $ 1,380</p>
             <p class="all">結帳金額 <span>$ 17,420</span></p>
         </div>
-        <p class="btn_org"><a href="#">下一步</a></p>
+        <p class="btn_org"><a class="goto_step2">下一步</a></p>
     </section>
 
     <!-- 填寫資訊 - 內容 -->
-    <section class="fill_info">
+    <section class="fill_info" id="fill_info" style="display: none;">
         <form class="shoppingcar_form_box">
             <div class="group clearfix">
                 <label class="left_label">姓名</label>
@@ -354,19 +359,20 @@
                 </div>
             </div>
         </form>
-        <p class="btn_org"><a href="#">下一步</a></p>
+        <p class="btn_org"><a class="goto_step3">下一步</a></p>
     </section>
 
     <!-- 付款/發票資訊 - 內容 -->
-    <section class="pay_info">
+    <section class="pay_info" id="pay_info" style="display: none;">
         <form class="shoppingcar_form_box">
             <div class="group clearfix">
                 <label class="left_label">付款方式</label>
                 <div class="right_fillbox">
-                    <div class="box3 clearfix">
+                    <div class="clearfix">
                         <div class="styled-select w_01">
                             <select class="md-input form-control" id="payWay" name="payWay">
-                                <option value="Credit" selected="">信用卡</option>
+                                <option value="Credit">信用卡(一次付清)</option>
+                                <option value="Cardpayment" selected="">信用卡(分期付款)</option>
                                 <option value="GooglePay">Google Pay</option>
                                 <option value="ApplePay">Apple Pay</option>
                                 <option value="LinePay">Line Pay</option>
@@ -376,6 +382,24 @@
                             </select>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="group clearfix">
+                <label class="left_label">分期期數</label>
+                <div class="right_fillbox">
+                    <div class="clearfix">
+                        <div class="styled-select w_01">
+                            <select class="md-input form-control" id="" name="">
+                                <option value="" selected="">請選擇分期期數</option>
+                                <option value="">3期 x 171元(3%)</option>
+                                <option value="">6期 x 86元(4%)</option>
+                                <option value="">9期 x 58元(5%)</option>
+                                <option value="">12期 x 44元(6%)</option>
+                                <option value="">24期 x 22元(9%)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="p_note p_gray">每個商品可接受的信用卡分期期數可能不同，系統會自動呈現您購物車中商品共同可接受的分期期數已利您進行結帳。<a href="#" target="_blank">可分期銀行</a></p>
                 </div>
             </div>
             <div class="group clearfix">
@@ -436,6 +460,12 @@
 
         <p class="btn_org btn_red no_function"><a href="#">確認送出</a></p>
     </section>
+
+    <div class="contents_box total_amount for_mob_total clearfix">
+        <p>已折扣 $ 1,380</p> <!-- 看這些折扣資訊是要併成一行?，還是? -->
+        <p class="all">結帳金額 <span>$ 17,420</span></p>
+        <p class="btn_org btn_red no_function"><a href="#">確認送出</a></p>
+    </div>
 </main>
 
 </body>
