@@ -151,11 +151,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff8', end
 .bottom_terms li span a{color: #337ab7; text-decoration: underline; }
 .bottom_terms li span a:hover{ text-decoration: none; }
 
-p.btn_org{ text-align: center; margin: 0 auto; padding: 40px 0; cursor: pointer; font-weight: bold; letter-spacing: 5px; cursor: pointer;}
-p.btn_org a{ background-color: #ff8a00; width: 100%; color: #fff; border-radius: 4px; line-height: 54px; display: inline-block; max-width: 362px; }
-p.btn_org a:hover{ opacity: .8; }
-p.btn_red a{ background-color: #ff3564;  }
-p.no_function a{ background-color: #999; cursor: no-drop; }
+p.bt_btn { text-align: center; margin: 0 auto; padding:25px 0 40px 0; cursor: pointer; font-weight: bold; letter-spacing: 5px; cursor: pointer;}
+p a.btn_org{ background-color: #ff8a00; padding:0 40px; color: #fff; margin: 0 10px; border-radius: 4px; line-height: 45px; display: inline-block; /*max-width: 362px;*/ }
+p a.btn_org:hover{ opacity: .8; }
+p a.btn_red{ background-color: #ff3564;  }
+p a.no_function{ background-color: #999; cursor: no-drop; }
 
 .main_shoppingcar .for_mob_total{ display: none; position: fixed; bottom: 0; width: 100%; left: 0; z-index: 100; box-shadow: 0 0 5px rgba(0,0,0,.2); padding: 15px 20px; }
 .main_shoppingcar .for_mob_total p{ display: block; float: none; line-height: initial; padding: 0;}
@@ -165,7 +165,7 @@ p.no_function a{ background-color: #999; cursor: no-drop; }
 
 /*收合*/
 .main_shoppingcar .buy_list a.show_info{ cursor: pointer; z-index: 20; position: absolute; bottom: 10px; right: 5px; width: 40px; height: 30px; display: none; background: url(../images/show_more.png) center center no-repeat; background-size: contain; }
-.main_shoppingcar .buy_list a.hide_info{ cursor: pointer; z-index: 20; position: absolute; bottom: 20px; right: 5px; width: 40px; height: 30px; display: none; background: url(../images/hide_more.png) center center no-repeat; background-size: contain; }
+.main_shoppingcar .buy_list a.hide_info{ cursor: pointer; z-index: 20; position: absolute; bottom: 20px; right: 5px; width: 40px; height: 30px; display: block; background: url(../images/hide_more.png) center center no-repeat; background-size: contain; }
 
 /*==== RWD ====*/
 @media (max-width:1020px){
@@ -179,14 +179,13 @@ p.no_function a{ background-color: #999; cursor: no-drop; }
 	.main_shoppingcar .buy_list .product_subtotal .exbox{ width: 100%; border-top: 1px solid #dddddd; border-left: none; padding: 10px 20px; }
 	.main_shoppingcar .buy_list .product_subtotal p.note_code{ float: right; line-height: 45px; }
 	.main_shoppingcar .buy_list .product_subtotal p.s_money{ float: right; line-height: 45px; padding-left: 25px; padding-right: 25px; }
-	.main_shoppingcar .buy_list .product_subtotal p.s_money span{ display: inline-block;padding: 0; padding-left: 20px;  }
-	p.btn_red{ position: fixed; width: 150px; z-index: 100; bottom: 20px; right: 15px; padding: 0; letter-spacing: 1px; }
+	.main_shoppingcar .buy_list .product_subtotal p.s_money span{ display: inline-block;padding: 0; padding-left: 10px;  }
 }
 @media (max-width:900px){
 	.main_shoppingcar .top_step ul li p{ font-size: 18px; }
 	.main_shoppingcar .total_amount{ display: none; }
 	.main_shoppingcar .for_mob_total{ display: block !important;  }
-
+	p.bt_btn a.btn_red{ position: fixed;  z-index: 100; bottom: 20px; right: 15px; padding: 0 40px; letter-spacing: 1px; }
 }
 @media (max-width:800px){
 	.main_shoppingcar .top_step ul li p{ font-size: 16px; }
@@ -216,9 +215,12 @@ p.no_function a{ background-color: #999; cursor: no-drop; }
 	.main_shoppingcar .total_amount{padding: 10px 15px;}
 	.main_shoppingcar .total_amount p.all span{ font-size: 25px;}
 
-	p.btn_org{ max-width: 150px; }
+	/*p.btn_org{ max-width: 150px; }*/
 	p.btn_org a{ line-height: 42px;}
 	p.btn_red{ width: 100px; letter-spacing: 0;}
+}
+@media (min-width:500px){
+	.main_shoppingcar .buy_list a.hide_info{ display: none !important; }
 }
 @media (max-width:500px){
 	.main_shoppingcar .buy_list .product_info .bottom_item .voucher{ padding: 0 0 0 10px;width: calc(100% - 140px); }
@@ -234,6 +236,10 @@ p.no_function a{ background-color: #999; cursor: no-drop; }
 	.main_shoppingcar .buy_list .the_switch .product_subtotal p.note_code{ display: none; }
 	.main_shoppingcar .buy_list .the_switch .product_subtotal p.s_money{ position: absolute; bottom: 0; left: 130px; padding: 0; }
 	.main_shoppingcar .buy_list .the_switch .product_subtotal p.s_money span{ padding-left: 5px; font-size: 20px; }
+	.main_shoppingcar .buy_list .the_switch a.hide_info{ display: none; }
+
+	p a.btn_org, p.bt_btn a.btn_red{padding: 0 20px;}
+
 }
 @media (max-width:360px){
 	.main_shoppingcar .buy_list .product_info .product_item p{ font-size: 13px; line-height: 20px; }
@@ -241,5 +247,6 @@ p.no_function a{ background-color: #999; cursor: no-drop; }
 	.main_shoppingcar .buy_list .product_info .bottom_item .input_quantity button{ width: 33px; }
 	.main_shoppingcar .buy_list .product_info .bottom_item .input_quantity input{ padding: 2px 5px; width: 42px; }
 	.main_shoppingcar .buy_list .product_info .bottom_item .redbox-checkbox a{ font-size: 14px; }
-	.main_shoppingcar .buy_list .product_subtotal p.note_code{ float: right; font-size: 13px; }
+	.main_shoppingcar .buy_list .product_subtotal p.note_code{ float: right; font-size: 13px; padding-right: 25px; line-height: 20px; }
+	.main_shoppingcar .total_amount p.all span{ font-size: 20px; padding: 0; }
 }

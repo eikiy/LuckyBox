@@ -5,7 +5,17 @@ $(function(){
 	return false;
 });
 
-
+$(function(){
+	$('a.goto_step1').click(function(){
+		$('#fill_info').hide();
+		$('#pay_info').hide();
+		$('#buy_list').show();
+		$('html,body').animate({scrollTop:0},900);
+		$('#top_step ul.contents_box').find('li').removeClass('btn_in');
+		$('#top_step ul.contents_box').find('li.step-1').addClass('btn_in');
+	});
+	return false;
+});
 
 $(function(){
 	$('a.goto_step2').click(function(){
@@ -35,7 +45,7 @@ $(function(){
 	$('.the_switch a.show_info').click(function(){
 		$(this).parent().removeClass('the_switch');
 		$(this).hide();
-		$(this).parent().find('a.hide_info').show();
+		$(this).parent().find('a.hide_info').css('display', 'block');
 	});
 	return false;
 });
@@ -48,4 +58,3 @@ $(function(){
 	});
 	return false;
 });
-
