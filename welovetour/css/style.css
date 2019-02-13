@@ -32,10 +32,11 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 /*header*/
 .HeaderBox{ width: 100%; min-height: 78px; background-color: #000000; border-bottom: 5px solid #d1ab1b;}
 .HeaderBox .ContentsBox{ position: relative; /*max-width: calc(100% - 40px);*/}
-.HeaderBox h1.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px;}
+.HeaderBox h1.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px; display: block;}
 .HeaderBox h1.logo a{ color: #666;  width: 183px; height: 50px; display: block; background: url(../images/welovetour_logo.png) center center no-repeat; background-size: contain;}
-.HeaderBox .the_mob_btn{ float: right; display: none; padding: 20px 15px; font-size:24px; cursor:pointer; color: #fff;}
-.HeaderBox .the_mob_btn span{ font-size: 22px; }
+.HeaderBox .the_mob_btn{ float: right; display: none; padding: 20px 15px; padding-top: 25px; line-height: 24px; cursor:pointer; color: #d9b00f;}
+.HeaderBox .the_mob_btn span.title{ font-size: 22px; padding-right: 10px; }
+.HeaderBox .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
 
 .HeaderBox .TopBox{ float: left; width: 100%; max-width:calc(100% - 235px); }
 .HeaderBox .TopBox ul.top_menu{ display: inline-block; float: left; }
@@ -44,13 +45,21 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .HeaderBox .TopBox ul.top_menu li h3{ font-size: 20px; cursor: pointer; padding: 50px 40px 50px 30px; ; line-height: 22px; color: #ffffff;position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .HeaderBox .TopBox ul.top_menu li h3.none_arr{padding: 50px 30px;}
 .HeaderBox .TopBox ul.top_menu li h3.none_arr:after{ display: none; }
+.HeaderBox .TopBox ul.top_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
+.HeaderBox .TopBox ul.top_menu li h3 a:hover{ color: #d1ab1b;}
 .HeaderBox .TopBox ul.top_menu li h3:after{ content:""; right: 22px; top: calc(50% - 5px); position: absolute; width: 13px; height: 10px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image:url(../images/icon_arr_w.png);  }
 .HeaderBox .TopBox ul.top_menu li:hover h3{ color: #d1ab1b; }
 .HeaderBox .TopBox ul.top_menu li:hover h3:after{ background-image:url(../images/icon_arr_y.png);}
-.HeaderBox .TopBox ul.top_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
-.HeaderBox .TopBox ul.top_menu li h3 a:hover{ color: #d1ab1b;}
-.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ display: none;}
-.HeaderBox .TopBox ul.top_menu li ul.sub_menu li{ float: none; }
+
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; min-width: 175px; top: 70px; left: 0; background-color: rgba(40,40,40,.85); padding: 20px 30px;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li{ width: 100%; float: none; }
+.HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu{ min-width: 530px; }
+.HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu li{ float: left; width: inherit; min-width: 92px; }
+.HeaderBox .TopBox ul.top_menu li:nth-child(2) ul.sub_menu{ min-width: 200px; }
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li::after{ display: none; }
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p{ font-size: 18px; }
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a{ color: #ffffff; padding: 8px 0; display: block;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a:hover{color: #d1ab1b; }
 
 p.social_box{ float: left; text-align: left; }
 p.social_box a{ width: 30px; height: 30px; margin: 0 1px; display: inline-block; background-color: #d1ab1b;  border-radius: 50%; background-repeat: no-repeat; background-position: center center; background-size: contain;}
@@ -65,6 +74,8 @@ p.social_box a:hover{ opacity: .8; }
 
 /*Main_Contents*/
 .Main_Contents{ width: 100%; background-color: #fff;}
+
+.Main_Contents .main_banner{ width: 100%; height: 600px; background: url(../images/banner/index-banner1.jpg) center center no-repeat; background-size: cover; }
 .Main_Contents .travel_name{ width: 100%; }
 .Main_Contents .travel_name h2.main_title{ padding:25px 15px; border-bottom: 1px solid #d1ab1b; color: #3a3a3a; font-size: 28px; text-align: center; }
 .Main_Contents .travel_name h2.main_title span{ color: #d1ab1b;}
@@ -154,9 +165,7 @@ p.social_box a:hover{ opacity: .8; }
 .Main_Contents .travel_aircraft_flight .aircraft_box tr td, .Main_Contents .travel_aircraft_flight .aircraft_box tr th{ vertical-align: middle; }
 .Main_Contents .travel_aircraft_flight .aircraft_box tr td p{ color: #fff; font-size: 18px;line-height: 46px; }
 
-.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{
-	 height: 46px; display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: center center; background-size: contain;
-}
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ height: 46px; display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: center center; background-size: contain;}
 .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01{ width: 106px; background-image: url(../images/bg_aircraft_td_01.png) ;}
 .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02{ width:213px; background-image: url(../images/bg_aircraft_td_02.png) ;}
 .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ width:271px; background-image: url(../images/bg_aircraft_td_03.png) ;}
@@ -242,9 +251,9 @@ p.social_box a:hover{ opacity: .8; }
 
 .fixed_go_menu{ position: fixed; right: 5%; top:calc(50% - 257px); z-index: 10; }
 .fixed_go_menu p.link{ color: #fff; text-align: center; font-size: 13px; background-color: #927400; border:2px solid #775e00; }
-.fixed_go_menu p.link a{ width:85px; height: 85px; display: block; padding-top: 60px; border-bottom: 2px solid #775e00; position: relative; cursor: pointer; }
+.fixed_go_menu p.link a{ width:85px; height: 85px; display: block; padding-top: 68%; border-bottom: 2px solid #775e00; position: relative; cursor: pointer; }
 .fixed_go_menu p.link a:last-child{ border-bottom: none; }
-.fixed_go_menu p.link a::after{ content: ""; position: absolute; top: 0; left: 0; width: 85px; height: 60px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.fixed_go_menu p.link a::after{ content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 60px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain;}
 .fixed_go_menu p.link a:hover{ background-color: #000; }
 .fixed_go_menu p.link a.go_01::after{ background-image:url(../images/fixed_go_menu_icon_01.png);}
 .fixed_go_menu p.link a.go_02::after{ background-image:url(../images/fixed_go_menu_icon_02.png);}
@@ -280,23 +289,36 @@ p.social_box a:hover{ opacity: .8; }
 	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ line-height: 38px; height: 38px; }
 	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ background-image: url(../images/bg_aircraft_td_02.png); width: 180px;}
 }
-@media (max-width:1150px){
+@media (max-width:1175px){
 	.HeaderBox .TopBox ul.top_menu li h3{ font-size: 18px; padding-left: 25px; padding-right: 33px; }
 	.HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 25px; }
 	.HeaderBox .TopBox ul.top_menu li h3:after{ right: 15px; }
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ padding: 20px 25px; }
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p{ font-size: 16px; }
+}
+@media (max-width:1130px){
+	.HeaderBox .TopBox ul.top_menu li h3, .HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 15px; }
+	.HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-right: 15px;}
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ padding: 20px; }
 }
 @media (max-width:1100px){
-	.HeaderBox .TopBox ul.top_menu li h3, .HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 17px; }
+	.HeaderBox .TopBox ul.top_menu li h3, .HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 10px; }
+	.HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-right: 10px;}
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ padding: 20px 10px; }
 }
 @media (max-width:1000px){
+	.HeaderBox{ position: fixed; top: 0; left: 0; z-index: 15;}
 	.HeaderBox h1.logo{ padding: 15px 20px;}
-	.Main_Contents .travel_aircraft_flight .aircraft_box{ height: 170px; }
 	.HeaderBox .TopBox{ display: none; }
 	.HeaderBox .the_mob_btn{ display: block; }
+
+	.Main_Contents{padding-top: 78px;}
+	.Main_Contents .travel_aircraft_flight .aircraft_box{ height: 170px; }
+	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 24px; }
+
 	.FooterBox p.social_box{ padding-top: 0; }
 	/*.Main_Contents h4.sub_title{ font-size: 26px; }*/
 	/*.Main_Contents p.description{ font-size: 17px; }*/
-	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 24px; }
 }
 @media (max-width:950px){
 	.Main_Contents .travel_daily_itinerary .itinerary_info{ max-width: 100%; }
@@ -308,6 +330,7 @@ p.social_box a:hover{ opacity: .8; }
 }
 
 @media (max-width:850px){
+	.Main_Contents .main_banner{ height:75vw;}
 	.Main_Contents .travel_aircraft_flight .aircraft_box{ display: none; }
 	.Main_Contents .travel_aircraft_flight .aircraft_box_mob{ display: block; }
 	/*.Main_Contents .travel_aircraft_flight .aircraft_box{ height: 165px; padding-bottom: 30px; }
@@ -329,6 +352,9 @@ p.social_box a:hover{ opacity: .8; }
 	.Main_Contents .travel_itinerary .version_04 .photo_02{ float: initial; }
 	.Main_Contents .travel_daily_itinerary .photo{ float: left; width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);}
 
+	.fixed_go_menu p.link a{ width: 75px; height: 75px; }
+	.fixed_go_menu p.link a::after{ height: 50px; }
+
 }
 @media (max-width:750px){
 	/*.Main_Contents p.description{ font-size: 16px; }
@@ -347,10 +373,22 @@ p.social_box a:hover{ opacity: .8; }
 	.Main_Contents .top_title_line::before{ left: -20px; }
 	.Main_Contents .top_title_line::after{ right: -20px;}
 
-	.Main_Contents .travel_price table.ticket_price{width: calc(100% + 30px); margin-left:-20px; max-width: calc(100% + 30px);  }
+	.Main_Contents .travel_price table.ticket_price{width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);  }
 }
-.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 1;  top: 0;  right: 0;  background-color: #111;  overflow-x: hidden;  transition: 0.5s;  padding-top: 60px;}
-.sidenav a {  padding: 8px 8px 8px 32px;  text-decoration: none;  font-size: 22px;  color: #818181;  display: block;  transition: 0.3s;}
+@media (max-width:600px){
+	.HeaderBox h1.logo a{ width: 120px; height: 32px; }
+	.HeaderBox{ min-height: 65px; }
+	.HeaderBox .the_mob_btn{padding: 15px 20px;}
+	.HeaderBox .the_mob_btn span.title{ display: none; }
+	.fixed_go_menu{ top: inherit; bottom: 100px;}
+	.fixed_go_menu p.link{ font-size: 11px; }
+	.fixed_go_menu p.link a{ width: 55px; height: 55px; }
+	.fixed_go_menu p.link a::after{ height: 35px; }
+	.fixed_go_menu p.link a.mob_none{ display: none; }
+	.Main_Contents{padding-top: 67px;}
+}
+.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;  padding-top: 60px;}
+.sidenav a {  padding: 8px 8px 8px 32px;  text-decoration: none;  font-size: 22px;  color: #fff;  display: block;  transition: 0.3s;}
 .sidenav a:hover {  color: #f1f1f1;}
 .sidenav .closebtn {  position: absolute;  top: 0;  right: 25px;  font-size: 36px;  margin-left: 50px;}
 

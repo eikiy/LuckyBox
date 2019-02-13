@@ -22,18 +22,18 @@ $(function(){
 	return false;
 });
 
-// $(function(){
-// 	$( "ul.menu_type li h5" ).click(
-// 	 function() {
-// 	 	$(this).parent().find('ul.the_sub_menu').show();
-// 	    $(this).parent().addClass("open");
-// 	  }, function() {
-// 	  	$(this).parent().find('ul.the_sub_menu').hide();
-// 	    $(this).parent().removeClass("open");
-// 	  }
-// 	);
-// 	return false;
-// });
+$(function(){
+	$( "ul.top_menu li" ).hover(
+	 function() {
+	 	$(this).find('ul.sub_menu').show();
+	    // $(this).parent().addClass("open");
+	  }, function() {
+	  	$(this).find('ul.sub_menu').hide();
+	    // $(this).parent().removeClass("open");
+	  }
+	);
+	return false;
+});
 
 
 // $(function(){
