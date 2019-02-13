@@ -28,10 +28,6 @@
 	margin-right: 0px;	
 	margin-left: 0px;	
 }
-body #slider{
-  overflow: hidden;
-  padding-top: 94px;
-} 
 
 /*.slides li .slider-caption p {
 	display: none;
@@ -54,20 +50,7 @@ body #slider{
     width: 25%;
 }*/
 
-/*header {
-    position: inherit !important;
-}
-#top-header {
-	position: fixed;
-	z-index: 5500;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    top: 0;
-}
-#main-header {
-	margin: 76px 0 0;
-}*/
+
 .logoo {
 	z-index: 9999999999;
 }

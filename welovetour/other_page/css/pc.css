@@ -9,39 +9,6 @@
 	clear: both;
 }
 
-header{
-	position: fixed;
-	z-index: 5500;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;   
-    
-}
-#slider {
-  overflow: hidden;
-  padding-top: 160px;
- 
-} 
-
-/*#slider {
-  overflow: hidden;
-  padding-top: 160px;
-}*/ 
-
-/*#slider .slides li .slider-caption p {
-	padding-left: 600px;
-	text-align: left;
-	
-}
-*/
-/*.pagecontenttext img {
-	margin-bottom: 5px;
-}
-.width {
-	
-	margin-left:21%;
-	margin-right:21%;
-}*/
 .lineform {
 	display: none;
 }

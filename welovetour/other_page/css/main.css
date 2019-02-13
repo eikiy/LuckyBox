@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img { border:0;}
+ol, ul { list-style:none;}
+abbr, acronym { border:0;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #000;}
+p{ font-size: 16px;}
+a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+a:hover{ text-decoration:none;}
+select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{ height: 100%; }
+
+html{ background-color: #000; }
+.for_blur{ -webkit-filter: blur(0.4rem); -moz-filter: blur(0.4rem); -o-filter: blur(0.4rem); -ms-filter: blur(0.4rem); filter: blur(0.4rem);}
+
+/*===== start ======*/
+.ContentsBox{ max-width: 1260px; margin: 0 auto; /*min-width: 320px;*/}
+
+p.social_box{ float: left; text-align: left; }
+p.social_box a{ width: 30px; height: 30px; margin: 0 1px; display: inline-block; background-color: #d1ab1b;  border-radius: 50%; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+p.social_box a.googlefrom{ background-image:url(../images/main/icon_social_googlefrom.png);}
+p.social_box a.line_icon{ background-image:url(../images/main/icon_social_line.png);}
+p.social_box a.facebook{ background-image:url(../images/main/icon_social_facebook.png);}
+p.social_box a.youtube{ background-image:url(../images/main/icon_social_youtube.png);}
+p.social_box a:hover{ background-color: #fff; }
+
+
+.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
+.sidenav a { /* padding: 8px 8px 8px 32px;*/  text-decoration: none;  color: #fff;  display: block;  transition: 0.3s;}
+.sidenav a:hover {  color: #f1f1f1;}
+.sidenav .closebtn { text-align: right; padding: 10px 10px 0px; top: 0; width: 300px; font-size: 36px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow-y: auto; }
+
+.sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; }
+.sidenav ul.side_menu li{position: relative;}
+.sidenav ul.side_menu li::after{ content: ""; position: absolute; bottom: 0; left: -20px; width: 100%; height: 1px; background-color: #8d7827;}
+.sidenav ul.side_menu li h3{ font-size: 22px; color: #fff; position: relative; cursor: pointer; padding: 15px 0;}
+.sidenav ul.side_menu li h3:after{ content:""; right: 22px; top: calc(50% - 5px); position: absolute; width: 13px; height: 10px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image:url(../images/main/icon_arr_w.png);  }
+.sidenav ul.side_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
+.sidenav ul.side_menu li h3 a:hover{ color: #d1ab1b;}
+
+.sidenav ul.side_menu li p{ font-size: 18px; }
+.sidenav ul.side_menu li p a{ padding: 10px 0; }
+
+.sidenav ul.side_menu li:hover h3{ color: #d1ab1b; }
+.sidenav ul.side_menu li:hover h3:after{ background-image:url(../images/main/icon_arr_y.png);}
+.sidenav ul.side_menu li h3.none_arr:after{ display: none; }
+
+.sidenav ul.side_menu li ul.sub_menu{ display: none; padding-bottom: 20px; }
+.sidenav ul.side_menu li ul.sub_menu li::after{ display: none; }
+.sidenav ul.side_menu li:first-child ul.sub_menu li{ width: 50%; float: left; }
+.sidenav p.social_box a{width: 35px; height: 35px; margin: 0 5px;}
+
+/*header*/
+.HeaderBox{ width: 100%; min-height: 78px; background-color: #000000; border-bottom: 5px solid #d1ab1b;}
+.HeaderBox .ContentsBox{ position: relative;}
+.HeaderBox h3.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px; display: block;}
+.HeaderBox h3.logo a{ color: #666;  width: 183px; height: 50px; display: block; background: url(../images/main/welovetour_logo.png) center center no-repeat; background-size: contain;}
+.HeaderBox .the_mob_btn{ float: right; display: none; padding: 20px 15px; padding-top: 25px; line-height: 24px; cursor:pointer; color: #d9b00f;}
+.HeaderBox .the_mob_btn span.title{ font-size: 22px; padding-right: 10px; }
+.HeaderBox .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/main/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
+
+.HeaderBox .TopBox{ float: left; width: 100%; max-width:calc(100% - 235px); }
+.HeaderBox .TopBox ul.top_menu{ display: inline-block; float: left; }
+.HeaderBox .TopBox ul.top_menu li{ float: left; position: relative;}
+.HeaderBox .TopBox ul.top_menu li::after{ content: ""; width: 1px; height: 68px; border-left: 1px solid #d1ab1b; position: absolute; left: 0; top: 0; }
+.HeaderBox .TopBox ul.top_menu li h3{ font-size: 20px; cursor: pointer; padding: 50px 40px 50px 30px; ; line-height: 22px; color: #ffffff;position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.HeaderBox .TopBox ul.top_menu li h3.none_arr{padding: 50px 30px;}
+.HeaderBox .TopBox ul.top_menu li h3.none_arr:after{ display: none; }
+.HeaderBox .TopBox ul.top_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
+.HeaderBox .TopBox ul.top_menu li h3 a:hover{ color: #d1ab1b;}
+.HeaderBox .TopBox ul.top_menu li h3:after{ content:""; right: 22px; top: calc(50% - 5px); position: absolute; width: 13px; height: 10px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image:url(../images/main/icon_arr_w.png);  }
+.HeaderBox .TopBox ul.top_menu li:hover h3{ color: #d1ab1b; }
+.HeaderBox .TopBox ul.top_menu li:hover h3:after{ background-image:url(../images/main/icon_arr_y.png);}
+
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; min-width: 175px; top: 70px; left: 0; background-color: rgba(40,40,40,.85); padding: 20px 30px;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li{ width: 100%; float: none; }
+.HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu{ min-width: 530px; }
+.HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu li{ float: left; width: inherit; min-width: 92px; }
+.HeaderBox .TopBox ul.top_menu li:nth-child(2) ul.sub_menu{ min-width: 200px; }
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li::after{ display: none; }
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p{ font-size: 18px; }
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a{ color: #ffffff; padding: 8px 0; display: block;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a:hover{color: #d1ab1b; }
+
+.HeaderBox p.social_box{ padding-top: 45px; }
+
+/*Main_Contents*/
+.Main_Contents{ width: 100%;}
+
+.Main_Contents .main_banner{ width: 100%; height: 600px; background: url(../images/main/banner/index-banner1.jpg) center center no-repeat; background-size: cover; }
+.Main_Contents .travel_date_departure{ width: 100%; }
+.Main_Contents .travel_date_departure .ContentsBox{ position: relative; }
+.Main_Contents  h1.travel_main_title{ padding:25px 0 5px 0;font-size: 28px; text-align: center; color: #222; }
+.Main_Contents  h2.travel_sub_title{ color: #d1ab1b; font-size: 28px; text-align: center; padding: 6px 0 20px 0; border-bottom: 1px solid #d1ab1b; }
+
+.Main_Contents .travel_date_departure .trip_date_list{ width: 100%; padding: 20px; }
+.Main_Contents .travel_date_departure .trip_date_list p.top_title{  font-size: 20px; line-height: 34px; text-align: center; padding: 20px 0;}
+
+.Main_Contents .travel_date_departure .trip_date_list table.date_box{ width: 100%; border:1px solid #2c2c2c; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr th { background-color: #505050; border-left:1px solid #fff; padding: 5px;}
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr th p{ color: #fff; text-align: left; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td{ padding: 5px; border-top:1px solid #808080; border-left:1px solid #808080; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day{ color: #808080;}
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day s{ color: #333; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day a{ color: #0000ff; text-decoration: underline; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day a:hover{ text-decoration: inherit; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr th:first-child, .Main_Contents .travel_date_departure .trip_date_list table.date tr td:first-child{ border-left: none; }
+
+.Main_Contents p.mob_go_menu{ width: 100%; display: none; border:1px solid #d3d3d3; z-index: 15; border-width: 0 1px 1px 1px; background-color: #fff; top: 67px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.Main_Contents p.mob_go_menu a{ float: left; width: 25%; cursor: pointer; text-align: center; padding: 12px 0 8px 0; border-bottom: 4px solid #fff; position: relative; }
+.Main_Contents p.mob_go_menu a:after{ content: ""; width: 1px; height: 70%; background-color: #d3d3d3; right: 0; bottom: -4px; position: absolute; }
+.Main_Contents p.mob_go_menu a:last-child:after{ display: none; }
+.Main_Contents p.mob_go_menu a:hover{ border-color: #d1ab1b; }
+
+.Main_Contents h3.icon_title{ font-size: 28px; position: relative; line-height: 63px; }
+.Main_Contents h3.icon_title span{ position: relative; padding-left: 76px;}
+.Main_Contents h3.icon_title span::after{ content: ""; left: 0px; position: absolute; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.Main_Contents h3.icon_map{margin: 20px 0;}
+.Main_Contents h3.icon_map span::after{ width: 70px;  top:calc(50% - 31px) ; height: 63px; background-image:url(../images/main/icon_title_map.png);}
+.Main_Contents h3.icon_itinerary span::after{width: 70px; top:calc(50% - 31px) ; height: 63px; background-image:url(../images/main/icon_title_itinerary.png);}
+.Main_Contents h3.icon_aircraft span{ padding-left: 145px; }
+.Main_Contents h3.icon_aircraft span::after{width: 128px; top:calc(50% - 34px) ; height: 69px; background-image:url(../images/main/icon_title_aircraft.png);}
+.Main_Contents h3.icon_daily_itinerary span::after{width: 70px; top:calc(50% - 40px) ; height: 80px; background-image:url(../images/main/icon_title_daily_itinerary.png);}
+.Main_Contents h3.icon_price span{ padding-left: 96px; }
+.Main_Contents h3.icon_price span::after{width: 86px; top:calc(50% - 22px) ; height: 45px; background-image:url(../images/main/icon_title_price.png);}
+
+.Main_Contents h4.sub_title{ font-size: 28px; color: #d1ab1b; padding: 15px 0; }
+.Main_Contents p.description{ font-size: 18px; text-align: justify; line-height: 27px;}
+
+.Main_Contents .travel_itineraries{ width: 100%; }
+.Main_Contents .travel_itineraries .bothbox{ float: left; width: 50%; }
+
+.Main_Contents .travel_itineraries .info_box{ max-width: 550px; padding: 12px; margin: 0 auto; }
+.Main_Contents .travel_itineraries .info_box img{ width: 100%; max-width: 560px; }
+.Main_Contents .travel_itineraries .youtube_box{ text-align: center; padding: 15px 0 25px 0; }
+.Main_Contents .travel_itineraries .youtube_box iframe{ display: inline-block; width: 100%; max-width:560px; height:315px; }
+
+.Main_Contents .travel_itinerary{ width: 100%; }
+.Main_Contents .top_title_line{ text-align: center; padding: 30px 0; position: relative;}
+.Main_Contents .top_title_line::before{ content: ""; position: absolute; width: calc(50% - 120px); top: 50%; left: 0; display: block; height: 1px; border-top: 1px solid #c0c0c0; }
+.Main_Contents .top_title_line::after{ content: ""; position: absolute; width: calc(50% - 120px); top: 50%; right: 0; display: block; height: 1px; border-top: 1px solid #c0c0c0; }
+
+.Main_Contents .travel_itinerary .a_box{ width: 100%; min-height: 462px; }
+.Main_Contents .travel_itinerary .a_box .itinerary_info{ width: 100%; padding: 30px;}
+.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 28px; line-height: 34px; padding: 10px 20px; background-color: #000; color: #fff; display: inline-block; }
+
+.Main_Contents .travel_itinerary .a_box .photo_01, .Main_Contents .travel_itinerary .a_box .photo_02{ width: 50%;background-color: #999; display: inline-block; background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.Main_Contents .travel_itinerary .a_box .photo_01{ max-width: 364px; height: 335px; margin-right: 5px; }
+.Main_Contents .travel_itinerary .a_box .photo_02{ max-width: 470px; height: 430px; }
+
+.Main_Contents .travel_itinerary .version_01{ text-align: right; vertical-align: bottom;  position: relative; padding-top: 45px;}
+.Main_Contents .travel_itinerary .version_01 .itinerary_info h4.sub_title{ color: #000; font-weight: bold;}
+.Main_Contents .travel_itinerary .version_01 .itinerary_info{ position: absolute; z-index: 10; bottom: 4px; min-height: 430px; left: 0; max-width: 534px; width: 100%; padding: 40px;  background-color: #b39c4ae6; text-align: left;}
+.Main_Contents .travel_itinerary .version_01 p.description{ min-height: 180px; }
+
+.Main_Contents .travel_itinerary .version_02{ padding: 16px 0; }
+.Main_Contents .travel_itinerary .version_02 .right_info{ float: left; min-height: 450px; width: 100%; max-width: 60%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.Main_Contents .travel_itinerary .version_02 .itinerary_info{padding:30px 0 30px 60px;}
+.Main_Contents .travel_itinerary .version_02 .photo_01{ max-width: 40%; height: 450px; margin: 0; float: left; }
+
+.Main_Contents .travel_itinerary .version_03{ padding: 5px 0; min-height: 400px; }
+.Main_Contents .travel_itinerary .version_03 .right_info{ float: left; min-height: 390px; width: 100%; max-width: 65%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.Main_Contents .travel_itinerary .version_03 .itinerary_info{padding:30px 0 30px 60px;}
+.Main_Contents .travel_itinerary .version_03 .photo_01{ max-width: 35%; height: 390px; margin: 0; float: left; }
+
+.Main_Contents .travel_itinerary .version_04{ padding: 5px 0; min-height: 400px; }
+.Main_Contents .travel_itinerary .version_04 .right_info{ float: left; min-height: 390px; width: 100%; max-width: 65%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.Main_Contents .travel_itinerary .version_04 .itinerary_info{padding:30px 0 30px 60px;}
+.Main_Contents .travel_itinerary .version_04 .photo_01{ max-width: calc(50% - 4.5px); height: 574px;}
+.Main_Contents .travel_itinerary .version_04 .photo_02{ max-width: calc(50% - 4.5px); float: right; height: 574px; }
+
+/*參考航班*/
+.Main_Contents .travel_aircraft_flight{ background-color: #e7e7e7; padding: 30px 0; }
+.Main_Contents .travel_aircraft_flight .top_title_line::after{width: calc(50% - 145px);}
+.Main_Contents .travel_aircraft_flight .top_title_line::before{width: calc(50% - 145px);}
+
+.Main_Contents .travel_aircraft_flight ul.note{ list-style-type: disc; padding: 20px; }
+.Main_Contents .travel_aircraft_flight ul.note li{padding: 3px 0;}
+.Main_Contents .travel_aircraft_flight ul.note li p{ font-size: 18px; }
+
+.Main_Contents .travel_aircraft_flight .aircraft_box{  width: 100%; text-align: center; max-width: 1255px; padding:20px; height: 207px; background: url(../images/main/bg_aircraft_box.png) center center no-repeat; background-size: contain; }
+.Main_Contents .travel_aircraft_flight .aircraft_box tr th p{ color: #dbb00e; font-size: 20px; }
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td, .Main_Contents .travel_aircraft_flight .aircraft_box tr th{ vertical-align: middle; }
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td p{ color: #fff; font-size: 18px;line-height: 46px; }
+
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ height: 46px; display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01{ width: 106px; background-image: url(../images/main/bg_aircraft_td_01.png) ;}
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02{ width:213px; background-image: url(../images/main/bg_aircraft_td_02.png) ;}
+.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ width:271px; background-image: url(../images/main/bg_aircraft_td_03.png) ;}
+
+.Main_Contents .travel_aircraft_flight .aircraft_box .icon{ width: 40px; height: 40px; display: inline-block; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.Main_Contents .travel_aircraft_flight .aircraft_box .icon_01{ background-image:url(../images/main/icon_aircraft_01.png);}
+.Main_Contents .travel_aircraft_flight .aircraft_box .icon_02{ background-image:url(../images/main/icon_aircraft_02.png);}
+
+.Main_Contents .travel_aircraft_flight .aircraft_box_mob{ width: 100%; display: none; padding-bottom: 10px; border-bottom:1px dashed #666;}
+.Main_Contents .travel_aircraft_flight .aircraft_box_mob h4{font-size: 20px; padding: 15px 0; border:1px solid #333; border-width: 1px 0 1px 0; }
+.Main_Contents .travel_aircraft_flight .aircraft_box_mob p{ padding: 15px 0; font-size: 18px;}
+
+/*每日行程*/
+.Main_Contents .travel_daily_itinerary{ width: 100%; padding: 30px 0;}
+.Main_Contents .travel_daily_itinerary .top_where{ width: 100%; position: relative; padding:25px 0 20px 0;}
+.Main_Contents .travel_daily_itinerary .top_where p.day{ position: absolute; left: 0; top: calc(50% - 45px); font-size: 33px; color: #d1ab1b; }
+.Main_Contents .travel_daily_itinerary .top_where p.day span{ font-size: 70px; padding: 0 5px; }
+.Main_Contents .travel_daily_itinerary .top_where p.location{width:calc(100% - 180px); font-size: 28px; line-height: 44px; padding-left: 25px; margin-left: 180px; border-left: 2px solid #333; min-height: 88px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.Main_Contents .travel_daily_itinerary .top_where p.location span{  width: 100%; }
+
+.Main_Contents .travel_daily_itinerary .version_01{ width: 100%; padding: 35px 0; }
+.Main_Contents .travel_daily_itinerary .itinerary_info{ float: left; max-width:calc(100% - 438px); padding: 15px 0; }
+.Main_Contents .travel_daily_itinerary .itinerary_info p.description{ padding-right: 50px; }
+.Main_Contents .travel_daily_itinerary .itinerary_info p.description span.sub_title{ color: #d1ab1b; }
+.Main_Contents .travel_daily_itinerary .photo{ float: right; width: 100%; max-width: 432px; height: 324px; background-color: #999; display: inline-block; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+
+.Main_Contents .travel_daily_itinerary ul.meals{ text-align: left; }
+.Main_Contents .travel_daily_itinerary ul.meals li{ display: inline-block; min-width: 32%; padding: 0 10px 25px 0; }
+.Main_Contents .travel_daily_itinerary ul.meals li p{ font-size: 18px; }
+.Main_Contents .travel_daily_itinerary ul.meals li p span.left_icon{ font-size: 25px; color: #d1ab1b; padding: 0 10px 0 50px; position: relative;}
+.Main_Contents .travel_daily_itinerary ul.meals li p span.left_icon::after{ content: ""; position: absolute; top: -5px; left: 0; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: #d1ab1b; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.Main_Contents .travel_daily_itinerary ul.meals li p span.breakfast::after{ background-image:url(../images/main/icon_meals_breakfast.png);}
+.Main_Contents .travel_daily_itinerary ul.meals li p span.lunch::after{ background-image:url(../images/main/icon_meals_lunch.png);}
+.Main_Contents .travel_daily_itinerary ul.meals li p span.dinner::after{ background-image:url(../images/main/icon_meals_dinner.png);}
+.Main_Contents .travel_daily_itinerary ul.meals li p span.accommodation::after{ background-image:url(../images/main/icon_meals_accommodation.png);}
+.Main_Contents .travel_daily_itinerary ul.meals li p span.store{ display: inline-block; max-width: 50vw; }
+
+/*售價明細*/
+.Main_Contents .travel_price{ width: 100%; padding: 30px 0;}
+.Main_Contents .travel_price .ad_box{ text-align: center; padding: 0 0 35px 0;}
+.Main_Contents .travel_price img{ display: inline-block; width: 100%; }
+
+.Main_Contents .travel_price h4.sub_title{ font-size: 18px; padding-bottom: 10px; font-weight: bold; }
+.Main_Contents .travel_price p.description{ color: #2b2b2b; padding-bottom: 15px;}
+.Main_Contents .travel_price p.description span { color: #675100;}
+.Main_Contents .travel_price p.description a{ color: #2b2b2b;}
+.Main_Contents .travel_price p.description a:hover{ text-decoration: underline;}
+
+.Main_Contents .travel_price table.ticket_price{ width: 100%; text-align: center; padding-bottom: 40px; }
+.Main_Contents .travel_price table.ticket_price tr th { background-color: #f1ede8; padding: 10px; border:1px solid #e0dedd; border-width: 1px 0 1px 0;}
+.Main_Contents .travel_price table.ticket_price tr th:first-child{ border-left:1px solid #e0dedd; }
+.Main_Contents .travel_price table.ticket_price tr th:last-child{ border-right:1px solid #e0dedd; }
+.Main_Contents .travel_price table.ticket_price tr th p{ font-size: 20px; }
+.Main_Contents .travel_price table.ticket_price tr td{ padding: 10px; vertical-align: middle; }
+.Main_Contents .travel_price table.ticket_price tr:nth-child(odd){ background-color: #f8f6f4;}
+.Main_Contents .travel_price table.ticket_price tr td p{ font-size: 18px; }
+.Main_Contents .travel_price table.ticket_price tr td p a{ color: #fff; padding: 2px; display: inline-block;}
+.Main_Contents .travel_price table.ticket_price tr td p a.type_promotions{ background-color: #a38100; }
+.Main_Contents .travel_price table.ticket_price tr td p a.type_alternate{ background-color: #000000; }
+
+/*FooterBox*/
+.FooterBox{ width: 100%; border-top: 6px solid #d1ab1b; background-color: #000000; }
+.FooterBox p.logo{ float: left; width: 100%; max-width: 220px;  height: 60px; text-indent: -9999px; display: block; background: url(../images/main/welovetour_logo.png) center center no-repeat; background-size: contain;}
+.FooterBox p{ font-size: 13px; color: #bbbbbb; line-height: 24px; letter-spacing: 0.5px; word-wrap: break-word; word-break: break-all;}
+.FooterBox p a{ color: #bbbbbb;  }
+.FooterBox p a:hover{text-decoration: underline; }
+
+.FooterBox .top_title{ color: #d1ab1b; padding-bottom: 5px; }
+.FooterBox h3.top_title{font-size: 18px; letter-spacing: 3px; padding-bottom: 15px;}
+.FooterBox h4.top_title{ font-size: 16px; }
+.FooterBox h5.top_title{ font-size: 13px; letter-spacing: 2px; }
+
+.FooterBox ul.info{ width: 100%; padding: 35px 0;}
+.FooterBox ul.info li{ float: left; position: relative; max-width:30%; min-height: 164px;  padding: 10px 2% 0 2%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.FooterBox ul.info li::before{ content: ""; position: absolute; left: 0; top: 0; width: 1px; display: block; height:212px; border-left:1px solid #d1ab1b;}
+.FooterBox ul.info li:first-child::before{ display: none; }
+.FooterBox ul.info li:last-child{ max-width: 20%; }
+.FooterBox ul.info li.left_logo{ width:20%; max-width: 274px;}
+.FooterBox ul.info li p{ padding-bottom: 20px;}
+.FooterBox ul.info li p.logo{padding-bottom: 0;}
+
+.FooterBox p.social_box{ padding-top: 26px; }
+.FooterBox p.social_box a{ background-color: #7f7f7f; margin: 0 2px; }
+.FooterBox p.social_box a:hover{ background-color: #d1ab1b;}
+
+/*fixed right menu*/
+.fixed_go_menu{ position: fixed; right: 5%; bottom:calc(50% - 257px); z-index: 16; }
+.fixed_go_menu p.link{ color: #fff; text-align: center; font-size: 13px; background-color: #927400; border:2px solid #775e00; }
+.fixed_go_menu p.link a{ width:85px; height: 85px; color: #fff; display: block; padding-top: 68%; border-bottom: 2px solid #775e00; position: relative; cursor: pointer; }
+.fixed_go_menu p.link a:last-child{ border-bottom: none; }
+.fixed_go_menu p.link a::after{ content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 60px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+.fixed_go_menu p.link a:hover{ background-color: #000; }
+.fixed_go_menu p.link a.go_01::after{ background-image:url(../images/main/fixed_go_menu_icon_01.png);}
+.fixed_go_menu p.link a.go_02::after{ background-image:url(../images/main/fixed_go_menu_icon_02.png);}
+.fixed_go_menu p.link a.go_03::after{ background-image:url(../images/main/fixed_go_menu_icon_03.png);}
+.fixed_go_menu p.link a.go_04::after{ background-image:url(../images/main/fixed_go_menu_icon_04.png);}
+.fixed_go_menu p.link a.go_05::after{ background-image:url(../images/main/fixed_go_menu_icon_05.png);}
+.fixed_go_menu p.link a.go_00::after{ background-image:url(../images/main/fixed_go_menu_icon_06.png);}
+.fixed_go_menu p.link a.go_01:hover::after{ background-image:url(../images/main/fixed_go_menu_icon_01_w.png);}
+.fixed_go_menu p.link a.go_02:hover::after{ background-image:url(../images/main/fixed_go_menu_icon_02_w.png);}
+.fixed_go_menu p.link a.go_03:hover::after{ background-image:url(../images/main/fixed_go_menu_icon_03_w.png);}
+.fixed_go_menu p.link a.go_04:hover::after{ background-image:url(../images/main/fixed_go_menu_icon_04_w.png);}
+.fixed_go_menu p.link a.go_05:hover::after{ background-image:url(../images/main/fixed_go_menu_icon_05_w.png);}
+.fixed_go_menu p.link a.go_00:hover::after{ background-image:url(../images/main/fixed_go_menu_icon_06_w.png);}
+
+/*mobile bottom tools*/
+.fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 20; display: none;}
+.fixed_bottom_tools ul{ width: 100%; }
+.fixed_bottom_tools ul li{ width: 20%; float: left; }
+.fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; }
+.fixed_bottom_tools ul li p a{ color: #fff; padding:45px 0 10px 0; display: block;  position: relative;}
+.fixed_bottom_tools ul li p a::after{ position: absolute; top: 5px; left:calc(50% - 18px); content: ""; width:36px; height: 36px; display: block; background-repeat: no-repeat; background-size: contain; }
+.fixed_bottom_tools ul li p a.line_icon::after{ background-image: url(../images/main/icon_mob_tools_line.png); }
+.fixed_bottom_tools ul li p a.google::after{ background-image: url(../images/main/icon_mob_tools_google.png); }
+.fixed_bottom_tools ul li p a.phone::after{ background-image: url(../images/main/icon_mob_tools_phone.png); }
+
+/*==== RWD ====*/
+@media (max-width:1600px){
+	.fixed_go_menu{ right: 2%;}
+}
+@media (max-width:1520px){
+	.fixed_go_menu{ right:20px;}
+}
+@media (max-width:1280px){
+	.ContentsBox{ width:calc(100% - 40px); margin: 0 auto;}
+}
+@media (max-width:1240px){
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr th p{ font-size: 18px; }
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p{ font-size: 16px; }
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_01, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ line-height: 38px; height: 38px; }
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ background-image: url(../images/main/bg_aircraft_td_02.png); width: 180px;}
+}
+@media (max-width:1175px){
+	.HeaderBox .TopBox ul.top_menu li h3{ font-size: 18px; padding-left: 25px; padding-right: 33px; }
+	.HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 25px; }
+	.HeaderBox .TopBox ul.top_menu li h3:after{ right: 15px; }
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ padding: 20px 25px; }
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu li p{ font-size: 16px; }
+}
+@media (max-width:1130px){
+	.HeaderBox .TopBox ul.top_menu li h3, .HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 15px; }
+	.HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-right: 15px;}
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ padding: 20px; }
+}
+@media (max-width:1100px){
+	.HeaderBox .TopBox ul.top_menu li h3, .HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-left: 10px; }
+	.HeaderBox .TopBox ul.top_menu li h3.none_arr{ padding-right: 10px;}
+	.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ padding: 20px 10px; }
+}
+@media (max-width:1000px){
+	.HeaderBox{ position: fixed; top: 0; left: 0; z-index: 15;}
+	.HeaderBox h3.logo{ padding: 15px 20px;}
+	.HeaderBox .TopBox{ display: none; }
+	.HeaderBox .the_mob_btn{ display: block; }
+
+	.Main_Contents{padding-top: 78px;}
+	.Main_Contents .travel_aircraft_flight .aircraft_box{ height: 170px; }
+	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 24px; }
+
+	.FooterBox p.social_box{ padding-top: 0; }
+}
+@media (max-width:950px){
+	.Main_Contents .travel_daily_itinerary .itinerary_info{ max-width: 100%; }
+	.Main_Contents .travel_daily_itinerary .itinerary_info p.description{ padding:20px;}
+	.Main_Contents .travel_daily_itinerary .photo{ max-width: 100%; }
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p{ font-size: 14px; }
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ background-image: url(../images/main/bg_aircraft_td_02.png) ; background-size: cover;}
+	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ width: 120px; }
+}
+
+@media (max-width:850px){
+	.Main_Contents .main_banner{ height:75vw;}
+	.Main_Contents .travel_aircraft_flight .aircraft_box{ display: none; }
+	.Main_Contents .travel_aircraft_flight .aircraft_box_mob{ display: block; }
+}
+@media (max-width:780px){
+	.Main_Contents .travel_itineraries .bothbox{ width: 100%; }
+	.Main_Contents .travel_itinerary .version_01 .itinerary_info{ position: inherit; max-width: initial; min-height: initial; width: calc(100%  + 40px); margin-left: -20px;}
+	.Main_Contents .travel_itinerary .version_01 p.description{ min-height: initial; padding-bottom: 20px; }
+	.Main_Contents .travel_itinerary .a_box .photo_01{ margin:0 0 20px 0; width: 100%; max-width: 100%; margin-top: -4px; }
+	.Main_Contents .travel_itinerary .a_box .photo_02{ margin: 0; width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px); }
+	.Main_Contents .travel_itinerary .version_02 .photo_01{ width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);}
+	.Main_Contents .travel_itinerary .version_02 .right_info, .Main_Contents .travel_itinerary .version_03 .right_info{ max-width: 100%; min-height: initial; }
+	.Main_Contents .travel_itinerary .version_02 .itinerary_info, .Main_Contents .travel_itinerary .version_03 .itinerary_info{ padding: 30px; }
+
+	.Main_Contents .travel_itinerary .version_04 .photo_01{ margin-top: 15px; }
+	.Main_Contents .travel_itinerary .version_04 .photo_02{ float: initial; }
+	.Main_Contents .travel_daily_itinerary .photo{ float: left; width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);}
+
+	.fixed_go_menu p.link a{ width: 75px; height: 75px; }
+	.fixed_go_menu p.link a::after{ height: 50px; }
+
+}
+@media (max-width:750px){
+	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 22px; }
+}
+@media (max-width:700px){
+	.Main_Contents .travel_daily_itinerary .top_where p.location{ font-size: 26px; width: 100%; margin: 0; padding: 0 20px; border:none; }
+	.Main_Contents .travel_daily_itinerary .top_where p.day{position: relative; padding: 20px;}
+	.Main_Contents .travel_daily_itinerary .top_where p.day::after{ content: ""; position: absolute; top: 55%; right:-20px;  width:calc(100% - 190px); height: 1px; border-bottom: 2px solid #333; display: block; }
+	.Main_Contents .travel_daily_itinerary .version_01{padding-top: 0;}
+	.Main_Contents .travel_price table.ticket_price tr th{ padding: 10px 0; }
+	.Main_Contents .travel_price table.ticket_price tr th p, .Main_Contents .travel_price table.ticket_price tr td p{ font-size: 16px; }
+}
+@media (max-width:700px){
+	.Main_Contents .top_title_line::before{ left: -20px; }
+	.Main_Contents .top_title_line::after{ right: -20px;}
+	.Main_Contents p.description{ font-size: 16px; }
+	.Main_Contents .travel_price table.ticket_price{width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);  }
+}
+@media (max-width:600px){
+	.HeaderBox h3.logo a{ width: 120px; height: 32px; }
+	.HeaderBox .ContentsBox{ width: 100%; }
+	.HeaderBox{ min-height: 65px; }
+	.HeaderBox .the_mob_btn{padding: 15px 20px;}
+	.HeaderBox .the_mob_btn span.title{ display: none; }
+	.Main_Contents{padding-top: 67px;}
+	.Main_Contents p.mob_go_menu, .fixed_bottom_tools{ display: block; }
+	.Main_Contents .travel_price{padding-bottom: 100px;}
+
+	.fixed_go_menu{ top: inherit; bottom: 100px;}
+	.fixed_go_menu p.link{ font-size: 11px; background-color: none; border: none; background-color: inherit; }
+	.fixed_go_menu p.link a{ width: 55px; height: 55px; }
+	.fixed_go_menu p.link a::after{ height: 55px; }
+	.fixed_go_menu p.link a.go_00{ border-radius: 10px; display: block;  overflow: hidden; text-indent: -9999px;}
+	.fixed_go_menu p.link a.go_00::after{ background-image: url(../images/main/fixed_go_menu_icon_06_s.png); opacity: .20; }
+	.fixed_go_menu p.link a.go_00:hover{ background-color: inherit; }
+	.fixed_go_menu p.link a.go_00:hover::after{  background-image: url(../images/main/fixed_go_menu_icon_06_s.png); }
+	.fixed_go_menu p.link a.mob_none, .FooterBox{ display: none; }
+}
+@media (max-width:400px){
+	.fixed_bottom_tools ul li p{ font-size: 13px; }
+	.fixed_bottom_tools ul li p a::after{ top: 7px; height: 34px; }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
