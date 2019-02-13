@@ -27,23 +27,47 @@ html{ background-color: #000; }
 
 /*===== start ======*/
 .ContentsBox{ max-width: 1260px; margin: 0 auto; /*min-width: 320px;*/}
-a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; background: url(../images/more.png) center center no-repeat; background-size: cover; -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));}
+
+p.social_box{ float: left; text-align: left; }
+p.social_box a{ width: 30px; height: 30px; margin: 0 1px; display: inline-block; background-color: #d1ab1b;  border-radius: 50%; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+p.social_box a.googlefrom{ background-image:url(../images/icon_social_googlefrom.png);}
+p.social_box a.line{ background-image:url(../images/icon_social_line.png);}
+p.social_box a.facebook{ background-image:url(../images/icon_social_facebook.png);}
+p.social_box a.youtube{ background-image:url(../images/icon_social_youtube.png);}
+p.social_box a:hover{ background-color: #fff; }
+
 
 .sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
-.sidenav a { /* padding: 8px 8px 8px 32px;*/  text-decoration: none;  font-size: 22px;  color: #fff;  display: block;  transition: 0.3s;}
+.sidenav a { /* padding: 8px 8px 8px 32px;*/  text-decoration: none;  color: #fff;  display: block;  transition: 0.3s;}
 .sidenav a:hover {  color: #f1f1f1;}
-.sidenav .closebtn { text-align: right; padding: 10px 10px 0px; top: 0;  font-size: 36px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.sidenav .closebtn { text-align: right; padding: 10px 10px 0px; top: 0; width: 300px; font-size: 36px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
 .sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow-y: auto; }
 
-ul.side_menu{ padding: 20px; }
-ul.side_menu li h3{ font-size: 22px; color: #d1ab1b; }
-ul.side_menu li p{ font-size: 18px; }
+.sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; }
+.sidenav ul.side_menu li{position: relative;}
+.sidenav ul.side_menu li::after{ content: ""; position: absolute; bottom: 0; left: -20px; width: 100%; height: 1px; background-color: #8d7827;}
+.sidenav ul.side_menu li h3{ font-size: 22px; color: #fff; position: relative; cursor: pointer; padding: 15px 0;}
+.sidenav ul.side_menu li h3:after{ content:""; right: 22px; top: calc(50% - 5px); position: absolute; width: 13px; height: 10px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image:url(../images/icon_arr_w.png);  }
+.sidenav ul.side_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
+.sidenav ul.side_menu li h3 a:hover{ color: #d1ab1b;}
+
+.sidenav ul.side_menu li p{ font-size: 18px; }
+.sidenav ul.side_menu li p a{ padding: 10px 0; }
+
+.sidenav ul.side_menu li:hover h3{ color: #d1ab1b; }
+.sidenav ul.side_menu li:hover h3:after{ background-image:url(../images/icon_arr_y.png);}
+.sidenav ul.side_menu li h3.none_arr:after{ display: none; }
+
+.sidenav ul.side_menu li ul.sub_menu{ display: none; padding-bottom: 20px; }
+.sidenav ul.side_menu li ul.sub_menu li::after{ display: none; }
+.sidenav ul.side_menu li:first-child ul.sub_menu li{ width: 50%; float: left; }
+.sidenav p.social_box a{width: 35px; height: 35px; margin: 0 5px;}
 
 /*header*/
 .HeaderBox{ width: 100%; min-height: 78px; background-color: #000000; border-bottom: 5px solid #d1ab1b;}
 .HeaderBox .ContentsBox{ position: relative;}
-.HeaderBox h1.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px; display: block;}
-.HeaderBox h1.logo a{ color: #666;  width: 183px; height: 50px; display: block; background: url(../images/welovetour_logo.png) center center no-repeat; background-size: contain;}
+.HeaderBox h3.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px; display: block;}
+.HeaderBox h3.logo a{ color: #666;  width: 183px; height: 50px; display: block; background: url(../images/welovetour_logo.png) center center no-repeat; background-size: contain;}
 .HeaderBox .the_mob_btn{ float: right; display: none; padding: 20px 15px; padding-top: 25px; line-height: 24px; cursor:pointer; color: #d9b00f;}
 .HeaderBox .the_mob_btn span.title{ font-size: 22px; padding-right: 10px; }
 .HeaderBox .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
@@ -71,14 +95,6 @@ ul.side_menu li p{ font-size: 18px; }
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a{ color: #ffffff; padding: 8px 0; display: block;}
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a:hover{color: #d1ab1b; }
 
-p.social_box{ float: left; text-align: left; }
-p.social_box a{ width: 30px; height: 30px; margin: 0 1px; display: inline-block; background-color: #d1ab1b;  border-radius: 50%; background-repeat: no-repeat; background-position: center center; background-size: contain;}
-p.social_box a.googlefrom{ background-image:url(../images/icon_social_googlefrom.png); background-color: #fff;}
-p.social_box a.line{ background-image:url(../images/icon_social_line.png);}
-p.social_box a.facebook{ background-image:url(../images/icon_social_facebook.png);}
-p.social_box a.youtube{ background-image:url(../images/icon_social_youtube.png);}
-p.social_box a:hover{ opacity: .8; }
-
 .HeaderBox p.social_box{ padding-top: 45px; }
 
 /*Main_Contents*/
@@ -87,11 +103,11 @@ p.social_box a:hover{ opacity: .8; }
 .Main_Contents .main_banner{ width: 100%; height: 600px; background: url(../images/banner/index-banner1.jpg) center center no-repeat; background-size: cover; }
 .Main_Contents .travel_date_departure{ width: 100%; }
 .Main_Contents .travel_date_departure .ContentsBox{ position: relative; }
-.Main_Contents  h2.travel_main_title{ padding:25px 15px; border-bottom: 1px solid #d1ab1b; color: #3a3a3a; font-size: 28px; text-align: center; }
-.Main_Contents  h2.travel_main_title span{ color: #d1ab1b;}
+.Main_Contents  h1.travel_main_title{ padding:25px 0 5px 0;font-size: 28px; text-align: center; color: #222; }
+.Main_Contents  h2.travel_sub_title{ color: #d1ab1b; font-size: 28px; text-align: center; padding: 6px 0 20px 0; border-bottom: 1px solid #d1ab1b; }
 
 .Main_Contents .travel_date_departure .trip_date_list{ width: 100%; padding: 20px; }
-.Main_Contents .travel_date_departure .trip_date_list p.top_title{ text-align: center; padding: 20px 0; line-height: 24px; }
+.Main_Contents .travel_date_departure .trip_date_list p.top_title{  font-size: 20px; line-height: 34px; text-align: center; padding: 20px 0;}
 
 .Main_Contents .travel_date_departure .trip_date_list table.date_box{ width: 100%; border:1px solid #2c2c2c; }
 .Main_Contents .travel_date_departure .trip_date_list table.date_box tr th { background-color: #505050; border-left:1px solid #fff; padding: 5px;}
@@ -264,6 +280,7 @@ p.social_box a:hover{ opacity: .8; }
 
 .FooterBox p.social_box{ padding-top: 26px; }
 .FooterBox p.social_box a{ background-color: #7f7f7f; margin: 0 2px; }
+.FooterBox p.social_box a:hover{ background-color: #d1ab1b;}
 
 /*fixed right menu*/
 .fixed_go_menu{ position: fixed; right: 5%; top:calc(50% - 257px); z-index: 16; }
@@ -286,7 +303,7 @@ p.social_box a:hover{ opacity: .8; }
 .fixed_go_menu p.link a.go_00:hover::after{ background-image:url(../images/fixed_go_menu_icon_06_w.png);}
 
 /*mobile bottom tools*/
-.fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 15; display: none;}
+.fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 20; display: none;}
 .fixed_bottom_tools ul{ width: 100%; }
 .fixed_bottom_tools ul li{ width: 20%; float: left; }
 .fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; }
@@ -331,7 +348,7 @@ p.social_box a:hover{ opacity: .8; }
 }
 @media (max-width:1000px){
 	.HeaderBox{ position: fixed; top: 0; left: 0; z-index: 15;}
-	.HeaderBox h1.logo{ padding: 15px 20px;}
+	.HeaderBox h3.logo{ padding: 15px 20px;}
 	.HeaderBox .TopBox{ display: none; }
 	.HeaderBox .the_mob_btn{ display: block; }
 
@@ -391,18 +408,24 @@ p.social_box a:hover{ opacity: .8; }
 	.Main_Contents .travel_price table.ticket_price{width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);  }
 }
 @media (max-width:600px){
-	.HeaderBox h1.logo a{ width: 120px; height: 32px; }
+	.HeaderBox h3.logo a{ width: 120px; height: 32px; }
 	.HeaderBox .ContentsBox{ width: 100%; }
 	.HeaderBox{ min-height: 65px; }
 	.HeaderBox .the_mob_btn{padding: 15px 20px;}
 	.HeaderBox .the_mob_btn span.title{ display: none; }
 	.Main_Contents{padding-top: 67px;}
 	.Main_Contents p.mob_go_menu, .fixed_bottom_tools{ display: block; }
+	.Main_Contents .travel_price{padding-bottom: 100px;}
+
 	.fixed_go_menu{ top: inherit; bottom: 100px;}
-	.fixed_go_menu p.link{ font-size: 11px; }
+	.fixed_go_menu p.link{ font-size: 11px; background-color: none; border: none; background-color: inherit; }
 	.fixed_go_menu p.link a{ width: 55px; height: 55px; }
-	.fixed_go_menu p.link a::after{ height: 35px; }
-	.fixed_go_menu p.link a.mob_none{ display: none; }
+	.fixed_go_menu p.link a::after{ height: 55px; }
+	.fixed_go_menu p.link a.go_00{ border-radius: 10px; display: block;  overflow: hidden; text-indent: -9999px;}
+	.fixed_go_menu p.link a.go_00::after{ background-image: url(../images/fixed_go_menu_icon_06_s.png); opacity: .20; }
+	.fixed_go_menu p.link a.go_00:hover{ background-color: inherit; }
+	.fixed_go_menu p.link a.go_00:hover::after{  background-image: url(../images/fixed_go_menu_icon_06_s.png); }
+	.fixed_go_menu p.link a.mob_none, .FooterBox{ display: none; }
 }
 @media (max-width:400px){
 	.fixed_bottom_tools ul li p{ font-size: 13px; }
