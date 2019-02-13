@@ -26,12 +26,22 @@ html, body{ height: 100%; }
 html{ background-color: #000; }
 
 /*===== start ======*/
-.ContentsBox{ max-width: 1260px; margin: 0 auto; min-width: 320px;}
+.ContentsBox{ max-width: 1260px; margin: 0 auto; /*min-width: 320px;*/}
 a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; background: url(../images/more.png) center center no-repeat; background-size: cover; -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));}
+
+.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
+.sidenav a { /* padding: 8px 8px 8px 32px;*/  text-decoration: none;  font-size: 22px;  color: #fff;  display: block;  transition: 0.3s;}
+.sidenav a:hover {  color: #f1f1f1;}
+.sidenav .closebtn { text-align: right; padding: 10px 10px 0px; top: 0;  font-size: 36px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow-y: auto; }
+
+ul.side_menu{ padding: 20px; }
+ul.side_menu li h3{ font-size: 22px; color: #d1ab1b; }
+ul.side_menu li p{ font-size: 18px; }
 
 /*header*/
 .HeaderBox{ width: 100%; min-height: 78px; background-color: #000000; border-bottom: 5px solid #d1ab1b;}
-.HeaderBox .ContentsBox{ position: relative; /*max-width: calc(100% - 40px);*/}
+.HeaderBox .ContentsBox{ position: relative;}
 .HeaderBox h1.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px; display: block;}
 .HeaderBox h1.logo a{ color: #666;  width: 183px; height: 50px; display: block; background: url(../images/welovetour_logo.png) center center no-repeat; background-size: contain;}
 .HeaderBox .the_mob_btn{ float: right; display: none; padding: 20px 15px; padding-top: 25px; line-height: 24px; cursor:pointer; color: #d9b00f;}
@@ -69,30 +79,35 @@ p.social_box a.facebook{ background-image:url(../images/icon_social_facebook.png
 p.social_box a.youtube{ background-image:url(../images/icon_social_youtube.png);}
 p.social_box a:hover{ opacity: .8; }
 
-
 .HeaderBox p.social_box{ padding-top: 45px; }
 
 /*Main_Contents*/
 .Main_Contents{ width: 100%; background-color: #fff;}
 
 .Main_Contents .main_banner{ width: 100%; height: 600px; background: url(../images/banner/index-banner1.jpg) center center no-repeat; background-size: cover; }
-.Main_Contents .travel_name{ width: 100%; }
-.Main_Contents .travel_name h2.main_title{ padding:25px 15px; border-bottom: 1px solid #d1ab1b; color: #3a3a3a; font-size: 28px; text-align: center; }
-.Main_Contents .travel_name h2.main_title span{ color: #d1ab1b;}
+.Main_Contents .travel_date_departure{ width: 100%; }
+.Main_Contents .travel_date_departure .ContentsBox{ position: relative; }
+.Main_Contents  h2.travel_main_title{ padding:25px 15px; border-bottom: 1px solid #d1ab1b; color: #3a3a3a; font-size: 28px; text-align: center; }
+.Main_Contents  h2.travel_main_title span{ color: #d1ab1b;}
 
-.Main_Contents .travel_name .trip_date_list{ width: 100%; padding: 20px; }
-.Main_Contents .travel_name .trip_date_list p.top_title{ text-align: center; padding: 20px 0; line-height: 24px; }
+.Main_Contents .travel_date_departure .trip_date_list{ width: 100%; padding: 20px; }
+.Main_Contents .travel_date_departure .trip_date_list p.top_title{ text-align: center; padding: 20px 0; line-height: 24px; }
 
-.Main_Contents .travel_name .trip_date_list table.date_box{ width: 100%; border:1px solid #2c2c2c; }
-.Main_Contents .travel_name .trip_date_list table.date_box tr th { background-color: #505050; border-left:1px solid #fff; padding: 5px;}
-.Main_Contents .travel_name .trip_date_list table.date_box tr th p{ color: #fff; text-align: left; }
-.Main_Contents .travel_name .trip_date_list table.date_box tr td{ padding: 5px; border-top:1px solid #808080; border-left:1px solid #808080; }
-.Main_Contents .travel_name .trip_date_list table.date_box tr td p.day{ color: #808080;}
-.Main_Contents .travel_name .trip_date_list table.date_box tr td p.day s{ color: #333; }
-.Main_Contents .travel_name .trip_date_list table.date_box tr td p.day a{ color: #0000ff; text-decoration: underline; }
-.Main_Contents .travel_name .trip_date_list table.date_box tr td p.day a:hover{ text-decoration: inherit; }
-.Main_Contents .travel_name .trip_date_list table.date_box tr th:first-child, .Main_Contents .travel_name .trip_date_list table.date tr td:first-child{ border-left: none; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box{ width: 100%; border:1px solid #2c2c2c; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr th { background-color: #505050; border-left:1px solid #fff; padding: 5px;}
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr th p{ color: #fff; text-align: left; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td{ padding: 5px; border-top:1px solid #808080; border-left:1px solid #808080; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day{ color: #808080;}
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day s{ color: #333; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day a{ color: #0000ff; text-decoration: underline; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr td p.day a:hover{ text-decoration: inherit; }
+.Main_Contents .travel_date_departure .trip_date_list table.date_box tr th:first-child, .Main_Contents .travel_date_departure .trip_date_list table.date tr td:first-child{ border-left: none; }
 
+.Main_Contents p.mob_go_menu{ width: 100%; display: none; border:1px solid #d3d3d3; z-index: 15; border-width: 0 1px 1px 1px; background-color: #fff; top: 67px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.Main_Contents p.mob_go_menu a{ float: left; width: 25%; cursor: pointer; text-align: center; padding: 12px 0 8px 0; border-bottom: 4px solid #fff; position: relative; }
+.Main_Contents p.mob_go_menu a:after{ content: ""; width: 1px; height: 70%; background-color: #d3d3d3; right: 0; bottom: -4px; position: absolute; }
+.Main_Contents p.mob_go_menu a:last-child:after{ display: none; }
+.Main_Contents p.mob_go_menu a:hover{ border-color: #d1ab1b; }
 
 .Main_Contents h3.icon_title{ font-size: 28px; position: relative; line-height: 63px; }
 .Main_Contents h3.icon_title span{ position: relative; padding-left: 76px;}
@@ -177,6 +192,7 @@ p.social_box a:hover{ opacity: .8; }
 .Main_Contents .travel_aircraft_flight .aircraft_box_mob{ width: 100%; display: none; padding-bottom: 10px; border-bottom:1px dashed #666;}
 .Main_Contents .travel_aircraft_flight .aircraft_box_mob h4{font-size: 20px; padding: 15px 0; border:1px solid #333; border-width: 1px 0 1px 0; }
 .Main_Contents .travel_aircraft_flight .aircraft_box_mob p{ padding: 15px 0; font-size: 18px;}
+
 /*每日行程*/
 .Main_Contents .travel_daily_itinerary{ width: 100%; padding: 30px 0;}
 .Main_Contents .travel_daily_itinerary .top_where{ width: 100%; position: relative; padding:25px 0 20px 0;}
@@ -249,7 +265,8 @@ p.social_box a:hover{ opacity: .8; }
 .FooterBox p.social_box{ padding-top: 26px; }
 .FooterBox p.social_box a{ background-color: #7f7f7f; margin: 0 2px; }
 
-.fixed_go_menu{ position: fixed; right: 5%; top:calc(50% - 257px); z-index: 10; }
+/*fixed right menu*/
+.fixed_go_menu{ position: fixed; right: 5%; top:calc(50% - 257px); z-index: 16; }
 .fixed_go_menu p.link{ color: #fff; text-align: center; font-size: 13px; background-color: #927400; border:2px solid #775e00; }
 .fixed_go_menu p.link a{ width:85px; height: 85px; display: block; padding-top: 68%; border-bottom: 2px solid #775e00; position: relative; cursor: pointer; }
 .fixed_go_menu p.link a:last-child{ border-bottom: none; }
@@ -268,10 +285,18 @@ p.social_box a:hover{ opacity: .8; }
 .fixed_go_menu p.link a.go_05:hover::after{ background-image:url(../images/fixed_go_menu_icon_05_w.png);}
 .fixed_go_menu p.link a.go_00:hover::after{ background-image:url(../images/fixed_go_menu_icon_06_w.png);}
 
-/*==== RWD ====*/
+/*mobile bottom tools*/
+.fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 15;}
+.fixed_bottom_tools ul{ width: 100%; }
+.fixed_bottom_tools ul li{ width: 20%; float: left; }
+.fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; }
+.fixed_bottom_tools ul li p a{ color: #fff; padding:45px 0 10px 0; display: block;  position: relative;}
+.fixed_bottom_tools ul li p a::after{ position: absolute; top: 5px; left:calc(50% - 18px); content: ""; width:36px; height: 36px; display: block; background-repeat: no-repeat; background-size: contain; }
+.fixed_bottom_tools ul li p a.line::after{ background-image: url(../images/icon_mob_tools_line.png); }
+.fixed_bottom_tools ul li p a.google::after{ background-image: url(../images/icon_mob_tools_google.png); }
+.fixed_bottom_tools ul li p a.phone::after{ background-image: url(../images/icon_mob_tools_phone.png); }
 
-@media screen and (max-height:750px){
-}
+/*==== RWD ====*/
 @media (max-width:1600px){
 	.fixed_go_menu{ right: 2%;}
 }
@@ -280,8 +305,6 @@ p.social_box a:hover{ opacity: .8; }
 }
 @media (max-width:1280px){
 	.ContentsBox{ width:calc(100% - 40px); margin: 0 auto;}
-}
-@media (max-width:1280px){
 }
 @media (max-width:1240px){
 	.Main_Contents .travel_aircraft_flight .aircraft_box tr th p{ font-size: 18px; }
@@ -317,8 +340,6 @@ p.social_box a:hover{ opacity: .8; }
 	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 24px; }
 
 	.FooterBox p.social_box{ padding-top: 0; }
-	/*.Main_Contents h4.sub_title{ font-size: 26px; }*/
-	/*.Main_Contents p.description{ font-size: 17px; }*/
 }
 @media (max-width:950px){
 	.Main_Contents .travel_daily_itinerary .itinerary_info{ max-width: 100%; }
@@ -333,10 +354,6 @@ p.social_box a:hover{ opacity: .8; }
 	.Main_Contents .main_banner{ height:75vw;}
 	.Main_Contents .travel_aircraft_flight .aircraft_box{ display: none; }
 	.Main_Contents .travel_aircraft_flight .aircraft_box_mob{ display: block; }
-	/*.Main_Contents .travel_aircraft_flight .aircraft_box{ height: 165px; padding-bottom: 30px; }
-	.Main_Contents .travel_aircraft_flight .aircraft_box tr th p{ font-size: 16px; }
-	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p{ font-size: 15px; }
-	.Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_02, .Main_Contents .travel_aircraft_flight .aircraft_box tr td p.bg_03{ width: 100px; }*/
 }
 @media (max-width:780px){
 	.Main_Contents .travel_itineraries .bothbox{ width: 100%; }
@@ -357,12 +374,10 @@ p.social_box a:hover{ opacity: .8; }
 
 }
 @media (max-width:750px){
-	/*.Main_Contents p.description{ font-size: 16px; }
-	.Main_Contents h4.sub_title{ font-size: 24px; }*/
 	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 22px; }
 }
 @media (max-width:700px){
-	.Main_Contents .travel_daily_itinerary .top_where p.location{ width: 100%; margin: 0; padding: 0 20px; border:none; }
+	.Main_Contents .travel_daily_itinerary .top_where p.location{ font-size: 26px; width: 100%; margin: 0; padding: 0 20px; border:none; }
 	.Main_Contents .travel_daily_itinerary .top_where p.day{position: relative; padding: 20px;}
 	.Main_Contents .travel_daily_itinerary .top_where p.day::after{ content: ""; position: absolute; top: 55%; right:-20px;  width:calc(100% - 190px); height: 1px; border-bottom: 2px solid #333; display: block; }
 	.Main_Contents .travel_daily_itinerary .version_01{padding-top: 0;}
@@ -372,27 +387,27 @@ p.social_box a:hover{ opacity: .8; }
 @media (max-width:700px){
 	.Main_Contents .top_title_line::before{ left: -20px; }
 	.Main_Contents .top_title_line::after{ right: -20px;}
-
+	.Main_Contents p.description{ font-size: 16px; }
 	.Main_Contents .travel_price table.ticket_price{width: calc(100% + 40px); margin-left:-20px; max-width: calc(100% + 40px);  }
 }
 @media (max-width:600px){
 	.HeaderBox h1.logo a{ width: 120px; height: 32px; }
+	.HeaderBox .ContentsBox{ width: 100%; }
 	.HeaderBox{ min-height: 65px; }
 	.HeaderBox .the_mob_btn{padding: 15px 20px;}
 	.HeaderBox .the_mob_btn span.title{ display: none; }
+	.Main_Contents{padding-top: 67px;}
+	.Main_Contents p.mob_go_menu, .fixed_bottom_tools{ display: block; }
 	.fixed_go_menu{ top: inherit; bottom: 100px;}
 	.fixed_go_menu p.link{ font-size: 11px; }
 	.fixed_go_menu p.link a{ width: 55px; height: 55px; }
 	.fixed_go_menu p.link a::after{ height: 35px; }
 	.fixed_go_menu p.link a.mob_none{ display: none; }
-	.Main_Contents{padding-top: 67px;}
 }
-.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;  padding-top: 60px;}
-.sidenav a {  padding: 8px 8px 8px 32px;  text-decoration: none;  font-size: 22px;  color: #fff;  display: block;  transition: 0.3s;}
-.sidenav a:hover {  color: #f1f1f1;}
-.sidenav .closebtn {  position: absolute;  top: 0;  right: 25px;  font-size: 36px;  margin-left: 50px;}
-
+@media (max-width:400px){
+	.fixed_bottom_tools ul li p{ font-size: 13px; }
+	.fixed_bottom_tools ul li p a::after{ top: 7px; height: 34px; }
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 17px;}
 }

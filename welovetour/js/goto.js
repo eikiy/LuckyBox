@@ -10,6 +10,16 @@ $(function(){
 });
 
 $(function(){
+	$('.s_go_01').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_01').offset().top - 80}, 800); });
+	$('.s_go_02').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_02').offset().top - 80}, 800); });
+	$('.s_go_03').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_03').offset().top - 80}, 800); });
+	$('.s_go_04').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_04').offset().top - 80}, 800); });
+	$('.s_go_05').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_05').offset().top - 80}, 800); });
+	$('.s_go_06').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_06').offset().top - 80}, 800); });
+	return false;
+});
+
+$(function(){
 	$("ul.menu_type li h5.has_sub").click(function(){
 	  $(this).parent().find('ul.the_sub_menu').toggle();
 	});
@@ -26,10 +36,8 @@ $(function(){
 	$( "ul.top_menu li" ).hover(
 	 function() {
 	 	$(this).find('ul.sub_menu').show();
-	    // $(this).parent().addClass("open");
 	  }, function() {
 	  	$(this).find('ul.sub_menu').hide();
-	    // $(this).parent().removeClass("open");
 	  }
 	);
 	return false;
@@ -47,19 +55,3 @@ $(function(){
 //     return false;
 // });
 
-
-
-
-
-// 左邊選單
-// $(function(){
-//     $('ul.menu_type li h5').click(function () {
-//         if (!$('.dLeft').hasClass('menu-left')) {
-//             $('.dLeft').addClass('menu-left');
-//             $('#rightEditBox').removeClass('rightEditBox_w100');
-//         } else {
-//             $('.dLeft').removeClass('menu-left');
-//             $('#rightEditBox').addClass('rightEditBox_w100');
-//         }
-//     });
-// });
