@@ -286,7 +286,7 @@ p.social_box a:hover{ opacity: .8; }
 .fixed_go_menu p.link a.go_00:hover::after{ background-image:url(../images/fixed_go_menu_icon_06_w.png);}
 
 /*mobile bottom tools*/
-.fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 15;}
+.fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 15; display: none;}
 .fixed_bottom_tools ul{ width: 100%; }
 .fixed_bottom_tools ul li{ width: 20%; float: left; }
 .fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; }
