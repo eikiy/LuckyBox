@@ -24,6 +24,7 @@ select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"å
 html, body{ height: 100%; }
 
 html{ background-color: #000; }
+.for_blur{ -webkit-filter: blur(0.4rem); -moz-filter: blur(0.4rem); -o-filter: blur(0.4rem); -ms-filter: blur(0.4rem); filter: blur(0.4rem);}
 
 /*===== start ======*/
 .ContentsBox{ max-width: 1260px; margin: 0 auto; /*min-width: 320px;*/}

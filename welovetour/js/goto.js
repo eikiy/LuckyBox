@@ -36,9 +36,11 @@ $(function(){
 // side menu
 function openNav() {
 	document.getElementById("theSidenav").style.width = "350px";
+	document.getElementById("Main_Contents").classList.add("for_blur");
 }
 function closeNav() {
 	document.getElementById("theSidenav").style.width = "0";
+	document.getElementById("Main_Contents").classList.remove("for_blur");
 }
 
 $(function(){
