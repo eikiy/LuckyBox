@@ -1,610 +1,584 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<title>年代旅遊</title>
-<meta name='description' content=""/>
-<meta name='keywords' content=""/>
-<meta name="MobileOptimized" content="width">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
-
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/goto.js"></script>
-
+    <meta charset="UTF-8">
+    <title>年代旅遊</title>
+    <meta name='description' content=""/>
+    <meta name='keywords' content=""/>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://www.welovetour.com.tw/images/main/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/goto.js"></script>
 </head>
 
 
 <body>
-    <!-- <div class="mobile-nav" id="sideMenu">
-        <ul class="socialBox">
-            <li><a class="map" href="#" target="_blank"></a></li>
-            <li><a class="phone" href="#" target="_blank"></a></li>
-            <li><a class="fb" href="#" target="_blank"></a></li>
-        </ul>
-        <ul class="Oneself">
-            <li><h3><a href="about.html">關於我們  ｜  ABOUT US</a></h3>
-                <div class="submenu">
-                    <p><a href="about.html#go01">公司簡介</a></p>
-                    <p><a href="about.html#go02">核心能力</a></p>
-                    <p><a href="about.html#go03">選材來源</a></p>
-                    <p><a href="about.html#go04">原料把關</a></p>
-                    <p><a href="about.html#go05">特色漆面</a></p>
-                    <p><a href="about.html#go06">獨門工法</a></p>
-                </div>
+
+    <div class="sidenav" id="theSidenav">
+      <div class="side_Contents">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="side_menu clearfix">
+        <li>
+            <h3>熱搜精選</h3>
+            <ul class="sub_menu clearfix">
+                <li><p><a target="_blank" href="http://www.welovetour.com.tw/samui.html">蘇美島</a></p></li>
+                <li><p><a target="_blank" href="http://www.welovetour.com.tw/boracay.html">長灘島</a></p></li>
+                <li><p><a target="_blank" href="http://www.welovetour.com.tw/bali.html">峇里島</a></p></li>
+                <li><p><a target="_blank" href="http://www.welovetour.com.tw/maldives.html">馬爾地夫</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/vietnam.html">中越峴港</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/thailand.html">泰國</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/philippines.html">菲律賓</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/angkorwat.html">吳哥窟</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/Palau.html">帛琉</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/okinawa.html">沖繩</a></p></li>
+                </ul>
+            </li>
+            <li>
+                <h3>發燒話題</h3>
+                <ul class="sub_menu">
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/newyear/newyear.html">春節預購</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/2018DragonBoat/tour.html">本季促銷</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/top/top.html">十大熱門旅遊地</a></p></li>
+                </ul>
+            </li>
+            <li>
+                <h3>主題旅遊</h3>
+                <ul class="sub_menu">
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/overseawedding.html">海外婚禮</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/staff_trip.html">員工旅遊</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/graduationtravel.html">畢業旅行</a></p></li>
+                </ul>
+            </li>
+            <li>
+                <h3>更多行程</h3>
+                <ul class="sub_menu">
+                    <li><p><a target="_blank" href="http://cs.sabretn.com.tw/welovetour/index2">國際機票</a></p></li>
+                    <li><p><a target="_blank" href="http://welovetour.richmondgroup.com.tw/OverseaBBC.asp?area=00NA">聯營團體旅遊</a></p></li>
+                    <li><p><a target="_blank" href="http://www.welovetour.com.tw/china.html">大陸專區</a></p></li>
+                </ul>
+            </li>
+            <li>
+                <h3 class="none_arr"><a target="_blank" href="http://www.welovetour.com.tw/about.html">關於年代</a></h3>
             </li>
         </ul>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
-    <script src="js/script-right.js"></script> -->
-
-
-<div class="sidenav" id="theSidenav">
-  <div class="side_Contents">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <ul class="side_menu clearfix">
-    <li>
-        <h3>熱搜精選</h3>
-        <ul class="sub_menu clearfix">
-            <li><p><a target="_blank" href="http://www.welovetour.com.tw/samui.html">蘇美島</a></p></li>
-            <li><p><a target="_blank" href="http://www.welovetour.com.tw/boracay.html">長灘島</a></p></li>
-            <li><p><a target="_blank" href="http://www.welovetour.com.tw/bali.html">峇里島</a></p></li>
-            <li><p><a target="_blank" href="http://www.welovetour.com.tw/maldives.html">馬爾地夫</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/vietnam.html">中越峴港</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/thailand.html">泰國</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/philippines.html">菲律賓</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/angkorwat.html">吳哥窟</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/Palau.html">帛琉</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/okinawa.html">沖繩</a></p></li>
-            </ul>
-        </li>
-        <li>
-            <h3>發燒話題</h3>
-            <ul class="sub_menu">
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/newyear/newyear.html">春節預購</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/2018DragonBoat/tour.html">本季促銷</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/top/top.html">十大熱門旅遊地</a></p></li>
-            </ul>
-        </li>
-        <li>
-            <h3>主題旅遊</h3>
-            <ul class="sub_menu">
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/overseawedding.html">海外婚禮</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/staff_trip.html">員工旅遊</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/graduationtravel.html">畢業旅行</a></p></li>
-            </ul>
-        </li>
-        <li>
-            <h3>更多行程</h3>
-            <ul class="sub_menu">
-                <li><p><a target="_blank" href="http://cs.sabretn.com.tw/welovetour/index2">國際機票</a></p></li>
-                <li><p><a target="_blank" href="http://welovetour.richmondgroup.com.tw/OverseaBBC.asp?area=00NA">聯營團體旅遊</a></p></li>
-                <li><p><a target="_blank" href="http://www.welovetour.com.tw/china.html">大陸專區</a></p></li>
-            </ul>
-        </li>
-        <li>
-            <h3 class="none_arr"><a target="_blank" href="http://www.welovetour.com.tw/about.html">關於年代</a></h3>
-        </li>
-    </ul>
-    <p class="social_box">
-        <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/weloveisland/"></a>
-        <a class="youtube" target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCblEym6jb1pGe8zTT5IzOFg"></a>
-    </p>
-    </div>
-</div>
-
-
-<header class="HeaderBox">
-    <section class="Menu ContentsBox clearfix">
-        <h3 class="logo"><a target="_blank" href="http://www.welovetour.com.tw/">年代旅遊</a></h3>
-        <p class="the_mob_btn" onclick="openNav()"><span class="title">MENU</span><span class="icon_hamburger"></span></p>
-        <nav class="TopBox clearfix">
-            <ul class="top_menu clearfix">
-                <li>
-                    <h3>熱搜精選</h3>
-                    <ul class="sub_menu">
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/samui.html">蘇美島</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/boracay.html">長灘島</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/bali.html">峇里島</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/maldives.html">馬爾地夫</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/vietnam.html">中越峴港</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/thailand.html">泰國</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/philippines.html">菲律賓</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/angkorwat.html">吳哥窟</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/Palau.html">帛琉</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/okinawa.html">沖繩</a></p></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>發燒話題</h3>
-                    <ul class="sub_menu">
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/newyear/newyear.html">春節預購</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/2018DragonBoat/tour.html">本季促銷</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/top/top.html">十大熱門旅遊地</a></p></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>主題旅遊</h3>
-                    <ul class="sub_menu">
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/overseawedding.html">海外婚禮</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/staff_trip.html">員工旅遊</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/graduationtravel.html">畢業旅行</a></p></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>更多行程</h3>
-                    <ul class="sub_menu">
-                        <li><p><a target="_blank" href="http://cs.sabretn.com.tw/welovetour/index2">國際機票</a></p></li>
-                        <li><p><a target="_blank" href="http://welovetour.richmondgroup.com.tw/OverseaBBC.asp?area=00NA">聯營團體旅遊</a></p></li>
-                        <li><p><a target="_blank" href="http://www.welovetour.com.tw/china.html">大陸專區</a></p></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3 class="none_arr"><a target="_blank" href="http://www.welovetour.com.tw/about.html">關於年代</a></h3>
-                </li>
-            </ul>
-            <p class="social_box">
-                <a class="googlefrom" target="_blank" title="線上表單" href="https://docs.google.com/forms/d/e/1FAIpQLSf5rGH0fDpapPmZpNTt6g34ZaK6A126VqQwd8_aU3aPBdxE3Q/viewform"></a>
-                <a class="line" target="_blank" title="台北line" href="https://line.me/ti/p/%40hcn6976x"></a>
-                <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/weloveisland/"></a>
-                <a class="youtube" target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCblEym6jb1pGe8zTT5IzOFg"></a>
-            </p>
-        </nav>
-    </section>
-</header>
-
-<section class="fixed_go_menu">
-    <p class="link">
-        <a class="go_01 mob_none">出團日期</a>
-        <a class="go_02 mob_none">行程路線</a>
-        <a class="go_03 mob_none">行程特色</a>
-        <a class="go_04 mob_none">參考航班</a>
-        <a class="go_05 mob_none">每日行程</a>
-        <a class="go_00">回最上方</a>
-    </p>
-</section>
-
-<section class="fixed_bottom_tools">
-    <ul class="clearfix">
-        <li><p><a class="line" target="_blank" href="https://line.me/ti/p/%40hcn6976x">台北詢問</a></p></li>
-        <li><p><a class="phone" href="tel:+886-2-7713-7719">台北總部</a></p></li>
-        <li><p><a class="google" target="_blank" href="https://goo.gl/forms/tCBLlgqZTrHyUMEE3">線上表單</a></p></li>
-        <li><p><a class="line" target="_blank" href="https://line.me/R/ti/p/%40pmz3588z">台中詢問</a></p></li>
-        <li><p><a class="phone" href="tel:+886-4-3704-7719">台中門市</a></p></li>
-    </ul>
-</section>
-
-<main class="Main_Contents" id="Main_Contents">
-    <section class="main_banner"></section>
-    <h1 class="travel_main_title">2019新春特別企劃【中越峴港悅椿渡假村5天】</h1>
-    <h2 class="travel_sub_title">第二人-10000    特惠39,000起</h2>
-    <p class="mob_go_menu clearfix">
-        <a class="s_go_03">行程特色</a>
-        <a class="s_go_04">參考航班</a>
-        <a class="s_go_05">每日行程</a>
-        <a class="s_go_01">出團日期</a>
-    </p>
-    <section class="travel_date_departure" id="move_goto_01">
-        <div class="ContentsBox">
-            <div class="trip_date_list">
-                <p class="top_title">邁向14周年促銷，每周三&五出發<br>
-                原價 31,900，第二人 -6,000(含稅簽)</p>
-                <table class="date_box" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <th><p>售價</p></th>
-                        <th><p>出發日期</p></th>
-                    </tr>
-                    <tr>
-                        <td><p>319,00</p></td>
-                        <td><p class="day"><s>01/09</s>、 <s>01/16</s>、 <a target="_blank" href="#">01/18</a>、 <a target="_blank" href="#">01/23</a>、 <s>01/25</s>、 <s>01/30</s>、 <a target="_blank" href="#">02/20</a>、 <a target="_blank" href="#">02/27</a></p></td>
-                    </tr>
-                </table>
-                <p class="top_title">4.5.6月早鳥促銷，每周三&五出發<br>
-                    原價 31,900，第二人 -8,000(含稅簽)</p>
-                <table class="date_box" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <th><p>售價</p></th>
-                        <th><p>出發日期</p></th>
-                    </tr>
-                    <tr>
-                        <td><p>319,00</p></td>
-                        <td><p class="day"><s>01/09</s>、 <a target="_blank" href="#">01/15</a>、 <a target="_blank" href="#">01/23</a>、 <s>01/25</s>、 <s>01/30</s>、 <a target="_blank" href="#">02/20</a>、 <a target="_blank" href="#">02/28</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>329,00</p></td>
-                        <td><p class="day"><s>02/09</s>、 <s>02/10</s>、 <a target="_blank" href="#">02/18</a>、 <a target="_blank" href="#">02/23</a>、 <s>02/25</s>、 <s>02/31</s>、 <s>02/20</s>、 <a target="_blank" href="#">02/27</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>339,00</p></td>
-                        <td><p class="day"><s>04/09</s>、 <s>04/16</s>、 <a target="_blank" href="#">04/17</a>、 <a target="_blank" href="#">04/23</a></p></td>
-                    </tr>
-                </table>
-            </div>
+        <p class="social_box">
+            <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/weloveisland/"></a>
+            <a class="youtube" target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCblEym6jb1pGe8zTT5IzOFg"></a>
+        </p>
         </div>
+    </div>
+
+
+    <header class="HeaderBox">
+        <section class="Menu ContentsBox clearfix">
+            <h3 class="logo"><a target="_blank" href="http://www.welovetour.com.tw/">年代旅遊</a></h3>
+            <p class="the_mob_btn" onclick="openNav()"><span class="title">MENU</span><span class="icon_hamburger"></span></p>
+            <nav class="TopBox clearfix">
+                <ul class="top_menu clearfix">
+                    <li>
+                        <h3>熱搜精選</h3>
+                        <ul class="sub_menu">
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/samui.html">蘇美島</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/boracay.html">長灘島</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/bali.html">峇里島</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/maldives.html">馬爾地夫</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/vietnam.html">中越峴港</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/thailand.html">泰國</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/philippines.html">菲律賓</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/angkorwat.html">吳哥窟</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/Palau.html">帛琉</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/okinawa.html">沖繩</a></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>發燒話題</h3>
+                        <ul class="sub_menu">
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/newyear/newyear.html">春節預購</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/2018DragonBoat/tour.html">本季促銷</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/top/top.html">十大熱門旅遊地</a></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>主題旅遊</h3>
+                        <ul class="sub_menu">
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/overseawedding.html">海外婚禮</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/staff_trip.html">員工旅遊</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/graduationtravel.html">畢業旅行</a></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>更多行程</h3>
+                        <ul class="sub_menu">
+                            <li><p><a target="_blank" href="http://cs.sabretn.com.tw/welovetour/index2">國際機票</a></p></li>
+                            <li><p><a target="_blank" href="http://welovetour.richmondgroup.com.tw/OverseaBBC.asp?area=00NA">聯營團體旅遊</a></p></li>
+                            <li><p><a target="_blank" href="http://www.welovetour.com.tw/china.html">大陸專區</a></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="none_arr"><a target="_blank" href="http://www.welovetour.com.tw/about.html">關於年代</a></h3>
+                    </li>
+                </ul>
+                <p class="social_box">
+                    <a class="googlefrom" target="_blank" title="線上表單" href="https://docs.google.com/forms/d/e/1FAIpQLSf5rGH0fDpapPmZpNTt6g34ZaK6A126VqQwd8_aU3aPBdxE3Q/viewform"></a>
+                    <a class="line_icon" target="_blank" title="台北line" href="https://line.me/ti/p/%40hcn6976x"></a>
+                    <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/weloveisland/"></a>
+                    <a class="youtube" target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCblEym6jb1pGe8zTT5IzOFg"></a>
+                </p>
+            </nav>
+        </section>
+    </header>
+
+    <section class="fixed_go_menu">
+        <p class="link">
+            <a class="go_01 mob_none">出團日期</a>
+            <a class="go_02 mob_none">行程路線</a>
+            <a class="go_03 mob_none">行程特色</a>
+            <a class="go_04 mob_none">參考航班</a>
+            <a class="go_05 mob_none">每日行程</a>
+            <a class="go_00">回最上方</a>
+        </p>
     </section>
 
-    <!-- 行程路線 -->
-    <section class="travel_itineraries" id="move_goto_02">
-        <div class="ContentsBox clearfix">
-            <div class="bothbox">
-                <div class="info_box">
-                    <h3 class="icon_title icon_map"><span>行程路線</span></h3>
-                    <img src="images/img_map.png" alt="行程路線">
-                </div>
-            </div>
-            <div class="bothbox">
-                <div class="info_box">
-                    <h4 class="sub_title">行程亮點</h4>
-                    <p class="description">1.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年<br>
-                        <br>
-                        2.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年<br>
-                        <br>3.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年
-                    </p>
-                </div>
-                <div class="youtube_box">
-                    <iframe src="https://www.youtube.com/embed/Bxl6NS5lH7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
+    <section class="fixed_bottom_tools">
+        <ul class="clearfix">
+            <li><p><a class="line_icon" target="_blank" href="https://line.me/ti/p/%40hcn6976x">台北詢問</a></p></li>
+            <li><p><a class="phone" href="tel:+886-2-7713-7719">台北總部</a></p></li>
+            <li><p><a class="google" target="_blank" href="https://goo.gl/forms/tCBLlgqZTrHyUMEE3">線上表單</a></p></li>
+            <li><p><a class="line_icon" target="_blank" href="https://line.me/R/ti/p/%40pmz3588z">台中詢問</a></p></li>
+            <li><p><a class="phone" href="tel:+886-4-3704-7719">台中門市</a></p></li>
+        </ul>
     </section>
 
-    <!-- 特色行程 -->
-    <section class="travel_itinerary" id="move_goto_03">
-        <div class="ContentsBox clearfix">
-            <div class="top_title_line">
-                <h3 class="icon_title icon_itinerary"><span>特色行程</span></h3>
-            </div>
-            <div class="a_box version_01">
-                <div class="itinerary_info">
-                    <p class="label">嚴選<br>飯店</p>
-                    <h4 class="sub_title">Banyan Tree Lang Co<br>悅榕庄蘭珂度假村</h4>
-                    <p class="description">鄰近三大世界自然遺產 - 順化、會安和美山的Lang Co 蘭珂海灣，中越昔日的寧靜漁村，有著原始純淨的海岸線與熱帶山林，現由悅榕庄集團打造世界渡假村 - Lanuna Lang Co拉古娜蘭珂渡假村。舉凡住宿、高爾夫、美饌、特色旅遊一應俱全。Banyan Tree Lang Co 蘭珂悅榕庄就在這美麗迷人的蘭珂海灣之上，是拉古娜蘭珂渡假村中最奢華的渡假飯店之一。</p>
+    <main class="Main_Contents" id="Main_Contents">
+        <section class="main_banner"></section>
+        <h1 class="travel_main_title">2019新春特別企劃【中越峴港悅椿渡假村5天】</h1>
+        <h2 class="travel_sub_title">第二人-10000    特惠39,000起</h2>
+        <p class="mob_go_menu clearfix">
+            <a class="s_go_03">行程特色</a>
+            <a class="s_go_04">參考航班</a>
+            <a class="s_go_05">每日行程</a>
+            <a class="s_go_01">出團日期</a>
+        </p>
+        <section class="travel_date_departure" id="move_goto_01">
+            <div class="ContentsBox">
+                <div class="trip_date_list">
+                    <p class="top_title">邁向14周年促銷，每周三&五出發<br>
+                    原價 31,900，第二人 -6,000(含稅簽)</p>
+                    <table class="date_box" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <th><p>售價</p></th>
+                            <th><p>出發日期</p></th>
+                        </tr>
+                        <tr>
+                            <td><p>319,00</p></td>
+                            <td><p class="day"><s>01/09</s>、 <s>01/16</s>、 <a target="_blank" href="#">01/18</a>、 <a target="_blank" href="#">01/23</a>、 <s>01/25</s>、 <s>01/30</s>、 <a target="_blank" href="#">02/20</a>、 <a target="_blank" href="#">02/27</a></p></td>
+                        </tr>
+                    </table>
+                    <p class="top_title">4.5.6月早鳥促銷，每周三&五出發<br>
+                        原價 31,900，第二人 -8,000(含稅簽)</p>
+                    <table class="date_box" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <th><p>售價</p></th>
+                            <th><p>出發日期</p></th>
+                        </tr>
+                        <tr>
+                            <td><p>319,00</p></td>
+                            <td><p class="day"><s>01/09</s>、 <a target="_blank" href="#">01/15</a>、 <a target="_blank" href="#">01/23</a>、 <s>01/25</s>、 <s>01/30</s>、 <a target="_blank" href="#">02/20</a>、 <a target="_blank" href="#">02/28</a></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>329,00</p></td>
+                            <td><p class="day"><s>02/09</s>、 <s>02/10</s>、 <a target="_blank" href="#">02/18</a>、 <a target="_blank" href="#">02/23</a>、 <s>02/25</s>、 <s>02/31</s>、 <s>02/20</s>、 <a target="_blank" href="#">02/27</a></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>339,00</p></td>
+                            <td><p class="day"><s>04/09</s>、 <s>04/16</s>、 <a target="_blank" href="#">04/17</a>、 <a target="_blank" href="#">04/23</a></p></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/modern-luxury-home-showcase-exterior-and-swimming-pool-illuminated-at-picture-id670893633?k=6&m=670893633&s=612x612&w=0&h=xU87WIhuoyCFsy1ghLbM40NSXCxcA4nF5UWG3HUM1JI=);"></div>
-                <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/modern-house-with-large-patio-and-swimming-pool-picture-id525440005?k=6&m=525440005&s=612x612&w=0&h=S0bZPfxzBCzkRddZaeVXomy7UUQh0zpr6OtAfKcaPas=);"></div>
             </div>
-            <div class="a_box version_02 clearfix">
-                <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/modern-minimalist-villa-picture-id910193030?k=6&m=910193030&s=612x612&w=0&h=kjD2eKsSI0lWmXH3yZ8qeYoGBy0BJ_8X2yfxpBvwf_w=);"></div>
-                <div class="right_info">
-                    <div class="itinerary_info">
-                        <p class="label">房型介紹</p>
-                        <h4 class="sub_title">Lagoon Pool Villa 潟湖泳池別墅<br>(131平方公尺/約39.6坪)</h4>
-                        <p class="description">每棟別墅仿照順化王朝建築規格，採用陶土斜瓦屋頂、開放式庭園，內部設計融合越南傳統美學與現代風格，深紫色系的精緻家俱、隨處可見蓮花圖案、絲綢刺繡，使用竹、藤、棕櫚等可再生建材製成的藝術品，展現兼具環保與時尚的舒適空間。 <br>倚在私人泳池畔欣寧靜的潟湖，徐徐吹來的海風彷彿抹去時間的進行，與最親愛的伴侶盡情享受渡假的悠閒，一起遠眺夕陽西下的美景、滿天星斗的浪漫時刻。 使用竹、藤、棕櫚等可再生建材製成的藝術品，展現兼具環保與時尚的舒適空間。 </p>
+        </section>
+
+        <!-- 行程路線 -->
+        <section class="travel_itineraries" id="move_goto_02">
+            <div class="ContentsBox clearfix">
+                <div class="bothbox">
+                    <div class="info_box">
+                        <h3 class="icon_title icon_map"><span>行程路線</span></h3>
+                        <img src="images/img_map.png" alt="行程路線">
+                    </div>
+                </div>
+                <div class="bothbox">
+                    <div class="info_box">
+                        <h4 class="sub_title">行程亮點</h4>
+                        <p class="description">1.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年<br>
+                            <br>
+                            2.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年<br>
+                            <br>3.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年
+                        </p>
+                    </div>
+                    <div class="youtube_box">
+                        <iframe src="https://www.youtube.com/embed/Bxl6NS5lH7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-            <div class="a_box version_03 clearfix">
-                <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/herbal-massage-in-a-spa-picture-id925055406?k=6&m=925055406&s=612x612&w=0&h=c4GlJScO7xqMU0S872ZulrYSd405puCz3-8QM5q6bt0=);"></div>
-                <div class="right_info">
+        </section>
+
+        <!-- 特色行程 -->
+        <section class="travel_itinerary" id="move_goto_03">
+            <div class="ContentsBox clearfix">
+                <div class="top_title_line">
+                    <h3 class="icon_title icon_itinerary"><span>特色行程</span></h3>
+                </div>
+                <div class="a_box version_01">
                     <div class="itinerary_info">
-                        <p class="label">SPA設施</p>
-                        <h4 class="sub_title">Banyan Tree Spa Lang Co 蘭珂悅榕 Spa 中心<br>(開放時間10:00-22:00)</h4>
-                        <p class="description">屢獲殊榮的蘭珂悅榕 spa 提供全方位的療程，撫慰您的身體與心靈。悠然靜謐的自然環境與傳統優雅建築融為一體，打造舒適高雅的 spa 境地；採用天然成份的芳香精油、有機藥草，承襲百年技法的專業芳療師讓您徹底地放鬆，恢復青春活力。<br>
-                        然環境與傳統優雅建築融為一體，打造舒適高雅的 spa 境地；採用天然成份的芳香精油、有機藥草，承襲百年技法的專業芳療師讓您徹底地放鬆，恢復青春活力。</p>
+                        <p class="label">嚴選<br>飯店</p>
+                        <h4 class="sub_title">Banyan Tree Lang Co<br>悅榕庄蘭珂度假村</h4>
+                        <p class="description">鄰近三大世界自然遺產 - 順化、會安和美山的Lang Co 蘭珂海灣，中越昔日的寧靜漁村，有著原始純淨的海岸線與熱帶山林，現由悅榕庄集團打造世界渡假村 - Lanuna Lang Co拉古娜蘭珂渡假村。舉凡住宿、高爾夫、美饌、特色旅遊一應俱全。Banyan Tree Lang Co 蘭珂悅榕庄就在這美麗迷人的蘭珂海灣之上，是拉古娜蘭珂渡假村中最奢華的渡假飯店之一。</p>
+                    </div>
+                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/modern-luxury-home-showcase-exterior-and-swimming-pool-illuminated-at-picture-id670893633?k=6&m=670893633&s=612x612&w=0&h=xU87WIhuoyCFsy1ghLbM40NSXCxcA4nF5UWG3HUM1JI=);"></div>
+                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/modern-house-with-large-patio-and-swimming-pool-picture-id525440005?k=6&m=525440005&s=612x612&w=0&h=S0bZPfxzBCzkRddZaeVXomy7UUQh0zpr6OtAfKcaPas=);"></div>
+                </div>
+                <div class="a_box version_02 clearfix">
+                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/modern-minimalist-villa-picture-id910193030?k=6&m=910193030&s=612x612&w=0&h=kjD2eKsSI0lWmXH3yZ8qeYoGBy0BJ_8X2yfxpBvwf_w=);"></div>
+                    <div class="right_info">
+                        <div class="itinerary_info">
+                            <p class="label">房型介紹</p>
+                            <h4 class="sub_title">Lagoon Pool Villa 潟湖泳池別墅<br>(131平方公尺/約39.6坪)</h4>
+                            <p class="description">每棟別墅仿照順化王朝建築規格，採用陶土斜瓦屋頂、開放式庭園，內部設計融合越南傳統美學與現代風格，深紫色系的精緻家俱、隨處可見蓮花圖案、絲綢刺繡，使用竹、藤、棕櫚等可再生建材製成的藝術品，展現兼具環保與時尚的舒適空間。 <br>倚在私人泳池畔欣寧靜的潟湖，徐徐吹來的海風彷彿抹去時間的進行，與最親愛的伴侶盡情享受渡假的悠閒，一起遠眺夕陽西下的美景、滿天星斗的浪漫時刻。 使用竹、藤、棕櫚等可再生建材製成的藝術品，展現兼具環保與時尚的舒適空間。 </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="a_box version_01">
-                <div class="itinerary_info">
-                    <p class="label">景點<br>安排</p>
-                    <h4 class="sub_title">會安古城</h4>
-                    <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ...</p>
+                <div class="a_box version_03 clearfix">
+                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/herbal-massage-in-a-spa-picture-id925055406?k=6&m=925055406&s=612x612&w=0&h=c4GlJScO7xqMU0S872ZulrYSd405puCz3-8QM5q6bt0=);"></div>
+                    <div class="right_info">
+                        <div class="itinerary_info">
+                            <p class="label">SPA設施</p>
+                            <h4 class="sub_title">Banyan Tree Spa Lang Co 蘭珂悅榕 Spa 中心<br>(開放時間10:00-22:00)</h4>
+                            <p class="description">屢獲殊榮的蘭珂悅榕 spa 提供全方位的療程，撫慰您的身體與心靈。悠然靜謐的自然環境與傳統優雅建築融為一體，打造舒適高雅的 spa 境地；採用天然成份的芳香精油、有機藥草，承襲百年技法的專業芳療師讓您徹底地放鬆，恢復青春活力。<br>
+                            然環境與傳統優雅建築融為一體，打造舒適高雅的 spa 境地；採用天然成份的芳香精油、有機藥草，承襲百年技法的專業芳療師讓您徹底地放鬆，恢復青春活力。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/sight-of-the-people-and-besalu-medieval-bridge-to-the-late-afternoon-picture-id847746444?k=6&m=847746444&s=612x612&w=0&h=zrLggjunZEj1Vbu6Zw5yXacCWKkHT2x4zOEJLa3dGjI=);"></div>
-                <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/aerial-view-of-brasov-main-square-piata-sfatului-transylvamia-romania-picture-id957284330?k=6&m=957284330&s=612x612&w=0&h=s9_0xHrwnlIraAwTlf71h4Cpltz3ExI57YwvkBZ20sc=);"></div>
-            </div>
-            <div class="a_box version_04 clearfix">
-                <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/golden-gate-jerusalem-israel-picture-id1028640848?k=6&m=1028640848&s=612x612&w=0&h=utH6Oxt8ze9K9H-NMC6wO6MA8Fi1KjZ1dbVOMxhPW-w=);"></div>
-                <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/alcazaba-and-roman-theatre-of-malaga-picture-id942717450?k=6&m=942717450&s=612x612&w=0&h=2pPyvXe5jC3V7yfASj8HCyq1L9skU-eNLGr3xgYrwfA=);"></div>
-            </div>
-            <div class="a_box version_05">
-                <h4 class="sub_title">★會安古城</h4>
-                <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
-                <h4 class="sub_title">★會安古城</h4>
-                <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
-                <h4 class="sub_title">★會安古城</h4>
-                <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
-            </div>
-            <div class="a_box version_01">
-                <div class="itinerary_info">
-                    <p class="label">餐食<br>饗宴</p>
-                    <h4 class="sub_title">餐食推薦</h4>
-                    <p class="description">板橋美食推薦、板橋餐廳懶人包完成囉，大家最愛的板橋車站美食(含板橋大遠百美食)、 ... 詳細文章：布娜飛比利時啤酒餐廳｜假日有駐唱易爆滿，在地夯店餐點美味，不用訂位，來餐廳就能用親民價格，享受我們最受歡迎的肉丸及鮭魚等傳統瑞典風味的餐飲，滿足全家人的胃口與味蕾！瑞典美食區還有更多美味食材，讓你帶回 .</p>
-                </div>
-                <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/eating-brunch-with-waffle-avocado-cucumber-salmon-and-poached-egg-picture-id986530194?k=6&m=986530194&s=612x612&w=0&h=Wt60uwefL1AdcXeAKhTcWCvc26lTBqGvLuHolMqL-L8=);"></div>
-                <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/girl-taking-photo-of-vegan-lunch-bowl-with-cell-phone-closeup-picture-id946934460?k=6&m=946934460&s=612x612&w=0&h=qqot2Ogqcvd7Q_XxHjHJL_qjZTNa6c7hcnvqFMs1Zsg=);"></div>
-            </div>
-            <div class="a_box version_02 clearfix">
-                <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/vegetarian-sandwiches-with-poached-egg-and-sliced-avocado-picture-id1007160316?k=6&m=1007160316&s=612x612&w=0&h=Sf2jF1LUxxbMUodoDZSA0OIgXMLLt8DHmtjqWWYRyE0=);"></div>
-                <div class="right_info">
+                <div class="a_box version_01">
                     <div class="itinerary_info">
-                        <h4 class="sub_title">★推薦餐食</h4>
+                        <p class="label">景點<br>安排</p>
+                        <h4 class="sub_title">會安古城</h4>
+                        <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ...</p>
+                    </div>
+                    <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/sight-of-the-people-and-besalu-medieval-bridge-to-the-late-afternoon-picture-id847746444?k=6&m=847746444&s=612x612&w=0&h=zrLggjunZEj1Vbu6Zw5yXacCWKkHT2x4zOEJLa3dGjI=);"></div>
+                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/aerial-view-of-brasov-main-square-piata-sfatului-transylvamia-romania-picture-id957284330?k=6&m=957284330&s=612x612&w=0&h=s9_0xHrwnlIraAwTlf71h4Cpltz3ExI57YwvkBZ20sc=);"></div>
+                </div>
+                <div class="a_box version_04 clearfix">
+                    <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/golden-gate-jerusalem-israel-picture-id1028640848?k=6&m=1028640848&s=612x612&w=0&h=utH6Oxt8ze9K9H-NMC6wO6MA8Fi1KjZ1dbVOMxhPW-w=);"></div>
+                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/alcazaba-and-roman-theatre-of-malaga-picture-id942717450?k=6&m=942717450&s=612x612&w=0&h=2pPyvXe5jC3V7yfASj8HCyq1L9skU-eNLGr3xgYrwfA=);"></div>
+                </div>
+                <div class="a_box version_05">
+                    <h4 class="sub_title">★會安古城</h4>
+                    <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
+                    <h4 class="sub_title">★會安古城</h4>
+                    <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
+                    <h4 class="sub_title">★會安古城</h4>
+                    <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
+                </div>
+                <div class="a_box version_01">
+                    <div class="itinerary_info">
+                        <p class="label">餐食<br>饗宴</p>
+                        <h4 class="sub_title">餐食推薦</h4>
                         <p class="description">板橋美食推薦、板橋餐廳懶人包完成囉，大家最愛的板橋車站美食(含板橋大遠百美食)、 ... 詳細文章：布娜飛比利時啤酒餐廳｜假日有駐唱易爆滿，在地夯店餐點美味，不用訂位，來餐廳就能用親民價格，享受我們最受歡迎的肉丸及鮭魚等傳統瑞典風味的餐飲，滿足全家人的胃口與味蕾！瑞典美食區還有更多美味食材，讓你帶回 .</p>
                     </div>
+                    <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/eating-brunch-with-waffle-avocado-cucumber-salmon-and-poached-egg-picture-id986530194?k=6&m=986530194&s=612x612&w=0&h=Wt60uwefL1AdcXeAKhTcWCvc26lTBqGvLuHolMqL-L8=);"></div>
+                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/girl-taking-photo-of-vegan-lunch-bowl-with-cell-phone-closeup-picture-id946934460?k=6&m=946934460&s=612x612&w=0&h=qqot2Ogqcvd7Q_XxHjHJL_qjZTNa6c7hcnvqFMs1Zsg=);"></div>
+                </div>
+                <div class="a_box version_02 clearfix">
+                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/vegetarian-sandwiches-with-poached-egg-and-sliced-avocado-picture-id1007160316?k=6&m=1007160316&s=612x612&w=0&h=Sf2jF1LUxxbMUodoDZSA0OIgXMLLt8DHmtjqWWYRyE0=);"></div>
+                    <div class="right_info">
+                        <div class="itinerary_info">
+                            <h4 class="sub_title">★推薦餐食</h4>
+                            <p class="description">板橋美食推薦、板橋餐廳懶人包完成囉，大家最愛的板橋車站美食(含板橋大遠百美食)、 ... 詳細文章：布娜飛比利時啤酒餐廳｜假日有駐唱易爆滿，在地夯店餐點美味，不用訂位，來餐廳就能用親民價格，享受我們最受歡迎的肉丸及鮭魚等傳統瑞典風味的餐飲，滿足全家人的胃口與味蕾！瑞典美食區還有更多美味食材，讓你帶回 .</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 參考航班 -->
-    <section class="travel_aircraft_flight" id="move_goto_04">
-        <div class="ContentsBox clearfix">
-            <div class="top_title_line">
-                <h3 class="icon_title icon_aircraft"><span>特色行程</span></h3>
+        <!-- 參考航班 -->
+        <section class="travel_aircraft_flight" id="move_goto_04">
+            <div class="ContentsBox clearfix">
+                <div class="top_title_line">
+                    <h3 class="icon_title icon_aircraft"><span>特色行程</span></h3>
+                </div>
+                <ul class="aircraft_box_mob">
+                    <li>
+                        <h4>去程   15：40</h4>
+                        <p>起程地點：桃園   →   峴港<br>
+                            抵達時間：第一天  17：15<br>
+                            航空公司：捷星太平洋航空<br>
+                            航班編號：BL141<br>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>去程   15：40</h4>
+                        <p>起程地點：桃園   →   峴港<br>
+                            抵達時間：第一天  17：15<br>
+                            航空公司：捷星太平洋航空<br>
+                            航班編號：BL141<br>
+                        </p>
+                    </li>
+                </ul>
+                <table class="aircraft_box" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <th>&nbsp</th>
+                        <th><p>天數</p></th>
+                        <th><p>啟程 / 抵達地點</p></th>
+                        <th><p>啟程 / 抵達時間</p></th>
+                        <th><p>航空公司</p></th>
+                        <th><p>航班</p></th>
+                    </tr>
+                    <tr>
+                        <td><div class="icon icon_01"></div></td>
+                        <td><p class="bg_01">第一天</p></td>
+                        <td><p class="bg_02">桃園   →   峴港</p></td>
+                        <td><p class="bg_02">15：40 → 17：15</p></td>
+                        <td><p class="bg_03">捷星太平洋航空</p></td>
+                        <td><p class="bg_01">BL141</p></td>
+                    </tr>
+                    <tr>
+                        <td><div class="icon icon_02"></div></td>
+                        <td><p class="bg_01">第五天</p></td>
+                        <td><p class="bg_02">峴港   →   桃園</p></td>
+                        <td><p class="bg_02">11：00 → 14：35</p></td>
+                        <td><p class="bg_03">捷星太平洋航空</p></td>
+                        <td><p class="bg_01">BL140</p></td>
+                    </tr>
+                </table>
+                <ul class="note">
+                    <li><p>捷星航空公司包機直飛-僅需3小時</p></li>
+                    <li><p>以下為本行程預定的航空班機及飛航路線，實際航班以團體確認的航班編號與飛行時間為準。</p></li>
+                    <li><p>因應國際油價波動，航空公司隨機票所增收燃油附加費用，會隨國際油價而有所調整。</p></li>
+                </ul>
             </div>
-            <ul class="aircraft_box_mob">
-                <li>
-                    <h4>去程   15：40</h4>
-                    <p>起程地點：桃園   →   峴港<br>
-                        抵達時間：第一天  17：15<br>
-                        航空公司：捷星太平洋航空<br>
-                        航班編號：BL141<br>
-                    </p>
+        </section>
+
+        <!-- 每日行程 -->
+        <section class="travel_daily_itinerary" id="move_goto_05">
+            <div class="ContentsBox clearfix">
+                <div class="top_title_line">
+                    <h3 class="icon_title icon_daily_itinerary"><span>每日行程</span></h3>
+                </div>
+                <div class="top_where">
+                    <p class="day">第 <span>2</span> 天</p>
+                    <p class="location"><span>順化一日遊【順化京城、紫禁城(世界文化遺產→含三輪車)東巴市場→啟定皇陵→天姥寺→香江游船) 或 享用飯店設施(海上劃艇 射擊 越式劃船 飯店內免費活動) 】</span></p>
+                </div>
+                <div class="version_01 clearfix">
+                    <div class="itinerary_info">
+                        <p class="description">
+                            <span class="sub_title">★【順化京城古都巡禮】</span>
+                            越南阮朝十三代皇宮～紫禁城，於1993年被聯合國科教文組織認定為世界文化遺產。約1000公尺四方的皇宮王城，內外共分為三層，最外為護城，寬21米高7米，周長共有10公里，開有十道門，並有護城河圍繞，城內有龐大的宮殿、內有午門、太和殿、寺廟及花園、橋樑等古建築群體。第二層為文武百官與皇室居所，周長為2400米，共有4個門，以南向的午門為正門，經由午門和參道後，可直抵太和殿。<br>
+                            <span class="sub_title">★【啟定皇陵】</span>：相傳阮朝皇帝在位時即開始替自己死後建造的安居之所，此為啟定皇帝耗費11年歲月建築而成的身後居所，西洋式的建築配有馬賽克的裝飾，處處可見到其深受法國殖民的影響，然而從皇陵的建築、設計更可以看出當時末代皇帝的性格特色。<br>
+                            <span class="sub_title">★【靈姥寺】</span>：此寺建於香江畔的山丘上，寺前有福緣塔於1844年由阮朝第三位皇帝啟定皇帝所建，塔右側有碑石閣、左側有六角閣，塔後聖殿則供奉三寶佛。其所在位置據說為龍脈之首，不僅地理風水好連風景視野都是上乘之選。
+                        </p>
+                    </div>
+                    <div class="photo" style="background-image: url(https://media.gettyimages.com/photos/palace-above-clouds-under-clear-sky-picture-id985534740?k=6&m=985534740&s=612x612&w=0&h=RdQgzKpFFMlxX7z26ErwCuI5drlM-n2vAOeb8rcLHlk=);"></div>
+                </div>
+                <ul class="meals">
+                    <li><p><span class="left_icon breakfast">早餐</span>飯店內享用</p></li>
+                    <li><p><span class="left_icon lunch">午餐</span>LaPines餐廳</p></li>
+                    <li><p><span class="left_icon dinner">晚餐</span>宮廷餐廳</p></li>
+                    <li><p><span class="left_icon accommodation">住宿</span><span class="store">越南蘭珂悅椿渡假村  Angsana Lang Co </span></p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 售價明細 -->
+        <section class="travel_price">
+            <div class="ContentsBox clearfix">
+                <div class="top_title_line">
+                    <h3 class="icon_title icon_price"><span>售價明細</span></h3>
+                </div>
+                <div class="ad_box">
+                    <img src="images/ad.png" style="max-width: 800px;">
+                </div>
+                <table class="ticket_price" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <th><p>出發日</p></th>
+                        <th><p>天數</p></th>
+                        <th><p>價格</p></th>
+                        <th><p>包含</p></th>
+                        <th><p>機位</p></th>
+                    </tr>
+                    <tr>
+                        <td><p>2/3 (日)</p></td>
+                        <td><p>5</p></td>
+                        <td><p><s>45,000</s><br>40,000</p></td>
+                        <td><p>稅 簽證 小費</p></td>
+                        <td><p><a class="type_promotions" href="#">促銷</a></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>2/5 (二)<br>(大年初一)</p></td>
+                        <td><p>5</p></td>
+                        <td><p><s>46,000</s><br>41,000</p></td>
+                        <td><p>稅 簽證 小費</p></td>
+                        <td><p><a class="type_alternate" href="#">候補</a></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>2/6 (三)<br>(大年初二)</p></td>
+                        <td><p>5</p></td>
+                        <td><p><s>46,000</s><br>41,000</p></td>
+                        <td><p>稅 簽證 小費</p></td>
+                        <td><p><a class="type_alternate" href="#">候補</a></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>2/7 (四)</p></td>
+                        <td><p>5</p></td>
+                        <td><p><s>44,000</s><br>39,000</p></td>
+                        <td><p>稅 簽證 小費</p></td>
+                        <td><p><a class="type_promotions" href="#">促銷</a></p></td>
+                    </tr>
+                </table>
+                <div class="other_note">
+                    <h4 class="sub_title">【售價包含內容】</h4>
+                    <p class="description">★ 來回直飛經濟艙團體機票<br>
+                        ★ 雙人房住宿共四晚(不指定房型)<br>
+                        ★ 行程所列之交通、餐食、景點門票等各項費用<br>
+                        ★ 500萬契約責任險暨20萬意外醫療險<br>
+                        ★ 二地機場稅、燃油費 <不變相加價><br>
+                    ★ 越南30日效期觀光一次簽證</p>
+
+                    <h4 class="sub_title">【售價不包含內容】 </h4>
+                    <p class="description">★ 中華民國護照新辦費用<br>
+                        ★ 電話費、行李超重費、床頭小費與相關服務人員小費支出 <br>
+                        ★ 行程所未列出之私人行為消費 <br>
+                    ★ 不含導遊服務費/每人每天NT$200元，共新台幣NT$1,000元/人</p>
+
+                    <h4 class="sub_title">備註 </h4>
+                    <p class="description">※懷孕旅客不建議使用SPA，若有上述狀況，請主動告知您的旅遊專員，以利為您做最妥善的安排。<br>
+                        ※旅客繳交『機位及訂房作業金』後依您指定之旅館訂出，但需以旅館回覆確認為主，若適逢您所選擇的旅館客滿，本公司得以無條件退還作業金，相對作業金於機位及訂房皆確認後立即轉為正式訂金。<br>
+                        ※行程及餐食將依飯店確認順序做調整，為保障您的權利及行程餐食完整性，旅行社及飯店保有順序調整的權利。<br>
+                    ※請特別注意，國外飯店常會有《押金入住》的規定： 當您check in時，飯店會要求收取押金(現金或刷卡，刷卡則是一張空白帳單)，當您退房時務必取回現金或當場撕毀刷卡單。</p>
+
+
+                    <h4 class="sub_title">【簽證】</h4>
+                    <p class="description">越南不含例假日所需工作天要六天應備資料：<br>
+                        ※護照"正本"或"清晰的影本"(護照正本效期需６個月以上)、彩色２吋相片二張。<br>
+                        ※依據越南政府頒訂簽證申請流程，申請簽證旅客須填寫基本資料表，並由代辦旅行社將資料送達越南簽證處。(2014.03開始實施)<br>
+                        ※持以下５個國家的護照可免辦越簽：印尼、新加坡、泰國、馬來西亞、日本，除此之外一律都要辦越簽。〔越簽處隨時會有所調整，恕不另外通知〕<br>
+                    ※持外籍護照（例：美國、加拿大..等）之外籍人士入境越南，需準備：護照正本效期６個月以上（一定要正本）、彩色２吋相片兩張。</p>
+
+                    <h4 class="sub_title">【安全守則】 </h4>
+                    <p class="description"><span>※外交部為提供國人多元服務管道，強化旅外國人急難救助機制，民眾可利用智慧型手機或平版電腦下載安裝『旅外救助指南』APP程式，相關資訊可至該部領事事務局網站(WWW.BOCA.GOV.TW)查詢。 <br>為了您在本次旅遊途中本身的安全，我們特別請您遵守下列事項，這是我們應盡告知的責任，也是保障您的權益。</span></p>
+
+                    <h4 class="sub_title">★１：安全之溫馨小提示★</h4>
+                    <p class="description">1-1：搭乘飛機時，請聽從空服員指示並隨時扣緊安全帶，以免亂流影響安全。<br>
+                        1-2：住宿飯店時請隨時將房門扣上安全鎖，以策安全；勿在燈上晾衣物；勿在房間內吸煙，聽到警報器響，請由緊急出口迅速離開。<br>
+                        1-3：貴重物品可託放至飯店或房間內保險箱，如需隨身攜帶切勿離手，若於離座時將證照或錢包放在餐桌座位上，很容易讓扒手得逞。<br>
+                        1-4：切勿在公共場合露財，也請勿當眾清點鈔票，避免遭有心人士側目。<br>
+                        1-5：遵守觀光景點、餐廳、飯店、遊樂設施等各種場所公告之注意事項。<br>
+                        1-6：切勿於泳池開放以外之時間或無合格救生人員陪同之情況下擅入泳池、海灘或任何戲水之區域與場所，以免溺水或遭遇其他危險。<br>
+                        1-7：搭乘任何形態之船隻請務必「全程」穿著救生衣，航程中並請握緊扶手或坐穩，切勿任意走動與站立，以免造成您與他人的危險。<br>
+                        1-8：海邊或泳池嘻戲請勿超越安全警戒線、或進入超乎您水性範圍之深水區。<br>
+                        1-9：任何活動若具有刺激性，建議身體或體能狀況不佳之旅客切勿冒險參加。<br>
+                        1-10：車輛行進時請勿站立走動，頭手勿伸出窗外，上下車時注意來車方向，以免發生危險。<br>
+                        1-11：搭乘任何交通工具或出入場所時，請依序進入並聽從工作人員指揮。<br>
+                        1-12：若您途中要離隊、夜間或自由活動時間須自行外出，請務必通知領隊或您的團友，並約定返回時間，同時請留意各項安全指示，以免發生意外。<br>
+                        1-13：旅客若入住有私人泳池之房型，請務必留意自身安全，防止受傷或溺水等意外事件發生。<br>
+                        1-14：水上活動提醒注意:請參團貴賓於實施水上活動等自由活動時間,務必配合下列事項:(1)須穿著救生衣並遵守各項活動安全規定(2)請務必使用本公司所指定之當地水上活動業者,切勿因價格低廉而自行挑選非本公司指定之水上活動業者,以避免產生消費爭議導致您的權益受損(3)參團旅客如於水上活動或自由活動期間,遇有任何問題,請第一時間聯絡領隊及導遊,協助處理。<br>
+                        1-15：領隊導遊不得擅自提供醫療用品，因此請自行準備個人習慣性藥品、感冒藥、胃腸藥、暈車藥等(依個人需要準備)，有宿疾者請自行攜帶所須之藥品。旅途中若有任何不適，請立即通知領隊導遊陪同您就醫診療。<br>
+                        1-16：請依個人習慣自行攜帶牙膏、牙刷、洗髮精、沐浴乳、室內拖鞋、口罩、手電筒、雨傘(機場通關時不可放於隨身行李)、防曬乳、太陽眼鏡、刮鬍刀、照相機、轉接插頭、生理用品、帽子、泳衣等私人用品。<br>
+                        1-17：即便是同團團友、領隊或導遊提出之要求，亦不應接受託帶行李，以防因挾帶如毒品、槍械等違禁品，觸犯法律。<br>
+                        1-18：旅客須遵守台灣及當地法律規定，勿進行任何違反法律的行為(例如吸毒、嫖妓、走私、於禁煙場所吸煙等等)，旅客若因違法衍生之法律責任與罰緩，本公司不負任何賠償之責任。<br>
+                        1-19：請妥善保管護照、證件及個人貴重物品，請勿放於巴士、旅館、房間內以及大行李中，並謹防扒手及陌生人搭訕。<br>
+                        1-20：鞋子：女子請不要穿高跟鞋，也請不要穿新鞋，最好穿著涼鞋、平底休閒鞋或球鞋；請攜帶２雙鞋方便替換。<br>
+                    1-21：服裝：建議參觀廟宇都著褲裝，因為多處需爬往高處；某部分廟宇需穿著過膝褲子且上衣不可為無袖;因早晚氣侯變化大可著薄長袖。 </p>
+
+                    <h4 class="sub_title">★２：台灣通關之溫馨小提示★ </h4>
+                    <p class="description">2-1：出境時，台幣現金不超過60,000元；外幣總值不得超過美金5,000 元(旅行支票及匯票不計)。<br>2-2：中華民國政府規定自民國87年10月1日起，不得自海外攜帶新鮮水果入境，若違反規定除水果被沒收外將處3萬至5萬元罰款。<br>2-3：旅客攜帶動植物及其產品入境檢疫須知，為了您通關順利，請勿攜帶動植物及其產品。禁止旅客攜帶的動物及其產品分列如下<br>
+                        活體動物：犬、貓、兔、禽鳥、鼠等。<br>
+                        動物產品：生鮮、冷凍、冷藏肉類及其製品(如香腸、肉乾、貢丸、餛飩、烤鴨等)、含肉加工品(速食麵、雞湯、含肉晶粉等)、蛋品、鹿茸、血清等生物樣材等，包含已煮熟、乾燥、加工、真空包裝處理之產品。 <br>
+                        新鮮水果、土壤、附著土壤或有害活生物之植物。<br>
+                        活昆蟲或有害生物。<br>
+                        自疫區轉運之植物及植物產品。<br>
+                        自民國97年10月1日起，入境旅客攜帶動植物或其產品，如未主動向關稅局申報或未向動植物防疫檢疫局申請檢疫而被查獲者，除處新臺幣3,000元以上罰鍰外，如有違規情節重大者並將移送法辦。下機至出關途中請旅客主動將動植物產品丟入農畜產品棄置箱，配合檢疫偵測犬隊執行行李檢查。<br>
+                        旅客檢疫相關規定，可參考【行政院農業委員會動植物防疫檢疫局】網頁之「出入境旅客檢疫注意事項」專區。<br>
+                        2-4：為維護飛航安全,自2007年3月1日起，凡我國搭乘國際線班機(含國際包機)之出境、轉機及過境旅客隨身所攜帶之液體、膠狀及噴霧類物品實施管制所有旅客隨身攜帶之液體膠狀及噴霧類物品其體積不得超過100毫升，並要放入不超過1公升且可重覆密封之透明塑膠袋內。袋子需能完全密封。旅客攜帶旅行中所必要但未符合前述限量規定之嬰兒奶粉(牛奶)、嬰兒食品、藥品、糖尿病或其他醫療所需之液體膠狀及噴霧類物品，經向安全檢查人員申報，並獲得同意後，可不受前項規定的限制。出境或過境(轉機)旅客在機場管制區或前段航程於機艙內購買或取得前述物品可隨身上機，但需包裝於經籤封防止調包及顯示有效購買證明之塑膠袋內。為使安檢線之X光檢查儀有效，前述之塑膠袋應與其他手提行李、外套或手提電腦分開通過X光檢查。<br>
+                    2-5：行李～國際段以一大件不超過20公斤（如超重一公斤要支付約NT300費用）及手提行李一小件為原則。</p>
+
+
+                    <h4 class="sub_title">★3：免稅品之溫馨小提示★ </h4>
+                    <p class="description">3-1：免稅物品(免申報)之範圍及數量：<br>
+                        a. 最多1公升酒類。任何含有酒精成份，不管是固體或液體，或調和後會變成含酒精成份的物質<br>
+                        b. 煙類包括雪茄、香煙、煙草，不管是抽的、嚼的，香煙不能超過200支，雪茄、煙草不能超過500公克或總重量不得超過500公克。<br>
+                        ※ 請注意:<br>
+                        a. 酒類及香煙都是管控物品，旅客如果攜帶超過以上規定數量又無法出示合法許可證明，所攜物品將遭舉報並全數沒收，並處以重罰。<br>
+                        b. 同一團體如有購買香煙或酒，請各自購買取得收據，請勿交給同一個人攜帶，應在規定的數量內，分別各自攜帶入出關。<br>
+                    C. 古董及保育類動物嚴禁輸出。</p>
+
+                    <h4 class="sub_title">★疾病檢疫★ </h4>
+                    <p class="description">a. 出國前可上疾病管制署網站查詢國際疫情資訊，若前往流行病疫區時，請於出國前4至6週至「旅遊醫學門診」由醫師評估接種疫苗或服用藥物之需求；旅途中或返國途中如出現發燒、嘔吐、腹瀉、皮膚出疹、黃疸等症狀時，請於返國時向機場檢疫人員通報；因傳染病有潛伏期，如回國後出現上述不適症狀，應儘速就醫，並告知醫師近期旅遊史，做為診斷及治療之參考。<br>
+                        b. 相關國際疫情、防治措施及全國12家旅遊醫學門診相關資訊，請參閱該局全球資訊網(<a href="http://www.cdc.gov.tw" target="_blank">http://www.cdc.gov.tw</a>)「入出境健康管理」專區查詢，或1922（國外可撥+886-800-001922）防疫專線洽詢。</p>
+
+                    <h4 class="sub_title">【電話】 </h4>
+                    <p class="description">1. 人在[台灣]，打電話到越南：<br>
+                        台灣國際冠碼(002)＋越南國碼(84)＋當地區域號碼＋電話號碼<br>
+                        2. 人在[越南]，打電話回台灣家中：<br>
+                        越南國際冠碼(00)＋台灣國碼(886)＋台灣區域號碼＋台北家中電話<br>
+                        人在越南，打電話回台北家中,台北區域號碼(不須撥0) + 台北家中電話 00 + 886 + 2 + 台北家中電話<br>
+                    人在越南，打電話回台灣的行動電話, + 台灣國碼 + 行動電話(不須撥第一位數字0) 00 + 886 + 932...... </p>
+
+                    <h4 class="sub_title">【電壓時差】 </h4>
+                    <p class="description">電壓：220伏特，兩孔圓形插座。<br>
+                        氣候：北越〔河內〕一年有四季，氣溫與台灣四季相似，服裝可參考台灣。<br>
+                        　　　南越〔胡志明〕一年四季都是夏季氣候，建議帶件薄外套即可。<br>
+                    時差：越南比臺灣慢1小時。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="FooterBox">
+        <section class="ContentsBox clearfix">
+            <ul class="info clearfix">
+                <li class="left_logo">
+                    <p class="logo">年代旅遊</p>
                 </li>
                 <li>
-                    <h4>去程   15：40</h4>
-                    <p>起程地點：桃園   →   峴港<br>
-                        抵達時間：第一天  17：15<br>
-                        航空公司：捷星太平洋航空<br>
-                        航班編號：BL141<br>
-                    </p>
+                    <div>
+                        <h3 class="top_title">【年代旅遊 專業旅遊網】</h3>
+                        <p>甲種旅行社 交觀 (甲)6830 <br>
+                            旅行業品質保障協會編號：品保 (北)1548<br>
+                        代表人：林貞雄<br>
+                        服務信箱：<a href="mailto:info@welovetour.com.tw">Info@welovetour.com.tw</a> 
+                        <br>版權所有@云輝國際旅行社有限公司 (成立於民國94年)</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h5 class="top_title">|台北總公司|</h5>
+                        <p>服務專線 02-7713-7719<br>
+                        105台北市松山區南京東路四段77號11樓之2</p>
+                        <h5 class="top_title">|台中旗艦店|</h5>
+                        <p>服務專線 04-3704-7719<br>
+                        403台中市西區公益路217號</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="social_box">
+                            <a class="googlefrom" target="_blank" title="線上表單" href="https://docs.google.com/forms/d/e/1FAIpQLSf5rGH0fDpapPmZpNTt6g34ZaK6A126VqQwd8_aU3aPBdxE3Q/viewform"></a>
+                            <a class="line_icon_icon" target="_blank" title="台北line" href="https://line.me/ti/p/%40hcn6976x"></a>
+                            <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/weloveisland/"></a>
+                            <a class="youtube" target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCblEym6jb1pGe8zTT5IzOFg"></a>
+                        </p>
+                        <h4 class="top_title">相關文件資料下載</h4>
+                        <p><a target="_blank" href="http://www.welovetour.com.tw/files/個人合約與信用卡授權書180411.pdf">個人合約與信用卡授權書</a><br>
+                        <a target="_blank" href="http://www.welovetour.com.tw/files/團體合約與信用卡授權書180411.pdf">團體合約與信用卡授權書</a></p>
+                    </div>
                 </li>
             </ul>
-            <table class="aircraft_box" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                    <th>&nbsp</th>
-                    <th><p>天數</p></th>
-                    <th><p>啟程 / 抵達地點</p></th>
-                    <th><p>啟程 / 抵達時間</p></th>
-                    <th><p>航空公司</p></th>
-                    <th><p>航班</p></th>
-                </tr>
-                <tr>
-                    <td><div class="icon icon_01"></div></td>
-                    <td><p class="bg_01">第一天</p></td>
-                    <td><p class="bg_02">桃園   →   峴港</p></td>
-                    <td><p class="bg_02">15：40 → 17：15</p></td>
-                    <td><p class="bg_03">捷星太平洋航空</p></td>
-                    <td><p class="bg_01">BL141</p></td>
-                </tr>
-                <tr>
-                    <td><div class="icon icon_02"></div></td>
-                    <td><p class="bg_01">第五天</p></td>
-                    <td><p class="bg_02">峴港   →   桃園</p></td>
-                    <td><p class="bg_02">11：00 → 14：35</p></td>
-                    <td><p class="bg_03">捷星太平洋航空</p></td>
-                    <td><p class="bg_01">BL140</p></td>
-                </tr>
-            </table>
-            <ul class="note">
-                <li><p>捷星航空公司包機直飛-僅需3小時</p></li>
-                <li><p>以下為本行程預定的航空班機及飛航路線，實際航班以團體確認的航班編號與飛行時間為準。</p></li>
-                <li><p>因應國際油價波動，航空公司隨機票所增收燃油附加費用，會隨國際油價而有所調整。</p></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- 每日行程 -->
-    <section class="travel_daily_itinerary" id="move_goto_05">
-        <div class="ContentsBox clearfix">
-            <div class="top_title_line">
-                <h3 class="icon_title icon_daily_itinerary"><span>每日行程</span></h3>
-            </div>
-            <div class="top_where">
-                <p class="day">第 <span>2</span> 天</p>
-                <p class="location"><span>順化一日遊【順化京城、紫禁城(世界文化遺產→含三輪車)東巴市場→啟定皇陵→天姥寺→香江游船) 或 享用飯店設施(海上劃艇 射擊 越式劃船 飯店內免費活動) 】</span></p>
-            </div>
-            <div class="version_01 clearfix">
-                <div class="itinerary_info">
-                    <p class="description">
-                        <span class="sub_title">★【順化京城古都巡禮】</span>
-                        越南阮朝十三代皇宮～紫禁城，於1993年被聯合國科教文組織認定為世界文化遺產。約1000公尺四方的皇宮王城，內外共分為三層，最外為護城，寬21米高7米，周長共有10公里，開有十道門，並有護城河圍繞，城內有龐大的宮殿、內有午門、太和殿、寺廟及花園、橋樑等古建築群體。第二層為文武百官與皇室居所，周長為2400米，共有4個門，以南向的午門為正門，經由午門和參道後，可直抵太和殿。<br>
-                        <span class="sub_title">★【啟定皇陵】</span>：相傳阮朝皇帝在位時即開始替自己死後建造的安居之所，此為啟定皇帝耗費11年歲月建築而成的身後居所，西洋式的建築配有馬賽克的裝飾，處處可見到其深受法國殖民的影響，然而從皇陵的建築、設計更可以看出當時末代皇帝的性格特色。<br>
-                        <span class="sub_title">★【靈姥寺】</span>：此寺建於香江畔的山丘上，寺前有福緣塔於1844年由阮朝第三位皇帝啟定皇帝所建，塔右側有碑石閣、左側有六角閣，塔後聖殿則供奉三寶佛。其所在位置據說為龍脈之首，不僅地理風水好連風景視野都是上乘之選。
-                    </p>
-                </div>
-                <div class="photo" style="background-image: url(https://media.gettyimages.com/photos/palace-above-clouds-under-clear-sky-picture-id985534740?k=6&m=985534740&s=612x612&w=0&h=RdQgzKpFFMlxX7z26ErwCuI5drlM-n2vAOeb8rcLHlk=);"></div>
-            </div>
-            <ul class="meals">
-                <li><p><span class="left_icon breakfast">早餐</span>飯店內享用</p></li>
-                <li><p><span class="left_icon lunch">午餐</span>LaPines餐廳</p></li>
-                <li><p><span class="left_icon dinner">晚餐</span>宮廷餐廳</p></li>
-                <li><p><span class="left_icon accommodation">住宿</span><span class="store">越南蘭珂悅椿渡假村  Angsana Lang Co </span></p></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- 售價明細 -->
-    <section class="travel_price">
-        <div class="ContentsBox clearfix">
-            <div class="top_title_line">
-                <h3 class="icon_title icon_price"><span>售價明細</span></h3>
-            </div>
-            <div class="ad_box">
-                <img src="images/ad.png" style="max-width: 800px;">
-            </div>
-            <table class="ticket_price" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                    <th><p>出發日</p></th>
-                    <th><p>天數</p></th>
-                    <th><p>價格</p></th>
-                    <th><p>包含</p></th>
-                    <th><p>機位</p></th>
-                </tr>
-                <tr>
-                    <td><p>2/3 (日)</p></td>
-                    <td><p>5</p></td>
-                    <td><p><s>45,000</s><br>40,000</p></td>
-                    <td><p>稅 簽證 小費</p></td>
-                    <td><p><a class="type_promotions" href="#">促銷</a></p></td>
-                </tr>
-                <tr>
-                    <td><p>2/5 (二)<br>(大年初一)</p></td>
-                    <td><p>5</p></td>
-                    <td><p><s>46,000</s><br>41,000</p></td>
-                    <td><p>稅 簽證 小費</p></td>
-                    <td><p><a class="type_alternate" href="#">候補</a></p></td>
-                </tr>
-                <tr>
-                    <td><p>2/6 (三)<br>(大年初二)</p></td>
-                    <td><p>5</p></td>
-                    <td><p><s>46,000</s><br>41,000</p></td>
-                    <td><p>稅 簽證 小費</p></td>
-                    <td><p><a class="type_alternate" href="#">候補</a></p></td>
-                </tr>
-                <tr>
-                    <td><p>2/7 (四)</p></td>
-                    <td><p>5</p></td>
-                    <td><p><s>44,000</s><br>39,000</p></td>
-                    <td><p>稅 簽證 小費</p></td>
-                    <td><p><a class="type_promotions" href="#">促銷</a></p></td>
-                </tr>
-            </table>
-            <div class="other_note">
-                <h4 class="sub_title">【售價包含內容】</h4>
-                <p class="description">★ 來回直飛經濟艙團體機票<br>
-                    ★ 雙人房住宿共四晚(不指定房型)<br>
-                    ★ 行程所列之交通、餐食、景點門票等各項費用<br>
-                    ★ 500萬契約責任險暨20萬意外醫療險<br>
-                    ★ 二地機場稅、燃油費 <不變相加價><br>
-                ★ 越南30日效期觀光一次簽證</p>
-
-                <h4 class="sub_title">【售價不包含內容】 </h4>
-                <p class="description">★ 中華民國護照新辦費用<br>
-                    ★ 電話費、行李超重費、床頭小費與相關服務人員小費支出 <br>
-                    ★ 行程所未列出之私人行為消費 <br>
-                ★ 不含導遊服務費/每人每天NT$200元，共新台幣NT$1,000元/人</p>
-
-                <h4 class="sub_title">備註 </h4>
-                <p class="description">※懷孕旅客不建議使用SPA，若有上述狀況，請主動告知您的旅遊專員，以利為您做最妥善的安排。<br>
-                    ※旅客繳交『機位及訂房作業金』後依您指定之旅館訂出，但需以旅館回覆確認為主，若適逢您所選擇的旅館客滿，本公司得以無條件退還作業金，相對作業金於機位及訂房皆確認後立即轉為正式訂金。<br>
-                    ※行程及餐食將依飯店確認順序做調整，為保障您的權利及行程餐食完整性，旅行社及飯店保有順序調整的權利。<br>
-                ※請特別注意，國外飯店常會有《押金入住》的規定： 當您check in時，飯店會要求收取押金(現金或刷卡，刷卡則是一張空白帳單)，當您退房時務必取回現金或當場撕毀刷卡單。</p>
-
-
-                <h4 class="sub_title">【簽證】</h4>
-                <p class="description">越南不含例假日所需工作天要六天應備資料：<br>
-                    ※護照"正本"或"清晰的影本"(護照正本效期需６個月以上)、彩色２吋相片二張。<br>
-                    ※依據越南政府頒訂簽證申請流程，申請簽證旅客須填寫基本資料表，並由代辦旅行社將資料送達越南簽證處。(2014.03開始實施)<br>
-                    ※持以下５個國家的護照可免辦越簽：印尼、新加坡、泰國、馬來西亞、日本，除此之外一律都要辦越簽。〔越簽處隨時會有所調整，恕不另外通知〕<br>
-                ※持外籍護照（例：美國、加拿大..等）之外籍人士入境越南，需準備：護照正本效期６個月以上（一定要正本）、彩色２吋相片兩張。</p>
-
-                <h4 class="sub_title">【安全守則】 </h4>
-                <p class="description"><span>※外交部為提供國人多元服務管道，強化旅外國人急難救助機制，民眾可利用智慧型手機或平版電腦下載安裝『旅外救助指南』APP程式，相關資訊可至該部領事事務局網站(WWW.BOCA.GOV.TW)查詢。 <br>為了您在本次旅遊途中本身的安全，我們特別請您遵守下列事項，這是我們應盡告知的責任，也是保障您的權益。</span></p>
-
-                <h4 class="sub_title">★１：安全之溫馨小提示★</h4>
-                <p class="description">1-1：搭乘飛機時，請聽從空服員指示並隨時扣緊安全帶，以免亂流影響安全。<br>
-                    1-2：住宿飯店時請隨時將房門扣上安全鎖，以策安全；勿在燈上晾衣物；勿在房間內吸煙，聽到警報器響，請由緊急出口迅速離開。<br>
-                    1-3：貴重物品可託放至飯店或房間內保險箱，如需隨身攜帶切勿離手，若於離座時將證照或錢包放在餐桌座位上，很容易讓扒手得逞。<br>
-                    1-4：切勿在公共場合露財，也請勿當眾清點鈔票，避免遭有心人士側目。<br>
-                    1-5：遵守觀光景點、餐廳、飯店、遊樂設施等各種場所公告之注意事項。<br>
-                    1-6：切勿於泳池開放以外之時間或無合格救生人員陪同之情況下擅入泳池、海灘或任何戲水之區域與場所，以免溺水或遭遇其他危險。<br>
-                    1-7：搭乘任何形態之船隻請務必「全程」穿著救生衣，航程中並請握緊扶手或坐穩，切勿任意走動與站立，以免造成您與他人的危險。<br>
-                    1-8：海邊或泳池嘻戲請勿超越安全警戒線、或進入超乎您水性範圍之深水區。<br>
-                    1-9：任何活動若具有刺激性，建議身體或體能狀況不佳之旅客切勿冒險參加。<br>
-                    1-10：車輛行進時請勿站立走動，頭手勿伸出窗外，上下車時注意來車方向，以免發生危險。<br>
-                    1-11：搭乘任何交通工具或出入場所時，請依序進入並聽從工作人員指揮。<br>
-                    1-12：若您途中要離隊、夜間或自由活動時間須自行外出，請務必通知領隊或您的團友，並約定返回時間，同時請留意各項安全指示，以免發生意外。<br>
-                    1-13：旅客若入住有私人泳池之房型，請務必留意自身安全，防止受傷或溺水等意外事件發生。<br>
-                    1-14：水上活動提醒注意:請參團貴賓於實施水上活動等自由活動時間,務必配合下列事項:(1)須穿著救生衣並遵守各項活動安全規定(2)請務必使用本公司所指定之當地水上活動業者,切勿因價格低廉而自行挑選非本公司指定之水上活動業者,以避免產生消費爭議導致您的權益受損(3)參團旅客如於水上活動或自由活動期間,遇有任何問題,請第一時間聯絡領隊及導遊,協助處理。<br>
-                    1-15：領隊導遊不得擅自提供醫療用品，因此請自行準備個人習慣性藥品、感冒藥、胃腸藥、暈車藥等(依個人需要準備)，有宿疾者請自行攜帶所須之藥品。旅途中若有任何不適，請立即通知領隊導遊陪同您就醫診療。<br>
-                    1-16：請依個人習慣自行攜帶牙膏、牙刷、洗髮精、沐浴乳、室內拖鞋、口罩、手電筒、雨傘(機場通關時不可放於隨身行李)、防曬乳、太陽眼鏡、刮鬍刀、照相機、轉接插頭、生理用品、帽子、泳衣等私人用品。<br>
-                    1-17：即便是同團團友、領隊或導遊提出之要求，亦不應接受託帶行李，以防因挾帶如毒品、槍械等違禁品，觸犯法律。<br>
-                    1-18：旅客須遵守台灣及當地法律規定，勿進行任何違反法律的行為(例如吸毒、嫖妓、走私、於禁煙場所吸煙等等)，旅客若因違法衍生之法律責任與罰緩，本公司不負任何賠償之責任。<br>
-                    1-19：請妥善保管護照、證件及個人貴重物品，請勿放於巴士、旅館、房間內以及大行李中，並謹防扒手及陌生人搭訕。<br>
-                    1-20：鞋子：女子請不要穿高跟鞋，也請不要穿新鞋，最好穿著涼鞋、平底休閒鞋或球鞋；請攜帶２雙鞋方便替換。<br>
-                1-21：服裝：建議參觀廟宇都著褲裝，因為多處需爬往高處；某部分廟宇需穿著過膝褲子且上衣不可為無袖;因早晚氣侯變化大可著薄長袖。 </p>
-
-                <h4 class="sub_title">★２：台灣通關之溫馨小提示★ </h4>
-                <p class="description">2-1：出境時，台幣現金不超過60,000元；外幣總值不得超過美金5,000 元(旅行支票及匯票不計)。<br>2-2：中華民國政府規定自民國87年10月1日起，不得自海外攜帶新鮮水果入境，若違反規定除水果被沒收外將處3萬至5萬元罰款。<br>2-3：旅客攜帶動植物及其產品入境檢疫須知，為了您通關順利，請勿攜帶動植物及其產品。禁止旅客攜帶的動物及其產品分列如下<br>
-                    活體動物：犬、貓、兔、禽鳥、鼠等。<br>
-                    動物產品：生鮮、冷凍、冷藏肉類及其製品(如香腸、肉乾、貢丸、餛飩、烤鴨等)、含肉加工品(速食麵、雞湯、含肉晶粉等)、蛋品、鹿茸、血清等生物樣材等，包含已煮熟、乾燥、加工、真空包裝處理之產品。 <br>
-                    新鮮水果、土壤、附著土壤或有害活生物之植物。<br>
-                    活昆蟲或有害生物。<br>
-                    自疫區轉運之植物及植物產品。<br>
-                    自民國97年10月1日起，入境旅客攜帶動植物或其產品，如未主動向關稅局申報或未向動植物防疫檢疫局申請檢疫而被查獲者，除處新臺幣3,000元以上罰鍰外，如有違規情節重大者並將移送法辦。下機至出關途中請旅客主動將動植物產品丟入農畜產品棄置箱，配合檢疫偵測犬隊執行行李檢查。<br>
-                    旅客檢疫相關規定，可參考【行政院農業委員會動植物防疫檢疫局】網頁之「出入境旅客檢疫注意事項」專區。<br>
-                    2-4：為維護飛航安全,自2007年3月1日起，凡我國搭乘國際線班機(含國際包機)之出境、轉機及過境旅客隨身所攜帶之液體、膠狀及噴霧類物品實施管制所有旅客隨身攜帶之液體膠狀及噴霧類物品其體積不得超過100毫升，並要放入不超過1公升且可重覆密封之透明塑膠袋內。袋子需能完全密封。旅客攜帶旅行中所必要但未符合前述限量規定之嬰兒奶粉(牛奶)、嬰兒食品、藥品、糖尿病或其他醫療所需之液體膠狀及噴霧類物品，經向安全檢查人員申報，並獲得同意後，可不受前項規定的限制。出境或過境(轉機)旅客在機場管制區或前段航程於機艙內購買或取得前述物品可隨身上機，但需包裝於經籤封防止調包及顯示有效購買證明之塑膠袋內。為使安檢線之X光檢查儀有效，前述之塑膠袋應與其他手提行李、外套或手提電腦分開通過X光檢查。<br>
-                2-5：行李～國際段以一大件不超過20公斤（如超重一公斤要支付約NT300費用）及手提行李一小件為原則。</p>
-
-
-                <h4 class="sub_title">★3：免稅品之溫馨小提示★ </h4>
-                <p class="description">3-1：免稅物品(免申報)之範圍及數量：<br>
-                    a. 最多1公升酒類。任何含有酒精成份，不管是固體或液體，或調和後會變成含酒精成份的物質<br>
-                    b. 煙類包括雪茄、香煙、煙草，不管是抽的、嚼的，香煙不能超過200支，雪茄、煙草不能超過500公克或總重量不得超過500公克。<br>
-                    ※ 請注意:<br>
-                    a. 酒類及香煙都是管控物品，旅客如果攜帶超過以上規定數量又無法出示合法許可證明，所攜物品將遭舉報並全數沒收，並處以重罰。<br>
-                    b. 同一團體如有購買香煙或酒，請各自購買取得收據，請勿交給同一個人攜帶，應在規定的數量內，分別各自攜帶入出關。<br>
-                C. 古董及保育類動物嚴禁輸出。</p>
-
-                <h4 class="sub_title">★疾病檢疫★ </h4>
-                <p class="description">a. 出國前可上疾病管制署網站查詢國際疫情資訊，若前往流行病疫區時，請於出國前4至6週至「旅遊醫學門診」由醫師評估接種疫苗或服用藥物之需求；旅途中或返國途中如出現發燒、嘔吐、腹瀉、皮膚出疹、黃疸等症狀時，請於返國時向機場檢疫人員通報；因傳染病有潛伏期，如回國後出現上述不適症狀，應儘速就醫，並告知醫師近期旅遊史，做為診斷及治療之參考。<br>
-                    b. 相關國際疫情、防治措施及全國12家旅遊醫學門診相關資訊，請參閱該局全球資訊網(<a href="http://www.cdc.gov.tw" target="_blank">http://www.cdc.gov.tw</a>)「入出境健康管理」專區查詢，或1922（國外可撥+886-800-001922）防疫專線洽詢。</p>
-
-                <h4 class="sub_title">【電話】 </h4>
-                <p class="description">1. 人在[台灣]，打電話到越南：<br>
-                    台灣國際冠碼(002)＋越南國碼(84)＋當地區域號碼＋電話號碼<br>
-                    2. 人在[越南]，打電話回台灣家中：<br>
-                    越南國際冠碼(00)＋台灣國碼(886)＋台灣區域號碼＋台北家中電話<br>
-                    人在越南，打電話回台北家中,台北區域號碼(不須撥0) + 台北家中電話 00 + 886 + 2 + 台北家中電話<br>
-                人在越南，打電話回台灣的行動電話, + 台灣國碼 + 行動電話(不須撥第一位數字0) 00 + 886 + 932...... </p>
-
-                <h4 class="sub_title">【電壓時差】 </h4>
-                <p class="description">電壓：220伏特，兩孔圓形插座。<br>
-                    氣候：北越〔河內〕一年有四季，氣溫與台灣四季相似，服裝可參考台灣。<br>
-                    　　　南越〔胡志明〕一年四季都是夏季氣候，建議帶件薄外套即可。<br>
-                時差：越南比臺灣慢1小時。</p>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="FooterBox">
-    <section class="ContentsBox clearfix">
-        <ul class="info clearfix">
-            <li class="left_logo">
-                <p class="logo">年代旅遊</p>
-            </li>
-            <li>
-                <div>
-                    <h3 class="top_title">【年代旅遊 專業旅遊網】</h3>
-                    <p>甲種旅行社 交觀 (甲)6830 <br>
-                        旅行業品質保障協會編號：品保 (北)1548<br>
-                    代表人：林貞雄<br>
-                    服務信箱：<a href="mailto:info@welovetour.com.tw">Info@welovetour.com.tw</a> 
-                    <br>版權所有@云輝國際旅行社有限公司 (成立於民國94年)</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5 class="top_title">|台北總公司|</h5>
-                    <p>服務專線 02-7713-7719<br>
-                    105台北市松山區南京東路四段77號11樓之2</p>
-                    <h5 class="top_title">|台中旗艦店|</h5>
-                    <p>服務專線 04-3704-7719<br>
-                    403台中市西區公益路217號</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <p class="social_box">
-                        <a class="googlefrom" target="_blank" title="線上表單" href="https://docs.google.com/forms/d/e/1FAIpQLSf5rGH0fDpapPmZpNTt6g34ZaK6A126VqQwd8_aU3aPBdxE3Q/viewform"></a>
-                        <a class="line" target="_blank" title="台北line" href="https://line.me/ti/p/%40hcn6976x"></a>
-                        <a class="facebook" target="_blank" title="Facebook" href="https://www.facebook.com/weloveisland/"></a>
-                        <a class="youtube" target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCblEym6jb1pGe8zTT5IzOFg"></a>
-                    </p>
-                    <h4 class="top_title">相關文件資料下載</h4>
-                    <p><a target="_blank" href="http://www.welovetour.com.tw/files/個人合約與信用卡授權書180411.pdf">個人合約與信用卡授權書</a><br>
-                    <a target="_blank" href="http://www.welovetour.com.tw/files/團體合約與信用卡授權書180411.pdf">團體合約與信用卡授權書</a></p>
-                </div>
-            </li>
-        </ul>
-    </section>
-</footer>
+        </section>
+    </footer>
 
 </body>
 </html>
