@@ -1018,6 +1018,7 @@ textarea {
 
 #slider {
 	overflow: hidden;
+	  /*padding-top: 160px;*/
 }
 
 
@@ -1548,6 +1549,7 @@ footer {
 
 body #slider{
 	overflow: hidden;
+	/*padding-top: 100px;*/
 	clear: both;
 	position: relative;
 } 
@@ -1633,6 +1635,7 @@ body #slider{
 @media screen and (max-width: 1000px) {
 body #slider{
   overflow: hidden;
+  /*padding-top: 265px;*/
   
 } 
 
@@ -1674,6 +1677,7 @@ body #slider{
 @media screen and (max-width: 600px) {
   body #slider{
   overflow: hidden;
+  /*padding-top: 265px;*/
 }  
 
    
@@ -1747,6 +1751,7 @@ width: 80%;
 @media screen and (min-width: 995px) {
  body #slider{
   overflow: hidden;
+ /* padding-top: 160px;*/
  
   
 } 

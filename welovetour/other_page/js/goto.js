@@ -43,23 +43,27 @@ function closeNav() {
 	document.getElementById("Main_Contents").classList.remove("for_blur");
 }
 
+ // $(function(){
+ // 	var body = $("body");
+	// var width = body.width() // Get position of the body
+
+	// if(width < 350)
+	// {
+ //        document.getElementById("theSidenav").style.width = "300px";
+	// }
+	// if(width > 350)
+	// {
+ //        document.getElementById("theSidenav").style.width = "350px";
+	// }
+	// return false;
+ // });
+
 $(function(){
 	$(".sidenav ul.side_menu li h3").click(function(){
 	  $(this).parent().find('ul.sub_menu').slideToggle();
 	});
 	return false;
 });
-
-// $(function(){
-// 	$( ".sidenav ul.side_menu li h3" ).click(
-// 	 function() {
-// 	 	$(this).parent().find('ul.sub_menu').fadeIn();
-// 	  }, function() {
-// 	  	$(this).parent().find('ul.sub_menu').fadeOut();
-// 	  }
-// 	);
-// 	return false;
-// });
 
 
 

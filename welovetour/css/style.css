@@ -67,7 +67,7 @@ p.social_box a:hover{ background-color: #fff; }
 /*header*/
 .HeaderBox{ width: 100%; min-height: 78px; background-color: #000000; border-bottom: 5px solid #d1ab1b;}
 .HeaderBox .ContentsBox{ position: relative;}
-.HeaderBox h3.logo{ float: left; padding:40px 30px 10px 20px; text-indent: -9999px; display: block;}
+.HeaderBox h3.logo{ float: left; padding:26px 30px 10px 20px; text-indent: -9999px; display: block;}
 .HeaderBox h3.logo a{ color: #666;  width: 183px; height: 50px; display: block; background: url(../images/welovetour_logo.png) center center no-repeat; background-size: contain;}
 .HeaderBox .the_mob_btn{ float: right; display: none; padding: 20px 15px; padding-top: 25px; line-height: 24px; cursor:pointer; color: #d9b00f;}
 .HeaderBox .the_mob_btn span.title{ font-size: 22px; padding-right: 10px; }
@@ -77,8 +77,8 @@ p.social_box a:hover{ background-color: #fff; }
 .HeaderBox .TopBox ul.top_menu{ display: inline-block; float: left; }
 .HeaderBox .TopBox ul.top_menu li{ float: left; position: relative;}
 .HeaderBox .TopBox ul.top_menu li::after{ content: ""; width: 1px; height: 68px; border-left: 1px solid #d1ab1b; position: absolute; left: 0; top: 0; }
-.HeaderBox .TopBox ul.top_menu li h3{ font-size: 20px; cursor: pointer; padding: 50px 40px 50px 30px; ; line-height: 22px; color: #ffffff;position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
-.HeaderBox .TopBox ul.top_menu li h3.none_arr{padding: 50px 30px;}
+.HeaderBox .TopBox ul.top_menu li h3{ font-size: 20px; cursor: pointer; padding: 41px 40px 41px 30px; ; line-height: 22px; color: #ffffff;position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.HeaderBox .TopBox ul.top_menu li h3.none_arr{padding: 41px 30px;}
 .HeaderBox .TopBox ul.top_menu li h3.none_arr:after{ display: none; }
 .HeaderBox .TopBox ul.top_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
 .HeaderBox .TopBox ul.top_menu li h3 a:hover{ color: #d1ab1b;}
@@ -86,7 +86,7 @@ p.social_box a:hover{ background-color: #fff; }
 .HeaderBox .TopBox ul.top_menu li:hover h3{ color: #d1ab1b; }
 .HeaderBox .TopBox ul.top_menu li:hover h3:after{ background-image:url(../images/icon_arr_y.png);}
 
-.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; min-width: 175px; top: 70px; left: 0; background-color: rgba(40,40,40,.85); padding: 20px 30px;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; min-width: 175px; top: 70px; left: 0; background-color: rgba(0,0,0,.85); padding: 20px 30px;}
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li{ width: 100%; float: none; }
 .HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu{ min-width: 530px; }
 .HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu li{ float: left; width: inherit; min-width: 92px; }
@@ -96,7 +96,7 @@ p.social_box a:hover{ background-color: #fff; }
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a{ color: #ffffff; padding: 8px 0; display: block;}
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li p a:hover{color: #d1ab1b; }
 
-.HeaderBox p.social_box{ padding-top: 45px; }
+.HeaderBox p.social_box{ padding-top: 36px; }
 
 /*Main_Contents*/
 .Main_Contents{ width: 100%; background-color: #fff;}
@@ -270,9 +270,9 @@ p.social_box a:hover{ background-color: #fff; }
 .FooterBox h4.top_title{ font-size: 16px; }
 .FooterBox h5.top_title{ font-size: 13px; letter-spacing: 2px; }
 
-.FooterBox ul.info{ width: 100%; padding: 35px 0;}
+.FooterBox ul.info{ width: 100%; padding: 15px 0;}
 .FooterBox ul.info li{ float: left; position: relative; max-width:30%; min-height: 164px;  padding: 10px 2% 0 2%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.FooterBox ul.info li::before{ content: ""; position: absolute; left: 0; top: 0; width: 1px; display: block; height:212px; border-left:1px solid #d1ab1b;}
+.FooterBox ul.info li::before{ content: ""; position: absolute; left: 0; top: 10px; width: 1px; display: block; height:160px; border-left:1px solid #d1ab1b;}
 .FooterBox ul.info li:first-child::before{ display: none; }
 .FooterBox ul.info li:last-child{ max-width: 20%; }
 .FooterBox ul.info li.left_logo{ width:20%; max-width: 274px;}
@@ -308,8 +308,8 @@ p.social_box a:hover{ background-color: #fff; }
 .fixed_bottom_tools ul{ width: 100%; }
 .fixed_bottom_tools ul li{ width: 20%; float: left; }
 .fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; }
-.fixed_bottom_tools ul li p a{ color: #fff; padding:45px 0 10px 0; display: block;  position: relative;}
-.fixed_bottom_tools ul li p a::after{ position: absolute; top: 5px; left:calc(50% - 18px); content: ""; width:36px; height: 36px; display: block; background-repeat: no-repeat; background-size: contain; }
+.fixed_bottom_tools ul li p a{ color: #fff; padding:38px 0 6px 0; display: block;  position: relative;}
+.fixed_bottom_tools ul li p a::after{ position: absolute; top: 3.5px; left:calc(50% - 18px); content: ""; width:36px; height: 36px; display: block; background-repeat: no-repeat; background-size: contain; }
 .fixed_bottom_tools ul li p a.line_icon::after{ background-image: url(../images/icon_mob_tools_line.png); }
 .fixed_bottom_tools ul li p a.google::after{ background-image: url(../images/icon_mob_tools_google.png); }
 .fixed_bottom_tools ul li p a.phone::after{ background-image: url(../images/icon_mob_tools_phone.png); }
@@ -430,7 +430,7 @@ p.social_box a:hover{ background-color: #fff; }
 }
 @media (max-width:400px){
 	.fixed_bottom_tools ul li p{ font-size: 13px; }
-	.fixed_bottom_tools ul li p a::after{ top: 7px; height: 34px; }
+	.fixed_bottom_tools ul li p a::after{ height: 34px; }
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
