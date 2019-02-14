@@ -104,10 +104,10 @@ p.social_box a:hover{ background-color: #fff; }
 .Main_Contents .main_banner{ width: 100%; height: 600px; background: url(../images/banner/index-banner1.jpg) center center no-repeat; background-size: cover; }
 .Main_Contents .travel_date_departure{ width: 100%; }
 .Main_Contents .travel_date_departure .ContentsBox{ position: relative; }
-.Main_Contents  h1.travel_main_title{ padding:25px 0 5px 0;font-size: 28px; text-align: center; color: #222; }
-.Main_Contents  h2.travel_sub_title{ color: #d1ab1b; font-size: 28px; text-align: center; padding: 6px 0 20px 0; border-bottom: 1px solid #d1ab1b; }
+.Main_Contents  h1.travel_main_title{ padding:25px 15px 5px 15px;font-size: 28px; text-align: center; color: #222; }
+.Main_Contents  h2.travel_sub_title{ color: #d1ab1b; font-size: 28px; text-align: center; padding: 6px 15px 20px 15px; border-bottom: 1px solid #d1ab1b; }
 
-.Main_Contents .travel_date_departure .trip_date_list{ width: 100%; padding: 20px; }
+.Main_Contents .travel_date_departure .trip_date_list{ width: 100%; padding-top: 20px 0; }
 .Main_Contents .travel_date_departure .trip_date_list p.top_title{  font-size: 20px; line-height: 34px; text-align: center; padding: 20px 0;}
 
 .Main_Contents .travel_date_departure .trip_date_list table.date_box{ width: 100%; border:1px solid #2c2c2c; }
@@ -215,7 +215,7 @@ p.social_box a:hover{ background-color: #fff; }
 .Main_Contents .travel_daily_itinerary .top_where{ width: 100%; position: relative; padding:25px 0 20px 0;}
 .Main_Contents .travel_daily_itinerary .top_where p.day{ position: absolute; left: 0; top: calc(50% - 45px); font-size: 33px; color: #d1ab1b; }
 .Main_Contents .travel_daily_itinerary .top_where p.day span{ font-size: 70px; padding: 0 5px; }
-.Main_Contents .travel_daily_itinerary .top_where p.location{width:calc(100% - 180px); font-size: 28px; line-height: 44px; padding-left: 25px; margin-left: 180px; border-left: 2px solid #333; min-height: 88px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.Main_Contents .travel_daily_itinerary .top_where p.location{width:calc(100% - 180px); text-align: justify; font-size: 28px; line-height: 44px; padding-left: 25px; margin-left: 180px; border-left: 2px solid #333; min-height: 88px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .Main_Contents .travel_daily_itinerary .top_where p.location span{  width: 100%; }
 
 .Main_Contents .travel_daily_itinerary .version_01{ width: 100%; padding: 35px 0; }
@@ -395,7 +395,7 @@ p.social_box a:hover{ background-color: #fff; }
 	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 22px; }
 }
 @media (max-width:700px){
-	.Main_Contents .travel_daily_itinerary .top_where p.location{ font-size: 26px; width: 100%; margin: 0; padding: 0 20px; border:none; }
+	.Main_Contents .travel_daily_itinerary .top_where p.location{ font-size: 25px; width: 100%; margin: 0; padding: 0 20px; border:none; }
 	.Main_Contents .travel_daily_itinerary .top_where p.day{position: relative; padding: 20px;}
 	.Main_Contents .travel_daily_itinerary .top_where p.day::after{ content: ""; position: absolute; top: 55%; right:-20px;  width:calc(100% - 190px); height: 1px; border-bottom: 2px solid #333; display: block; }
 	.Main_Contents .travel_daily_itinerary .version_01{padding-top: 0;}
@@ -415,8 +415,20 @@ p.social_box a:hover{ background-color: #fff; }
 	.HeaderBox .the_mob_btn{padding: 15px 20px;}
 	.HeaderBox .the_mob_btn span.title{ display: none; }
 	.Main_Contents{padding-top: 67px;}
+	.Main_Contents h2.travel_sub_title{ font-size: 26px; }
+	.Main_Contents h3.icon_title{ font-size: 26px; }
+	.Main_Contents h3.icon_itinerary span::after, .Main_Contents h3.icon_daily_itinerary span::after{ width: 58px; }
+	.Main_Contents h3.icon_aircraft span{ padding-left: 130px; }
+	.Main_Contents h3.icon_aircraft span::after{ width: 110px; }
+	.Main_Contents h3.icon_price span::after{ width: 75px; }
 	.Main_Contents p.mob_go_menu, .fixed_bottom_tools{ display: block; }
 	.Main_Contents .travel_price{padding-bottom: 100px;}
+	.Main_Contents .travel_itineraries .youtube_box iframe{ height: 220px; }
+	.Main_Contents .travel_itinerary .a_box .itinerary_info p.label{ font-size: 18px;  line-height: inherit; padding: 8px 15px;}
+	.Main_Contents .travel_itinerary .a_box .photo_02, 	.Main_Contents .travel_itinerary .version_02 .photo_01 , .Main_Contents .travel_itinerary .version_03 .photo_01, .Main_Contents .travel_itinerary .version_04 .photo_01{ height: 320px; }
+	.Main_Contents .travel_itinerary .version_02 .itinerary_info, .Main_Contents .travel_itinerary .version_03 .itinerary_info{ padding: 20px; }
+	.Main_Contents .travel_date_departure .trip_date_list p.top_title{ font-size: 18px; }
+	.Main_Contents .travel_daily_itinerary .top_where p.location{ font-size: 22px; line-height: 32px;}
 
 	.fixed_go_menu{ bottom: 100px;}
 	.fixed_go_menu p.link{ font-size: 11px; background-color: none; border: none; background-color: inherit; }

@@ -15,13 +15,13 @@ abbr, acronym { border:0;}
 * html .clearfix {height: 1%;}
 *:first-child + html .clearfix { min-height: 1%;}
 
-p{ font-size: 16px;}
 a:hover{ text-decoration:none;}
 select, input, textarea, button {  font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html, body{ height: 100%; }
 */
 
+/* ↑↑↑ 這段隱藏因為會跟其他CSS衝到 ↑↑↑ */
 body, h1, h2, h3, h4, h5, h6, p {font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #000;}
 a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 
@@ -39,13 +39,15 @@ p.social_box a.facebook{ background-image:url(../images/main/icon_social_faceboo
 p.social_box a.youtube{ background-image:url(../images/main/icon_social_youtube.png);}
 p.social_box a:hover{ background-color: #fff; }
 
-.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
+
+/*sidenav*/
+.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;  background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
 .sidenav a { text-decoration: none;  color: #fff;  display: block;  transition: 0.3s;}
 .sidenav a:hover {  color: #f1f1f1;}
 .sidenav .closebtn { text-align: right; padding: 10px 10px 0px; top: 0; width: 300px; font-size: 36px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
 .sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow-y: auto; }
 
-.sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; }
+.sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; list-style: none; }
 .sidenav ul.side_menu li{position: relative;}
 .sidenav ul.side_menu li::after{ content: ""; position: absolute; bottom: 0; left: -20px; width: 100%; height: 1px; background-color: #8d7827;}
 .sidenav ul.side_menu li h3{ margin: 0; font-size: 22px; color: #fff; position: relative; cursor: pointer; padding: 15px 0;}
@@ -60,7 +62,7 @@ p.social_box a:hover{ background-color: #fff; }
 .sidenav ul.side_menu li:hover h3:after{ background-image:url(../images/main/icon_arr_y.png);}
 .sidenav ul.side_menu li h3.none_arr:after{ display: none; }
 
-.sidenav ul.side_menu li ul.sub_menu{ display: none; padding-bottom: 20px; }
+.sidenav ul.side_menu li ul.sub_menu{ display: none; padding-bottom: 20px; list-style: none; padding: 0; margin: 0;}
 .sidenav ul.side_menu li ul.sub_menu li::after{ display: none; }
 .sidenav ul.side_menu li:first-child ul.sub_menu li{ width: 50%; float: left; }
 .sidenav p.social_box a{width: 35px; height: 35px; margin: 0 5px;}
@@ -75,7 +77,7 @@ p.social_box a:hover{ background-color: #fff; }
 .HeaderBox .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/main/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
 
 .HeaderBox .TopBox{ float: left; width: 100%; max-width:calc(100% - 235px); }
-.HeaderBox .TopBox ul.top_menu{ display: inline-block; float: left; margin:0; padding: 0; }
+.HeaderBox .TopBox ul.top_menu{ display: inline-block; float: left; margin:0; padding: 0; list-style: none; }
 .HeaderBox .TopBox ul.top_menu li{ float: left; position: relative;}
 .HeaderBox .TopBox ul.top_menu li::after{ content: ""; width: 1px; height: 68px; border-left: 1px solid #d1ab1b; position: absolute; left: 0; top: 0; }
 .HeaderBox .TopBox ul.top_menu li h3{ font-size: 20px; margin: 0; cursor: pointer; padding: 41px 40px 41px 30px; line-height: 22px; color: #ffffff;position: relative; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
@@ -87,7 +89,7 @@ p.social_box a:hover{ background-color: #fff; }
 .HeaderBox .TopBox ul.top_menu li:hover h3{ color: #d1ab1b; }
 .HeaderBox .TopBox ul.top_menu li:hover h3:after{ background-image:url(../images/main/icon_arr_y.png);}
 
-.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; min-width: 175px; top: 70px; left: 0; background-color: rgba(40,40,40,.85); padding: 20px 30px;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; list-style: none; min-width: 175px; top: 70px; left: 0; background-color: rgba(40,40,40,.85); padding: 20px 30px;}
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li{ width: 100%; float: none; }
 .HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu{ min-width: 530px; }
 .HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu li{ float: left; width: inherit; min-width: 92px; }
@@ -128,9 +130,9 @@ p.social_box a:hover{ background-color: #fff; }
 
 /*mobile bottom tools*/
 .fixed_bottom_tools{width: 100%; position: fixed; left: 0; bottom: 0; background-color: #000; z-index: 20; display: none;}
-.fixed_bottom_tools ul{ width: 100%; margin: 0; padding: 0; }
+.fixed_bottom_tools ul{ width: 100%; margin: 0; padding: 0; list-style: none; }
 .fixed_bottom_tools ul li{ width: 20%; float: left; }
-.fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; margin: 0; }
+.fixed_bottom_tools ul li p{ font-size: 14px; text-align: center; margin: 0; font-family: 'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
 .fixed_bottom_tools ul li p a{ color: #fff; padding:38px 0 6px 0; display: block;  position: relative;}
 .fixed_bottom_tools ul li p a::after{ position: absolute; top: 3.5px; left:calc(50% - 18px); content: ""; width:36px; height: 36px; display: block; background-repeat: no-repeat; background-size: contain; }
 .fixed_bottom_tools ul li p a.line_icon::after{ background-image: url(../images/main/icon_mob_tools_line.png); }
@@ -179,11 +181,7 @@ p.social_box a:hover{ background-color: #fff; }
 	.fixed_go_menu p.link a::after{ height: 50px; }
 
 }
-@media (max-width:700px){
-	.Main_Contents .top_title_line::before{ left: -20px; }
-	.Main_Contents .top_title_line::after{ right: -20px;}
-	.Main_Contents p.description{ font-size: 16px; }
-}
+
 @media (max-width:600px){
 	.HeaderBox h3.logo a{ width: 120px; height: 32px; }
 	.HeaderBox .ContentsBox{ width: 100%; }
@@ -192,7 +190,6 @@ p.social_box a:hover{ background-color: #fff; }
 	.HeaderBox .the_mob_btn span.title{ display: none; }
 	.Main_Contents{padding: 67px 0 75px;}
 	.Main_Contents p.mob_go_menu, .fixed_bottom_tools{ display: block; }
-	.Main_Contents .travel_price{padding-bottom: 100px;}
 
 	.fixed_go_menu{ top: inherit; bottom: 100px;}
 	.fixed_go_menu p.link{ font-size: 11px; background-color: none; border: none; background-color: inherit; }
