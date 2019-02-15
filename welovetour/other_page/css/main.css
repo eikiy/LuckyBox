@@ -89,7 +89,7 @@ p.social_box a:hover{ background-color: #fff; }
 .HeaderBox .TopBox ul.top_menu li:hover h3{ color: #d1ab1b; }
 .HeaderBox .TopBox ul.top_menu li:hover h3:after{ background-image:url(../images/main/icon_arr_y.png);}
 
-.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; list-style: none; min-width: 175px; top: 70px; left: 0; background-color: rgba(40,40,40,.85); padding: 20px 30px;}
+.HeaderBox .TopBox ul.top_menu li ul.sub_menu{ z-index: 20; display: none; position: absolute; list-style: none; min-width: 175px; top: 70px; left: 0; background-color: rgba(0,0,0,.85); padding: 20px 30px;}
 .HeaderBox .TopBox ul.top_menu li ul.sub_menu li{ width: 100%; float: none; }
 .HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu{ min-width: 530px; }
 .HeaderBox .TopBox ul.top_menu li:first-child ul.sub_menu li{ float: left; width: inherit; min-width: 92px; }
@@ -111,9 +111,9 @@ p.social_box a:hover{ background-color: #fff; }
 .FooterBox p a:hover{text-decoration: underline; }
 
 .FooterBox .top_title{ color: #d1ab1b; padding-bottom: 5px; }
-.FooterBox h3.top_title{font-size: 18px; margin: 0; letter-spacing: 3px; padding-bottom: 15px; margin: 0;}
-.FooterBox h4.top_title{ font-size: 16px; margin: 0;}
-.FooterBox h5.top_title{ font-size: 13px; margin: 0; letter-spacing: 2px; }
+.FooterBox h3.top_title{font-size: 18px; margin: 0; letter-spacing: 3px; padding-bottom: 15px; text-align: left; margin: 0;}
+.FooterBox h4.top_title{ font-size: 16px; margin: 0; text-align: left;}
+.FooterBox h5.top_title{ font-size: 13px; margin: 0; letter-spacing: 2px; text-align: left; }
 
 .FooterBox ul.info{ margin: 0; width: 100%; padding: 15px 0;}
 .FooterBox ul.info li{ float: left; position: relative; max-width:30%; min-height: 164px;  padding: 10px 2% 0 2%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
@@ -121,7 +121,7 @@ p.social_box a:hover{ background-color: #fff; }
 .FooterBox ul.info li:first-child::before{ display: none; }
 .FooterBox ul.info li:last-child{ max-width: 20%; }
 .FooterBox ul.info li.left_logo{ width:20%; max-width: 274px;}
-.FooterBox ul.info li p{ padding-bottom: 20px;}
+.FooterBox ul.info li p{ padding-bottom: 20px; text-align: left;}
 .FooterBox ul.info li p.logo{padding-bottom: 0;}
 
 .FooterBox p.social_box{ padding-top: 26px; }

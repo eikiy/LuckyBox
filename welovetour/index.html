@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/goto.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
-
 
 <body>
 
@@ -143,7 +142,10 @@
             <a class="go_00">回最上方</a>
         </p>
     </section>
-
+    <script>
+        ScrollReveal().reveal('.fixed_go_menu', { opacity: 0, origin: "right", distance: "100px",duration: 2000, mobile: true, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)",})
+        ScrollReveal().reveal('.punchline', { delay: 2000 });
+    </script>
     <section class="fixed_bottom_tools">
         <ul class="clearfix">
             <li><p><a class="line_icon" target="_blank" href="https://line.me/ti/p/%40hcn6976x">台北詢問</a></p></li>
@@ -156,6 +158,9 @@
 
     <main class="Main_Contents" id="Main_Contents">
         <section class="main_banner"></section>
+        <!-- <script>
+            ScrollReveal().reveal('.main_banner', { opacity: 0,  origin: "top", distance: "140px",duration: 1000, mobile: true, easing: "cubic-bezier(0.6, 0.5, 0.1, 0.1)",})
+        </script> -->
         <h1 class="travel_main_title">2019新春特別企劃【中越峴港悅椿渡假村5天】</h1>
         <h2 class="travel_sub_title">第二人-10000    特惠39,000起</h2>
         <p class="mob_go_menu clearfix">
@@ -207,12 +212,13 @@
         <section class="travel_itineraries" id="move_goto_02">
             <div class="ContentsBox clearfix">
                 <div class="bothbox">
-                    <div class="info_box">
+                    <div class="info_box SR-l">
                         <h3 class="icon_title icon_map"><span>行程路線</span></h3>
                         <img src="images/img_map.png" alt="行程路線">
                     </div>
                 </div>
-                <div class="bothbox">
+                
+                <div class="bothbox SR-r">
                     <div class="info_box">
                         <h4 class="sub_title">行程亮點</h4>
                         <p class="description">1.年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年代旅遊年<br>
@@ -225,6 +231,7 @@
                         <iframe src="https://www.youtube.com/embed/Bxl6NS5lH7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -235,17 +242,17 @@
                     <h3 class="icon_title icon_itinerary"><span>特色行程</span></h3>
                 </div>
                 <div class="a_box version_01">
-                    <div class="itinerary_info">
+                    <div class="itinerary_info SR-l">
                         <p class="label">嚴選<br>飯店</p>
                         <h4 class="sub_title">Banyan Tree Lang Co<br>悅榕庄蘭珂度假村</h4>
                         <p class="description">鄰近三大世界自然遺產 - 順化、會安和美山的Lang Co 蘭珂海灣，中越昔日的寧靜漁村，有著原始純淨的海岸線與熱帶山林，現由悅榕庄集團打造世界渡假村 - Lanuna Lang Co拉古娜蘭珂渡假村。舉凡住宿、高爾夫、美饌、特色旅遊一應俱全。Banyan Tree Lang Co 蘭珂悅榕庄就在這美麗迷人的蘭珂海灣之上，是拉古娜蘭珂渡假村中最奢華的渡假飯店之一。</p>
                     </div>
-                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/modern-luxury-home-showcase-exterior-and-swimming-pool-illuminated-at-picture-id670893633?k=6&m=670893633&s=612x612&w=0&h=xU87WIhuoyCFsy1ghLbM40NSXCxcA4nF5UWG3HUM1JI=);"></div>
-                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/modern-house-with-large-patio-and-swimming-pool-picture-id525440005?k=6&m=525440005&s=612x612&w=0&h=S0bZPfxzBCzkRddZaeVXomy7UUQh0zpr6OtAfKcaPas=);"></div>
+                    <div class="photo_01 SR-top-1" style=" background-image: url(https://media.gettyimages.com/photos/modern-luxury-home-showcase-exterior-and-swimming-pool-illuminated-at-picture-id670893633?k=6&m=670893633&s=612x612&w=0&h=xU87WIhuoyCFsy1ghLbM40NSXCxcA4nF5UWG3HUM1JI=);"></div>
+                    <div class="photo_02 SR-top-2" style="background-image: url(https://media.gettyimages.com/photos/modern-house-with-large-patio-and-swimming-pool-picture-id525440005?k=6&m=525440005&s=612x612&w=0&h=S0bZPfxzBCzkRddZaeVXomy7UUQh0zpr6OtAfKcaPas=);"></div>
                 </div>
                 <div class="a_box version_02 clearfix">
-                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/modern-minimalist-villa-picture-id910193030?k=6&m=910193030&s=612x612&w=0&h=kjD2eKsSI0lWmXH3yZ8qeYoGBy0BJ_8X2yfxpBvwf_w=);"></div>
-                    <div class="right_info">
+                    <div class="photo_01 SR-bottom" style=" background-image: url(https://media.gettyimages.com/photos/modern-minimalist-villa-picture-id910193030?k=6&m=910193030&s=612x612&w=0&h=kjD2eKsSI0lWmXH3yZ8qeYoGBy0BJ_8X2yfxpBvwf_w=);"></div>
+                    <div class="right_info SR-top-2">
                         <div class="itinerary_info">
                             <p class="label">房型介紹</p>
                             <h4 class="sub_title">Lagoon Pool Villa 潟湖泳池別墅<br>(131平方公尺/約39.6坪)</h4>
@@ -254,8 +261,8 @@
                     </div>
                 </div>
                 <div class="a_box version_03 clearfix">
-                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/herbal-massage-in-a-spa-picture-id925055406?k=6&m=925055406&s=612x612&w=0&h=c4GlJScO7xqMU0S872ZulrYSd405puCz3-8QM5q6bt0=);"></div>
-                    <div class="right_info">
+                    <div class="photo_01 SR-bottom" style=" background-image: url(https://media.gettyimages.com/photos/herbal-massage-in-a-spa-picture-id925055406?k=6&m=925055406&s=612x612&w=0&h=c4GlJScO7xqMU0S872ZulrYSd405puCz3-8QM5q6bt0=);"></div>
+                    <div class="right_info  SR-top-2">
                         <div class="itinerary_info">
                             <p class="label">SPA設施</p>
                             <h4 class="sub_title">Banyan Tree Spa Lang Co 蘭珂悅榕 Spa 中心<br>(開放時間10:00-22:00)</h4>
@@ -265,17 +272,17 @@
                     </div>
                 </div>
                 <div class="a_box version_01">
-                    <div class="itinerary_info">
+                    <div class="itinerary_info SR-l">
                         <p class="label">景點<br>安排</p>
                         <h4 class="sub_title">會安古城</h4>
                         <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ..別墅的蘭珂悅 ...</p>
                     </div>
-                    <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/sight-of-the-people-and-besalu-medieval-bridge-to-the-late-afternoon-picture-id847746444?k=6&m=847746444&s=612x612&w=0&h=zrLggjunZEj1Vbu6Zw5yXacCWKkHT2x4zOEJLa3dGjI=);"></div>
-                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/aerial-view-of-brasov-main-square-piata-sfatului-transylvamia-romania-picture-id957284330?k=6&m=957284330&s=612x612&w=0&h=s9_0xHrwnlIraAwTlf71h4Cpltz3ExI57YwvkBZ20sc=);"></div>
+                    <div class="photo_01 SR-top-1" style="background-image: url(https://media.gettyimages.com/photos/sight-of-the-people-and-besalu-medieval-bridge-to-the-late-afternoon-picture-id847746444?k=6&m=847746444&s=612x612&w=0&h=zrLggjunZEj1Vbu6Zw5yXacCWKkHT2x4zOEJLa3dGjI=);"></div>
+                    <div class="photo_02 SR-top-2" style="background-image: url(https://media.gettyimages.com/photos/aerial-view-of-brasov-main-square-piata-sfatului-transylvamia-romania-picture-id957284330?k=6&m=957284330&s=612x612&w=0&h=s9_0xHrwnlIraAwTlf71h4Cpltz3ExI57YwvkBZ20sc=);"></div>
                 </div>
                 <div class="a_box version_04 clearfix">
-                    <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/golden-gate-jerusalem-israel-picture-id1028640848?k=6&m=1028640848&s=612x612&w=0&h=utH6Oxt8ze9K9H-NMC6wO6MA8Fi1KjZ1dbVOMxhPW-w=);"></div>
-                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/alcazaba-and-roman-theatre-of-malaga-picture-id942717450?k=6&m=942717450&s=612x612&w=0&h=2pPyvXe5jC3V7yfASj8HCyq1L9skU-eNLGr3xgYrwfA=);"></div>
+                    <div class="photo_01  SR-l" style="background-image: url(https://media.gettyimages.com/photos/golden-gate-jerusalem-israel-picture-id1028640848?k=6&m=1028640848&s=612x612&w=0&h=utH6Oxt8ze9K9H-NMC6wO6MA8Fi1KjZ1dbVOMxhPW-w=);"></div>
+                    <div class="photo_02  SR-r" style="background-image: url(https://media.gettyimages.com/photos/alcazaba-and-roman-theatre-of-malaga-picture-id942717450?k=6&m=942717450&s=612x612&w=0&h=2pPyvXe5jC3V7yfASj8HCyq1L9skU-eNLGr3xgYrwfA=);"></div>
                 </div>
                 <div class="a_box version_05">
                     <h4 class="sub_title">★會安古城</h4>
@@ -286,17 +293,17 @@
                     <p class="description">2019峴港必去旅遊景點，峴港、會安、順化、巴拿山、蘭珂悅椿渡假村，旅遊體驗勝過北越下龍灣 ... 蘭珂悅榕庄 一望無際的海洋與純淨無暇的美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈，僅有49棟全為泳池別墅的蘭珂悅 ...美景時時映入眼簾。坐擁綿延三公里長的迷人海灘、背倚層巒相疊的安南山脈</p>
                 </div>
                 <div class="a_box version_01">
-                    <div class="itinerary_info">
+                    <div class="itinerary_info SR-l">
                         <p class="label">餐食<br>饗宴</p>
                         <h4 class="sub_title">餐食推薦</h4>
                         <p class="description">板橋美食推薦、板橋餐廳懶人包完成囉，大家最愛的板橋車站美食(含板橋大遠百美食)、 ... 詳細文章：布娜飛比利時啤酒餐廳｜假日有駐唱易爆滿，在地夯店餐點美味，不用訂位，來餐廳就能用親民價格，享受我們最受歡迎的肉丸及鮭魚等傳統瑞典風味的餐飲，滿足全家人的胃口與味蕾！瑞典美食區還有更多美味食材，讓你帶回 .</p>
                     </div>
-                    <div class="photo_01" style="background-image: url(https://media.gettyimages.com/photos/eating-brunch-with-waffle-avocado-cucumber-salmon-and-poached-egg-picture-id986530194?k=6&m=986530194&s=612x612&w=0&h=Wt60uwefL1AdcXeAKhTcWCvc26lTBqGvLuHolMqL-L8=);"></div>
-                    <div class="photo_02" style="background-image: url(https://media.gettyimages.com/photos/girl-taking-photo-of-vegan-lunch-bowl-with-cell-phone-closeup-picture-id946934460?k=6&m=946934460&s=612x612&w=0&h=qqot2Ogqcvd7Q_XxHjHJL_qjZTNa6c7hcnvqFMs1Zsg=);"></div>
+                    <div class="photo_01 SR-top-1" style="background-image: url(https://media.gettyimages.com/photos/eating-brunch-with-waffle-avocado-cucumber-salmon-and-poached-egg-picture-id986530194?k=6&m=986530194&s=612x612&w=0&h=Wt60uwefL1AdcXeAKhTcWCvc26lTBqGvLuHolMqL-L8=);"></div>
+                    <div class="photo_02 SR-top-2" style="background-image: url(https://media.gettyimages.com/photos/girl-taking-photo-of-vegan-lunch-bowl-with-cell-phone-closeup-picture-id946934460?k=6&m=946934460&s=612x612&w=0&h=qqot2Ogqcvd7Q_XxHjHJL_qjZTNa6c7hcnvqFMs1Zsg=);"></div>
                 </div>
                 <div class="a_box version_02 clearfix">
-                    <div class="photo_01" style=" background-image: url(https://media.gettyimages.com/photos/vegetarian-sandwiches-with-poached-egg-and-sliced-avocado-picture-id1007160316?k=6&m=1007160316&s=612x612&w=0&h=Sf2jF1LUxxbMUodoDZSA0OIgXMLLt8DHmtjqWWYRyE0=);"></div>
-                    <div class="right_info">
+                    <div class="photo_01 SR-l" style=" background-image: url(https://media.gettyimages.com/photos/vegetarian-sandwiches-with-poached-egg-and-sliced-avocado-picture-id1007160316?k=6&m=1007160316&s=612x612&w=0&h=Sf2jF1LUxxbMUodoDZSA0OIgXMLLt8DHmtjqWWYRyE0=);"></div>
+                    <div class="right_info SR-r">
                         <div class="itinerary_info">
                             <h4 class="sub_title">★推薦餐食</h4>
                             <p class="description">板橋美食推薦、板橋餐廳懶人包完成囉，大家最愛的板橋車站美食(含板橋大遠百美食)、 ... 詳細文章：布娜飛比利時啤酒餐廳｜假日有駐唱易爆滿，在地夯店餐點美味，不用訂位，來餐廳就能用親民價格，享受我們最受歡迎的肉丸及鮭魚等傳統瑞典風味的餐飲，滿足全家人的胃口與味蕾！瑞典美食區還有更多美味食材，讓你帶回 .</p>
@@ -581,7 +588,13 @@
             </ul>
         </section>
     </footer>
-
+    <script>
+        ScrollReveal().reveal('.SR-l', { opacity: 0,  origin: "left",viewFactor: 0.5,  distance: "200px",duration: 1000, mobile: true, easing: "cubic-bezier(0.5, 0.5, 0.1, 0.1)",})
+        ScrollReveal().reveal('.SR-r', { opacity: 0, delay: 600, viewFactor: 0.5, origin: "right", distance: "200px",duration: 1500, mobile: true,})
+        ScrollReveal().reveal('.SR-bottom', { opacity: 0,  origin: "bottom",viewFactor: 0.5,  distance: "200px",duration: 1000, mobile: true,})
+        ScrollReveal().reveal('.SR-top-1', { opacity: 0, delay: 600,viewFactor: 0.5, origin: "top", distance: "200px",duration: 1500, mobile: true, })
+        ScrollReveal().reveal('.SR-top-2', { opacity: 0, delay: 1000,viewFactor: 0.5, origin: "right", distance: "200px",duration: 1500, mobile: true,})
+    </script>
 </body>
 </html>
 
