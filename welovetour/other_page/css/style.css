@@ -103,13 +103,14 @@ header #main-header{
     position: fixed;
     right: 20px;
 	top:78%;   
-    width:60px; height:46; 
+    width:55px; height:55px; 
     font-size: 20px;
-	
-	background:rgba(0,0,0,0.5);
     color: white;
     cursor: pointer;
 	text-align:center;
+  background:url(../images/main/fixed_go_menu_icon_06_s.png) center center no-repeat; background-size: cover;
+  border-radius: 10px; display: block;  overflow: hidden; opacity: 0.2;
+  z-index: 100;
 }
 .content-show span {
 	font-size: 23px;

@@ -41,7 +41,7 @@ p.social_box a:hover{ background-color: #fff; }
 .sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
 .sidenav a { /* padding: 8px 8px 8px 32px;*/  text-decoration: none;  color: #fff;  display: block;  transition: 0.3s;}
 .sidenav a:hover {  color: #f1f1f1;}
-.sidenav .closebtn { text-align: right; padding: 10px 10px 0px; top: 0; width: 300px; font-size: 36px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.sidenav .closebtn { text-align: right; padding: 0px 8px 0px; top: 0; width: 300px; font-size: 48px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
 .sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow-y: auto; }
 
 .sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; }
