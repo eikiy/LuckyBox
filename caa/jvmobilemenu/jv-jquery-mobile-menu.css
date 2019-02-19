@@ -1,0 +1,31 @@
+html,body{width:100%;margin:0;padding:0}
+.page{width:100%;min-height:100%;overflow:auto;z-index:1;position:relative;}
+.mobile-nav{ display:none;}
+.mobile-nav ul{margin:0 0 25px; padding:0px;}
+.mobile-nav ul li{list-style:none}
+ul.submenu{ padding-top:10px;}
+
+.hamburger{ position: absolute; display: none; top:15px; right: 10px;  padding:10px 10px 9px; cursor:pointer; z-index:200;}
+.hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
+.hamburger .bar{width:24px;height:2px;background:#4d4d4d;position:absolute;top:0}
+.hamburger .bar.bar2,.hamburger .bar.bar3{top:9px; }
+.hamburger .bar.bar4{top:18px; }
+.hamburger.open{position: fixed; top: 5px;}
+.hamburger.open .bar1,.hamburger.open .bar4{display:none}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
+
+
+.mobile-nav{ width:260px !important; background-color:#555; z-index:16;}
+.mobile-nav ul.Oneself{ width:100%; padding-top: 50px;}
+.mobile-nav ul.Oneself li{ padding: 10px 20px; border-bottom: 1px solid #ffffff2e; }
+.mobile-nav ul.Oneself li:last-child{ border:none; }
+.mobile-nav ul.Oneself li h3{ color: #c3c6c7; font-size: 14px; padding-bottom: 10px; }
+.mobile-nav ul.Oneself li p { line-height: 45px; font-size: 17px; position: relative; padding-left: 28px;}
+.mobile-nav ul.Oneself li p a{ color: #fafafa; cursor: pointer; }
+
+.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
+
+@media (max-width:1000px){.hamburger{ display:block;}}
+@media (max-width:750px){
+	.hamburger{ position: fixed; top: 10px; }
+}
