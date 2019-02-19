@@ -27,10 +27,12 @@ ul.submenu{ padding-top:10px;}
 .mobile-nav ul.mob_submenu li{ padding: 0; border:none;}
 .mobile-nav ul.mob_submenu li p{ font-size: 15px; line-height: 35px; padding-left: 46px; }
 
-.mobile-nav .language{ text-align: center; padding-bottom: 40px; }
+.mobile-nav .language{padding: 0 0 40px 48px; }
 .mobile-nav .language select{  border:1px solid #fff; color: #fff; background-color: transparent; border-radius: 4px; height:28px; line-height: 28px;}
+.mobile-nav .language select option{ color: #333; }
 
-.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; height: 100%; overflow-y: auto; }
+
+.mobile-menu-inner{ padding:0 !important; width: 300px !important; padding-bottom: 10px; height: 100%; overflow-y: auto; }
 
 @media (max-width:1000px){.hamburger{ display:block;}}
 @media (max-width:750px){
