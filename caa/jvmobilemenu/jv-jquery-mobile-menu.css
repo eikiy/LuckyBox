@@ -16,14 +16,21 @@ ul.submenu{ padding-top:10px;}
 
 
 .mobile-nav{ width:260px !important; background-color:#555; z-index:16;}
-.mobile-nav ul.Oneself{ width:100%; padding-top: 50px;}
+.mobile-nav ul.Oneself{ width:100%; padding-top: 50px; margin: 0;}
 .mobile-nav ul.Oneself li{ padding: 10px 20px; border-bottom: 1px solid #ffffff2e; }
 .mobile-nav ul.Oneself li:last-child{ border:none; }
 .mobile-nav ul.Oneself li h3{ color: #c3c6c7; font-size: 14px; padding-bottom: 10px; }
 .mobile-nav ul.Oneself li p { line-height: 45px; font-size: 17px; position: relative; padding-left: 28px;}
 .mobile-nav ul.Oneself li p a{ color: #fafafa; cursor: pointer; }
 
-.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
+.mobile-nav ul.mob_submenu{ padding: 0; }
+.mobile-nav ul.mob_submenu li{ padding: 0; border:none;}
+.mobile-nav ul.mob_submenu li p{ font-size: 15px; line-height: 35px; padding-left: 46px; }
+
+.mobile-nav .language{ text-align: center; padding-bottom: 40px; }
+.mobile-nav .language select{  border:1px solid #fff; color: #fff; background-color: transparent; border-radius: 4px; height:28px; line-height: 28px;}
+
+.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; height: 100%; overflow-y: auto; }
 
 @media (max-width:1000px){.hamburger{ display:block;}}
 @media (max-width:750px){
