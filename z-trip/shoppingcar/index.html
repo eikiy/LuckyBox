@@ -183,13 +183,13 @@
             <div class="group clearfix">
                 <label class="left_label">姓名</label>
                 <div class="right_fillbox">
-                    <input class="fbox" type="text" name="" value="劉先生">
+                    <input class="fbox w_02" type="text" name="" value="劉先生">
                 </div>
             </div>
             <div class="group clearfix">
                 <label class="left_label">手機號碼</label>
                 <div class="right_fillbox">
-                    <input class="fbox" type="text" name="" value="0988-000-000">
+                    <input class="fbox w_02" type="text" name="" value="0988-000-000">
                 </div>
             </div>
             <div class="group clearfix">
@@ -214,14 +214,14 @@
                         </div>
                     </div>
                     <div class="box3 clearfix">
-                        <div class="styled-select w_02">
+                        <div class="styled-select w_01">
                             <select class="md-input form-control" id="departureTerminal" name="departureTerminal">
                                 <option value="" selected="">選擇航廈</option>
                                 <option value="T1">桃園機場第一航廈</option>
                                 <option value="T2">桃園機場第二航廈</option>
                             </select>
                         </div>
-                        <div class="styled-select w_02">
+                        <div class="styled-select w_01">
                             <select class="md-input form-control" id="departureHour" name="departureHour">
                                     <option value="" selected="">航班大約時間(時)</option>
                                     <option value="00">00</option>
@@ -250,7 +250,7 @@
                                     <option value="23">23</option>
                             </select>
                         </div>
-                        <div class="styled-select w_02">
+                        <div class="styled-select w_01">
                             <select class="md-input form-control" id="departureMin" name="departureMin">
                                     <option value="" selected="">航班大約時間(分)</option>
                                     <option value="00">00</option>
@@ -267,7 +267,7 @@
             <div class="group clearfix">
                 <label class="left_label">門市名稱</label>
                 <div class="right_fillbox">
-                   <input class="fbox w_01" type="text" name="" value="" readonly>
+                   <input class="fbox w_02" type="text" name="" value="" readonly>
                    <button type="button" class="store_btn" id="openMap">選擇門市</button>
                 </div>
             </div>
@@ -365,10 +365,16 @@
     <!-- 付款/發票資訊 - 內容 -->
     <section class="pay_info" id="pay_info" style="display: none;">
         <form class="shoppingcar_form_box">
+            <div class="total_amount clearfix">
+                <p>運費 $ 160優惠</p>
+                <p>已折扣 - $ 1,380</p>
+                <p>特殊折扣 - $ 1,380</p>
+                <p class="all">結帳金額 <span>$ 17,420</span></p>
+            </div>
             <div class="group clearfix">
                 <label class="left_label">付款方式</label>
                 <div class="right_fillbox">
-                    <div class="clearfix">
+                    <div class="box3 clearfix">
                         <div class="styled-select w_01">
                             <select class="md-input form-control" id="payWay" name="payWay">
                                 <option value="Credit">信用卡(一次付清)</option>
@@ -381,13 +387,6 @@
                                 <option value="CVS">超商付款</option>
                             </select>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="group clearfix">
-                <label class="left_label">分期期數</label>
-                <div class="right_fillbox">
-                    <div class="clearfix">
                         <div class="styled-select w_01">
                             <select class="md-input form-control" id="" name="">
                                 <option value="" selected="">請選擇分期期數</option>
@@ -434,7 +433,9 @@
             <div class="group clearfix">
                 <label class="left_label">統一編號</label>
                 <div class="right_fillbox">
-                    <input class="w_01 fbox" type="text" name="" placeholder="限數字">
+                    <div class="box3 clearfix">
+                        <input class="w_02 fbox" type="text" name="" placeholder="限數字">
+                    </div>
                 </div>
             </div>
             <div class="group clearfix">
@@ -462,7 +463,7 @@
     </section>
 
     <div class="contents_box total_amount for_mob_total clearfix">
-        <p>已折扣 $ 1,380</p> <!-- 看這些折扣資訊是要併成一行?，還是? -->
+        <p class="discount">滿額600 免運&nbsp;&nbsp;已折扣 $ 1,380</p> <!-- 看這些折扣資訊是要併成一行?，還是? -->
         <p class="all">結帳金額 <span>$ 17,420</span></p>
         <p class="bt_btn"><a class="btn_org btn_red no_function" href="#">確認送出</a></p>
     </div>

@@ -27,7 +27,7 @@ html, body{ height: 100%; }
 .contents_box{ max-width: 1000px; margin: 0 auto;}
 
 .main_shoppingcar{ padding: 20px 0 80px 0; width: 100%; min-height: 100%; background-color: #f8f8f8; background-color: #eaeaea;}
-.main_shoppingcar .top_step{ width: 100%; padding: 15px 0;}
+.main_shoppingcar .top_step{ width: 100%;/* padding: 15px 0*/; top: 0; z-index: 50; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
 .main_shoppingcar .top_step ul{ width: 100%; background-color: #fff; }
 .main_shoppingcar .top_step ul li{ float: left; width: 33.33%; padding: 20px 0 ; margin-bottom: 5px; position: relative;}
 .main_shoppingcar .top_step ul li::after{ content: ""; position: absolute; right: 0; top:calc(50% - 15px); width: 30px; height: 30px; display: block; background: url(../images/step_arr.png) center center no-repeat; background-size: cover; }
@@ -113,13 +113,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff8', end
 .main_shoppingcar .total_amount p.mob{ display: none; }
 
 /*fill_info  填寫資料*/
+.main_shoppingcar .pay_info .total_amount{ padding: 0; padding-bottom: 10px; border-bottom: 1px solid #dddddd; margin-bottom: 15px; }
+
 .main_shoppingcar .fill_info, .main_shoppingcar .pay_info{ width: 100%; padding: 15px 0; }
-.main_shoppingcar .shoppingcar_form_box{ max-width: 648px; margin:0 auto; background-color: #fff; padding: 35px 45px;}
+.main_shoppingcar .shoppingcar_form_box{ max-width: 1000px; margin:0 auto; background-color: #fff; padding: 40px 65px;}
 .main_shoppingcar .shoppingcar_form_box .group{ width: 100%; padding: 8px 0; }
 .main_shoppingcar .shoppingcar_form_box .left_label{ float: left; width: 110px; line-height: 36px; padding: 2px; }
 .main_shoppingcar .shoppingcar_form_box .right_fillbox{ float: left; width: calc(100% - 110px); }
 
-.main_shoppingcar .shoppingcar_form_box .fbox{ width: 100%; color: #333; font-size: 16px; height: 40px; line-height: 36px; border:1px solid #dddddd; border-radius: 4px; padding: 2px 10px; }
+.main_shoppingcar .shoppingcar_form_box .fbox{ width: 100%; color: #333; font-size: 16px; height: 40px; max-width: 600px; line-height: 36px; border:1px solid #dddddd; border-radius: 4px; padding: 2px 10px; }
 .main_shoppingcar .shoppingcar_form_box input.fbox::placeholder, .main_shoppingcar .shoppingcar_form_box textarea.fbox::placeholder{font-size: 14px; color: #999999; font-weight: normal; }
 .main_shoppingcar .shoppingcar_form_box input.fbox:focus, .main_shoppingcar .shoppingcar_form_box textarea.fbox:focus{ border-color: #ff8a00; }
 .main_shoppingcar .shoppingcar_form_box textarea.fbox{ line-height: 24px; padding:8px 10px; }
@@ -137,9 +139,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff8', end
 .main_shoppingcar .box3 .styled-select:first-child{ margin-left: 0; }
 
 .main_shoppingcar .h_ex{ min-height: 88px; }
-.main_shoppingcar .w_00{ max-width: 88px; }
+.main_shoppingcar .shoppingcar_form_box .w_00{ max-width: 88px; }
 .main_shoppingcar .w_01{ max-width: 165px; }
-.main_shoppingcar .w_02{ max-width: 139px; }
+.main_shoppingcar .shoppingcar_form_box .w_02{ max-width: 165px; }
 
 .main_shoppingcar .store_btn{ border-radius: 4px; cursor: pointer; background-color: #ff8a00; color: #fff; line-height: 34px; padding: 0 10px; margin-left: 8px; }
 .main_shoppingcar .store_btn:hover{ opacity: .9; }
@@ -158,10 +160,10 @@ p a.btn_red{ background-color: #ff3564;  }
 p a.no_function{ background-color: #999; cursor: no-drop; }
 
 .main_shoppingcar .for_mob_total{ display: none; position: fixed; bottom: 0; width: 100%; left: 0; z-index: 100; box-shadow: 0 0 5px rgba(0,0,0,.2); padding: 15px 20px; }
-.main_shoppingcar .for_mob_total p{ display: block; float: none; line-height: initial; padding: 0;}
+.main_shoppingcar .for_mob_total p{display: block; float: none; line-height: initial; padding: 0;}
 .main_shoppingcar .for_mob_total p.all{ float: none; padding: 0; }
 .main_shoppingcar .for_mob_total p.all span{padding: 0 10px;}
-
+.main_shoppingcar .for_mob_total p.discount{ font-size: 12.5px; }
 
 /*收合*/
 .main_shoppingcar .buy_list a.show_info{ cursor: pointer; z-index: 20; position: absolute; bottom: 10px; right: 5px; width: 40px; height: 30px; display: none; background: url(../images/show_more.png) center center no-repeat; background-size: contain; }
@@ -175,11 +177,13 @@ p a.no_function{ background-color: #999; cursor: no-drop; }
 	.main_shoppingcar .buy_list ul li{ height: initial;  position: relative;}
 	.main_shoppingcar .buy_list .product_photo{ position: absolute; top: 15px; left: 15px; width: 120px; height: 132px; }
 	.main_shoppingcar .buy_list .product_info{width: 100%; padding-left: 155px; padding-bottom: 25px;}
-	.main_shoppingcar .buy_list .product_subtotal{ width: 100%; display: initial; -webkit-align-items: initial; align-items: initial; -webkit-justify-content: initial; justify-content: initial; }
+	.main_shoppingcar .buy_list .product_subtotal{ width: 100%; display: initial; height: initial; -webkit-align-items: initial; align-items: initial; -webkit-justify-content: initial; justify-content: initial; }
 	.main_shoppingcar .buy_list .product_subtotal .exbox{ width: 100%; border-top: 1px solid #dddddd; border-left: none; padding: 10px 20px; }
 	.main_shoppingcar .buy_list .product_subtotal p.note_code{ float: right; line-height: 45px; }
 	.main_shoppingcar .buy_list .product_subtotal p.s_money{ float: right; line-height: 45px; padding-left: 25px; padding-right: 25px; }
 	.main_shoppingcar .buy_list .product_subtotal p.s_money span{ display: inline-block;padding: 0; padding-left: 10px;  }
+	.main_shoppingcar .shoppingcar_form_box{padding: 35px 45px;}
+	.main_shoppingcar .fill_info, .main_shoppingcar .pay_info{ width:calc(100% - 30px); margin:0 auto; }
 }
 @media (max-width:900px){
 	.main_shoppingcar .top_step ul li p{ font-size: 18px; }
@@ -202,11 +206,12 @@ p a.no_function{ background-color: #999; cursor: no-drop; }
 
 	.main_shoppingcar .buy_list .product_info .bottom_item .voucher .for_w_more{ min-width: initial; }
 }
+@media (max-width:760px){
+	.main_shoppingcar .box3 .styled-select, .main_shoppingcar .w_01{ max-width: 100%; margin-left:0;  }
+}
 @media (max-width:700px){
 	.main_shoppingcar .top_step ul li{padding: 15px 0;}
 	.main_shoppingcar .top_step ul li p{ font-size: 15px; }
-	.main_shoppingcar .fill_info, .main_shoppingcar .pay_info{ width:calc(100% - 30px); margin:0 auto; }
-	.main_shoppingcar .box3 .styled-select, .main_shoppingcar .w_01{ max-width: 100%; margin-left:0;  }
 	.main_shoppingcar .w_00{ margin-bottom: 10px; }
 	.main_shoppingcar .store_btn{ margin: 8px 0 0 0; }
 
@@ -214,7 +219,7 @@ p a.no_function{ background-color: #999; cursor: no-drop; }
 
 	.main_shoppingcar .total_amount{padding: 10px 15px;}
 	.main_shoppingcar .total_amount p.all span{ font-size: 25px;}
-
+	.main_shoppingcar .for_mob_total p.all span{ font-size: 22px;}
 	/*p.btn_org{ max-width: 150px; }*/
 	p.btn_org a{ line-height: 42px;}
 	p.btn_red{ width: 100px; letter-spacing: 0;}
