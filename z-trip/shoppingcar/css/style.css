@@ -27,7 +27,7 @@ html, body{ height: 100%; }
 .contents_box{ max-width: 1000px; margin: 0 auto;}
 
 .main_shoppingcar{ padding: 20px 0 80px 0; width: 100%; min-height: 100%; background-color: #f8f8f8; background-color: #eaeaea;}
-.main_shoppingcar .top_step{ width: 100%;/* padding: 15px 0*/; top: 0; z-index: 50; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
+.main_shoppingcar .top_step{ width: 100%; margin-bottom: 15px; top: 0; z-index: 50; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
 .main_shoppingcar .top_step ul{ width: 100%; background-color: #fff; }
 .main_shoppingcar .top_step ul li{ float: left; width: 33.33%; padding: 20px 0 ; margin-bottom: 5px; position: relative;}
 .main_shoppingcar .top_step ul li::after{ content: ""; position: absolute; right: 0; top:calc(50% - 15px); width: 30px; height: 30px; display: block; background: url(../images/step_arr.png) center center no-repeat; background-size: cover; }
