@@ -161,9 +161,10 @@ p a.no_function{ background-color: #999; cursor: no-drop; }
 
 .main_shoppingcar .for_mob_total{ display: none; position: fixed; bottom: 0; width: 100%; left: 0; z-index: 100; box-shadow: 0 0 5px rgba(0,0,0,.2); padding: 15px 20px; }
 .main_shoppingcar .for_mob_total p{display: block; float: none; line-height: initial; padding: 0;}
-.main_shoppingcar .for_mob_total p.all{ float: none; padding: 0; }
+.main_shoppingcar .for_mob_total p.all{ float: none; padding: 0; line-height: 26px; font-size: 14px;}
 .main_shoppingcar .for_mob_total p.all span{padding: 0 10px;}
-.main_shoppingcar .for_mob_total p.discount{ font-size: 12.5px; }
+.main_shoppingcar .for_mob_total p.discount{ font-size: 12.5px; padding-bottom: 3px;}
+.main_shoppingcar .for_mob_total p.free{color: #ff1955;}
 
 /*收合*/
 .main_shoppingcar .buy_list a.show_info{ cursor: pointer; z-index: 20; position: absolute; bottom: 10px; right: 5px; width: 40px; height: 30px; display: none; background: url(../images/show_more.png) center center no-repeat; background-size: contain; }
