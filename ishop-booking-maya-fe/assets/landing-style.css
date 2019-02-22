@@ -1,20 +1,28 @@
-.ishop-landing-tabs ul.nav.nav-tabs {
-  /* 怎麼讓tab置中呢？ */
+.ishop-landing-tabs ul.nav.nav-tabs { text-align: center; padding:10px 0 20px 0; border: none;}
+.ishop-landing-tabs ul.nav.nav-tabs li{ display: inline-block; float: none; font-size: 17px;}
+.ishop-landing-tabs ul.nav.nav-tabs li.active{ background-color: inherit; border: none;  }
+
+
+.main-title{ font-size:30px; border-bottom:solid 2px #d7dbdb; max-width: 1150px; margin: 0 auto;}
+.main-title h1{ padding: 15px 0;  color: #222;}
+.ishop-landing-tabsp#eqpr1v div{ position: relative; }
+
+.nav-tabs > li > a, .nav-pills > li > a, .nav-tabs.nav-justified > li > a{ border: 0; background-color: initial; }
+.ishop-landing-tabs .nav-tabs>li.active>a,.ishop-landing-tabs .nav-tabs>li.active>a:hover,.ishop-landing-tabs .nav-tabs>li.active>a:focus { color: #00AA00;  cursor: default;  background-color: #fff !important;  border: none !important;}
+.ishop-landing-tabs a.nav-link:hover { color: #00AA00; background-color: transparent; border-color: transparent; }
+
+.tab-content .btn-ghost:link, .tab-content .btn-ghost:visited{ text-shadow: 1px 2px 3px rgba(0,0,0,.5) !important; }
+.tab-content .formio-component{ position: relative; }
+
+@media (max-width: 900px){
+	.tab-content .col-sm-3{ width: 33%; }
 }
-
-.ishop-landing-tabs a.nav-link {
-
+@media (max-width: 768px){
+	.tab-content .col-sm-3{ width: 50%; float: left; }
+	.booking-advantage h2{ font-size:18px; }
 }
-
-/* 改不了active時候的樣式 */
-.ishop-landing-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  border: 0;
-}
-
-.ishop-landing-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-  color: #00AA00;
-  cursor: default;
-  background-color: #fff;
-  border: 0;
-  border-bottom-color: transparent;
+@media (max-width: 500px){
+	.tab-content{ width: calc(100% - 30px); margin: 0 auto; }
+	.tab-content .col-sm-3{ width: 100%; padding-bottom: 5px; }
+	.booking-advantage h2{ font-size:16px; }
 }
