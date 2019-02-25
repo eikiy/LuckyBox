@@ -1,0 +1,20 @@
+.ishop-landing-tabs ul.nav.nav-tabs {
+  /* 怎麼讓tab置中呢？ */
+}
+
+.ishop-landing-tabs a.nav-link {
+
+}
+
+/* 改不了active時候的樣式 */
+.ishop-landing-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border: 0;
+}
+
+.ishop-landing-tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  color: #00AA00;
+  cursor: default;
+  background-color: #fff;
+  border: 0;
+  border-bottom-color: transparent;
+}
