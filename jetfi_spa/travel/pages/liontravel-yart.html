@@ -38,20 +38,36 @@
   <!-- CSS Customization -->
   <link rel="stylesheet" href="../../assets/css/custom.css">
   <link  rel="stylesheet" href="../../assets/vendor/custombox/custombox.min.css">
+
+  <style type="text/css">
+    .g-bg-cover{background-position: center bottom;}
+    .container{padding-bottom: 10vh;}
+    .top-logo{ position: absolute; top: 20px; right: 20px;  width: 200px; height: 55px; display: block; background: url(../../img/jetfi/liontravel/top_logo.png) center center no-repeat; background-size: contain; z-index: 50; text-indent: -9999px; margin: 0;}
+    .main-title { max-width: 400px; margin: 0 auto;}
+    .sub-title { max-width: 700px; margin: 0 auto; }
+    @media screen and ( max-width:750px) {
+      .top-logo{ width: 150px; height: 41px; }
+      .main-title{padding-bottom: 1rem;}
+      .sub-title { max-width: 600px; }
+    }
+    @media screen and ( max-width:490px) { .main-title { max-width: 260px;}}
+  </style>
+
 </head>
 
 <body>
   <main>
 
     <!-- Promo Block -->
-    <section class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-min-height-100vh g-flex-centered" style="background-image: url(/img/jetfi/liontravel/歌詩達字卡1920x1280.jpg);">
+    <section class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-min-height-100vh g-flex-centered" style="background-image: url(../../img/jetfi/liontravel/bg_kv.jpg);">
+      <p class="top-logo">雄獅旅遊</p>
       <div class="container g-color-white text-center g-z-index-1">
         <div class="mb-5">
-          <h2 class="g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase g-mb-30">
-              金色賞櫻盛事
+          <h2 class="main-title g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase g-mb-30">
+              <img src="../../img/jetfi/liontravel/main_title.png" alt="金色賞櫻盛事" width="100%">
               <span class="u-text-animation u-text-animation--typing"></span>
             </h2>
-          <p class="g-font-size-26 g-font-weight-600">歌詩達威尼斯號 5/9 鹿兒島、宮崎、大阪，高知</p>
+          <p class="sub-title g-font-size-26 g-font-weight-600"><img src="../../img/jetfi/liontravel/sub_title.png" alt="歌詩達威尼斯號 5/9 鹿兒島、宮崎、大阪，高知" width="100%"></p>
         </div>
 
         <a class="btn u-btn-outline-white g-color-white g-font-size-30 g-bg-white-opacity-0_1 g-color-black--hover g-bg-white--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-13" href="#start-order">預訂</a>
