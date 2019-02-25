@@ -29,33 +29,37 @@ a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23,
 html, body{ padding: 0; width: 100%; margin: 0; height: 100%; }
 
 
-  .shop_contents{ width: 100%; height: 100%; position: relative; padding-top: 100px; }
-  .top_step_contents{ width:100%; padding-left: 150px; position: fixed; z-index: 10; top: 0; background-color: #fddb5a; }
-
-  .wellbox{ padding: 20px; background-color: #f5f5f5; border: 1px solid #e3e3e3;}
+  .shop_contents{ width: 100%; padding: 0 15px; padding-top: 100px; max-width: 1100px; margin: 0 auto; }
+  .top_step_contents{ width:100%;}
+  
+  .middle_contents{ max-width: 1100px; position: relative;  margin: 0 auto; padding-left: 140px; }
+  .middle_contents .newLogo{ position: absolute; top: 15px; left: 15px; }
+  .wellbox{ padding:15px 20px; background-color: #f5f5f5; border: 1px solid #e3e3e3;}
   .orderpreview h3.top_title{ margin: 0 0 25px 0; font-size: 20px; font-weight: bold; }
   .orderpreview h3.top_title span{ border-bottom: 2px solid #fddb5a; padding-bottom: 5px; }
-  .orderpreview .a_list{ width: 100%; padding-bottom:8px; border-bottom: 1px dashed #bebebe; margin-bottom: 8px; vertical-align: middle; }
-  .orderpreview p{ width: calc(100% - 124px); float: left; padding: 5px 10px; height: 100%; }
-  .orderpreview p.left_item{ float: left; width: 124px; background-color: #fddb5a;}
+  .orderpreview .a_list{ width: 100%; border-bottom: 1px dashed #bebebe; padding-bottom: 8px; margin-bottom: 8px; vertical-align: middle; }
+  .orderpreview .a_list:last-child { border: none; }
+  .orderpreview p{ width: calc(100% - 140px); float: left; padding: 5px 10px; height: 100%; margin: 0; }
+  .orderpreview p.left_item{ float: left; width: 140px; background-color: #fddb5a;}
 
 
   .orderpreview {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
+    /*height: 100%;*/ /* Full-height: remove this if you want "auto" height */
     width: 355px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 9; /* Stay on top */
-    top: 0; /* Stay at the top */
-    right: 0;
+    top: 110px; /* Stay at the top */
+    /*right: 0;*/
     /* left: 0; */
     /* Black */
     /* background-color: #CCC;  */
     text-align: center;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 120px 1% 0px 1%;
+    position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;
+    float: right;
   }
-
-
+  .shop_contents .radio, .shop_contents .checkbox{ display: inline-block; }
+  .shop_contents .form-inline .radio input[type="radio"], .shop_contents .form-inline .checkbox input[type="checkbox"]{ margin: 0 5px 0 15px; }
   .footer {
     position: fixed;
     left: 0;
@@ -75,7 +79,7 @@ html, body{ padding: 0; width: 100%; margin: 0; height: 100%; }
     font-weight: 400;
     font-size: 1.1rem;
   }
-  .header { width: 140px;  position: fixed; top: 3px; left: 10px; z-index: 11!important; }
+  .header { width: 100%;  position: fixed; top: 0px; left: 0px; z-index: 11!important; background-color: #fddb5a;}
   .wrap {
     position: relative;
     max-width: 75rem;
@@ -98,63 +102,41 @@ html, body{ padding: 0; width: 100%; margin: 0; height: 100%; }
   .iiot-estimate-form {
     margin: 30px 30px 100px 30px;
   }
-
-  @media screen and (min-width: 1080px) {
-    .iiot-main-form {
-    /* 原本是這樣 */
-    /* margin: 30px 0 100px 0;  */
-
-    /* 增加preview區域以後 */
-    margin: 30px 335px 100px 0;
-    /* margin: 130px 25% 100px 0; */
-    padding: 0 5% 0 5%;
-    }
-    /* .stepwizard-step p {
-      margin-top: 10px;
-    } */
+  .iiot-main-form {
+      float: left;
+      max-width: calc(100% - 360px);
+      padding: 0 15px 0 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1080px) {
-    .iiot-main-form {
-      /* 原本是這樣 */
-      /* margin: 30px 0 100px 0;  */
-  
-      /* 增加preview區域以後 */
-      margin: 30px 40% 100px 0;
-      padding: 0 2% 0 2%;
-      }
       /* for nav bar */
     .stepwizard-step p {
       margin-top: 10px;
     }
   }
-
+  @media (max-width: 900px) {
+    .orderpreview { display: none; /*height: 80vh; */width: 100%; left: 0; top: 91px; position: fixed; overflow-y: auto; padding:0; box-shadow: 0 0 10px rgba(0,0,0,.2); }
+    a.mob_cart{ display:block;  }
+    .iiot-main-form{ max-width: 100%; padding: 0; }
+  }
   @media (max-width: 768px) {
     .top_step_contents{ padding-right: 40px; }
-     a.mob_cart{ display:block;  }
-    .iiot-main-form {  
-      /* margin: 0px 0 100px 0;  */
-      margin: 0px 0 100px 0; 
-      padding: 0 10px 0 20px;
-    }
+    .iiot-main-form { margin: 0px 0 100px 0; padding: 0 10px 0 20px;}
     /* 手機版內容部分太少了，把文字隱藏 */
     .stepwizard-step p{ display: none; }
-    .orderpreview { display: none; height: 80vh; width: 100%; top: 80px; overflow-y: auto; padding:0; box-shadow: 0 0 10px rgba(0,0,0,.2); }
+    .iiot-logo-image{ height: 3.3rem; }
+    .shop_contents{ padding-top: 55px; }
+    .middle_contents{padding-right: 30px;}
+    .middle_contents .newLogo{ top: 0; }
+    a.mob_cart{ top: 8px; right: 20px; }
+    .orderpreview{ top: 50px; }
+    .shop_contents .form-inline .radio input[type="radio"], .shop_contents .form-inline .checkbox input[type="checkbox"]{ margin: 4px 0px 0 -14px;}
+    .shop_contents .radio label, .shop_contents .checkbox label{padding-right: 10px;}
   }
   @media (max-width: 650px) {
     .header{ width: 100%; text-align: center; top: 0; left: 0; }
-    .iiot-logo-image{ position: initial; padding: 5px; max-height: 44px; }
-    .top_step_contents{ padding: 0; padding-top:40px; }
     .stepwizard-step p{ display: none; }
-    /* .stepwizard-step p{ margin-top: 5px; } */
-    a.mob_cart{ 
-      /* top: 0px; */
-      top: 5px; 
-    }
-    .orderpreview{ 
-      top: 90px; 
-      /* top: 120px;  */
-    }
+    .shop_contents h1{ font-size: 30px; }
   }
 
   /* for nav bar */
@@ -164,7 +146,7 @@ html, body{ padding: 0; width: 100%; margin: 0; height: 100%; }
 
   .stepwizard-row {
     display: table-row;
-  }
+  } 
 
   .stepwizard {
     display: table;
