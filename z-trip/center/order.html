@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>我的訂單</title>
+<meta name='description' content=""/>
+<meta name='keywords' content=""/>
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script type="text/javascript">
+        $(function(){
+            $('.btn a.show_bottom_details').click(function(){
+                $(this).parents().parent().parent().parent().next('.show_details').slideToggle();
+            });
+            return false;
+        });
+    </script>
+<body>
+
+<main class="main_center">
+    <section class="top_item">
+        <ul class="contents_box clearfix">
+            <li class="btn_in"><p><a href="order.html">我的訂單</a></p></li>
+            <li class=""><p><a href="account.html">會員資料</a></p></li>
+        </ul>
+    </section>
+
+    <!-- 我的訂單 - 列表 -->
+    <section class="order_list">
+        <div class="contents_box clearfix">
+            <ul class="item_filter">
+                <li><p class="btn_in"><a href="#">全部(101)</a></p></li>
+                <li><p><a href="#">待付款(2)</a></p></li>
+                <li><p><a href="#">處理中(10)</a></p></li>
+                <li><p><a href="#">已完成(98)</a></p></li>
+                <li><p><a href="#">取消(1)</a></p></li>
+            </ul>
+            <div class="searchbox">
+                <input class="fbox" type="text" name="" placeholder="搜尋訂單">
+                <a class="icon" href="#"></a>
+            </div>
+        </div>
+        <ul class="list contents_box">
+            <li class="clearfix">
+                <a class="delete" title="刪除"></a>
+                <div class="onder_main_info clearfix">
+                    <div class="product_photo">
+                        <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                    </div>
+                    <div class="product_info clearfix">
+                        <div class="order_number">
+                            <p class="order_date">2019-03-02 09:29</p>
+                            <p class="number"><span class="the_type done_green">已送達</span>訂單編號  STDO190300001</p>
+                        </div>
+                        <div class="order-total">
+                            <p class="order_date">物流查詢單號  <span><a href="https://eservice.7-11.com.tw/e-tracking/search.aspx" target="_blank">ACWE129108</a></span></p>
+                            <p class="order_money">訂單金額<span class="red">$ 4,300</span></p>
+                        </div>
+                    </div>
+                    <div class="product_subtotal">
+                        <div class="exbox clearfix">
+                            <p class="btn"><a class="show_bottom_details" href="#">查看明細</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_details">
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單狀況</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <ul class="order_step clearfix">
+                                    <li><p>訂單建立<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>完成付款<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>運送中<span>2019-01-12 18:18</span></p></li>
+                                    <li class="btn_in"><p>已送達<span>2019-01-12 18:18</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單明細</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span class="red">租</span><a href="#" target="_blank"> Z-TRIP全球機 - 澳洲、紐西蘭 512M(澳大利亞)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><span>|</span><p class="use_day">租賃日間   2019-01-22 ～ 2019-01-31（10天）</p></div>
+                                    <div class="bottom_item clearfix">
+                                        <p class="add_purchase">已加購<a href="#ex2" rel="modal:open">安心險 NT 50/日</a></p>
+                                    </div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                </div>
+                            </div>
+                            <div class="abox label_buy clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/rhIp0wsTOFRu2RU6eEnV8L0dFX5ymgNjuP0KnA9u.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span>買</span><a href="#" target="_blank">Korin Design Click Pack Pro 終極防盜防後背包(Korin Design Click Pack Pro 終極防盜防後背包)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p></div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                    <p class="serial_number"><a href="#ex1" rel="modal:open">查看序號</a></p>
+                                </div>
+                            </div>
+                            <div class="abox">
+                                <p class="freight"><span>滿額 $ 888 免運</span> 運費 $0</p>
+                                <p class="note">備註：管理員可代收，謝謝</p><!-- 有備註才出現 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="clearfix">
+                <a class="delete" title="刪除"></a>
+                <div class=" onder_main_info clearfix">
+                    <div class="product_photo">
+                        <img src="https://test.z-trip.com/storage/uploads/product/rhIp0wsTOFRu2RU6eEnV8L0dFX5ymgNjuP0KnA9u.jpeg">
+                    </div>
+                    <div class="product_info clearfix">
+                        <div class="order_number">
+                            <p class="order_date">2019-02-02 09:29</p>
+                            <p class="number"><span class="the_type">已取消</span>訂單編號  STDO190301003</p>
+                        </div>
+                        <div class="order-total">
+                            <p class="order_money">訂單金額<span class="red">$ 240</span></p>
+                        </div>
+                    </div>
+                    <div class="product_subtotal">
+                        <div class="exbox clearfix">
+                            <p class="btn"><a class="show_bottom_details" href="#">查看明細</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_details">
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單狀況</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <ul class="order_step clearfix">
+                                    <li><p>訂單建立<span>2019-01-12 18:18</span></p></li>
+                                    <li class="btn_in"><p>已取消<span>2019-01-12 18:18</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單明細</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span class="red">租</span><a href="#" target="_blank"> Z-TRIP全球機 - 澳洲、紐西蘭 512M(澳大利亞)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><span>|</span><p class="use_day">租賃日間   2019-01-22 ～ 2019-01-31（10天）</p></div>
+                                    <!-- <div class="bottom_item clearfix">
+                                        <p class="add_purchase">已加購<a href="#" target="_blank">安心險 NT 50/日</a></p>
+                                    </div> -->
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                </div>
+                            </div>
+                            <div class="abox">
+                                <p class="freight">運費 $0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="clearfix">
+                <a class="delete" title="刪除"></a>
+                <div class=" onder_main_info clearfix">
+                    <div class="product_photo">
+                        <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                    </div>
+                    <div class="product_info clearfix">
+                        <div class="order_number">
+                            <p class="order_date">2019-03-02 09:29</p>
+                            <p class="number"><span class="the_type nonepay_red">尚未付款</span>訂單編號  STDO190300001</p>
+                        </div>
+                        <div class="order-total">
+                            <p class="order_money">訂單金額<span class="red">$ 2,300</span></p>
+                        </div>
+                    </div>
+                    <div class="product_subtotal">
+                        <div class="exbox clearfix">
+                            <p class="btn"><a class="go_pay" href="#">我要付款</a></p>
+                            <p class="btn"><a class="show_bottom_details" href="#">查看明細</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_details">
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單狀況</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <ul class="order_step clearfix">
+                                    <li class="btn_in"><p>訂單建立<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>完成付款<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>運送中<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>已送達<span>2019-01-12 18:18</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單明細</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span class="red">租</span><a href="#" target="_blank"> Z-TRIP全球機 - 澳洲、紐西蘭 512M(澳大利亞)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><span>|</span><p class="use_day">租賃日間   2019-01-22 ～ 2019-01-31（10天）</p></div>
+                                    <div class="bottom_item clearfix">
+                                        <p class="add_purchase">已加購<a href="#ex2" rel="modal:open">安心險 NT 50/日</a></p>
+                                    </div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                </div>
+                            </div>
+                            <div class="abox label_buy clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/rhIp0wsTOFRu2RU6eEnV8L0dFX5ymgNjuP0KnA9u.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span>買</span><a href="#" target="_blank">Korin Design Click Pack Pro 終極防盜防後背包(Korin Design Click Pack Pro 終極防盜防後背包)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><!-- <a href="#">查看序號</a> --></div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                    <p class="serial_number"><a href="#ex1" rel="modal:open">查看序號</a></p>
+                                </div>
+                            </div>
+                            <div class="abox">
+                                <p class="freight"><span>滿額 $ 888 免運</span> 運費 $0</p>
+                                <p class="note">備註：到貨前請先來電確認是否有人在，謝謝：）</p><!-- 有備註才出現 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="clearfix">
+                <a class="delete" title="刪除"></a>
+                <div class="onder_main_info clearfix">
+                    <div class="product_photo">
+                        <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                    </div>
+                    <div class="product_info clearfix">
+                        <div class="order_number">
+                            <p class="order_date">2019-03-02 09:29</p>
+                            <p class="number"><span class="the_type done_green">已送達</span>訂單編號  STDO190300001</p>
+                        </div>
+                        <div class="order-total">
+                            <p class="order_date">物流查詢單號  <span><a href="https://eservice.7-11.com.tw/e-tracking/search.aspx" target="_blank">ACWE129108</a></span></p>
+                            <p class="order_money">訂單金額<span class="red">$ 4,300</span></p>
+                        </div>
+                    </div>
+                    <div class="product_subtotal">
+                        <div class="exbox clearfix">
+                            <p class="btn"><a class="show_bottom_details" href="#">查看明細</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_details">
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單狀況</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <ul class="order_step clearfix">
+                                    <li><p>訂單建立<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>完成付款<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>運送中<span>2019-01-12 18:18</span></p></li>
+                                    <li class="btn_in"><p>已送達<span>2019-01-12 18:18</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單明細</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span class="red">租</span><a href="#" target="_blank"> Z-TRIP全球機 - 澳洲、紐西蘭 512M(澳大利亞)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><span>|</span><p class="use_day">租賃日間   2019-01-22 ～ 2019-01-31（10天）</p></div>
+                                    <div class="bottom_item clearfix">
+                                        <p class="add_purchase">已加購<a href="#ex2" rel="modal:open">安心險 NT 50/日</a></p>
+                                    </div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                </div>
+                            </div>
+                            <div class="abox label_buy clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/rhIp0wsTOFRu2RU6eEnV8L0dFX5ymgNjuP0KnA9u.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span>買</span><a href="#" target="_blank">Korin Design Click Pack Pro 終極防盜防後背包(Korin Design Click Pack Pro 終極防盜防後背包)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p></div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                    <p class="serial_number"><a href="#ex1" rel="modal:open">查看序號</a></p>
+                                </div>
+                            </div>
+                            <div class="abox">
+                                <p class="freight"><span>滿額 $ 888 免運</span> 運費 $0</p>
+                                <p class="note">備註：管理員可代收，謝謝</p><!-- 有備註才出現 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="clearfix">
+                <a class="delete" title="刪除"></a>
+                <div class=" onder_main_info clearfix">
+                    <div class="product_photo">
+                        <img src="https://test.z-trip.com/storage/uploads/product/rhIp0wsTOFRu2RU6eEnV8L0dFX5ymgNjuP0KnA9u.jpeg">
+                    </div>
+                    <div class="product_info clearfix">
+                        <div class="order_number">
+                            <p class="order_date">2019-02-02 09:29</p>
+                            <p class="number"><span class="the_type">已取消</span>訂單編號  STDO190301003</p>
+                        </div>
+                        <div class="order-total">
+                            <p class="order_money">訂單金額<span class="red">$ 240</span></p>
+                        </div>
+                    </div>
+                    <div class="product_subtotal">
+                        <div class="exbox clearfix">
+                            <p class="btn"><a class="show_bottom_details" href="#">查看明細</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_details">
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單狀況</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <ul class="order_step clearfix">
+                                    <li><p>訂單建立<span>2019-01-12 18:18</span></p></li>
+                                    <li class="btn_in"><p>已取消<span>2019-01-12 18:18</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單明細</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span class="red">租</span><a href="#" target="_blank"> Z-TRIP全球機 - 澳洲、紐西蘭 512M(澳大利亞)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><span>|</span><p class="use_day">租賃日間   2019-01-22 ～ 2019-01-31（10天）</p></div>
+                                    <!-- <div class="bottom_item clearfix">
+                                        <p class="add_purchase">已加購<a href="#" target="_blank">安心險 NT 50/日</a></p>
+                                    </div> -->
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                </div>
+                            </div>
+                            <div class="abox">
+                                <p class="freight">運費 $0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="clearfix">
+                <a class="delete" title="刪除"></a>
+                <div class=" onder_main_info clearfix">
+                    <div class="product_photo">
+                        <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                    </div>
+                    <div class="product_info clearfix">
+                        <div class="order_number">
+                            <p class="order_date">2019-03-02 09:29</p>
+                            <p class="number"><span class="the_type nonepay_red">尚未付款</span>訂單編號  STDO190300001</p>
+                        </div>
+                        <div class="order-total">
+                            <p class="order_money">訂單金額<span class="red">$ 2,300</span></p>
+                        </div>
+                    </div>
+                    <div class="product_subtotal">
+                        <div class="exbox clearfix">
+                            <p class="btn"><a class="go_pay" href="#">我要付款</a></p>
+                            <p class="btn"><a class="show_bottom_details" href="#">查看明細</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show_details">
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單狀況</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <ul class="order_step clearfix">
+                                    <li class="btn_in"><p>訂單建立<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>完成付款<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>運送中<span>2019-01-12 18:18</span></p></li>
+                                    <li><p>已送達<span>2019-01-12 18:18</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_order clearfix">
+                        <div class="sub_title"><p>訂單明細</p></div>
+                        <div class="order_details">
+                            <div class="abox clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/EfZovUuSdilP3yUr7dOs7qnAWLb1PjuZYo8lqKRZ.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span class="red">租</span><a href="#" target="_blank"> Z-TRIP全球機 - 澳洲、紐西蘭 512M(澳大利亞)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><span>|</span><p class="use_day">租賃日間   2019-01-22 ～ 2019-01-31（10天）</p></div>
+                                    <div class="bottom_item clearfix">
+                                        <p class="add_purchase">已加購<a href="#ex2" rel="modal:open">安心險 NT 50/日</a></p>
+                                    </div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                </div>
+                            </div>
+                            <div class="abox label_buy clearfix">
+                                <div class="product_photo">
+                                    <img src="https://test.z-trip.com/storage/uploads/product/rhIp0wsTOFRu2RU6eEnV8L0dFX5ymgNjuP0KnA9u.jpeg">
+                                </div>
+                                <div class="product_info">
+                                    <h3 class="product_title"><span>買</span><a href="#" target="_blank">Korin Design Click Pack Pro 終極防盜防後背包(Korin Design Click Pack Pro 終極防盜防後背包)</a></h3>
+                                    <div class="product_item"><p class="product_price">單價  $240</p><!-- <a href="#">查看序號</a> --></div>
+                                </div>
+                                <div class="right_amount">
+                                    <p>x 1 </p> 
+                                    <p>$ 240</p>
+                                    <p class="serial_number"><a href="#ex1" rel="modal:open">查看序號</a></p>
+                                </div>
+                            </div>
+                            <div class="abox">
+                                <p class="freight"><span>滿額 $ 888 免運</span> 運費 $0</p>
+                                <p class="note">備註：到貨前請先來電確認是否有人在，謝謝：）</p><!-- 有備註才出現 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Modal HTML embedded directly into document -->
+    <div id="ex1" class="modal fade">
+      <p>訂單編號 STDO190300001</p>
+      <div class="show_order_no"><p>序號：</p>
+          <input type="text" name="" value="12-12-12-12323-121212-121212">
+      </div>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
+    <div id="ex2" class="modal fade">
+      <p>安心險說明</p>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
+</main>
+
+</body>
+</html>
+
+
+
