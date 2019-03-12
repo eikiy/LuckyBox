@@ -8,6 +8,7 @@
   overflow: hidden;
   position: fixed;
   background: #fff;
+  opacity: .5;
 }
 
 .mfp-wrap {

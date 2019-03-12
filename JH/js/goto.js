@@ -1,5 +1,5 @@
 $(function(){
-   	$('.go00').click(function(){ $('html,body').animate({scrollTop:0},900);});
+   	// $('.go00').click(function(){ $('html,body').animate({scrollTop:0},900);});
 	$('.go01').click(function(){ $('html,body').animate({scrollTop:$('#goThe01').offset().top}, 800); });
 
 	$('.inside_go01').click(function(){ $('html,body').animate({scrollTop:$('#inside_goto_01').offset().top}, 800); });
@@ -23,6 +23,50 @@ $(function(){
 	});
 	return false;
 });
+
+//點右邊top
+$(function(){
+	$(window).scroll(function(){
+		var HEIGHT = $(window).scrollTop() + $(window).innerHeight()-110;
+		if( $(window).scrollTop() > 400 ){
+			$("#TOP").stop(true,false).animate({top:HEIGHT},500);
+		}else{
+			$("#TOP").stop(true,false).animate({bottom:-60},900);
+		}
+	});
+	$("#TOP").click(function goTop(){
+		$("html,body").stop(true,false).animate({scrollTop:0},900);
+	});
+	return false;
+});
+
+// $(function(){
+// 	$(window).scroll(function(){
+// 		var HEIGHT = $(window).scrollTop() + $(window).innerHeight()-110;
+// 		if( $(window).scrollTop() > 300 ){
+// 			$(".s_sideMenu").stop(true,true).show();
+// 		}else{
+// 			$(".s_sideMenu").stop(true,true).hide();
+// 		}
+// 	});
+// 	return false;
+// });
+
+// TEST
+// $(function(){
+// 	function windowSize() {
+// 	    if ($(window).width() > 1180), {
+// 	        $('body').addClass('mobile').removeClass('desktop');
+// 	    } else {
+// 	        $('body').addClass('desktop').removeClass('mobile');
+// 	        $('#holder').html('Desktop Size');
+// 	    }
+// 	};
+// 	$(window).resize(function() {
+// 	    windowSize();
+// 	});
+// 	windowSize();
+// });
 
 // $(function(){
 // 	$( "ul.menu_type li h5" ).click(
