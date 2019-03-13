@@ -92,8 +92,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff8', end
 .main_center .order_list .product_info p.number span.done_green{ color: #35e0ce; border-color: #35e0ce; }
 .main_center .order_list .product_info p.number span.nonepay_red{ color: #ff3564; border-color: #ff3564; }
 
-.main_center .order_list .product_info .order-total{float: right; text-align: right; position: relative; width: 100%; max-width: 210px;}
-.main_center .order_list .product_info .order-total p.order_date{ font-size: 14px; padding-bottom: 0; position: absolute;top: 0; right: 0;}
+.main_center .order_list .product_info .order-total{float: right; text-align: right; position: relative; width: 100%; max-width: 260px;}
+.main_center .order_list .product_info .order-total p.order_date{ font-size: 13px; padding-bottom: 0; position: absolute;top: 0; right: 0;}
 .main_center .order_list .product_info .order-total p.order_date span{color: #686868; font-size: 15px;}
 .main_center .order_list .product_info .order-total p.order_money{font-size: 14px; color: #999999; padding-top: 27px;}
 .main_center .order_list .product_info .order-total p.order_money span{ color: #ff1955; font-size: 22px; padding-left: 10px; }
@@ -230,8 +230,16 @@ p a.btn_red{ background-color: #ff3564;  }
 	.main_center .order_list .product_info p.number{font-size: 15px;}
 	.main_center .order_list .product_info p.number span.the_type{ font-size: 13px; min-width: 60px; }
 }
+
+@media (max-width:960px){
+	.main_center .order_list .product_info .order_number{width: 100%;}
+	.main_center .order_list .product_info .order-total{ float: left; padding-top: 6px; width: 100%; text-align: left;}
+	.main_center .order_list .product_info .order-total p.order_date{font-size: 13px; position: initial; padding-bottom: 5px;}
+	.main_center .order_list .product_info .order-total p.order_date span{font-size: 14px;}
+	.main_center .order_list .product_info .order-total p.order_money{padding-top: 0px; font-size: 13px;}
+	.main_center .order_list .product_info .order-total p.order_money span{ font-size: 18px; }
+}
 @media (max-width:900px){
-	p.bt_btn a.btn_red{ position: fixed;  z-index: 100; bottom: 20px; right: 15px; padding: 0 40px; letter-spacing: 1px; }
 	.main_center .top_item ul li p{ font-size: 18px; }
 	.main_center .order_list .searchbox{ float: none; margin: 0 auto; max-width: 370px;  text-align: center; }
 	.main_center .order_list .searchbox input{ width: 100%;}
@@ -241,11 +249,6 @@ p a.btn_red{ background-color: #ff3564;  }
 
 	.main_center .order_list .product_info{padding: 5px 2% 0 2%;}
 	.main_center .order_list .product_info p.order_date{ font-size: 13px; padding-bottom: 5px; }
-	.main_center .order_list .product_info .order_number{width: 100%;}
-	.main_center .order_list .product_info .order-total{ float: left; padding-top: 6px; width: 100%; text-align: left;}
-	.main_center .order_list .product_info .order-total p.order_date{font-size: 13px; position: initial; padding-bottom: 5px;}
-	.main_center .order_list .product_info .order-total p.order_money{padding-top: 0px; font-size: 13px;}
-	.main_center .order_list .product_info .order-total p.order_money span{ font-size: 18px; }
 
 	.main_center .order_list .product_subtotal .exbox p.btn{font-size: 13px; max-width: 110px;}
 }
