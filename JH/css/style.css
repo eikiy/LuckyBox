@@ -355,6 +355,7 @@ p.go-top a:hover{ opacity:0.9;}
 .inside_contents .the_order_box .order_type ul li .bottom p span{ font-size: 18px; }
 .inside_contents .the_order_box .order_type ul li .skype_blue p span{ color: #559c9b; border-color: #559c9b; }
 .inside_contents .the_order_box .max80{ width: 90%; max-width: 1000px; margin: 0 auto; }
+
 /*popup*/
 .popup-L {max-width:800px; margin: 0 auto; padding: 25px; position: relative; background-color: #fff; }
 .popup-L .mfp-close{ right: 15px !important; top: 15px; }
@@ -366,7 +367,17 @@ p.go-top a:hover{ opacity:0.9;}
 .product-infoBox .the_deta .note{ padding: 20px 0;}
 .product-infoBox .the_deta .note p{ text-align: center; }
 
-.hideUp{ top: -48px}
+.main_contents .hotBox{ padding-top: 60px; }
+.main_contents .hotBox .flexslider{ width: 100%; max-width: 600px; margin: 0 auto; }
+.main_contents .hotBox .flexslider ul.slides li{ background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center;  padding-bottom: 40px; }
+.main_contents .hotBox .flexslider ul.slides li h4{ padding: 20px 0 5px 0; font-size: 16px; }
+.main_contents .hotBox .flexslider ul.slides li p{ font-size: 14px; color: #666;}
+.main_contents .hotBox .flexslider ul.slides li img{ width: 100%; max-width: 200px; display: inline-block; }
+
+.main_contents .hotBox .flexslider .flex-control-nav{ bottom: 0px; }
+.main_contents .hotBox .flexslider .flex-control-paging li a{ border-color: #555; }
+
+.main_contents .hotBox p.more{ padding-top: 50px; }
 
 /*==== RWD ====*/
 
@@ -481,6 +492,8 @@ p.go-top a:hover{ opacity:0.9;}
 	.HeaderBox{position: fixed; top: 0; z-index: 15; box-shadow: 0 0 5px rgba(0,0,0,.2); display: block;}
 	.main_contents .bannerBox .banner_mob{ display: block; }
 	.main_contents .bannerBox .banner_pc{ display: none; }
+	.main_contents .hotBox .flexslider ul.slides li img{ max-width: 100px; }
+
 	.FooterBox p{font-size: 12px;}
 	.inside_contents{ padding-top: 78px; }
 	.inside_contents .news_box ul.news_list li .newBox p.ex{ font-size: 20px; }
@@ -524,7 +537,7 @@ p.go-top a:hover{ opacity:0.9;}
 	.newsBox{padding-bottom: 0;}
 	.styleBox{ padding-top: 0; }
 	.newsBox ul.news_list li{ width: calc(100% - 24px);margin-bottom: 20px; }
-	
+
 	.mob_none{ display: none; }
 
 	.FooterBox ul.info li{ width: 50%; padding-bottom: 15px; }
