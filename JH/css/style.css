@@ -60,6 +60,7 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .main_contents .bannerBox .flexslider .flex-control-nav{ bottom: 40px; }
 .main_contents .bannerBox .flexslider .titleBox{ width: 100%; position: absolute; top: 33%; z-index: 8; }
 .main_contents .bannerBox .flexslider .titleBox .banner_title{ width:calc(100% - 60px); margin: 0 auto;  color: #fff; font-size: 52px; line-height: 90px; font-weight: bold; text-align: center; text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);}
+.main_contents .bannerBox .banner_mob{ display: none; }
 
 .main_contents .top_title{ padding: 35px 0; position: relative; text-align: center;}
 .main_contents .top_title::after{ content: ""; top: 50%; position: absolute; width: 100%; height:1px; display: block; background-color: #707070;z-index: -1;}
@@ -106,7 +107,7 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 /*FooterBox*/
 .FooterBox{ width: 100%; border-top: 1px solid #707070;}
 .FooterBox p{ font-size: 14px; color: #707070; line-height: 24px; letter-spacing: 2px; text-align: center; }
-.FooterBox p.copyright{  padding-bottom: 30px;}
+.FooterBox p.copyright{  padding-bottom: 30px;font-size: 13px;}
 
 .FooterBox ul.info{ width: 100%; padding: 35px 0;}
 .FooterBox ul.info li{ float: left; width: 25%; }
@@ -128,7 +129,7 @@ p.go-top a:hover{ opacity:0.9;}
 /*inside contents*/
 .s_sideMenu{ width: 158px; position: fixed; left: 12%; bottom: 150px; z-index: 100; }
 .s_sideMenu h3.title{ font-size: 24px; line-height: 32px; padding: 15px 0; border-bottom: 1px solid #707070; margin-bottom: 25px; }
-.s_sideMenu h3.title span{ font-size: 20px; }
+.s_sideMenu h3.title span{ font-size: 20px; display: block; }
 .s_sideMenu ul.golink_list{border:1px solid #333; }
 .s_sideMenu ul.golink_list li{ border-bottom: 1px solid #333 ;}
 .s_sideMenu ul.golink_list li:last-child{ border: none; }
@@ -310,7 +311,7 @@ p.go-top a:hover{ opacity:0.9;}
 .doorPanel_notice{ width: 100%; }
 .doorPanel_notice .ContentsBox{ max-width: 1620px; position: relative; }
 
-.doorPanel_notice .titleBox{ position: absolute; top: 15px; left: 0; width: 260px; height: 260px; border:1px solid #707070; background-color: #fff; z-index: 100; }
+.doorPanel_notice .titleBox{ position: absolute; top: 15px; left: 0; width: 260px; height: 260px; border:1px solid #707070; background-color: #fff; z-index: 10; }
 .doorPanel_notice .titleBox p{ width: 100%; height: 100%; font-size: 20px; line-height: 30px; padding: 30px; position: relative; }
 .doorPanel_notice .titleBox p::after{ position: absolute; content: ""; top: 138px; left: 16px; width: 224px; height: 1px; background-color: #707070; display: block; -moz-transform-origin:center center; -moz-transform:rotate(-45deg); -webkit-transform-origin:center center; -webkit-transform:rotate(-45deg);-o-transform-origin:center center; -o-transform:rotate(-45deg);-ms-transform-origin:center center;-ms-transform:rotate(-45deg); transform-origin:center center;transform:rotate(-45deg);}
 
@@ -365,7 +366,7 @@ p.go-top a:hover{ opacity:0.9;}
 .product-infoBox .the_deta .note{ padding: 20px 0;}
 .product-infoBox .the_deta .note p{ text-align: center; }
 
-
+.hideUp{ top: -48px}
 
 /*==== RWD ====*/
 
@@ -404,8 +405,10 @@ p.go-top a:hover{ opacity:0.9;}
 @media (max-width:1180px){
 	.s_sideMenu{ bottom: initial; top: 90px; left: 0; width: 100%; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; background-color: #fff; }
 	.s_sideMenu h3.title{ text-align: center; margin-bottom: 0; background-color: #f5f5f5; border-bottom: none; }
+	.s_sideMenu h3.title span{ display: inline-block; padding-left: 5px; }
 	.s_sideMenu ul.golink_list{ text-align: center; border-width: 0 0 1px 0; }
-	.s_sideMenu ul.golink_list li{ display: inline-block; border: none; padding: 0 15px; }
+	.s_sideMenu ul.golink_list li{ display: inline-block; border: none;}
+	.s_sideMenu ul.golink_list li a{ padding: 0 15px; }
 }
 @media (max-width:1000px){
 	.HeaderBox{padding: 10px 0;}
@@ -425,6 +428,9 @@ p.go-top a:hover{ opacity:0.9;}
 	.produc_box .ContentsBox .produc_left_menu ul.menu_type{ padding-bottom: 0; position: relative; }
 	.produc_box .ContentsBox .produc_left_menu .for_mob_box a.more{ display: block; }
 	.produc_box .ContentsBox .produc_right_deta{ max-width: 100%; }
+
+	.produc_box .ContentsBox .produc_left_menu p.info{ font-size: 18px; }
+	.produc_box .ContentsBox .produc_left_menu ul.menu_type li ul.the_sub_menu li{ float: left; }
 
 	.product-infoBox .the_deta p{ font-size: 14px; }
 
@@ -460,6 +466,7 @@ p.go-top a:hover{ opacity:0.9;}
 	.inside_contents .contact_box ul.contact_info li p{ padding-top: 125px; }
 	.inside_contents .contact_box ul.contact_info li p::after{ width: 100px; height: 100px; left: calc(50% - 50px); }
 	.produc_box .ContentsBox ul.produc_right_deta li{ width: calc(100% / 2); }
+	.produc_box .ContentsBox .produc_left_menu p.info{ font-size: 17px; }
 
 	.doorPanel_notice .titleBox{ top: -50px; left: calc(50% - 85px); }
 	.doorPanel_notice ul{ width: 100%; padding:90px 20px 40px 20px; text-align: center; }
@@ -471,8 +478,9 @@ p.go-top a:hover{ opacity:0.9;}
 	.doorframe_infoBox h4.sub_title{ font-size: 20px; }
 }
 @media (max-width:750px){
-	.main_contents .bannerBox{ padding-top: 70px; }
 	.HeaderBox{position: fixed; top: 0; z-index: 15; box-shadow: 0 0 5px rgba(0,0,0,.2); display: block;}
+	.main_contents .bannerBox .banner_mob{ display: block; }
+	.main_contents .bannerBox .banner_pc{ display: none; }
 	.FooterBox p{font-size: 12px;}
 	.inside_contents{ padding-top: 78px; }
 	.inside_contents .news_box ul.news_list li .newBox p.ex{ font-size: 20px; }
@@ -487,6 +495,14 @@ p.go-top a:hover{ opacity:0.9;}
 	.faq_box ul.faq_list li p, .inside_contents .news_article p.info{ line-height: 32px; }
 	.inside_contents .news_article .bothBox .left_p{ max-width: 100%; float: none;}
 	.inside_contents .news_article .bothBox .photo{ float: none; padding: 30px; margin: 0 auto;}
+
+	.inside_contents .aboutus_box ul.core_list li .left_icon{ float: none; margin: 0 auto; }
+	.inside_contents .aboutus_box ul.core_list li .right_p{ float: none; width: 100%; margin: 0 auto; }
+	.inside_contents .aboutus_box h4.sub_title{ font-size: 26px; }
+	.inside_contents .aboutus_box ul.timber_type{padding:15px 0 35px 0;}
+	.inside_contents .aboutus_box ul.timber_type li{ width: 100%; min-height: initial; padding-bottom:20px; }
+	.inside_contents .aboutus_box ul.timber_type li p{ padding-right: 0; font-size: 14px;line-height: 24px;}
+
 	.produc_box .ContentsBox .produc_left_menu{padding-bottom: 10px;}
 	.produc_box .ContentsBox .produc_left_menu h3.main_title{ padding: 15px 0; }
 	.produc_box .ContentsBox .produc_left_menu p.info{ font-size: 16px; line-height: 26px; }
@@ -505,7 +521,12 @@ p.go-top a:hover{ opacity:0.9;}
 	.inside_contents .the_order_box .order_type ul li .bottom p span{ font-size: 13px; }
 }
 @media (max-width:650px){
+	.newsBox{padding-bottom: 0;}
+	.styleBox{ padding-top: 0; }
 	.newsBox ul.news_list li{ width: calc(100% - 24px);margin-bottom: 20px; }
+	
+	.mob_none{ display: none; }
+
 	.FooterBox ul.info li{ width: 50%; padding-bottom: 15px; }
 	.FooterBox p.copyright{ letter-spacing: 0; }
 	.inside_contents .bannerBox{ height: 300px; }
@@ -535,6 +556,8 @@ p.go-top a:hover{ opacity:0.9;}
 	.inside_contents .news_box ul.news_list li .left_img{ height: 160px; }
 	.inside_contents .the_order_box .order_type ul li .top p{ font-size: 17px; }
 	.inside_contents .the_order_box .order_type ul li .bottom p{ font-size: 15px; }
+
+	.produc_box .ContentsBox .produc_left_menu p.info{font-size: 15px;}
 }
 @media (max-width:350px){
 	.ContentsBox{ min-width: 280px; }

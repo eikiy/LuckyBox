@@ -13,7 +13,13 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/goto.js"></script>
 
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!-- Animate.css v3.5.2 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+<!-- Headroom.js v0.9.4 -->
+<script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
+<link href="css/normalize.css" rel="stylesheet" />
+<!-- <link rel="stylesheet" type="text/css" href="https://wicky.nillia.ms/headroom.js/assets/styles/main.css?v=2"> -->
+
 </head>
 
 
@@ -71,9 +77,8 @@
 <main class="main_contents inside_contents">
     <div class="bannerBox banner_05"></div>
     <section class="s_sideMenu">
-        <h3 class="title">木門問答集 /<br>
-        <span>WOOD DOOR FAQ</span></h3>
-        <ul class="golink_list">
+        <h3 class="title">木門問答集 /<span>WOOD DOOR FAQ</span></h3>
+        <ul class="golink_list header--fixed hide-from-print"><!-- mob-hide-menu -->
             <li><p><a class="inside_go01">木門如何保養</a></p></li>
             <li><p><a class="inside_go02">木門隔音效果</a></p></li>
             <li><p><a class="inside_go03">木門蟲害防範</a></p></li>
@@ -162,10 +167,36 @@
             </li>
         </ul>
     </section>
+    <p class="copyright">Copyright © 2019 Jeng Haur Timber Corporation. All right reserved</p>
 </footer>
 <p class="go-top" id="TOP" title="回到上面"><a>TOP</a></p>
 
 </body>
+<script type="text/javascript">
+    (function() {
+    var header = new Headroom(document.querySelector(".mob-hide-menu"), {
+        tolerance: 5,
+        offset : 205,
+        classes: {
+          initial: "animated",
+          pinned: "slideDown",
+          unpinned: "slideUp"
+        }
+    });
+    header.init();
+
+    var bttHeadroom = new Headroom(document.getElementById("btt"), {
+        tolerance : 0,
+        offset : 500,
+        classes : {
+            initial : "slide",
+            pinned : "slide--reset",
+            unpinned : "slide--down"
+        }
+    });
+    bttHeadroom.init();
+}());
+</script>
 </html>
 
 

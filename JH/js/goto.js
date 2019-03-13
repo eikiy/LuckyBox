@@ -24,6 +24,50 @@ $(function(){
 	return false;
 });
 
+// 點 lightbox 商品圖 上面介紹和選項隱藏
+$(function(){
+	$(".produc_right_deta").click(function(){
+		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').hide();
+	  $(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').hide();
+	});
+	return false;
+});
+
+
+// $(function(){
+// 	     // var _width = $(window).width(); 
+// 	     if( $(window).width() < 750){
+// 	         $("ul.golink_list").addClass("mob-hide-menu");
+// 	     }else{
+// 	     	$("ul.golink_list").removeClass("mob-hide-menu");
+// 	     } 
+// });
+// function checkWidth(init)
+// {
+//     /*If browser resized, check width again */
+//     if ($(window).width() < 750) {
+//         $('ul.golink_list').addClass('mob-hide-menu');
+//     }
+//     else {
+//         if (!init) {
+//             $('ul.golink_list').removeClass('mob-hide-menu');
+//         }
+//     }
+// }
+
+// 增加mob-hide-menu讓他滑動隱藏上移才出現
+$(function(){
+// $(window).on('resize', function(){
+      var win = $(this);
+      if (win.width() < 750) { 
+      $('ul.golink_list').addClass('mob-hide-menu');
+  	}
+    else{
+      $('ul.golink_list').removeClass('mob-hide-menu');
+    }
+
+});
+
 //點右邊top
 $(function(){
 	$(window).scroll(function(){
@@ -39,6 +83,7 @@ $(function(){
 	});
 	return false;
 });
+
 
 // $(function(){
 // 	$(window).scroll(function(){
