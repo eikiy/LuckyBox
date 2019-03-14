@@ -103,6 +103,19 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .styleBox ul.style_list li a:hover{ opacity: .9; }
 .styleBox ul.style_list li.style_01 a{ background-image: url(../images/bg_style_01.jpg);  }
 .styleBox ul.style_list li.style_02 a{ background-image: url(../images/bg_style_02.jpg);  }
+.styleBox .flexslider{ display: none; }
+
+.main_contents .hotBox{ padding-top: 60px; }
+.main_contents .hotBox .flexslider, .main_contents .styleBox .flexslider{ width: 100%; max-width: 600px; margin: 0 auto; }
+.main_contents .hotBox .flexslider ul.slides li, .main_contents .styleBox .flexslider ul.slides li{ background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center;  padding-bottom: 40px; }
+.main_contents .hotBox .flexslider ul.slides li h4, .main_contents .styleBox .flexslider ul.slides li h4{ padding: 20px 0 5px 0; font-size: 16px; }
+.main_contents .hotBox .flexslider ul.slides li p{ font-size: 14px; color: #666;}
+.main_contents .hotBox .flexslider ul.slides li img, .main_contents .styleBox .flexslider ul.slides li img{ width: 100%; max-width: 200px; display: inline-block; }
+
+.main_contents .hotBox .flexslider .flex-control-nav, .main_contents .styleBox .flexslider .flex-control-nav{ bottom: 0px; }
+.main_contents .hotBox .flexslider .flex-control-paging li a, .main_contents .styleBox .flexslider .flex-control-paging li a{ border-color: #555; }
+
+.main_contents .hotBox p.more{ padding-top: 50px; }
 
 /*FooterBox*/
 .FooterBox{ width: 100%; border-top: 1px solid #707070;}
@@ -299,8 +312,12 @@ p.go-top a:hover{ opacity:0.9;}
 .produc_box .ContentsBox .produc_left_menu ul.menu_type li ul.the_sub_menu li p a.btn_in:hover{ opacity: 1; }
 .produc_box .ContentsBox .produc_left_menu ul.menu_type li ul.ul_show{ display: block; }/*
 .produc_box .ContentsBox .produc_left_menu ul.menu_type li ul.ul_hide{ display: none; }*/
+
 .produc_box .ContentsBox .produc_left_menu .for_mob_box{width: 100%; position: relative;}
-.produc_box .ContentsBox .produc_left_menu .for_mob_box a.more{ display: none; position: absolute; top: -7px; right: -12px; background-image: url(../images/more-list.png); -webkit-filter:inherit; filter:initial; }
+.produc_box .ContentsBox .produc_left_menu .for_mob_box a.more{ display: none; position: absolute; top: -7px; right: -12px; background-image: url(../images/icon_arr2.png); -webkit-filter:inherit; filter:initial; }
+.produc_box .ContentsBox .produc_left_menu .for_mob_box a.info_open{color:#06C; background-image:url(../images/icon_arr2.png); background-repeat:no-repeat; }
+.produc_box .ContentsBox .produc_left_menu .for_mob_box a.info_open2{color:#06C; background-image:url(../images/icon_arr.png); background-repeat:no-repeat;}
+
 
 .produc_box .ContentsBox .produc_right_deta{ float: left; width: 100%; max-width: calc(100% - 365px); }
 .produc_box .ContentsBox ul.produc_right_deta li{ float: left; width: calc(100% / 4); padding: 0 25px 20px 25px; }
@@ -367,17 +384,6 @@ p.go-top a:hover{ opacity:0.9;}
 .product-infoBox .the_deta .note{ padding: 20px 0;}
 .product-infoBox .the_deta .note p{ text-align: center; }
 
-.main_contents .hotBox{ padding-top: 60px; }
-.main_contents .hotBox .flexslider{ width: 100%; max-width: 600px; margin: 0 auto; }
-.main_contents .hotBox .flexslider ul.slides li{ background-position: center center; background-repeat: no-repeat; background-size: cover; text-align: center;  padding-bottom: 40px; }
-.main_contents .hotBox .flexslider ul.slides li h4{ padding: 20px 0 5px 0; font-size: 16px; }
-.main_contents .hotBox .flexslider ul.slides li p{ font-size: 14px; color: #666;}
-.main_contents .hotBox .flexslider ul.slides li img{ width: 100%; max-width: 200px; display: inline-block; }
-
-.main_contents .hotBox .flexslider .flex-control-nav{ bottom: 0px; }
-.main_contents .hotBox .flexslider .flex-control-paging li a{ border-color: #555; }
-
-.main_contents .hotBox p.more{ padding-top: 50px; }
 
 /*==== RWD ====*/
 
@@ -425,8 +431,7 @@ p.go-top a:hover{ opacity:0.9;}
 	.HeaderBox{padding: 10px 0;}
 	.HeaderBox h1.logo{padding: 0;}
 	.HeaderBox h1.logo a{height: 54px;}
-	.HeaderBox .TopBox{ width: initial; }
-	.HeaderBox .TopBox ul.top_menu{ display: none; }
+	.HeaderBox .TopBox{ width: initial; display: none; }
 	.HeaderBox .TopBox .searchBox{ margin-top: 10px; padding-right: 25px; }
 	.main_contents{ padding-top: 78px; }
 	.main_contents .bannerBox .flexslider .titleBox .banner_title{ line-height: initial; font-size: 48px;}
@@ -536,6 +541,8 @@ p.go-top a:hover{ opacity:0.9;}
 @media (max-width:650px){
 	.newsBox{padding-bottom: 0;}
 	.styleBox{ padding-top: 0; }
+	.styleBox .flexslider{ display: block; }
+
 	.newsBox ul.news_list li{ width: calc(100% - 24px);margin-bottom: 20px; }
 
 	.mob_none{ display: none; }
@@ -562,7 +569,7 @@ p.go-top a:hover{ opacity:0.9;}
 	.produc_box .ContentsBox .produc_left_menu h3.main_title{padding-top: 0;}
 }
 @media (max-width:500px){
-	.FooterBox p{font-size: 11px; letter-spacing: 1px; line-height: 20px;}
+	.FooterBox p.copyright{font-size: 11px; letter-spacing: 1px; line-height: 20px;}
 	.subBannerBox .infoBox h4{font-size: 30px;}
 	.subBannerBox .infoBox p{font-size: 15px;}
 	.inside_contents .bannerBox{ height: 220px; }

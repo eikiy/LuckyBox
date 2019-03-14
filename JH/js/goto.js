@@ -17,30 +17,40 @@ $(function(){
 	});
 	return false;
 });
-$(function(){
-	$(".for_mob_box a.more").click(function(){
-	  $(this).parent().find('.box-none').toggle();
-	});
-	return false;
-});
+
+
+// 商品上面的說明預設打開，點了變換箭頭
+// $(function(){
+// 	$(".for_mob_box a.more").click(function(){
+// 	  $(this).parent().find('.box-none').toggle();
+// 	});
+// 	return false;
+// });
+function condition(search_more){
+	var text = $("#morecondition").html();
+	$("#condition").toggle();
+        $("#morecondition").toggleClass("info_open2");
+        $("#morecondition").toggleClass("info_open");
+}
+
 
 // 點 lightbox 商品圖 上面介紹和選項隱藏
 $(function(){
 	$(".produc_right_deta").click(function(){
 		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').hide();
-	  $(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').hide();
+		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').hide();
 	});
 	return false;
 });
 
 
 // $(function(){
-// 	     // var _width = $(window).width(); 
+// 	     // var _width = $(window).width();
 // 	     if( $(window).width() < 750){
 // 	         $("ul.golink_list").addClass("mob-hide-menu");
 // 	     }else{
 // 	     	$("ul.golink_list").removeClass("mob-hide-menu");
-// 	     } 
+// 	     }
 // });
 // function checkWidth(init)
 // {

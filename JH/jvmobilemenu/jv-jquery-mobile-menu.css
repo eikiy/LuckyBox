@@ -5,16 +5,17 @@ html,body{width:100%;margin:0;padding:0}
 .mobile-nav ul li{list-style:none}
 ul.submenu{ padding-top:10px;}
 
-.hamburger{ position: fixed; display: none; top:20px; right: 10px;  padding:10px 10px 9px; cursor:pointer; z-index:200;}
+.hamburger{ position: fixed; display: none; top:20px; right: 15px !important;  padding:10px 10px 9px; cursor:pointer; z-index:200; background-color: #272e58; border-radius: 50%;}
 .hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
-.hamburger .bar{width:24px;height:2px;background:#4d4d4d;position:absolute;top:0}
-.hamburger .bar.bar2,.hamburger .bar.bar3{top:9px; }
-.hamburger .bar.bar4{top:18px; }
-.hamburger.open{position: fixed; top: 5px;  z-index:220;}
+.hamburger .bar{width:20px;height:2px;background:#fff;position:absolute;top:0; left: 2px;}
+.hamburger .bar.bar2,.hamburger .bar.bar3{top:8px; }
+.hamburger .bar.bar4{top:16px; }
+.hamburger.open{position: fixed; /*top: 5px;*/  z-index:220;}
 .hamburger.open .bar1,.hamburger.open .bar4{display:none}
-.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #333;}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
 
-.mobile-nav ul.socialBox{ width: 100%; text-align: center; padding: 60px 0 0; }
+
+.mobile-nav ul.socialBox{ width: 100%; text-align: center; padding: 60px 0 0;  margin-bottom: 15px;}
 .mobile-nav ul.socialBox li{ display: inline-block; margin: 0 3px; }
 .mobile-nav ul.socialBox li a{ width: 40px; height: 40px; display: block; border-radius: 50%; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.2); background-position: center center; background-repeat: no-repeat; background-size: 40%;  }
 .mobile-nav ul.socialBox li a.map{ background-image: url(../images/icon_add.png); }
@@ -25,14 +26,20 @@ ul.submenu{ padding-top:10px;}
 .mobile-nav ul.Oneself{ width:100%;}
 .mobile-nav ul.Oneself li{ padding: 0px 20px 5px 20px; }
 .mobile-nav ul.Oneself li:last-child{ border:none; }
-.mobile-nav ul.Oneself li h3{ color: #c3c6c7; font-size: 15px; padding: 10px 0 10px 10px; }
+.mobile-nav ul.Oneself li h3{ color: #c3c6c7; font-size: 15px; padding: 8px 0 8px 10px; }
 .mobile-nav ul.Oneself li h3 a{ color: #333; }
 .mobile-nav ul.Oneself li .submenu{ padding-left: 92px; }
 .mobile-nav ul.Oneself li p{ font-size: 13px; }
 .mobile-nav ul.Oneself li p a{ color: #6E6E6E; padding: 3px 0; display: block;}
 .mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
 
+.mobile-nav .searchBox{ padding-left:16px; display: inline-block; }
+.mobile-nav .searchBox input{ padding: 10px; font-size: 13px; color: #111; border-radius: 50px; width: 100%; max-width: 150px; background: url(../images/icon_search.png) 10px center no-repeat; background-size: contain; padding-left: 55px;}
+.mobile-nav .searchBox input:focus { background-color: #f7f7f7; }
+.mobile-navx .searchBox input::placeholder{ color: #333; }
+
+
 @media (max-width:1000px){.hamburger{ display:block;}}
 @media (max-width:750px){
-	.hamburger{ position: fixed; top: 10px; }
+	.hamburger{ position: fixed; top: 15px; }
 }

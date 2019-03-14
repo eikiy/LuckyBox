@@ -49,6 +49,15 @@
         });
     });
 </script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#flexslider-lifephoto').flexslider({ animation: "slide",
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
 </head>
 
 
@@ -87,6 +96,10 @@
             <li><h3><a href="faq.html">木門問答  ｜  FAQ</a></h3></li>
             <li><h3><a href="order.html">訂購流程  ｜  ORDER PROCESS</a></h3></li>
             <li><h3><a href="contact.html"">聯絡我們  ｜  CONTACT</a></h3></li>
+            <!-- <li><div class="searchBox clearfix">
+                    <input type="" name="" placeholder="關鍵字">
+                </div>
+            </li> -->
         </ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -291,10 +304,62 @@
         <div class="top_title">
             <h3>風格選品 / <span>LIFE STYLE</span></h3>
         </div>
-        <ul class="style_list clearfix">
+        <ul class="style_list mob_none clearfix">
             <li class="style_01"><a href="life_style.html"></a></li>
-            <li class="style_02 mob_none"><a href="life_style.html"></a></li>
+            <li class="style_02"><a href="life_style.html"></a></li>
         </ul>
+        <div class="flexslider" id="flexslider-lifephoto">
+            <ul class="slides">
+                <li>
+                    <a href="product-01.html">
+                        <img src="images/life_style/l_01s.jpg" alt="細緻沉穩風">
+                        <h4>細緻沉穩風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-02.html">
+                        <img src="images/life_style/l_02s.jpg" alt="田園鄉村風">
+                        <h4>田園鄉村風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-03.html">
+                        <img src="images/life_style/l_03s.jpg" alt="雋永經典風">
+                        <h4>雋永經典風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-04.html">
+                        <img src="images/life_style/l_04s.jpg" alt="英式田園風">
+                        <h4>英式田園風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-05.html">
+                        <img src="images/life_style/l_05s.jpg" alt="匠心懷舊風">
+                        <h4>匠心懷舊風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-06.html">
+                        <img src="images/life_style/l_06s.jpg" alt="經典黑白風">
+                        <h4>經典黑白風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-07.html">
+                        <img src="images/life_style/l_07s.jpg" alt="現代北歐風">
+                        <h4>現代北歐風</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="product-08.html">
+                        <img src="images/life_style/l_08s.jpg" alt="穀倉工業風">
+                        <h4>穀倉工業風</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
 </main>
 
