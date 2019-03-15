@@ -45,11 +45,12 @@ main{width: 100%;}
 .eventinfo_box p.btn_order a:hover, .eventinfo_box .bank_link p.btn a:hover{ opacity: .8; }
 
 .note_box{ width: 100%; max-width: 830px; margin: 0 auto; padding: 20px 0 40px; }
+.note_box .content_box{ width: 80%; }
 .note_box h3, .note_box h4{ font-size:20px; text-align: left; font-weight: bold; color: #000000; font-weight: bold; padding: 10px 0 5px;}
 .note_box h3{}
 .note_box ul{ list-style-type: decimal; list-style-position: outside; font-size: 20px; padding-left: 20px;}
 .note_box ul li{padding-bottom: 5px;}
-.note_box ul li ul{ list-style-type: disc; list-style-position: outside; font-size: 20px; padding: 5px 0 10px; padding-left: 20px; text-align: justify;}
+.note_box ul li ul{ list-style-type: disc; list-style-position: outside; padding: 5px 0 10px; padding-left: 20px; text-align: justify;}
 .note_box ul li p{font-size:20px; text-align: left; color: #000000; display: block; line-height: 33px; text-align: justify;}
 .note_box ul li ul li{ padding-bottom: 5px; }
 
@@ -66,16 +67,36 @@ main{width: 100%;}
 	.eventinfo_box .bank_link p.btn a{ width: 215px; height: 50px; line-height: 50px; font-size: 24px; }
 	.eventinfo_box h2{ font-size: 36px; }
 	.eventinfo_box p.p_info{ font-size: 36px; line-height: 60px; }
+	.note_box ul{font-size: 18px;}
 	.note_box ul li p{ font-size: 18px; line-height: 26px; }
 	.footer_box p{ font-size: 48px; }
 }
-@media (max-width:600px){
-	.eventinfo_box h2{ font-size: 32px; }
+@media (max-width:650px){
+	.eventinfo_box h2{ font-size: 32px; line-height: inherit; }
+	.eventinfo_box h2 span{ display: block; }
+	.eventinfo_box p.btn_order{padding: 15px 0;}
 	.eventinfo_box p.p_info{ font-size: 32px; line-height: 44px; }
+	.note_box ul{font-size: 16px;}
 	.note_box ul li p{ font-size: 16px; line-height: 24px; }
 	.footer_box p{font-size: 32px;}
 }
 @media (max-width:600px){
-	.eventinfo_box p.p_info{ font-size: 24px; line-height: 34px; }
+	.eventinfo_box h2{ font-size: 26px;}
+	.note_box h3, .note_box h4{ font-size: 16px; }
+	.note_box ul li p{font-size: 16px;}
+	.eventinfo_box p.p_info{ font-size: 22px; line-height: 34px; }
 }
-@media (max-width:320px){}
+@media (max-width:499px){
+	.eventinfo_box p.btn_order{font-size: 28px; line-height: 32px; }
+	.eventinfo_box .bank_link p.btn a{font-size: 22px;}
+	.note_box h3, .note_box h4{ font-size: 15px; }
+	.note_box ul{font-size: 14px;}
+	.note_box ul li p{ font-size: 14px; }
+	.eventinfo_box p.p_info{ font-size: 18px; line-height: 27px; }
+}
+@media (max-width:400px){
+	.note_box h3, .note_box h4{ font-size: 14px;}
+	.note_box ul{ font-size: 13px; }
+	.note_box ul li p{ font-size: 13px;  line-height: 18px;}
+	.footer_box p{ font-size: 24px; }
+}
