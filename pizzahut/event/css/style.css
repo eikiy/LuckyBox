@@ -47,7 +47,7 @@ main{width: 100%;}
 .note_box{ width: 100%; max-width: 830px; margin: 0 auto; padding: 20px 0 40px; }
 .note_box .content_box{ width: 80%; }
 .note_box h3, .note_box h4{ font-size:20px; text-align: left; font-weight: bold; color: #000000; font-weight: bold; padding: 10px 0 5px;}
-.note_box h3{}
+.note_box h4{ margin-left: -20px; }
 .note_box ul{ list-style-type: decimal; list-style-position: outside; font-size: 20px; padding-left: 20px;}
 .note_box ul li{padding-bottom: 5px;}
 .note_box ul li ul{ list-style-type: disc; list-style-position: outside; padding: 5px 0 10px; padding-left: 20px; text-align: justify;}
