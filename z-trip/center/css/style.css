@@ -26,7 +26,7 @@ html, body{ height: 100%; }
 /*===== start ======*/
 .contents_box{ max-width: 1000px; margin: 0 auto;}
 
-.main_center{width: 100%; min-height: 100%; background-color: #f8f8f8; background-color: #eaeaea;}
+.main_center{width: 100%; min-height: 100%; background-color: #f8f8f8; background-color: #eaeaea; padding-top: 96px;}
 .main_center .top_item{ width: 100%; margin-bottom: 15px; background-color: #fff;  top: 0; z-index: 50; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
 .main_center .top_item ul{ width: 100%; max-width: 645px;margin: 0 auto;}
 .main_center .top_item ul li{ float: left; width: 50%; margin-bottom: 5px; position: relative;}
@@ -220,6 +220,10 @@ p a.btn_red{ background-color: #ff3564;  }
 
 
 /*==== RWD ====*/
+
+@media (max-width:1200px){
+	.main_center{ padding-top: 154px; }
+}
 @media (max-width:1020px){
 	.contents_box { width:calc(100% - 30px); margin: 0 auto;}
 	.main_center .order_list .right_amount{font-size: 14px; padding: 20px 0 5px 5px;}
@@ -230,7 +234,9 @@ p a.btn_red{ background-color: #ff3564;  }
 	.main_center .order_list .product_info p.number{font-size: 15px;}
 	.main_center .order_list .product_info p.number span.the_type{ font-size: 13px; min-width: 60px; }
 }
-
+@media (max-width:992px){
+	.main_center{ padding-top: 90px; }
+}
 @media (max-width:960px){
 	.main_center .order_list .product_info .order_number{width: 100%;}
 	.main_center .order_list .product_info .order-total{ float: left; padding-top: 6px; width: 100%; text-align: left;}
