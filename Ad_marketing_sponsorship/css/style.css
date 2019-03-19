@@ -77,9 +77,7 @@ html, body{ height: 100%; }
 .icon_05::before { content: "\f040";}
 .icon_06::before { content: "\f11c";}
 .icon_07::before { content: "\f0e0";}
-.fillinBox select{ width:100%; border: 0; font-size: 16px; line-height: 30px; height: 50px; background-color: #f2f0f0; padding:10px 15px 10px 50px; border-radius: 4px; appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;}
+.fillinBox select{ width:100%; border: 0; font-size: 16px; line-height: 30px; background: url(../images/icon_arr.png) center right no-repeat; background-size: contain; height: 50px; background-color: #f2f0f0; padding:10px 15px 10px 50px; border-radius: 4px; appearance:none; -moz-appearance:none;  -webkit-appearance:none;}
 .fillinBox select option.gray{ color: #888; }
 
 .question-box .note{ font-size: 15px; line-height: 24px; color: #555;}
