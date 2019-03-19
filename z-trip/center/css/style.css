@@ -63,6 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff8', end
 .main_center .order_list .searchbox input{ font-size: 16px; width: 218px; border:1px solid #dddddd; padding: 0 38px 0 10px; color: #555555; border-radius: 4px; background-color: #fff; line-height: 40px;}
 .main_center .order_list .searchbox input::placeholder{ font-size: 14px; color: #999999; font-weight: normal; }
 .main_center .order_list .searchbox a.icon{ color: #555; cursor: pointer; position: absolute; top: 0; right: 0; width: 42px; height: 42px; text-align: center; line-height: 42px; cursor: pointer; }
+.main_center .order_list .searchbox a.icon i{line-height: 42px;}
 
 .main_center .order_list .onder_main_info{ padding: 15px;}
 
