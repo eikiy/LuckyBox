@@ -36,8 +36,8 @@ html, body{ height: 100%; }
 .contact-us-box .main-box .info h2::after{ content: ""; position: absolute; left: 50%; margin-left: -46px; bottom: 0; width: 92px; height: 6px; display: block; background-color:#ff9f37;}
 
 .contact-us-box h3{ color: #fff; font-size: 24px; line-height: 36px; text-shadow: 0 0 10px rgba(0,0,0,.3), 0 5px 8px rgba(0,0,0,.3);}
-.contact-us-box h3 span{color: #ffeb3b;}
-.contact-us-box p.sub_title{ color: #fff; padding: 12px 0; font-size: 19px; letter-spacing: 1px; text-shadow: 0 0 10px rgba(0,0,0,.3), 0 5px 8px rgba(0,0,0,.3);}
+.contact-us-box h3 span.yellow{color: #ffeb3b;}
+.contact-us-box p.sub_title{ color: #fff; padding: 12px 0; font-size: 18px; line-height: 28px; letter-spacing: 1px; text-shadow: 0 0 10px rgba(0,0,0,.3), 0 5px 8px rgba(0,0,0,.3);}
 .contact-us-box .main-box h4.title{ font-size: 18px; color: #ff9f37; text-shadow: 0 0 10px rgba(0,0,0,.3), 0 5px 8px rgba(0,0,0,.3); }
 .contact-us-box .main-box h4.title::after{ display: none;}
 
@@ -75,8 +75,8 @@ html, body{ height: 100%; }
 .icon_03::before { content: "\f0ca";}
 .icon_04::before { content: "\f017";}
 .icon_05::before { content: "\f040";}
-.icon_06::before { content: "\f0e0";}
-
+.icon_06::before { content: "\f11c";}
+.icon_07::before { content: "\f0e0";}
 .fillinBox select{ width:100%; border: 0; font-size: 16px; line-height: 30px; height: 50px; background-color: #f2f0f0; padding:10px 15px 10px 50px; border-radius: 4px; appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;}
@@ -114,22 +114,24 @@ html, body{ height: 100%; }
 @media (max-width:600px){
   .contact-us-box .main-box .info h2{font-size: 34px; line-height: 50px;}
   .contact-us-box h3.title{ font-size: 22px; }
-  .contact-us-box h3{font-size: 19px; line-height: 30px;}
   .contact-us-box .main-box h1 a{height: 50px;}
   .contact-us-box .main-box .info h3{font-size: 21px;}
   .contact-us-box .main-box .info h1{ height: 50px; }
-  .contact-us-box p.sub_title, .question-box ul.fillinBox li p{font-size: 15px;}
-
   .question-box input.tbox{ font-size: 15px; }
   .question-box .note{font-size: 13px;}
   .question-box button{ padding: 15px 0px; font-size: 16px;}
   .pos::before{left: 5px;}
 }
 
+@media (max-width:500px){
+  .contact-us-box h3 span, .contact-us-box p.sub_title span{ display: block; }
+  .contact-us-box h3 span.yellow{ display: inline-block;}
+}
 @media (max-device-width:1200px) {
   .contact-us-box{ background-attachment: inherit; }
 }
 
-@media (max-device-width:700px) {
+/*@media (max-device-width:700px) {
   .contact-us-box .main-box .info{padding-top: 25px;}
 }
+*/
