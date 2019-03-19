@@ -26,8 +26,8 @@ html, body{ height: 100%; }
 /*===== start ======*/
 .contents_box{ max-width: 1000px; margin: 0 auto;}
 
-.main_center{width: 100%; min-height: 100%; background-color: #f8f8f8; background-color: #eaeaea;}
-.main_center .top_item{ width: 100%; margin-bottom: 15px; background-color: #fff;  top: 0; z-index: 50; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
+.main_center{width: 100%; min-height: 100%; background-color: #f8f8f8; background-color: #eaeaea; padding-top: 99px;}
+.main_center .top_item{ width: 100%; margin-bottom: 15px; background-color: #fff;  top: 99px; z-index: 50; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
 .main_center .top_item ul{ width: 100%; max-width: 645px;margin: 0 auto;}
 .main_center .top_item ul li{ float: left; width: 50%; margin-bottom: 5px; position: relative;}
 .main_center .top_item ul li::before{ content: ""; position: absolute; width: 100%; display: none; height: 5px; bottom: -5px; left: 0;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eceff8+1,ffffff+100 */
@@ -147,9 +147,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceff8', end
 .main_center .order_list .label_buy .product_info .product_item a{ color: #337ab7; margin-left: 10px;}
 .main_center .order_list .label_buy .product_info .product_item a:hover{ text-decoration: underline; }
 
-.main_center .order_list .product_subtotal{ float: right; width: 220px; border-left: 1px solid #dddddd; min-height: 82px;height: 100%;  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.main_center .order_list .product_subtotal{ float: right; width: 220px; border-left: 1px solid #dddddd; min-height: 82px; min-height: 88px;  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .main_center .order_list .product_subtotal .exbox{ width: 160px;  padding:0 15px;}
-.main_center .order_list .product_subtotal .exbox p.btn{font-size: 14px; padding: 3px 0;}
+.main_center .order_list .product_subtotal .exbox p.btn{font-size: 14px; padding: 3px 0; background-color: inherit;}
 .main_center .order_list .product_subtotal .exbox p.btn a{  border:1px solid #b8b8b8; color: #555; text-align:center; width: 100%; border-radius: 4px; line-height: 34px; max-width: 140px; padding:0px 8px; margin-right: 10px; display: inline-block;  }
 .main_center .order_list .product_subtotal .exbox p.btn a:hover{ color: #333; border-color: #888; }
 .main_center .order_list .product_subtotal .exbox p.btn a.go_pay{ background-color: #ff8a00; border-color: #ff8a00; color: #fff; }
@@ -220,6 +220,11 @@ p a.btn_red{ background-color: #ff3564;  }
 
 
 /*==== RWD ====*/
+
+@media (max-width:1200px){
+	.main_center{ padding-top: 154px; }
+	.main_center .top_item{{ top: 154px; }
+}
 @media (max-width:1020px){
 	.contents_box { width:calc(100% - 30px); margin: 0 auto;}
 	.main_center .order_list .right_amount{font-size: 14px; padding: 20px 0 5px 5px;}
@@ -230,7 +235,10 @@ p a.btn_red{ background-color: #ff3564;  }
 	.main_center .order_list .product_info p.number{font-size: 15px;}
 	.main_center .order_list .product_info p.number span.the_type{ font-size: 13px; min-width: 60px; }
 }
-
+@media (max-width:992px){
+	.main_center{ padding-top: 99px; }
+	.main_center .top_item{ top: 99px; }
+}
 @media (max-width:960px){
 	.main_center .order_list .product_info .order_number{width: 100%;}
 	.main_center .order_list .product_info .order-total{ float: left; padding-top: 6px; width: 100%; text-align: left;}
