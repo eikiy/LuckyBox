@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(animate.css);
+
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img { border:0;}
+ol, ul { list-style:none;}
+abbr, acronym { border:0;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Times New Roman', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
+p{font-size: 18px;}
+a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+a:hover{ text-decoration:none;}
+select, input, textarea, button {  font-family:'Times New Roman', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{ height: 100%; }
+
+/*===== start ======*/
+.for_blur{ -webkit-filter: blur(0.4rem); -moz-filter: blur(0.4rem); -o-filter: blur(0.4rem); -ms-filter: blur(0.4rem); filter: blur(0.4rem);}
+
+.sidenav { height: 100%;  width: 0;  position: fixed;  z-index: 100;  top: 0;  right: 0;   background-color: rgba(40,40,40,.85);  overflow-x: hidden;  transition: 0.5s;}
+.sidenav a { /* padding: 8px 8px 8px 32px;*/  text-decoration: none;  color: #fff;  display: block;  transition: 0.3s;}
+.sidenav a:hover {  color: #f1f1f1;}
+.sidenav .closebtn { text-align: right; padding: 0px 8px 0px; top: 0; width: 300px; font-size: 48px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
+.sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow-y: auto; overflow-x:hidden; }
+
+.sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; }
+.sidenav ul.side_menu li h3{ font-size: 18px; color: #fff; text-align: center; position: relative; cursor: pointer; padding: 15px 0;}
+.sidenav ul.side_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
+.sidenav ul.side_menu li h3 a:hover{ color: #d1ab1b;}
+.sidenav ul.side_menu li p{ font-size: 18px; }
+.sidenav ul.side_menu li p a{ padding: 10px 0; }
+
+.sidenav .social_media { width: 310px; padding-bottom: 30px; }
+.sidenav p.btn{ width: 310px; max-width: 310px; margin: 0 auto; }
+
+.content_box{ width: 100%;	 max-width: 1000px; margin: 0 auto; min-width: 320px;}
+
+/*header*/
+p.btn{ text-align: center; width: 100%; max-width: 185px; font-size: 16px;  font-family: 'Roboto';}
+p.btn a{background-color: #f59d00; line-height: 53px; width: 100%; display: inline-block; color: #fff; box-shadow: 0px -2px 0px rgba(0,0,0,0.2) inset;}
+p.btn a:hover{ background-color: #ffaa15; }
+ul.social_media{ text-align: center; }
+ul.social_media li{display: inline-block; margin: 0 3px; padding-top: 5px;}
+ul.social_media li a{ font-size: 18px; color: #fff; min-width: 30px; line-height: 30px; background-color: transparent; border-radius: 50%; text-align: center; display: inline-block; }
+ul.social_media li a:hover{ background-color: #fff; color: #333; }
+
+.header_box{ width: 100%; position: absolute; top: 0; width: 100%; top: 0;  padding: 30px 0 10px; }
+.header_box .content_box{ max-width:calc(100% - 50px); }
+.header_box h3.logo{ float: left; text-indent: -9999px; }
+.header_box h3.logo a{ width: 208px; height: 36px; display: block; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
+.header_box ul.menu{ text-align: left; float: left; padding-left: 45px; }
+.header_box ul.menu li{ display: inline-block; }
+.header_box ul.menu li p a{  color: #fff; line-height: 38px; padding: 0 15px; display: inline-block; }
+.header_box ul.menu li p a:hover{ text-decoration: underline; }
+.header_box ul.social_media{ float: right; padding-right: 20px; }
+.header_box p.btn{ float: right; max-width: 160px; }
+.header_box p.btn a{ line-height: 38px; }
+
+.header_box .the_mob_btn{ float: right; display: none; padding: 2px 5px; line-height: 24px; cursor:pointer; color: #fff;}
+.header_box .the_mob_btn span.title{ padding-right: 10px; font-family: 'Roboto';}
+.header_box .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
+
+.main_banner{ width: 100%; min-height: 708px; background: url(../images/bg_index_01.jpg) center center no-repeat;background-attachment: fixed; background-size: cover; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.main_banner h1.main_title{ font-size: 53px; line-height: 64px;  text-align: center; color: #fff; padding: 40px 0; text-transform:uppercase;}
+.main_banner h2.sub_title{ font-size: 24px; text-align: center; color: #fff; text-transform:uppercase; }
+.main_banner p.p_info{ font-size: 18px; color: #fff; text-align: center; }
+
+.main_banner .seach_box{ width:100%; padding-top: 100px; }
+.main_banner .seach_box input{ float: left; width: 25%; }
+.main_banner .seach_box ul{ width: 100%; }
+.main_banner .seach_box ul li{ width: 25%; float: left; padding: 0 5px; position: relative; }
+.main_banner .seach_box ul li input{ font-size: 16px; width: 100%; height: 48px; line-height: 48px; padding: 0 12px; }
+.main_banner .seach_box ul li p.btn{ width: 100%; max-width: 100%;}
+.main_banner .seach_box ul li p.btn a{ line-height: 48px; }
+.main_banner .seach_box ul li a.icon_calendar{ width: 48px; height: 48px; color: #595757; font-size: 18px; text-align: center; line-height: 48px; position: absolute; top: 0; right: 5px; display: block; cursor: pointer; background-color: #f2f2f2; }
+.main_banner .seach_box ul li a.icon_calendar:hover{ background-color: #e1dfdf; }
+
+.main_content h3.top_title{ font-size: 35px; color: #fff; text-align: center; text-transform:uppercase;}
+.main_content h4.sub_title_s{ font-size: 22px; color: #c2b595; text-align: center;padding: 20px 0; text-transform: uppercase; }
+.main_content h2.banner_top_title{ text-align: center; color: #fff; font-size: 40px; text-transform:uppercase;}
+
+.news_bar{ background-color: #1f1f1f; padding: 10px 0; }
+.news_bar h4{ float: left; width: 200px; color: #fff; line-height: 30px; font-size: 16px; }
+.news_bar h4 span{ padding: 0 40px;  }
+.news_bar ul.pick_news{ float: left; color: #fff; line-height: 30px; width: calc(100% - 200px);}
+.news_bar ul.pick_news li p a{ display: inline-block; color: #fff; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 25px; height: 25px * 1; overflow:hidden;}
+.news_bar ul.pick_news li p span{ color: #9f9f9f;  font-family: 'Roboto'; padding-left: 20px; }
+.news_bar ul.pick_news li p a:hover{ text-decoration: underline; }
+
+
+/*why rent wifi*/
+.why_rent_wifi_box{ width: 100%;  background: url(../images/bg_index_02.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 70px 0;}
+.why_rent_wifi_box p.p_info{ text-align: center; color: #fff; line-height: 32px; max-width: 570px; margin: 0 auto; font-family: 'Roboto'; padding: 40px 0; }
+.why_rent_wifi_box p.btn{ margin: 0 auto; }
+
+/*why choose wifi*/
+.why_choose_wifi_box{ width: 100%; padding: 70px 0 100px 0;}
+.why_choose_wifi_box .content_box{ max-width: 1100px; }
+.why_choose_wifi_box h3.top_title{  color:#1f1f1f;}
+.why_choose_wifi_box p.p_info{ font-size: 16px; text-align: center; color: #9f9f9f; padding: 20px 0; font-family: 'Roboto';}
+
+.why_choose_wifi_box ul.advantage_list{ width: 100%; padding: 50px 0 20px 0; }
+.why_choose_wifi_box ul.advantage_list li{ width: 25%; float: left; padding-top: 180px; padding-bottom: 20px; text-align: center; position: relative; }
+.why_choose_wifi_box ul.advantage_list li:hover::after{ opacity: .9;}
+.why_choose_wifi_box ul.advantage_list li::after{content: ""; position: absolute; top: 0; left:calc(50% - 70px); width: 140px; height: 140px; border-radius: 50%; background-color: #c2b595; background-size: contain; background-repeat: no-repeat; background-position: center center;}
+.why_choose_wifi_box ul.advantage_list li.icon_01::after{ background-image: url(../images/why_choose_wifi_icon_01.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_02::after{ background-image: url(../images/why_choose_wifi_icon_02.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_03::after{ background-image: url(../images/why_choose_wifi_icon_03.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_04::after{ background-image: url(../images/why_choose_wifi_icon_04.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_05::after{ background-image: url(../images/why_choose_wifi_icon_05.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_06::after{ background-image: url(../images/why_choose_wifi_icon_06.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_07::after{ background-image: url(../images/why_choose_wifi_icon_07.png); }
+.why_choose_wifi_box ul.advantage_list li.icon_08::after{ background-image: url(../images/why_choose_wifi_icon_08.png); }
+
+.why_choose_wifi_box ul.advantage_list li h4{ font-size: 20px; line-height: 28px; padding-bottom: 10px;  text-transform: uppercase;}
+.why_choose_wifi_box ul.advantage_list li p{ color: #9f9f9f; font-size: 14px; line-height: 20px; padding: 0 5px; font-family: 'Roboto'; min-height: 170px; max-width: 240px; margin: 0 auto;}
+
+.why_choose_wifi_box p.highlight{ font-size: 40px; color: #c29963; text-align: center;}
+.why_choose_wifi_box p.highlight a{ color: #c29963;}
+.why_choose_wifi_box p.highlight span{ color: #c29963; border-bottom: 5px solid #c29963; display: inline-block; padding-bottom: 20px; }
+.why_choose_wifi_box p.highlight span.big{font-size: 114px; border-bottom: none; padding-bottom: 0;}
+.why_choose_wifi_box p.highlight:hover span{ border-color: transparent;}
+
+/*how it works*/
+.how_it_works_box{ width: 100%;  background: url(../images/bg_index_02.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 70px 0;}
+.how_it_works_box p.btn{ margin: 0 auto; }
+.how_it_works_box ul.step_box{ width: 100%; padding: 50px 0; }
+.how_it_works_box ul.step_box li{ width: 25%; float: left; padding-top: 180px; padding-bottom: 20px; text-align: center; position: relative; }
+.how_it_works_box ul.step_box li::after{content: ""; position: absolute; top: 0; left:calc(50% - 70px); width: 140px; height: 140px; border-radius: 50%; background-color: #fff; background-size: contain; background-repeat: no-repeat; background-position: center center;}
+.how_it_works_box ul.step_box li::before{ content: ""; position: absolute; top:65px ; left:-5px; width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 14px; border-color: transparent transparent transparent #c2b595; line-height: 0px; _border-color: #000000 #000000 #000000 #c2b595; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+.how_it_works_box ul.step_box li.icon_01::after{ background-image: url(../images/how_it_work_icon_01.png); }
+.how_it_works_box ul.step_box li.icon_02::after{ background-image: url(../images/how_it_work_icon_02.png); }
+.how_it_works_box ul.step_box li.icon_03::after{ background-image: url(../images/how_it_work_icon_03.png); }
+.how_it_works_box ul.step_box li.icon_04::after{ background-image: url(../images/how_it_work_icon_04.png); }
+.how_it_works_box ul.step_box li p{ color: #fff; text-align: center; font-family: 'Roboto'; min-height: 40px; }
+.how_it_works_box ul.step_box li:first-child:before{ display: none; }
+
+/*customer's voice*/
+.customer_voice_box{ width: 100%; padding: 70px 0; }
+.customer_voice_box .content_box{ background-color: #f8f7f4; padding: 30px 20px; }
+.customer_voice_box h3.top_title{  color:#c29963; padding: 100px 0 20px 0; position: relative; margin-bottom: 20px;}
+.customer_voice_box h3.top_title::after{content: ""; position: absolute; border-bottom: 1px;left:calc(50% - 42.5px); bottom: 0; width: 85px; height: 1px; background-color: #1f1f1f; display: block;}
+
+.customer_voice_box ul.customers { width: 100%; padding: 30px 0; }
+.customer_voice_box ul.customers li{ width: 50%; float: left; padding: 20px; margin-bottom: 15px;	}
+.customer_voice_box ul.customers li .the_photo{ float: left; width: 140px; height: 140px; display: block; border-radius: 50%; background-color: #fff; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+.customer_voice_box ul.customers li .customer_01{background-image: url(../images/feelback_user_01.jpg);} 
+.customer_voice_box ul.customers li .customer_02{background-image: url(../images/feelback_user_02.jpg);} 
+.customer_voice_box ul.customers li .customer_03{background-image: url(../images/feelback_user_03.jpg);} 
+.customer_voice_box ul.customers li .customer_04{background-image: url(../images/feelback_user_04.jpg);} 
+.customer_voice_box ul.customers li .feelback { float: left; width: calc(100% - 140px); padding-left: 20px; }
+.customer_voice_box ul.customers li .feelback p{ color: #9f9f9f; font-size: 14px; font-family: 'Roboto'; }
+.customer_voice_box ul.customers li p.star_box{ padding: 20px 0; color: #fff; }
+.customer_voice_box ul.customers li p.star_box span{ color: #ec9100;}
+
+/*another product*/
+.another_product_box{ width: 100%; padding: 70px 0; }
+.another_product_box a.link{ background-color: #f0f1f1;display: block; padding:50px 40px; padding-right: 45%; position: relative;}
+.another_product_box a.link::after{ content: ""; position: absolute; width: 418px; height: 228px; bottom: 0; right: 0; display: block; background: url(../images/product_img.png) center bottom no-repeat; background-size: contain; }
+.another_product_box h4{color: #c29963; font-size: 24px; padding-bottom: 15px; text-transform: uppercase;}
+.another_product_box h3.top_title{color: #1f1f1f; font-size: 28px; text-align: left;}
+.another_product_box a:hover h3{ text-decoration: underline; }
+.another_product_box p{ font-size: 20px; color: #1f1f1f; padding: 15px 0; text-transform: uppercase;}
+
+
+/*news_topics_box*/
+.news_topics_box{ width: 100%; padding: 50px 0; }
+.news_topics_box h3.top_title{  color:#c29963;}
+.news_topics_box ul.news_list{ width: 100%; padding: 40px 0; }
+.news_topics_box ul.news_list li{ width: 100%; border-bottom: 1px solid #e8e8e8;}
+.news_topics_box ul.news_list li a{ display: inline-block; width: 100%; padding: 12px 0;  }
+.news_topics_box ul.news_list li a:hover{ opacity: .7; }
+.news_topics_box ul.news_list li p.day{ width: 135px; float: left; }
+.news_topics_box ul.news_list li p.title{ width: 100%; color: #9f9f9f; max-width: calc(100% - 135px); float: left;  font-family: 'Roboto'; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 25px; height: 25px * 1; overflow:hidden;}
+
+/*footer*/
+.footer_box{ width: 100%; }
+.footer_box .social_media{ background-color: #2e2e2e; padding: 15px 0; }
+.social_media ul{ text-align: center; }
+.social_media ul li{display: inline-block; margin: 0 5px;}
+.social_media ul li a{ font-size: 20px; color: #fff; min-width: 35px; background-color: transparent; border-radius: 50%; line-height: 35px; text-align: center; display: inline-block; }
+.social_media ul li a:hover{ background-color: #fff; color: #333; }
+
+.footer_box .info_box{ background-color: #141414; padding: 40px 0 10px 0; text-align: center; letter-spacing: 1px;}
+.footer_box .info_box p{ font-size: 12px; color: #fff; padding: 5px 0;}
+.footer_box .info_box p a{ color: #fff; }
+.footer_box .info_box p a:hover{ text-decoration: underline; }
+
+.footer_box .info_box p.logo{margin: 50px auto 45px auto; text-align: center;}
+.footer_box .info_box p.logo a{ width: 100%; max-width: 350px; height: 60px;  display: inline-block; background: url(../images/logo.png) center center no-repeat; background-size: contain; }
+
+.footer_box .info_box ul.menu{ text-align: center; }
+.footer_box .info_box ul.menu li{ display: inline-block; margin: 0 10px; }
+.footer_box .info_box ul.menu li p{ font-size: 18px; }
+.footer_box .info_box ul.menu li p a{  color: #fff; }
+
+
+
+/*inside*/
+.inside_banner{ min-height: 400px; padding: 40px 0;  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.bg_default{ background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; }
+.bg_01{ background-image: url(../images/bg_inside_01.jpg); }
+.bg_02{ background-image: url(../images/bg_inside_02.jpg); min-height: 294px;}
+.bg_03{ background-image: url(../images/bg_inside_03.jpg);}
+.bg_04{ background-image: url(../images/bg_inside_04.jpg);}
+.bg_05{ background-image: url(../images/bg_inside_05.jpg);}
+
+.about_info_box{ padding: 60px 0; }
+.about_info_box h3.top_title{ color: #1f1f1f; }
+.about_info_box p.p_info{ font-family: 'Roboto'; color: #9f9f9f; padding: 40px 0 120px 0; position: relative;}
+.about_info_box p.p_info span{ position: absolute; bottom: 0; right: 0; width: 238px; height: 83px; display:block; background: url(../images/about_img_signature.png) center center no-repeat; background-size: contain;}
+
+.team_list_box{ width: 100%; padding: 50px 0; }
+.team_list_box ul.our_list{ width: 50%; padding: 40px 15px; float: left; }
+.team_list_box ul.our_list li{ width: 100%; border-bottom: 1px solid #e8e8e8; padding: 12px 0;}
+.team_list_box ul.our_list li p{ font-family: 'Roboto'; width: 50%; font-size: 16px; padding-right: 10px;}
+.team_list_box ul.our_list li p.title{ float: left; color: #6d6d6d; }
+.team_list_box ul.our_list li p.info{ color: #9f9f9f; float: right; }
+
+.specification_box{  background-color: #f8f7f4; }
+.specification_box h3.top_title{ color: #c29963; }
+.specification_box p.note{ width: 100%; float: left; color: #9f9f9f; font-size: 14px; font-family: 'Roboto';}
+.producr_img_box{ width: 100%; }
+.producr_img_box .img_box{ float: left; width: 50%; }
+.producr_img_box .img_box img{ width: 100%; }
+.producr_img_box .info_box{ float: left; width: 50%; padding-left: 40px; }
+.producr_img_box .info_box p.info{ color: #9f9f9f; font-size: 26px; line-height: 42px; padding-bottom: 30px;  }
+.producr_img_box .info_box p.btn{ margin: 0 auto; }
+.producr_img_box h3.top_title{ color: #6d6d6d; padding-bottom: 30px; }
+
+.faq_box{ width: 100%; padding: 50px 0; }
+.faq_box h3.top_title{color: #1f1f1f;}
+.faq_box p.p_info{ color: #9f9f9f; font-size: 18px; font-family: 'Roboto'; padding: 50px 0;}
+.faq_box ul.faq_list{ width: 100%; }
+.faq_box ul.faq_list li{ width: 100%; padding: 20px 0; margin-bottom: 10px; cursor: pointer; display: inline-block; background-color: #f5f5f5;}
+.faq_box ul.faq_list li::after{ content: "\f067"; position: absolute; top: 0; right: 0; width: 40px; height: 40px;  }
+.faq_box ul.faq_list li p.nb{ float: left; width: 140px; text-align: center; font-size: 18px; color: #c2b595; font-family: 'Roboto'; }
+.faq_box ul.faq_list li .faq_info{ float: left; width: calc(100% - 160px); }
+.faq_box ul.faq_list li .faq_info p{ color: #9f9f9f; font-family: 'Roboto'; }
+.faq_box ul.faq_list li .faq_info p.topic{ position: relative; padding-right: 35px; }
+.faq_box ul.faq_list li .faq_info p.topic::after{ content: "\f067";  color: #c2b595; line-height: 25px; text-align: center; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: calc(50% - 14px); right: 0; width: 40px;  }
+.faq_box ul.faq_list li .faq_info p.answer{ display: none; padding: 20px 0 ; border-top: 1px solid #e3e3e3;  margin-top: 20px; }
+
+.how_it_work_box{width: 100%; padding: 50px 0; }
+.how_it_work_box h3.top_title{ color: #1f1f1f; }
+.how_it_work_box ul.step_box{ width: 100%; padding: 50px 0;}
+.how_it_work_box ul.step_box li{ width: 25%; float: left; padding: 0 5px; }
+.how_it_work_box ul.step_box li p{ color: #fff; font-size: 24px; background-color: #c2b595; padding: 20px; -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%); clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%); }
+.how_it_work_box ul.step_box li:last-child p{ -webkit-clip-path: none; clip-path:none;}
+
+.how_it_work_box ul.step_details_list{ width: 100%;}
+.how_it_work_box ul.step_details_list li{padding-bottom: 60px;}
+.how_it_work_box ul.step_details_list li p.title{ float: left; width: 325px; color: #6d6d6d; font-size: 30px; padding-right: 20px;}
+.how_it_work_box ul.step_details_list li .details_info{ float: left; width: calc(100% - 325px); padding-left: 30px ; border-left: 1px solid #c2b595; }
+.how_it_work_box ul.step_details_list li .details_info .abox{ padding-bottom: 30px; }
+.how_it_work_box ul.step_details_list li .details_info .abox h4{ color: #6d6d6d; padding-bottom: 10px; font-family: 'Roboto'; font-weight: bold; }
+.how_it_work_box ul.step_details_list li .details_info .abox p{ color: #9f9f9f;font-family: 'Roboto'; }
+
+/*==== RWD ====*/
+@media (max-width:1200px){
+	.header_box ul.menu , .header_box ul.social_media, .header_box p.btn{ display: none; }
+	.header_box .the_mob_btn{ display: block; }
+}
+@media (max-width:1140px){
+	.why_choose_wifi_box .content_box{ max-width: calc(100% - 50px); }
+}
+@media (max-width:1040px){
+	.content_box{ max-width: calc(100% - 40px); }
+	.why_choose_wifi_box ul.advantage_list li{ width: 33%; }
+	.how_it_works_box ul.step_box li{ width: 50%; }
+	.how_it_works_box ul.step_box li::before{ display: none; }
+	.main_banner .seach_box{ padding-top: 50px; }
+	.main_banner h1.main_title{ font-size: 44px; line-height: 50px; }
+	.another_product_box a.link{ padding-right: 55%;}
+	.how_it_work_box ul.step_box li p{ font-size: 18px; }
+	.how_it_work_box ul.step_details_list li p.title{ width: 250px; }
+	.how_it_work_box ul.step_details_list li .details_info{ width: calc(100% - 250px); }
+}
+@media (max-width:900px){
+	.why_choose_wifi_box p.highlight{ font-size: 30px; }	
+	.why_choose_wifi_box p.highlight span.big{ font-size: 80px; }
+	.customer_voice_box ul.customers li .feelback { min-height: 210px;}
+	.how_it_work_box ul.step_box li{ width: 50%; padding:5px;}
+}
+@media (max-width:800px){
+	.main_banner .seach_box ul li{ width: 50%; padding-bottom: 10px;}
+	.main_banner .seach_box ul li:first-child, .main_banner .seach_box ul li:last-child{ width: 100%; }
+	.why_choose_wifi_box ul.advantage_list li{ width: 50%; }
+	.customer_voice_box ul.customers li .the_photo{ width: 110px; height: 110px;}
+	.customer_voice_box ul.customers li .feelback{width: calc(100% - 110px); min-height: initial;}
+	.another_product_box a.link{ padding:50px 40px; padding-bottom: 250px; text-align: center;}
+	.another_product_box a.link::after{ width: 100%; }
+	.another_product_box h3.top_title{ text-align: center; }
+	.producr_img_box .img_box, .producr_img_box .info_box{ float: none; width: 100%; max-width: 450px; margin: 0 auto; padding: 0; padding-bottom: 20px; }
+	.producr_img_box .info_box p.info{ font-size: 22px; }
+
+}
+@media (max-width:750px){
+	.customer_voice_box ul.customers li{width: 100%;}
+}
+@media (max-width:700px){
+	.team_list_box ul.our_list{ width: 100%; padding: 0; }
+}
+@media (max-width:650px){
+	.footer_box .info_box p.logo a{ height: 45px; }
+	.footer_box .info_box ul.menu li{padding: 10px ;}
+	.how_it_work_box ul.step_details_list li .details_info .abox p{ font-size: 16px; }
+	.how_it_work_box ul.step_details_list li .details_info{ width: 100%; padding: 10px 0 20px 0; margin-top: 20px; border: none; border-top: 1px solid #c2b595; }
+	.how_it_work_box ul.step_details_list li .details_info .abox{padding-bottom: 10px;}
+}
+@media (max-width:600px){
+	.main_banner h1.main_title{ font-size: 36px; line-height: 40px; padding: 25px 0; }
+	.main_banner h2.sub_title, .main_content h4.sub_title_s{ font-size: 16px; }
+	.main_content h3.top_title, .how_it_work_box ul.step_details_list li p.title{ font-size: 28px; }
+	.main_banner p.p_info{ font-size: 15px; }
+	p, .faq_box p.p_info{ font-size: 16px; }
+	.why_choose_wifi_box ul.advantage_list li p{ min-height: 110px; }
+	.why_rent_wifi_box p.p_info, .news_topics_box ul.news_list li p.title{ font-size: 14px; line-height: 22px; }
+	.how_it_work_box ul.step_details_list li p.title{ width: 100%; }
+}
+@media (max-width:499px){
+	.main_banner h1.main_title, .main_content h2.banner_top_title{ font-size: 28px; }
+	.main_content h3.top_title, .how_it_work_box ul.step_details_list li p.title{ font-size: 24px; }
+	.customer_voice_box h3.top_title{padding-top: 40px;}
+	.customer_voice_box ul.customers li .the_photo{ float: none; margin: 0 auto; margin-bottom: 20px; }
+	.customer_voice_box ul.customers li .feelback{ width: 100%; padding: 0 ; float: none; text-align: center; }
+	.why_choose_wifi_box ul.advantage_list li, .how_it_works_box ul.step_box li{padding-top: 150px;}
+	.why_choose_wifi_box ul.advantage_list li::after, .how_it_works_box ul.step_box li::after{ width: 110px; height: 110px; left: calc(50% - 55px);}
+	.why_choose_wifi_box ul.advantage_list li h4{ font-size: 17px; }
+	.why_choose_wifi_box p.highlight{ font-size: 24px; }
+	.why_choose_wifi_box p.highlight span.big{ font-size: 54px; }
+	.inside_banner{ min-height: 294px; }
+	.bg_02{ min-height: 200px; }
+	.team_list_box ul.our_list li p, .faq_box ul.faq_list li .faq_info p.answer{ font-size: 14px; }
+	.producr_img_box .info_box p.info{ font-size: 18px; }
+	.faq_box p.p_info{padding-top: 0px;}
+	.faq_box ul.faq_list li p.nb{ width: 80px; }
+	.faq_box ul.faq_list li .faq_info{ width: calc(100% - 100px);}
+	.how_it_work_box ul.step_box li{ width: 100%; padding: 10px 0px; position: relative; }
+	.how_it_work_box ul.step_box li::after{ content: ""; position: absolute; bottom: 0; left: 30px; width: 0; height: 0; border-style: solid; border-width: 10px 7.5px 0 7.5px; border-color: #c2b595 transparent transparent transparent; line-height: 0px; _border-color: #c2b595 #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+	.how_it_work_box ul.step_box li:last-child::after{ display: none; }
+	.how_it_work_box ul.step_box li p{ -webkit-clip-path: none; clip-path: none;}
+
+}
+@media (max-width:400px){
+	.header_box h3.logo a{ width: 180px; }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
