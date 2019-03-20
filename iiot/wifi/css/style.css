@@ -71,6 +71,8 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .header_box .the_mob_btn span.title{ padding-right: 10px; font-family: 'Roboto';}
 .header_box .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
 
+.top_header_fixed{ background-color: rgba(0,0,0,.8); position: fixed; top: 0; padding: 15px 0; z-index: 90;}
+
 .main_banner{ width: 100%; min-height: 708px; background: url(../images/bg_index_01.jpg) center center no-repeat;background-attachment: fixed; background-size: cover; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .main_banner h1.main_title{ font-size: 53px; line-height: 64px;  text-align: center; color: #fff; padding: 40px 0; text-transform:uppercase;}
 .main_banner h2.sub_title{ font-size: 24px; text-align: center; color: #fff; text-transform:uppercase; }
