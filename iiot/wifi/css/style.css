@@ -149,7 +149,7 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .how_it_works_box ul.step_box li:first-child:before{ display: none; }
 
 /*customer's voice*/
-.customer_voice_box{ width: 100%; padding: 70px 0; }
+.customer_voice_box{ width: 100%; padding: 70px 0; overflow-x: hidden; }
 .customer_voice_box .content_box{ background-color: #f8f7f4; padding: 30px 20px; }
 .customer_voice_box h3.top_title{  color:#c29963; padding: 100px 0 20px 0; position: relative; margin-bottom: 20px;}
 .customer_voice_box h3.top_title::after{content: ""; position: absolute; border-bottom: 1px;left:calc(50% - 42.5px); bottom: 0; width: 85px; height: 1px; background-color: #1f1f1f; display: block;}
@@ -223,14 +223,14 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .about_info_box p.p_info{ font-family: 'Roboto'; color: #9f9f9f; padding: 40px 0 120px 0; position: relative;}
 .about_info_box p.p_info span{ position: absolute; bottom: 0; right: 0; width: 238px; height: 83px; display:block; background: url(../images/about_img_signature.png) center center no-repeat; background-size: contain;}
 
-.team_list_box{ width: 100%; padding: 50px 0; }
+.team_list_box{ width: 100%; padding: 50px 0; overflow-x: hidden; }
 .team_list_box ul.our_list{ width: 50%; padding: 40px 15px; float: left; }
 .team_list_box ul.our_list li{ width: 100%; border-bottom: 1px solid #e8e8e8; padding: 12px 0;}
 .team_list_box ul.our_list li p{ font-family: 'Roboto'; width: 50%; font-size: 16px; padding-right: 10px;}
 .team_list_box ul.our_list li p.title{ float: left; color: #6d6d6d; }
 .team_list_box ul.our_list li p.info{ color: #9f9f9f; float: right; }
 
-.specification_box{  background-color: #f8f7f4; }
+.specification_box{  background-color: #f8f7f4; overflow-x: hidden;}
 .specification_box h3.top_title{ color: #c29963; }
 .specification_box p.note{ width: 100%; float: left; color: #9f9f9f; font-size: 14px; font-family: 'Roboto';}
 .producr_img_box{ width: 100%; }
@@ -320,6 +320,8 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.how_it_work_box ul.step_details_list li .details_info .abox p{ font-size: 16px; }
 	.how_it_work_box ul.step_details_list li .details_info{ width: 100%; padding: 10px 0 20px 0; margin-top: 20px; border: none; border-top: 1px solid #c2b595; }
 	.how_it_work_box ul.step_details_list li .details_info .abox{padding-bottom: 10px;}
+
+	.main_banner,.inside_banner, .why_rent_wifi_box, .how_it_works_box{ background-attachment: initial; }
 }
 @media (max-width:600px){
 	.main_banner h1.main_title{ font-size: 36px; line-height: 40px; padding: 25px 0; }
