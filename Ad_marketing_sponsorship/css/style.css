@@ -122,8 +122,8 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 .question-box .note a:hover{ text-decoration: underline; }
 .question-box .the_checkbox{ padding-right: 5px;}
 
-.copyrights{ width: 100%; padding:30px 0;}
-.copyrights p{ text-align: center; color: #666;  letter-spacing: 1px; line-height: 35px; font-size: 13px; }
+.copyrights{ width: 100%; padding:30px 0; background-color: #333;}
+.copyrights p{ text-align: center; color: #fff;  letter-spacing: 1px; line-height: 35px; font-size: 13px; }
 
 .from-box{ background-color: #f7f5f0; padding: 40px 0; }
 .contact-us-box .from-box h3 { color: #333; text-shadow: none; }
