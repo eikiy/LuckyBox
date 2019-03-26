@@ -51,6 +51,12 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .HeaderBox .TopBox ul.top_menu li h3 a{ color: #282828; padding: 10px 20px ; cursor: pointer;display: block; position: relative;}
 .HeaderBox .TopBox ul.top_menu li h3 a:hover{ color: #aa251d;}
 
+.HeaderBox .TopBox ul.top_menu li ul.submenu{ display: none; position: absolute; top: 41px; min-width: 120px; left: 5px; background-color: #fff; padding: 0; box-shadow: 0 5px 5px rgba(0,0,0,.2), 3px 3px 7px rgba(0,0,0,.1);}
+.HeaderBox .TopBox ul.top_menu li ul.submenu li{ float: none; border-bottom: 1px solid #edf1f4; }
+.HeaderBox .TopBox ul.top_menu li ul.submenu li p{ font-size: 15px; text-align: center;}
+.HeaderBox .TopBox ul.top_menu li ul.submenu li p a{ color: #666; padding: 15px 20px; display: block; }
+.HeaderBox .TopBox ul.top_menu li ul.submenu li p a:hover{ background-color: #fbfbfb; color: #333; }
+
 /*main_contents*/
 .main_contents{ width: 100%; padding-top: 90px;}
 .main_contents .bannerBox{ position: relative; }

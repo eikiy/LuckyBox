@@ -17,7 +17,12 @@ $(function(){
 	});
 	return false;
 });
-
+$(function(){
+	$(".HeaderBox .TopBox ul.top_menu li").hover(function(){
+	  $(this).find('ul.submenu').fadeToggle();
+	});
+	return false;
+});
 
 // 商品上面的說明預設打開，點了變換箭頭
 // $(function(){
