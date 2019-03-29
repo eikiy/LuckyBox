@@ -17,7 +17,7 @@ abbr, acronym { border:0;}
 * html .clearfix {height: 1%;}
 *:first-child + html .clearfix { min-height: 1%;}
 
-body, h1, h2, h3, h4, h5, h6, p {font-family:'Times New Roman', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Times New Roman', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #000;}
 p{font-size: 18px;}
 a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 a:hover{ text-decoration:none;}
@@ -55,7 +55,7 @@ ul.social_media li{display: inline-block; margin: 0 3px; padding-top: 5px;}
 ul.social_media li a{ font-size: 18px; color: #fff; min-width: 30px; line-height: 30px; background-color: transparent; border-radius: 50%; text-align: center; display: inline-block; }
 ul.social_media li a:hover{ background-color: #fff; color: #333; }
 
-.header_box{ width: 100%; position: absolute; top: 0; width: 100%; top: 0;  padding: 30px 0 10px; }
+.header_box{ width: 100%; position: absolute; top: 0; width: 100%; top: 0;  padding: 30px 0 10px; z-index: 1;}
 .header_box .content_box{ max-width:calc(100% - 50px); }
 .header_box h3.logo{ float: left; text-indent: -9999px; }
 .header_box h3.logo a{ width: 208px; height: 36px; display: block; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
@@ -88,6 +88,13 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .main_banner .seach_box ul li a.icon_calendar{ width: 48px; height: 48px; color: #595757; font-size: 18px; text-align: center; line-height: 48px; position: absolute; top: 0; right: 5px; display: block; cursor: pointer; background-color: #f2f2f2; }
 .main_banner .seach_box ul li a.icon_calendar:hover{ background-color: #e1dfdf; }
 
+
+.banner_flexslider{ background: none; min-height: initial; position: relative; min-height: 708px;}
+.banner_flexslider .flexslider{ width: 100%;  }
+.banner_flexslider .slides li{ width: 100%; height: 100%; height: 708px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat;}
+.banner_flexslider .slides li .info_box{ display: -webkit-flex; height: 100%; padding: 0 15px; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.banner_flexslider .content_box{ position: absolute; bottom: 120px; z-index: 1; }
+
 .main_content h3.top_title{ font-size: 35px; color: #fff; text-align: center; text-transform:uppercase;}
 .main_content h4.sub_title_s{ font-size: 22px; color: #c2b595; text-align: center;padding: 20px 0; text-transform: uppercase; }
 .main_content h2.banner_top_title{ text-align: center; color: #fff; font-size: 40px; text-transform:uppercase;}
@@ -105,6 +112,14 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .why_rent_wifi_box{ width: 100%;  background: url(../images/bg_index_02.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 70px 0;}
 .why_rent_wifi_box p.p_info{ text-align: center; color: #fff; line-height: 32px; max-width: 570px; margin: 0 auto; font-family: 'Roboto'; padding: 40px 0; }
 .why_rent_wifi_box p.btn{ margin: 0 auto; }
+.why_rent_wifi_box ul.list{ width: 100%; max-width: 1000px; padding: 30px 0;}
+.why_rent_wifi_box ul.list li{ width: 50%; float: left; text-align: center; padding: 20px; }
+.why_rent_wifi_box ul.list li .info_box{ width: 100%; background-color: rgba(256,256,256,.8); min-height: 225px; padding:60px 15px 30px 15px; margin-top: 70px }
+.why_rent_wifi_box ul.list li h4{ font-size: 26px; padding: 10px 0; position: relative;}
+.why_rent_wifi_box ul.list li h4::after{content: ""; width: 100%; height: 140px; position: absolute; top:-125px; left: 0; background-size: contain; background-repeat: no-repeat; background-position: center center;}
+.why_rent_wifi_box ul.list li h4.icon_01::after{ background-image: url(../images/why_rent_wifi_icon_01.png); }
+.why_rent_wifi_box ul.list li h4.icon_02::after{ background-image: url(../images/why_rent_wifi_icon_02.png); }
+.why_rent_wifi_box ul.list li p{ font-size: 20px; line-height: 28px;}
 
 /*why choose wifi*/
 .why_choose_wifi_box{ width: 100%; padding: 70px 0 100px 0;}
@@ -134,8 +149,11 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .why_choose_wifi_box p.highlight span.big{font-size: 114px; border-bottom: none; padding-bottom: 0;}
 .why_choose_wifi_box p.highlight:hover span{ border-color: transparent;}
 
+.why_choose_wifi_box .now_box{ width: 100%; border:6px solid #ff4a34; padding: 20px; min-height: 132px; margin-top: 10vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.why_choose_wifi_box .now_box p.info{ color: #ff4a34; font-size: 49px; padding-right: 30px;}
+
 /*how it works*/
-.how_it_works_box{ width: 100%;  background: url(../images/bg_index_02.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 70px 0;}
+.how_it_works_box{ width: 100%;  background: url(../images/bg_index_03.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 70px 0;}
 .how_it_works_box p.btn{ margin: 0 auto; }
 .how_it_works_box ul.step_box{ width: 100%; padding: 50px 0; }
 .how_it_works_box ul.step_box li{ width: 25%; float: left; padding-top: 180px; padding-bottom: 20px; text-align: center; position: relative; }
@@ -288,12 +306,17 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.how_it_work_box ul.step_box li p{ font-size: 18px; }
 	.how_it_work_box ul.step_details_list li p.title{ width: 250px; }
 	.how_it_work_box ul.step_details_list li .details_info{ width: calc(100% - 250px); }
+
+	.banner_flexslider .content_box{ bottom: 20px; }
+	.banner_flexslider .seach_box ul{ padding: 0 10px; }
 }
 @media (max-width:900px){
 	.why_choose_wifi_box p.highlight{ font-size: 30px; }	
 	.why_choose_wifi_box p.highlight span.big{ font-size: 80px; }
+	.why_choose_wifi_box .now_box p.info{ font-size: 36px; }
 	.customer_voice_box ul.customers li .feelback { min-height: 210px;}
 	.how_it_work_box ul.step_box li{ width: 50%; padding:5px;}
+
 }
 @media (max-width:800px){
 	.main_banner .seach_box ul li{ width: 50%; padding-bottom: 10px;}
@@ -309,7 +332,10 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 
 }
 @media (max-width:750px){
-	.customer_voice_box ul.customers li{width: 100%;}
+	.customer_voice_box ul.customers li, .why_rent_wifi_box ul.list li{width: 100%;}
+	.why_choose_wifi_box .now_box{ display: block; text-align: center; }
+	.why_choose_wifi_box .now_box p.info{ padding: 15px 0 25px 0; }
+	.why_choose_wifi_box .now_box p.btn{ display: inline-block; }
 }
 @media (max-width:700px){
 	.team_list_box ul.our_list{ width: 100%; padding: 0; }
@@ -335,13 +361,17 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 }
 @media (max-width:499px){
 	.main_banner h1.main_title, .main_content h2.banner_top_title{ font-size: 28px; }
-	.main_content h3.top_title, .how_it_work_box ul.step_details_list li p.title{ font-size: 24px; }
+	.main_content h3.top_title, .how_it_work_box ul.step_details_list li p.title, .why_rent_wifi_box ul.list li h4{ font-size: 24px; }
 	.customer_voice_box h3.top_title{padding-top: 40px;}
+	.customer_voice_box ul.customers{padding: 0;}
+	.customer_voice_box ul.customers li{ padding-bottom: 0; }
 	.customer_voice_box ul.customers li .the_photo{ float: none; margin: 0 auto; margin-bottom: 20px; }
 	.customer_voice_box ul.customers li .feelback{ width: 100%; padding: 0 ; float: none; text-align: center; }
 	.why_choose_wifi_box ul.advantage_list li, .how_it_works_box ul.step_box li{padding-top: 150px;}
 	.why_choose_wifi_box ul.advantage_list li::after, .how_it_works_box ul.step_box li::after{ width: 110px; height: 110px; left: calc(50% - 55px);}
-	.why_choose_wifi_box ul.advantage_list li h4{ font-size: 17px; }
+	.why_rent_wifi_box ul.list li p{ font-size: 17px; }
+	.why_choose_wifi_box ul.advantage_list{padding: 30px 0 15px 0;}
+	.why_choose_wifi_box ul.advantage_list li h4{ font-size: 15px; min-height: 100px; line-height: 24px; }
 	.why_choose_wifi_box p.highlight{ font-size: 24px; }
 	.why_choose_wifi_box p.highlight span.big{ font-size: 54px; }
 	.inside_banner{ min-height: 294px; }
@@ -355,6 +385,11 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.how_it_work_box ul.step_box li::after{ content: ""; position: absolute; bottom: 0; left: 30px; width: 0; height: 0; border-style: solid; border-width: 10px 7.5px 0 7.5px; border-color: #c2b595 transparent transparent transparent; line-height: 0px; _border-color: #c2b595 #000000 #000000 #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
 	.how_it_work_box ul.step_box li:last-child::after{ display: none; }
 	.how_it_work_box ul.step_box li p{ -webkit-clip-path: none; clip-path: none;}
+
+	.banner_flexslider{ min-height: 100vh; }
+	.banner_flexslider .slides li .info_box .p_b{ padding-bottom: 15vh;}
+	.banner_flexslider .slides li{height: 100vh;}
+	.banner_flexslider p.p_info{ padding: 0 20px; }
 
 }
 @media (max-width:400px){

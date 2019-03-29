@@ -16,6 +16,29 @@
 	<script type="text/javascript" src="js/goto.js"></script>
 	<script type="text/javascript" src="js/wow.js"></script>
 
+  	<!-- Demo CSS -->
+    <!-- <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+  	<!-- jQuery -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  	<!-- FlexSlider -->
+  	<script defer src="js/jquery.flexslider.js"></script>
+  	<script type="text/javascript">
+    	$(function(){
+      	//SyntaxHighlighter.all();
+    	});
+    	$(window).load(function(){
+      	$('.flexslider').flexslider({
+        	animation: "slide",
+        	start: function(slider){
+          	$('body').removeClass('loading');
+        	}
+      	});
+    	});
+  	</script>
 </head>
 <body>
 
@@ -68,11 +91,8 @@
 		</section>
 	</header>
 	<main class="main_content" id="Main_Contents">
-		<section class="main_banner">
+		<section class="main_banner banner_flexslider">
 			<div class="content_box">
-				<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
-				<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">THE REAL UNLIMITED <br>EASY-TO-USE POCKET Wi-Fi</h1>
-				<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
 				<form class="seach_box">
 					<ul class="clearfix">
 						<li>
@@ -91,6 +111,64 @@
 						</li>
 					</ul>
 				</form>
+			</div>
+			<div class="flexslider">
+				<ul class="slides">
+					<li style="background-image: url(images/main_benner_01.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">4G UNLIMITED<br>POCKET WI-FI</h1>
+								<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/main_benner_05.jpg);">
+						<div class="info_box">
+							<div class="p_b"> 
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">LIMITED-TIME<br>SALE 00% OFF</h1>
+								<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/bg_index_01.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">REAL-TIME<br>TRANSLATOR</h1>
+								<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/main_benner_03.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">MOST RECOMMENDED<br>BY TRAVELER</h1>
+								<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/main_benner_02.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">MOST RECOMMENDED<br>BY TRAVELER</h1>
+								<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/main_benner_04.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">REAL-TIME<br>TRANSLATOR</h1>
+								<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 		<section class="news_bar">
