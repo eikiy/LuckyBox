@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Baskerville:700');
-@import url(//fonts.googleapis.com/earlyaccess/notoserifgeorgian.css);*/
+@import url(//fonts.googleapis.com/earlyaccess/notoserifgeorgian.css);
 
 html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
@@ -50,6 +50,12 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .HeaderBox .TopBox ul.top_menu li h3{ font-size: 19px; line-height: 22px; font-weight: bold; }
 .HeaderBox .TopBox ul.top_menu li h3 a{ color: #282828; padding: 10px 20px ; cursor: pointer;display: block; position: relative;}
 .HeaderBox .TopBox ul.top_menu li h3 a:hover{ color: #aa251d;}
+
+.HeaderBox .TopBox ul.top_menu li ul.submenu{ display: none; position: absolute; top: 41px; min-width: 120px; left: 5px; background-color: #fff; padding: 0; box-shadow: 0 5px 5px rgba(0,0,0,.2), 3px 3px 7px rgba(0,0,0,.1);}
+.HeaderBox .TopBox ul.top_menu li ul.submenu li{ float: none; border-bottom: 1px solid #edf1f4; }
+.HeaderBox .TopBox ul.top_menu li ul.submenu li p{ font-size: 15px; text-align: center;}
+.HeaderBox .TopBox ul.top_menu li ul.submenu li p a{ color: #666; padding: 15px 20px; display: block; }
+.HeaderBox .TopBox ul.top_menu li ul.submenu li p a:hover{ background-color: #fbfbfb; color: #333; }
 
 /*main_contents*/
 .main_contents{ width: 100%; padding-top: 90px;}

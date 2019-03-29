@@ -5,7 +5,7 @@ html,body{width:100%;margin:0;padding:0}
 .mobile-nav ul li{list-style:none}
 ul.submenu{ padding-top:10px;}
 
-.hamburger{ position: fixed; display: none; top:20px; right: 15px !important;  padding:10px 10px 9px; cursor:pointer; z-index:200; background-color: #272e58; border-radius: 50%;}
+.hamburger{ position: fixed; display: none; top:20px; right: 15px !important;  padding:10px 9px 9px; cursor:pointer; z-index:200; background-color: #272e58; border-radius: 50%;}
 .hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
 .hamburger .bar{width:20px;height:2px;background:#fff;position:absolute;top:0; left: 2px;}
 .hamburger .bar.bar2,.hamburger .bar.bar3{top:8px; }
