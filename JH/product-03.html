@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<title>雋永經典風∣JH正豪手工房間門/推拉門</title>
-<meta name='description' content="經典美式風格的實木房間門，簡單大方的造型，讓木門永保雋永經典風範。歡迎立即參觀選購!"/>
-<meta name='keywords' content=""/>
-<meta name="MobileOptimized" content="width">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/goto.js"></script>
-
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-<!-- Magnific Popup core JS file -->
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.popup-link').magnificPopup({
-      removalDelay: 300,
-      mainClass: 'mfp-fade'
-    });
-});
-</script>
+    <meta charset="UTF-8">
+    <title>雋永經典風∣JH正豪手工房間門/推拉門</title>
+    <meta name='description' content="經典美式風格的實木房間門，簡單大方的造型，讓木門永保雋永經典風範。歡迎立即參觀選購!"/>
+    <meta name='keywords' content=""/>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <style type="text/css">
+        .blocker{ z-index: 201; background-color: rgba(256,256,256,.6); }
+        .modal{ width: 100%; max-width:800px; padding: 25px; -webkit-box-shadow:none; -moz-box-shadow:none; -o-box-shadow:none; -ms-box-shadow:none; box-shadow: none; border-radius: 0;}
+        .modal a.close-modal{ top: 10px; right: 10px; border: 1px solid #333; color: #333; width: 40px; height: 40px; background: url(images/icon_close.png) center center no-repeat; background-size: contain; }
+    </style>
+    <script type="text/javascript" src="js/goto.js"></script>
 </head>
 
 
@@ -38,8 +33,8 @@ $(document).ready(function() {
         </ul>
         <ul class="Oneself">
             <li><h3><a href="about.html">關於我們  ｜  ABOUT US</a></h3>
-                <div class="submenu">
-                <!--     <p><a href="about.html#go01">公司簡介</a></p>
+                <!-- <div class="submenu">
+                    <p><a href="about.html#go01">公司簡介</a></p>
                     <p><a href="about.html#go02">核心能力</a></p>
                     <p><a href="about.html#go03">選材來源</a></p>
                     <p><a href="about.html#go04">原料把關</a></p>
@@ -100,6 +95,10 @@ $(document).ready(function() {
                 <input type="" name="" placeholder="關鍵字">
             </div>
         </div>
+        <a class="icon_magnifier"></a>
+        <div class="mob_searchBox">
+            <input type="" name="" placeholder="請輸入關鍵字">
+        </div>
     </nav>
 </header>
 
@@ -136,50 +135,50 @@ $(document).ready(function() {
         </div>
         <ul class="produc_right_deta">
             <li>
-                <a class="popup-link" href="#popup-product-1">
+                <a class="popup-link" href="#popup-product-1" rel="modal:open">
                     <img src="images/product/p03/1-R13-01.jpg" alt="R13-01-深柚色">
                     <p class="info">R13-01-深柚色</p>
                 </a>
             </li>
             <li>
-                <a class="popup-link" href="#popup-product-2">
+                <a class="popup-link" href="#popup-product-2" rel="modal:open">
                     <img src="images/product/p03/2-R23-03.jpg" alt="R23-03-原木色">
                     <p class="info">R23-03-原木色</p>
                 </a>
             </li>
             <li>
-                <a class="popup-link" href="#popup-product-3">
+                <a class="popup-link" href="#popup-product-3" rel="modal:open">
                     <img src="images/product/p03/3-R07-01.jpg" alt="R07-01-深柚色">
                     <p class="info">R07-01-深柚色</p>
                 </a>
             </li>
             <li>
-                <a class="popup-link" href="#popup-product-4">
+                <a class="popup-link" href="#popup-product-4" rel="modal:open">
                     <img src="images/product/p03/4-R07-01.jpg" alt="R07-01-櫻桃本色">
                     <p class="info">R07-01-櫻桃本色</p>
                 </a>
             </li>
 
             <li>
-                <a class="popup-link" href="#popup-product-5">
+                <a class="popup-link" href="#popup-product-5" rel="modal:open">
                     <img src="images/product/p03/5-R03-01.jpg" alt="R03-01-柚木本色">
                     <p class="info">R03-01-柚木本色</p>
                 </a>
             </li>
             <li>
-                <a class="popup-link" href="#popup-product-6">
+                <a class="popup-link" href="#popup-product-6" rel="modal:open">
                     <img src="images/product/p03/6-R11-06.jpg" alt="R11-06-胡桃本色">
                     <p class="info">R11-06-胡桃本色</p>
                 </a>
             </li>
             <li>
-                <a class="popup-link" href="#popup-product-7">
+                <a class="popup-link" href="#popup-product-7" rel="modal:open">
                     <img src="images/product/p03/7-R14-02.jpg" alt="R14-02-胡桃本色">
                     <p class="info">R14-02-胡桃本色</p>
                 </a>
             </li>
             <li>
-                <a class="popup-link" href="#popup-product-8">
+                <a class="popup-link" href="#popup-product-8" rel="modal:open">
                     <img src="images/product/p03/8-R15-02.jpg" alt="R15-02-棕紅色">
                     <p class="info">R15-02-棕紅色</p>
                 </a>
@@ -222,7 +221,7 @@ $(document).ready(function() {
     <section class="ContentsBox">
         <ul class="info clearfix">
             <li class="icon_01">
-                <p>_連絡電話_<br><span>(03)9906828</span></p>
+                <a href="tel:+886-3-9906828"><p>_連絡電話_<br><span>(03)9906828</span></p></a>
             </li>
             <li class="icon_02">
                 <a href="https://www.facebook.com/pages/category/Community/%E6%AD%A3%E8%B1%AA%E6%9C%A8%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-209694019094602/" target="_blank"><p>_臉書專頁_<br><span>JENG HAUR</span>正豪木業</p></a>
@@ -240,7 +239,7 @@ $(document).ready(function() {
 <p class="go-top" id="TOP" title="回到上面"><a>TOP</a></p>
 
     <!-- popup product-info - 1 -->
-    <div id="popup-product-1" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-1" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/1-R13-01.jpg" alt="R13-01-深柚色">
@@ -278,7 +277,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 2 -->
-    <div id="popup-product-2" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-2" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/2-R23-03.jpg" alt="R23-03-原木色">
@@ -316,7 +315,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 3 -->
-    <div id="popup-product-3" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-3" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/3-R07-01.jpg" alt="R07-01-深柚色">
@@ -354,7 +353,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 4 -->
-    <div id="popup-product-4" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-4" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/4-R07-01.jpg" alt="R07-01-櫻桃本色">
@@ -392,7 +391,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 5 -->
-    <div id="popup-product-5" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-5" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/5-R03-01.jpg" alt="R03-01-柚木本色">
@@ -430,7 +429,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 6 -->
-    <div id="popup-product-6" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-6" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/6-R11-06.jpg" alt="R11-06-胡桃本色">
@@ -468,7 +467,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 7 -->
-    <div id="popup-product-7" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-7" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/7-R14-02.jpg" alt="R14-02-胡桃本色">
@@ -506,7 +505,7 @@ $(document).ready(function() {
     </div>
 
     <!-- popup product-info - 8 -->
-    <div id="popup-product-8" class="white-popup popup-L mfp-hide">
+    <div id="popup-product-8" class="popup-L modal fade">
         <div class="product-infoBox clearfix">
             <div class="left_photo">
                 <img src="images/product/p03/8-R15-02.jpg" alt="R15-02-棕紅色">

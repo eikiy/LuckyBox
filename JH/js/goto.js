@@ -17,9 +17,17 @@ $(function(){
 	});
 	return false;
 });
+
 $(function(){
 	$(".HeaderBox .TopBox ul.top_menu li").hover(function(){
 	  $(this).find('ul.submenu').fadeToggle();
+	});
+	return false;
+});
+
+$(function(){
+	$("a.icon_magnifier").click(function(){
+	  $(this).next('.mob_searchBox').toggle();
 	});
 	return false;
 });
@@ -40,14 +48,26 @@ function condition(search_more){
 
 
 // 點 lightbox 商品圖 上面介紹和選項隱藏
-$(function(){
-	$(".produc_right_deta").click(function(){
-		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').hide();
-		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').hide();
-	});
-	return false;
-});
+// $(function(){
+// 	$(".produc_right_deta").click(function(){
+// 		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').hide();
+// 		$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').hide();
+// 	});
+// 	return false;
+// });
 
+$(function(){
+	var winW = $(window).width();
+    $('.produc_right_deta').click(function () {
+        if( winW < 1000 ){
+            $(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').hide();
+			$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').hide();
+        } else {
+        	$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').show();
+			$(this).parent().find('.produc_left_menu').find('.for_mob_box').find('.box-none').find('.menu_type').find('.type_title').find('.the_sub_menu').show();
+        }
+    });
+});
 
 // $(function(){
 // 	     // var _width = $(window).width();
@@ -74,7 +94,7 @@ $(function(){
 $(function(){
 // $(window).on('resize', function(){
       var win = $(this);
-      if (win.width() < 750) { 
+      if (win.width() < 750) {
       $('ul.golink_list').addClass('mob-hide-menu');
   	}
     else{
@@ -84,21 +104,54 @@ $(function(){
 });
 
 //點右邊top
+// $(function(){
+// 	$(window).scroll(function(){
+// 		var HEIGHT = $(window).scrollTop() + $(window).innerHeight()-110;
+// 		if( $(window).scrollTop() > 400 ){
+// 			$("#TOP").stop(true,false).animate({top:HEIGHT},500);
+// 		}else{
+// 			$("#TOP").stop(true,false).animate({bottom:-60},900);
+// 		}
+// 	});
+// 	$("#TOP").click(function goTop(){
+// 		$("html,body").stop(true,false).animate({scrollTop:0},900);
+// 	});
+// 	return false;
+// });
+
 $(function(){
+	$("#TOP").click(function(){
+		$("html,body").animate({scrollTop:0},200);
+		return false;
+	});
+
 	$(window).scroll(function(){
-		var HEIGHT = $(window).scrollTop() + $(window).innerHeight()-110;
-		if( $(window).scrollTop() > 400 ){
-			$("#TOP").stop(true,false).animate({top:HEIGHT},500);
-		}else{
-			$("#TOP").stop(true,false).animate({bottom:-60},900);
-		}
+			var winH = $(window).height();
+			var scrollTop = $(window).scrollTop();
+
+			if( scrollTop > 400 ){
+				$("p.go-top").addClass('go-top-show');
+
+			}else{
+				$("p.go-top").removeClass('go-top-show');
+			}
 	});
-	$("#TOP").click(function goTop(){
-		$("html,body").stop(true,false).animate({scrollTop:0},900);
-	});
-	return false;
 });
 
+// $(function(){
+// 	$(window).scroll(function(){
+// 		var HEIGHT = $(window).scrollTop() + $(window).innerHeight()-110;
+// 		if( $(window).scrollTop() > 400 ){
+// 			$("#TOP").stop(true,false).show();.animate({bottom:-60},900);
+// 		}else{
+// 			$("#TOP").stop(true,false).hide();
+// 		}
+// 	});
+// 	$("#TOP").click(function goTop(){
+// 		$("html,body").stop(true,false).animate({scrollTop:0},900);
+// 	});
+// 	return false;
+// });
 
 // $(function(){
 // 	$(window).scroll(function(){
@@ -151,21 +204,4 @@ $(function(){
 //         }
 //     });
 //     return false;
-// });
-
-
-
-
-
-// 左邊選單
-// $(function(){
-//     $('ul.menu_type li h5').click(function () {
-//         if (!$('.dLeft').hasClass('menu-left')) {
-//             $('.dLeft').addClass('menu-left');
-//             $('#rightEditBox').removeClass('rightEditBox_w100');
-//         } else {
-//             $('.dLeft').removeClass('menu-left');
-//             $('#rightEditBox').addClass('rightEditBox_w100');
-//         }
-//     });
 // });

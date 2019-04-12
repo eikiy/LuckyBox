@@ -32,7 +32,6 @@ html, body{ height: 100%; }
 a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; background: url(../images/more.png) center center no-repeat; background-size: cover; -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));}
 .world_map{ background: url(../images/img_worldmap.png) center center no-repeat ; background-size: cover; }
 
-
 /*header*/
 .HeaderBox{ width: 100%; padding: 12.5px 0 7.5px 0; min-height: 78px; background-color: #fff; position: fixed; top: 0; z-index: 20; box-shadow: 0 0.1px 0 0.5px #d0d0d0;}
 .HeaderBox .ContentsBox{ position: relative; max-width: calc(100% - 40px);}
@@ -44,6 +43,10 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .HeaderBox .TopBox .searchBox input{ padding: 10px; font-size: 19px; color: #111; border-radius: 50px; width: 100%; max-width: 150px; background: url(../images/icon_search.png) 10px center no-repeat; background-size: contain; padding-left: 55px;}
 .HeaderBox .TopBox .searchBox input:focus { background-color: #f7f7f7; }
 .HeaderBox .TopBox .searchBox input::placeholder{ color: #333; }
+
+.HeaderBox a.icon_magnifier{ position: absolute; top:7.5px; left: -5px; display: none;  cursor: pointer; width: 42px; height: 40px; cursor:pointer; border-radius: 4px; background: url(../images/icon_search_nob.png) center center no-repeat ; background-size: contain; z-index:200; box-shadow: 0 0px 5px rgba(0,0,0,.2), 0 2px 3px rgba(0,0,0,.2);}
+.HeaderBox .mob_searchBox{ display: none; left: -20px; width:calc(100% + 40px); background-color: #fff; border-top:1px solid #d4d4d4; position: absolute; top: 68px; padding:15px 20px; box-shadow: 0 3px 3px rgba(0,0,0,.2); z-index: 21; }
+.HeaderBox .mob_searchBox input{ width: 100%; border-bottom: .5px solid #555; padding: 7px 10px 7px 10px; font-size: 15px; text-align: center; height: 30px; line-height: 16px; background: url(../images/icon_search_nob.png) center left no-repeat ; background-size: contain;}
 
 .HeaderBox .TopBox ul.top_menu{ display: inline-block; padding-top: 10px; }
 .HeaderBox .TopBox ul.top_menu li{ float: left; position: relative;}
@@ -76,7 +79,9 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .main_contents p.more { text-align: center; padding-bottom: 50px; }
 .main_contents p.more a{color: #000; position: relative; display: inline-block; line-height: 76px; padding: 0 95px 0 0; }
 .main_contents p.more a::after{ content: ""; position: absolute; top: 0; right: 0; width: 76px; height: 76px; display: inline-block; background: url(../images/more-right.png) center center no-repeat; background-size: cover; -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));}
-.main_contents p.more a:hover{ color: #aa251d; }
+.main_contents p.more a.btn_font{color: #000; position: relative; display: inline-block; line-height: 40px; padding:5px; min-width: 180px; border-radius: 15px; box-shadow: 0 1px 6px rgba(0,0,0,.3),0 5px 6px rgba(0,0,0,.1);}
+.main_contents p.more a.btn_font::after{ display: none;}
+.main_contents p.more a:hover, .main_contents p.more a.btn_font:hover{ color: #aa251d; }
 
 .serviceBox{ width: 100%; padding-top: 40px; }
 .serviceBox h4{ text-align: center; color: #333; font-size: 30px; margin: 0 auto;font-family: 'Noto Serif Georgian', serif; font-weight:300;}
@@ -141,9 +146,11 @@ a.more{ width: 76px; height: 76px; cursor: pointer; display: inline-block; backg
 .FooterBox ul.info li.icon_03 p::before{ background-image: url(../images/icon_add.png); }
 .FooterBox ul.info li.icon_04 p::before{ background-image: url(../images/icon_mail.png); }
 
-p.go-top{ position:absolute; right:3%; bottom:-60px; cursor:pointer; z-index:5; text-align: center; font-size:0.750rem; text-indent: -9999px;}
-p.go-top a{ width:55px; height:55px; color: #fff; border-radius: 50px; cursor: pointer; display:block; background: url(../images/icon_TOP.png) center center no-repeat; background-size: contain; }
+p.go-top{ position:fixed; right:3%; opacity: 0; bottom:20px; cursor:pointer; z-index:10; text-align: center; font-size:0.750rem; text-indent: -9999px;transition:all 1s ease; }
+p.go-top a{ width:55px; height:55px; color: #fff; border-radius: 50px; cursor: pointer; display:block; background: url(../images/icon_TOP.png) center center no-repeat; background-size: contain; transition: all 0.4s ease; }
 p.go-top a:hover{ opacity:0.9;}
+p.go-top-show{ bottom:60px; opacity:1;}
+
 
 /*inside contents*/
 .s_sideMenu{ width: 158px; position: fixed; left: 12%; bottom: 150px; z-index: 100; }
@@ -382,10 +389,10 @@ p.go-top a:hover{ opacity:0.9;}
 /*popup*/
 .popup-L {max-width:800px; margin: 0 auto; padding: 25px; position: relative; background-color: #fff; }
 .popup-L .mfp-close{ right: 15px !important; top: 15px; }
-.product-infoBox .left_photo{ float: left; width: 34%; padding:0 5%; display: flex; display: flex;  align-items: center;  justify-content: center; text-align: center;}
+.product-infoBox .left_photo{ float: left; width: 36%; padding:0 4%; display: flex; display: flex;  align-items: center;  justify-content: center; text-align: center;}
 .product-infoBox .left_photo img{display: block; max-width: 100%; max-height: 100%; vertical-align: middle; height: auto; width: auto;  display: inline-block;}
 .product-infoBox .the_deta{ float: left; width: 62%; padding: 20px; max-width: 400px; }
-.product-infoBox .the_deta h3.top_title{ font-size: 20px; font-weight: bold; padding: 15px 0; }
+.product-infoBox .the_deta h3.top_title{ font-size: 20px; font-weight: bold; padding-bottom: 15px; }
 .product-infoBox .the_deta p{ font-size: 15px; line-height: 27px; padding-bottom: 10px; text-align: justify; }
 .product-infoBox .the_deta .note{ padding: 20px 0;}
 .product-infoBox .the_deta .note p{ text-align: center; }
@@ -435,10 +442,13 @@ p.go-top a:hover{ opacity:0.9;}
 }
 @media (max-width:1000px){
 	.HeaderBox{padding: 10px 0;}
-	.HeaderBox h1.logo{padding: 0;}
+	.HeaderBox .Menu{ text-align: center; }
+	.HeaderBox h1.logo{padding: 0;display: inline-block; float: none; }
 	.HeaderBox h1.logo a{height: 54px;}
 	.HeaderBox .TopBox{ width: initial; display: none; }
 	.HeaderBox .TopBox .searchBox{ margin-top: 10px; padding-right: 25px; }
+	.HeaderBox a.icon_magnifier{ display: block; }
+
 	.main_contents{ padding-top: 78px; }
 	.main_contents .bannerBox .flexslider .titleBox .banner_title{ line-height: initial; font-size: 48px;}
 	.styleBox ul.style_list li a{ height: 380px; }
@@ -479,8 +489,6 @@ p.go-top a:hover{ opacity:0.9;}
 }
 @media (max-width:850px){
 	.HeaderBox .TopBox{ display: none;}
-	.HeaderBox .Menu{ text-align: center; }
-	.HeaderBox .Menu h1.logo{ display: inline-block; float: none; }
 	.styleBox ul.style_list li a{ height: 280px; }
 	.inside_contents .life_style_box ul{padding: 0;}
 	.inside_contents .life_style_box ul li{width: 100%; padding: 10px;}
@@ -498,6 +506,11 @@ p.go-top a:hover{ opacity:0.9;}
 	.styleBox ul.style_list li a{ height: 220px; }
 	.inside_contents h3.main_title{ font-size: 24px; }
 	.doorframe_infoBox h4.sub_title{ font-size: 20px; }
+
+	#condition{ display: none; }
+	.produc_box .ContentsBox .produc_left_menu .for_mob_box a.more{ background-image: url(../images/icon_arr.png);}
+	.produc_box .ContentsBox .produc_left_menu .for_mob_box a.info_open{ background-image:url(../images/icon_arr.png);}
+	.produc_box .ContentsBox .produc_left_menu .for_mob_box a.info_open2{ background-image:url(../images/icon_arr2.png);}
 }
 @media (max-width:750px){
 	.HeaderBox{position: fixed; top: 0; z-index: 15; box-shadow: 0 0 5px rgba(0,0,0,.2); display: block;}
@@ -512,6 +525,7 @@ p.go-top a:hover{ opacity:0.9;}
 	.inside_contents .news_box ul.news_list li .newBox p.day span{font-size: 38px; }
 	.produc_box .ContentsBox .produc_left_menu{ top: 75px; }
 	.s_sideMenu{top: 78px;}
+
 }
 @media (max-width:700px){
 	.styleBox ul.style_list li{ width: 100%; margin: 10px 0; }
@@ -565,7 +579,8 @@ p.go-top a:hover{ opacity:0.9;}
 	.inside_contents .contact_box ul.contact_info li p{ padding-bottom: 35px;}
 
 	.product-infoBox .left_photo{ width: 100%; padding:20px 0 0 0; float: none; max-width: 160px; height: initial; margin: 0 auto; }
-	.product-infoBox .the_deta{ width: 100%; }
+	.product-infoBox .the_deta{ width: 100%; padding: 20px 0; }
+	.product-infoBox .the_deta p{padding-bottom: 20px;}
 	.product-infoBox .the_deta h3, .product-infoBox .the_deta p.p_center{ text-align: center; }
 }
 @media (max-width:570px){

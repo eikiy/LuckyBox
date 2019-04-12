@@ -5,19 +5,19 @@ html,body{width:100%;margin:0;padding:0}
 .mobile-nav ul li{list-style:none}
 ul.submenu{ padding-top:10px;}
 
-.hamburger{ position: fixed; display: none; top:20px; right: 15px !important;  padding:10px 9px 9px; cursor:pointer; z-index:200; background-color: #272e58; border-radius: 50%;}
+.hamburger{ position: fixed; display: none; top:20px; right: 15px !important;  padding:10px 9px 9px; cursor:pointer; border-radius: 4px; background-color: #fff; z-index:200; box-shadow: 0 0px 5px rgba(0,0,0,.2), 0 2px 3px rgba(0,0,0,.2);}
 .hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
-.hamburger .bar{width:20px;height:2px;background:#fff;position:absolute;top:0; left: 2px;}
+.hamburger .bar{width:20px;height:2px;background:#b4b4b4;position:absolute;top:0; left: 2px;}
 .hamburger .bar.bar2,.hamburger .bar.bar3{top:8px; }
 .hamburger .bar.bar4{top:16px; }
 .hamburger.open{position: fixed; /*top: 5px;*/  z-index:220;}
 .hamburger.open .bar1,.hamburger.open .bar4{display:none}
-.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #b4b4b4;}
 
 
 .mobile-nav ul.socialBox{ width: 100%; text-align: center; padding: 60px 0 0;  margin-bottom: 15px;}
 .mobile-nav ul.socialBox li{ display: inline-block; margin: 0 3px; }
-.mobile-nav ul.socialBox li a{ width: 40px; height: 40px; display: block; border-radius: 50%; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.2); background-position: center center; background-repeat: no-repeat; background-size: 40%;  }
+.mobile-nav ul.socialBox li a{ width: 40px; height: 40px; display: block; border-radius: 50%; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.4); background-position: center center; background-repeat: no-repeat; background-size: 40%;  }
 .mobile-nav ul.socialBox li a.map{ background-image: url(../images/icon_add.png); }
 .mobile-nav ul.socialBox li a.phone{ background-image: url(../images/icon_phone.png); }
 .mobile-nav ul.socialBox li a.fb{ background-image: url(../images/icon_facebook.png); }
@@ -31,7 +31,7 @@ ul.submenu{ padding-top:10px;}
 .mobile-nav ul.Oneself li .submenu{ padding-left: 92px; }
 .mobile-nav ul.Oneself li p{ font-size: 13px; }
 .mobile-nav ul.Oneself li p a{ color: #6E6E6E; padding: 3px 0; display: block;}
-.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
+.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; height: 100%; overflow-y: auto; }
 
 .mobile-nav .searchBox{ padding-left:16px; display: inline-block; }
 .mobile-nav .searchBox input{ padding: 10px; font-size: 13px; color: #111; border-radius: 50px; width: 100%; max-width: 150px; background: url(../images/icon_search.png) 10px center no-repeat; background-size: contain; padding-left: 55px;}
