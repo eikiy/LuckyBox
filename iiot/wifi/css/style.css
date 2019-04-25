@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 @import url(animate.css);
-
 html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
 blockquote, q { quotes:none;}
@@ -44,7 +43,7 @@ html, body{ height: 100%; }
 .sidenav .social_media { width: 310px; padding-bottom: 30px; }
 .sidenav p.btn{ width: 310px; max-width: 310px; margin: 0 auto; }
 
-.content_box{ width: 100%;	 max-width: 1000px; margin: 0 auto; min-width: 320px;}
+.content_box{ width: 100%;	 max-width: 1000px; margin: 0 auto; min-width: 300px;}
 
 /*header*/
 p.btn{ text-align: center; width: 100%; max-width: 185px; font-size: 16px;  font-family: 'Roboto';}
@@ -57,8 +56,8 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 
 .header_box{ width: 100%; position: absolute; top: 0; width: 100%; top: 0;  padding: 30px 0 10px; z-index: 1;}
 .header_box .content_box{ max-width:calc(100% - 50px); }
-.header_box h3.logo{ float: left; text-indent: -9999px; }
-.header_box h3.logo a{ width: 208px; height: 36px; display: block; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
+.header_box h3.logo{ float: left; text-indent: -9999px; margin-top: -5px; }
+.header_box h3.logo a{ width: 200px; height: 45px; display: block; background: url(../images/logo.png) center center no-repeat; background-size: contain;}
 .header_box ul.menu{ text-align: left; float: left; padding-left: 45px; }
 .header_box ul.menu li{ display: inline-block; }
 .header_box ul.menu li p a{  color: #fff; line-height: 38px; padding: 0 15px; display: inline-block; }
@@ -76,9 +75,8 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .main_banner{ width: 100%; min-height: 708px; background: url(../images/bg_index_01.jpg) center center no-repeat;background-attachment: fixed; background-size: cover; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .main_banner h1.main_title{ font-size: 53px; line-height: 64px;  text-align: center; color: #fff; padding: 40px 0; text-transform:uppercase;}
 .main_banner h2.sub_title{ font-size: 24px; text-align: center; color: #fff; text-transform:uppercase; }
-.main_banner p.p_info{ font-size: 18px; color: #fff; text-align: center; }
 
-.main_banner .seach_box{ width:100%; padding-top: 100px; }
+.main_banner .seach_box{ width:100%; padding-top: 80px; }
 .main_banner .seach_box input{ float: left; width: 25%; }
 .main_banner .seach_box ul{ width: 100%; }
 .main_banner .seach_box ul li{ width: 25%; float: left; padding: 0 5px; position: relative; }
@@ -87,15 +85,16 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .main_banner .seach_box ul li p.btn a{ line-height: 48px; }
 .main_banner .seach_box ul li a.icon_calendar{ width: 48px; height: 48px; color: #595757; font-size: 18px; text-align: center; line-height: 48px; position: absolute; top: 0; right: 5px; display: block; cursor: pointer; background-color: #f2f2f2; }
 .main_banner .seach_box ul li a.icon_calendar:hover{ background-color: #e1dfdf; }
+.main_banner .seach_box p.p_info{ font-size: 18px; color: #fff; padding: 0 5px 10px 5px;}
 
 
-.banner_flexslider{ background: none; min-height: initial; position: relative; min-height: 708px;}
-.banner_flexslider .flexslider{ width: 100%;  }
+.banner_flexslider{ background: none; min-height: initial; position: relative; min-height: 708px; overflow-y: hidden;}
+.banner_flexslider .flexslider{ width: 100%; overflow: hidden; }
 .banner_flexslider .slides li{ width: 100%; height: 100%; height: 708px; display: block; background-size: cover; background-position: center center; background-repeat: no-repeat;}
 .banner_flexslider .slides li .info_box{ display: -webkit-flex; height: 100%; padding: 0 15px; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .banner_flexslider .content_box{ position: absolute; bottom: 120px; z-index: 1; }
 
-.main_content h3.top_title{ font-size: 35px; color: #fff; text-align: center; text-transform:uppercase;}
+.main_content h3.top_title{ font-size: 35px; color: #fff; letter-spacing: 2px; text-align: center; text-transform:uppercase;}
 .main_content h4.sub_title_s{ font-size: 22px; color: #c2b595; text-align: center;padding: 20px 0; text-transform: uppercase; }
 .main_content h2.banner_top_title{ text-align: center; color: #fff; font-size: 40px; text-transform:uppercase;}
 
@@ -109,20 +108,26 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 
 
 /*why rent wifi*/
-.why_rent_wifi_box{ width: 100%;  background: url(../images/bg_index_02.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 70px 0;}
+.why_rent_wifi_box{ width: 100%;  background: url(../images/bg_index_02.jpg) center center no-repeat; background-attachment: fixed; background-size: cover; padding: 50px 0;}
+.why_rent_wifi_box .content_box{ padding: 20px 0; background-color: rgba(0,0,0,0.4); }
 .why_rent_wifi_box p.p_info{ text-align: center; color: #fff; line-height: 32px; max-width: 570px; margin: 0 auto; font-family: 'Roboto'; padding: 40px 0; }
 .why_rent_wifi_box p.btn{ margin: 0 auto; }
 .why_rent_wifi_box ul.list{ width: 100%; max-width: 1000px; padding: 30px 0;}
 .why_rent_wifi_box ul.list li{ width: 50%; float: left; text-align: center; padding: 20px; }
-.why_rent_wifi_box ul.list li .info_box{ width: 100%; background-color: rgba(256,256,256,.8); min-height: 225px; padding:60px 15px 30px 15px; margin-top: 70px }
 .why_rent_wifi_box ul.list li h4{ font-size: 26px; padding: 10px 0; position: relative;}
 .why_rent_wifi_box ul.list li h4::after{content: ""; width: 100%; height: 140px; position: absolute; top:-125px; left: 0; background-size: contain; background-repeat: no-repeat; background-position: center center;}
 .why_rent_wifi_box ul.list li h4.icon_01::after{ background-image: url(../images/why_rent_wifi_icon_01.png); }
 .why_rent_wifi_box ul.list li h4.icon_02::after{ background-image: url(../images/why_rent_wifi_icon_02.png); }
 .why_rent_wifi_box ul.list li p{ font-size: 20px; line-height: 28px;}
+.why_rent_wifi_box ul.list li p.sub_info{ font-size: 21px; background-color: #036eb1; border-radius: 40px; padding: 3px 10px; color: #fff; text-transform: uppercase; }
+.why_rent_wifi_box ul.list li .info_box{ width: 100%; background-color: rgba(256,256,256,.6); min-height: 225px; padding:60px 15px 30px 15px; margin-top: 70px }
+.why_rent_wifi_box ul.list li .info_box p{ position: relative; max-width: 240px; text-align: left; margin: 0 auto; padding:5px 0 15px 40px;}
+.why_rent_wifi_box ul.list li .info_box p::after{ position: absolute; content: ""; top: 4px; left: 0; width: 30px; height: 30px; display: block; background-image: url(../images/face_cry.png);  background-position: center center; background-repeat: no-repeat; background-size: contain;}
+.why_rent_wifi_box ul.list li:first-child .info_box p{ max-width: 300px; }
+.why_rent_wifi_box ul.list li:first-child .info_box p::after{ background-image: url(../images/face_smile.png); }
 
 /*why choose wifi*/
-.why_choose_wifi_box{ width: 100%; padding: 70px 0 100px 0;}
+.why_choose_wifi_box{ width: 100%; padding: 70px 0;}
 .why_choose_wifi_box .content_box{ max-width: 1100px; }
 .why_choose_wifi_box h3.top_title{  color:#1f1f1f;}
 .why_choose_wifi_box p.p_info{ font-size: 16px; text-align: center; color: #9f9f9f; padding: 20px 0; font-family: 'Roboto';}
@@ -140,14 +145,13 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .why_choose_wifi_box ul.advantage_list li.icon_07::after{ background-image: url(../images/why_choose_wifi_icon_07.png); }
 .why_choose_wifi_box ul.advantage_list li.icon_08::after{ background-image: url(../images/why_choose_wifi_icon_08.png); }
 
-.why_choose_wifi_box ul.advantage_list li h4{ font-size: 20px; line-height: 28px; padding-bottom: 10px;  text-transform: uppercase;}
+.why_choose_wifi_box ul.advantage_list li h4{ font-size: 20px; line-height: 28px; min-height: 95px; padding-bottom: 10px;  text-transform: uppercase;}
 .why_choose_wifi_box ul.advantage_list li p{ color: #9f9f9f; font-size: 14px; line-height: 20px; padding: 0 5px; font-family: 'Roboto'; min-height: 170px; max-width: 240px; margin: 0 auto;}
 
-.why_choose_wifi_box p.highlight{ font-size: 40px; color: #c29963; text-align: center;}
-.why_choose_wifi_box p.highlight a{ color: #c29963;}
-.why_choose_wifi_box p.highlight span{ color: #c29963; border-bottom: 5px solid #c29963; display: inline-block; padding-bottom: 20px; }
-.why_choose_wifi_box p.highlight span.big{font-size: 114px; border-bottom: none; padding-bottom: 0;}
-.why_choose_wifi_box p.highlight:hover span{ border-color: transparent;}
+.why_choose_wifi_box p.highlight{ font-size: 72px; color: #e13828; text-align: center; font-family: 'silom', 'Roboto';}
+.why_choose_wifi_box p.highlight a{ color: #e13828;}
+.why_choose_wifi_box p.highlight span.big{font-size: 49px;  background-color: #e13828; padding: 5px 25px; color: #fff; display: inline-block;}
+.why_choose_wifi_box p.highlight span.s{ font-size: 36px; }
 
 .why_choose_wifi_box .now_box{ width: 100%; border:6px solid #ff4a34; padding: 20px; min-height: 132px; margin-top: 10vh; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .why_choose_wifi_box .now_box p.info{ color: #ff4a34; font-size: 49px; padding-right: 30px;}
@@ -163,8 +167,109 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .how_it_works_box ul.step_box li.icon_02::after{ background-image: url(../images/how_it_work_icon_02.png); }
 .how_it_works_box ul.step_box li.icon_03::after{ background-image: url(../images/how_it_work_icon_03.png); }
 .how_it_works_box ul.step_box li.icon_04::after{ background-image: url(../images/how_it_work_icon_04.png); }
-.how_it_works_box ul.step_box li p{ color: #fff; text-align: center; font-family: 'Roboto'; min-height: 40px; }
+.how_it_works_box ul.step_box li.icon_05::after{ background-image: url(../images/how_it_work_icon_05.png); }
+.how_it_works_box ul.step_box li.icon_06::after{ background-image: url(../images/how_it_work_icon_06.png); }
+.how_it_works_box ul.step_box li.icon_07::after{ background-image: url(../images/how_it_work_icon_07.png); }
+.how_it_works_box ul.step_box li p{ color: #fff; text-align: center; font-family: 'Roboto'; min-height: 40px; font-weight: bold; letter-spacing: 1px;}
 .how_it_works_box ul.step_box li:first-child:before{ display: none; }
+
+.how_it_order{ background: none; }
+.how_it_order .content_box{ max-width: 1100px; }
+.how_it_order ul.step_box { background-color: #e5f8f7; padding: 50px; padding-bottom: 10px; }
+.how_it_order ul.step_box li p{ color: #6d6d6d; }
+.how_it_order h3.top_title{ color: #1f1f1f; padding-bottom: 40px; }
+
+
+/*how it order*/
+.how_order_box{ width: 100%; }
+.how_order_box h4, .how_order_box p{ font-family: 'Noto Sans',Arial,sans-serif;}
+.how_order_box .order_step_box {width: 100%;}
+.how_order_box .order_step_box h4.step_title{ width: 100%; border:1px solid #6d6d6d; font-size: 36px; color: #fff; padding: 15px 30px 5px 30px; background-color: #231815;}
+.how_order_box .order_step_box .step_info{ padding: 20px 80px; }
+.how_order_box .order_step_box p.nb{ font-size: 18px; line-height: 31px; padding-bottom: 10px; }
+.how_order_box .order_step_box table.cards{width: 100%; border:1px solid #6d6d6d; border-width: 1px 0 0 1px; margin: 15px 0;}
+.how_order_box .order_step_box table.cards p{ font-size: 21px;}
+.how_order_box .order_step_box table.cards th{ width: 33%; border:1px solid #6d6d6d; vertical-align: middle; border-width:0 1px 1px 0; background-color: #e8e8e8; padding: 5px 10px; }
+.how_order_box .order_step_box table.cards td{ border:1px solid #6d6d6d; vertical-align: middle; border-width:0 1px 1px 0; padding: 5px 10px; }
+.how_order_box .order_step_box table.cards td img{ height: 27px; margin: 0 7px;}
+
+.how_order_box .order_step_box .step_box_01 ul.step_time{ width: 100%; padding-top: 40px; }
+.how_order_box .order_step_box .step_box_01 ul.step_time p{ font-size: 18px; font-weight: bold; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li{ float: left; width: 38%;}
+
+.how_order_box .order_step_box .step_box_01 .top_title{ position: relative;height: 100px; }
+.how_order_box .order_step_box .step_box_01 .top_title::before, .how_order_box .order_step_box .step_box_01 .top_title::after{ z-index: 3; content: ""; position: absolute; display: block; background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.how_order_box .order_step_box .step_box_01 .box_01 .top_title::before{ top: 50px; left: 0px; width: 80px; height: 58px; background-image: url(../images/step_time_icon_01.png); }
+.how_order_box .order_step_box .step_box_01 .box_01 .top_title::after{ top: 50px; right: 25%; width: 80px; height: 55px; background-image: url(../images/step_time_icon_02.png); }
+.how_order_box .order_step_box .step_box_01 .box_02 .top_title::before{ top: 50px; left: 30px; width: 45px; height: 45px; background-image: url(../images/step_time_icon_03.png); }
+.how_order_box .order_step_box .step_box_01 .box_03 .top_title::before{ top: 50px; left: 10px; width: 45px; height: 45px; background-image: url(../images/step_time_icon_04.png); }
+.how_order_box .order_step_box .step_box_01 .box_03 .top_title::after{top: 91px; left:80%; width: 0; height: 0; border-style: solid; border-width: 18px 0 18px 18px; border-color: transparent transparent transparent #33cccc; line-height: 0px; _border-color: #000000 #000000 #000000 #33cccc; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+
+.how_order_box .order_step_box .step_box_01 ul.step_time .line{ width: 100%; margin-bottom: 40px; background-color: #33cccc; padding:0 5px; height: 18px;  position: relative;}
+.how_order_box .order_step_box .step_box_01 ul.step_time .line::after{content: ""; position: absolute; display: block; top: -18px; right: -2.5px; z-index: 1; width: 5px; height: 60px; background-color: #ff0000;}
+.how_order_box .order_step_box .step_box_01 ul.step_time .line p{ line-height: 18px; font-size: 14px; font-weight: normal; text-align: center; }
+
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_01 .line p{ padding-left: 40px; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_01 p.bottom_p{ position: relative; padding-left: 20%; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_01 p.bottom_p::before{ z-index: 3; content: ""; top: -46px; left: 30%; position: absolute; width: 15px; height: 32px; position: absolute; display: block; background: url(../images/step_time_icon_arr.png) center center no-repeat;  background-size: contain; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_02 .line{ background-color: #ffff00; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03{ width: 24%; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 .line{ width: 80%; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 .line::after{ right: 50%; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 .line::before{ position: absolute; content: ""; top: 0; left: 0px; width: 50%; height: 18px; display: block; background-color: #ff9999; }
+.how_order_box .order_step_box .step_box_01 ul.step_time li .red{ color:#df0012; font-weight: normal;  }
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 p.bottom_p{ width: 120%; position:relative; left: -20%;}
+.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 p.bottom_p span.asterisk{ position: absolute; top:0; left: -10px; }
+
+.how_order_box .order_step_box .step_box_02{ width: 100%; padding: 20px 0px;}
+.how_order_box .order_step_box .step_box_02 p.top_title{ text-align: center; padding: 20px 0 40px 0; }
+.how_order_box .order_step_box .step_box_02 ul.list{ width: 100%; text-align: center; padding-bottom: 20px;}
+.how_order_box .order_step_box .step_box_02 ul.list li{ width:32%; padding: 20px; display: inline-block; vertical-align: top; }
+.how_order_box .order_step_box .step_box_02 ul.list li h4{ font-size: 36px; padding: 120px 0 15px; position: relative; }
+.how_order_box .order_step_box .step_box_02 ul.list li h4::after{content: "";position: absolute; width: 115px; height: 97px; display: block; top: 0; left: calc(50% - 57.5px); background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.how_order_box .order_step_box .step_box_02 ul.list li h4.icon_01::after{ background-image: url(../images/step2_info_icon_01.png); }
+.how_order_box .order_step_box .step_box_02 ul.list li h4.icon_02::after{ background-image: url(../images/step2_info_icon_02.png); }
+.how_order_box .order_step_box .step_box_02 ul.list li h4.icon_03::after{ background-image: url(../images/step2_info_icon_03.png); }
+.how_order_box .order_step_box .step_box_02 ul.list li p{ line-height: 24px; }
+.how_order_box .order_step_box .step_box_02 ul.list li p.red{ color:#df0012; padding-top: 40px; }
+.how_order_box .order_step_box .step_box_02 ul.list li p a{ color: #1d2081; text-decoration: underline; }
+.how_order_box .order_step_box .step_box_02 ul.list li p a:hover{ text-decoration: none; }
+
+.how_order_box .order_step_box .step_box_03{ width: 100%; padding: 20px 0px;}
+.how_order_box .order_step_box .step_box_03 p.top_title{ text-align: center; padding: 20px 0 40px 0; }
+.how_order_box .order_step_box .step_box_03 ul.list{ width: 100%; text-align: center; padding-bottom: 20px;}
+.how_order_box .order_step_box .step_box_03 ul.list li{ width:32%; padding: 20px; display: inline-block; vertical-align: top; position: relative; }
+.how_order_box .order_step_box .step_box_03 ul.list li::after{ content: "";position: absolute; top: 165px; left: 50%; width: 100%; height: 5px; display: block; background-color: #00b7b3; }
+.how_order_box .order_step_box .step_box_03 ul.list li:last-child::after{ display: none; }
+.how_order_box .order_step_box .step_box_03 ul.list li::before{ content: "";position: absolute; top: 159px; left:calc(50% - 7.5px); width: 15px; height: 15px; border-radius: 50%; display: block; background-color: #00b7b3; }
+.how_order_box .order_step_box .step_box_03 ul.list li h4{ font-size: 36px; padding: 170px 0 15px; position: relative; }
+.how_order_box .order_step_box .step_box_03 ul.list li h4::after{content: "";position: absolute; width: 132px; height: 120px; display: block; top: 0; left: calc(50% - 61px); background-size: contain; background-position: center center; background-repeat: no-repeat;}
+.how_order_box .order_step_box .step_box_03 ul.list li h4.icon_01::after{ background-image: url(../images/step3_info_icon_01.png); }
+.how_order_box .order_step_box .step_box_03 ul.list li h4.icon_02::after{ background-image: url(../images/step3_info_icon_02.png); }
+.how_order_box .order_step_box .step_box_03 ul.list li h4.icon_03::after{ background-image: url(../images/step3_info_icon_03.png); }
+.how_order_box .order_step_box .step_box_03 ul.list li p{ line-height: 24px; }
+.how_order_box .order_step_box .step_box_03 ul.list li p.red{ color:#df0012; padding-top: 40px; }
+.how_order_box .order_step_box .step_box_03 ul.list li p a{ color: #1d2081; text-decoration: underline; }
+.how_order_box .order_step_box .step_box_03 ul.list li p a:hover{ text-decoration: none; }
+
+.how_order_box .order_step_box .step_box_04{ width: 100%; padding: 20px 0px;}
+.how_order_box .order_step_box .step_box_04 ul.list{ width: 100%; padding:40px 0;}
+.how_order_box .order_step_box .step_box_04 ul.list li{ width:100%; padding: 20px; min-height: 180px; display: inline-block; position: relative; }
+.how_order_box .order_step_box .step_box_04 ul.list li::after{ content: "";position: absolute; top: 0px; left:calc(50% - 2.5px); width: 5px; height:100%; display: block; background-color: #00b7b3; }
+.how_order_box .order_step_box .step_box_04 ul.list li:last-child::after{ display: none; }
+.how_order_box .order_step_box .step_box_04 ul.list li::before{ content: "";position: absolute; top: -5px; left:calc(50% - 7.5px); width: 15px; height: 15px; border-radius: 50%; display: block; background-color: #00b7b3; }
+.how_order_box .order_step_box .step_box_04 ul.list li h4{ color: #00b6b2; font-size: 21px; position: relative; font-weight: bold; padding-bottom: 15px; }
+.how_order_box .order_step_box .step_box_04 ul.list li h4::after{content: "";position: absolute; display: block; background-size: contain; background-position: top center; background-repeat: no-repeat;}
+.how_order_box .order_step_box .step_box_04 ul.list li p{ font-size: 14px;line-height: 24px;  position: relative; padding-bottom: 5px; }
+.how_order_box .order_step_box .step_box_04 ul.list li p.tick::after{content: ""; position: absolute; width: 20px; top: 5px; left: -25px; height: 17px; display: block; background: url(../images/step4_info_icon_tick.png) center center no-repeat; background-size: contain;}
+.how_order_box .order_step_box .step_box_04 ul.list li.box_01{ padding:0 20px 0 55%; }
+.how_order_box .order_step_box .step_box_04 ul.list li.box_01 h4::after{width: 100%; height: 110px; top: 0; left:-115%; background-image: url(../images/step4_info_icon_01.png); }
+.how_order_box .order_step_box .step_box_04 ul.list li.box_02{ padding-right: 55%; text-align: right; }
+.how_order_box .order_step_box .step_box_04 ul.list li.box_02 h4::after{width: 100%; height: 120px; top: 0; right:-115%; background-image: url(../images/step4_info_icon_02.png); }
+.how_order_box .order_step_box .step_box_04 ul.list li.box_03 .photo{ float: left; width: 50%; padding: 0 5%; margin-top: -40px; text-align: right;}
+.how_order_box .order_step_box .step_box_04 ul.list li.box_03 .photo img{ max-width: 200px; display: inline-block; }
+.how_order_box .order_step_box .step_box_04 ul.list li.box_03 .info_box{ float: left; width: 50%; padding: 0px 5%; }
+.how_order_box .order_step_box .step_box_04 ul.list li span.red{ color:#df0012; }
 
 /*customer's voice*/
 .customer_voice_box{ width: 100%; padding: 70px 0; overflow-x: hidden; }
@@ -204,6 +309,32 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .news_topics_box ul.news_list li p.day{ width: 135px; float: left; }
 .news_topics_box ul.news_list li p.title{ width: 100%; color: #9f9f9f; max-width: calc(100% - 135px); float: left;  font-family: 'Roboto'; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 25px; height: 25px * 1; overflow:hidden;}
 
+/*wifi_simcard_box*/
+.wifi_simcard_box{ width: 100%; padding: 50px 0; overflow: hidden;}
+.wifi_simcard_box h3.top_title{ color: #c29963; padding-bottom: 20px; }
+.wifi_simcard_box .wifi_box{ float: left; width:calc(50% - 7.5px); text-align: center;  background-color: #f0f1f1; padding: 35px 10px 50px 10px; margin: 10px 0;}
+.wifi_simcard_box .wifi_box img{ padding: 20px 0; }
+.wifi_simcard_box .wifi_box:last-child{ float: right; }
+.wifi_simcard_box .wifi_box:last-child img{ max-width: 230px; }
+.wifi_simcard_box .wifi_box:first-child img{max-width: 485px;}
+.wifi_simcard_box .wifi_box p.sub_info{ font-size: 20px; padding: 30px 0; text-transform: uppercase;}
+.wifi_simcard_box .wifi_box p.p_info{ font-size: 24px; text-transform: uppercase;}
+.wifi_simcard_box .wifi_box p.btn{ max-width: 280px; margin: 0 auto; padding-top: 25px; }
+
+/*sale_event_box*/
+.sale_event_box{ width: 100%; padding:10px 0 70px 0;}
+.sale_event_box ul.list{ width: 100%; }
+.sale_event_box ul.list li{ float: left; position: relative; text-align: center; width:calc(33.33% - 12px); margin-right: 18px; padding: 20px 0 30px 0;  background-repeat: no-repeat; background-position: center center; background-size: cover; }
+.sale_event_box ul.list li::after{content: "";position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background-color: rgba(130,130,130,0.75);}
+.sale_event_box ul.list li p.info{ font-size: 32px; line-height: 48px; color: #fff; padding: 20px 15px; position: relative; z-index: 1;}
+.sale_event_box ul.list li p.info span{ color: #ffea00; }
+.sale_event_box ul.list li p.btn{ margin: 0 auto; position: relative; max-width: 160px; z-index: 1; }
+.sale_event_box ul.list li p.btn a{ line-height: 38px;}
+.sale_event_box ul.list li:last-child{ margin: 0; }
+.sale_event_box ul.list li.event_01{ background-image: url(../images/sale_img_01.jpg); }
+.sale_event_box ul.list li.event_02{ background-image: url(../images/sale_img_02.jpg); }
+.sale_event_box ul.list li.event_03{ background-image: url(../images/sale_img_03.jpg); }
+
 /*footer*/
 .footer_box{ width: 100%; }
 .footer_box .social_media{ background-color: #2e2e2e; padding: 15px 0; }
@@ -216,7 +347,7 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .footer_box .info_box p{ font-size: 12px; color: #fff; padding: 5px 0;}
 .footer_box .info_box p a{ color: #fff; }
 .footer_box .info_box p a:hover{ text-decoration: underline; }
-
+.footer_box .info_box p.other_link,.footer_box .info_box p.copyright{ font-family: 'Roboto';}
 .footer_box .info_box p.logo{margin: 50px auto 45px auto; text-align: center;}
 .footer_box .info_box p.logo a{ width: 100%; max-width: 350px; height: 60px;  display: inline-block; background: url(../images/logo.png) center center no-repeat; background-size: contain; }
 
@@ -226,17 +357,18 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .footer_box .info_box ul.menu li p a{  color: #fff; }
 
 
-
 /*inside*/
 .inside_banner{ min-height: 400px; padding: 40px 0;  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .bg_default{ background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; }
 .bg_01{ background-image: url(../images/bg_inside_01.jpg); }
 .bg_02{ background-image: url(../images/bg_inside_02.jpg); min-height: 294px;}
-.bg_03{ background-image: url(../images/bg_inside_03.jpg);}
+.bg_03{ background-image: url(../images/bg_inside_03.jpg); background-position: center bottom;}
 .bg_04{ background-image: url(../images/bg_inside_04.jpg);}
 .bg_05{ background-image: url(../images/bg_inside_05.jpg);}
+.bg_06{ background-image: url(../images/bg_inside_06.jpg); background-position: top center;}
+.bg_07{ background-image: url(../images/bg_inside_07.jpg);}
 
-.about_info_box{ padding: 60px 0; }
+.about_info_box{ padding: 60px 0 0 0; }
 .about_info_box h3.top_title{ color: #1f1f1f; }
 .about_info_box p.p_info{ font-family: 'Roboto'; color: #9f9f9f; padding: 40px 0 120px 0; position: relative;}
 .about_info_box p.p_info span{ position: absolute; bottom: 0; right: 0; width: 238px; height: 83px; display:block; background: url(../images/about_img_signature.png) center center no-repeat; background-size: contain;}
@@ -251,16 +383,24 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .specification_box{  background-color: #f8f7f4; overflow-x: hidden;}
 .specification_box h3.top_title{ color: #c29963; }
 .specification_box p.note{ width: 100%; float: left; color: #9f9f9f; font-size: 14px; font-family: 'Roboto';}
-.producr_img_box{ width: 100%; }
-.producr_img_box .img_box{ float: left; width: 50%; }
-.producr_img_box .img_box img{ width: 100%; }
-.producr_img_box .info_box{ float: left; width: 50%; padding-left: 40px; }
+
+.producr_img_box{ width: 100%; padding: 40px 0; }
+.producr_img_box .img_box{ float: left; width: 50%; text-align: center; }
+.producr_img_box .img_box img{ width: 100%; max-width: 470px; }
+.producr_img_box .info_box{ float: left; width: 50%; padding:0 30px; }
 .producr_img_box .info_box p.info{ color: #9f9f9f; font-size: 26px; line-height: 42px; padding-bottom: 30px;  }
-.producr_img_box .info_box p.btn{ margin: 0 auto; }
+.producr_img_box .info_box p.info span.left_w{ width: 100%; max-width: 40%; display: inline-block; }
+.producr_img_box .info_box p.info span.left_w2{ width: 100%; max-width: 55%; display:inline-grid;; }
+
+.producr_img_box .info_box p.btn{ margin: 0 auto; max-width: 310px; font-size: 22px;}
+.producr_img_box .info_box p.btn a{ line-height: 72px; }
 .producr_img_box h3.top_title{ color: #6d6d6d; padding-bottom: 30px; }
+.producr_img_box .info_box p.p_green{ color: #00b6b2; font-size: 35px;}
 
 .faq_box{ width: 100%; padding: 50px 0; }
 .faq_box h3.top_title{color: #1f1f1f;}
+.faq_box h4.qa_title{ color: #6d6d6d; font-size: 36px; padding: 35px 0; margin-bottom: 35px; border-bottom: 4px solid #c2b595;}
+
 .faq_box p.p_info{ color: #9f9f9f; font-size: 18px; font-family: 'Roboto'; padding: 50px 0;}
 .faq_box ul.faq_list{ width: 100%; }
 .faq_box ul.faq_list li{ width: 100%; padding: 20px 0; margin-bottom: 10px; cursor: pointer; display: inline-block; background-color: #f5f5f5;}
@@ -272,6 +412,10 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .faq_box ul.faq_list li .faq_info p.topic::after{ content: "\f067";  color: #c2b595; line-height: 25px; text-align: center; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: calc(50% - 14px); right: 0; width: 40px;  }
 .faq_box ul.faq_list li .faq_info p.answer{ display: none; padding: 20px 0 ; border-top: 1px solid #e3e3e3;  margin-top: 20px; }
 
+ul.top_menu{ width: 100%; text-align: center; }
+ul.top_menu li{ display: inline-block; padding: 15px 5px; }
+ul.top_menu li p{ padding:24px 20px; font-size: 24px; cursor: pointer; display: inline-block; min-width: 300px; background-color: #abe7e6; color: #000000; }
+ul.top_menu li p:hover{ background-color: #99e2e1; }
 .how_it_work_box{width: 100%; padding: 50px 0; }
 .how_it_work_box h3.top_title{ color: #1f1f1f; }
 .how_it_work_box ul.step_box{ width: 100%; padding: 50px 0;}
@@ -287,6 +431,103 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 .how_it_work_box ul.step_details_list li .details_info .abox h4{ color: #6d6d6d; padding-bottom: 10px; font-family: 'Roboto'; font-weight: bold; }
 .how_it_work_box ul.step_details_list li .details_info .abox p{ color: #9f9f9f;font-family: 'Roboto'; }
 
+.real_time_translator{ padding:50px 0; width: 100%; }
+.real_time_translator h3.top_title{ color: #6d6d6d; }
+.real_time_translator p.info{ text-align: center; padding: 20px 0; font-family: 'Arial'; min-height: 120px; max-width: 200px; margin: 0 auto; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.real_time_translator ul{ width: 100%; padding: 50px 0;}
+.real_time_translator ul li{ float: left; width: 25%; padding: 0 20px; }
+.real_time_translator ul li img{ width: 100%; }
+.real_time_translator .img_box{width: 100%; text-align: center; padding: 50px 0;}
+.real_time_translator .img_box img{ width: 100%; max-width: 147px; }
+.real_time_translator h3.focus_font{ font-size: 48px; text-align: center; color: #6d6d6d;}
+.real_time_translator h3.focus_font span{ color: #df0012; }
+
+.insurance_box .img_box img{ max-width: initial; }
+
+.how_to_rent{ background: none; background-color: #e5f8f7; }
+.how_to_rent h3.top_title{ color: #6d6d6d; }
+.how_to_rent ul.step_box{padding-bottom: 0;}
+.how_to_rent ul.step_box li{ width: 20%; }
+.how_to_rent ul.step_box li p{color: #6d6d6d;}
+
+
+/*simcard_advantage_box*/
+.simcard_advantage_box{ padding-bottom: 40px; }
+.simcard_advantage_box ul.advantage_list{ width: 100%; }
+.simcard_advantage_box ul.advantage_list li{ padding: 25px 0; margin: 35px 0; position: relative; padding-left: 125px;}
+.simcard_advantage_box ul.advantage_list li::after{ content: ""; position: absolute; width:80px; height: 91px; top: 25px; left: 5px; background-repeat: no-repeat; background-position: center content; background-size: contain; }
+.simcard_advantage_box ul.advantage_list li.icon_01::after{background-image: url(../images/advantage_list_icon_01.png);}
+.simcard_advantage_box ul.advantage_list li.icon_02::after{background-image: url(../images/advantage_list_icon_02.png);}
+.simcard_advantage_box ul.advantage_list li.icon_03::after{background-image: url(../images/advantage_list_icon_03.png);}
+.simcard_advantage_box ul.advantage_list li.icon_04::after{background-image: url(../images/advantage_list_icon_04.png);}
+.simcard_advantage_box ul.advantage_list li.icon_05::after{background-image: url(../images/advantage_list_icon_05.png);}
+.simcard_advantage_box ul.advantage_list li h4{ font-size: 35px; color: #6d6d6d; padding-bottom: 10px; }
+.simcard_advantage_box ul.advantage_list li p{ font-size: 24px; color: #6d6d6d; }
+.simcard_advantage_box ul.advantage_list li p.note{ font-size: 18px; color: #6d6d6d; padding-top: 8px;}
+
+/*NTTdocomo_network_box*/
+.NTTdocomo_network_box{padding: 40px 0;}
+.NTTdocomo_network_box .left_info{ float: left;width: 50%; padding-left: 20px; text-align: center; }
+.NTTdocomo_network_box .img_box{ float: left; width: 50%; }
+.NTTdocomo_network_box h3.top_title{ color: #6d6d6d }
+.NTTdocomo_network_box h3.title_red{ color: #bc0d23; font-family: 'Trebuchet MS', 'Arial'; font-weight: bold; text-transform: inherit; padding: 40px 0 15px;}
+.NTTdocomo_network_box p.bg_blue{ background-color: #7fdbd9; font-weight:bold; padding: 20px; display: inline-block; margin: 40px auto; font-size: 36px; color: #fff;  text-align: center;}
+
+
+/*airport*/
+.airport_box .content_box{ max-width: 1040px; }
+.airport_box ul.top_menu{padding: 30px 0; }
+.airport_box ul.top_menu li{width: 49%; padding: 7px 5px; vertical-align: top;}
+.airport_box ul.top_menu li p{ background-color: #e5f8f7; width: 100%; min-width: 100%; padding: 24px 10px }
+.airport_box ul.top_menu li p span{ position: relative; padding-right: 80px; min-width: 300px; display: inline-block; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.airport_box ul.top_menu li p span::after{ position: absolute; content: ""; width: 70px; height: 49px; display: block; right: 0; top: calc(50% - 25px);  background-size: contain; background-repeat: no-repeat; background-position: center  center;}
+.airport_box ul.top_menu li p span.icon_01{ padding-right: 120px; }
+.airport_box ul.top_menu li p span.icon_01::after{ width: 112px;  background-image: url(../images/airport_top_menu_icon_01.png); }
+.airport_box ul.top_menu li p span.icon_02::after{  background-image: url(../images/airport_top_menu_icon_02.png); }
+.airport_box ul.top_menu li p span.icon_03::after{  background-image: url(../images/airport_top_menu_icon_03.png); }
+
+.airport_box .photo_img{ width: 100%; text-align: center; }
+.airport_box .photo_img img{ width: 100%; display: inline-block; }
+.airport_box .airport_infobox h4, .airport_box .airport_infobox h5, .airport_box .airport_infobox p{ color: #000;font-family: 'Roboto', 'Arial';}
+.airport_box .airport_infobox h4.main_title{ font-size: 36px; padding: 25px 0; text-align: center;  }
+.airport_box .airport_infobox h4.top_line{ border-top: 3px solid #c2b595; margin-top: 30px; padding-top: 50px;}
+.airport_box .airport_infobox .desk h5{ font-size: 18px; font-weight: bold; padding: 10px 0; }
+.airport_box .airport_infobox .desk p{ line-height: 24px; }
+.airport_box .airport_infobox .desk .red{ color: #df0012; }
+.airport_box .airport_infobox .desk p.time{ line-height: 40px; padding-left: 60px; position: relative; line-height: 41px; margin-bottom: 15px;}
+.airport_box .airport_infobox .desk p.time::after{ content: ""; position: absolute; top: 0; left: 0; width: 50px; height: 41px; display: block; background: url(../images/airport_icon_00.png) center center no-repeat; background-size: contain;}
+.airport_box .airport_infobox .photo_img{ padding:40px 20px; }
+.airport_box .airport_infobox .the_Way{ width: 100%; background-color: #e5f8f7; padding: 20px; margin-bottom: 30px;}
+.airport_box .airport_infobox .the_Way p.arr{ position: relative; padding-left: 25px; font-family: 'Times New Roman', 'Noto Sans TC',Arial, sans-serif;}
+.airport_box .airport_infobox .the_Way p.arr::after{ content: ""; position: absolute; top: 0; left: 0; width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 14px; border-color: transparent transparent transparent #c2b595; line-height: 0px; _border-color: #000000 #000000 #000000 #c2b595; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+.airport_box .airport_infobox .the_Way .photo_img{padding: 20px 0;}
+.airport_box .airport_infobox .the_Way .photo_img img{ max-width: 900px; }
+.airport_box .airport_infobox .the_Way p.photo_p{ max-width: 700px; margin: 0 auto; text-align: center; font-size: 28px; line-height: 48px; padding-bottom: 30px;}
+
+.airport_box .airport_infobox table.tablebox{ width: 100%; max-width: 900px; margin: 20px auto; }
+.airport_box .airport_infobox table.tablebox tr th, .airport_box .airport_infobox table.tablebox tr td{ vertical-align: middle; text-align: center; }
+.airport_box .airport_infobox table.tablebox tr th{ background-color: #000000; border: 1px solid #fff; border-width: 0 1px 2px 0;}
+.airport_box .airport_infobox table.tablebox tr th p{ font-size: 21px; color: #fff; }
+.airport_box .airport_infobox table.tablebox tr td{ background-color: #e7e7e7; border: 1px solid #fff; border-width: 0 1px 1px 0;}
+.airport_box .airport_infobox table.tablebox tr:nth-child(even) td{ background-color: #cbcbcb; }
+.airport_box .airport_infobox .tablebox p{ padding: 10px 15px; display: block; }
+.airport_box .airport_infobox .tablebox p.big{font-size: 24px;}
+.airport_box .airport_infobox .tablebox p.font_s{ font-size: 18px; }
+
+/*contact us*/
+.contact_us_box{ width: 100%; padding: 40px; }
+.contact_us_box .content_box{ max-width: 500px; }
+.contact_us_box h2.title{ font-size: 48px; font-weight: bold;font-family: 'Arial Black'; color: #6d6d6d; padding-bottom: 10px; }
+.contact_us_box p{ font-size: 15px; color: #6d6d6d; }
+.contact_us_box .form_box{ width: 100%;  padding-top: 60px;}
+.contact_us_box .form_box p{ font-size: 21px; padding: 5px 0;  font-family: 'Arial';}
+.contact_us_box .form_box input.fillin, .contact_us_box .form_box textarea{ font-size: 15px;font-family: 'Arial'; border:1px solid #c2b595; width: 100%; max-width: 300px; height: 24px; line-height: 24px; padding: 0 10px; border-radius: 2px;}
+.contact_us_box .form_box textarea{ max-width: 100%; height: initial; min-height: 210px; border-radius: 8px; padding:8px 10px;}
+.contact_us_box .form_box ul{ width: 100%;}
+.contact_us_box .form_box ul li{ padding-bottom: 15px; }
+.contact_us_box .form_box input.btn { background-color: #00b6b2; color: #fff; cursor: pointer; font-size: 14px; font-family: 'Arial'; width: 100px; height: 30px; line-height: 30px; text-align: center;}
+.contact_us_box .form_box input.btn:hover{ opacity: .8; }
+.contact_us_box .form_box input.fillin:focus { background-color: #fffcf4;}
 /*==== RWD ====*/
 @media (max-width:1200px){
 	.header_box ul.menu , .header_box ul.social_media, .header_box p.btn{ display: none; }
@@ -296,49 +537,113 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.why_choose_wifi_box .content_box{ max-width: calc(100% - 50px); }
 }
 @media (max-width:1040px){
-	.content_box{ max-width: calc(100% - 40px); }
+	.content_box, .airport_box .content_box{ max-width: calc(100% - 40px); }
 	.why_choose_wifi_box ul.advantage_list li{ width: 33%; }
-	.how_it_works_box ul.step_box li{ width: 50%; }
+	.how_it_works_box ul.step_box li{ width: 49%; }
 	.how_it_works_box ul.step_box li::before{ display: none; }
-	.main_banner .seach_box{ padding-top: 50px; }
+	.how_to_rent ul.step_box{ text-align: center;}
+	.how_to_rent ul.step_box li{ display: inline-block; float: none; }
+	.main_banner .seach_box{ padding-top: 30px; }
+	.main_banner .seach_box p.p_info{ padding: 0 15px 10px 15px; }
 	.main_banner h1.main_title{ font-size: 44px; line-height: 50px; }
 	.another_product_box a.link{ padding-right: 55%;}
 	.how_it_work_box ul.step_box li p{ font-size: 18px; }
 	.how_it_work_box ul.step_details_list li p.title{ width: 250px; }
 	.how_it_work_box ul.step_details_list li .details_info{ width: calc(100% - 250px); }
 
-	.banner_flexslider .content_box{ bottom: 20px; }
+	.banner_flexslider .content_box{ bottom: 25px; }
 	.banner_flexslider .seach_box ul{ padding: 0 10px; }
+	.producr_img_box .info_box p.info{ font-size: 24px; }
+
+	ul.top_menu li p{ font-size: 22px; }
 }
-@media (max-width:900px){
-	.why_choose_wifi_box p.highlight{ font-size: 30px; }	
-	.why_choose_wifi_box p.highlight span.big{ font-size: 80px; }
+
+@media (max-width:980px){
+	.airport_box ul.top_menu li p span, .airport_box ul.top_menu li p span.icon_01{ padding-right: 0; padding-top: 60px; }
+	.airport_box ul.top_menu li p span::after{ top: 0; right: calc(50% - 35px); }
+	.airport_box ul.top_menu li p span.icon_01::after{right: calc(50% - 56px);}
+}	
+@media (max-width:900px){	
 	.why_choose_wifi_box .now_box p.info{ font-size: 36px; }
 	.customer_voice_box ul.customers li .feelback { min-height: 210px;}
 	.how_it_work_box ul.step_box li{ width: 50%; padding:5px;}
+	.sale_event_box ul.list li, .sale_event_box ul.list li:last-child{width: 100%; margin: 10px 0;}
 
+	.NTTdocomo_network_box .left_info, .NTTdocomo_network_box .img_box{ width: 100%; padding: 0; }
 }
 @media (max-width:800px){
 	.main_banner .seach_box ul li{ width: 50%; padding-bottom: 10px;}
 	.main_banner .seach_box ul li:first-child, .main_banner .seach_box ul li:last-child{ width: 100%; }
 	.why_choose_wifi_box ul.advantage_list li{ width: 50%; }
 	.customer_voice_box ul.customers li .the_photo{ width: 110px; height: 110px;}
-	.customer_voice_box ul.customers li .feelback{width: calc(100% - 110px); min-height: initial;}
+	.customer_voice_box ul.customers li .feelback{width: calc(100% - 110px);}
 	.another_product_box a.link{ padding:50px 40px; padding-bottom: 250px; text-align: center;}
 	.another_product_box a.link::after{ width: 100%; }
 	.another_product_box h3.top_title{ text-align: center; }
 	.producr_img_box .img_box, .producr_img_box .info_box{ float: none; width: 100%; max-width: 450px; margin: 0 auto; padding: 0; padding-bottom: 20px; }
 	.producr_img_box .info_box p.info{ font-size: 22px; }
+	.wifi_simcard_box .wifi_box{ width: 100%; }
+	.real_time_translator ul li{ width: 50%; }
+	.real_time_translator p.info{min-height: 84px; padding-top: 0;}
+	.simcard_advantage_box ul.advantage_list li h4{font-size: 30px;}
+	.simcard_advantage_box ul.advantage_list li p{font-size: 20px;}
+	.simcard_advantage_box ul.advantage_list li p.note{font-size: 16px;}
 
+	.airport_box ul.top_menu li p span{min-width: initial;}
+	.airport_box ul.top_menu li p{ font-size: 15px; }
 }
+
 @media (max-width:750px){
+	.customer_voice_box ul.customers li .feelback{ min-height: initial;}
 	.customer_voice_box ul.customers li, .why_rent_wifi_box ul.list li{width: 100%;}
 	.why_choose_wifi_box .now_box{ display: block; text-align: center; }
 	.why_choose_wifi_box .now_box p.info{ padding: 15px 0 25px 0; }
 	.why_choose_wifi_box .now_box p.btn{ display: inline-block; }
+	ul.top_menu li{ padding:8px 5px; }
+	ul.top_menu li p{ font-size: 18px; min-width:200px; padding: 15px; }
+
+	.how_order_box .order_step_box .step_info{ padding: 20px; }
+	.how_order_box .order_step_box h4.step_title, 
+	.how_order_box .order_step_box .step_box_02 ul.list li h4,
+	.how_order_box .order_step_box .step_box_03 ul.list li h4{ font-size: 24px; }
+	.how_order_box .order_step_box p.nb, 
+	.how_order_box .order_step_box .step_box_02 ul.list li p{ font-size: 16px; line-height: 24px; }
+	.how_order_box .order_step_box .step_box_01 ul.step_time p{ font-size: 14px; }
+	.how_order_box .order_step_box table.cards p, 
+	.how_order_box .order_step_box .step_box_04 ul.list li h4{ font-size: 18px; }
+	.how_order_box .order_step_box .step_box_01 ul.step_time li.box_01 .line p{padding-left: 0px;}
+	.how_order_box .order_step_box .step_box_01 .box_01 .top_title::before{ top: 46px; width: 50px; }
+	.how_order_box .order_step_box .step_box_01 .box_01 .top_title::after{ width: 47px; }
+	.how_order_box .order_step_box .step_box_01 .box_02 .top_title::before{ width: 35px; }
+	.how_order_box .order_step_box .step_box_01 .box_03 .top_title::before{ width: 35px; }
+	.how_order_box .order_step_box .step_box_01 .box_01 .top_title::after{right: 10%;}
+	.how_order_box .order_step_box .step_box_01 ul.step_time li.box_01 p.bottom_p{ top: 28px; }
+	.how_order_box .order_step_box .step_box_01 ul.step_time li.box_01 p.bottom_p::before{ top: -42px; }
+	.how_order_box .order_step_box .step_box_01 ul.step_time li, .how_order_box .order_step_box .step_box_01 ul.step_time li.box_03{ width: 33%; }
+	.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 .line{ width:85%; }
+	.how_order_box .order_step_box .step_box_01 ul.step_time li.box_03 p.bottom_p{ left: -25%; }
 }
 @media (max-width:700px){
 	.team_list_box ul.our_list{ width: 100%; padding: 0; }
+	.why_choose_wifi_box p.highlight span.big{ font-size: 44px; }
+
+	.how_order_box .order_step_box .step_box_03 ul.list{ text-align: initial; }
+	.how_order_box .order_step_box .step_box_02 ul.list li{width: 100%;}
+	.how_order_box .order_step_box .step_box_02 ul.list li p.red{padding-top: 5px; font-size: 14px;}
+	.how_order_box .order_step_box .step_box_03 ul.list li{ width: 100%; padding-left: 70px; }
+	.how_order_box .order_step_box .step_box_03 ul.list li::before{ left: 24.5px; top: 80px; }
+	.how_order_box .order_step_box .step_box_03 ul.list li::after{ width: 5px; height: 100%; top: 90px; left: 30px; }
+	.how_order_box .order_step_box .step_box_03 ul.list li h4{ padding-top: 120px; }
+	.how_order_box .order_step_box .step_box_03 ul.list li h4::after{ width: 80px; left: 0px; }
+
+	.how_order_box .order_step_box .step_box_04 ul.list li::after{ left: 24.5px; }
+	.how_order_box .order_step_box .step_box_04 ul.list li::before{ left: 19.5px; }
+	.how_order_box .order_step_box .step_box_04 ul.list li.box_01{ padding:100px 20px 20px 70px;}
+	.how_order_box .order_step_box .step_box_04 ul.list li.box_01 h4::after{ top: -106px; left: 0; }
+	.how_order_box .order_step_box .step_box_04 ul.list li.box_02{ padding:100px 20px 20px 70px; text-align: left;}
+	.how_order_box .order_step_box .step_box_04 ul.list li.box_02 h4::after{top: -106px; left: 0; }
+	.how_order_box .order_step_box .step_box_04 ul.list li.box_03 .photo{ width: 100%; text-align: center; margin: 0; }
+	.how_order_box .order_step_box .step_box_04 ul.list li.box_03 .info_box{ width: 100%; padding:20px 0px 20px 40px; }
 }
 @media (max-width:650px){
 	.footer_box .info_box p.logo a{ height: 45px; }
@@ -348,16 +653,39 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.how_it_work_box ul.step_details_list li .details_info .abox{padding-bottom: 10px;}
 
 	.main_banner,.inside_banner, .why_rent_wifi_box, .how_it_works_box{ background-attachment: initial; }
+	.bg_06{ background-image: url(../images/bg_inside_06s.jpg); }
+	.simcard_advantage_box ul.advantage_list li{padding-left: 0px; padding-top: 80px; margin: 10px 0; text-align: center;}
+	.simcard_advantage_box ul.advantage_list li::after{ width: 55px; height: 68px;top: 0; left: calc(50% - 27.5px); }
+	.simcard_advantage_box ul.advantage_list li h4{ font-size: 25px; }
+	.faq_box h4.qa_title, .airport_box .airport_infobox h4.main_title{ font-size: 30px; }
+	.airport_box .airport_infobox table.tablebox tr th p{ font-size: 18px; }
+	.airport_box .airport_infobox .tablebox p.big{ font-size: 20px; }
+	.airport_box .airport_infobox .the_Way p.photo_p{font-size: 18px; line-height: 24px;}
 }
 @media (max-width:600px){
 	.main_banner h1.main_title{ font-size: 36px; line-height: 40px; padding: 25px 0; }
 	.main_banner h2.sub_title, .main_content h4.sub_title_s{ font-size: 16px; }
 	.main_content h3.top_title, .how_it_work_box ul.step_details_list li p.title{ font-size: 28px; }
 	.main_banner p.p_info{ font-size: 15px; }
-	p, .faq_box p.p_info{ font-size: 16px; }
+	p, .faq_box p.p_info, .contact_us_box .form_box p{ font-size: 16px; }
 	.why_choose_wifi_box ul.advantage_list li p{ min-height: 110px; }
 	.why_rent_wifi_box p.p_info, .news_topics_box ul.news_list li p.title{ font-size: 14px; line-height: 22px; }
 	.how_it_work_box ul.step_details_list li p.title{ width: 100%; }
+	.real_time_translator h3.focus_font{font-size: 44px;}
+	.producr_img_box{padding: 0;}
+	.NTTdocomo_network_box p.bg_blue{ font-size: 24px; margin: 20px auto; }
+	.airport_box ul.top_menu li p{padding: 15px 10px;}
+	.airport_box ul.top_menu li p span{ min-height: 90px; }
+	.airport_box ul.top_menu li p span::after{ height: 40px; }
+	.airport_box ul.top_menu li p span, .airport_box ul.top_menu li p span.icon_01{ padding-top: 46px; }
+	.airport_box .airport_infobox h4.main_title{ font-size: 24px; line-height: 34px; padding: 30px 0 5px 0; }
+	.airport_box .airport_infobox .tablebox p.big{ font-size: 18px; }
+	.airport_box .airport_infobox table.tablebox tr th p, .airport_box .airport_infobox .desk h5{ font-size: 16px; }
+	.airport_box .airport_infobox .tablebox p.font_s{ font-size: 14px; }
+	.airport_box .airport_infobox .tablebox p{padding: 5px;}
+	.contact_us_box h2.title{ font-size: 30px; }
+	.contact_us_box .form_box{padding-top: 30px;}
+
 }
 @media (max-width:499px){
 	.main_banner h1.main_title, .main_content h2.banner_top_title{ font-size: 28px; }
@@ -371,14 +699,13 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.why_choose_wifi_box ul.advantage_list li::after, .how_it_works_box ul.step_box li::after{ width: 110px; height: 110px; left: calc(50% - 55px);}
 	.why_rent_wifi_box ul.list li p{ font-size: 17px; }
 	.why_choose_wifi_box ul.advantage_list{padding: 30px 0 15px 0;}
-	.why_choose_wifi_box ul.advantage_list li h4{ font-size: 15px; min-height: 100px; line-height: 24px; }
-	.why_choose_wifi_box p.highlight{ font-size: 24px; }
-	.why_choose_wifi_box p.highlight span.big{ font-size: 54px; }
+	.why_choose_wifi_box ul.advantage_list li h4{ font-size: 15px; min-height: 110px; line-height: 24px; }
+	.why_choose_wifi_box p.highlight{ font-size: 50px; }
+	.why_choose_wifi_box p.highlight span.big{ font-size: 37px; margin-bottom: 10px; }
 	.inside_banner{ min-height: 294px; }
 	.bg_02{ min-height: 200px; }
 	.team_list_box ul.our_list li p, .faq_box ul.faq_list li .faq_info p.answer{ font-size: 14px; }
 	.producr_img_box .info_box p.info{ font-size: 18px; }
-	.faq_box p.p_info{padding-top: 0px;}
 	.faq_box ul.faq_list li p.nb{ width: 80px; }
 	.faq_box ul.faq_list li .faq_info{ width: calc(100% - 100px);}
 	.how_it_work_box ul.step_box li{ width: 100%; padding: 10px 0px; position: relative; }
@@ -390,6 +717,16 @@ ul.social_media li a:hover{ background-color: #fff; color: #333; }
 	.banner_flexslider .slides li .info_box .p_b{ padding-bottom: 15vh;}
 	.banner_flexslider .slides li{height: 100vh;}
 	.banner_flexslider p.p_info{ padding: 0 20px; }
+
+	.real_time_translator, .how_it_works_box{padding: 30px 0;}
+	.real_time_translator .img_box{ padding: 20px 0; }
+	.faq_box ul.top_menu li p{ min-width: 80vw; }
+	.faq_box h4.qa_title{padding-bottom: 20px; font-size: 26px;}
+
+	.airport_box ul.top_menu li p span{min-height: 100px;}
+	.airport_box .airport_infobox h4.main_title{ font-size: 18px; }
+	.airport_box .airport_infobox .the_Way p.photo_p{ font-size: 16px; }
+	.contact_us_box .form_box input.fillin{ max-width: 100%; }
 
 }
 @media (max-width:400px){
