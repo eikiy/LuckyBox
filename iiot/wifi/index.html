@@ -16,6 +16,29 @@
 	<script type="text/javascript" src="js/goto.js"></script>
 	<script type="text/javascript" src="js/wow.js"></script>
 
+  	<!-- Demo CSS -->
+    <!-- <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+  	<!-- jQuery -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  	<!-- FlexSlider -->
+  	<script defer src="js/jquery.flexslider.js"></script>
+  	<script type="text/javascript">
+    	$(function(){
+      	//SyntaxHighlighter.all();
+    	});
+    	$(window).load(function(){
+      	$('.flexslider').flexslider({
+        	animation: "slide",
+        	start: function(slider){
+          	$('body').removeClass('loading');
+        	}
+      	});
+    	});
+  	</script>
 </head>
 <body>
 
@@ -30,7 +53,7 @@
 	            <h3><a href="product.html">PRODUCT</a></h3>
 	        </li>
 	        <li>
-	            <h3><a href="how.html">HOW IT WORKS</a></h3>
+	            <h3><a href="how.html">HOW TO ORDER</a></h3>
 	        </li>
 	        <li>
 	            <h3><a href="faq.html">FAQ</a></h3>
@@ -54,7 +77,7 @@
 			<ul class="menu">
 				<li><p><a href="index.html">HOME</a></p></li>
 				<li><p><a href="product.html">PRODUCT</a></p></li>
-				<li><p><a href="how.html">HOW IT WORKS</a></p></li>
+				<li><p><a href="how.html">HOW TO ORDER</a></p></li>
 				<li><p><a href="faq.html">FAQ</a></p></li>
 				<li><p><a href="contact.html">CONTACT US</a></p></li>
 			</ul>
@@ -68,12 +91,10 @@
 		</section>
 	</header>
 	<main class="main_content" id="Main_Contents">
-		<section class="main_banner">
+		<section class="main_banner banner_flexslider">
 			<div class="content_box">
-				<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
-				<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">THE REAL UNLIMITED <br>EASY-TO-USE POCKET Wi-Fi</h1>
-				<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
 				<form class="seach_box">
+					<p class="p_info">Get Internet Anywhere with The Most Competitive Price in Japan.</p>
 					<ul class="clearfix">
 						<li>
 							<input type="text" name="" placeholder="Where are you go?">
@@ -92,6 +113,34 @@
 					</ul>
 				</form>
 			</div>
+			<div class="flexslider">
+				<ul class="slides">
+					<li style="background-image: url(images/main_benner_01.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">4G UNLIMITED<br>POCKET WI-FI</h1>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/main_benner_02.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">MOST RECOMMENDED<br>BY TRAVELER</h1>
+							</div>
+						</div>
+					</li>
+					<li style="background-image: url(images/main_benner_03.jpg);">
+						<div class="info_box">
+							<div class="p_b">
+								<h2 class="sub_title wow fadeInDown">Enjoy your trip to Japan with</h2>
+								<h1 class="main_title wow fadeIn" data-wow-duration="2.0s">REAL-TIME<br>TRANSLATOR<br>FOR FREE</h1>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<section class="news_bar">
 			<div class="content_box clearfix">
@@ -103,34 +152,51 @@
 				</ul>
 			</div>
 		</section>
+		<section class="wifi_simcard_box">
+			<div class="content_box clearfix">
+				<div class="wifi_box wow fadeInLeft" data-wow-duration="2.0s">
+					<h3 class="top_title">Wi-Fi ROUTER</h3>
+					<img src="images/wifi_simcard_box_01.png" width="100%" alt="Wi-Fi ROUTER">
+					<p class="btn"><a href="product_01.html">CHECK OUT WI-FI ROUTER</a></p>
+				</div>
+				<div class="wifi_box wow fadeInRight" data-wow-duration="3.5s">
+					<h3 class="top_title">Prepaid SIM Card</h3>
+					<p class="p_info">Unlimited 4G / LTE data<br> communication during travel.</p>
+					<p class="sub_info">Japan unlimited 4G data sim</p>
+					<img src="images/wifi_simcard_box_02.png" width="100%" alt="Prepaid SIM Card">
+					<p class="btn"><a href="product_02.html">CHECK OUT WI-FI ROUTER</a></p>
+				</div>
+			</div>
+		</section>
 		<section class="why_rent_wifi_box">
 			<div class="content_box">
-				<h3 class="top_title wow fadeInDown " data-wow-duration="2.0s">Why Rent Pocket Wi-Fi?</h3>
+				<h3 class="top_title wow fadeInDown" data-wow-duration="2.0s">We get what you need!</h3>
 				<ul class="list clearfix">
 					<li>
+						<p class="sub_info">withOUT pocket wifi router</p>
 						<div class="info_box">
-							<h4 class="icon_01">FREE WiFi</h4>
-							<p>× UNSTABLE</p>
-							<p>× LOW SECURITY</p>
-							<p>× BAD CONNECTION</p>
+							<h4 class="icon_02">JAPAN ROAMING</h4>
+							<p>VERY STABLE</p>
+							<p>HIGH SECURITY</p>
+							<p>CONNECTED ANY WHERE</p>
 						</div>
 					</li>
 					<li>
+						<p class="sub_info">with pocket wifi router</p>
 						<div class="info_box">
-							<h4 class="icon_02">JAPAN ROAMING</h4>
-							<p>◎ VERY STABLE</p>
-							<p>◎ HIGH SECURITY</p>
-							<p>◎ CONNECTED ANY WHERE</p>
+							<h4 class="icon_01">FREE WiFi</h4>
+							<p>UNSTABLE</p>
+							<p>LOW SECURITY</p>
+							<p>BAD CONNECTION</p>
 						</div>
 					</li>
 				</ul>
-				<p class="btn wow fadeInUp" data-wow-duration="4.5s"><a href="#">EASY TO USE</a></p>
 			</div>
 		</section>
 		<section class="why_choose_wifi_box">
 			<div class="content_box">
-				<h3 class="top_title wow fadeInDown" data-wow-duration="2.0s">Why choose GO WiFi? </h3>
-				<p class="p_info">Most recommended by travelers!</p>
+				<h3 class="top_title wow fadeInDown" data-wow-duration="2.0s">With JAPAN ROAMING</h3>
+				<p class="p_info">You will experience the best product and service such as ...</p>
 				<ul class="advantage_list clearfix">
 					<li class="icon_01 wow fadeIn" data-wow-duration="2.5s">
 						<h4>REAL HIGH SPEED 4G LTE<br>STABLE INTERNET CONNECTION</h4>
@@ -145,21 +211,47 @@
 						<h4>LONG LASTING BATTERY<br>ALSO USED AS POWER BANK</h4>
 					</li>
 				</ul>
-				<p class="highlight"><a href="#"><span>FOR ONLY <span class="big">$8</span> PER DAY!</span></a></p>
-				<div class="now_box clearfix wow fadeInUp">
+				<p class="highlight wow fadeInDown" data-wow-duration="2.0s">
+					<a href="#"><span class="big">NOW ON SALE!</span>      <span class="s">From</span> $3.5 <span class="s">/ day</span></a>
+				</p>
+				<!-- <div class="now_box clearfix wow fadeInUp">
 					<p class="info">NOW ON SALE!! 0$/1day</p>
 					<p class="btn"><a href="#">EASY TO USE</a></p>
-				</div>
+				</div> -->
+			</div>
+		</section>
+		<section class="sale_event_box">
+			<div class="content_box">
+				<ul class="list clearfix">
+					<li class="event_01 wow fadeIn" data-wow-duration="2s">
+						<p class="info"><span>1-6</span> DAYs<br>
+						ONLY <span>$7</span> per day<br>
+						(780 yen / day)</p>
+						<p class="btn"><a href="#">BOOK NOW</a></p>
+					</li>
+					<li class="event_02 wow fadeIn" data-wow-duration="2.5s">
+						<p class="info"><span>7-15</span> DAYS<br>
+							From <span>$5.5</span> per day<br>
+							<span>Free Delivery!!</span></p>
+						<p class="btn"><a href="#">BOOK NOW</a></p>
+					</li>
+					<li class="event_03 wow fadeIn" data-wow-duration="3s">
+						<p class="info">OVER <span>16</span> DAYS<br>
+							From <span>$3.5</span> per day<br>
+							<span>Free Delivery!!</span></p>
+						<p class="btn"><a href="#">BOOK NOW</a></p>
+					</li>
+				</ul>
 			</div>
 		</section>
 		<section class="how_it_works_box">
 			<div class="content_box">
-				<h3 class="top_title wow fadeInDown " data-wow-duration="2.0s">HOW IT WORKS?</h3>
+				<h3 class="top_title wow fadeInDown " data-wow-duration="2.0s">HOW TO ORDER?</h3>
 				<ul class="step_box clearfix">
-					<li class="icon_01 wow fadeIn" data-wow-duration="2s"><p>1.Book on-line</p></li>
-					<li class="icon_02 wow fadeIn" data-wow-duration="2.5s"><p>2.Receive or pick up</p></li>
-					<li class="icon_03 wow fadeIn" data-wow-duration="3s"><p>3.Enjoy stable Internet everywhere</p></li>
-					<li class="icon_04 wow fadeIn" data-wow-duration="3.5s"><p>4.Return easily</p></li>
+					<li class="icon_01 wow fadeIn" data-wow-duration="2s"><p>Book on-line</p></li>
+					<li class="icon_02 wow fadeIn" data-wow-duration="2.5s"><p>Receive or pick-up</p></li>
+					<li class="icon_03 wow fadeIn" data-wow-duration="3s"><p>Enjoy stable Internet everywhere</p></li>
+					<li class="icon_04 wow fadeIn" data-wow-duration="3.5s"><p>Return easily</p></li>
 				</ul>
 				<p class="btn"><a href="#">MORE DETAIL</a></p>
 			</div>
@@ -238,16 +330,6 @@
 				</ul>
 			</div>
 		</section>
-		<section class="another_product_box">
-			<div class="content_box">
-				<a class="link" href="#">
-					<h4>Another Product</h4>
-					<h3 class="top_title">Unlimited 4G / LTE data<br>
-					communication during travel.</h3>
-					<p>Japan unlimited 4G data sim</p>
-				</a>
-			</div>
-		</section>
 		<section class="news_topics_box">
 			<div class="content_box">
 				<h3 class="top_title wow fadeInDown " data-wow-duration="2.0s">NEWS TOPICS</h3>
@@ -294,13 +376,13 @@
 				<ul class="menu">
 					<li><p><a href="index.html">HOME</a></p></li>
 					<li><p><a href="product.html">PRODUCT</a></p></li>
-					<li><p><a href="how.html">HOW IT WORKS</a></p></li>
+					<li><p><a href="how.html">HOW TO ORDER</a></p></li>
 					<li><p><a href="faq.html">FAQ</a></p></li>
 					<li><p><a href="contact.html">CONTACT US</a></p></li>
 				</ul>
 				<p class="logo"><a href="#"></a></p>
-				<p class="other_link"><a href="#">Privacy Policy</a> 　│　<a href="#">Terms of Service</a>　│　<a href="about.html">About Us</a></p>
-				<p class="copyright">© 2019 xxxxxxxxx,Inc.</p>
+				<p class="other_link"><a href="#">Privacy Policy</a> │　<a href="#">Terms of Service</a>　│　<a href="about.html">About Us</a></p>
+				<p class="copyright">© 2019 MaRGo International, Ltd.</p>
 			</div>
 		</section>
 	</footer>

@@ -41,5 +41,17 @@ $(function(){
 	return false;
 });
 
-
-
+// QA go
+$(function(){
+	$('.go_01').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_01').offset().top - 50}, 800); });
+	$('.go_02').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_02').offset().top - 50}, 800); });
+	$('.go_03').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_03').offset().top - 50}, 800); });
+	$('.go_04').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_04').offset().top - 50}, 800); });
+	$('.go_05').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_05').offset().top - 50}, 800); });
+	$('.go_06').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_06').offset().top - 50}, 800); });
+	$('.go_07').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_07').offset().top - 50}, 800); });
+	$('.go_08').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_08').offset().top - 50}, 800); });
+	$('.go_09').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_09').offset().top - 50}, 800); });
+	$('.go_10').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_10').offset().top - 50}, 800); });
+	return false;
+});
