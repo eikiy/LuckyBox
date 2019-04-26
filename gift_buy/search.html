@@ -14,44 +14,53 @@
 </head>
 <body>
 	<header class="header-box">
-		<div class="content-box clearfix">
-			<a href="index.html" class="home"></a>
-			<h3 class="title">抽獎序號/中獎查詢</h3>
-			<p class="btn"><a href="search.html">查詢</a></p>
+		<div class="content-box inside-box clearfix">
+			<a class="home" href="index.html" title="回首頁"></a>
+			<h3 class="title">抽獎序號 / 中獎資訊 查詢</h3>
 		</div>
 	</header>
 	<main class="main-box">
 		<section class="info-box form-box">
+			<ul class="day-select">
+				<li>
+					<input id="option" type="radio" name="field" value="2019-05-01 到 2019-07-31期 福袋" checked >
+					<label for="option">2019-05-01 到 2019-07-31期 福袋</label>
+				</li>
+				<!-- <li>
+					<input id="option" type="radio" name="field" value="">
+					<label for="option">2019-05-01 到 2019-07-31期 福袋</label>
+				</li> -->
+			</ul>
 			<div class="content-box">
 				<form>
 					<ul class="fillin">
 						<li>
-							<p>購買人姓名</p>
-							<input type="text" name="" value="阿哲 Kent " placeholder="請輸入購買人姓名">
+							<label for="name">購買人姓名</label>
+							<input id="name" type="text" name="" value="阿哲 Kent" placeholder="請輸入購買人姓名">
 						</li>
 						<li>
-							<p>購買人手機號碼</p>
-							<input type="text" name="" value=" " placeholder="請輸入購買人手機號碼">
+							<label for="phone">購買人手機號碼</label>
+							<input id="phone" type="text" name="" value="" placeholder="請輸入購買人手機號碼">
 						</li>
 						<li>
-							<p>驗證碼</p>
-							<input type="text" name="" value=" " placeholder="請輸入右方的4位數字">
+							<label for="code">驗證碼</label>
+							<input id="code" type="text" name="" value="" placeholder="請輸入右方的4位數字">
+							<div class="code-box"><img src="images/rand.png"></div>
 						</li>
 					</ul>
+					<input class="btn" type="submit" value="送出查詢">
 				</form>
-				<p class="btn"><a href="#">送出查詢</a></p>
 			</div>
 		</section>
-		<footer class="footer_box">
+		<footer class="footer_box none_pad">
 			<ul class="link clearfix">
-				<li><a href="#"><p class="icon_01">抽獎序號/<br>中獎查詢</p></a></li>
-				<li><a href="#"><p class="icon_02">facebook<br>粉絲團</p></a></li>
+				<li><a href="search.html"><p class="icon_01">抽獎序號/<br>中獎查詢</p></a></li>
+				<li><a href="#" target="_blank"><p class="icon_02">facebook<br>粉絲團</p></a></li>
 				<li><a href="#"><p class="icon_03">隱私權條款</p></a></li>
 			</ul>
 			<p class="Copyright">本活動由xx第三方⾒證<br>
 				© 2019 Copyright      客服電話 0800-000-000
 			</p>
-			<div class="btn_buy"><p><a><span>我要購買499福袋</span></a></p></div>
 		</footer>
 	</main>
 </body>
