@@ -23,6 +23,7 @@ a:hover{ text-decoration:none;}
 select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html, body{ height: 100%; }
+input { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 
 /*===== start ======*/
 body{ overflow-x: hidden; max-width: 600px; margin: 0 auto;}
@@ -100,8 +101,8 @@ p.btn a{ background-color: #ff8a00; height: 38px; line-height: 38px; color: #fff
 .footer_box{ width: 100%; background-color: #f0e4e5; padding-bottom: 70px; }
 .footer_box ul.link{ width: 100%;  text-align: center;padding:20px 15px; }
 .footer_box ul.link li{ display: inline-block; margin:  0 5px; vertical-align: top; }
-.footer_box ul.link li a{ width: 110px; height: 110px; display: inline-block;  border: 2px solid #fff; border-radius: 4px; }
-.footer_box ul.link li p{ font-size: 14px; line-height: 20px; height: 40px; font-weight: bold; position: relative; padding-top: 60px;}
+.footer_box ul.link li a{ width: 110px; height: 110px; display: inline-block;  border: 2px solid #fff; border-radius: 4px; background-color: rgba(255, 255, 255, 0.2);}
+.footer_box ul.link li p{ font-size: 14px; line-height: 20px; height: 40px; position: relative; padding-top: 60px;}
 .footer_box ul.link li p::after{ content: ""; top: 10px; left: calc(50% - 21px); position: absolute; width: 42px; height: 42px; display: block; background-repeat: no-repeat;  background-size: contain;  background-position: center center;}
 .footer_box ul.link li p.icon_01::after{ background-image: url(../images/link_icon_01.png); }
 .footer_box ul.link li p.icon_02::after{ background-image: url(../images/link_icon_02.png); }
@@ -138,11 +139,12 @@ a.go_top{ width: 46px; position: fixed; z-index: 5; bottom: 90px; right: 15px; h
 .form-box ul.fillin li.the_terms a.link{ font-size: 14px; position: absolute; top: 2px; right: 0; color: #039be5; text-decoration: underline; }
 .form-box ul.fillin li.the_terms a.link:hover{ text-decoration: none; }
 .form-box ul.fillin li.the_terms label{ font-size: 14px; font-weight: bold; color: #333; }
+.form-box ul.fillin li.the_terms input{padding: 0; height: 29px;}
 
 .form-box h3.from-title{ color: #ff8a00; text-align: left; font-size: 18px; padding-bottom: 20px; max-width: 328px; font-weight: bold; margin: 0 auto;}
 .form-box ul.pay li{ padding-bottom: 8px; }
 .form-box ul.pay li label{ font-size: 16px; font-weight: bold; color: #333; }
-.form-box ul.pay li input{ height: 40px; }
+.form-box ul.pay li input{ height: 29px; padding: 0; }
 
 .inside-box{ background-color: #ff8a00; }
 .inside-box h3.title{ text-align: center; color: #fff; float: none; }
@@ -159,7 +161,7 @@ a.go_top{ width: 46px; position: fixed; z-index: 5; bottom: 90px; right: 15px; h
 .shopping-cart-list .buy-list tr td p{ font-size: 15px; color: #333;}
 .shopping-cart-list .buy-list tr th, .shopping-cart-list .buy-list tr td{ border-top:1px solid #dcdcdc; }
 
-input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; height: 100%;  width : 100% !important;  margin: 0;  padding : 0; opacity : 0; cursor: pointer;}
+input[type=checkbox]:not(old), input[type=radio ]:not(old){ position: absolute; top: 0; left: 0; height: 100%;  width : 100% !important;  margin: 0;  padding : 0; opacity : 0; cursor: pointer;}
 input[type=checkbox]:not(old) + label{  display : inline-block;  padding-left : 30px; line-height : 24px; background : url('../images/checks.png') no-repeat 0 -48px;}
 input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
 input[type=radio]:not(old) + label{ cursor: pointer; display : inline-block;  padding-left : 30px; line-height : 24px;  background: url('../images/checks.png') no-repeat 0 3px;}
