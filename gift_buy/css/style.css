@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-@import url(animate.css);
 html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
 blockquote, q { quotes:none;}
@@ -118,7 +117,8 @@ p.btn a{ background-color: #ff8a00; height: 38px; line-height: 38px; color: #fff
 .footer_box .btn_buy p a span.icon_cart::after{ content: ""; position:  absolute; width:  43px; top:calc(50% - 23px); left:0; height: 46px; display: block; background: url(../images/icon_buy.png) center center no-repeat; background-size: contain; }
 .none_pad{ padding-bottom: 0; }
 
-a.go_top{ width: 46px; position: fixed; z-index: 5; bottom: 90px; right: 15px; height: 46px; display: block;background: url(../images/icon_top.png) center center no-repeat; background-size: contain; }
+a.go_top{ width: 46px; position: fixed; z-index: 5; opacity: 1; bottom: 90px; right: 15px; height: 46px; display: block;background: url(../images/icon_top.png) center center no-repeat; background-size: contain;  cursor: pointer;}
+.top_show{ opacity: 1; }
 
 .fb-box{ width: 100%; max-width: 500px; margin: 0 auto; }
 .form-box{ min-height: calc(100vh - 268px); }
@@ -131,7 +131,7 @@ a.go_top{ width: 46px; position: fixed; z-index: 5; bottom: 90px; right: 15px; h
 .form-box ul.fillin li{ padding-bottom: 20px; position: relative; }
 .form-box ul.fillin li .code-box{ width: 100px; height: 32px; position: absolute; top: calc(50% - 16px); right: 0px; }
 .form-box ul.fillin li label{ width: 100%; display: block; font-size: 13px; color: #828282; padding-bottom: 5px; }
-.form-box ul.fillin li input{ width: 100%; height: 50px; font-size: 16px; padding: 10px 0; color: #333; border-bottom: #e1e1e1 solid 1px; }
+.form-box ul.fillin li input{ width: 100%; height: 50px; font-size: 16px; padding: 10px 0; border-radius: 0; color: #333; border-bottom: #e1e1e1 solid 1px; }
 .form-box ul.fillin li input::placeholder{ color: #a9a9a9; }
 .form-box ::-webkit-input-placeholder, .form-box input::-moz-placeholder, .form-box input::-moz-placeholder, .form-box:-ms-input-placeholder{color: red;}
 .form-box ul.fillin li input:focus{ border-color: #ff8a00; }
@@ -167,6 +167,20 @@ input[type=checkbox]:not(old):checked + label{ background-position : 0 -73px;}
 input[type=radio]:not(old) + label{ cursor: pointer; display : inline-block;  padding-left : 30px; line-height : 24px;  background: url('../images/checks.png') no-repeat 0 3px;}
 input[type=radio]:not(old):checked + label{ background-position : 0 -22px;}
 
+.go_order{ z-index: 15; height: 100vh; background-color: rgba(0,0,0,0.25); display: none; }
+.go_order .buy_list{width: 100%; background-color: #fff; padding: 20px 15px; position: relative;}
+.go_order .buy_list ul{ width: 100%; }
+.go_order .buy_list ul li{ padding: 10px 0; }
+.go_order .buy_list ul li .title{ width:calc(100% - 128px); float: left; position: relative; padding-top: 5px}
+.go_order .buy_list ul li .title label{ font-size: 17px; }
+
+.go_order .fix{ position: fixed;bottom: 0; width: 100%; max-width: 600px;}
+.go_order .buy_list .btn_close{ width: 46px; position: absolute; z-index: 5; opacity: 1; bottom: 130px; right: 15px; height: 46px; display: block;background: url(../images/btn_close.png) center center no-repeat; background-size: contain;  cursor: pointer;}
+.go_order .buy_list .right_nb{ float: left; }
+.go_order .buy_list .right_nb .input_quantity{border:1px solid #dddddd;  border-radius: 4px; height: 35px;}
+.go_order .buy_list .right_nb .input_quantity button{ cursor: pointer; float: left; width:35px; height: 33px; line-height: 33px; font-size: 16px; background-color: #fff; color: #b8b8b8;}
+.go_order .buy_list .right_nb .input_quantity button:hover{ color: #e39a9a; }
+.go_order .buy_list .right_nb .input_quantity input{ float: left; width: 50px; text-align: center; height: 33px; font-size: 16px; line-height: 29px; padding: 2px 5px; border:1px solid #dddddd; border-width: 0 1px 0 1px;}
 
 @media (max-width:599px){
 	.info-box h1.manin-titl, .shopping-cart-list h1.title{ max-width: 280px; }

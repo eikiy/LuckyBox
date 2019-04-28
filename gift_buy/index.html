@@ -18,17 +18,31 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="js/goto.js"></script>
-	<script type="text/javascript">
-		$("#getting-started")
-		  .countdown("2020/01/01", function(event) {
-		    $(this).text(
-		      event.strftime('%D days %H:%M:%S')
-		    );
-		  });
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.flipcountdown.css" />
+	<script type="text/javascript" src="js/jquery.flipcountdown.js"></script>
+	<script>
+		$(function(){
+		
+			var NY = Math.round((new Date('6/01/2019 00:00:01')).getTime()/1000);
+			$('#retroclockbox1').flipcountdown({
+				tick:function(){
+					var nol = function(h){
+						return h>9?h:'0'+h;
+					}
+					var	range  	= NY-Math.round((new Date()).getTime()/1000),
+						secday = 86400, sechour = 3600,
+						days 	= parseInt(range/secday),
+						hours	= parseInt((range%secday)/sechour),
+						min		= parseInt(((range%secday)%sechour)/60),
+						sec		= ((range%secday)%sechour)%60;
+					return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
+				}
+			});
+		});
 	</script>
+
 </head>
 <body>
 
@@ -44,14 +58,14 @@
 	</script>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2&appId=227613341408803&autoLogAppEvents=1"></script>
 
-	<header class="header-box">
+	<header class="header-box" id="header-box">
 		<div class="content-box clearfix">
 			<h3 class="title">抽獎序號/中獎查詢</h3>
 			<p class="btn"><a href="search.html">查詢</a></p>
 		</div>
 	</header>
 	<main class="main-box">
-		<section class="info-box">
+		<section class="info-box" id="info-box">
 			<img src="images/img_800x1000.jpg"  alt="" width="100%">
 			<div class="content-box">
 				<h1 class="manin-title">499元福袋送⾏充電源 or 無線充電盤(擇⼀)</h1>
@@ -84,7 +98,20 @@
 				</ul>
 				<p class="p-info">超高中獎率！<br>錯過不再！名錶、名包屬於你！</p>
 				<div class="time-box"><!-- 時間倒數欄位 -->
-					<div data-countdown="2016/01/01"></div>
+					<table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+						<tr>
+							<td colspan="4" align="center">
+								<div id="retroclockbox1" style="display: inline-block;"></div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width:80px;text-align:center;">天</td>
+							<td style="width:80px;text-align:center;">時</td>
+							<td style="width:80px;text-align:center;">分</td>
+							<td style="width:80px;text-align:center;">秒</td>
+						</tr>
+					</table>
+					
 				</div>
 				<p class="p-info">
 					<span class="c-org f-size-l">晶華50週年⽣⽇快樂！</span><br>
@@ -230,8 +257,44 @@
 			<p class="Copyright">本活動由xx第三方⾒證<br>
 				© 2019 Copyright      客服電話 0800-000-000
 			</p>
-			<a href="#" class="go_top"></a>
-			<div class="btn_buy"><p><a><span class="icon_cart">我要購買499福袋</span></a></p></div>
+			<a class="go_top"></a>
+			<div class="btn_buy" id="show_order"><p><a><span class="icon_cart">我要購買499福袋</span></a></p></div>
+			<div class="btn_buy go_order" id="go_order">
+				<div class="fix">
+					<div class="buy_list">
+						<a class="btn_close"></a>
+						<ul>
+							<li class="clearfix">
+								<div class="title">
+									<input id="buy-a" type="radio" name="pay-list" value=">499元福袋送⾏充電源-快速付款">
+									<label for="buy-a">499元福袋送⾏充電源</label>
+								</div>
+								<div class="right_nb">
+									<div class="input_quantity">
+			                            <button>–</button>
+			                            <input type="text" name="" value="1">
+			                            <button>+</button>
+			                        </div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="title">
+									<input id="buy-b" type="radio" name="pay-list" value="499元福袋送無線充電盤" checked="">
+									<label for="buy-b">499元福袋送無線充電盤</label>
+								</div>
+								<div class="right_nb">
+									<div class="input_quantity">
+			                            <button>–</button>
+			                            <input type="text" name="" value="1">
+			                            <button>+</button>
+			                        </div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				<p><a href="cart.html"><span>前往結帳</span></a></p>
+				</div>
+			</div>
 		</footer>
 	</main>
 </body>
