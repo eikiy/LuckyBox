@@ -284,7 +284,7 @@ p.social_box a:hover{ background-color: #fff; }
 .FooterBox p.social_box a:hover{ background-color: #d1ab1b;}
 
 /*fixed right menu*/
-.fixed_go_menu{ position: fixed; right: 5%; bottom:calc(50% - 257px); z-index: 16; animation: slideup 2s; -moz-animation: slideup 2s; -webkit-animation: slideup 2s;  -o-animation: slideup 2s;}
+.fixed_go_menu{ position: fixed; right: 5%; bottom:calc(50% - 257px); display: none; z-index: 16; animation: slideup 2s; -moz-animation: slideup 2s; -webkit-animation: slideup 2s;  -o-animation: slideup 2s;}
 .fixed_go_menu p.link{ color: #fff; text-align: center; font-size: 13px; background-color: #927400; border:2px solid #775e00; }
 .fixed_go_menu p.link a{ width:85px; height: 85px; color: #fff; display: block; padding-top: 68%; border-bottom: 2px solid #775e00; position: relative; cursor: pointer; }
 .fixed_go_menu p.link a:last-child{ border-bottom: none; }
