@@ -62,4 +62,19 @@ $(function(){
 // });
 
 
+$(function(){
+　$(window).load(function(){
+　　$(window).bind('scroll resize', function(){
+　　var $this = $(this);
+　　var $this_Top=$this.scrollTop();
+　　//當高度大於
+　　if($this_Top > 400){
+  $('.fixed_go_menu').fadeIn();
+　　　}
+　　　　if($this_Top < 400){
+　　　　$('.fixed_go_menu').fadeOut();
+　　　 }
+　　}).scroll();
+　});
+});
 
