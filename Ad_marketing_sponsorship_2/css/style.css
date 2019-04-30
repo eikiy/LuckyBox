@@ -40,6 +40,7 @@ html, body{ height: 100%; }
 .contact-us-box h3 span.yellow{color: #ffeb3b; padding: 5px 10px; border:2px solid #ffeb3b; display: inline-block; margin-top: 15px;text-shadow: none; }
 .contact-us-box h3.title { display: inline-block; float: left; text-align: left; font-size: 16px; position: relative; }
 .contact-us-box h3.title span.big{ font-size: 28px; }
+.contact-us-box h3.title span.green{font-weight: bold; color: #009688;}
 .contact-us-box p.sub_title{  padding: 12px 0; font-size: 17px; line-height: 28px; letter-spacing: 1px;}
 
 .contact-us-box p.btn { float: right; width: 100%; font-size: 18px; margin: 15px 0; cursor: pointer;}
@@ -210,6 +211,8 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 
 @media (max-width:400px){
   .contact-us-box h3.title{ font-size: 13.5px;}
+  .free_service ul.tags li{width: 80%;}
+  .question-box input.tbox, .question-box textarea.tbox{padding-left: 40px;}
 }
 @media (max-width:350px){
   .contact-us-box .main-box h1{ height: 35px; }
