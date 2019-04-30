@@ -149,8 +149,8 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 
 .from-box{ background-color: #9e9e9e2b; padding: 40px 0; text-align: center; }
 
-@media (max-width:1200px){
-  .contents-box{max-width: 90%;}
+@media (max-width:1220px){
+  .contents-box{ max-width: 90%;}
   ul.plan li{ width: 47%; }
 }
 @media (max-width:1000px){
@@ -204,7 +204,7 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 @media (max-width:500px){
   .free_service ul.tags li p{padding: 7px 14px; font-size: 11.6px;}
   .contact-us-box .main-box{ background-image: url(../images/bg_00_s.jpg); background-position: center top;}
-  .contact-us-box h3.title{ padding-top: 30vh; text-align: center; }
+  .contact-us-box h3.title{ padding-top: 30vh; }
   .contact-us-box h3.title span.block{ display: inline-block; }
 }
 
