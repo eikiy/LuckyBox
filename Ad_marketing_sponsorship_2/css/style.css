@@ -21,28 +21,28 @@ a:hover{ text-decoration:none;}
 select, input, textarea, button  {font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html, body{ height: 100%; }
+body{ background-color: #d9d9d9;}
 
 /*START*/
 .contents-box{ width: 100%; max-width: 1170px; margin: 0 auto;}
 
 .contact-us-box{ width: 100%; display: block;  }
-.contact-us-box .main-box{ width: 100%;  padding: 40px 0 60px 0; min-height:calc(100vh - 160px); display: block;background: url(../images/bg_00.jpg) center center no-repeat; background-size: cover; background-attachment: fixed; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.contact-us-box .main-box{ width: 100%;  padding: 40px 0 60px 0; min-height:400px; height:100vh; background: url(../images/bg_00.jpg) center center no-repeat; background-size: cover; background-attachment: fixed; display: block; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .contact-us-box .main-box p.sub_title{ color: #fff; font-size: 18px; text-shadow: 0 0 10px rgba(0,0,0,.3), 0 5px 8px rgba(0,0,0,.3);}
 .contact-us-box .main-box h4.title{ font-size: 18px; color: #ff9f37; text-shadow: 0 0 10px rgba(0,0,0,.3), 0 5px 8px rgba(0,0,0,.3); }
 .contact-us-box .main-box h4.title::after{ display: none;}
 
-.contact-us-box .info{ padding-bottom: 40px; margin: 0 auto;}
-.contact-us-box .info h1{ width:100%; max-width: 150px; height: 50px; text-indent: -9999px; }
-.contact-us-box .info h1 a{ width: 100%; height: 100%; display: block; background:url(../images/logo.png) center center no-repeat;  background-size: contain;}
+.contact-us-box .info{ margin: 0 auto; width: 100%;}
+.contact-us-box .info h1{ width:100%;/* max-width: 150px;*/ height: 50px; }
+.contact-us-box .info h1 a{ width: 100%; height: 100%; display: block; background:url(../images/logo.png) center right no-repeat;  background-size: contain; text-indent: -9999px; color: transparent;}
 .contact-us-box .info h1 a:hover{ opacity: .9; }
-.contact-us-box .info h2{ text-align: left; font-family: "\5FAE\8F6F\96C5\9ED1",STXihei,sans-serif;position: relative; font-weight: 600; font-size: 35px; line-height: 70px; }
-.contact-us-box h3{ line-height: 36px; color: #333; font-size: 24px; text-shadow: none; text-align: center;}
+.contact-us-box .info h2{ text-align: right; color: #fff; font-family: "\5FAE\8F6F\96C5\9ED1",STXihei,sans-serif;position: relative; font-weight: 600; font-size: 35px; line-height: 70px; }
+.contact-us-box h3{ line-height: 36px; color: #333; padding: 0 20px; font-size: 24px; text-shadow: none; text-align: left;}
 .contact-us-box h3 span.yellow{color: #ffeb3b; padding: 5px 10px; border:2px solid #ffeb3b; display: inline-block; margin-top: 15px;text-shadow: none; }
 .contact-us-box h3.title { display: inline-block; float: left; text-align: left; font-size: 16px; position: relative; }
 .contact-us-box h3.title span.big{ font-size: 28px; }
 .contact-us-box h3.title span.green{font-weight: bold; color: #009688;}
 .contact-us-box p.sub_title{  padding: 12px 0; font-size: 17px; line-height: 28px; letter-spacing: 1px;}
-
 .contact-us-box p.btn { float: right; width: 100%; font-size: 18px; margin: 15px 0; cursor: pointer;}
 .contact-us-box p.btn a{ width: 100%; max-width: 280px; background-color: #f42c37; color: #fff; padding: 18px 26px; border-radius: 4px; display: inline-block; box-shadow: 0 4px 0px #b6121f;}
 .contact-us-box p.btn a:hover{background-color: #ff0f0f;}
@@ -72,26 +72,26 @@ html, body{ height: 100%; }
 .question-box textarea.tbox{ min-height: 120px; }
 
 .main-text-box{ width: 100%;}
-.main-text-box .abox{ float:left; padding:15px 20px; min-height: 160px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.main-text-box .lbox{ background-color: #333; width: 35%; text-align: right;}
+.main-text-box .abox{ float:left; padding:15px 20px; min-height: 190px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.main-text-box .lbox{ background-color: #333; width: 35%; text-align: right; padding:15px 30px;}
 .main-text-box .lbox span{ font-size: 28px; }
 .main-text-box .lbox p{ width: 100%; }
 .main-text-box .rbox{ background-color: #009688; width: 65%; justify-content: left; }
 .main-text-box .rbox span{ color: #fcff3b; cursor: pointer; font-size: 24px; display: block; border:2px solid #fcff3b; padding:12px 20px; border-radius: 8px; }
 .main-text-box .rbox span:hover{ background-color: #fcff3b; color: #009688; }
 
-.main-text-box p{ color: #fff; font-size: 18px; /*width: 100%; */}
+.main-text-box p{ color: #fff; font-size: 18px;}
 .main-text-box .rbox .lb{ float: left; padding-left: 20px; }
 .main-text-box .rbox .rb{ float: right; min-height: 102px; width: 280px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .main-text-box .rbox-w{ width: 100%; height: 100%; max-width: 760px;}
 
-.free_service{padding: 40px 0;}
-.free_service ul.tags{ text-align: center; max-width: 800px; padding: 30px 0; margin: 0 auto; }
+.free_service{ padding: 40px 0; background-color: rgba(256,256,256,.8);}
+.free_service ul.tags{ text-align: left; padding: 30px 0; margin: 0 auto; }
 .free_service ul.tags li{ display: inline-block; margin: 5px; }
 .free_service ul.tags li p{padding: 10px 25px; border-radius: 50px; letter-spacing: 1px; font-size: 14px; border:1px solid #d7d7d7; background-color: #cbdcb6;}
 
 ul.plan{ width: 100%; padding:40px 0 20px 0; text-align: left; }
-ul.plan li{ width: 30%; margin: 0 1.5% 15px 1.5%; max-width: 500px; float: left; background-color: #fff; border-radius: 10px; /*overflow: hidden;*/ position: relative; }
+ul.plan li{ width: 30%; margin: 0 1.5% 15px 1.5%; max-width: 500px; float: left; background-color: #fff; border-radius: 10px; position: relative; }
 ul.plan li h4.top_title{ width: 100%; background-color: #009688; text-align: center; color: #fff; padding: 15px 10px; font-size: 20px; position: relative; padding-top: 80px;padding-bottom: 20px; border-radius: 10px 10px 0 0;}
 ul.plan li h4.top_title::after{ content: ""; position: absolute; font-family: 'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-size: 34px; width: 100%; text-align:center; display: inline-block; top: 15px; left: 0; line-height: 60px; color: #fff; font-weight: bold; }
 ul.plan li h4.top_title span{ font-size: 18px; padding-top: 10px; color: #fcff3b; display: inline-block; }
@@ -148,7 +148,8 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 .copyrights{ width: 100%; padding:30px 0; background-color: #333;}
 .copyrights p{ text-align: center; color: #fff;  letter-spacing: 1px; line-height: 35px; font-size: 13px; }
 
-.from-box{ background-color: #9e9e9e2b; padding: 40px 0; text-align: center; }
+.from-box{ padding: 40px 0; text-align: center; background-color: #e9e9e9; }
+.contact-us-box .from-box h3{ text-align: center; }
 
 @media (max-width:1220px){
   .contents-box{ max-width: 90%;}
@@ -165,10 +166,13 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 }
 @media (max-width:800px){
   .contact-us-box .main-box{ min-height: initial; background-image: url(../images/bg_00_m.jpg); background-attachment: inherit; }
+  .contact-us-box h3{ text-align: center; padding: 0;}
   .contact-us-box h3.title span.block{ display: block; }
   .contact-us-box h3.title span.none{ display: none; }
-  .contact-us-box .info h1{margin: 0 auto;}
-  .contact-us-box .info h2{ text-align: center; }
+  .free_service ul.tags{text-align: center;}
+  .contact-us-box .info h1{margin: 0 auto; margin-bottom: 5px;}
+  .contact-us-box .info h1 a{ background-position: center center; }
+  .contact-us-box .info h2{ text-align: center; line-height: 48px; }
 }
 @media (max-width:750px){
   .question-box ul.fillinBox{max-width: 100%;}
