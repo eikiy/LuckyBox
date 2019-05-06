@@ -174,7 +174,14 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 	.the_productbox .products_box .right_info ul.products_list li .product_info h3.product_title{ font-size: 14px; }
 	.fadebox input{ font-size: 14px; }
 	.bottom_manager_tools{ text-align: left;}
-	.bottom_manager_tools p.btn a.delete_manager{ font-size: 14px; }
+	.bottom_manager_tools p.btn{ font-size: 14px; }
+}
+@media (max-width:400px){
+	.bottom_manager_tools p.btn{ font-size: 13px; }
+	.bottom_manager_tools p.btn:first-child{ margin-right: 5px; }
+	.bottom_manager_tools p.btn a{ padding: 8px 10px;}
+	.manager_list h3.user_id{ font-size: 14px; }
+	.manager_list p.phone{ font-size: 13px; }
 }
 @media (max-width:370px){
 	.the_productbox .top_tool{padding-top: 0; padding-bottom: 10px;}

@@ -166,8 +166,22 @@
 			</ul>
 		</section>
 
-		<!-- 產生商店管理員綁定碼 -->
+		<!-- 產生綁定密碼 -->
 	    <div id="add_manager_pw" class="modal fade fadebox">
+	    	<div class="new_manager_pw">
+	    		<h3 class="top_title">產生綁定密碼</h3>
+	    		<div class="infobox">
+	    			<p>其他管理員將雍有和您一樣的權限，確定要繼續?</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">關閉</a>
+	    		<a class="btn c_org" href="#add_manager_pw-2" rel="modal:open">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 產生商店管理員綁定碼 -->
+	    <div id="add_manager_pw-2" class="modal fade fadebox">
 	    	<div class="new_manager_pw">
 	    		<h3 class="top_title">產生商店管理員綁定碼</h3>
 	    		<input type="text" name=""value="n896i">
@@ -178,6 +192,7 @@
 	    		<a class="btn c_org copy" href="#">複製綁定碼</a>
 	  		</div>
 	    </div>
+
 	    <!-- 刪除管理員 -->
 	    <div id="delete_manager" class="modal fade fadebox">
 	    	<div class="add_new">
