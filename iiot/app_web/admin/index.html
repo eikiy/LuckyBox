@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+
+
+    <script type="text/javascript">
+     // setting_tools 菜單功能
+     $(function(){
+	  $("a.btn_setting").click(function(){
+	        $(this).next("ul.setting_tools").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+	 // products_tools 商品功能
+	 $(function(){
+	  $("a.more_function").click(function(){
+	        $(this).next("ul.products_tools").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+	</script>
+</head>
+<body>
+	<main class="mainbox">
+		<section class="top_box">
+			<div class="content_box">
+				<ul class="top_type">
+					<li class="btn_in"><p>商品管理</p></li>
+					<li><p>商店管理員</p></li>
+				</ul>
+				<div class="btn_swtich clearfix">
+                    <p class="open">營業狀態</p>
+                    <div class="swtich_type">
+                    	<input type="checkbox" id="swtich"><label class="button" for="swtich"></label>
+                    </div>
+                </div>
+			</div>
+		</section>
+		<section class="the_productbox">
+			<div class="top_tool">
+				<div class="content_box clearfix">
+					<div class="selectbox clearfix">
+						<!-- 設為此菜單使用中，class + "use" 前方星號變黃色 -->
+						<p class="use"><i class="fas fa-star"></i> 菜單</p>
+						<div class="styled-select">
+	                        <select class="md-input">
+	                            <option value="0" selected="selected">早餐菜單</option>
+	                            <option value="1">午餐菜單</option>
+	                            <option value="2">晚餐菜單</option>
+	                        </select>
+	                    </div>
+	                </div>
+	                <a class="btn_setting"><i class="fas fa-cog"></i></a>
+                    <ul class="setting_tools">
+                        <li><p><a href="#the_notice" rel="modal:open">設為使用中</a></p></li>
+                        <li><p><a href="#delete_menu" rel="modal:open">刪除菜單</a></p></li>
+                        <li><p><a href="#change_menu_name" rel="modal:open">重新命名</a></p></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="products_box">
+				<div class="left_menu">
+					<div class="category_name">
+						<ul class="list">
+							<li><p>尚未分類</p></li>
+							<li><p>最多顯示的字最多顯示的字最多顯示的字最多顯示的字</p></li>
+							<li class="btn_in"><p>Category2最多顯示的字</p></li>
+							<li><p>Category3 最多顯示的字最多顯示的字</p></li>
+							<li><p>Category4</p></li>
+							<li><p>Category5</p></li>
+							<li><p>Category6</p></li>
+							<li><p>Category7</p></li>
+							<li><p>Category8</p></li>
+							<li><p>Category9</p></li>
+							<li><p>Category10</p></li>
+							<li><p>Category11</p></li>
+							<li><p>Category12</p></li>
+						</ul>
+					</div>
+					<ul class="bottom_tools clearfix">
+						<li><a href="#add_category" rel="modal:open"><i class="fas fa-plus"></i></a></li>
+						<li><a href="#category_tools" rel="modal:open"><i class="fas fa-list"></i></a></li>
+					</ul>
+				</div>
+				<div class="right_info">
+					<div class="top_title_box">
+						<h2>Category2</h2>
+						<a class="more_function"><i class="fas fa-ellipsis-v"></i></a>
+						<ul class="products_tools">
+	                        <li><p><a href="#move_other_category" rel="modal:open">移至其他分類</a></p></li>
+	                        <li><p><a href="#change_product_info" rel="modal:open">編輯商品內容</a></p></li><!-- 選一個才會出現 或是 出現多個商品 一起修改?? -->
+	                        <li><p><a href="#delete_product" rel="modal:open">刪除商品</a></p></li>
+	                    </ul>
+					</div>
+					<ul class="products_list clearfix">
+						<li class="the_selected clearfix"> <!-- 點選材增加 the_selected 邊框顏色--> <!-- 要幫我寫選取到 >< -->
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品AAA</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品BBB</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- 通知 -->
+	    <div id="the_notice" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">設為使用中</h3>
+	    		<div class="infobox">
+	    			<p>已將<span class="green">「早餐菜單」</span>菜單設為使用中。</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+		<!-- 重新命名 -->
+	    <div id="change_menu_name" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">重新命名</h3>
+	    		<input type="text" name="" placeholder="請輸入菜單名稱" value="早餐菜單">
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 刪除菜單 -->
+	    <div id="delete_menu" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">刪除菜單</h3>
+	    		<div class="infobox">
+	    			<p>確認刪除<span>「早餐菜單」</span>？</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 刪除商品 -->
+	    <div id="delete_product" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">刪除商品</h3>
+	    		<div class="infobox">
+	    			<p>確認刪除<span>「產品AAA」「產品BBB」</span>？</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 移至其他分類 -->
+	    <div id="move_other_category" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">移至其他分類</h3>
+	    		<div class="styled-select">
+	    			<select class="md-input">
+	    				<option value="0" selected="selected">請選擇分類項目</option>
+	    				<option value="1">最多顯示的字最多顯示的字最多顯示的字最多顯示的字</option>
+	    				<option value="2">Category2最多顯示的字</option>
+	    				<option value="3">Category3最多顯示的字最多顯示的字</option>
+	    				<option value="4">Category4</option>
+	    			</select>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 編輯商品內容 -->
+	    <div id="change_product_info" class="modal fade fadebox">
+	    	<div class="the_product_info">
+	    		<h3 class="top_title">編輯商品內容</h3>
+	    		<ul>
+	    			<li>
+	    				<input type="text" name="" placeholder="請輸入商品名稱" value="產品AAA">
+	    				<textarea type="text" placeholder="請輸入商品說明" >產品AAA產品AAA產品AAA 針對商品描述的描述針對商品描述的描述...</textarea>
+	    				<input type="text" name="" placeholder="請輸入商品金額" value="129">
+	    			</li>
+	    			<li>
+	    				<input type="text" name="" placeholder="請輸入商品名稱" value="產品BBB">
+	    				<textarea type="text" placeholder="請輸入商品說明" >產品BBB 針對商品描述的描述針對商品描述的描述...</textarea>
+	    				<input type="text" name="" placeholder="請輸入商品金額" value="129">
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	  		</div>
+	    </div>
+
+	    <!-- 新增類別 -->
+	    <div id="add_category" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">新增類別</h3>
+	    		<input type="text" name="" placeholder="請輸入名稱">
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">新增</a>
+	  		</div>
+	    </div>
+
+	    <!-- 列表功能 -->
+	    <div id="category_tools" class="modal fade fadebox">
+	    	<div class="category_list">
+	    		<h3 class="top_title">類別項目修改</h3>
+	    		<ul class="list">
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="最多顯示的字最多顯示的字最多顯示的字最多顯示的字">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix" class="clearfix" class="clearfix" class="clearfix">
+	    				<input type="text" name="" value="Category2最多顯示的字">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix" class="clearfix" class="clearfix">
+	    				<input type="text" name="" value="Category3 最多顯示的字最多顯示的字">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix" class="clearfix">
+	    				<input type="text" name="" value="Category4">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="Category5">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="Category6">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="Category7">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix" class="clearfix">
+	    				<input type="text" name="" value="Category4">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="Category5">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="Category6">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<input type="text" name="" value="Category7">
+	    				<div class="sequence">
+	    					<a href=""><i class="fas fa-long-arrow-alt-up"></i></a>
+	    					<a href=""><i class="fas fa-long-arrow-alt-down"></i></a>
+	    				</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	  		</div>
+	    </div>
+	</main>
+</body>
+</html>
+
+
+
