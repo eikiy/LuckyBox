@@ -110,7 +110,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .fadebox .infobox{ background-color: #f0f0f0; padding: 15px; border-radius: 8px;}
 .fadebox .infobox p span{ color: #e85718; }
 .fadebox .infobox p span.green{color: #07b648; }
-.fadebox .styled-select{ height: 41px; width: 100%; background-color: #f0f0f0; border-radius: 50px; background: url(../images/icon_arr.png) center right no-repeat; background-size: contain;}
+.fadebox .styled-select{ height: 41px; width: 100%; border-radius: 50px; background: url(../images/icon_arr.png) center right no-repeat #f0f0f0; background-size: contain;}
 .fadebox .styled-select select{ padding: 0 20px; font-size: 16px; color: #333;  width: calc(100% - 20px); height: 41px; line-height: 41px; background: none; }
 .fadebox .the_product_info input, .fadebox .the_product_info textarea{ text-align: left; max-width: initial; }
 .fadebox .the_product_info ul li{ padding: 15px 0; border-bottom: 1px solid #b6b6b6; }
