@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+
+    <script type="text/javascript">
+     // setting_tools 菜單功能
+     $(function(){
+	  $("a.btn_setting").click(function(){
+	        $(this).next("ul.setting_tools").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+
+	 // products_tools 商品功能
+	 $(function(){
+	  $("a.more_function").click(function(){
+	        $(this).next("ul.products_tools").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+
+	 //選商品做設定
+	$(function(){
+		$(".manager_list ul.list li" ).click(function() {
+			$(this).toggleClass( "the_selected" );
+			return false;
+		});
+	});
+	</script>
+</head>
+<body>
+	<main class="mainbox">
+		<section class="top_box for_fixed">
+			<div class="content_box">
+				<ul class="top_type">
+					<li><p><a href="index.html">商品管理</a></p></li>
+					<li class="btn_in"><p>商店管理員</p></li>
+				</ul>
+				<div class="btn_swtich clearfix">
+                    <p class="open">營業狀態</p>
+                    <div class="swtich_type">
+                    	<input type="checkbox" id="swtich"><label class="button" for="swtich"></label>
+                    </div>
+                </div>
+			</div>
+		</section>
+		<section class="bottom_manager_tools clearfix">
+			<p class="btn"><a href="#add_manager_pw" rel="modal:open"><i class="fas fa-user-plus"></i> 產生商店管理員綁定碼</a></p>
+			<p class="btn"><a class="delete_manager" href="#delete_manager" rel="modal:open"><i class="far fa-trash-alt"></i> 移除管理員</a></p>
+		</section>
+		<section class="manager_list">
+			<ul class="list clearfix">
+				<li class="clearfix">
+					<h3 class="user_id">Pin Chen</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Eikiy Chang</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Elsa</h3>
+					<p class="phone">+886 988000568</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">linda yu</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">stella</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">gina12839</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Pin Chen</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Eikiy Chang</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Elsa</h3>
+					<p class="phone">+886 988000568</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">linda yu</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">stella</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">gina12839</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Pin Chen</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Eikiy Chang</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">不知道最長的名稱顯示為多長長長</h3>
+					<p class="phone">+886 988000568</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">linda yu</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">stella</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">gina12839</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Pin Chen</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Eikiy Chang</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">Elsa</h3>
+					<p class="phone">+886 988000568</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">linda yu</h3>
+					<p class="phone">+886 988000000</p>
+				</li>
+				<li class="clearfix">
+					<h3 class="user_id">stella</h3>
+					<p class="phone">+886 932999999</p>
+				</li>
+			</ul>
+		</section>
+
+		<!-- 產生商店管理員綁定碼 -->
+	    <div id="add_manager_pw" class="modal fade fadebox">
+	    	<div class="new_manager_pw">
+	    		<h3 class="top_title">產生商店管理員綁定碼</h3>
+	    		<input type="text" name=""value="n896i">
+	    		<p class="note">綁定碼將於<span>五分鐘後失效</span>，請儘速使用。</p>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">關閉</a>
+	    		<a class="btn c_org copy" href="#">複製綁定碼</a>
+	  		</div>
+	    </div>
+	    <!-- 刪除管理員 -->
+	    <div id="delete_manager" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">移除管理員</h3>
+	    		<div class="infobox">
+	    			<p>確認要移除<span>「linda yu」「Pin Chen」</span>？</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+	</main>
+</body>
+</html>
+
+
+
