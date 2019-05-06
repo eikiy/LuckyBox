@@ -23,7 +23,6 @@
     	.modal{box-shadow: 0 0 10px #0009;}
     </style>
 
-
     <script type="text/javascript">
      // setting_tools 菜單功能
      $(function(){
@@ -32,6 +31,7 @@
 	    return false;
 	    });
 	 });
+
 	 // products_tools 商品功能
 	 $(function(){
 	  $("a.more_function").click(function(){
@@ -39,6 +39,14 @@
 	    return false;
 	    });
 	 });
+
+	 //選商品做設定
+	$(function(){
+		$("ul.products_list li" ).click(function() {
+			$(this).toggleClass( "the_selected" );
+			return false;
+		});
+	});
 	</script>
 </head>
 <body>
@@ -114,7 +122,7 @@
 	                    </ul>
 					</div>
 					<ul class="products_list clearfix">
-						<li class="the_selected clearfix"> <!-- 點選材增加 the_selected 邊框顏色--> <!-- 要幫我寫選取到 >< -->
+						<li class="clearfix"> <!-- 點選材增加 the_selected 邊框顏色--> <!-- 要幫我寫選取到 >< -->
 							<div class="photo"></div>
 							<div class="product_info">
 								<h3 class="product_title">產品AAA</h3>
