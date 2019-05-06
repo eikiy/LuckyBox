@@ -23,7 +23,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正�
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html, body{ height: 100%; }
 input { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
-
+select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-appearance:none;}
 /*===== start ======*/
 /*body{ overflow-x: hidden; max-width: 600px; margin: 0 auto;}
 */
@@ -53,7 +53,7 @@ input { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .the_productbox .top_tool .selectbox{ border-radius: 50px; float: left; width: 100%; max-width: calc(100% - 55px); background-color: #fff; }
 .the_productbox .top_tool .selectbox p{ float: left; background-color: #e85718; color: #fff; height: 40px; padding: 10px 18px 10px 22px; border-radius: 50px 0 0 50px; display: block; }
 .the_productbox .top_tool .selectbox p.use i{ color: #fff200; }
-.the_productbox .top_tool .selectbox .styled-select{ float: left; height: 41px; width: 100%; max-width: calc(100% - 92px);}
+.the_productbox .top_tool .selectbox .styled-select{ float: left; height: 41px; width: 100%; max-width: calc(100% - 92px); background: url(../images/icon_arr.png) center right no-repeat; background-size: contain;}
 .the_productbox .top_tool .selectbox .styled-select select{ padding: 0 20px; font-size: 16px; color: #333;  width: calc(100% - 20px); height: 41px; line-height: 41px; background: none; }
 .the_productbox .top_tool a.btn_setting{ color: #4a4a4a; float: right; cursor: pointer; width: 41px; height: 41px; background-color: #fff; border-radius: 50%; text-align: center; line-height: 41px; }
 
@@ -76,7 +76,7 @@ input { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .the_productbox .products_box .left_menu ul.bottom_tools{ width: 100%; max-width: 198px; height: 46px; border-top: 1px solid #333; position: fixed; bottom: 0; left: 0; }
 .the_productbox .products_box .left_menu ul.bottom_tools li{ float: left; width: 50%; position: relative;}
 .the_productbox .products_box .left_menu ul.bottom_tools li:first-child::after{z-index: 10; content: ""; position: absolute; top: 0; right: -0.5px; width: 1px; height: 100%; background-color: #333; }
-.the_productbox .products_box .left_menu ul.bottom_tools li a{ color: #333; text-align: center; width: 100%; height: 46px; line-height: 46px; display: block; }
+.the_productbox .products_box .left_menu ul.bottom_tools li a{ color: #333; text-align: center; width: 100%; height: 46px; line-height: 46px; display: block; background-color: #f5f5f5;}
 
 .the_productbox .products_box .right_info{ float:left; width:  calc(100% - 200px); padding: 20px 25px; height: calc(100vh - 122px); display: block; overflow: hidden;}
 .the_productbox .products_box .right_info .top_title_box{ padding-bottom:10px; position: relative; }
@@ -110,7 +110,7 @@ input { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .fadebox .infobox{ background-color: #f0f0f0; padding: 15px; border-radius: 8px;}
 .fadebox .infobox p span{ color: #e85718; }
 .fadebox .infobox p span.green{color: #07b648; }
-.fadebox .styled-select{ height: 41px; width: 100%; background-color: #f0f0f0; border-radius: 50px;}
+.fadebox .styled-select{ height: 41px; width: 100%; background-color: #f0f0f0; border-radius: 50px; background: url(../images/icon_arr.png) center right no-repeat; background-size: contain;}
 .fadebox .styled-select select{ padding: 0 20px; font-size: 16px; color: #333;  width: calc(100% - 20px); height: 41px; line-height: 41px; background: none; }
 .fadebox .the_product_info input, .fadebox .the_product_info textarea{ text-align: left; max-width: initial; }
 .fadebox .the_product_info ul li{ padding: 15px 0; border-bottom: 1px solid #b6b6b6; }
