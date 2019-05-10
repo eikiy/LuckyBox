@@ -140,7 +140,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .fadebox .category_list ul.list li p.the_selected{ border-color: #ffcd00; }
 
 .fadebox .category_list input{ text-align: left; float: left; width: calc(100% - 95px); }
-.fadebox .category_list .sequence{ text-align: center; padding-top: 10px ; }
+.fadebox .category_list .sequence{ text-align: center; padding-top: 10px ; display: none;}
 .fadebox .category_list .sequence a{ color: #4a4a4a; cursor: pointer; margin: 0 2px; border:1px solid #d3d3d3; min-width: 41px; height: 41px; font-size: 13px; padding: 0px 12px; /*background-color: #e9e9e9;*/ display: inline-block; border-radius: 50px; text-align: center; line-height: 41px; }
 .fadebox .category_list .sequence a.disabled{ color: #999;  cursor: no-drop;}
 

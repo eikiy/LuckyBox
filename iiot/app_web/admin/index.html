@@ -45,6 +45,7 @@
 		});
 		$(".fadebox .category_list ul.list li p" ).click(function() {
 			$(this).toggleClass( "the_selected" );
+			$(this).next(".sequence").stop(true, true).fadeToggle(0);
 			return false;
 		});
 	});
@@ -326,47 +327,115 @@
 	    		<ul class="list">
 	    			<li class="clearfix">
 	    				<p>最多顯示的字最多顯示的字最多顯示的字最多顯示的字</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="disabled" href="#"><i class="fas fa-arrow-up"></i> 置頂</a><!-- 沒點選時不能按 + disabled  # 只有第一個不能置頂-->
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category2最多顯示的字</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category3 最多顯示的字最多顯示的字</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category4</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category5</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category6</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category7</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category8</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category9</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category10</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    			<li class="clearfix">
 	    				<p>Category11</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
 	    			</li>
 	    		</ul>
-	    		<div class="sequence">
-	    			<!-- 沒點選時不能按 + disabled -->
-	    			<a class="disabled" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
-	    			<a class="disabled" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
-	    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
-	    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
-	    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
-	    			<!-- <a href=""><i class="fas fa-arrow-down"></i></a> -->
-	    		</div>
 	    	</div>
 	    	<div class="the_button">
 	    		<a class="btn" href="#" rel="modal:close">取消</a>
