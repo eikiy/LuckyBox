@@ -128,7 +128,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .fadebox .new_manager_pw p.note span{ color: #f44336; }
 .fadebox .new_manager_pw .infobox{ text-align: initial; }
 
-.fadebox .input_quantity{ text-align: center; }
+.fadebox .input_quantity{ text-align: center; padding-top: 0; }
 .fadebox .input_quantity input{ width: 50px; line-height: 35px; }
 
 .shopping_cart{ max-width: 1000px !important; margin: 0 auto; }
@@ -255,7 +255,11 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 @media (max-width:410px){
 	.bottom_manager_tools p.btn{ font-size: 13px; }
 	.bottom_manager_tools p.btn a{ padding: 8px 10px;}
-
+	.the_productbox .products_box ul.products_list li{ width: calc(50% - 10px); margin: 40px 5px 25px 5px; padding: 6px;}
+	.input_quantity button{font-size: 13px; width: 32px; height: 32px; }
+	.input_quantity input{ font-size: 16px; width: 36px; height: 32px; line-height: 32px;}
+	ul.shopping_car_list .sbox p{ font-size: 14px; }
+}
 @media (max-width:370px){
 	.shop_mainbox .btn_swtich p,
 	.top_menu_box ul.list li p,
