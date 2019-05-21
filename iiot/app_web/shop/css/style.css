@@ -255,10 +255,14 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 @media (max-width:410px){
 	.bottom_manager_tools p.btn{ font-size: 13px; }
 	.bottom_manager_tools p.btn a{ padding: 8px 10px;}
-	.the_productbox .products_box ul.products_list li{ width: calc(50% - 10px); margin: 40px 5px 25px 5px; padding: 6px;}
+	.the_productbox .products_box ul.products_list li .product_info p.money{top: 10px;}
+	.the_productbox .products_box ul.products_list li{ width: calc(50% - 10px); margin: 40px 5px 25px 5px; padding:40px 6px 10px 6px;}
 	.input_quantity button{font-size: 13px; width: 32px; height: 32px; }
 	.input_quantity input{ font-size: 16px; width: 36px; height: 32px; line-height: 32px;}
 	ul.shopping_car_list .sbox p{ font-size: 14px; }
+	ul.shopping_car_list .sbox{ width: calc(50% - 65px);}
+	ul.shopping_car_list .car_nb{ width: 130px; }
+	ul.shopping_car_list .car_name{width: 100%;}
 }
 @media (max-width:370px){
 	.shop_mainbox .btn_swtich p,
@@ -267,7 +271,7 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 	.shop_mainbox .btn_swtich p{padding-left: 0;}
 	.the_productbox .products_box .top_title_box h2{ font-size: 15px; }
 	.the_productbox .products_box .top_title_box ul.products_tools p{font-size: 13px;}
-	.the_productbox .products_box ul.products_list li{ padding: 10px;}
+	.the_productbox .products_box ul.products_list li{ padding:40px 10px 10px 10px;}
 	.the_productbox .products_box ul.products_list li .product_info h3.product_title{font-size: 13px;}
 	.the_productbox .products_box ul.products_list li .product_info h4.sub_info{ font-size: 12px; line-height: 16px; height: 16px * 2; height: 32px; }
 	.the_button a.btn{min-width: 85px; height: 36px; line-height: 36px;}
