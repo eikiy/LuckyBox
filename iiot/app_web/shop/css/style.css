@@ -62,7 +62,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .the_productbox .products_box ul.products_list li .product_info p.money{ font-size: 15px;  color: #fe4513; position: absolute; bottom: 8px; left: 20px; width: 100%; }
 .the_productbox .products_box ul.products_list li.the_selected{ border-color: #ffcd00; }
 
-.input_quantity{width: 100%; margin: 0 auto; text-align: right; padding-top: 7px; min-height: 42px;}
+.input_quantity{width: 100%; margin: 0 auto; text-align: right; padding-top: 7px; min-height: 33px;}
 .input_quantity button{ cursor: pointer; display: inline-block; width:35px; height: 35px; border-radius: 50%; line-height: 35px; font-size: 16px; background-color: #f6f6f6; color: #595656;}
 .input_quantity button:active{ color: #e39a9a; background-color: #f8eded;  }
 .input_quantity input{ display: inline-block; width: 50px; color: #fd735c; background-color: #f8f8f8; border-radius: 50px; font-weight: bold; font-size: 18px; text-align: center; height: 35px; line-height: 35px; padding: 0px 5px;}
