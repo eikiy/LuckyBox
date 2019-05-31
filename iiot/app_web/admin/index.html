@@ -39,7 +39,7 @@
 
 	 //選商品做設定
 	$(function(){
-		$("ul.products_list li" ).click(function() {
+		$("ul.products_list li .products_content_box" ).click(function() {
 			$(this).toggleClass( "the_selected" );
 			return false;
 		});
@@ -125,61 +125,124 @@
 					</div>
 					<ul class="products_list clearfix">
 						<li class="clearfix"> <!-- 點選商品增加 the_selected 邊框顏色--> <!-- 要幫我寫選取到 >< -->
-							<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
-							<!-- <div class="photo" style="background-image: url(<%= product.productImageUrl %>)"></div> -->
-							<div class="product_info">
-								<h3 class="product_title">產品AAA</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
+								<!-- <div class="photo" style="background-image: url(<%= product.productImageUrl %>)"></div> -->
+								<div class="product_info">
+									<h3 class="product_title">產品AAA</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 						<li class="clearfix">
-							<div class="photo" style="background-image: url(http://likea.ezvivi.com/manage/0/product/199868/F_m.jpg);"></div>
-							<div class="product_info">
-								<h3 class="product_title">產品BBB</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(http://likea.ezvivi.com/manage/0/product/199868/F_m.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品BBB</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 						<li class="clearfix">
-							<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
-							<div class="product_info">
-								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 						<li class="clearfix">
-							<div class="photo" style="background-image: url(https://icrvb3jy.xinmedia.com/solomo/article/123934/FE1BAAB9-BA80-FEC2-27AD-1BC4B88634E4.jpg);"></div>
-							<div class="product_info">
-								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://icrvb3jy.xinmedia.com/solomo/article/123934/FE1BAAB9-BA80-FEC2-27AD-1BC4B88634E4.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 						<li class="clearfix">
-							<div class="photo" style="background-image: url(https://images.1111.com.tw/discussPic/77/51008577_7297009.2149911.jpg);"></div>
-							<div class="product_info">
-								<h3 class="product_title">產品名稱產品名稱</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://images.1111.com.tw/discussPic/77/51008577_7297009.2149911.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 						<li class="clearfix">
-							<div class="photo" style="background-image: url(https://tokyo-kitchen.icook.network/uploads/recipe/cover/209495/large_7b77e24a6d832dd4.jpg);"></div>
-							<div class="product_info">
-								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://tokyo-kitchen.icook.network/uploads/recipe/cover/209495/large_7b77e24a6d832dd4.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 						<li class="clearfix">
-							<div class="photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SjvW7r0c5jlj4qMwCIc7pe7FtzuaC_lDJ7jD23nEgS2k2IkH);"></div>
-							<div class="product_info">
-								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
-								<p class="money">$129</p>
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SjvW7r0c5jlj4qMwCIc7pe7FtzuaC_lDJ7jD23nEgS2k2IkH);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
 							</div>
+							<div class="sequence">
+					    		<div class="btn">
+					    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+						    		<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+						    	</div>
+					    	</div>
 						</li>
 					</ul>
 				</div>
