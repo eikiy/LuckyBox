@@ -153,9 +153,10 @@ html, body{ height: 100%; }
 .linkeBox .flexslider3 ul.slides li a:hover{opacity: .8;}
 
 .main_contents .the_location{ background-color: #fff; padding: 12px 0 10px 0; border-bottom: 1px solid #0177bb; }
-.main_contents .the_location p{ color: #4d4d4d; font-size: 17px;}
-.main_contents .the_location p a.home{ color: #4d4d4d; padding: 0 10px 0 0px; line-height: 30px; display: inline-block;border-bottom: 1px solid #fff; }
-.main_contents .the_location p a.home:hover{ border-bottom: 1px solid #4d4d4d; }
+.main_contents .the_location p{ color: #4d4d4d; font-size: 17px; line-height: 30px;}
+.main_contents .the_location p a{ color: #4d4d4d; padding:0 10px; display: inline-block; border-bottom: 1px solid #fff; }
+.main_contents .the_location p a.home{ padding: 0 10px 0 0px;}
+.main_contents .the_location p a:hover{ border-bottom: 1px solid #4d4d4d; }
 .main_contents .the_location p span{ color: #0177bb; font-weight: bold; padding:0 10px;  }
 .main_contents .the_location i, .main_contents .the_location svg{ color: #0177bb; font-size: 24px; padding-right: 5px; }
 .main_contents .insidepage { height: initial !important; min-height: initial !important;}
@@ -208,6 +209,12 @@ html, body{ height: 100%; }
 .main_contents .dataListBox h5.sub_sort a:hover{ opacity: .5; }
 .main_contents .dataListBox h5.sub_sort a.btn_in{color: #fff;}
 .main_contents .dataListBox h5.sub_sort a:hover.btn_in{ opacity: 1; }
+
+.main_contents .dataListBox h5.sub_title{ padding: 40px 0 0 0; margin-bottom: 35px; font-size: 22px; color: #0277bc; position: relative; line-height: 36px; }
+.main_contents .dataListBox h5.sub_title::after{ content: ""; width: 150px; height: 2px; background-color: #0277bc; display: block; position: absolute; bottom: 0px; left: 0;}
+.main_contents .dataListBox h5.sub_title_type{ padding: 40px 0 0 0; margin-bottom: 35px; font-size: 22px;  line-height: 36px; }
+.main_contents .dataListBox h5.sub_title_type a{  color: #939393; padding: 8px 0; margin-right: 18px;}
+.main_contents .dataListBox h5.sub_title_type a.btn_in{border-bottom: 2px solid #0277bc; color: #0277bc;}
 
 .main_contents ul.list_instructions{width: 100%; background-color: #fff; }
 .main_contents ul.list_instructions li{width: 100%; border-bottom: 1px solid #eaeaea;}
@@ -292,8 +299,39 @@ input[type=radio]:not(old):checked + label{  background-position : 0 -17px;}
 .statistics_search .bottom_btn a.back{ background-color: #615f5f; }
 .statistics_search .bottom_btn a:hover{ opacity: .8; }
 
+.main_contents .dataListBox ul.cruises_entrance{ width: 100%; max-width: 1125px; margin: 0 auto; }
+.main_contents .dataListBox ul.cruises_entrance li{ float: left; width:calc(50% - 40px); padding: 100px 20px; }
+.main_contents .dataListBox ul.cruises_entrance li a{ display: block; position: relative;}
+.main_contents .dataListBox ul.cruises_entrance li a:hover{ opacity: .8; }
+.main_contents .dataListBox ul.cruises_entrance li img, .main_contents .dataListBox ul.cruises_list li img{width: 100%;}
+.main_contents .dataListBox ul.cruises_entrance li h3{ position: absolute; z-index: 1; top: 25px; right: 35px; color: #fff; font-size: 28px; }
+.main_contents .dataListBox ul.cruises_entrance li h3 span{ position: relative; }
+.main_contents .dataListBox ul.cruises_entrance li h3 span::after{ content: ""; width: 82px; height: 3px; background-color: #f6ff00; display: block; position: absolute; bottom: -10px; left: 0;}
+
+.main_contents .dataListBox ul.cruises_list{ width: 100%; }
+.main_contents .dataListBox ul.cruises_list li{ float: left; width:calc(20% - 16px); padding: 0 20px 25px 0;}
+.main_contents .dataListBox ul.cruises_list li:nth-child(5n){ padding-right: 0; }
+.main_contents .dataListBox ul.cruises_list li a{ display: block; box-shadow: 0 0 5px 4px rgba(0,0,0,0.05); }
+.main_contents .dataListBox ul.cruises_list li a:hover{ opacity: .8; }
+.main_contents .dataListBox ul.cruises_list li .infoBox{ padding:10px 20px 20px 20px; }
+.main_contents .dataListBox ul.cruises_list li .infoBox h3.cruises_name{ color: #0277bc; font-size: 24px; position: relative; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 35px; height: 35px * 1; overflow:hidden; padding-bottom: 5px; }
+.main_contents .dataListBox ul.cruises_list li .infoBox h3.cruises_name::after{ content: ""; width: 30px; height: 3px; background-color: #0277bc; display: block; position: absolute; bottom: 0px; left: 0;}
+.main_contents .dataListBox ul.cruises_list li .infoBox p.cruises_info{ color: #505050; padding: 15px 0 0 0; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 30px; height: 30px * 1; overflow:hidden;}
+
+.main_contents .dataListBox ul.cruises_list_text{ width: 100%; padding-bottom: 30px; min-height: 300px; }
+.main_contents .dataListBox ul.cruises_list_text li{ float: left; padding:0 15px 15px 0; }
+.main_contents .dataListBox ul.cruises_list_text li h3.cruises_name{ line-height: 30px; font-size: 20px; color: #0277bc; padding-right: 15px; border-right: 1px solid #0277bc;}
+.main_contents .dataListBox ul.cruises_list_text li a{ padding: 15px 60px 15px 20px; display: inline-block; border:1px solid #0277bc;  position: relative;}
+.main_contents .dataListBox ul.cruises_list_text li a::after{ content: ""; position: absolute; right: 8px; top:calc(50% - 20px); width: 45px; height: 40px; display: block; background: url(../images/cruises_name_icon.png) center center no-repeat; background-size: contain; }
+.main_contents .dataListBox ul.cruises_list_text li a:hover{ background-color: #0277bc;}
+.main_contents .dataListBox ul.cruises_list_text li a:hover h3.cruises_name{ color: #fff; border-right: 1px solid #fff;}
+.main_contents .dataListBox ul.cruises_list_text li a:hover::after{ color: #fff;  background: url(../images/cruises_name_icon_in.png) center center no-repeat; background-size: contain; }
 
 /*==== RWD ====*/
+@media (max-width:1440px){
+	.main_contents .dataListBox ul.cruises_list li .infoBox h3.cruises_name{ font-size: 20px; }
+}
+
 @media (max-width:1300px){
 	.ContentsBox{ width: 94%; margin: 0 auto; }
 	.HeaderBox .TopBox ul.top_menu li h3{font-size: 16px;}
@@ -304,6 +342,10 @@ input[type=radio]:not(old):checked + label{  background-position : 0 -17px;}
 @media (max-width:1240px){
 	.HeaderBox h1.logo{ width: 230px;}
 	.HeaderBox .TopBox{ max-width: calc(100% - 250px);}
+	.main_contents .dataListBox ul.cruises_list li{ width: calc(25% - 15px);}
+	.main_contents .dataListBox ul.cruises_list li:nth-child(5n){ padding-right:20px; }
+	.main_contents .dataListBox ul.cruises_list li:nth-child(4n){ padding-right: 0;}
+	.main_contents .dataListBox ul.cruises_list li .infoBox h3.cruises_name{font-size: 18px;}
 }
 @media (max-width:1200px){
 	.HeaderBox .TopBox ul.top_menu li h3{font-size: 15px;}
@@ -329,6 +371,11 @@ input[type=radio]:not(old):checked + label{  background-position : 0 -17px;}
 	.serviceBox .serviceData .aBox .tagBox p{ font-size: 14px; }
 	.serviceBox .serviceData .aBox .tagBox p a{ margin: 0 5px 6px 0}
 	.main_contents h2.title{ font-size: 30px; }
+	.main_contents .dataListBox ul.cruises_entrance li h3{font-size: 24px; top: 15px;}
+	.main_contents .dataListBox ul.cruises_list li{ width: calc(33.33% - 14px);}
+	.main_contents .dataListBox ul.cruises_list li:nth-child(4n), .main_contents .dataListBox ul.cruises_list li:nth-child(5n){ padding-right:20px; }
+	.main_contents .dataListBox ul.cruises_list li:nth-child(3n){ padding-right: 0;}
+	.main_contents .dataListBox ul.cruises_list li .infoBox h3.cruises_name{font-size: 17px;}
 }
 @media (max-width:780px){
 	.HeaderBox .TopBox .tools ul.iconBox{ padding-top: 5px;}
@@ -393,12 +440,32 @@ input[type=radio]:not(old):checked + label{  background-position : 0 -17px;}
 
 	.statistics_search .lBox { float:none; margin: 0 auto; }
 	.statistics_search .rBox { max-width: 100%; float: left; }
+	.main_contents .dataListBox h2.title, .main_contents .dataListBox h5.sub_title{ text-align: center; }
+	.main_contents .dataListBox h5.sub_title::after{ left: calc(50% - 75px); }
+	.main_contents .dataListBox ul.cruises_entrance{padding: 20px 0;}
+	.main_contents .dataListBox ul.cruises_entrance li{width: calc(100% - 40px); padding: 10px 20px;}
+	.main_contents .dataListBox ul.cruises_list li{ width: calc(50% - 10px);}
+	.main_contents .dataListBox ul.cruises_list li:nth-child(3n), .main_contents .dataListBox ul.cruises_list li:nth-child(4n), .main_contents .dataListBox ul.cruises_list li:nth-child(5n){ padding-right:20px; }
+	.main_contents .dataListBox ul.cruises_list li:nth-child(2n){ padding-right: 0;}
+	.main_contents .dataListBox ul.cruises_list li .infoBox{ padding: 5px 11px 15px 10px;}
+	.main_contents .dataListBox ul.cruises_list li .infoBox h3.cruises_name{font-size: 16px;}
+	.main_contents .dataListBox ul.cruises_list li .infoBox p.cruises_info{ font-size: 13px; }
+	.main_contents .dataListBox ul.cruises_list_text li h3.cruises_name{ font-size: 18px; }
+	.main_contents .dataListBox ul.cruises_list_text li a{ padding: 12px 60px 12px 20px;}
 }
-
 @media (max-width:700px){
 	.main_contents .statisticsBox .ContentsBox::after{ left: 20%;}
 }
-
 @media (max-width:650px){
 	.FooterBox p{font-size: 11px;}
+	.main_contents .dataListBox ul.cruises_entrance li h3{ font-size: 20px; top: 12px; right: 15px; }
+	.main_contents .dataListBox ul.cruises_entrance li h3 span::after{ width: 60px; }
+	.main_contents .dataListBox ul.cruises_list_text li h3.cruises_name{ font-size: 15px; padding-right: 10px;}
+	.main_contents .dataListBox ul.cruises_list_text li a::after{ width: 40px; }
+	.main_contents .dataListBox ul.cruises_list_text li a{ padding: 10px 50px 10px 16px;}
+}
+@media (max-width:400px){
+	.main_contents .dataListBox ul.cruises_list_text li{ padding: 0 10px 10px 0;}
+	.main_contents .dataListBox ul.cruises_list_text li a::after{ height: 34px; right: 5px; top: calc(50% - 17px); }
+	.main_contents .dataListBox ul.cruises_list_text li h3.cruises_name{ font-size: 13px; }
 }

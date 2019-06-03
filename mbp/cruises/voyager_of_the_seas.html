@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>Voyager Of The Seas</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$('.go01').click(function(){ $('html,body').animate({scrollTop:$('#goto_01').offset().top - 100}, 800); });
+			$('.go02').click(function(){ $('html,body').animate({scrollTop:$('#goto_02').offset().top - 100}, 800); });
+			$('.go03').click(function(){ $('html,body').animate({scrollTop:$('#goto_03').offset().top - 100}, 800); });
+			return false;
+		});
+	</script>
+</head>
+<body>
+	<header class="top_header">
+		<section class="main_title">
+			<div class="content_box">
+				<a class="logo" href="../cruises_intro_tw_01.html"></a>
+				<h1>Voyager Of The Seas<span>海洋航行者</span></h1>
+			</div>
+		</section>
+		<section class="top_menu">
+			<ul class="content_box">
+				<li><p><span class="go01">郵輪介紹</span></p></li>
+				<li><p><span class="go02">內部介紹</span></p></li>
+				<li><p><span class="go03">郵輪資訊</span></p></li>
+			</ul>
+		</section>
+	</header>
+	<main class="main_content">
+		<section class="banner_box">
+		  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide" style=" background-image: url(images/voyager_of_the_seas/banner_01.jpg);"></div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+		  </div>
+		</section>
+		<section class="info_box">
+			<div class="content_box">
+				<article class="ibox" id="goto_01">
+					<h3 class="top_title"><span>郵輪<br>介紹</span></h3>
+					<p class="p_data">海洋航行者 Voyager Of The Seas，巴哈馬籍，隸屬於皇家加勒比郵輪公司，建造於克瓦諾馬沙造船廠，為第1艘Voyager等級皇家加勒比船隻，在初期投入服務時，是世界上最大的郵輪，被譽為有史以來最具革命性的船隻。</p>
+				</article>
+				<article class="ibox" id="goto_02">
+					<h3 class="top_title color_org"><span>內部<br>介紹</span></h3>
+					<ul class="data_list clearfix">
+						<li>
+							<h3>總排水量(噸)<br>
+								<span>137,276</span>
+							</h3>
+							<h3>寬度(米/呎)<br>
+								<span>47/154</span>
+							</h3>
+						</li>
+						<li>
+							<h3>長度(米/呎)<br>
+								<span>311/1,020</span>
+							</h3>
+							<h3>吃水(米)<br>
+								<span>9</span>
+							</h3>
+						</li>
+						<li>
+							<h3>平均航速(節)<br>
+								<span>24</span>
+							</h3>
+							<h3>郵載客人數(人)<br>
+								<span>3,282-3,938</span>
+							</h3>
+						</li>
+						<li>
+							<h3>船員人數(人)<br>
+								<span>1,180</span>
+							</h3>
+							<h3>總艙房數(間)<br>
+								<span>1641</span>
+							</h3>
+						</li>
+					</ul>
+				</article>
+				<article class="ibox" id="goto_03">
+					<h3 class="top_title color_green"><span>郵輪<br>資訊</span></h3>
+					<div class="photo">
+						<a href="images/voyager_of_the_seas/img_01.png" target="_blank" style=""><img src="images/voyager_of_the_seas/img_01.png" alt="海洋航行者甲版" width="100%"></a>
+					</div>
+					<p class="photo_note">圖片引用至：
+						<a target="_blank" href="https://www.cruisedeckplans.com/assets/deckimages/org/www.cruisedeckplans.com-deckplan.php-ship=Voyager-of-the-Seas.png">https://www.cruisedeckplans.com/assets/deckimages/org/www.cruisedeckplans.com-deckplan.php-ship=Voyager-of-the-Seas.png</a><br>
+						<a target="_blank" href="https://www.cruisemapper.com/ships/Voyager-Of-The-Seas-541">https://www.cruisemapper.com/ships/Voyager-Of-The-Seas-541</a></p>
+				</article>
+			</div>
+		</section>
+	</main>
+	<footer class="footer_box">
+		<section class="content_box">
+			<p class="info">地址：106臺北市大安區和平東路三段1巷1號 <span>電話：(02)8978-2900</span><span class="none"><br></span>
+			免付費電話：0800-369009<br>
+			本網站最佳瀏覽解析度為：1280 x 960</p>
+		</section>
+	</footer>
+
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+
