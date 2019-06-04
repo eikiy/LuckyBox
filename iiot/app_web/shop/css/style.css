@@ -133,6 +133,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 
 .shopping_cart{ max-width: 1000px !important; margin: 0 auto; }
 .shopping_cart h3.top_title{ text-align: center; padding: 20px 0 15px; font-size: 18px; font-weight: bold; }
+.shopping_cart h3.top_title span{ font-size: 14px; color: #888;  display: block; font-weight: normal; padding-top: 5px;}
 .shopping_cart p.quantity_products{text-align: center; padding-bottom: 20px; font-size: 14px; line-height: 28px; color: #666666; }
 .shopping_cart p.quantity_products span{ color: #fe4513; padding: 0 5px; font-size: 18px;}
 
@@ -174,24 +175,37 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart label{ font-size: 15px; font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; color: #676767;}
 .shopping_cart form{ padding-bottom: 30px;}
 
-.shopping_cart ul.fillin{ max-width: 350px; margin:10px auto 0  auto; text-align: left; padding: 10px 0; background-color: #f6f6f6; border-radius: 40px; padding: 15px;}
-.shopping_cart ul.fillin li{ float: left; width: 33.33%; position: relative; }
-.shopping_cart ul.fillin li .code-box{ width: 100px; height: 32px; position: absolute; top: calc(50% - 16px); right: 0px; }
-.shopping_cart ul.fillin li label{ width: 100%; display: block; font-size: 16px; color: #828282; padding-bottom: 5px; }
-.shopping_cart ul.fillin li input{ width: 100%;font-size: 16px;  border-radius: 0; color: #333; border-bottom: #e1e1e1 solid 1px; }
+.shopping_cart p.sub_title{ text-align: center; font-weight: bold; color: #666; font-size: 14px; text-align: center; padding-top: 10px; }
+
+.shopping_cart ul.fillin{ max-width: 400px; padding: 15px; margin: 0 auto;}
+.shopping_cart ul.fillin li label{ width: 100%; display: block; font-size: 13.5px; color: #828282; padding:15px 0 10px 20px; }
+.shopping_cart ul.fillin li input{ width: 100%; border: 1px solid #fff; padding: 0 18px; margin: 0 auto; font-size: 15px; border-radius: 50px; height: 40px; background-color: #f0f0f0;}
 .shopping_cart ul.fillin li input::placeholder{ color: #a9a9a9; }
+.shopping_cart ul.fillin li textarea{ width: 100%; border: 1px solid #fff; padding: 15px 18px; min-height: 80px; line-height: 28px; margin: 0 auto; font-size: 15px; border-radius: 15px; background-color: #f0f0f0;}
 .shopping_cart ::-webkit-input-placeholder, .shopping_cart input::-moz-placeholder, .shopping_cart input::-moz-placeholder, .shopping_cart:-ms-input-placeholder{color: red;}
 .shopping_cart ul.fillin li input:focus{ border-color: #ff8a00; }
-.shopping_cart ul.fillin li.the_terms{ margin-top: -6px; }
-.shopping_cart ul.fillin li.the_terms a.link{ font-size: 14px; position: absolute; top: 2px; right: 0; color: #039be5; text-decoration: underline; }
-.shopping_cart ul.fillin li.the_terms a.link:hover{ text-decoration: none; }
-.shopping_cart ul.fillin li.the_terms label{ font-size: 14px; font-weight: bold; color: #333; }
-.shopping_cart ul.fillin li.the_terms input{padding: 0; height: 29px;}
+
+.shopping_cart ul.fillin li.the_invoice{ padding: 10px 0; }
+.shopping_cart ul.fillin li.the_invoice h4{ font-size: 13.5px; color: #828282; padding:10px 0 10px 20px; }
+.shopping_cart ul.fillin li.the_invoice div{ position: relative; padding: 5px 0;}
+.shopping_cart ul.fillin li.the_invoice label{ font-size: 14px; font-weight: bold; color: #333; padding: 0; padding-left: 30px; }
+.shopping_cart ul.fillin li.the_invoice input{ padding: 0; height: inherit;}
+.shopping_cart ul.fillin li.invoice_fillin input{ margin-top: 5px; }
 
 .shopping_cart ul.the_btn{ width: 100%; max-width: 800px;  padding: 15px 0 30px 0; text-align: center; margin: 0 auto;}
 .shopping_cart ul.the_btn li{  display: inline-block; margin: 0 5px 10px 5px;}
 .shopping_cart ul.the_btn li p{ font-size: 16px; display: inline-block; cursor: pointer; border-radius: 50px; padding: 0px 10px; font-size: 14px; color: #5f6368; line-height: 38px; height: 40px; border:2px solid #f0f0f0; background-color: #fff; min-width: 120px; text-align: center; }
+.shopping_cart ul.the_btn li span{ display: block;}
 .shopping_cart ul.the_btn li.the_selected p{ border-color: #ffcd00; }
+.shopping_cart .a_box{ width: 100%; max-width: 500px; margin: 0 auto; padding-bottom: 35px; display: none; }
+.shopping_cart .a_box p.sub_title{ text-align: center; padding: 10px 0; }
+.shopping_cart .a_box input.fill_in{ width: 100%; text-align: center; color: #333; background-color: #f8f8f8; border-radius: 50px; font-weight: bold; font-size: 18px; text-align: center; height: 35px; line-height: 35px; padding: 10px;}
+.shopping_cart .a_box input.fill_in::placeholder{ color: #cecece; }
+.shopping_cart .a_box .the_datepicker{ max-width: 260px; margin: 0 auto; position: relative; }
+.shopping_cart .a_box .the_datepicker i{position: absolute; left: 5px; top: 0; color: #5f6368; z-index: 10; width: 35px; height: 35px; line-height: 35px; text-align: center;}
+#mydatepicker{ margin-bottom: 15px; }
+.padding_bottom_100{ padding-bottom: 100px; }
+.f_red{ color: #e85718; }
 
 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 	ul.shopping_car_list .car_delete a.yesDelets{ top:0px;}

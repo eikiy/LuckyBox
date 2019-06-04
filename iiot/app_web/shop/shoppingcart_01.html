@@ -2,16 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
 <head>
 	<meta charset="UTF-8">
-	<title>愛物聯小吃店 | 分店A - 訂購明細</title>
+	<title>愛物聯小吃店 | 分店A - 取餐方式</title>
 	<meta name='description' content=""/>
 	<meta name='keywords' content=""/>
 	<meta name="MobileOptimized" content="width">
 	<meta name="HandheldFriendly" content="true">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- 日曆 -->
+	<link rel="stylesheet" href="css/dcalendar.picker.css"/>
 	<!-- jQuery Modal -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
@@ -21,35 +23,54 @@
     	.modal{box-shadow: 0 0 10px #0009;}
     </style>
     <script type="text/javascript">
-     $(function(){
-     	// top 菜單
-	  	$("ul.the_btn li").click(function(){
-	  		$(this).parent().find("li").removeClass("the_selected");
-	        $(this).addClass("the_selected");
-	    	return false;
-	    });
-	 });
-	</script>
+    	// 日曆
+    	$(function() {
+			$( "#datepicker" ).datepicker();
+		});
+    	// 選到變外框顏色
+	    $(function(){
+		  	$("ul.the_btn li").click(function(){
+		  		$(this).parent().next(".a_box").hide();
+		  		$(this).parent().find("li").removeClass("the_selected");
+		        $(this).addClass("the_selected");
+		    	return false;
+		    });
+		});
+		// 點選外送 填寫地址
+		$(function(){
+		  	$("ul.the_btn li.order_in").click(function(){
+		  		$(this).parent().next(".orderin_show").show();
+		    	return false;
+		    });
+		});
+		// 外送 填寫地址
+		$(function(){
+		  	$("ul.the_btn li.other_time").click(function(){
+		  		$(this).parent().next(".other_time_show").show();
+		    	return false;
+		    });
+		});
+  	</script>
 </head>
 <body>
 	<main class="shop_mainbox shopping_order">
 		<section class="order_tools">
 			<div class="the_button">
-				<a class="btn gray" href="index.html">繼續購物</a>
-				<a class="btn c_org" href="shoppingcart_02.html">下單訂購</a>
+				<a class="btn gray" href="index.html">繼續選購</a>
+				<a class="btn c_org" href="shoppingcart_02.html">下一步</a>
 			</div>
 		</section>
 		<section class="content_box">
 			<div class="top_step">
 		        <ul class="contents_box clearfix">
-		            <li class="step-1 btn_in"><p><span>Step1.</span> 訂購明細</p></li>
+		            <li class="step-1 btn_in"><p><span>Step1.</span> 取餐方式</p></li>
 		            <li class="step-2"><p><span>Step2.</span> 訂購資訊</p></li>
-		            <li class="step-3"><p><span>Step3.</span> 訂購完成</p></li>
+		            <li class="step-3"><p><span>Step3.</span> 訂購明細</p></li>
 		        </ul>
 		    </div>
-			<!-- 購物車列表 -->
+			<!-- 購物車列表 / 取餐方式 -->
 		    <form class="shopping_cart">
-		    	<h3 class="top_title">訂購明細</h3>
+		    	<h3 class="top_title">愛物聯小吃店 - 分店1</h3>
 		    	<p class="quantity_products">目前選購 <span>21</span> 項商品</p>
 		    	<ul class="shopping_car_list">
 		    		<li class="top_title clearfix">
@@ -66,74 +87,75 @@
 		                    <p>移除</p>
 		                </div>
 		            </li>
-		            <li class="clearfix">
-		                    <div class="sbox car_name">
-		                        <div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
-			                    <p class="product_name">
-			                        <span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$105</span>
-			                    </p>
-		                    </div>
-		                    <div class="sbox car_nb">
-		                        <div class="input_quantity">
-				                    <button><i class="fas fa-minus"></i></button>
-				                    <input type="text" name="" value="1" placeholder="0">
-				                    <button><i class="fas fa-plus"></i></button>
-				                </div>
-		                    </div>
-		                    <div class="sbox car_money">
-		                        <p>NT$105</p>
-		                    </div>
-		                    <div class="sbox car_delete">
-		                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
-		                    </div>
+		    		<li class="clearfix">
+		    			<div class="sbox car_name">
+		    				<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
+			                <p class="product_name">
+			                	<span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$105</span>
+			                </p>
+			            </div>
+			            <div class="sbox car_nb">
+			            	<div class="input_quantity">
+			            		<button><i class="fas fa-minus"></i></button>
+			            		<input type="text" name="" value="1" placeholder="0">
+			            		<button><i class="fas fa-plus"></i></button>
+			            	</div>
+		                </div>
+		                <div class="sbox car_money">
+		                   <p>NT$105</p>
+		                </div>
+		                <div class="sbox car_delete">
+		                    <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+		                </div>
 		    		</li>
 		    		<li class="clearfix">
-		                    <div class="sbox car_name">
-		                        <div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
-			                    <p class="product_name">
-			                        <span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
-			                    </p>
-		                    </div>
-		                    <div class="sbox car_nb">
-		                        <div class="input_quantity">
-				                    <button><i class="fas fa-minus"></i></button>
-				                    <input type="text" name="" value="3" placeholder="0">
-				                    <button><i class="fas fa-plus"></i></button>
-				                </div>
-		                    </div>
-		                    <div class="sbox car_money">
-		                        <p>NT$280</p>
-		                    </div>
-		                    <div class="sbox car_delete">
-		                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
-		                    </div>
+		    			<div class="sbox car_name">
+		    				<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+			                <p class="product_name">
+			                	<span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
+			                </p>
+			            </div>
+			            <div class="sbox car_nb">
+			            	<div class="input_quantity">
+			            		<button><i class="fas fa-minus"></i></button>
+			            		<input type="text" name="" value="3" placeholder="0">
+			            		<button><i class="fas fa-plus"></i></button>
+			            	</div>
+		                </div>
+		                <div class="sbox car_money">
+		                   <p>NT$280</p>
+		                </div>
+		                <div class="sbox car_delete">
+		                    <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+		                </div>
 		    		</li>
 		    		<li class="clearfix">
-		                    <div class="sbox car_name">
-		                        <div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
-			                    <p class="product_name">
-			                        <span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
-			                    </p>
-		                    </div>
-		                    <div class="sbox car_nb">
-		                        <div class="input_quantity">
-				                    <button><i class="fas fa-minus"></i></button>
-				                    <input type="text" name="" value="1" placeholder="0">
-				                    <button><i class="fas fa-plus"></i></button>
-				                </div>
-		                    </div>
-		                    <div class="sbox car_money">
-		                        <p>NT$66660</p>
-		                    </div>
-		                    <div class="sbox car_delete">
-		                        <a><i class="far fa-trash-alt" title="移除商品"></i></a><!-- 點了出現 yesDelets 載點一次確定刪除 -->
-		                        <a class="yesDelets"><p>確定刪除</p></a>
-		                    </div>
+		    			<div class="sbox car_name">
+		    				<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+			                <p class="product_name">
+			                	<span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
+			                </p>
+			            </div>
+			            <div class="sbox car_nb">
+			            	<div class="input_quantity">
+			            		<button><i class="fas fa-minus"></i></button>
+			            		<input type="text" name="" value="1" placeholder="0">
+			            		<button><i class="fas fa-plus"></i></button>
+			            	</div>
+		                </div>
+		                <div class="sbox car_money">
+		                   <p>NT$66660</p>
+		                </div>
+		                <div class="sbox car_delete">
+		                    <a><i class="far fa-trash-alt" title="移除商品"></i></a><!-- 點了出現 yesDelets 再點一次確定刪除 -->
+		                    <a class="yesDelets"><p>確定刪除</p></a>
+		                </div>
 		    		</li>
 		        </ul>
 		    </form>
 		    <form class="shopping_cart">
 				<h3 class="top_title">取餐方式</h3>
+				<p class="sub_title">購買<span class="f_red">5樣商品</span>或<span class="f_red">消費滿500元</span>即可外送</p>
 				<ul class="the_btn">
 					<li>
 						<p>內用</p>
@@ -141,10 +163,14 @@
 					<li>
 						<p>外帶</p>
 					</li>
-					<li>
+					<li class="order_in">
 						<p>外送</p>
 					</li>
 				</ul>
+				<div class="a_box orderin_show">
+					<p class="sub_title">請填寫外送地址</p>
+					<input class="fill_in" type="text" name="" placeholder="請輸入地址">
+				</div>
 				<!-- <ul class="fillin clearfix">
 					<li>
 						<input id="pickup-internal" type="radio" name="pickup-type" value="內用">
@@ -160,57 +186,36 @@
 					</li>
 				</ul> -->
 			</form>
-			<form class="shopping_cart">
-				<h3 class="top_title">付款方式</h3>
+			<form class="shopping_cart padding_bottom_100">
+				<h3 class="top_title">取餐時間</h3>
+				<p class="sub_title">立即取餐<span class="f_red">需估等待10分鐘</span></h3>
 				<ul class="the_btn">
 					<li>
-						<p>現金付款</p>
+						<p>立即取餐</p>
 					</li>
-					<li>
-						<p>Line Pay</p>
-					</li>
-					<li>
-						<p>Apple Pay</p>
-					</li>
-					<li>
-						<p>Google Pay</p>
-					</li>
-					<li>
-						<p>Samsung Pay</p>
+					<li class="other_time">
+						<p>其他時段</p>
 					</li>
 				</ul>
-				<!-- <ul class="fillin clearfix">
-					<li>
-						<input id="pickup-internal" type="radio" name="pickup-type" value="內用">
-						<label for="pickup-internal">現金付款</label>
-					</li>
-					<li>
-						<input id="pickup-takeout" type="radio" name="pickup-type" value="外帶" checked>
-						<label for="pickup-takeout">Line Pay</label>
-					</li>
-					<li>
-						<input id="pickup-delivery" type="radio" name="pickup-type" value="外送">
-						<label for="pickup-delivery">Apple Pay</label>
-					</li>
-					<li>
-						<input id="pickup-delivery" type="radio" name="pickup-type" value="外送">
-						<label for="pickup-delivery">Google Pay</label>
-					</li>
-					<li>
-						<input id="pickup-delivery" type="radio" name="pickup-type" value="外送">
-						<label for="pickup-delivery">Samsung Pay</label>
-					</li>
-				</ul> -->
+				<div class="a_box other_time_show">
+					<p class="sub_title">請選擇取餐日期</p>
+					<div class="the_datepicker">
+						<i class="far fa-calendar-alt"></i>
+						<input class="fill_in" id="mydatepicker" placeholder="請選擇日期" type="text"/>
+						<input class="fill_in" type="text" name="" placeholder="取餐時段(上午、中午、晚上)">
+					</div>
+				</div>
 			</form>
 		</section>
 	</main>
-
-	<!-- Swiper JS -->
-	<script src="js/swiper.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-    	var swiper = new Swiper('.swiper-container');
+	<!-- calendar -->
+	<script type="text/javascript" src="js/dcalendar.picker.js"></script>
+	<script type="text/javascript">
+		$('#mydatepicker').dcalendarpicker();
+		$('#mydatepicker2').dcalendarpicker({
+			format:'yyyy-mm-dd'
+		});
+		$('#mycalendar').dcalendar();
 	</script>
 </body>
 </html>
