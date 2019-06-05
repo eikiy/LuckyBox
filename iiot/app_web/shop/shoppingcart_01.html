@@ -71,87 +71,42 @@
 			<!-- 購物車列表 / 取餐方式 -->
 		    <form class="shopping_cart">
 		    	<h3 class="top_title">愛物聯小吃店 - 分店1</h3>
-		    	<p class="quantity_products">目前選購 <span>21</span> 項商品</p>
-		    	<ul class="shopping_car_list">
-		    		<li class="top_title clearfix">
-		                <div class="sbox car_name">
+		    	<p class="quantity_products">共有 <span>21</span> 項商品</p>
+		    	<table class="order_list" cellpadding="0" cellspacing="" border="0">
+		    		<tr class="top_title clearfix">
+		                <th class="sbox car_name">
 		                   <p>商品名稱</p>
-		                </div>
-		                <div class="sbox car_nb">
+		                </th>
+		                <th class="sbox car_nb">
 		                    <p>數量</p>
-		                </div>
-		                <div class="sbox car_money">
-		                    <p>小計</p>
-		                </div>
-		                <div class="sbox car_delete">
-		                    <p>移除</p>
-		                </div>
-		            </li>
-		    		<li class="clearfix">
-		    			<div class="sbox car_name">
-		    				<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
-			                <p class="product_name">
-			                	<span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$105</span>
-			                </p>
-			            </div>
-			            <div class="sbox car_nb">
-			            	<div class="input_quantity">
-			            		<button><i class="fas fa-minus"></i></button>
-			            		<input type="text" name="" value="1" placeholder="0">
-			            		<button><i class="fas fa-plus"></i></button>
-			            	</div>
-		                </div>
-		                <div class="sbox car_money">
+		                </th>
+		                <th class="sbox car_money">
+		                    <p>金額</p>
+		                </th>
+		            </tr>
+		    		<tr class="clearfix">
+		    			<td class="sbox car_name">
+		    				<p class="product_name">產品AAAAA產品AAAAA產品AAAAA</p>
+			            </td>
+			            <td class="sbox car_nb">
+			            	<p>1</p>
+		                </td>
+		                <td class="sbox car_money">
 		                   <p>NT$105</p>
-		                </div>
-		                <div class="sbox car_delete">
-		                    <a><i class="far fa-trash-alt" title="移除商品"></i></a>
-		                </div>
-		    		</li>
-		    		<li class="clearfix">
-		    			<div class="sbox car_name">
-		    				<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
-			                <p class="product_name">
-			                	<span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
-			                </p>
-			            </div>
-			            <div class="sbox car_nb">
-			            	<div class="input_quantity">
-			            		<button><i class="fas fa-minus"></i></button>
-			            		<input type="text" name="" value="3" placeholder="0">
-			            		<button><i class="fas fa-plus"></i></button>
-			            	</div>
-		                </div>
-		                <div class="sbox car_money">
-		                   <p>NT$280</p>
-		                </div>
-		                <div class="sbox car_delete">
-		                    <a><i class="far fa-trash-alt" title="移除商品"></i></a>
-		                </div>
-		    		</li>
-		    		<li class="clearfix">
-		    			<div class="sbox car_name">
-		    				<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
-			                <p class="product_name">
-			                	<span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
-			                </p>
-			            </div>
-			            <div class="sbox car_nb">
-			            	<div class="input_quantity">
-			            		<button><i class="fas fa-minus"></i></button>
-			            		<input type="text" name="" value="1" placeholder="0">
-			            		<button><i class="fas fa-plus"></i></button>
-			            	</div>
-		                </div>
-		                <div class="sbox car_money">
-		                   <p>NT$66660</p>
-		                </div>
-		                <div class="sbox car_delete">
-		                    <a><i class="far fa-trash-alt" title="移除商品"></i></a><!-- 點了出現 yesDelets 再點一次確定刪除 -->
-		                    <a class="yesDelets"><p>確定刪除</p></a>
-		                </div>
-		    		</li>
-		        </ul>
+		                </td>
+		    		</tr>
+		    		<tr class="clearfix">
+		    			<td class="sbox car_name">
+		    				<p class="product_name">產品AAAAA</p>
+			            </td>
+			            <td class="sbox car_nb">
+			            	<p>1</p>
+		                </td>
+		                <td class="sbox car_money">
+		                   <p>NT$105</p>
+		                </td>
+		    		</tr>
+		        </table>
 		    </form>
 		    <form class="shopping_cart">
 				<h3 class="top_title">取餐方式</h3>
@@ -201,8 +156,8 @@
 					<p class="sub_title">請選擇取餐日期</p>
 					<div class="the_datepicker">
 						<i class="far fa-calendar-alt"></i>
-						<input class="fill_in" id="mydatepicker" placeholder="請選擇日期" type="text"/>
-						<input class="fill_in" type="text" name="" placeholder="取餐時段(上午、中午、晚上)">
+						<input class="fill_in" id="mydatepicker" name="datetimes" placeholder="請選擇日期" type="text"/>
+						<!-- <input class="fill_in" type="text" name="" placeholder="取餐時段(上午、中午、晚上)"> -->
 					</div>
 				</div>
 			</form>
@@ -211,12 +166,28 @@
 	<!-- calendar -->
 	<script type="text/javascript" src="js/dcalendar.picker.js"></script>
 	<script type="text/javascript">
-		$('#mydatepicker').dcalendarpicker();
-		$('#mydatepicker2').dcalendarpicker({
-			format:'yyyy-mm-dd'
+		// $('#mydatepicker').dcalendarpicker();
+		$('#mydatepicker').dcalendarpicker({
+			format:'yyyy-mm-dd',
+			timeFormat: 'hh:ii aa'
 		});
-		$('#mycalendar').dcalendar();
+		// $('#mycalendar').dcalendar();
 	</script>
+
+	<!-- 參考 http://www.daterangepicker.com/#example3 -->
+	<script type="text/javascript">
+		$(function() {
+		  $('input[name="datetimes"]').daterangepicker({
+		    timePicker: true,
+		    // startDate: moment().startOf('hour'),
+		    // endDate: moment().startOf('hour').add(32, 'hour'),
+		    locale: {
+		      format: 'M/DD hh:mm A'
+		    }
+		  });
+		});
+	</script>
+</script>
 </body>
 </html>
 
