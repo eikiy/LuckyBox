@@ -39,17 +39,26 @@
 		// 點選外送 填寫地址
 		$(function(){
 		  	$("ul.the_btn li.order_in").click(function(){
-		  		$(this).parent().next(".orderin_show").show();
+		  		$(this).parent().next(".a_box").hide();
+		  		$(this).parent().next().next(".orderin_show").show();
 		    	return false;
-		    });
+		    	 });
 		});
-		// 外送 填寫地址
+		// 內用 填寫桌號
 		$(function(){
-		  	$("ul.the_btn li.other_time").click(function(){
-		  		$(this).parent().next(".other_time_show").show();
+		  	$("ul.the_btn li.inside_in").click(function(){
+		  		$(this).parent().next(".a_box").hide();
+		  		$(this).parent().next().next(".orderin_show").hide();
+		  		$(this).parent().next(".inside_show").show();
 		    	return false;
 		    });
 		});
+		// $(function(){
+		//   	$("ul.the_btn li.other_time").click(function(){
+		//   		$(this).parent().next(".other_time_show").show();
+		//     	return false;
+		//     });
+		// });
   	</script>
 </head>
 <body>
@@ -112,7 +121,7 @@
 				<h3 class="top_title">取餐方式</h3>
 				<p class="sub_title">購買<span class="f_red">5樣商品</span>或<span class="f_red">消費滿500元</span>即可外送</p>
 				<ul class="the_btn">
-					<li>
+					<li class="inside_in">
 						<p>內用</p>
 					</li>
 					<li>
@@ -122,6 +131,10 @@
 						<p>外送</p>
 					</li>
 				</ul>
+				<div class="a_box inside_show">
+					<p class="sub_title">請填寫桌號</p>
+					<input class="fill_in" type="text" name="" placeholder="請輸入桌號">
+				</div>
 				<div class="a_box orderin_show">
 					<p class="sub_title">請填寫外送地址</p>
 					<input class="fill_in" type="text" name="" placeholder="請輸入地址">
