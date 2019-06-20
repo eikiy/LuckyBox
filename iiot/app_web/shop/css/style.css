@@ -207,7 +207,7 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart .a_box input.fill_in::placeholder{ color: #cecece; }
 .shopping_cart .a_box .the_datepicker{ max-width: 300px; margin: 0 auto; position: relative; }
 .shopping_cart .a_box .the_datepicker i{position: absolute; left: 12px; top: 0; color: #5f6368; z-index: 10; width: 35px; height: 40px; line-height: 40px; text-align: center;}
-.shopping_cart .a_box .the_datepicker input.fill_in{ padding-left: 20px; font-weight: normal; font-size: 15px; }
+.shopping_cart .a_box .the_datepicker input.fill_in{ padding-left: 46px; font-weight: normal; font-size: 15px; }
 .shopping_cart .a_box .the_button{padding-top: 10px;}
 
 #mydatepicker{ margin-bottom: 15px; }
