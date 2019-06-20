@@ -9,11 +9,11 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<!-- 日曆 -->
-	<link rel="stylesheet" href="css/dcalendar.picker.css"/>
 	<!-- jQuery Modal -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
@@ -22,44 +22,49 @@
     	.blocker{ background-color: rgba(0,0,0,0.5);}
     	.modal{box-shadow: 0 0 10px #0009;}
     </style>
-    <script type="text/javascript">
-    	// 日曆
-    	$(function() {
-			$( "#datepicker" ).datepicker();
-		});
+    // <script type="text/javascript">
+    	// 我寫的好爛XD
     	// 選到變外框顏色
 	    $(function(){
-		  	$("ul.the_btn li").click(function(){
-		  		$(this).parent().next(".a_box").hide();
-		  		$(this).parent().find("li").removeClass("the_selected");
-		        $(this).addClass("the_selected");
+		  	$("ul.the_btn li .btn").click(function(){
+		  		$(this).parent().parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next(".other_time_show").hide();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		        $(this).parent().addClass("the_selected");
 		    	return false;
 		    });
 		});
 		// 點選外送 填寫地址
 		$(function(){
-		  	$("ul.the_btn li.order_in").click(function(){
-		  		$(this).parent().next(".a_box").hide();
-		  		$(this).parent().next().next(".orderin_show").show();
+		  	$("ul.the_btn li .order_in").click(function(){
+		  		$(this).parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next().next(".orderin_show").show();
+		  		$(this).parent().parent().next().next(".inside_show").hide();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
 		    	return false;
 		    	 });
 		});
 		// 內用 填寫桌號
 		$(function(){
-		  	$("ul.the_btn li.inside_in").click(function(){
-		  		$(this).parent().next(".a_box").hide();
-		  		$(this).parent().next().next(".orderin_show").hide();
-		  		$(this).parent().next(".inside_show").show();
+		  	$("ul.the_btn li .inside_in").click(function(){
+		  		$(this).parent().parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next().next(".orderin_show").hide();
+		  		$(this).parent().parent().next(".inside_show").show();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
 		    	return false;
 		    });
 		});
-		// $(function(){
-		//   	$("ul.the_btn li.other_time").click(function(){
-		//   		$(this).parent().next(".other_time_show").show();
-		//     	return false;
-		//     });
-		// });
-  	</script>
+		$(function(){
+		  	$("ul.the_btn li .other_time").click(function(){
+		  		$(this).parent().parent().next(".other_time_show").show();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
+		    	return false;
+		    });
+		});
+  	</script>    
 </head>
 <body>
 	<main class="shop_mainbox shopping_order">
@@ -121,14 +126,15 @@
 				<h3 class="top_title">取餐方式</h3>
 				<p class="sub_title">購買<span class="f_red">5樣商品</span>或<span class="f_red">消費滿500元</span>即可外送</p>
 				<ul class="the_btn">
-					<li class="inside_in">
-						<p>內用</p>
+					<li>
+						<p class="inside_in">內用</p>
 					</li>
 					<li>
-						<p>外帶</p>
+						<!-- 尚未驗證，會先跳出驗證手機號碼 -->
+						<p><a href="#phone_code" rel="modal:open">外帶</a></p>
 					</li>
-					<li class="order_in">
-						<p>外送</p>
+					<li>
+						<p class="order_in">外送</p>
 					</li>
 				</ul>
 				<div class="a_box inside_show">
@@ -138,7 +144,12 @@
 				<div class="a_box orderin_show">
 					<p class="sub_title">請填寫外送地址</p>
 					<input class="fill_in" type="text" name="" placeholder="請輸入地址">
+					<div class="the_button">
+			    		<a class="btn c_gray" href="#">修改地址</a>
+			    		<a class="btn c_org" class="done" href="#">確認地址</a>
+			  		</div>
 				</div>
+
 				<!-- <ul class="fillin clearfix">
 					<li>
 						<input id="pickup-internal" type="radio" name="pickup-type" value="內用">
@@ -159,47 +170,38 @@
 				<p class="sub_title">立即取餐<span class="f_red">需估等待10分鐘</span></h3>
 				<ul class="the_btn">
 					<li>
-						<p>立即取餐</p>
+						<p class="btn">立即取餐</p>
 					</li>
-					<li class="other_time">
-						<p>其他時段</p>
+					<li>
+						<p class="other_time">其他時段</p>
 					</li>
 				</ul>
 				<div class="a_box other_time_show">
 					<p class="sub_title">請選擇取餐日期</p>
 					<div class="the_datepicker">
 						<i class="far fa-calendar-alt"></i>
-						<input class="fill_in" id="mydatepicker" name="datetimes" placeholder="請選擇日期" type="text"/>
-						<!-- <input class="fill_in" type="text" name="" placeholder="取餐時段(上午、中午、晚上)"> -->
-					</div>
+						<input class="fill_in" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
 				</div>
 			</form>
 		</section>
-	</main>
-	<!-- calendar -->
-	<script type="text/javascript" src="js/dcalendar.picker.js"></script>
-	<script type="text/javascript">
-		// $('#mydatepicker').dcalendarpicker();
-		$('#mydatepicker').dcalendarpicker({
-			format:'yyyy-mm-dd',
-			timeFormat: 'hh:ii aa'
-		});
-		// $('#mycalendar').dcalendar();
-	</script>
 
-	<!-- 參考 http://www.daterangepicker.com/#example3 -->
-	<script type="text/javascript">
-		$(function() {
-		  $('input[name="datetimes"]').daterangepicker({
-		    timePicker: true,
-		    // startDate: moment().startOf('hour'),
-		    // endDate: moment().startOf('hour').add(32, 'hour'),
-		    locale: {
-		      format: 'M/DD hh:mm A'
-		    }
-		  });
-		});
-	</script>
+		<!-- 電話驗證 -->
+	    <div id="phone_code" class="modal fade fadebox">
+	    	<div class="verification">
+	    		<h3 class="top_title">手機驗證</h3>
+	    		<input type="text" name="" placeholder="請輸入手機號碼">
+	    		<div class="both clearfix">
+	    			<button  class="btn" type="button">驗證此手機號碼</button>
+	    			<input type="text" name="" placeholder="驗證碼">
+	    		</div>
+	    		<a href="#">沒收到驗證碼?</a>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">送出</a>
+	  		</div>
+	    </div>
+	</main>
 </script>
 </body>
 </html>
