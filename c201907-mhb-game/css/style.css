@@ -39,7 +39,7 @@ main{width: 100%;}
 .top_menu a.go_02{ left: 33.33%; }
 .top_menu a.go_03{ left: 66.66%; }
 .top_menu span{ display: block; position: relative; height: 100%;}
-.top_menu span::after{ content: ""; position: absolute; display: block; opacity: 0;  width: 22px; height: 17px; background-color: #fff; top: 88px; left: 50%; background: url(../images/icon_triangle.png) center center no-repeat; background-size: contain; }
+.top_menu span::after{ content: ""; position: absolute; display: block; opacity: 0;  width: 22px; height: 17px; background-color: #fff; top: 88px; left: calc(50% - 11px); background: url(../images/icon_triangle.png) center center no-repeat; background-size: contain; }
 .top_menu img.mob{ display: none; }
 .top_menu span.btn_in::after{ opacity: 1; }
 
@@ -200,7 +200,15 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.eventinfo_box h4 a{ font-size: 22px; }
 }
 @media (max-width:400px){
-	.note_box h3, .note_box h4{ font-size: 14px;}
+	h3.img_title{ height: 50px; }
+	.note_box{ padding-bottom: 20px; }
+	.eventinfo_box p.p_info{ max-width: 87%;}
+	.note_box .img{ max-width: 200px; }
+	.eventinfo_box h4 a{ font-size: 20px; }
+	.eventinfo_box .btn_link p.btn a{ height: 55px; }
+	.bg_paper_02{ min-height: 2350px; }
+	.note_box h3{ font-size: 22px; padding: 15px 0 20px 0; }
 	.note_box ul{ font-size: 13px; }
+	.note_box ul li{ padding-bottom: 15px; }
 	.note_box ul li p{ font-size: 13px;  line-height: 18px;}
 }
