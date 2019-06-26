@@ -48,10 +48,11 @@ main{width: 100%;}
 .eventinfo_box h4 a{ color: #c50018; padding-bottom: 30px; display: block; max-width: 75%; margin: 0 auto; font-size: 26px; word-wrap: break-word; word-break: break-all;}
 .eventinfo_box h4 a:hover{ text-decoration: underline; }
 
-.eventinfo_box p.p_info{ font-size: 33px; line-height:46px; text-align: left; color: #000;max-width: 750px; margin: 0 auto;}
+.eventinfo_box p.p_info{ font-size: 33px; line-height:46px; text-align: justify; color: #000;max-width: 750px; margin: 0 auto;}
 .eventinfo_box p.p_info span.nb{ font-weight: 800; font-size: 44px;  }
 .eventinfo_box p.p_info span.f_red{ color: #db0225; font-weight: bold; }
 .eventinfo_box p.p_info span.f_s{ font-size: 30px; }
+.eventinfo_box p.p_info span.the_br{ display: block; }
 
 .eventinfo_box .btn_link{ width: 100%; padding: 25px 0;}
 .eventinfo_box .btn_link p.btn{ text-align: center; }
@@ -121,7 +122,7 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 @media (max-width:900px){
 	h3.img_title{ height: 90px; }
 	.bg_paper_01 h4{ font-size: 28px; padding: 15px 0 5px; }
-	.eventinfo_box p.p_info{ font-size: 24px; line-height: 34px; }
+	.eventinfo_box p.p_info{ font-size: 24px; line-height: 34px; max-width: 80%; }
 	.eventinfo_box p.p_info span.f_s{font-size: 20px;}
 	.eventinfo_box h4{font-size: 30px;}
 	.note_box ul.treasure_info li p{ font-size: 24px; }
@@ -146,6 +147,7 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.eventinfo_box p.p_info{ font-size: 22px;}
 	.eventinfo_box p.p_info span.f_s{font-size: 18px;}
 	.eventinfo_box p.p_info span.nb{font-size: 28px;}
+	.eventinfo_box p.p_info span.the_br{ display: initial; }
 	.eventinfo_box .btn_link p.btn a{ height: 65px; }
 	.eventinfo_box h2{ font-size: 36px; }
 	.note_box ul{font-size: 18px;}
@@ -182,36 +184,58 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.bg_paper_02{ min-height: 2500px; }
 	h3.title_01, h3.title_03{ top:35px; }
 	.bg_paper_01 h4{ padding-top: 110px; max-width: 50%; margin: 0 auto; }
-	.eventinfo_box p.p_info{ max-width: 70%; margin: 0 auto; }
+	.eventinfo_box p.p_info{ max-width: 63%; margin: 0 auto; }
 	.eventinfo_box .img{ max-width: 80%; }
 	.eventinfo_box p.p_info span.nb{ font-size: 20px; }
 	.bg_paper_02{ min-height: 2600px; }
 }
 @media (max-width:499px){
-	.note_box h3{ font-size: 28px; }
-	.eventinfo_box .btn_link{padding: 20px 0;}
-	.eventinfo_box .btn_link p.btn a{ margin: 5px auto; }
-	.bg_paper_01 h4{ max-width: 58%; font-size: 21px; padding-top: 90px;}
+	.bg_paper_01 h4{ max-width: 100%; font-size: 20px; padding-top: 90px;}
 	.bg_paper_02{ min-height: 2500px; }
 	.bg_paper_02 .btn_link{padding-top: 0;}
-	.note_box .content_box{ width: 100%; }
+	.note_box h3{ font-size: 28px; }
 	.note_box ul{font-size: 14px;}
 	.note_box ul li p{ font-size: 15px; }
-	.eventinfo_box p.p_info{ font-size: 18px; }
+	.note_box .content_box{ width: 100%; }
+	.eventinfo_box p.p_info{ max-width: 78%;}
+	.eventinfo_box p.p_info{ font-size: 17px; }
 	.eventinfo_box p.p_info span.f_s{ font-size: 14px; }
 	.eventinfo_box h4{ line-height: 32px; }
 	.eventinfo_box h4 a{ font-size: 20px; }
+	.eventinfo_box .btn_link{padding: 20px 0;}
+	.eventinfo_box .btn_link p.btn a{ margin: 5px auto; }
+}
+@media (max-width:450px){
+	.bg_paper_01 h4{ font-size: 17px;}
+	.eventinfo_box h4 a{ font-size: 13px; line-height:24px;}
+	.note_box .img{ max-width: 200px; padding-bottom: 0; }
+	.note_box ul.treasure_info li p{ font-size: 15px; line-height: 20px; }
+	.note_box ul.treasure_info li::after{ top: 3px; }
 }
 @media (max-width:400px){
 	h3.img_title{ height: 50px; }
-	.note_box{ padding-bottom: 20px; }
-	.eventinfo_box p.p_info{ max-width: 87%;}
-	.note_box .img{ max-width: 200px; }
 	.eventinfo_box h4 a{ font-size: 18px; }
+	.eventinfo_box p.p_info{ max-width: 87%;}
 	.eventinfo_box .btn_link p.btn a{ height: 55px; }
+	.bg_paper_01 { min-height: 800px;  background: url(../images/bg_paper_01xs.png) top center no-repeat; background-size: contain;}
 	.bg_paper_02{ min-height: 2350px; }
+	.note_box{ padding-bottom: 20px; }
 	.note_box h3{ font-size: 22px; padding: 15px 0 20px 0; }
 	.note_box ul{ font-size: 13px; }
 	.note_box ul li{ padding-bottom: 15px; }
 	.note_box ul li p{ font-size: 13px;  line-height: 18px;}
+	.note_box .img{ max-width: 200px; }
+}
+@media (max-width:330px){
+	h3.img_title{ height: 45px; top: -38px; }
+	h3.title_01, h3.title_03{ top: 21px; }
+	.bg_paper_01{ min-height: 700px; }
+	.bg_paper_01 h4{ font-size: 14px; padding-top: 65px; }
+	.bg_paper_02{ padding-top: 60px; min-height: 2000px;}
+	.eventinfo_box p.p_info{ font-size: 14px; line-height: 22px;}
+	.eventinfo_box p.p_info span.f_s{ font-size: 12px; }
+	.eventinfo_box .btn_link{ padding: 15px 0; }
+	.eventinfo_box .btn_link p.btn a{ height: 45px; }
+	.note_box h3{ font-size: 20px; }
+	.note_box ul.treasure_info li p{ font-size: 14px; }
 }
