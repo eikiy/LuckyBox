@@ -190,9 +190,7 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.bg_paper_02{ min-height: 2600px; }
 }
 @media (max-width:499px){
-	.bg_paper_01 h4{ max-width: 100%; font-size: 20px; padding-top: 90px;}
-	.bg_paper_02{ min-height: 2500px; }
-	.bg_paper_02 .btn_link{padding-top: 0;}
+
 	.note_box h3{ font-size: 28px; }
 	.note_box ul{font-size: 14px;}
 	.note_box ul li p{ font-size: 15px; }
@@ -204,6 +202,9 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.eventinfo_box h4 a{ font-size: 20px; }
 	.eventinfo_box .btn_link{padding: 20px 0;}
 	.eventinfo_box .btn_link p.btn a{ margin: 5px auto; }
+	.bg_paper_01 h4{ max-width: 100%; font-size: 20px; padding-top: 90px;}
+	.bg_paper_02{ min-height: 2500px; }
+	.bg_paper_02 .btn_link{padding-top: 0;}	
 }
 @media (max-width:450px){
 	.bg_paper_01 h4{ font-size: 17px;}
@@ -213,18 +214,16 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.note_box ul.treasure_info li::after{ top: 3px; }
 }
 @media (max-width:400px){
-	h3.img_title{ height: 50px; }
-	.eventinfo_box h4 a{ font-size: 18px; }
+	h3.img_title, .eventinfo_box .btn_link p.btn a{ height: 50px; }
 	.eventinfo_box p.p_info{ max-width: 87%;}
-	.eventinfo_box .btn_link p.btn a{ height: 55px; }
-	.bg_paper_01 { min-height: 800px;  background: url(../images/bg_paper_01xs.png) top center no-repeat; background-size: contain;}
-	.bg_paper_02{ min-height: 2350px; }
 	.note_box{ padding-bottom: 20px; }
 	.note_box h3{ font-size: 22px; padding: 15px 0 20px 0; }
 	.note_box ul{ font-size: 13px; }
 	.note_box ul li{ padding-bottom: 15px; }
 	.note_box ul li p{ font-size: 13px;  line-height: 18px;}
 	.note_box .img{ max-width: 200px; }
+	.bg_paper_01 { min-height: 800px;  background: url(../images/bg_paper_01xs.png) top center no-repeat; background-size: contain;}
+	.bg_paper_02{ min-height: 2350px; padding-top: 100px; }
 }
 @media (max-width:330px){
 	h3.img_title{ height: 45px; top: -38px; }
