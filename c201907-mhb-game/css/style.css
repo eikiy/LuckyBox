@@ -211,12 +211,14 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.note_box .img{ max-width: 200px; padding-bottom: 0; }
 	.note_box ul.treasure_info li p{ font-size: 15px; line-height: 20px; }
 	.note_box ul.treasure_info li::after{ top: 3px; }
+	.bg_paper_01 { min-height: 800px;  background: url(../images/bg_paper_01xs.png) top center no-repeat; background-size: contain;}
+	.bg_paper_02 { min-height: 2410px;}
 }
 @media (max-width:400px){
 	h3.title_01, h3.title_03{ top: 25px; }
 	h3.title_02{ top: -42px; }
 	h3.img_title, .eventinfo_box .btn_link p.btn a{ height: 50px; }
-	.eventinfo_box p.p_info{ max-width: 87%;}
+	.eventinfo_box p.p_info{ max-width: 84%;}
 	.note_box{ padding-bottom: 20px; }
 	.note_box h3{ font-size: 22px; padding: 15px 0 20px 0; }
 	.note_box ul{ font-size: 13px; }
@@ -224,7 +226,6 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.note_box ul li p{ font-size: 13px;  line-height: 18px;}
 	.note_box ul.treasure_info{padding-bottom: 40px;}
 	.note_box .img{ max-width: 200px; }
-	.bg_paper_01 { min-height: 800px;  background: url(../images/bg_paper_01xs.png) top center no-repeat; background-size: contain;}
 	.bg_paper_02{ min-height: 2250px; padding-top: 85px; }
 }
 @media (max-width:330px){
