@@ -190,7 +190,6 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.bg_paper_02{ min-height: 2600px; }
 }
 @media (max-width:499px){
-
 	.note_box h3{ font-size: 28px; }
 	.note_box ul{font-size: 14px;}
 	.note_box ul li p{ font-size: 15px; }
@@ -223,7 +222,7 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.note_box ul li p{ font-size: 13px;  line-height: 18px;}
 	.note_box .img{ max-width: 200px; }
 	.bg_paper_01 { min-height: 800px;  background: url(../images/bg_paper_01xs.png) top center no-repeat; background-size: contain;}
-	.bg_paper_02{ min-height: 2350px; padding-top: 100px; }
+	.bg_paper_02{ min-height: 2250px; padding-top: 100px; }
 }
 @media (max-width:330px){
 	h3.img_title{ height: 45px; top: -38px; }
