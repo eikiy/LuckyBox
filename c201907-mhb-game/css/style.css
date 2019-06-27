@@ -28,7 +28,7 @@ body{ height: 100%; }
 
 main{width: 100%;}
 .content_box{ max-width: 1000px; margin: 0 auto; min-width: 320px; position: relative;}
-.bg_00{ background: url(../images/bg_00.jpg) center top no-repeat; }
+.bg_00{ background: url(../images/bg_00.jpg) center top no-repeat; background-size: cover; }
 .bg_01{ background: url(../images/bg.jpg) 0 0 repeat; }
 
 .kv_main{ width: 100%; text-align: center; background-color: #261f1c; }
@@ -45,8 +45,8 @@ main{width: 100%;}
 
 .eventinfo_box{ width: 100%; padding: 50px 0 100px 0; }
 .eventinfo_box h4{ font-size: 42px; line-height: 45px; font-weight: bold; color: #000000; padding: 50px 0 30px 0; text-align: center; }
-.eventinfo_box h4 a{ color: #c50018; padding-bottom: 30px; display: block; max-width: 75%; margin: 0 auto; font-size: 26px; word-wrap: break-word; word-break: break-all;}
-.eventinfo_box h4 a:hover{ text-decoration: underline; }
+.eventinfo_box h4 a{ color: #c50018;text-decoration: underline;  padding-bottom: 30px; display: block; max-width: 75%; margin: 0 auto; font-size: 26px; word-wrap: break-word; word-break: break-all;}
+.eventinfo_box h4 a:hover{ text-decoration: none; }
 
 .eventinfo_box p.p_info{ font-size: 33px; line-height:46px; text-align: justify; color: #000;max-width: 750px; margin: 0 auto;}
 .eventinfo_box p.p_info span.nb{ font-weight: 800; font-size: 44px;  }
@@ -159,7 +159,6 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.eventinfo_box h2{ font-size: 32px; line-height: inherit; }
 	.eventinfo_box h2 span{ display: block; }
 	.eventinfo_box p.p_info{ font-size: 20px;  line-height: 26px; }
-	.eventinfo_box h4 a{ font-size: 24px; }
 	.top_menu span::after{ top: 52px; }
 	.note_box ul{font-size: 16px;}
 	.note_box ul li p{ font-size: 16px; line-height: 24px; }
@@ -198,7 +197,6 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 	.eventinfo_box p.p_info{ font-size: 17px; }
 	.eventinfo_box p.p_info span.f_s{ font-size: 14px; }
 	.eventinfo_box h4{ line-height: 32px; }
-	.eventinfo_box h4 a{ font-size: 20px; }
 	.eventinfo_box .btn_link{padding: 20px 0;}
 	.eventinfo_box .btn_link p.btn a{ margin: 5px auto; }
 	.bg_paper_01 h4{ max-width: 100%; font-size: 20px; padding-top: 90px;}
@@ -207,7 +205,6 @@ h3.title_03{ background-image: url(../images/title_03.png); top: 85px; }
 }
 @media (max-width:450px){
 	.bg_paper_01 h4{ font-size: 17px;}
-	.eventinfo_box h4 a{ font-size: 13px; line-height:24px;}
 	.note_box .img{ max-width: 200px; padding-bottom: 0; }
 	.note_box ul.treasure_info li p{ font-size: 15px; line-height: 20px; }
 	.note_box ul.treasure_info li::after{ top: 3px; }
