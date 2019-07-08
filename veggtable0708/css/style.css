@@ -28,10 +28,10 @@ body{ height: 100%; }
 
 /*===== start ======*/
 main{width: 100%;}
-#top{position: fixed; bottom: 24px ;right: 24px; z-index: 999; width: 40px; height: 40px; cursor: pointer; background-color: #b7462d; border-radius: 50px; -webkit-box-shadow: 0 4px 6px 0 rgba(0,0,0,.2); box-shadow: 0 4px 6px 0 rgba(0,0,0,.2); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center;  justify-content: center;}
+#top{position: fixed; bottom: 75px ; right: 24px; z-index: 999; width: 40px; height: 40px; cursor: pointer; background-color: #b7462d; border-radius: 50px; -webkit-box-shadow: 0 4px 6px 0 rgba(0,0,0,.2); box-shadow: 0 4px 6px 0 rgba(0,0,0,.2); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center;  justify-content: center;}
 #top:after{ color: #efe9d6; content: "\F0D8"; display: block; font-size: 30px; margin-top: -4px; font-family: Font Awesome\ 5 Free; font-weight: 900;}
 
-.content-box{ width: 96%; max-width: 1200px; margin: 0 auto; position: relative;}
+.content-box{ width: 95%; max-width: 1200px; margin: 0 auto; position: relative;}
 
 /*side menu*/
 .side-menu{ width: 288px; position: fixed; top:0; left: 0; height: 100vh; padding: 20px 0; z-index: 20; background: url(../images/bg.png) 0 0 repeat; box-shadow: 0 0 8px rgba(0,0,0,.4); }
@@ -50,36 +50,6 @@ main{width: 100%;}
 .side-menu ul.menu li p span.line:before{ position: absolute; content: ""; display: block; width: 25px; height: 1px; background-color: #c35239; margin-right: .5em; top: 50%; left: -50%;}
 .side-menu ul.menu li p span.line:after{ position: absolute; content: ""; display: block; width: 25px; height: 1px; background-color: #c35239; margin-left: .5em; top: 50%; right: -50%;}
 .side-menu p.office-info{ position: absolute; bottom: 15px; left: 0; width: 100%; text-align: center; line-height: 1.5rem; padding-top: 30px; font-size: 1rem;}
-/*
-.side-menu .the_mob_btn{ position: fixed; display: none;top: 0; right: 0; padding: 20px 15px; padding-top: 25px; line-height: 24px; cursor:pointer; color: #d9b00f;}
-.side-menu .the_mob_btn span.icon_hamburger{ width: 32px; height: 24px; display: inline-block; background: url(../images/icon_menu_hamburger.png) center center no-repeat; background-size: contain; }
-*/
-/*sidenav*/
-/*.sidenav { height:0; width: 100%; overflow: hidden; position: fixed; z-index: 25; top: 0;  right: 0; background-color: #c35239;  overflow-x: hidden;  transition: 0.5s;}
-.sidenav a {text-decoration: none;  color: #fff;  display: block;  transition: 0.3s;}
-.sidenav a:hover {  color: #f1f1f1;}
-.sidenav .closebtn { text-align: right; padding: 0px 8px 0px; top: 0;font-size: 48px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky;}
-.sidenav .side_Contents{ padding: 20px; width: 100%; height:100%; overflow:hidden; }
-
-.sidenav ul.side_menu{ padding: 20px; width: 350px; margin-left: -20px; }
-.sidenav ul.side_menu li{position: relative;}
-.sidenav ul.side_menu li::after{ content: ""; position: absolute; bottom: 0; left: -20px; width: 100%; height: 1px; background-color: #8d7827;}
-.sidenav ul.side_menu li h3{ font-size: 22px; color: #fff; position: relative; cursor: pointer; padding: 15px 0;}
-.sidenav ul.side_menu li h3:after{ content:""; right: 22px; top: calc(50% - 5px); position: absolute; width: 13px; height: 10px; display: block; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image:url(../images/icon_arr_w.png);  }
-.sidenav ul.side_menu li h3 a{ color: #ffffff;  cursor: pointer;display: block; position: relative;}
-.sidenav ul.side_menu li h3 a:hover{ color: #d1ab1b;}
-
-.sidenav ul.side_menu li p{ font-size: 18px; }
-.sidenav ul.side_menu li p a{ padding: 10px 0; }
-
-.sidenav ul.side_menu li:hover h3{ color: #d1ab1b; }
-.sidenav ul.side_menu li:hover h3:after{ background-image:url(../images/icon_arr_y.png);}
-.sidenav ul.side_menu li h3.none_arr:after{ display: none; }
-
-.sidenav ul.side_menu li ul.sub_menu{ display: none; padding-bottom: 20px; }
-.sidenav ul.side_menu li ul.sub_menu li::after{ display: none; }
-.sidenav ul.side_menu li:first-child ul.sub_menu li{ width: 50%; float: left; }
-.sidenav p.social_box a{width: 35px; height: 35px; margin: 0 5px;}*/
 
 /*content*/
 .main-content{ width: 100%; padding-left: 288px; background: url(../images/bg.png) 0 0 repeat; }
@@ -258,6 +228,7 @@ p.sub-text{ text-align: center; font-size: 22px; font-weight: 700; line-height: 
 	.dishes-story ul.food-list li .p-info p span.the-br2{ display: block; }
 	.event-method p.sub-text, .dishes-story p.sub-text{ font-size: 18px; }
 	.event-method p.sub-text span.the-br2{ display: block; }
+	.event-menu-list p.sub-text{padding-left: 10px; padding-right: 10px;}
 	.footer-box p{ font-size: 13px; }
 }
 @media (max-width:450px){
