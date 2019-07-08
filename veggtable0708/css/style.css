@@ -165,7 +165,7 @@ p.sub-text{ text-align: center; font-size: 22px; font-weight: 700; line-height: 
 	.side-menu ul.menu li p::after{ height: 40px; top: -6px; left: 30px;}
 	.side-menu ul.menu li p span.line:before, .side-menu ul.menu li p span.line:after{ display: none;}
 	.side-menu p.office-info{ display: none; }
-	.main-content{padding: 0; padding-top: 120px;}
+	.main-content{padding: 0; padding-top: 122px;}
 	.main-content .top-banner{ min-height: 400px; height: calc(100vh - 120px); }
 	.main-content .top-banner h1.main-title{max-height: 55vh;}
 	.footer-box p.mob{ display: block; }
