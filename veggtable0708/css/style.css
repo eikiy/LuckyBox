@@ -98,7 +98,7 @@ p.sub-text{ text-align: center; font-size: 22px; font-weight: 700; line-height: 
 .event-menu-list .bannerBox .flexslider ul li{ background-position: center center; background-repeat: no-repeat; background-size: cover; }
 .event-menu-list .bannerBox .flexslider .flex-viewport{ -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 6px solid #efe9d6;}
 .event-menu-list .bannerBox .flexslider .slides{ text-align: center; }
-.event-menu-list .bannerBox .flexslider .slides img{ -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
+.event-menu-list .bannerBox .flexslider .slides img{ -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; }
 .event-menu-list .bannerBox .flexslider .flex-control-nav{ bottom: -40px; }
 .event-menu-list .bannerBox .flexslider .flex-direction-nav a{ top:50%; width: 60px; height: 60px; display: block; text-indent: -9999px;  background-size: contain; background-position: center center; background-repeat: no-repeat; }
 .event-menu-list .bannerBox .flexslider .flex-direction-nav a:before{ display: none; content: ""; }
