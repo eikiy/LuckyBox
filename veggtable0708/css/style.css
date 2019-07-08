@@ -55,7 +55,7 @@ main{width: 100%;}
 .main-content{ width: 100%; padding-left: 288px; background: url(../images/bg.png) 0 0 repeat; }
 .main-content .top-banner{ width: 100%; height: 100vh; position: relative; text-align: center; background: url(../images/main_kv.png) top center no-repeat; background-size: cover; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .main-content .top-banner h1.main-title{ height: 100%; max-height: 60vh; margin-bottom: 5vh; width: 100%; max-width: 490px; text-indent: -9999px; text-align: center; background: url(../images/main-logo.png) center center no-repeat; background-size: contain;}
-.main-content .top-banner .main-rainbow{ width: 100%; bottom: -3px; left: 0; position: absolute;}
+.main-content .top-banner .main-rainbow{ width: 100%; bottom: -5px; left: 0; position: absolute;}
 .main-content .top-title{ position: absolute; top: 0; left:calc(50% - 135px); border:5px solid #c35239; padding: 4px; z-index: 10; display: inline-block; background-color: #efe9d6; margin: 0 auto; }
 .main-content .top-title .line-border{ border:2px solid #c35239; padding: 4px; padding: 0px 4px 4px 4px; text-align: center;}
 .main-content .top-title .line-border h3{ font-size: 30px; font-weight: 900; color: #c35239;}
