@@ -90,7 +90,7 @@ p.sub-text{ text-align: center; font-size: 22px; font-weight: 700; line-height: 
 
 /*菜色清單*/
 .event-menu-list{ background: url(../images/bg2.png) center center repeat; padding: 40px 0; overflow: hidden;}
-.event-menu-list p.sub-text{text-align: center; font-weight: 500; color: #ffffff; padding-top: 55px; line-height: 35px;}
+.event-menu-list p.sub-text{text-align: center; font-weight: 500; color: #641200; padding-top: 30px; line-height: 35px;}
 .event-menu-list p.sub-text span{ font-size: 18px; }
 
 .event-menu-list .bannerBox{ max-width: 1050px; margin: 0 auto;/* min-height: 620px;*/ position: relative; padding-top: 36px;}
