@@ -48,8 +48,9 @@ html, body{ height: 100%; }
 .contact-us-box .info p.btn{ text-align: center; }
 .contact-us-box .info p.btn span.s_go_01 { font-size: 18px; width: 100%; cursor: pointer; max-width: 280px; font-weight: bold; margin: 0 auto; background-color: #500095; color: #fff; padding: 18px; border-radius: 6px; display: inline-block;}
 .contact-us-box .info p.btn span.s_go_01:hover{ opacity: .9; }
-.contact-us-box .info p.btn span.f_ss{ font-size: 14px; color: #552aa2; line-height: 26px; font-weight: bold; padding: 15px 0; display: block; letter-spacing: 3px; }
+.contact-us-box .info p.btn span.f_ss{ font-size: 14px; color: #3b2463; line-height: 26px; font-weight: bold; padding: 15px 0; display: block; letter-spacing: 3px; }
 .contact-us-box .info p.btn span.c_yel{ color: #ffeb3b; font-weight: bold; letter-spacing: 2px ;font-size: 14px;}
+.contact-us-box .info p.btn span.line {/* border-bottom: 1.5px solid #ffeb3b;*/  color: #fff; padding-bottom: 3px; }
 .contact-us-box .time-box{ padding: 15px 0; }
 .contact-us-box .time-box p{ font-weight: bold; }
 
@@ -217,6 +218,7 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
   ul.contactus li a{ width: 90px; height: 90px; padding-top: 51px; font-size: 13px; }
   .the_br{ display: block; }
   .contact-us-box .info p.btn span.f_ss{ background-color: #fff; border-radius:6px; max-width: 280px; margin: 10px auto; }
+  .contact-us-box .info p.btn span.line{ color: #9C27B0; }
   .contact-us-box .info p.btn span.c_yel{ color: #FF9800; }
 }
 
