@@ -37,11 +37,8 @@ html, body{ height: 100%; }
 .contact-us-box .main-box ul li h3 span{ color: #ffea00; font-size: 21px; font-weight: bold; }
 .contact-us-box .main-box ul li h3 span.f_ss{ font-size: 14px; font-weight: normal;}
 
-.main-text-box{ height: 100vh; min-height: 480px;  position: relative;  background: url(../images/main_bg.png) center center no-repeat; background-size: cover;}
-/*.main-text-box::after{ content: ""; position: absolute;bottom: 0;left: 0; width: 50%; height: 100%; display: block; background: url(../images/main_bg.png) center right no-repeat; background-size: cover; z-index: -1;}*/
-.main-text-box p.hightlight{ color: #333; font-size: 20px; text-align: center; padding:0 0 20px 0;font-weight: bold;}
-.main-text-box p.hightlight span{ color: #fede2e; font-size:24px;  letter-spacing: 2px; line-height: 40px; padding: 0 0 0 5px;}
-
+.main-text-box{ height: 100vh; min-height: 480px;  position: relative;  background: url(../images/main_bg_0704.png) center center no-repeat; background-size: cover;}
+.main-text-box p.hightlight{ color: #333; line-height: 30px; font-size: 20px; text-align: center; font-weight: bold;}
 .contact-us-box .info{ padding: 55px 0; width: 50%; float: right; height: 100%; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .contact-us-box .info h1{ width:100%;}
 .contact-us-box .info h1 a{ width: 100%; height: 45px;display: block; background:url(../images/logo.png) center center no-repeat;  background-size: contain; text-indent: -9999px; color: transparent;}
@@ -49,9 +46,12 @@ html, body{ height: 100%; }
 
 .contact-us-box .info h2{ width: 100%;/* max-width: 520px;*/ margin: 0 auto;}
 .contact-us-box .info p.btn{ text-align: center; }
-.contact-us-box .info p.btn span.s_go_01 { font-size: 18px; width: 100%; cursor: pointer; max-width: 280px; margin: 0 auto; background-color: #500095; color: #fff; padding: 18px; border-radius: 6px; display: inline-block;}
-.contact-us-box .info p.btn span.f_ss{ font-size: 14px; padding: 15px 0; display: block; letter-spacing: 3px; }
-.contact-us-box .info p.btn:hover{ opacity: .9; }
+.contact-us-box .info p.btn span.s_go_01 { font-size: 18px; width: 100%; cursor: pointer; max-width: 280px; font-weight: bold; margin: 0 auto; background-color: #500095; color: #fff; padding: 18px; border-radius: 6px; display: inline-block;}
+.contact-us-box .info p.btn span.s_go_01:hover{ opacity: .9; }
+.contact-us-box .info p.btn span.f_ss{ font-size: 14px; color: #552aa2; line-height: 26px; font-weight: bold; padding: 15px 0; display: block; letter-spacing: 3px; }
+.contact-us-box .info p.btn span.c_yel{ color: #ffeb3b; font-weight: bold; letter-spacing: 2px ;font-size: 14px;}
+.contact-us-box .time-box{ padding: 15px 0; }
+.contact-us-box .time-box p{ font-weight: bold; }
 
 .contact-us-box h3{ line-height: 36px; color: #333; padding: 0 10px; font-size: 24px; text-shadow: none; text-align: center;}
 .contact-us-box h3 span.yellow{color: #ffeb3b; padding: 5px 10px; border:2px solid #ffeb3b; display: inline-block; margin-top: 15px;text-shadow: none; }
@@ -167,7 +167,7 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
   .contact-us-box h3.title span.none{ display: none; }
   .free_service ul.tags{text-align: center;}
   .contact-us-box .info h1{margin: 0 auto; margin-bottom: 5px;}
-  .contact-us-box .info{width: 100%; padding-bottom: 318px;}
+  .contact-us-box .info{width: 100%; padding-top: 0; padding-bottom: 12vh;}
 }
 @media (max-width:750px){
   .question-box ul.fillinBox{max-width: 100%;}
@@ -202,6 +202,7 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 }
 
 @media (max-width:500px){
+  .main-text-box{ background-position: bottom center;  }
   .main-text-box p.hightlight{padding-top: 0;}
   .free_service ul.tags li p{padding: 7px 14px; font-size: 12.5px;}
   .contact-us-box .info h1{padding-bottom: 0;}
@@ -214,6 +215,9 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
   ul.contactus li{ padding: 0 5px; }
   ul.contactus li a::after{ height: 65px; }
   ul.contactus li a{ width: 90px; height: 90px; padding-top: 51px; font-size: 13px; }
+  .the_br{ display: block; }
+  .contact-us-box .info p.btn span.f_ss{ background-color: #fff; border-radius:6px; max-width: 280px; margin: 10px auto; }
+  .contact-us-box .info p.btn span.c_yel{ color: #FF9800; }
 }
 
 @media (max-width:400px){
@@ -227,8 +231,13 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 @media (max-width:350px){
   .main-text-box .rbox span{ font-size: 17px; }
   ul.contactus li a{ width: 80px; height: 80px; font-size: 11px; }
+  .xdsoft_flipcountdown.xdsoft_size_md >.xdsoft_digit{ width: 30px !important; }
+  .xdsoft_flipcountdown.xdsoft_size_md >.xdsoft_digit.xdsoft_space,
+  .xdsoft_flipcountdown.xdsoft_size_md >.xdsoft_digit.xdsoft_separator,
+  xdsoft_flipcountdown.xdsoft_size_md >.xdsoft_digit.xdsoft_dot{
+  width:10px !important;}
 }
-/*@media (max-device-width:1200px) {
+/*@media (max-device-width:1200px) { 
   .contact-us-box .main-box{ background-attachment: inherit; }
 }*/
 

@@ -15,9 +15,12 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://hilios.github.io/jQuery.countdown/css/main.css">
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://use.fontawesome.com/ca17a34927.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
     <script type="text/javascript">
         $(function(){
             $('.s_go_01').click(function(){ $('html,body').animate({scrollTop:$('#move_goto_01').offset().top}, 800); });
@@ -28,6 +31,29 @@
             new WOW().init();
         });
     </script>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.flipcountdown.css" />
+    <script type="text/javascript" src="js/jquery.flipcountdown.js"></script>
+    <script>
+        $(function(){
+            var NY = Math.round((new Date('7/25/2019 00:00:01')).getTime()/1000);
+            $('#retroclockbox1').flipcountdown({
+                tick:function(){
+                    var nol = function(h){
+                        return h>9?h:'0'+h;
+                    }
+                    var range   = NY-Math.round((new Date()).getTime()/1000),
+                        secday = 86400, sechour = 3600,
+                        days    = parseInt(range/secday),
+                        hours   = parseInt((range%secday)/sechour),
+                        min     = parseInt(((range%secday)%sechour)/60),
+                        sec     = ((range%secday)%sechour)%60;
+                    return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
     <main class="contact-us-box">
@@ -36,10 +62,39 @@
                 <div class="info wow fadeInDown" data-wow-duration="2s">
                     <div class="middle">
                         <h1 class="log"><a href="https://www.holkee.com/" target="_blank">holkee</a></h1>
-                        <h2 class="title_img"><img src="images/title-img.png" alt="新聞媒體贊助計畫 限時 7/5-7/25" width="100%"></h2>
-                        <p class="hightlight">買新聞<span>送廣告</span>．獨家狂殺每日只要 $333</p>
-                        <p class="btn"><span class="s_go_01">立即登記，送三萬元廣告金</span><br>
-                            <span class="f_ss">贊助計畫僅限100個名額，7/25前登記完為止</span></p>
+                        <h2 class="title_img"><img src="images/title-img-0704.png" alt="新聞媒體贊助計畫 限時 7/5-7/25" width="100%"></h2>
+                        <p class="hightlight">媽，我上新聞了！<span class="the_br">獨家狂殺↘每日只要 $333</span></p>
+                        <div class="time-box"><!-- 時間倒數欄位 -->
+                            <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                                <tr>
+                                    <td colspan="4" align="center">
+                                        <div id="retroclockbox1" style="display: inline-block;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:80px;text-align:center;"><p>天</p></td>
+                                    <td style="width:80px;text-align:center;"><p>時</p></td>
+                                    <td style="width:80px;text-align:center;"><p>分</p></td>
+                                    <td style="width:80px;text-align:center;"><p>秒</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="btn">
+                            <span class="s_go_01">立即登記．送 3 萬元廣告金</span><br>
+                            <span class="f_ss ">贊助計畫<span class="c_yel">限量100名</span>，<span class="the_br">即日起至7/25(四)前登記完為止<br></span>
+                            7/25(四)前完成登記．免刷卡手續費</span>
+                        </p>
+                        
+                        <!-- <div id="getting-started" class="countdown-container"></div>
+                        <script type="text/javascript">
+                          $('#getting-started').countdown('2019/7/25').on('update.countdown', function(event) {
+                              var $this = $(this).html(event.strftime(''
+                                + '<span>%-d</span> day%!d '
+                                + '<span>%H</span> hr '
+                                + '<span>%M</span> min '
+                                + '<span>%S</span> sec'));
+                            });
+                        </script> -->
                     </div>
                 </div>
             </div>
