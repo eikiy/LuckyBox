@@ -122,6 +122,9 @@ ul.contactus li a.icon_messenger::after{ background-image: url(../images/btn_con
 ul.contactus li a.icon_line::after{ background-image: url(../images/btn_contactus__02.png); }
 ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contactus__03.png); }
 
+.main-example .time{ height: 80px !important; }
+.main-example .countdown-container{ text-align: center; font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: bold;}
+
 .pos::before {position: absolute; left: 12px; width: 40px; text-align: center; color: #6D6E71; line-height: 50px; display: block; font-family: "FontAwesome"; }
 .icon_01::before { content: "\f095";}
 .icon_02::before { content: "\f007";}
@@ -246,3 +249,5 @@ ul.contactus li a.icon_email::after{ background-image: url(../images/btn_contact
 @media (min-device-height:750px) and  (max-device-width:400px) {
   .contact-us-box h3.title{ padding-top: 25vh;}
 }
+
+
