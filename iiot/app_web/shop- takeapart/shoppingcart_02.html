@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>愛物聯小吃店 | 分店A - 訂購資訊</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/style-menu.css">
+	<link rel="stylesheet" href="css/standard-flow.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+    <script type="text/javascript">
+     $(function(){
+     	// top 菜單
+	  	$("ul.the_btn li").click(function(){
+	  		$(this).parent().find("li").removeClass("the_selected");
+	        $(this).addClass("the_selected");
+	    	return false;
+	    });
+	 });
+	</script>
+</head>
+<body>
+	<main class="shop_mainbox shopping_order">
+		<section class="order_tools">
+			<div class="the_button">
+				<a class="btn gray" href="shoppingcart_01.html">上一步</a>
+				<a class="btn c_org" href="shoppingcart_03.html">下一步</a>
+			</div>
+		</section>
+		<section class="content_box">
+			<div class="top_step">
+		        <ul class="contents_box clearfix">
+		            <li class="step-1"><p><span>Step1.</span> 取餐方式</p></li>
+		            <li class="step-2 btn_in"><p><span>Step2.</span> 訂購資訊</p></li>
+		            <li class="step-3"><p><span>Step3.</span> 訂購明細</p></li>
+		        </ul>
+		    </div>
+			<!-- 請填寫訂購資訊 -->
+		    <form class="shopping_cart">
+		    	<h3 class="top_title">請填寫訂購資訊</h3>
+		    	<div class="order_consumer_info">
+					<ul class="fillin">
+						<li>
+							<label for="name">訂購人</label>
+							<input id="name" type="text" name="" value="Pin chen" placeholder="請輸入訂購人姓名">
+						</li>
+						<li>
+							<label for="phone">聯絡電話</label>
+							<input id="phone" type="text" name="" value="" placeholder="請輸入聯絡電話 例: 0912345678">
+						</li>
+						<li>
+							<label for="email">Email</label>
+							<input id="email" type="text" name="" value="" placeholder="請輸入Email">
+						</li>
+						<li>
+							<label for="note">備註</label>
+							<textarea id="note" type="text" name="" value=""></textarea>
+						</li>
+						<li class="the_invoice">
+							<h4>開立統一編號/收據</h4>
+							<div>
+								<input id="invoice1" type="radio" name="field" value="option" checked="">
+								<label for="invoice1">個人電子發票(二聯式)</label>
+							</div>
+							<div>
+								<input id="invoice2" type="radio" name="field" value="option">
+								<label for="invoice2">公司用電子發票(三聯式)</label>
+							</div>
+						</li>
+						<li class="invoice_fillin">
+							<input id="code" type="text" name="" value="" placeholder="請輸入統一編號(8位數字)">
+							<input id="code" type="text" name="" value="" placeholder="請填入發票抬頭">
+						</li>
+					</ul>
+				</div>
+		    </form>
+		</section>
+	</main>
+</body>
+</html>
+
+
+

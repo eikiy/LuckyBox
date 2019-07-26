@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>愛物聯小吃店 | 分店A - 訂購明細</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/style-menu.css">
+	<link rel="stylesheet" href="css/standard-flow.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+    <script type="text/javascript">
+     $(function(){
+     	// top 菜單
+	  	$("ul.the_btn li").click(function(){
+	  		$(this).parent().find("li").removeClass("the_selected");
+	        $(this).addClass("the_selected");
+	    	return false;
+	    });
+	 });
+	</script>
+</head>
+<body>
+	<main class="shop_mainbox shopping_order">
+		<section class="order_tools">
+			<div class="the_button">
+				<a class="btn gray" href="shoppingcart_02.html">上一步</a>
+			</div>
+		</section>
+		<section class="content_box">
+			<div class="top_step">
+		        <ul class="contents_box clearfix">
+		            <li class="step-1"><p><span>Step1.</span> 取餐方式</p></li>
+		            <li class="step-2"><p><span>Step2.</span> 訂購資訊</p></li>
+		            <li class="step-3 btn_in"><p><span>Step3.</span> 訂購明細</p></li>
+		        </ul>
+		    </div>
+			<!-- 訂購明細 -->
+		    <form class="shopping_cart">
+		    	<h3 class="top_title">愛物聯小吃店 - 分店1</h3>
+		    	<ul class="order_list_done">
+		    		<li><p class="clearfix"><span class="l_t">商家電話</span><span class="r_info">0987654321</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">商家地址</span><span class="r_info">台北市民生東路三段107巷6號2樓</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">取餐方式</span><span class="r_info">外送</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">外送地址</span><span class="r_info">台北市南京東路三段星巴克1F</span></p></li>
+		    		<li class="bottom_line"><p class="clearfix"><span class="l_t">取餐時間</span><span class="r_info">立刻取餐</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">訂購人</span><span class="r_info">Pin</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">聯絡電話</span><span class="r_info">0987654321</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">Email</span><span class="r_info"> 123@456.456</span></p></li>
+		    		<li><p class="clearfix"><span class="l_t">統一編號</span><span class="r_info">54545454</span></p></li>
+		    		<li class="bottom_line"><p class="clearfix"><span class="l_t">備註</span><span class="r_info">無</span></p></li>
+		    		<li><p class="s_f">訂單項目</p></li>
+		    		<li class="buy_list"><p class="clearfix"><span class="l_t">蝦仁蛋炒飯</span><span class="r_nb">1$80 = $80</span></p></li>
+		    		<li class="width_f"><p>總金額：$160</p></li>
+		        </ul>
+		    </form>
+		    <form class="shopping_cart">
+				<h3 class="top_title">請選擇付款方式</h3>
+				<ul class="the_btn">
+					<li>
+						<p>現金付款</p>
+					</li>
+					<li>
+						<p>線上付款</p>
+					</li>
+				</ul>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
+
+
+

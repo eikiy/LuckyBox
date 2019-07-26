@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>愛物聯小吃店 | 分店A - 取餐方式</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style-menu.css">
+	<link rel="stylesheet" href="css/standard-flow.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+    // <script type="text/javascript">
+    	// 我寫的好爛XD
+    	// 選到變外框顏色
+	    $(function(){
+		  	$("ul.the_btn li .btn").click(function(){
+		  		$(this).parent().parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next(".other_time_show").hide();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		        $(this).parent().addClass("the_selected");
+		    	return false;
+		    });
+		});
+		// 點選外送 填寫地址
+		$(function(){
+		  	$("ul.the_btn li .order_in").click(function(){
+		  		$(this).parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next().next(".orderin_show").show();
+		  		$(this).parent().parent().next().next(".inside_show").hide();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
+		    	return false;
+		    	 });
+		});
+		// 內用 填寫桌號
+		$(function(){
+		  	$("ul.the_btn li .inside_in").click(function(){
+		  		$(this).parent().parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next().next(".orderin_show").hide();
+		  		$(this).parent().parent().next(".inside_show").show();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
+		    	return false;
+		    });
+		});
+		$(function(){
+		  	$("ul.the_btn li .other_time").click(function(){
+		  		$(this).parent().parent().next(".other_time_show").show();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
+		    	return false;
+		    });
+		});
+  	</script>    
+</head>
+<body>
+	<main class="shop_mainbox shopping_order">
+		<section class="order_tools">
+			<div class="the_button">
+				<a class="btn gray" href="index.html">繼續選購</a>
+				<a class="btn c_org" href="shoppingcart_02.html">下一步</a>
+			</div>
+		</section>
+		<section class="content_box">
+			<div class="top_step">
+		        <ul class="contents_box clearfix">
+		            <li class="step-1 btn_in"><p><span>Step1.</span> 取餐方式</p></li>
+		            <li class="step-2"><p><span>Step2.</span> 訂購資訊</p></li>
+		            <li class="step-3"><p><span>Step3.</span> 訂購明細</p></li>
+		        </ul>
+		    </div>
+			<!-- 購物車列表 / 取餐方式 -->
+		    <form class="shopping_cart">
+		    	<h3 class="top_title">愛物聯小吃店 - 分店1</h3>
+		    	<p class="quantity_products">共有 <span>21</span> 項商品</p>
+		    	<table class="order_list" cellpadding="0" cellspacing="" border="0">
+		    		<tr class="top_title clearfix">
+		                <th class="sbox car_name">
+		                   <p>商品名稱</p>
+		                </th>
+		                <th class="sbox car_nb">
+		                    <p>數量</p>
+		                </th>
+		                <th class="sbox car_money">
+		                    <p>金額</p>
+		                </th>
+		            </tr>
+		    		<tr class="clearfix">
+		    			<td class="sbox car_name">
+		    				<p class="product_name">產品AAAAA產品AAAAA產品AAAAA</p>
+			            </td>
+			            <td class="sbox car_nb">
+			            	<p>1</p>
+		                </td>
+		                <td class="sbox car_money">
+		                   <p>NT$105</p>
+		                </td>
+		    		</tr>
+		    		<tr class="clearfix">
+		    			<td class="sbox car_name">
+		    				<p class="product_name">產品AAAAA</p>
+			            </td>
+			            <td class="sbox car_nb">
+			            	<p>1</p>
+		                </td>
+		                <td class="sbox car_money">
+		                   <p>NT$105</p>
+		                </td>
+		    		</tr>
+		        </table>
+		    </form>
+		    <form class="shopping_cart">
+				<h3 class="top_title">取餐方式</h3>
+				<p class="sub_title">購買<span class="f_red">5樣商品</span>或<span class="f_red">消費滿500元</span>即可外送</p>
+				<ul class="the_btn">
+					<li>
+						<p class="inside_in">內用</p>
+					</li>
+					<li>
+						<!-- 尚未驗證，會先跳出驗證手機號碼 -->
+						<p><a href="#phone_code" rel="modal:open">外帶</a></p>
+					</li>
+					<li>
+						<p class="order_in">外送</p>
+					</li>
+				</ul>
+				<div class="a_box inside_show">
+					<p class="sub_title">請填寫桌號</p>
+					<input class="fill_in" type="text" name="" placeholder="請輸入桌號">
+				</div>
+				<div class="a_box orderin_show">
+					<p class="sub_title">請填寫外送地址</p>
+					<input class="fill_in" type="text" name="" placeholder="請輸入地址">
+					<div class="the_button">
+			    		<a class="btn c_gray" href="#">修改地址</a>
+			    		<a class="btn c_org" class="done" href="#">確認地址</a>
+			  		</div>
+				</div>
+
+				<!-- <ul class="fillin clearfix">
+					<li>
+						<input id="pickup-internal" type="radio" name="pickup-type" value="內用">
+						<label for="pickup-internal">內用</label>
+					</li>
+					<li>
+						<input id="pickup-takeout" type="radio" name="pickup-type" value="外帶" checked>
+						<label for="pickup-takeout">外帶</label>
+					</li>
+					<li>
+						<input id="pickup-delivery" type="radio" name="pickup-type" value="外送">
+						<label for="pickup-delivery">外送</label>
+					</li>
+				</ul> -->
+			</form>
+			<form class="shopping_cart padding_bottom_100">
+				<h3 class="top_title">取餐時間</h3>
+				<p class="sub_title">立即取餐<span class="f_red">需估等待10分鐘</span></h3>
+				<ul class="the_btn">
+					<li>
+						<p class="btn">立即取餐</p>
+					</li>
+					<li>
+						<p class="other_time">其他時段</p>
+					</li>
+				</ul>
+				<div class="a_box other_time_show">
+					<p class="sub_title">請選擇取餐日期</p>
+					<div class="the_datepicker">
+						<i class="far fa-calendar-alt"></i>
+						<input class="fill_in" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+				</div>
+			</form>
+		</section>
+
+		<!-- 電話驗證 -->
+	    <div id="phone_code" class="modal fade fadebox">
+	    	<div class="verification">
+	    		<h3 class="top_title">手機驗證</h3>
+	    		<input type="text" name="" placeholder="請輸入手機號碼">
+	    		<div class="both clearfix">
+	    			<button  class="btn" type="button">驗證此手機號碼</button>
+	    			<input type="text" name="" placeholder="驗證碼">
+	    		</div>
+	    		<a href="#">沒收到驗證碼?</a>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">送出</a>
+	  		</div>
+	    </div>
+	</main>
+</script>
+</body>
+</html>
+
+
+

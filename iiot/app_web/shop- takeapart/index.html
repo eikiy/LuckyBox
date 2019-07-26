@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>愛物聯小吃店 | 分店A - 商品列表</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style-menu.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+    <script type="text/javascript">
+     $(function(){
+     	// top 菜單
+	  	$(".swiper-slide").click(function(){
+	  		$(this).parent().find(".swiper-slide p").removeClass("btn_in");
+	        $(this).find("p").addClass("btn_in");
+	    	return false;
+	    });
+	 });
+	</script>
+	<script type="text/javascript">
+     $(function(){
+     	// 
+	  	$(".food_items .top_title").click(function(){
+	  		$(this).next(".option_list_box").slideToggle();
+	    	return false;
+	    });
+	 });
+	</script>
+</head>
+<body>
+	<main class="shop_mainbox">
+		<section class="top_banner"><!-- 未來如果有banner的話 -->
+			<img src="images/b_33_h_b_w_20190304_154829_9339e.png" width="100%" alt="">
+		</section>
+		<section class="top_menu_box">
+			<!-- Swiper -->
+		  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><p class="btn_in">Category 1</p></div>
+		      <div class="swiper-slide"><p>Category 2</p></div>
+		      <div class="swiper-slide"><p>Category 3</p></div>
+		      <div class="swiper-slide"><p>Category 4</p></div>
+		      <div class="swiper-slide"><p>Category 5</p></div>
+		      <div class="swiper-slide"><p>Category 6</p></div>
+		      <div class="swiper-slide"><p>如果文字有八個字</p></div>
+		      <div class="swiper-slide"><p>Category 8</p></div>
+		      <div class="swiper-slide"><p>Category 9</p></div>
+		      <div class="swiper-slide"><p>Category 10</p></div>
+		    </div>
+		  </div>
+		</section>
+		<div class="icon_cart">
+			<a href="#shopping_cart" rel="modal:open">
+				<span class="nb">99</span>
+				<i class="fas fa-shopping-cart"></i>
+			</a>
+		</div>
+		<section class="order_tools">
+			<div class="clearfix">
+				<p class="order_amount">訂單總額<span>$1450</span></p>
+				<p class="btn"><a class="btn c_org" href="shoppingcart_01.html">我要結帳</a></p>
+			</div>
+		</section>
+		<section class="the_productbox">
+			<div class="products_box">
+					<div class="top_title_box clearfix">
+						<h2>Category2</h2>
+					</div>
+					<ul class="products_list clearfix">
+						<li class="clearfix"> <!-- ※幫我寫按了+後會有the_selected (邊框顏色)也就是說 value 數字大於０會有後會有 the_selected -->
+							<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
+							<div class="product_info">
+								<h3 class="product_title">毆姆蛋</h3>
+								<h4 class="sub_info">針對商品描</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="" placeholder="0">
+			                        <a href="#food_items" rel="modal:open"><i class="fas fa-plus"></i></a>
+			                    </div>
+							</div>
+						</li>
+						<li class="the_selected clearfix">
+							<div class="photo" style="background-image: url(http://likea.ezvivi.com/manage/0/product/199868/F_m.jpg);"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品BBB</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="11" placeholder="0">
+			                        <button><i class="fas fa-plus"></i></button>
+			                    </div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="" placeholder="0">
+			                        <button><i class="fas fa-plus"></i></button>
+			                    </div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo" style="background-image: url(https://icrvb3jy.xinmedia.com/solomo/article/123934/FE1BAAB9-BA80-FEC2-27AD-1BC4B88634E4.jpg);"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="" placeholder="0">
+			                        <button><i class="fas fa-plus"></i></button>
+			                    </div>
+							</div>
+						</li>
+						<li class="the_selected clearfix">
+							<div class="photo" style="background-image: url(https://images.1111.com.tw/discussPic/77/51008577_7297009.2149911.jpg);"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="1" placeholder="0">
+			                        <button><i class="fas fa-plus"></i></button>
+			                    </div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo" style="background-image: url(https://tokyo-kitchen.icook.network/uploads/recipe/cover/209495/large_7b77e24a6d832dd4.jpg);"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="" placeholder="0">
+			                        <button><i class="fas fa-plus"></i></button>
+			                    </div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SjvW7r0c5jlj4qMwCIc7pe7FtzuaC_lDJ7jD23nEgS2k2IkH);"></div>
+							<div class="product_info">
+								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+								<p class="money">$129</p>
+								<div class="input_quantity">
+			                        <button><i class="fas fa-minus"></i></button>
+			                        <input type="text" name="" value="" placeholder="0">
+			                        <button><i class="fas fa-plus"></i></button>
+			                    </div>
+							</div>
+						</li>
+					</ul>
+			</div>
+		</section>
+
+		<!-- 購物車 -->
+	    <div id="shopping_cart" class="modal fade fadebox shopping_cart">
+	    	<h3 class="top_title">訂購明細</h3>
+	    	<p class="quantity_products">目前選購 <span>21</span> 項商品</p>
+	    	<form>
+	    		<ul class="shopping_car_list">
+	                <li class="top_title clearfix">
+	                    <div class="sbox car_name">
+	                        <p>商品名稱</p>
+	                    </div>
+	                    <div class="sbox car_nb">
+	                        <p>數量</p>
+	                    </div>
+	                    <div class="sbox car_money">
+	                        <p>小計</p>
+	                    </div>
+	                    <!-- <div class="sbox car_delete">
+	                        <p>移除</p>
+	                    </div> -->
+	                </li>
+	                <li class="clearfix">
+	                    <div class="sbox car_name">
+	                        <div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></div>
+		                    <p class="product_name">
+		                        <span class="mainTitle">毆姆蛋</span>
+		                        <span class="style_for">針對商品描述的描述針對商品描述的描述</span>
+		                        <span class="other">漢堡 $10（花生口味），加購：薯條 $15、奶茶 $25（特大杯 $10，配料：椰果 $10、珍珠 $10）</span>
+		                        <span class="money">NT$105 + $70</span>
+		                    </p>
+	                    </div>
+	                    <div class="sbox car_nb">
+	                        <div class="input_quantity">
+			                    <button><i class="fas fa-minus"></i></button>
+			                    <input type="text" name="" value="1" placeholder="0">
+			                    <button><i class="fas fa-plus"></i></button>
+			                </div>
+	                    </div>
+	                    <div class="sbox car_money">
+	                        <p>NT$105</p>
+	                    </div>
+	                    <!-- <div class="sbox car_delete">
+	                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+	                    </div> -->
+	                </li>
+	                <li class="clearfix">
+	                    <div class="sbox car_name">
+	                        <div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+		                    <p class="product_name">
+		                        <span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
+		                    </p>
+	                    </div>
+	                    <div class="sbox car_nb">
+	                        <div class="input_quantity">
+			                    <button><i class="fas fa-minus"></i></button>
+			                    <input type="text" name="" value="3" placeholder="0">
+			                    <button><i class="fas fa-plus"></i></button>
+			                </div>
+	                    </div>
+	                    <div class="sbox car_money">
+	                        <p>NT$105 + $70*1</p>
+	                    </div>
+	                    <!-- <div class="sbox car_delete">
+	                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+	                    </div> -->
+	                </li>
+	                <li class="clearfix">
+	                    <div class="sbox car_name">
+	                        <div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+		                    <p class="product_name">
+		                        <span class="mainTitle">產品AAAAA</span><span class="style_for">針對商品描述的描述針對商品描述的描述</span><span class="money">NT$95</span>
+		                    </p>
+	                    </div>
+	                    <div class="sbox car_nb">
+	                        <div class="input_quantity">
+			                    <button><i class="fas fa-minus"></i></button>
+			                    <input type="text" name="" value="1" placeholder="0">
+			                    <button><i class="fas fa-plus"></i></button>
+			                </div>
+	                    </div>
+	                    <div class="sbox car_money">
+	                        <p>NT$105*3 + $170*1 + $150*2</p>
+	                    </div>
+	                    <!-- <div class="sbox car_delete">
+	                        <a><i class="far fa-trash-alt" title="移除商品"></i></a>
+	                        <a class="yesDelets"><p>確定刪除</p></a>
+	                    </div> -->
+	                </li>
+	            </ul>
+		    	<div class="the_button">
+		    		<a class="btn" href="#" rel="modal:close">繼續購物</a>
+		    		<a class="btn c_org" href="shoppingcart_01.html">我要結帳</a>
+		  		</div>
+		  	</form>
+	    </div>
+	    <!-- 請選擇 品項 與 加購-->
+	     <div id="food_items" class="modal fade fadebox food_items">
+	     	<p class="order_title">毆姆蛋</p>
+	    	<form>
+	    		<h3 class="top_title"><span><span class="must">*</span>請選擇外皮<i class="fas fa-caret-down"></i></span></h3>
+	    		<div class="option_list_box">
+		    		<p class="sub_title">外皮啪啦啪啦啪啦</p>
+		    		<ul class="option_list clearfix">
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="aaaa" id="a1" value="吐司">
+								<label for="a1">吐司</label>
+							</div>
+						</li>
+			      		<li>
+							<div class="the_radio">
+								<input type="radio" name="aaaa" id="a2" value="漢堡">
+								<label for="a2">漢堡 $10</label>
+							</div>
+						</li>
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="aaaa" id="a3" value="貝果">
+								<label for="a3">貝果 $15</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="top_title"><span><span class="must">*</span>請選擇口味<i class="fas fa-caret-down"></i></span></h3>
+				<div class="option_list_box">
+		    		<ul class="option_list clearfix">
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="bb" id="b1" value="草莓">
+								<label for="b1">草莓</label>
+							</div>
+						</li>
+			      		<li>
+							<div class="the_radio">
+								<input type="radio" name="bb" id="b2" value="奶油">
+								<label for="b2">奶油</label>
+							</div>
+						</li>
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="bb" id="b4" value="花生">
+								<label for="b4">花生</label>
+							</div>
+						</li>
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="bb" id="b3" value="巧克力">
+								<label for="b3">巧克力</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="top_title"><span>加購項目<i class="fas fa-caret-down"></i></span></h3>
+				<div class="option_list_box">
+					<ul class="option_list clearfix">
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="cc" id="a" value="">
+									<label for="a">薯條 $15</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="cc" id="b" value="">
+									<label for="b">雞塊 $20</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="cc" id="c" value="">
+									<label for="c">咖啡 $15</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="cc" id="d" value="">
+									<label for="d">奶茶 $15</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="input_quantity">
+					<button><i class="fas fa-minus"></i></button>
+					<input type="text" name="" value="" placeholder="0">
+					<button><i class="fas fa-plus"></i></button>
+				</div>
+		    	<div class="the_button">
+		    		<a class="btn c_gray" href="#" rel="modal:close">繼續購物</a>
+		    		<a class="btn c_org" href="#food_items2" rel="modal:open">選好了</a>
+		  		</div>
+		  	</form>
+	    </div>
+	    <!-- 飲料-->
+	    <div id="food_items2" class="modal fade fadebox food_items">
+	    	<p class="order_title">奶茶</p>
+	    	<form>
+	    		<h3 class="top_title"><span>請選擇飲料大小<i class="fas fa-caret-down"></i></span></h3>
+	    		<div class="option_list_box">
+	    			<p class="sub_title">飲料中文訊息飲料中文訊息</p>
+		    		<ul class="option_list clearfix">
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="aaaa" id="uuu" value="特大杯">
+								<label for="uuu">特大杯 $10</label>
+							</div>
+						</li>
+			      		<li>
+							<div class="the_radio">
+								<input type="radio" name="aaaa" id="iii" value="大杯">
+								<label for="iii">大杯 $8</label>
+							</div>
+						</li>
+						<li>
+							<div class="the_radio">
+								<input type="radio" name="aaaa" id="ooo" value="小杯">
+								<label for="ooo">小杯 $5</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h3 class="top_title"><span>飲料配料<i class="fas fa-caret-down"></i></span></h3>
+				<div class="option_list_box">
+					<ul class="option_list clearfix">
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="a" id="aaa" value="椰果">
+									<label for="aaa">椰果 $10</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="b" id="bbb" value="珍珠">
+									<label for="bbb">珍珠 $10</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="b" id="ccc" value="愛玉">
+									<label for="ccc">愛玉 $10</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="b" id="ddd" value="芋頭">
+									<label for="ddd">芋頭 $15</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="the_checkbox">
+									<input type="checkbox" name="b" id="eee" value="蘆薈 $10">
+									<label for="eee">蘆薈 $10</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+		    	<div class="the_button">
+		    		<a class="btn c_gray" href="#food_items" rel="modal:open">back</a>
+		    		<a class="btn c_org" href="#food_items2" rel="modal:close">選好了</a>
+		  		</div>
+		  	</form>
+	    </div>
+	</main>
+
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+    	var swiper = new Swiper('.swiper-container');
+	</script>
+
+</body>
+</html>
+
+
+
