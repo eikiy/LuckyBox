@@ -212,6 +212,9 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart .a_box .the_datepicker input.fill_in{ padding-left: 46px; font-weight: normal; font-size: 15px; }
 .shopping_cart .a_box .the_button{padding-top: 10px;}
 
+.shopping_cart .styled-select{ height: 41px; width: 100%; max-width: 260px; margin: 10px auto; border: 2px solid #f0f0f0; border-radius: 50px; background: url(../images/icon_arr.png) center right no-repeat #fff; background-size: contain;}
+.shopping_cart .styled-select select{ padding: 0 20px; font-size: 14px; color: #333;  width: calc(100% - 20px); height: 41px; line-height: 41px; background: none; }
+
 #mydatepicker{ margin-bottom: 15px; }
 .padding_bottom_100{ padding-bottom: 100px; }
 .f_red{ color: #e85718; }

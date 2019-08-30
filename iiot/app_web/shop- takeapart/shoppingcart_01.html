@@ -177,10 +177,20 @@
 					</li>
 				</ul>
 				<div class="a_box other_time_show">
-					<p class="sub_title">請選擇取餐日期</p>
-					<div class="the_datepicker">
+					<p class="sub_title">請選擇取餐時間</p>
+					<!-- <div class="the_datepicker">
 						<i class="far fa-calendar-alt"></i>
 						<input class="fill_in" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+					</div> -->
+					<div class="styled-select w_01">
+						<select class="fill_in" name="" v-show="" v-model="takeMealtime">
+							<option value="" selected>請選擇時間</option>
+							<option value="" selected>2019-08-30 13:15</option>
+							<option value="" selected>2019-08-30 13:30</option>
+							<option value="" selected>2019-08-30 13:45</option>
+							<option value="" selected>2019-08-30 14:00</option>
+						</select>
+					</div>
 				</div>
 			</form>
 		</section>
@@ -194,7 +204,6 @@
 	    			<button  class="btn" type="button">驗證此手機號碼</button>
 	    			<input type="text" name="" placeholder="請輸入驗證碼">
 	    		</div>
-	    		<!-- <input type="text" name="" placeholder="請輸入驗證碼"> -->
 	    		<a href="#">沒收到驗證碼?</a>
 	    	</div>
 	    	<div class="the_button">
