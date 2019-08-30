@@ -146,7 +146,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .shop_mainbox .top_step{ width: 100%; top: 0; z-index: 10; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
 .shop_mainbox .top_step ul{ width: 100%; background-color: #fff; }
 .shop_mainbox .top_step ul li{ float: left; width: 33.33%; padding: 20px 0; position: relative;}
-.shop_mainbox .top_step ul li::after{ content: ""; position: absolute; right: 0; top:calc(50% - 15px); width: 30px; height: 30px; display: block; background: url(../images/step_arr.png) center center no-repeat; background-size: cover; }
+.shop_mainbox .top_step ul li::after{ content: ""; position: absolute; right: 0; top:calc(50% - 15px); width: 30px; height: 30px; display: block; background: url(../images/step_arr.png) center center no-repeat; background-size: contain; }
 .shop_mainbox .top_step ul li:last-child::after{ display: none; }
 .shop_mainbox .top_step ul li p{ font-size: 18px; font-weight: bold; color: #a2a2a2; text-align: center;}
 .shop_mainbox .top_step ul li p span{ font-family: 'Lobster', cursive; font-weight: normal;}

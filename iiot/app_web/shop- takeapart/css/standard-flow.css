@@ -142,7 +142,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .shop_mainbox .top_step{ width: 100%; top: 0; z-index: 10; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; border-bottom: 2px solid #eaeaea;}
 .shop_mainbox .top_step ul{ width: 100%; background-color: #fff; }
 .shop_mainbox .top_step ul li{ float: left; width: 33.33%; padding: 20px 0; position: relative;}
-.shop_mainbox .top_step ul li::after{ content: ""; position: absolute; right: -7.5px; top:calc(50% - 15px); width: 30px; height: 30px; display: block; background: url(../images/step_arr.png) center center no-repeat; background-size: cover; }
+.shop_mainbox .top_step ul li::after{ content: ""; position: absolute; right: -7.5px; top:calc(50% - 15px); width: 30px; height: 30px; display: block; background: url(../images/step_arr.png) center center no-repeat; background-size: contain; }
 .shop_mainbox .top_step ul li:last-child::after{ display: none; }
 .shop_mainbox .top_step ul li p{ font-size: 18px; font-weight: bold; color: #a2a2a2; text-align: center;}
 .shop_mainbox .top_step ul li p span{ font-family: 'Lobster', cursive; font-weight: normal;}
@@ -332,7 +332,7 @@ ul.order_list_done li p.s_f{ font-size: 12px; color: #666; }
 	.top_menu_box ul.list li p{padding: 8px 10px;}
 	.shop_mainbox .btn_swtich p{padding-left: 0;}
 	.shop_mainbox .top_step ul li p{ font-size: 13px; font-weight: normal; }
-	.shop_mainbox .top_step ul li::after{ height: 10px; top: calc(50% - 5px); }
+	.shop_mainbox .top_step ul li::after{ height: 15px; top: calc(50% - 7.5px); }
 	.the_productbox .products_box .top_title_box h2{ font-size: 15px; }
 	.the_productbox .products_box .top_title_box ul.products_tools p{font-size: 13px;}
 	.the_productbox .products_box ul.products_list li{ padding:40px 10px 10px 10px;}
