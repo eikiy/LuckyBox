@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<!-- 強迫修改css -->
     <style type="text/css">
-    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.blocker{ background-color: rgba(0,0,0,0.5); z-index: 3;} /*層級改3不然最上面衡的選單會蓋到上面*/
     	.modal{box-shadow: 0 0 10px #0009;}
     </style>
     <script type="text/javascript">
@@ -51,7 +51,7 @@
 		  <div class="swiper-container">
 		    <div class="swiper-wrapper">
 		      <div class="swiper-slide"><p class="btn_in">Category 1</p></div>
-		      <div class="swiper-slide"><p>Category 2</p></div>
+		      <div class="swiper-slide"><p>Category 2<span class="nb">5</span></p></div>
 		      <div class="swiper-slide"><p>Category 3</p></div>
 		      <div class="swiper-slide"><p>Category 4</p></div>
 		      <div class="swiper-slide"><p>Category 5</p></div>
@@ -84,28 +84,33 @@
 						<li class="clearfix"> <!-- ※幫我寫按了+後會有the_selected (邊框顏色)也就是說 value 數字大於０會有後會有 the_selected -->
 							<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);">
 								<p class="sold"><span>售完</span></p>
+								
 							</div>
 							<div class="product_info">
 								<h3 class="product_title">毆姆蛋</h3>
 								<h4 class="sub_info">針對商品描</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity the_disabled">
+								<!-- <div class="input_quantity the_disabled">
 			                        <button><i class="fas fa-minus"></i></button>
 			                        <input type="text" name="" value="" placeholder="0">
 			                        <a href="#food_items" rel="modal:open"><i class="fas fa-plus"></i></a>
+			                    </div> -->
+			                    <div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory">剩餘數量：2</p>
 			                    </div>
 							</div>
 						</li>
 						<li class="the_selected clearfix">
+							<p class="buy_nb">5</p>
 							<div class="photo" style="background-image: url(http://likea.ezvivi.com/manage/0/product/199868/F_m.jpg);"></div>
 							<div class="product_info">
 								<h3 class="product_title">產品BBB</h3>
 								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity">
-			                        <button><i class="fas fa-minus"></i></button>
-			                        <input type="text" name="" value="11" placeholder="0">
-			                        <button><i class="fas fa-plus"></i></button>
+								<div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory">剩餘數量：2</p>
 			                    </div>
 							</div>
 						</li>
@@ -115,38 +120,42 @@
 							</div>
 							<div class="product_info">
 								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
-								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
+								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity the_disabled">
+								<!-- <div class="input_quantity the_disabled">
 			                        <button><i class="fas fa-minus"></i></button>
 			                        <input type="text" name="" value="" placeholder="0">
 			                        <button><i class="fas fa-plus"></i></button>
+			                    </div> -->
+			                    <div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory">剩餘數量：2</p>
 			                    </div>
 							</div>
 						</li>
 						<li class="clearfix">
+							<p class="buy_nb">15</p>
 							<div class="photo" style="background-image: url(https://icrvb3jy.xinmedia.com/solomo/article/123934/FE1BAAB9-BA80-FEC2-27AD-1BC4B88634E4.jpg);"></div>
 							<div class="product_info">
 								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
 								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity">
-			                        <button><i class="fas fa-minus"></i></button>
-			                        <input type="text" name="" value="" placeholder="0">
-			                        <button><i class="fas fa-plus"></i></button>
+								<div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory">剩餘數量：2</p>
 			                    </div>
 							</div>
 						</li>
 						<li class="the_selected clearfix">
+							<p class="buy_nb">205</p>
 							<div class="photo" style="background-image: url(https://images.1111.com.tw/discussPic/77/51008577_7297009.2149911.jpg);"></div>
 							<div class="product_info">
 								<h3 class="product_title">產品名稱產品名稱</h3>
 								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity">
-			                        <button><i class="fas fa-minus"></i></button>
-			                        <input type="text" name="" value="1" placeholder="0">
-			                        <button><i class="fas fa-plus"></i></button>
+								<div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory"></p>
 			                    </div>
 							</div>
 						</li>
@@ -156,10 +165,9 @@
 								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
 								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity">
-			                        <button><i class="fas fa-minus"></i></button>
-			                        <input type="text" name="" value="" placeholder="0">
-			                        <button><i class="fas fa-plus"></i></button>
+								<div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory">剩餘數量：25555</p>
 			                    </div>
 							</div>
 						</li>
@@ -169,10 +177,9 @@
 								<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
 								<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
 								<p class="money">$129</p>
-								<div class="input_quantity">
-			                        <button><i class="fas fa-minus"></i></button>
-			                        <input type="text" name="" value="" placeholder="0">
-			                        <button><i class="fas fa-plus"></i></button>
+								<div class="btn_buy clearfix">
+			                        <button class="btn_order">選購商品</button>
+			                        <p class="product_inventory">剩餘數量：2</p>
 			                    </div>
 							</div>
 						</li>
