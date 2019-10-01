@@ -54,10 +54,47 @@
 		  		$(this).parent().parent().find("#area_06_content").show();
 		    	return false;
 		    });
+
+		    $(".header_nav ul li").click(function(){
+		    	$(this).parent().find("li .sub_item").hide();
+		    	$(this).find(".sub_item").show();
+		    	return false;
+		    });
 		});
   	</script>  
 </head>
 <body>
+	<header class="header_container">
+		<section class="header_content clearfix">
+			<a class="header_jetfi_logo"></a>
+			<nav class="header_nav">
+				<ul>
+					<li class="languages">
+						<a>
+							<p class="choose">繁體中文</p>
+							<div class="sub_item">
+								<div class="sub_list">
+									<p>繁體中文</p>
+									<p>English</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="currency">
+						<a>
+							<p class="choose">TWD</p>
+							<div class="sub_item">
+								<div class="sub_list">
+									<p>TWD 新台幣</p>
+									<p>USD 美金</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+	</header>
 	<main class="main_plan_container">
 		<section class="area_content">
 			<h3 class="top_title">流量商店/套餐</h3>
@@ -237,57 +274,73 @@
 		   	<ul class="menu_list clearfix">
 		   		<li>
 		   			<a href="#">
-			   			<h4 class="set_title">日暢享</h4>
-			   			<p class="label"><span>1天</span><span>500MB</span><span>熱點</span><span>500MB</span><span>超效能</span></p>
+			   			<div class="product_info">
+			   				<h4 class="set_title">United States, Canada, Mexico 1GB package</h4>
+				   			<p class="label"><span>1 day</span><span>Unlimited</span></p>
+				   		</div>
+			   			<p class="price">USD 3.00</p>
+			   		</a>
+		   		</li>
+		   		<li>
+		   			<a href="#">
+			   			<div class="product_info">
+			   				<h4 class="set_title">月暢享</h4>
+				   			<p class="label"><span>1天</span><span>25GB</span></p>
+				   		</div>
+			   			<p class="price">USD 4.00</p>
+			   		</a>
+		   		</li>
+		   		<li>
+		   			<a href="#">
+			   			<div class="product_info">
+			   				<h4 class="set_title">季暢享</h4>
+				   			<p class="label"><span>1 day</span><span>500MB / day</span></p>
+				   		</div>
+			   			<p class="price">USD 5.6 / day</p>
+			   		</a>
+		   		</li>
+		   		<li>
+		   			<a href="#">
+			   			<div class="product_info">
+			   				<h4 class="set_title">年暢享 - 不小心中文字多一點的話</h4>
+			   				<p class="label"><span>5天</span><span>2TB</span></p>
+			   			</div>
+			   			<p class="price">NTD 299</p>
+			   		</a>
+		   		</li>
+		   		<li>
+		   			<a href="#">
+			   			<div class="product_info">
+			   				<h4 class="set_title">United States, Canada, Mexico 1GB package</h4>
+				   			<p class="label"><span>1 day</span><span>500MB / day</span></p>
+				   		</div>
+			   			<p class="price">NTD 299</p>
+			   		</a>
+		   		</li>
+		   		<li>
+		   			<a href="#">
+		   				<div class="product_info">
+				   			<h4 class="set_title">Europe 35 countries Unlimited package</h4>
+				   			<p class="label"><span>1天</span><span>500MB</span></p>
+				   		</div>
+			   			<p class="price">NTD 299</p>
+			   		</a>
+		   		</li>
+		   		<li>
+		   			<a href="#">
+			   			<div class="product_info">
+			   				<h4 class="set_title">日暢享</h4>
+			   				<p class="label"><span>1天</span><span>超效能</span></p>
+			   			</div>
 			   			<p class="price">SUD 3.00</p>
 			   		</a>
 		   		</li>
 		   		<li>
 		   			<a href="#">
-			   			<h4 class="set_title">月暢享</h4>
-			   			<p class="label"><span>1天</span><span>25GB</span></p>
-			   			<p class="price">SUD 4.00</p>
-			   		</a>
-		   		</li>
-		   		<li>
-		   			<a href="#">
-			   			<h4 class="set_title">季暢享</h4>
-			   			<p class="label"><span>1天</span><span>50GB</span></p>
-			   			<p class="price">SUD 10.00</p>
-			   		</a>
-		   		</li>
-		   		<li>
-		   			<a href="#">
-			   			<h4 class="set_title">年暢享</h4>
-			   			<p class="label"><span>5天</span><span>2TB</span></p>
-			   			<p class="price">SUD 20.00</p>
-			   		</a>
-		   		</li>
-		   		<li>
-		   			<a href="#">
-			   			<h4 class="set_title">兩周吃到飽</h4>
-			   			<p class="label"><span>1天</span><span>500MB</span></p>
-			   			<p class="price">SUD 5.5.00</p>
-			   		</a>
-		   		</li>
-		   		<li>
-		   			<a href="#">
-			   			<h4 class="set_title">可能會很長可能會很長可能會很長??</h4>
-			   			<p class="label"><span>1天</span><span>500MB</span><span>超效能</span></p>
-			   			<p class="price">SUD 4.00</p>
-			   		</a>
-		   		</li>
-		   		<li>
-		   			<a href="#">
-			   			<h4 class="set_title">日暢享</h4>
-			   			<p class="label"><span>1天</span><span>超效能</span></p>
-			   			<p class="price">SUD 3.00</p>
-			   		</a>
-		   		</li>
-		   		<li>
-		   			<a href="#">
-			   			<h4 class="set_title">月暢享</h4>
-			   			<p class="label"><span>1天</span><span>25GB</span></p>
+			   			<div class="product_info">
+			   				<h4 class="set_title">月暢享</h4>
+				   			<p class="label"><span>1天</span><span>25GB</span></p>
+				   		</div>
 			   			<p class="price">SUD 4.00</p>
 			   		</a>
 		   		</li>

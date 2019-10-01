@@ -28,9 +28,30 @@ select{ appearance:none; -moz-appearance:none;  -webkit-appearance:none;  -ms-ap
 
 /*===== start ======*/
 body{ background-color: #f4f4f4;}
-.main_plan_container{ width: 100%; margin: 0 auto; max-width: 1200px;}
+.header_container{ width: 100%; position: fixed; top: 0; left: 0; background-color: #fff; min-height: 65px; z-index: 1; border-bottom: 1px solid #e0e0e0; }
+.header_container a.header_jetfi_logo{ width: 120px; height: 54px; display: block; float: left; background: url(https://jetfi-saas.wifiotg.com/img/logo.bca961c2.png) center center no-repeat; background-size: contain; }
+.header_container .header_content { max-width: 1200px; width: 100%; margin: 0 auto; padding: 5px 20px; }
+
+.header_container .header_nav{ float: right; }
+.header_container .header_nav ul{ text-align: left; padding-top: 2px;}
+.header_container .header_nav ul li{ display: inline-block; }
+.header_container .header_nav ul li a{position: relative; padding:15px 30px 15px 10px; display: block; cursor: pointer;}
+.header_container .header_nav ul li p.choose{ font-size:14px; position: relative; line-height: 20px;}
+.header_container .header_nav ul li p.choose::after{ content: ""; position: absolute; top:4px ; right: -24px; width: 20px; height: 9px; display: block; background: url("../svg/arrow-down-sign-to-navigate.svg") center center no-repeat; background-size: contain;} 
+.header_container .header_nav ul li:hover p.choose{ opacity: .7;}
+
+.header_container .header_nav ul li .sub_item{ position: absolute; display: none; top: 45px; right: 0; background-color: #fff; border-radius: 6px; min-width: 110px; box-shadow: 0 3px 10px rgba(0,0,0,.2);}
+.header_container .header_nav ul li .sub_list{ position: relative;}
+.header_container .header_nav ul li .sub_list::after{ content: ""; position: absolute; top: -8px; right: 9px; width: 0; height: 0; border-style: solid; border-width: 0 7.5px 8px 7.5px; border-color: transparent transparent #ffffff transparent; z-index: 3; line-height: 0px; _border-color: #000000 #000000 #ffffff #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
+.header_container .header_nav ul li .sub_list::before{ content: ""; position: absolute; top: -10px; right: 8px; width: 0; height: 0; border-style: solid; border-width: 0 8.5px 8.5px 8.5px; border-color: transparent transparent #eeeeee transparent; z-index: 2;}
+.header_container .header_nav ul li .sub_list p{ font-size: 13px; padding:10px 6px; line-height: 18px; text-align: center; border-bottom: 1px solid #e0e0e0;}
+.header_container .header_nav ul li .sub_list p:hover{ color: #ff5722; }
+.header_container .header_nav ul li .sub_list p:last-child{ border: none; }
+
+
+.main_plan_container{ width: 100%; margin: 0 auto; padding-top: 60px;}
 .main_plan_container h3.top_title{ padding: 15px 0; font-size: 16px; font-weight: bold; color: #555; }
-.main_plan_container .area_content{ width:calc( 100% - 40px); padding: 20px 0; margin: 0 auto; }
+.main_plan_container .area_content{ width:calc( 100% - 40px); max-width: 1200px; padding: 20px 0; margin: 0 auto; }
 .main_plan_container .area_content .area_menu{ width: 100%; border: 1px solid #e4edf4; background-color: #fff; position: relative;}
 .main_plan_container .area_content .area_menu .search_box{ position: absolute; top: 9px; right: 10px; background: url(../images/icon_search.png) left center no-repeat; background-size: contain; padding: 0px 10px 0px 30px; border:2px solid #f0f0f0; border-radius: 50px; background-color: #fff;}
 .main_plan_container .area_content .area_menu .search_box input{ font-size: 16px; display: inline-block; padding: 0px 10px; font-size: 14px; color: #5f6368; line-height: 32px; height: 32px; border:none; background-color: #fff; width: 140px; text-align: left; }
@@ -52,15 +73,16 @@ body{ background-color: #f4f4f4;}
 .main_plan_container .area_content .area_menu ul.choose_country li.top_hot_country p{ font-size: 14px; font-weight: bold; }
 .main_plan_container .area_content .area_menu ul.choose_country li.top_hot_country p a{ background-color: #ededed; border-radius: 40px; padding: 3px 12px; display: inline-block; margin:0 5px 5px 5px; }
 
-.main_plan_container .set_content{ width:calc( 100% - 40px); margin: 0 auto; }
+.main_plan_container .set_content{ width:calc( 100% - 40px); max-width: 1200px; margin: 0 auto; }
 .main_plan_container .set_content ul.menu_list li{ float: left; width:calc(25% - 15px); margin:0 20px 20px 0; }
 .main_plan_container .set_content ul.menu_list li:nth-child(4n){margin-right: 0;}
-.main_plan_container .set_content ul.menu_list li a{ background: url(../images/bg_img.png) right bottom no-repeat; border-top: 2px solid #FFEB3B; background-size: contain; background-color: #fff ;/*e4edf4*/ display: block; padding: 20px; }
+.main_plan_container .set_content ul.menu_list li a{ background: url(../images/bg_img.png) right bottom no-repeat; border-top: 2px solid #FFEB3B; background-size: contain; background-color: #fff ;/*e4edf4*/ display: block; padding: 15px 20px; }
 .main_plan_container .set_content ul.menu_list li a:hover{ box-shadow: 2px 3px 7px rgba(0,0,0,.15); }
-.main_plan_container .set_content ul.menu_list li h4.set_title{ font-weight: bold; font-size: 18px; display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 24px; height: 24px * 1; overflow:hidden;}
-.main_plan_container .set_content ul.menu_list li p.label{ text-align: left; padding: 10px 0 5px 0; min-height: 85px; }
+.main_plan_container .set_content ul.menu_list li h4.set_title{ font-weight: bold; font-size: 18px; line-height: 25px; color: #333;}
+.main_plan_container .set_content ul.menu_list li p.label{ text-align: left; padding: 10px 0 5px 0; }
 .main_plan_container .set_content ul.menu_list li p.label span{ display: inline-block; text-align: center; font-size: 13px; /*9ab0c1*/ color: #b6a791; padding:2px 5px; margin:0 8px 8px 0; min-width: 40px; border-radius: 40px; border:1px solid #b8afa1; }
-.main_plan_container .set_content ul.menu_list li p.price{ color: #e91e63; font-size: 18px; font-weight: bold; }
+.main_plan_container .set_content ul.menu_list li p.price{ color: #e91e63; font-size: 18px; font-weight: bold; text-align: left;}
+.main_plan_container .set_content ul.menu_list li .product_info{ min-height: 128px; }
 
 @media (max-width:1200px){
 	.main_plan_container .set_content ul.menu_list li{ float: left; width:calc(33.33% - 13.333px);}
@@ -70,6 +92,13 @@ body{ background-color: #f4f4f4;}
 }
 
 @media (max-width:800px){
+	.header_container{min-height: 50px;}
+	.header_container .header_content{ padding: 0 20px; }
+	.header_container a.header_jetfi_logo{ width: 90px ;}
+	.header_container .header_nav ul li p.choose{ font-size: 13px; }
+	.header_container .header_nav ul li .sub_list p{font-size: 12px;}
+	
+	.main_plan_container{ padding-top: 50px;}
 	.main_plan_container h3.top_title{ text-align: center; }
 	.main_plan_container .area_content .area_menu .search_box{ position: initial; margin: 15px 10px; }
 	.main_plan_container .area_content .area_menu ul.choose_area{ padding-top: 5px; }
