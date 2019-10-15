@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>營業報表</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/manager-standard-style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript">
+        $(function(){
+            $('a.the_search').click(function() {
+                $(this).parent().next('.search_content').toggle();
+            });
+            return false;
+        });
+    </script>
+</head>
+<body>
+	<main class="mainbox">
+		<section class="chart_content">
+			<div class="top_box for_fixed clearfix">
+				<p class="go_menu"><a href="index.html"><i class="fas fa-angle-left"></i> 回服務入口</a></p>
+				<a class="the_search" href="#"><i class="fas fa-search"></i></a>
+				<p class="order_title">搜尋區間</p>
+			</div>
+			<div class="search_content">
+				<span class="top-option">
+                從<input type="date" name="date" value="">過去
+            </span>
+			</div>
+			
+			<div class="sub-option">
+                <ul class="clearfix">
+                    <li><button class="duration btn_in" type="button" value="one">1天</button></li>
+                    <li><button class="duration" type="button" value="seven">7天</button></li>
+                    <li><button class="duration" type="button" value="thirty">30天</button></li>
+                    <li><button class="duration" type="button" value="year">1年</button></li>
+                    <li><button class="duration" type="button" value="today">今天</button></li>
+                </ul>
+                <p class="day-range">搜尋範圍 <span>2019-03-15 ~ 2019-04-15</span></p>
+            </div>
+			<table class="list" cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr class="top_title">
+						<th>營業額</th>
+						<th>訂單量</th>
+						<th>商品銷售量</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>00000000756</td>
+						<td>10/25 21:46</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>10/24 21:46</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>09/30 21:46</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000755</td>
+						<td>09/28 12:26</td>
+						<td>471</td>
+					</tr>
+					<tr>
+						<td>00000000756</td>
+						<td>10/25 21:46</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>10/24 21:46</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>09/30 21:46</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000755</td>
+						<td>09/28 12:26</td>
+						<td>471</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+</body>
+</html>
+
+
+

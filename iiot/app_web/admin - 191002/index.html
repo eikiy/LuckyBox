@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>首頁入口</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/manager-standard-style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+	<!-- 強迫修改css -->
+    <style type="text/css">
+    	.blocker{ background-color: rgba(0,0,0,0.5);}
+    	.modal{box-shadow: 0 0 10px #0009;}
+    </style>
+
+    <script type="text/javascript">
+     $(function(){
+     	// setting_tools 菜單功能
+	  	$("a.btn_setting").click(function(){
+	        $(this).next("ul.setting_tools").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 	// products_tools 商品功能
+	  	$("a.more_function").click(function(){
+	        $(this).next("ul.products_tools").stop(true, true).fadeToggle(0);
+	    return false;
+	    });
+	 });
+
+	 //選商品做設定
+	$(function(){
+		$("ul.products_list li .products_content_box" ).click(function() {
+			$(this).toggleClass( "the_selected" );
+			return false;
+		});
+		$(".fadebox .category_list ul.list li p" ).click(function() {
+			$(this).toggleClass( "the_selected" );
+			$(this).next(".sequence").stop(true, true).fadeToggle(0);
+			return false;
+		});
+	});
+	</script>
+</head>
+<body>
+	<header class="home_top_header">
+		<div class="content_box clearfix">
+			<h1 class="logo"><a target="_black" href="https://www.quickclick.cc/">快一點</a><h1>
+			<p>訂單管理後台</p>
+		</h1>
+	</header>
+	<main class="mainbox">
+		<section class="home_menu">
+			<div class="content_box">
+				<ul class="service_items clearfix">
+					<li><p><a href="setting.html"><span class="icon_store">商店管理</span></a></p></li>
+					<li><p><a href="product.html"><span class="icon_product">商品管理</span></a></p></li>
+					<li><p><a href="order_management.html"><span class="icon_order">訂單管理</span></a></p></li>
+					<li><p><a href="manager.html"><span class="icon_users">用戶權限管理</span></a></p></li>
+					<li><p><a href="operating_report.html"><span class="icon_chart">營業報表</span></a></p></li>
+					<li><p><a href="terms_status.html"><span class="icon_signature">合約狀態</span></a></p></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- 通知 -->
+	    <div id="the_notice" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">設為使用中</h3>
+	    		<div class="infobox">
+	    			<p>已將<span class="green">「早餐菜單」</span>菜單設為使用中。</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn c_org" href="#">確認</a>
+	  		</div>
+	    </div>
+
+		<!-- 重新命名 -->
+	    <div id="change_menu_name" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">重新命名</h3>
+	    		<input type="text" name="" placeholder="請輸入菜單名稱" value="早餐菜單">
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 刪除菜單 -->
+	    <div id="delete_menu" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">刪除菜單</h3>
+	    		<div class="infobox">
+	    			<p>確認刪除<span>「早餐菜單」</span>？</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 刪除商品 -->
+	    <div id="delete_product" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">刪除商品</h3>
+	    		<div class="infobox">
+	    			<p>確認刪除<span>「產品AAA」「產品BBB」</span>？</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 移至其他分類 -->
+	    <div id="move_other_category" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">移至其他分類</h3>
+	    		<div class="styled-select">
+	    			<select class="md-input">
+	    				<option value="0" selected="selected">請選擇分類項目</option>
+	    				<option value="1">最多顯示的字最多顯示的字最多顯示的字最多顯示的字</option>
+	    				<option value="2">Category2最多顯示的字</option>
+	    				<option value="3">Category3最多顯示的字最多顯示的字</option>
+	    				<option value="4">Category4</option>
+	    			</select>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 編輯商品內容 -->
+	    <div id="change_product_info" class="modal fade fadebox">
+	    	<div class="the_product_info">
+	    		<h3 class="top_title">編輯商品內容</h3>
+	    		<ul>
+	    			<li>
+	    				<input type="text" name="" placeholder="請輸入商品名稱" value="產品AAA">
+	    				<textarea type="text" placeholder="請輸入商品說明" >產品AAA產品AAA產品AAA 針對商品描述的描述針對商品描述的描述...</textarea>
+	    				<input type="text" name="" placeholder="請輸入商品金額" value="129">
+	    			</li>
+	    			<li>
+	    				<input type="text" name="" placeholder="請輸入商品名稱" value="產品BBB">
+	    				<textarea type="text" placeholder="請輸入商品說明" >產品BBB 針對商品描述的描述針對商品描述的描述...</textarea>
+	    				<input type="text" name="" placeholder="請輸入商品金額" value="129">
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	  		</div>
+	    </div>
+
+	    <!-- 新增類別 -->
+	    <div id="add_category" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">新增類別</h3>
+	    		<input type="text" name="" placeholder="請輸入名稱">
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">新增</a>
+	  		</div>
+	    </div>
+
+	    <!-- 編輯名稱 -->
+	    <div id="edit_category" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">編輯名稱</h3>
+	    		<input type="text" name="" placeholder="請輸入名稱" value="最多顯示的字最多顯示的字最多顯示的字最多顯示的字">
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#category_tools" rel="modal:open">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 刪除此分類 -->
+	    <div id="delete_category" class="modal fade fadebox">
+	    	<div class="add_new">
+	    		<h3 class="top_title">刪除分類</h3>
+	    		<div class="infobox">
+	    			<p>確認刪除分類<span>「Category3 最多顯示的字最多顯示的字」</span>？</p>
+	    		</div>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#category_tools" rel="modal:open">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確認</a>
+	  		</div>
+	    </div>
+
+	    <!-- 列表功能 -->
+	    <div id="category_tools" class="modal fade fadebox">
+	    	<div class="category_list">
+	    		<h3 class="top_title">類別項目修改</h3>
+	    		<ul class="list">
+	    			<li class="clearfix">
+	    				<p>最多顯示的字最多顯示的字最多顯示的字最多顯示的字</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="disabled" href="#"><i class="fas fa-arrow-up"></i> 置頂</a><!-- 沒點選時不能按 + disabled  # 只有第一個不能置頂-->
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category2最多顯示的字</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category3 最多顯示的字最多顯示的字</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category4</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category5</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category6</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category7</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category8</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category9</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category10</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    			<li class="clearfix">
+	    				<p>Category11</p>
+	    				<div class="sequence">
+			    			<a class="" href="#edit_category" rel="modal:open"><i class="fas fa-edit"></i> 編輯</a>
+			    			<a class="" href="#"><i class="fas fa-arrow-up"></i> 置頂</a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+			    			<a href="#"><i class="fas fa-long-arrow-alt-down"></i></a>
+			    			<a href="#delete_category" rel="modal:open"><i class="far fa-trash-alt"></i></a>
+			    		</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	  		</div>
+	    </div>
+	</main>
+</body>
+</html>
+
+
+

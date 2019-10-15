@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>訂單管理</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/manager-standard-style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="text/javascript">
+        $(function(){
+            $('a.the_search').click(function() {
+                $(this).parent().next('.search_content').toggle();
+            });
+            return false;
+        });
+    </script>
+</head>
+<body>
+	<main class="mainbox">
+		<section class="order_management">
+			<div class="top_box for_fixed clearfix">
+				<p class="go_menu"><a href="index.html"><i class="fas fa-angle-left"></i> 回服務入口</a></p>
+				<a class="the_search" href="#"><i class="fas fa-search"></i></a>
+				<p class="order_title">本週訂單列表</p>
+			</div>
+			<div class="search_content">
+				<span>
+					<input type="text" name="" placeholder="可輸入交易編號、電話、金額">
+				</span>
+			</div>
+			<table class="list" cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr class="top_title">
+						<th>交易編號</th>
+						<th>時間</th>
+						<th>電話</th>
+						<th>金額</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr onclick="window.open('order_management_01.html');">
+						<td>00000000756</td>
+						<td>10/25 21:46</td>
+						<td>+886932918257</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>10/24 21:46</td>
+						<td>+886932918257</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>09/30 21:46</td>
+						<td></td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000755</td>
+						<td>09/28 12:26</td>
+						<td>+886932918257</td>
+						<td>471</td>
+					</tr>
+					<tr>
+						<td>00000000856</td>
+						<td>09/22 21:46</td>
+						<td></td>
+						<td>8778</td>
+					</tr>
+					<tr>
+						<td>00000000710</td>
+						<td>09/08 15:17</td>
+						<td></td>
+						<td>52</td>
+					</tr>
+					<tr>
+						<td>00000000665</td>
+						<td>09/01 21:46</td>
+						<td>+0988888888</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000756</td>
+						<td>09/25 10:47</td>
+						<td>+886932918257</td>
+						<td>550</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>10/24 21:46</td>
+						<td>+886932918257</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>09/30 21:46</td>
+						<td></td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000755</td>
+						<td>09/28 12:26</td>
+						<td>+886932918257</td>
+						<td>471</td>
+					</tr>
+					<tr>
+						<td>00000000856</td>
+						<td>09/22 21:46</td>
+						<td></td>
+						<td>8778</td>
+					</tr>
+					<tr>
+						<td>00000000710</td>
+						<td>09/08 15:17</td>
+						<td></td>
+						<td>52</td>
+					</tr>
+					<tr>
+						<td>00000000758</td>
+						<td>09/30 21:46</td>
+						<td></td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000755</td>
+						<td>09/28 12:26</td>
+						<td>+886932918257</td>
+						<td>471</td>
+					</tr>
+					<tr>
+						<td>00000000856</td>
+						<td>09/22 21:46</td>
+						<td></td>
+						<td>8778</td>
+					</tr>
+					<tr>
+						<td>00000000710</td>
+						<td>09/08 15:17</td>
+						<td></td>
+						<td>52</td>
+					</tr>
+					<tr>
+						<td>00000000665</td>
+						<td>09/01 21:46</td>
+						<td>+0988888888</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000756</td>
+						<td>09/25 10:47</td>
+						<td>+886932918257</td>
+						<td>550</td>
+					</tr>
+					<tr>
+						<td>00000000710</td>
+						<td>09/08 15:17</td>
+						<td></td>
+						<td>52</td>
+					</tr>
+					<tr>
+						<td>00000000665</td>
+						<td>09/01 21:46</td>
+						<td>+0988888888</td>
+						<td>161</td>
+					</tr>
+					<tr>
+						<td>00000000756</td>
+						<td>09/25 10:47</td>
+						<td>+886932918257</td>
+						<td>550</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+</body>
+</html>
+
+
+
