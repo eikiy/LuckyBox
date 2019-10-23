@@ -190,6 +190,11 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .fadebox .new_manager_pw p.note{ padding: 10px 0; font-size: 13px;  text-align: center;}
 .fadebox .new_manager_pw p.note span{ color: #f44336; }
 .fadebox .new_manager_pw .infobox{ text-align: initial; }
+.fadebox .manager_granted .infobox{ padding: 20px 5px; }
+.fadebox .manager_granted ul.granted_item{ text-align: center; }
+.fadebox .manager_granted ul.granted_item li{ display: inline-block; padding:5px 2px; }
+.fadebox .manager_granted ul.granted_item li p{ font-size: 14px; background-color: #fff; border-radius:4px; padding: 4px 14px; cursor: pointer; border:2px solid #fff;}
+.fadebox .manager_granted ul.granted_item li p.the_selected{ border-color: #ffcd00; background-color: #fffffd; }
 
 /*190705 新增*/
 .setting_list{ width: 100%; background-color: #ebebeb; min-height: 100vh; padding-top: 55px;}
@@ -342,6 +347,8 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 	.order_management span.oval,.terms_status span.oval { font-size: 12px; }
 	.order_management ul.order_detail li p, .terms_status ul.status_info li p{ font-size: 13px; }
 	.setting_list .bottom_btn p.btn, .order_management .bottom_btn p.btn{ font-size: 14px; }
+
+	.fadebox .manager_granted ul.granted_item li p{ font-size: 13px; }
 }
 @media (max-width:370px){
 	.home_menu ul.service_items li p{ font-size: 13px; }
