@@ -131,7 +131,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .fadebox .category_list .sequence a.disabled{ color: #999;  cursor: no-drop;}
 
 .fadebox .notice_content h3.top_title{ font-size: 18px; padding: 10px 0 15px 0; }
-.fadebox .notice_content p.info{ font-size: 12px; }
+.fadebox .notice_content pre.info{ font-size: 12px;  white-space: pre-wrap; white-space: -moz-pre-wrap !important; white-space: -pre-wrap; white-space: -o-pre-wrap;word-wrap: break-word; }
 
 
 .fadebox .infobox{ background-color: #f0f0f0; padding: 15px; border-radius: 8px; text-align: center;}
