@@ -182,10 +182,22 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .fadebox .infobox p span.green{color: #ff9900; }
 .fadebox .styled-select{ height: 41px; width: 100%; border-radius: 50px; background: url(../images/icon_arr.png) center right no-repeat #f0f0f0; background-size: contain;}
 .fadebox .styled-select select{ padding: 0 20px; font-size: 16px; color: #333;  width: calc(100% - 20px); height: 41px; line-height: 41px; background: none; }
-.fadebox .the_product_info input, .fadebox .the_product_info textarea{ text-align: left; max-width: initial; }
+.fadebox .the_product_info .stock_box{ width: 100%; }
+.fadebox .the_product_info p a.stock{ font-size: 13px; color: #999; }
+.fadebox .the_product_info p a.stock i{ color: #c8c8c8; padding-right: 5px;}
+.fadebox .the_product_info p.add_a_link{ position: relative;}
+.fadebox .the_product_info p.add_a_link a.stock{ position: absolute; top: 0; right: 0; }
+
+.fadebox .the_product_info input, .fadebox .the_product_info textarea{ text-align: left; max-width: initial; margin: 10px 0; }
 .fadebox .the_product_info ul li{ padding: 15px 0; border-bottom: 1px solid #e5e5e5;}
 .fadebox .the_product_info ul li .both input{ width:calc(50% - 2.5px); float: left; border-radius: 10px; }
 .fadebox .the_product_info ul li .both input:last-child{ float: right; }
+.fadebox .the_product_info ul li .both_title{ padding-top: 10px;}
+.fadebox .the_product_info ul li .both_title div{ width:calc(50% - 2.5px); float: left;}
+.fadebox .the_product_info ul li .both_title div p{ font-size: 12px; color: #959595; }
+.fadebox .the_product_info ul li .both_title div input{ border-radius: 10px; }
+.fadebox .the_product_info ul li .both_title div:last-child{ float: right; }
+
 .fadebox .new_manager_pw input{ font-size: 22px; color: #ff9900; height: 60px; line-height: 60px; }
 .fadebox .new_manager_pw p.note{ padding: 10px 0; font-size: 13px;  text-align: center;}
 .fadebox .new_manager_pw p.note span{ color: #f44336; }
@@ -328,10 +340,11 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 	.the_productbox .products_box .right_info ul.products_list li .product_info{ max-width: calc(100% - 70px);}
 	.the_productbox .products_box .right_info ul.products_list li .product_info h3.product_title{ font-size: 14px; }
 	.the_productbox .products_box .right_info ul.products_list li .stock_nb p{ font-size: 12px;}
-
-	.fadebox input{ font-size: 14px; }
+	
+	.fadebox .the_product_info ul li{ padding: 10px 0;}
+	.fadebox .infobox p, .the_product_info p, .fadebox input, .fadebox textarea{ font-size: 13px; }
 	.bottom_manager_tools{ text-align: left;}
-	.bottom_manager_tools p.btn{ font-size: 14px; margin-right: 0px; }
+	.bottom_manager_tools p.btn{ font-size: 13px; margin-right: 0px; }
 	.bottom_manager_tools p.btn:last-child{ float: right; }
 }
 @media (max-width:400px){
