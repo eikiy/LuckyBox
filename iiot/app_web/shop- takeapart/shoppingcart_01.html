@@ -34,6 +34,17 @@
 		    	return false;
 		    });
 		});
+		// 點選外帶
+		$(function(){
+		  	$("ul.the_btn li .takeout_in").click(function(){
+		  		$(this).parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next().next(".orderin_show").hide();
+		  		$(this).parent().parent().next().next(".inside_show").hide();
+		  		$(this).parent().parent().find("li").removeClass("the_selected");
+		  		$(this).parent().addClass("the_selected");
+		    	return false;
+		    	 });
+		});
 		// 點選外送 填寫地址
 		$(function(){
 		  	$("ul.the_btn li .order_in").click(function(){
@@ -79,7 +90,6 @@
 		        <ul class="contents_box clearfix">
 		            <li class="step-1 btn_in"><p><span>Step1.</span> 取餐方式</p></li>
 		            <li class="step-2"><p><span>Step2.</span> 訂購資訊</p></li>
-		            <li class="step-3"><p><span>Step3.</span> 訂購明細</p></li>
 		        </ul>
 		    </div>
 			<!-- 購物車列表 / 取餐方式 -->
@@ -130,8 +140,7 @@
 						<p class="inside_in">內用</p>
 					</li>
 					<li>
-						<!-- 尚未驗證，會先跳出驗證手機號碼 -->
-						<p><a href="#phone_code" rel="modal:open">外帶</a></p>
+						<p class="takeout_in">外帶</a></p>
 					</li>
 					<li>
 						<p class="order_in">外送</p>
@@ -196,7 +205,7 @@
 		</section>
 
 		<!-- 電話驗證 -->
-	    <div id="phone_code" class="modal fade fadebox">
+	    <!-- <div id="phone_code" class="modal fade fadebox">
 	    	<div class="verification">
 	    		<h3 class="top_title">手機驗證</h3>
 	    		<input type="text" name="" placeholder="請輸入手機號碼">
@@ -210,7 +219,7 @@
 	    		<a class="btn" href="#" rel="modal:close">取消</a>
 	    		<a class="btn c_org" class="done" href="#">送出</a>
 	  		</div>
-	    </div>
+	    </div> -->
 	</main>
 </script>
 </body>
