@@ -102,7 +102,7 @@
 					<ul class="fillin">
 						<li>
 							<label for="name"><span class="org">*</span>訂購人</label>
-							<!-- 有錯誤訊息要+error_tips 讓 input 和 textarea 變底色 -->
+							<!-- 有錯誤訊息 f_box 要 + error_tips 讓 input 和 textarea 變底色 -->
 							<div class="f_box error_tips">
 								<input id="name" type="text" name="" value="Pin chen" placeholder="請輸入訂購人姓名">
 								<p class="error"><i class="fas fa-exclamation-circle"></i>格式錯誤</p>
@@ -112,23 +112,42 @@
 						<li>
 							<label for="phone"><span class="org">*</span>手機號碼</label>
 							<div class="phone_verification clearfix">
-								<div class="f_box error_tips">
+								<div class="f_box">
 									<input id="phone" type="text" name="" value="" placeholder="例： 0912345678">
-									<p class="error"><i class="fas fa-exclamation-circle"></i>格式錯誤</p>
 								</div>
 								<button class="btn_yello" type="button">驗證手機號碼</button>
 							</div>
+							<!-- 點了"驗證手機號碼"，滑出下面這塊 verification_not_yet -->
+							<div class="verification_not_yet">
+								<div class="phone_verification clearfix">
+									<div class="f_box">
+										<input id="phone" type="text" name="" value="" placeholder="請輸入驗證碼">
+									</div>
+									<button class="btn_yello" type="button">送出</button>
+								</div>
+								<p class="link"><a href="#">沒收到驗證碼?</a></p>
+							</div>
 						</li>
+
 						<!-- 第一次尚未驗證手機號碼  style2-->
 						<li>
 							<label for="phone"><span class="org">*</span>手機號碼</label>
 							<div class="phone_verification2 clearfix">
 								<div class="f_box error_tips">
 									<input id="phone" type="text" name="" value="" placeholder="例： 0912345678">
-									<p class="error"><i class="fas fa-exclamation-circle"></i>格式錯誤</p>
 								</div>
-								<!-- <button class="btn_yello" type="button">驗證手機號碼</button> -->
-								<p class="btn_yello"><a href="#phone_code" rel="modal:open">手機驗證</a></p>
+								<button class="btn_yello" type="button">驗證手機號碼</button>
+								<!-- <p class="btn_yello"><a href="#phone_code" rel="modal:open">手機驗證</a></p> -->
+							</div>
+							<!-- 點了"驗證手機號碼"，滑出下面這塊 verification_not_yet -->
+							<div class="verification_not_yet">
+								<div class="phone_verification clearfix">
+									<div class="f_box">
+										<input id="phone" type="text" name="" value="" placeholder="請輸入驗證碼">
+									</div>
+									<button class="btn_yello" type="button">送出</button>
+								</div>
+								<p class="link"><a href="#">沒收到驗證碼?</a></p>
 							</div>
 						</li>
 						<!-- 驗證過可修改手機號碼 -->
@@ -193,7 +212,7 @@
 		</section>
 
 		<!-- 電話驗證 -->
-	    <div id="phone_code" class="modal fade fadebox">
+	    <!-- <div id="phone_code" class="modal fade fadebox">
 	    	<div class="verification">
 	    		<h3 class="top_title">手機驗證</h3>
 	    		<div class="both clearfix">
@@ -205,7 +224,7 @@
 	    		<a class="btn c_gray" href="#" rel="modal:close">取消</a>
 	    		<a class="btn c_org" class="done" href="#">送出</a>
 	  		</div>
-	    </div>
+	    </div> -->
 	</main>
 </body>
 </html>

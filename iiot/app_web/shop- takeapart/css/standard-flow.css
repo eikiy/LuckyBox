@@ -212,6 +212,12 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart ul.fillin li .phone_verification .result p{ float: left; line-height: 30px; padding:0 20px; }
 .shopping_cart ul.fillin li .phone_verification .result .btn_yello{ margin-top: 0; float: left; }
 
+.shopping_cart ul.fillin li .verification_not_yet{ padding-top: 5px; }
+.shopping_cart ul.fillin li .verification_not_yet .btn_yello{ float: left; margin-left: 10px; color: #dc8383; border-color: #f1b1c7; background-color: #fff4f4; }
+
+.shopping_cart ul.fillin li p.link{ font-size: 12px; padding:5px 0 0 15px;}
+.shopping_cart ul.fillin li p.link a{ color: #4caf50;}
+
 /*變圓角在input內*/
 .shopping_cart ul.fillin li .phone_verification2{ position: relative; }
 .shopping_cart ul.fillin li .phone_verification2 .btn_yello{ position: absolute; top: 2px; right:8px; border-radius: 20px; line-height: 24px;}
