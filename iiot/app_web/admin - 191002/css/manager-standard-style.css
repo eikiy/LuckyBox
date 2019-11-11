@@ -240,6 +240,8 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .mainbox .top_box p.order_title{ float: right; font-size: 16px; line-height: 26px; font-weight: bold;}
 .mainbox .top_box a.the_search{float: right; width: 32px; text-align: center; line-height: 26px; margin-left: 8px; padding-left: 10px; color: #fea012;  position: relative;}
 .mainbox .top_box a.the_search::after{ content: ""; position: absolute; top:5px; left: 0; width: 1px; height: 15px; border-left: 1px solid #b2b2b2;}
+.mainbox .top_box .styled-select{ float: right; height: 26px; min-width: 110px; border-radius: 4px; background: url(../images/icon_arr.png) center right no-repeat #fff; background-size: contain;}
+.mainbox .top_box .styled-select select{ padding: 0 20px 0 10px; font-size: 16px; color: #333;  width: calc(100% - 20px); height: 26px; line-height: 26px; background: none; }
 
 .mainbox .search_content{ display: none; position: fixed; top: 46px; right: 0; z-index: 3; background-color: #fff; width: 100%; box-shadow: 0 3px 3px rgba(0,0,0,.2); }
 .mainbox .search_content span{ position: relative; }
@@ -270,7 +272,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .order_management .bottom_btn p.btn a.c_red{ background-color: #ff5722; }
 .order_management .bottom_btn p.btn a:active{ background-color: #ff7f47; color: #fff; }
 
-.terms_status{ width: 100%; padding-top: 47.5px; }
+.terms_status, .plus_giftsbox{ width: 100%; padding-top: 47.5px; }
 .terms_status ul.status_info{ width:calc(100% - 30px) ; margin: 0 auto; max-width: 500px; padding: 20px 0;}
 .terms_status ul.status_info li{padding: 8px 0; border-bottom: 1px solid #f5f5f5;}
 .terms_status ul.status_info li p{ font-size: 14px; line-height: 20px; }

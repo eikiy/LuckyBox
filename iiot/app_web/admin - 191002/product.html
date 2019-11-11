@@ -54,8 +54,14 @@
 <body>
 	<main class="mainbox">
 		<section class="top_box">
-			<div class="content_box">
+			<div class="content_box clearfix">
 				<p class="go_menu"><a href="index.html"><i class="fas fa-angle-left"></i> 回服務入口</a></p>
+				<div class="styled-select">
+	                <select class="md-input">
+	                    <option value="0" selected="selected">主餐單</option>
+	                    <option value="1">加購品</option>
+	                </select>
+	            </div>
 				<!-- <ul class="top_type">
 					<li class="btn_in"><p>商品管理</p></li>
 					<li><p><a href="manager.html">商店管理員</a></p></li>
@@ -120,6 +126,7 @@
 						<a class="more_function"><i class="fas fa-ellipsis-v"></i></a>
 						<ul class="products_tools">
 	                        <li><p><a href="#change_product_info" rel="modal:open">編輯商品</a></p></li><!-- 選一個才會出現 或是 出現多個商品 一起修改?? -->
+	                         <li><p><a href="#change_product_info" rel="modal:open">編輯加購項目</a></p></li>
 	                        <li><p><a href="#delete_product" rel="modal:open">刪除商品</a></p></li>
 	                        <li><p><a href="#">商品上架</a></p></li>
 	                        <li><p><a href="#">商品下架</a></p></li>
