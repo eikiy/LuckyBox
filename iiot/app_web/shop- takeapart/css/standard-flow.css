@@ -184,12 +184,13 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart p.sub_title{ text-align: center; font-weight: bold; color: #666; font-size: 14px; text-align: center; padding-top: 10px; }
 
 .shopping_cart ul.fillin{ max-width: 500px; padding-bottom: 15px; margin: 0 auto;}
-.shopping_cart ul.fillin li label{ width: 100%; display: block; font-size: 13.5px; color: #828282; padding:15px 0 5px 20px; }
-.shopping_cart ul.fillin li input{ width: 100%; border: 1px solid #fff; padding: 0 18px; margin: 0 auto; font-size: 15px; border-radius: 50px; height: 40px; background-color: #f0f0f0;}
-.shopping_cart ul.fillin li input::placeholder{ color: #a9a9a9; font-size: 13px; }
-.shopping_cart ul.fillin li textarea{ width: 100%; border: 1px solid #fff; padding: 15px 18px; min-height: 80px; line-height: 28px; margin: 0 auto; font-size: 15px; border-radius: 15px; background-color: #f0f0f0;}
+.shopping_cart label{ width: 100%; display: block; font-size: 13.5px; color: #828282; padding:15px 0 5px 20px; }
+.shopping_cart input{ width: 100%; border: 1px solid #fff; padding: 0 18px; margin: 0 auto; font-size: 15px; border-radius: 50px; height: 40px; background-color: #f0f0f0; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+.shopping_cart input::placeholder{ color: #a9a9a9; font-size: 13px; }
+.shopping_cart textarea{ width: 100%; border: 1px solid #fff; padding: 15px 18px; min-height: 80px; line-height: 28px; margin: 0 auto; font-size: 15px; border-radius: 15px; background-color: #f0f0f0;}
 .shopping_cart ::-webkit-input-placeholder, .shopping_cart input::-moz-placeholder, .shopping_cart input::-moz-placeholder, .shopping_cart:-ms-input-placeholder{color: red;}
-.shopping_cart ul.fillin li input:focus{ border-color: #ff8a00; }
+.shopping_cart input:focus{ border-color: #ff8a00; }
+
 .shopping_cart ul.fillin li span.org{ color: #e85718; padding-right: 3px;}
 .shopping_cart ul.fillin li.the_invoice{ padding: 10px 0; }
 .shopping_cart ul.fillin li.the_invoice h4{ font-size: 13.5px; color: #828282; padding:10px 0 10px 20px; }
@@ -198,15 +199,16 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart ul.fillin li.the_invoice input{ padding: 0; height: inherit;}
 .shopping_cart ul.fillin li.invoice_fillin input{ margin-top: 5px; }
 
-.shopping_cart ul.fillin li .error_tips input, .shopping_cart ul.fillin li .error_tips textarea{ background-color: #fff4f4; }
+.shopping_cart .error_tips input, .shopping_cart .error_tips textarea{ background-color: #fff4f4; }
 
 .shopping_cart ul.fillin li .f_box{ width: 100%;}
-.shopping_cart ul.fillin li p.error{ padding-left: 16px; font-weight: bold; line-height: 26px; color: #ff0000; font-size: 12px; padding-top: 5px; }
-.shopping_cart ul.fillin li p.error i{ padding-right: 5px; }
+p.error{ padding-left: 16px; font-weight: bold; line-height: 26px; color: #ff0000; font-size: 12px; padding-top: 5px; }
+p.error i{ padding-right: 5px; }
 .shopping_cart ul.fillin li p.s_f_g{ font-size: 12px; color: #999; padding-left: 16px; }
 
-.shopping_cart ul.fillin li .btn_yello{ float: right; margin-top: 5px; color: #936f6f; font-size: 12px; line-height: 28px; padding: 0 10px; display: block; background-color: #fffff0; border-radius: 4px; border:1px solid #f0e599; }
-.shopping_cart ul.fillin li .btn_yello a{ color: #936f6f;}
+.btn_yello{ margin-top: 5px; color: #936f6f; font-size: 12px; line-height: 28px; padding: 0 10px; display: block; background-color: #fffff0; border-radius: 4px; border:1px solid #f0e599; }
+.btn_yello a{ color: #936f6f;}
+.shopping_cart ul.fillin li .btn_yello{ float: right;}
 .shopping_cart ul.fillin li .phone_verification .f_box{ float: left; width: calc(100% - 105px); }
 .shopping_cart ul.fillin li .phone_verification .result{ width: 100%; }
 .shopping_cart ul.fillin li .phone_verification .result p{ float: left; line-height: 30px; padding:0 20px; }
@@ -232,15 +234,25 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 
 .shopping_cart .a_box{ width: 100%; max-width: 500px; margin: 0 auto; padding-bottom: 35px; display: none; }
 .shopping_cart .a_box p.sub_title{ text-align: center; padding: 10px 0; }
-.shopping_cart .a_box input.fill_in{ width: 100%; text-align: center; color: #333; background-color: #f8f8f8; border-radius: 50px; font-weight: bold; font-size: 16px; text-align: center; height: 40px; line-height: 40px; padding: 10px;}
-.shopping_cart .a_box input.fill_in::placeholder{ color: #888; font-weight: normal;}
+.shopping_cart .a_box input.fill_in{ text-align: center;}
+
 .shopping_cart .a_box .the_datepicker{ max-width: 300px; margin: 0 auto; position: relative; }
 .shopping_cart .a_box .the_datepicker i{position: absolute; left: 12px; top: 0; color: #5f6368; z-index: 10; width: 35px; height: 40px; line-height: 40px; text-align: center;}
 .shopping_cart .a_box .the_datepicker input.fill_in{ padding-left: 46px; font-weight: normal; font-size: 15px; }
 .shopping_cart .a_box .the_button{padding-top: 10px;}
 
+.shopping_cart .a_box .f_modify{ text-align: center; background-color: #f8f8f8; border-radius: 4px; padding: 5px;}
+.shopping_cart .a_box .f_modify p{ display: inline-block; vertical-align: middle; text-align: left; max-width: calc(100% - 80px); line-height: 24px; padding: 0 20px; font-size: 14px; font-weight: bold;}
+.shopping_cart .a_box .f_modify .btn_yello{ display: inline-block; vertical-align: middle; color: #936f6f; font-size: 12px; line-height: 28px;}
+
+.shopping_cart p.delivery_fee{ background-color: #fffff0; border-radius: 4px; font-weight: bold; margin:10px 0; padding:10px 15px; text-align: center; border: 1px solid #f0e599; font-size: 13px; color: #936f6f;}
+.shopping_cart p.delivery_fee i{ padding-right: 5px; }
+.shopping_cart p.delivery_fee span{ font-size: 16px; color: #e85718; padding: 0 3px;}
+.shopping_cart .a_box p.error{ text-align: center; padding: 5px; }
+
 .shopping_cart .styled-select{ height: 41px; width: 100%; max-width: 260px; margin: 10px auto; border: 2px solid #f0f0f0; border-radius: 50px; background: url(../images/icon_arr.png) center right no-repeat #fff; background-size: contain;}
 .shopping_cart .styled-select select{ padding: 0 20px; font-size: 14px; color: #333;  width: calc(100% - 20px); height: 41px; line-height: 41px; background: none; }
+.shopping_cart .error_tips .styled-select{ background-color: #fff4f4;}
 
 #mydatepicker{ margin-bottom: 15px; }
 .padding_bottom_100{ padding-bottom: 100px; }

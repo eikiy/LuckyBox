@@ -146,17 +146,40 @@
 						<p class="order_in">外送</p>
 					</li>
 				</ul>
-				<div class="a_box inside_show">
+				<div class="a_box inside_show error_tips">
 					<p class="sub_title">請填寫桌號</p>
-					<input class="fill_in" type="text" name="" placeholder="請輸入桌號">
+					<div class="f_box">
+						<input class="fill_in" type="text" name="" placeholder="請輸入桌號">
+					</div>
+					<p class="error"><i class="fas fa-exclamation-circle"></i>請填入桌號</p>
 				</div>
-				<div class="a_box orderin_show">
+				<!-- <div class="a_box orderin_show">
 					<p class="sub_title">請填寫外送地址</p>
 					<input class="fill_in" type="text" name="" placeholder="請輸入地址">
 					<div class="the_button">
 			    		<a class="btn c_gray" href="#">修改地址</a>
 			    		<a class="btn c_org" class="done" href="#">確認地址</a>
 			  		</div>
+				</div> -->
+				<div class="a_box orderin_show">
+					<!-- 狀態 一 -->
+					<p class="sub_title">請填寫外送地址，距離<span class="f_red">10公里內</span>可外送</p>
+					<div class="f_box">
+						<input class="fill_in" type="text" name="" placeholder="請輸入地址" value="台北市民生東路三段107巷6號">
+			  		</div>
+			  		<div class="the_button">
+			    		<a class="btn c_org" class="done" href="#">計算運費</a>
+			  		</div>
+			  		
+
+				  	<!-- 狀態 二 -->
+			  		<p class="sub_title">請填寫外送地址，距離<span class="f_red">10公里內</span>可外送</p>
+			  		<div class="f_box f_modify clearfix">
+						<p class="add">台灣省台中市北屯區大鵬路陳平里12之3巷5之1弄3之2鄰58號6樓之3</p>
+						<p class="btn_yello"><a href="#">修改</a></p>
+			  		</div>
+			  		<p class="delivery_fee">外送運費<span>85元</span>，送出訂單後即可幫您安排外送。</p>
+			  		<p class="error"><i class="fas fa-exclamation-circle"></i>已超出10公里內外送距離</p>
 				</div>
 
 				<!-- <ul class="fillin clearfix">
@@ -185,7 +208,8 @@
 						<p class="other_time">其他時段</p>
 					</li>
 				</ul>
-				<div class="a_box other_time_show">
+				<!-- 未選擇時間 提醒 + error_tips -->
+				<div class="a_box other_time_show error_tips">
 					<p class="sub_title">請選擇取餐時間</p>
 					<!-- <div class="the_datepicker">
 						<i class="far fa-calendar-alt"></i>
@@ -200,6 +224,7 @@
 							<option value="" selected>2019-08-30 14:00</option>
 						</select>
 					</div>
+					<p class="error"><i class="fas fa-exclamation-circle"></i>請選擇時間</p>
 				</div>
 			</form>
 		</section>
