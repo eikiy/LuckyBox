@@ -223,6 +223,9 @@ ul.option_list .the_radio{ position: relative; }
 ul.option_list .the_radio label,
 ul.option_list .the_checkbox label { border:1.5px solid #d2d2d2; color:#555; position:relative; font-size: medium; display: inline-block; border-radius:40px; cursor: pointer;z-index: 1; padding:4px 15px; font-size: 13px; height: 28px; line-height: 17.5px;}
 ul.option_list .the_radio input[type=radio]:checked + label, ul.option_list .the_checkbox input[type=checkbox]:checked + label {border-color: #ff9800;  color:#fff; background-color: #ff9800;}
+ul.option_list .out_of_stock label{ background-color: #f6f6f6;  color: #bcbcbc; border-color: #e5e5e5;cursor: no-drop;}
+ul.option_list .out_of_stock input[type=radio]:checked + label, ul.option_list .out_of_stock input[type=checkbox]:checked + label {background-color: #f6f6f6;  color: #bcbcbc; border-color: #e5e5e5; }
+
 .food_items{ padding: 15px !important; }
 .food_items h3.top_title{ text-align: left; padding-bottom: 10px;}
 .food_items h3.top_title span{ display: block; }
