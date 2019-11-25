@@ -13,22 +13,222 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+	<script type="text/javascript">
+        $(function(){
+            $('a.the_search').click(function() {
+                $(this).parent().parent().next('.search_content').toggle();
+            });
+            return false;
+        });
+    </script>
 </head>
 <body>
 	<main class="mainbox">
-		<section class="top_box">
-			<div class="content_box clearfix">
-				<p class="go_menu"><a href="index.html"><i class="fas fa-angle-left"></i> 回服務入口</a></p>
-				<div class="styled-select">
-	                <select class="md-input">
-	                    <option value="0">主餐單</option>
-	                    <option value="1" selected="selected">加購品</option>
-	                </select>
-	            </div>
+		<section class="order_management plus_giftsbox">
+			<div class="top_box for_fixed">
+				<div class="content_box clearfix">
+					<p class="go_menu"><a href="index.html"><i class="fas fa-angle-left"></i> 回服務入口</a></p>
+					<a class="the_search" href="#"><i class="fas fa-search"></i></a>
+					<div class="styled-select">
+		                <select class="md-input">
+		                    <option value="0">主餐單</option>
+		                    <option value="1" selected="selected">加購品</option>
+		                </select>
+		            </div>
+				</div>
 			</div>
-		</section>
-		<section class="plus_giftsbox">
+			<div class="search_content">
+				<span>
+					<input type="text" name="" placeholder="搜尋商品名稱">
+				</span>
+			</div>
+			<table class="list" cellpadding="0" cellspacing="0" border="0">
+				<thead>
+					<tr class="top_title">
+						<th>品名</th>
+						<th width="90">狀態</th>
+						<th width="90">功能</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here01" checked=""><label class="button" for="here01"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here02" checked=""><label class="button" for="here02"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here03" checked=""><label class="button" for="here03"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here04" checked=""><label class="button" for="here04"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here05" checked=""><label class="button" for="here05"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>牛肉漢堡食譜</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here06" checked=""><label class="button" for="here06"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>泰式涼拌海鮮沙拉</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here07" checked=""><label class="button" for="here07"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>南法風健康海鮮沙拉蜂蜜優格醬</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here08" checked=""><label class="button" for="here08"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here09" checked=""><label class="button" for="here09"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here10" checked=""><label class="button" for="here10"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here11" checked=""><label class="button" for="here11"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here12" checked=""><label class="button" for="here12"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here13" checked=""><label class="button" for="here13"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>加購飲料紅茶/奶茶/咖啡500cc</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here14" checked=""><label class="button" for="here14"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>Kitty毛絨杯套及Kitty飲料提袋</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here15" checked=""><label class="button" for="here15"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+					<tr>
+						<td>紅茶</td>
+						<td>上架</td>
+						<td>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here16" checked=""><label class="button" for="here16"></label>
+			                    </div>
+			                </div>
+		            	</td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
 	</main>
 </body>
