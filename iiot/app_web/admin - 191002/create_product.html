@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>新增商品</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/manager-standard-style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head> 
+<body>
+	<main class="mainbox">
+		<section class="the_product_info create_product">
+			<ul class="new_product">
+				<li class="top_content clearfix">
+					<div class="upload_photo">
+						<a href="upload_photo.html">
+							<i class="fas fa-image"></i>
+							<p>選擇圖片</p>
+						</a>
+					</div> 
+					<div class="right_product_set">
+	               		<div class="product_status clearfix">
+	               			<p class="l_title">上架狀態</p>
+							<div class="btn_swtich clearfix">
+			                    <div class="swtich_type">
+			                    	<input type="checkbox" id="here" checked=""><label class="button" for="here"></label>
+			                    </div>
+			                </div>
+	               		</div>
+	               		<div>
+			                <p>商品名稱</p>
+			    			<input type="text" name="" placeholder="請輸入商品名稱" value="產品AAA">
+			    		</div>
+					</div> 
+				</li>
+	    		<li>
+	    			<p>商品說明</p>
+	    			<textarea type="text" placeholder="請輸入商品說明">產品AAA產品AAA產品AAA 針對商品描述的描述針對商品描述的描述...</textarea>
+	    			<p>商品金額</p>
+	    			<input type="text" name="" placeholder="請輸入商品金額" value="129">
+	    			<!-- 點了上面　a：啟用商品庫存 ，開啟下方：每日商品庫存狀態 -->
+	    			<p>
+	    				<a class="stock" href="#">
+	    					<i class="far fa-square"></i>啟用商品庫存
+	    				</a>
+	    			</p>
+	    			<!-- 每日商品庫存狀態 -->
+	    			<div class="stock_box">
+		    			<p class="add_a_link">
+		    				每日商品庫存狀態
+		    				<a class="stock" href="#">
+		    					<i class="fas fa-times"></i>取消庫存
+		    				</a>
+		    				</p>
+		    			<div class="both_title clearfix">
+		    				<div class="">
+		    					<p>庫存數量</p>
+			    				<input type="text" name="" placeholder="庫存數量" value="0">
+			    			</div>
+			    			<div class="">
+		    					<p>剩餘數量</p>
+		    					<input type="text" name="" placeholder="剩餘數量" value="">
+		    				</div>
+		    			</div>
+	    			</div>
+	    			
+	    		</li>
+	    	</ul>
+	    	<div class="the_button">
+	    		<a class="btn" href="#">取消</a>
+	    		<a class="btn c_org" href="#">儲存</a>
+	  		</div>
+		</section>
+	</main>
+</body>
+</html>
+
+
+
