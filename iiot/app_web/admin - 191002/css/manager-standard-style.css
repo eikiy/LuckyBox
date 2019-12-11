@@ -280,11 +280,13 @@ h3.top_title{ text-align: center; padding: 20px 0 0; font-size: 16px; font-weigh
 .order_management ul.order_detail li.width_f p{ text-align: center; padding: 10px 0; color: #e85718; font-size: 15px; font-weight: bold; background-color: #fff7f7; border-radius: 10px;}
 .order_management ul.order_detail li p.s_f{ font-size: 12px; color: #9f9f9f; }
 
-.order_management .bottom_btn{  width: 100%; z-index: 1;  max-width: 300px; margin: 0 auto;}
+.order_management .bottom_btn{  width: 100%; z-index: 1;  /*max-width: 300px;*/ margin: 0 auto;}
 .order_management .bottom_btn p.btn{ text-align: center; }
-.order_management .bottom_btn p.btn a{ cursor: pointer;  color: #fff; min-width: 100px; margin: 0 3px; padding: 12px 25px; display: inline-block; background-color: #ff9900; border-radius: 40px;}
+.order_management .bottom_btn p.btn a{ cursor: pointer;  color: #fff; min-width: 100px; margin: 3px; padding: 10px 22px; display: inline-block; background-color: #ff9900; border-radius: 40px;}
 .order_management .bottom_btn p.btn a.c_red{ background-color: #ff5722; }
-.order_management .bottom_btn p.btn a:active{ background-color: #ff7f47; color: #fff; }
+.order_management .bottom_btn p.btn a:active{ background-color: #ff7f47; color: #fff;}
+.order_management .bottom_btn p.btn a.c_gray{ background-color: #c1c1c1; color: #fff;}
+.order_management .bottom_btn p.btn a.c_yellow{ background-color: #ff9900; color: #fff;}
 
 .terms_status, .plus_giftsbox{ width: 100%; padding-top: 47.5px; }
 .terms_status ul.status_info{ width:calc(100% - 30px) ; margin: 0 auto; max-width: 500px; padding: 20px 0;}
@@ -445,6 +447,8 @@ ul.gallery_list li.img_url:hover{ opacity: 0.8; }
 	.fadebox .category_list .sequence a{ min-width: 35px; height: 35px; margin: 0; line-height: 35px; font-size: 10px; }
 	.bottom_manager_tools p.btn{ font-size: 12px; }
 	.bottom_manager_tools p.btn a{ padding: 6px 8px; }
+	.setting_list .bottom_btn p.btn, .order_management .bottom_btn p.btn{ font-size: 13px; }
+	.order_management .bottom_btn p.btn a{ min-width: 85px; padding: 8px; margin: 2px;}
 }
 @media screen and (max-height: 450px) {
 }
