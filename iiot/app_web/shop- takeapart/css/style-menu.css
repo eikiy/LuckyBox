@@ -259,7 +259,6 @@ ul.option_list .out_of_stock input[type=radio]:checked + label, ul.option_list .
 }
 @media (max-width:800px){
     .shop_mainbox .top_step ul li p{ font-size: 15px; }
-    .shop_mainbox .top_step ul li p span{ display: block; }
 }
 @media (max-width:750px){
     .fadebox h3.top_title{ font-size: 17px; }
