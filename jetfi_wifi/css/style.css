@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+input, textarea { margin:0; padding:0;}
+* {-webkit-text-size-adjust:none;}
+a{text-decoration:none;}
+fieldset, img { border:0;}
+ol, ul { list-style:none;}
+abbr, acronym { border:0;}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+* html .clearfix {height: 1%;}
+*:first-child + html .clearfix { min-height: 1%;}
+
+body, h1, h2, h3, h4, h5, h6, p {font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif; font-weight: normal; color: #333;}
+a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
+a:hover{ text-decoration:none;}
+select, input, textarea, button {  font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+*:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{ height: 100%; }
+input, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; -webkit-appearance:none;}
+select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appearance:none;}
+*{ -ms-touch-action: manipulation; touch-action: manipulation; }
+
+/*===== start ======*/
+body{ background-color: #f4f4f4;}
+.header_container{ width: 100%; position: fixed; top: 0; left: 0; background-color: #fff; min-height: 65px; z-index: 2; border-bottom: 1px solid #e0e0e0; }
+.header_container a.header_jetfi_logo{ width: 120px; height: 54px; display: block; text-indent: -9999px; background: url(https://jetfi-saas.wifiotg.com/img/logo.bca961c2.png) center center no-repeat; background-size: contain; }
+.header_container .header_content { max-width: 1200px; width: 100%; margin: 0 auto; padding: 5px 20px; }
+
+.main_container{ width: 100%; margin: 0 auto; padding-top: 60px;}
+.main_container h3.top_title{ padding:10px 0 35px 0; font-size: 24px; font-weight: bold; color: #222; text-align: center; }
+
+.main_container .main_flexslider{ width: 100%; height: 400px; position: relative; overflow: hidden;}
+.main_container .main_flexslider ul.slides li{ height: 400px; background-position: center center; background-repeat: no-repeat; background-size: cover;position: relative;}
+.main_container .main_flexslider ul.slides li::after{ content: ""; background-color: rgba(0,0,0,.2); width: 100%; height: 100%; position: absolute; }
+.main_container .main_flexslider .flex-control-nav{ bottom: 3%;}
+.main_container .main_flexslider .banner_title{ width: 100%; position: absolute; top: 33%; font-family: 'Noto Sans TC', sans-serif; z-index: 1; color: #fff; font-size: 40px; font-weight: bold; text-align: center; text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);}
+.main_container .main_flexslider .banner_title span{ width:calc(100% - 20px); margin: 0 auto; }
+
+.main_container .area_content{ width:calc( 100% - 40px); max-width: 1200px; padding: 40px 0; margin: 0 auto; }
+.main_container .area_content ul.choose_area{ width: 100%; padding-bottom: 25px; text-align: center;}
+.main_container .area_content ul.choose_area li{ display: inline-block; vertical-align: top; text-align: left; padding:0 10px; }
+.main_container .area_content ul.choose_area li p{ color: #333; font-size: 18px; line-height: 30px; line-height: 30px;}
+.main_container .area_content ul.choose_area li p a{ color: #333; display: inline-block; padding-bottom: 5px; border-bottom: 1.5px solid transparent;}
+.main_container .area_content ul.choose_area li p.btn_in a{ color: #fabd00; border-color: #fabd00; font-weight: bold;}
+.main_container .area_content ul.choose_area li p a:hover{ color:#fabd00; }
+
+.main_container .area_content{ width:calc( 100% - 40px); max-width: 1200px; margin: 0 auto; }
+.main_container .area_content ul.area_list li{ float: left; width:25%; padding:10px; }
+.main_container .area_content ul.area_list li a{ display: block; min-height: 285px; position: relative; background-position: center center ;background-size:cover; background-repeat: no-repeat; }
+.main_container .area_content ul.area_list li a:hover{ box-shadow: 2px 5px 15px rgba(0,0,0,.4); }
+
+.main_container .area_content ul.area_list li .area_info{ transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 100%; padding:35px 20px 20px 20px; min-height: 128px; position: absolute; bottom: 0; left: 0; background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%);background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ) ; }
+.main_container .area_content ul.area_list li h3.area_title{ font-weight: bold; font-size: 22px; line-height: 25px; color: #fff; padding: 8px 0; text-shadow: 1px 2px 3px rgba(0,0,0,.5); border-bottom: 1px solid #ffffff94;}
+.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 17px; line-height: 25px; color: #fff; padding: 8px 0; text-shadow: 1px 2px 3px rgba(0,0,0,.5);}
+.main_container .area_content ul.area_list li p.more{ font-size:15px; border:1px solid #f0a900; background-color: #fabd00; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; font-weight: bold; display: block; width: 100%;letter-spacing: 5px; text-align: center; color: #fff; line-height: 40px; text-shadow: 1px 2px 3px rgba(0,0,0,.3);}
+.main_container .area_content ul.area_list li a:hover .area_info{ padding-bottom: 40px;}
+.main_container .area_content ul.area_list li a:hover p.more{ border-color: #fff;}
+
+.main_container .area_content ul.area_list li p.label{ text-align: left; padding: 10px 0 5px 0; }
+.main_container .area_content ul.area_list li p.label span{ display: inline-block; text-align: center; font-size: 13px; /*9ab0c1*/ color: #b6a791; padding:2px 5px; margin:0 8px 8px 0; min-width: 40px; border-radius: 40px; border:1px solid #b8afa1; }
+.main_container .area_content ul.area_list li p.price{ color: #e91e63; font-size: 18px; font-weight: bold; text-align: left;}
+
+.main_container .area_content ul.country_list li{ float: left; width:33.33%; padding:10px 15px;}
+.main_container .area_content ul.country_list li img{ width: 100%; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
+.main_container .area_content ul.country_list li img:hover{ box-shadow: 2px 5px 15px rgba(0,0,0,.4); }
+
+.footer_info{ width: 100%; padding:25px 20px; background-color: #fff;}
+.footer_info p{ text-align: center; font-size: 14px; line-height: 28px; color: #333; }
+.footer_info p.link{ font-size: 13px; color: #ff9800;}
+.footer_info p.link a{ color: #ff9800; margin: 0 5px; }
+.footer_info p.link a:hover{ text-decoration: underline; }
+
+@media (max-width:1200px){
+	.main_container .area_content ul.area_list li{ width:33.33%;}
+	.main_container .area_content .area_menu ul.choose_country li{ min-width: 30%; }
+}
+@media (max-width:1000px){
+	.main_container .area_content ul.country_list li{ width:50%; padding: 10px;}
+}
+@media (max-width:800px){
+	.header_container{min-height: 50px;}
+	.header_container .header_content{ padding: 0 20px; }
+	.header_container a.header_jetfi_logo{ width: 90px; margin: 0 auto;}
+	
+	.main_container{ padding-top: 50px;}
+	.main_container h3.top_title{ font-size: 22px; padding-bottom: 20px; }
+	.main_container .area_content{ padding: 20px 0; width: calc( 100% - 20px);}
+	.main_container .area_content .area_menu .search_box{ position: initial; margin: 15px 10px; }
+	.main_container .area_content .area_menu ul.choose_area{ padding-top: 5px; }
+	.main_container .area_content .area_menu ul.choose_area li p.btn_in a{ border-color: transparent; }
+	.main_container .area_content .area_menu ul.choose_country li{ min-width: 48%; }
+
+	.main_container .area_content ul.area_list li{ width:50%;}
+	.main_container .area_content ul.area_list li .area_info{ padding: 15px; text-align: center; }
+	.main_container .area_content ul.area_list li a{padding: 15px;}
+	.main_container .area_content ul.area_list li h3.area_title{font-size: 20px;}
+	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 15px; }
+	.main_container .area_content ul.area_list li p.more{ font-size: 15px; }
+	.main_container .main_flexslider .banner_title{ font-size: 30px; }
+	.main_container .main_flexslider, .main_container .main_flexslider ul.slides li{ height: 300px;}
+	
+}
+@media (max-width:650px){
+	.main_container .area_content ul.area_list li a{ min-height: 220px;}
+	.main_container .area_content ul.area_list li .area_info{min-height: initial;}
+}
+@media (max-width:599px){
+	.main_container h3.top_title{ font-size: 21px; padding-bottom: 20px; }
+	.main_container .area_content ul.area_list li a{ min-height: 175px;}
+	.main_container .area_content ul.area_list li p.more{ line-height: 36px; letter-spacing: 3px; }
+	.main_container .area_content ul.area_list li h3.area_title, .main_container .area_content ul.area_list li h4.area_sub_title{ padding: 5px 0;}
+	.main_container .area_content ul.country_list li{ padding:3px 5px;}
+	.main_container .area_content ul.choose_area li p{ font-size: 16px; }
+	.main_container .main_flexslider .banner_title{ font-size: 24px; }
+	.main_container .main_flexslider, .main_container .main_flexslider ul.slides li{ height: 240px;}
+	.footer_info p{ font-size: 12px; }
+}
+@media (max-width:400px){
+	.main_container h3.top_title{ font-size: 18px; padding-bottom: 20px; }
+	.main_container .area_content ul.area_list li p.more{ font-size: 14px; line-height: 32px;}
+	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 14px; }
+	.main_container .area_content ul.area_list li h3.area_title, .main_container .area_content ul.area_list li h4.area_sub_title{ padding: 2.5px 0; }
+	.main_container .area_content ul.choose_area li{ padding: 0 6px; }
+	.main_container .area_content ul.choose_area li p a{ padding-bottom: 2px;}
+}
+@media (max-width:320px){
+	.footer_info p{ font-size: 11px; line-height: 20px; }
+	.header_container a.header_jetfi_logo{ width: 75px; height: 45px; }
+	.main_container .area_content{ padding: 10px 0; }
+	.main_container .area_content ul.area_list li .area_info{ padding: 12px; }
+	.main_container .area_content ul.area_list li a{ min-height: 135px;}
+	.main_container .area_content ul.area_list li p.more{ font-size: 13px; }
+	.main_container .area_content ul.area_list li h3.area_title{ font-size: 17px; }
+	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 13px; }
+	.main_container .area_content ul.choose_area li p{ font-size: 14px; }
+}
