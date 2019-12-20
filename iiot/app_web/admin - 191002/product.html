@@ -122,8 +122,7 @@
 				</div>
 				<div class="right_info">
 					<div class="top_title_box">
-						<h2>Category2</h2>
-						<a class="add_new_product" href="create_product.html"><i class="fas fa-plus"></i></a>
+						<h2>Category有可能會很長 有可能會很長會很長</h2>
 						<a class="more_function"><i class="fas fa-ellipsis-v"></i></a>
 						<ul class="products_tools">
 	                        <li><p><a href="#change_product_info" rel="modal:open">編輯商品</a></p></li><!-- 選一個才會出現 或是 出現多個商品 一起修改?? -->
@@ -135,7 +134,11 @@
 	                        <!-- <li><p><a href="#move_other_category" rel="modal:open">移至其他分類</a></p></li> -->
 	                    </ul>
 					</div>
+
 					<ul class="products_list clearfix">
+						<li class="add_new">
+							<a class="add_new_product" href="#add_product" rel="modal:open"><i class="fas fa-plus"></i>新增商品</a>
+						</li>
 						<li class="clearfix"> <!-- 點選商品增加 the_selected 邊框顏色--> <!-- 要幫我寫選取到 >< -->
 							<div class="products_content_box">
 								<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);">
@@ -519,6 +522,121 @@
 	    			</li>
 	    		</ul>
 	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	  		</div>
+	    </div>
+
+	    <!-- 新增商品 -->
+	    <div id="add_product" class="modal fade fadebox">
+	    	<div class="the_product_info create_product">
+	    		<ul class="new_product">
+					<li class="top_content clearfix">
+						<div class="upload_photo">
+							<a href="#upload_photo" rel="modal:open">
+								<i class="fas fa-image"></i>
+								<p>選擇圖片</p>
+							</a>
+						</div> 
+						<div class="right_product_set">
+		               		<div class="product_status clearfix">
+		               			<p class="l_title">上架狀態</p>
+								<div class="btn_swtich clearfix">
+				                    <div class="swtich_type">
+				                    	<input type="checkbox" id="here" checked=""><label class="button" for="here"></label>
+				                    </div>
+				                </div>
+		               		</div>
+		               		<div>
+				                <p>商品名稱</p>
+				    			<input type="text" name="" placeholder="請輸入商品名稱" value="產品AAA">
+				    		</div>
+						</div> 
+					</li>
+		    		<li>
+		    			<p>商品說明</p>
+		    			<textarea type="text" placeholder="請輸入商品說明">產品AAA產品AAA產品AAA 針對商品描述的描述針對商品描述的描述...</textarea>
+		    			<p>商品金額</p>
+		    			<input type="text" name="" placeholder="請輸入商品金額" value="129">
+		    			<!-- 點了上面　a：啟用商品庫存 ，開啟下方：每日商品庫存狀態 -->
+		    			<p>
+		    				<a class="stock" href="#">
+		    					<i class="far fa-square"></i>啟用商品庫存
+		    				</a>
+		    			</p>
+		    			<!-- 每日商品庫存狀態 -->
+		    			<div class="stock_box">
+			    			<p class="add_a_link">
+			    				每日商品庫存狀態
+			    				<a class="stock" href="#">
+			    					<i class="fas fa-times"></i>取消庫存
+			    				</a>
+			    				</p>
+			    			<div class="both_title clearfix">
+			    				<div class="">
+			    					<p>庫存數量</p>
+				    				<input type="text" name="" placeholder="庫存數量" value="0">
+				    			</div>
+				    			<div class="">
+			    					<p>剩餘數量</p>
+			    					<input type="text" name="" placeholder="剩餘數量" value="">
+			    				</div>
+			    			</div>
+		    			</div>
+		    			
+		    		</li>
+		    	</ul>
+	    	</div>
+	    	<div class="the_button">
+	    		<a class="btn" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	  		</div>
+	    </div>
+
+	    <!-- 選擇照片 -->
+	    <div id="upload_photo" class="modal fade fadebox upload_p_h">
+	    	<div class="gallery_box">
+				<div class="top_box clearfix">
+					<p class="go_menu"><a href="create_product.html"><i class="fas fa-angle-left"></i> 取消上傳</a></p>
+					<a class="the_add" href="#"><i class="fas fa-plus"></i>新增圖片</a>
+				</div>
+				<!-- 狀態一：尚未上傳圖片 -->
+				<!-- <div class="gallery_list none_product_photo">
+					<p>
+						<a href="#">
+							<i class="fas fa-plus"></i>
+							尚未上傳圖片<br>立即上傳
+						</a>
+					</p>
+				</div> -->
+				<!-- 狀態二：已有圖片 -->
+				<ul class="gallery_list clearfix">
+					<li class="img_url btn_in" style="background-image:url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);"></li>
+	                <li class="img_url btn_in" style="background-image:url(http://likea.ezvivi.com/manage/0/product/199868/F_m.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SjvW7r0c5jlj4qMwCIc7pe7FtzuaC_lDJ7jD23nEgS2k2IkH);"></li>
+	                <li class="img_url" style="background-image:url(https://pic.pimg.tw/drm88/1530518551-1398702721_l.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://cp.cw1.tw/files/md5/6b/75/6b75c457d3b1df8e43c3922f69a1f4f4-82500.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://www.sushiexpress.com.tw/images/Product/4_s.png);"></li>
+	                <li class="img_url" style="background-image:url(https://www.starbucks.com.tw/common/objects/images/cake/20190617141527229.jpg);"></li>
+	                <li class="img_url" style="background-image:url(http://likea.ezvivi.com/manage/0/product/266510/1499735199_340.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://www.mos.com.tw/upload/product/20171019_153932_044.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://images.chinatimes.com/newsphoto/2019-05-08/900/20190508002227.jpg);"></li>
+	                <li class="img_url" style="background-image:url(http://targetbakery.com.tw/target-local/public/images/item_flavor_cover/1431556589.png);"></li>
+	                <li class="img_url" style="background-image:url(https://image.azureedge.net/0125007_-ca-250-ml.jpeg);"></li>
+	                <li class="img_url" style="background-image:url(https://s.yimg.com/zp/images/B00DAA279EDCFAD6FBC9079702E26F150542D407);"></li>
+	                <li class="img_url" style="background-image:url(https://image.azureedge.net/0012982_330ml.jpeg);"></li>
+	                <li class="img_url" style="background-image:url(https://www.sushiexpress.com.tw/images/Product/4_s.png);"></li>
+	                <li class="img_url" style="background-image:url(https://www.starbucks.com.tw/common/objects/images/cake/20190617141527229.jpg);"></li>
+	                <li class="img_url" style="background-image:url(http://likea.ezvivi.com/manage/0/product/266510/1499735199_340.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://www.mos.com.tw/upload/product/20171019_153932_044.jpg);"></li>
+	                <li class="img_url" style="background-image:url(https://images.chinatimes.com/newsphoto/2019-05-08/900/20190508002227.jpg);"></li>
+	                <li class="img_url" style="background-image:url(http://targetbakery.com.tw/target-local/public/images/item_flavor_cover/1431556589.png);"></li>
+	                <li class="img_url" style="background-image:url(https://image.azureedge.net/0125007_-ca-250-ml.jpeg);"></li>
+	                <li class="img_url" style="background-image:url(https://s.yimg.com/zp/images/B00DAA279EDCFAD6FBC9079702E26F150542D407);"></li>
+	                <li class="img_url" style="background-image:url(https://image.azureedge.net/0012982_330ml.jpeg);"></li>
+		    	</ul>
+			</div>
 	    	<div class="the_button">
 	    		<a class="btn" href="#" rel="modal:close">取消</a>
 	    		<a class="btn c_org" class="done" href="#">儲存</a>
