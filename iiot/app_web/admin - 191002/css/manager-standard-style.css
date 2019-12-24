@@ -328,9 +328,12 @@ h3.top_title{ text-align: center; padding: 20px 0 0; font-size: 16px; font-weigh
 .create_product{ max-width: 600px; margin: 0 auto; }
 .new_product .top_content{ border: none; padding: 10px 0 0 0; }
 .new_product .top_content .upload_photo{ float: left; }
-.new_product .top_content .upload_photo a{ width:95px; height: 95px; display: block; border-radius: 50%; background-color: #f0f0f0; text-align: center;}
+.new_product .top_content .upload_photo a{ width:95px; height: 95px; display: block; border-radius: 50%; overflow: hidden; background-color: #f0f0f0; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: center center;}
 .new_product .top_content .upload_photo a i{ color: #d7cfcf; font-size: 30px; padding:18px 0 3px; }
 .new_product .top_content .upload_photo a p{ color: #c1baba; font-size: 14px; }
+.new_product .top_content .upload_photo a.photo_choosed { position: relative; }
+.new_product .top_content .upload_photo a.photo_choosed p{ position: absolute; bottom: 0; width: 100%; color: #fff; padding:5px 0 10px 0; line-height: 18px; background-color: rgba(0,0,0,.45); }
+
 .new_product .top_content .right_product_set{ float:left; width: calc(100% - 95px); padding-left: 20px; }
 .new_product .top_content .right_product_set p.l_title{ float: left; font-weight: bold; }
 .new_product .top_content .right_product_set .btn_swtich{ float: right; }
@@ -354,6 +357,21 @@ ul.gallery_list li.btn_in{ border-color: #ff9900; }
 .none_product_photo p{ position: relative; color: #888; }
 .none_product_photo p a{ min-width: 150px; padding:20px 0 25px 0; display: inline-block; color: #666; border-radius: 5px; border: 2px dashed #fff;}
 .none_product_photo p a i{ padding-bottom: 8px; display: block;}
+
+.loader{ width: 100%; height: 100vh; background-color: rgba(256,256,256,.8); position: fixed; z-index: 2; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.loader_circle { border: 12px solid #d5d5d5; border-radius: 50%; border-top: 12px solid #ff9900; width: 80px; height: 80px; -webkit-animation: spin 1.5s linear infinite; /* Safari */  animation: spin 1.5s linear infinite;}
+
+/* loader_circle animation */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @media (max-width:1400px){ 
 	.the_productbox .products_box .right_info ul.products_list li{ width:calc(50% - 15px); }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>loading</title>
+	<meta name='description' content=""/>
+	<meta name='keywords' content=""/>
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/manager-standard-style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+	<section class="loader">
+		<div class="loader_circle"></div>
+	</section>
+	<main class="mainbox">
+		<section class="top_box">
+			<div class="content_box clearfix">
+				<p class="go_menu"><a href="index.html"><i class="fas fa-angle-left"></i> 回服務入口</a></p>
+				<div class="styled-select">
+	                <select class="md-input">
+	                    <option value="0" selected="selected">主餐單</option>
+	                    <option value="1">加購品</option>
+	                </select>
+	            </div>
+			</div>
+		</section>
+		<section class="the_productbox">
+			<div class="top_tool">
+				<div class="content_box clearfix">
+					<div class="selectbox clearfix">
+						<p class="use"><i class="fas fa-star"></i> 菜單</p>
+						<div class="styled-select">
+	                        <select class="md-input">
+	                            <option value="0" selected="selected">早餐菜單</option>
+	                            <option value="1">午餐菜單</option>
+	                            <option value="2">晚餐菜單</option>
+	                        </select>
+	                    </div>
+	                </div>
+	                <a class="btn_setting"><i class="fas fa-cog"></i></a>
+                    <ul class="setting_tools">
+                        <li><p><a href="#the_notice" rel="modal:open">設為使用中</a></p></li>
+                        <li><p><a href="#delete_menu" rel="modal:open">刪除菜單</a></p></li>
+                        <li><p><a href="#change_menu_name" rel="modal:open">重新命名</a></p></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="products_box">
+				<div class="left_menu">
+					<div class="category_name">
+						<ul class="list">
+							<li><p>尚未分類</p></li>
+							<li><p>最多顯示的字最多顯示的字最多顯示的字最多顯示的字</p></li>
+							<li class="btn_in"><p>Category2最多顯示的字</p></li>
+							<li><p>Category3 最多顯示的字最多顯示的字</p></li>
+							<li><p>Category4</p></li>
+							<li><p>Category5</p></li>
+							<li><p>Category6</p></li>
+							<li><p>Category7</p></li>
+							<li><p>Category8</p></li>
+							<li><p>Category9</p></li>
+							<li><p>Category10</p></li>
+							<li><p>Category11</p></li>
+							<li><p>Category12</p></li>
+						</ul>
+					</div>
+					<ul class="bottom_tools clearfix">
+						<li><a href="#add_category" rel="modal:open"><i class="fas fa-plus"></i></a></li>
+						<li><a href="#category_tools" rel="modal:open"><i class="fas fa-list"></i></a></li>
+					</ul>
+				</div>
+				<div class="right_info">
+					<div class="top_title_box">
+						<h2>Category有可能會很長 有可能會很長會很長</h2>
+						<a class="more_function"><i class="fas fa-ellipsis-v"></i></a>
+						<ul class="products_tools">
+	                        <li><p><a href="#change_product_info" rel="modal:open">編輯商品</a></p></li>
+	                         <li><p><a href="#change_product_info" rel="modal:open">編輯加購項目</a></p></li>
+	                        <li><p><a href="#delete_product" rel="modal:open">刪除商品</a></p></li>
+	                        <li><p><a href="#">商品上架</a></p></li>
+	                        <li><p><a href="#">商品下架</a></p></li>
+	                    </ul>
+					</div>
+
+					<ul class="products_list clearfix">
+						<li class="add_new">
+							<a class="add_new_product" href="#add_product" rel="modal:open"><i class="fas fa-plus"></i>新增商品</a>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://ct.yimg.com/xd/api/res/1.2/oO6C6LuSdbaJqZckv57fVg--/YXBwaWQ9eXR3YXVjdGlvbnNlcnZpY2U7aD01OTQ7cT04NTtyb3RhdGU9YXV0bzt3PTYxNw--/https://s.yimg.com/ob/image/c21718e2-6b37-4fc1-8245-23299e08e754.jpg);">
+									<p class="sold"><span>售完</span></p>
+								</div>
+								<div class="product_info">
+									<h3 class="product_title">產品AAA</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$1290</p>
+								</div>
+								<div class="stock_nb clearfix">
+									<p>每⽇數量：228<span>剩餘：327</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(http://likea.ezvivi.com/manage/0/product/199868/F_m.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品BBB</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述</h4>
+									<p class="money">$129</p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://fpscdn.yam.com/world/201803/6d/27/5aab81bdb6d27.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
+								<div class="stock_nb clearfix">
+									<p>每⽇數量：228<span>剩餘：327</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://icrvb3jy.xinmedia.com/solomo/article/123934/FE1BAAB9-BA80-FEC2-27AD-1BC4B88634E4.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
+								<div class="stock_nb clearfix">
+									<p>每⽇數量：228<span>剩餘：327</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://images.1111.com.tw/discussPic/77/51008577_7297009.2149911.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://tokyo-kitchen.icook.network/uploads/recipe/cover/209495/large_7b77e24a6d832dd4.jpg);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="products_content_box">
+								<div class="photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SjvW7r0c5jlj4qMwCIc7pe7FtzuaC_lDJ7jD23nEgS2k2IkH);"></div>
+								<div class="product_info">
+									<h3 class="product_title">產品名稱產品名稱產品名稱產品名稱</h3>
+									<h4 class="sub_info">針對商品描述的描述針對商品描述的描述...</h4>
+									<p class="money">$129</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
+
+
+
