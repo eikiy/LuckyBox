@@ -9,8 +9,8 @@
 		<meta name="HandheldFriendly" content="true">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 		<!-- FlexSlider -->
 		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 		<script defer src="js/jquery.flexslider.js"></script>
@@ -28,11 +28,46 @@
 		      });
 		    });
 		</script>
+		<script type="text/javascript">
+		    $(function(){
+			    $(".header_nav ul li").click(function(){
+			    	$(this).parent().find("li .sub_item").hide();
+			    	$(this).find(".sub_item").show();
+			    	return false;
+			    });
+			});
+		</script>
 	</head>
 	<body>
 		<header class="header_container">
 			<section class="header_content clearfix">
 				<a class="header_jetfi_logo" href="index.html">jetfi 桔豐科技</a>
+				<nav class="header_nav">
+					<ul>
+						<li class="languages">
+							<a>
+								<p class="choose">繁體中文</p>
+								<div class="sub_item">
+									<div class="sub_list">
+										<p>繁體中文</p>
+										<p>English</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="currency">
+							<a>
+								<p class="choose">TWD</p>
+								<div class="sub_item">
+									<div class="sub_list">
+										<p>TWD 新台幣</p>
+										<p>USD 美金</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</section>
 		</header>
 		<main class="main_container">
@@ -110,8 +145,17 @@
 				   			</div>
 				   		</a>
 			   		</li>
-			   		<li>
+			   		<!-- <li>
 			   			<a href="#" style="background-image: url(images/A8-Oceania.jpg);">
+				   			<div class="area_info">
+				   				<h3 class="area_title">大洋洲上網</h3>
+					   			<h4 class="area_sub_title">4G吃到飽</h4>
+					   			<p class="more">了解更多</p>
+					   		</div>
+				   		</a>
+			   		</li> -->
+			   		<li>
+			   			<a href="#" style="background-image: url(images/img_default.jpg);">
 				   			<div class="area_info">
 				   				<h3 class="area_title">大洋洲上網</h3>
 					   			<h4 class="area_sub_title">4G吃到飽</h4>
