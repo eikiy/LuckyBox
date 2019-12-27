@@ -10,15 +10,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		<script type="text/javascript">
-		    $(function(){
-			    $(".header_nav ul li").click(function(){
-			    	$(this).parent().find("li .sub_item").hide();
-			    	$(this).find(".sub_item").show();
-			    	return false;
-			    });
-			});
-		</script>
 	</head>
 	<body>
 		<header class="header_container">
@@ -27,26 +18,22 @@
 				<nav class="header_nav">
 					<ul>
 						<li class="languages">
-							<a>
-								<p class="choose">繁體中文</p>
-								<div class="sub_item">
-									<div class="sub_list">
-										<p>繁體中文</p>
-										<p>English</p>
-									</div>
-								</div>
-							</a>
+							<div class="styled-select">
+                                <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="">
+                                	<option value="0" selected="selected">繁體中文</option>
+                                	<option value="1">English</option>
+                                	<option value="2">日本語</option>
+                                </select>
+                            </div>
 						</li>
 						<li class="currency">
-							<a>
-								<p class="choose">TWD</p>
-								<div class="sub_item">
-									<div class="sub_list">
-										<p>TWD 新台幣</p>
-										<p>USD 美金</p>
-									</div>
-								</div>
-							</a>
+							<div class="styled-select">
+                                <select class="md-input" name="" required="" data-parsley-min="1" data-parsley-min-message="">
+                                	<option value="0" selected="selected">TWD 新台幣</option>
+                                	<option value="1">USD 美金</option>
+                                	<option value="2">JPY 日幣</option>
+                                </select>
+                            </div>
 						</li>
 					</ul>
 				</nav>
@@ -95,7 +82,7 @@
 			   		<li>
 			   			<div class="plan_info">
 				   			<div class="plan_info_top">
-				   				<h4 class="plan_title">日本吃到飽+翻譯</h4>
+				   				<h4 class="plan_title">北美通用500MB+翻譯</h4>
 					   			<p class="plan_price"><span>$</span>299</p>
 					   		</div>
 					   		<div class="other_info">
