@@ -142,10 +142,10 @@ body{ background-color: #f4f4f4;}
 .main_container .plan_content ul.plan_list_row li .plan_info{ background-color: #fff; border-radius: 10px; padding: 15px 20px; display: flex; align-items:center; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 .main_container .plan_content ul.plan_list_row li .plan_info:hover{ box-shadow: 2px 3px 8px rgba(0,0,0,.2);}
 .main_container .plan_content ul.plan_list_row li .plan_info .left_content{ width: calc(100% - 120px); padding-right: 20px; display: flex; align-items:center; }
-.main_container .plan_content ul.plan_list_row li .plan_info h4.plan_title{ line-height: 24px; padding:0px 5px 0px 25px; font-weight: bold; font-size: 20px; width: calc(100% - 100px); }
+.main_container .plan_content ul.plan_list_row li .plan_info h4.plan_title{ line-height: 24px; padding:0px 5px 0px 25px; font-weight: bold; font-size: 20px; width: calc(100% - 110px); }
 
-.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price{ color: #555; min-width: 100px; text-align: right; }
-.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-weight: bold; font-size: 24px; color: #ff9800;}
+.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price{ color: #555; min-width: 116px; text-align: right; }
+.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-weight: bold; font-size: 20px; color: #ff9800;}
 .main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span.p_s{ font-size: 13px; position: relative; top: -4px; }
 
 .main_container .plan_content ul.plan_list_row li .plan_info .plan_order{ font-size: 14px; }
@@ -189,7 +189,7 @@ body{ background-color: #f4f4f4;}
 	.main_container .wifi_router_info .img_wifi_router{ width: 250px; }
 	.main_container .wifi_router_info .other_item{ width: calc(100% - 250px);}
 	.main_container .plan_content ul.plan_list_row li .plan_info h4.plan_title{ font-size: 18px; }
-	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 22px; }
+	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 19px; }
 }
 @media (max-width:800px){
 	.header_container{min-height: 50px;}
@@ -220,8 +220,7 @@ body{ background-color: #f4f4f4;}
 	.main_container .wifi_router_info .other_item{ width: 100%; float: none; text-align: center; }
 	.main_container .wifi_router_info ul.customer_service{ text-align: center; }
 	.main_container .plan_content ul.plan_list_row li .plan_info h4.plan_title{ font-size: 16px; padding-left: 20px; width: calc(100% - 80px);}
-	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price{ min-width: 80px;}
-	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 20px; }
+	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 18px; }
 	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span.p_s{ top: -2px;}
 	.main_container .plan_content ul.plan_list_row li .plan_info .left_content{ width: 100%;}
 	.main_container .plan_content ul.plan_list_row li .plan_info .plan_order a{ min-width: 85px;}
@@ -251,7 +250,7 @@ body{ background-color: #f4f4f4;}
 	.main_container .plan_content ul.plan_list_row{ padding:15px 0 0 0;}
 	.main_container .plan_content ul.plan_list_row li .plan_info .left_content{ padding-right: 10px; }
 	.main_container .plan_content ul.plan_list_row li .plan_info h4.plan_title{ font-size: 14px; padding-left: 15px; line-height: 20px; }
-	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price{ font-size: 13px; }
+	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price{ font-size: 13px; min-width: 105px; }
 	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 17px; }
 	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span.p_s{top: -1px;}
 	.main_container .plan_content ul.plan_list_row li .plan_info .plan_order{ font-size: 12px; }
@@ -268,6 +267,7 @@ body{ background-color: #f4f4f4;}
 	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 16px; }
 	.footer_info{ padding: 15px 20px; }
 	.footer_info p, .footer_info p.link{ font-size: 11px; line-height: 20px; }
+	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span.p_s{ font-size: 12px; }
 }
 @media (max-width:350px){
 	.footer_info p{ font-size: 11px; line-height: 20px; }
