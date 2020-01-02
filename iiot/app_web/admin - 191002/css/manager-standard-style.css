@@ -261,7 +261,7 @@ h3.top_title{ text-align: center; padding: 20px 0 0; font-size: 16px; font-weigh
 .mainbox .search_content{ display: none; position: fixed; top: 46px; right: 0; z-index: 3; background-color: #fff; width: 100%; box-shadow: 0 3px 3px rgba(0,0,0,.2); }
 .mainbox .search_content span{ position: relative; }
 .mainbox .search_content span::after{ content: ""; position: absolute; top: -17px; right: 17px; width: 0; height: 0; border-style: solid; border-width: 0 7px 10px 7px; border-color: transparent transparent #ffffff transparent; line-height: 0px; _border-color: #000000 #000000 #ffffff #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
-.mainbox .search_content input{ width: 100%; padding:5px 10px; text-align: center; /*font-size: 14px;*/ line-height: 26px;}
+.mainbox .search_content input{ width: 100%; padding:5px 10px; text-align: center; font-size: 14px; line-height: 26px;}
 
 .order_management span.oval, .terms_status span.oval{ border-radius: 20px; padding: 2px 10px; display:inline-block; color: #fff; font-size: 14px; }
 .order_management span.c_green, .terms_status span.c_green{ background-color: #8bc34a; }
