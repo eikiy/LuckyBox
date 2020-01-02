@@ -19,7 +19,7 @@ body, h1, h2, h3, h4, h5, h6, p {font-family:'Noto Sans TC',Arial,"微軟正黑�
 p{font-size: 15px;}
 a{ text-decoration:none; outline: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;}
 a:hover{ text-decoration:none;}
-select, input, textarea, button { font-size: 16px; font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
+select, input, textarea, button { font-size: 14px; font-family:'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 html, body{ height: 100%; }
 input { -webkit-appearance: none; -moz-appearance: none; appearance: none;}
@@ -414,7 +414,7 @@ ul.gallery_list li.btn_in{ border-color: #ff9900; }
 	ul.gallery_list li.img_url{ width:calc(100vw/3 - 42px); height:calc(100vw/3 - 42px); }
 }
 @media (max-width:500px){
-	/*select, input, textarea, button { font-size: 13px;}*/
+	select, input, textarea, button { font-size: 13px;}
 	.the_productbox .products_box .right_info{ padding: 10px 16px 0 16px;}
 	.the_productbox .products_box .right_info ul.products_list{ height: calc(100vh - 175px);}
 	.the_productbox .products_box .right_info ul.products_list li{margin-bottom: 10px;}
