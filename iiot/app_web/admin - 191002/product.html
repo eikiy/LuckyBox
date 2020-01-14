@@ -602,10 +602,10 @@
 	    <!-- 選擇照片 -->
 	    <div id="upload_photo" class="modal fade fadebox upload_p_h">
 	    	<div class="gallery_box">
-				<div class="top_box clearfix">
+				<!-- <div class="top_box clearfix">
 					<p class="go_menu"><a href="create_product.html"><i class="fas fa-angle-left"></i> 取消上傳</a></p>
 					<a class="the_add" href="#"><i class="fas fa-plus"></i>新增圖片</a>
-				</div>
+				</div> -->
 				<!-- 狀態一：尚未上傳圖片 -->
 				<!-- <div class="gallery_list none_product_photo">
 					<p>
@@ -642,9 +642,20 @@
 	                <li class="img_url" style="background-image:url(https://image.azureedge.net/0012982_330ml.jpeg);"></li>
 		    	</ul>
 			</div>
+			<ul class="pageBox"> <!-- 最多八個或幾個網站? 就出現頁籤 -->
+                <li><p><a href="#"><i class="fas fa-chevron-left"></i></a></p></li>
+                <li><p><a href="#">1</a></p></li>
+                <li><p><a class="btn_in" href="#">2</a></p></li>
+                <li><p><a href="#">3</a></p></li>
+                <li><p>...</p></li>
+                <li><p><a href="#">16</a></p></li>
+                <li><p><a href="#">17</a></p></li>
+                <li><p><a href="#"><i class="fas fa-chevron-right"></i></a></p></li>
+            </ul>
 	    	<div class="the_button">
 	    		<a class="btn" href="#" rel="modal:close">取消</a>
-	    		<a class="btn c_org" class="done" href="#">儲存</a>
+	    		<a class="btn c_org done" href="#">選擇這張圖片</a>
+	    		<a class="btn c_org delete" href="#"><i class="fas fa-trash-alt"></i></a>
 	  		</div>
 	    </div>
 	</main>
