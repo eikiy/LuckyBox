@@ -169,7 +169,7 @@ h3.top_title{ text-align: center; padding: 20px 0 0; font-size: 16px; font-weigh
 .the_button a.c_org{ background-color: #ff9900; color: #fff; }
 .the_button a.c_org:active{ background-color: #ff7f47; color: #fff; }
 .the_button a.delete{ min-width: inherit; min-width: 40px; }
-.the_button a.done{}
+.the_button a.invalid{ cursor: no-drop; background-color: #f0f0f0; color: #c7c7c7; }
 .the_button a.copy{ min-width: 120px; }
 
 .fadebox{ width: 100% !important; }
@@ -369,8 +369,8 @@ ul.pageBox{width: 100%; text-align: center; padding-top: 10px;}
 ul.pageBox li{display: inline-block; margin: 0 3px;}
 ul.pageBox li p{font-size: 14px; color: #666;}
 ul.pageBox li p a{ padding:5px 10px; color: #666; display: inline-block;}
-ul.pageBox li p a:hover{color: #27d0ca;}
-ul.pageBox li p a.btn_in{ color: #27d0ca; font-weight: bold; /*border-bottom: 1px solid #27d0ca; */}
+ul.pageBox li p a:hover{color: #ff9900;}
+ul.pageBox li p a.btn_in{ color: #ff9900; font-weight: bold;}
 
 
 /* loader_circle animation */
