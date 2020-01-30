@@ -24,10 +24,10 @@ body{font-size: 100%;}
 
 .google-map-wrapper{ width: 100%; height: 100vh; position: relative; }
 .google-map-wrapper .search-box{ position: absolute; width: 360px; height: 100vh; top: 0; left: 0; z-index: 1; background-color: #f0efea; box-shadow: 0 0 7px rgba(0,0,0,.25);}
-.google-map-wrapper .search-box .search-tools{ position: sticky; top: 65px; left: 0; background-color: #f0efea; padding: 10px 10px 5px 10px; z-index: 2;}
+.google-map-wrapper .search-box .search-tools{ position: sticky; top: 0px; left: 0; background-color: #f0efea; padding: 10px 10px 5px 10px; z-index: 2;}
 .google-map-wrapper .search-box .search-tools ul.top-area{ width: 100%; }
 .google-map-wrapper .search-box .search-tools ul.top-area li{ width: 50%; float: left; padding: 0 2.5px; position: relative;}
-.google-map-wrapper .search-box .search-tools ul.top-area li select{  width: 100%; border: none; -webkit-appearance: none; -moz-appearance: none;  background: transparent; font-size: 15px; background-color: #fff; border-radius: 4px; padding: 0 10px;}
+.google-map-wrapper .search-box .search-tools ul.top-area li select{  width: 100%; border: none; height: 29px; -webkit-appearance: none; -moz-appearance: none;  background: transparent; font-size: 15px; background-color: #fff; border-radius: 4px; padding: 0 10px;}
 .google-map-wrapper .search-box .search-tools ul.top-area li::before{  content: '\f107'; position: absolute; right: 15px; top: 15px; transform: translateY(-50%); font-weight: 900; font-family: Font Awesome\ 5 Free;}
 
 .google-map-wrapper .search-box .search-tools .bottom-enter{ width: 100%; padding:5px 2.5px 0 2.5px; position: relative;}
@@ -68,13 +68,13 @@ body{font-size: 100%;}
 	.google-map-wrapper .search-box{ width:100%; height: initial;}
 	.google-map-wrapper .search-box .search-tools{ padding: 10px; }
 	.google-map-wrapper .search-box .address-list{ display: none; }
-	.google-map-wrapper .google-map-wrapper{ padding-left: 0px; }
+	.google-map-wrapper .google-map-wrapper{ padding-left: 0px; padding-top: 90px; }
 }
 @media (max-width:600px) {
 	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info{ width: 300px; }
 	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info h4.store-name{ font-size: 14px; }
 	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info p{ font-size: 12px; }
-	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info .left-info{ width: calc(100% - 100px);}
+	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info .left-info{ width: calc(100% - 100px); min-height: 100px;}
 	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info a.go-navigation{ width: 100px; }
 	.google-map-wrapper .google-map-wrapper .search-google-map .on-map-add .map-info a.go-navigation p{ font-size: 12px; }
 }
