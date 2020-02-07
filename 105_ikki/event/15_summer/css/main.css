@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* v1.0 | 20080212 Reset CSS*/ 
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td { 
+
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-size: 100%; 
+    vertical-align: baseline; 
+    background: transparent; 
+	-webkit-text-size-adjust:none;
+} 
+body { 
+    line-height: 1; 
+	font-family:Helvetica, Arial, sans-serif, SimSun, "微軟正黑體", Microsoft JhengHei;	
+	background:#f1efed;
+} 
+ol, ul { 
+} 
+blockquote, q { 
+    quotes: none; 
+} 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+    content: ''; 
+    content: none; 
+} 
+
+/* remember to define focus styles! */ 
+:focus { 
+    outline: 0; 
+} 
+
+/* remember to highlight inserts somehow! */ 
+ins { 
+    text-decoration: none; 
+} 
+del { 
+    text-decoration: line-through; 
+} 
+
+/* tables still need 'cellspacing="0"' in the markup */ 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+	width:100%;
+}
+
+td{
+ vertical-align:middle; 
+}
+
+a{
+  color:#999;
+  text-decoration:underline;
+}
+
+a:visited{
+/*  color:#7d7d7d;*/ 
+ text-decoration:none;
+}
+
+a:hover{
+  color:#999;
+  text-decoration:underline;
+}
+
+a:active{
+  color:#999;
+  text-decoration:none;
+}
+
+
+img { vertical-align:middle; border:0; display:block;}
+
+.font01{color:#f00; font-size:160%}
+.font02{color:#f00;}
+.font03{color:#f00; font-size:160%}
+.font04{color:#f00;}
+.font05{background:#FF0;}

@@ -1,0 +1,30 @@
+.wrapper{width:980px; margin:0 auto;}
+.news{font-size:15px; padding:5px 0 0 40px; line-height:34px; color:#333; letter-spacing:0.05em;}
+
+.news a{
+  color:#666;
+  text-decoration:none;
+}
+
+.news a:visited{
+/*  color:#7d7d7d;*/ 
+ text-decoration:none;
+}
+
+.news a:hover{
+  color:#f00;
+  font-weight:bold;
+  letter-spacing:normal;
+  text-decoration:none;
+}
+
+.news a:active{
+  color:#666;
+  text-decoration:none;
+}
+
+.way{font-size:15px; padding:15px 0 20px 50px; line-height:34px; color:#333; letter-spacing:0.05em;}
+
+
+.apply-area{ font-size:15px; line-height:28px; color:#ff0; width:85%; margin-left:20px; }
+.apply-area td{padding:5px 2px; vertical-align:top; }

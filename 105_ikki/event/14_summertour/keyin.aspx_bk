@@ -1,0 +1,70 @@
+﻿<%@ Page Language="C#" ContentType="text/html" ResponseEncoding="utf-8" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>藝奇品新菜 一起遊關西</title>
+<meta property="og:title" content="藝奇品新菜 一起遊關西"/>
+<meta property="og:url" content="http://www.ikki.com.tw/event/14_summertour/index.html"/>
+<meta property="og:image" content="http://www.ikki.com.tw/event/14_summertour/images/fb.jpg"/>
+<meta property="og:site_name" content="8/15前相約賞味新日本料理套餐，登入發票即可抽關西雙人來回機票!我和你的美味關係就在藝奇：www.ikki.com.tw"/>
+<meta property="og:description" content="8/15前相約賞味新日本料理套餐，登入發票即可抽關西雙人來回機票!我和你的美味關係就在藝奇：www.ikki.com.tw"/>
+<link href="http://www.ikki.com.tw/event/14_summertour/images/fb.jpg" rel="image_src" type="image/jpeg">
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body style="background:#e70012;">
+<div class="login-area">
+ 		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="10%">&nbsp;</td>
+              <td width="15%"><font color="#000">▌</font>發票/抽獎憑證號碼</td>
+              <td colspan="3">
+                  <input name="" type="text">
+                </td>
+              <td rowspan="5">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><font color="#000">▌</font>本次消費總金額</td>
+              <td colspan="3"><input name="" type="text"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td style="vertical-align:top;"><font color="#000">▌</font>請輸入驗證碼</td>
+              <td style="vertical-align:top;" width="20%"><input name="" type="text"></td>
+              <td width="15%"><iframe name="imgcode" id="imgcode" src="/m/code.aspx" width="120" height="50" scrolling="no" frameborder="0"></iframe></td>
+              <td width="25%"><a href="javascript:;" onclick="document.getElementById('imgcode').contentWindow.location.reload();" class="member_g1">&larr;更換別組圖示</a><br>
+          (請輸入圖片中文字，不分大小寫)</td>
+            </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td colspan="4" style="padding:10px 0 10px 160px;">
+                  <input type="submit" name="button" id="button" value="下一步">
+                 </td>
+              </tr>
+              <tr>
+                <td style="text-align:right; vertical-align:top;" class="line">貼心提醒：</td>
+                <td colspan="4" class="line">
+                <ol>
+                    <li>請妥善保管您所登錄的發票影本/抽獎憑證，作為日後中獎時核驗之用，遺失則無法兌獎。</li>
+                    <li>為確保您的權益，請檢視登入資訊是否完整。</li>
+                    <li>一張發票號碼/抽獎憑證限登入一次，重複輸入視同無效。</li>
+                    <li>當您關閉此分頁時，您的會員資料將自動完成登出。謝謝~</li>
+                </ol>
+                </td>
+              </tr>
+          </table>
+      </div>
+
+</body>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2488504-1";
+urchinTracker();
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Parallax Plugin Demo</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.9);
+	$('#third').parallax("50%", 0.3);
+	$('#sixth').parallax("50%", 0.1);
+
+})
+</script>
+</head>
+
+<body>
+	<!--<ul id="nav">
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>-->
+	
+	<div id="intro">
+	  <div class="story">
+	    <div class="float-left">
+	      <h2>新藝加值回饋</h2>
+	      <p>慶祝藝奇10歲生日，感恩推出「1+1双主餐期間限定版」回饋賓客，得獎型廚研發多道暖心日式料理，主餐加值升等為「海鮮+肉品双主餐」，整套餐價值近千元，期間限定698元優惠，新藝展現、心意無限！</p>
+        </div>
+      </div>
+	  <!--.story-->
+	</div> <!--#intro-->
+	
+	<div id="second">
+		<div class="story">
+	    	<div class="float-right">
+	            <h2>海の肴(5選1)</h2>
+	            <p>◆　季節鮮魚刺身<br>◆　岩燒石板鮮蝦<br>◆　時旬鮮魚<br>◆　蕈菇燉鮮魚<br>◆　季節一夜干</p>
+	            <h2>山の肴(7選1)</h2>
+	            <p>◆　蒜片牛肉燒<br>◆　日式辣味牛<br>◆　岩燒石板牛肉<br>◆　岩燒石板合鴨<br>◆　岩燒石板羊肉<br>◆　酒粕石燒豚排<br>◆　蕈菇醬烤雞肉</p>
+                <h2>精緻附餐</h2>
+	            <p>◆　海鮮土瓶蒸<br>◆　先付(3選1)<br>◆　洛神冰鑽<br>◆　釜飯(2選1)<br>◆　創藝三菓<br>◆　飲料(8選1)</p>
+	        </div>
+	    </div> <!--.story-->
+	    
+</div> <!--#second-->
+	
+	<div id="third">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h2>1+1双主餐八道料理 <br>
+       	      期間限定698元</h2>
+	            <p>(價值980元)</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	
+	<div id="fifth">
+		<div class="story"><div class="bg"></div>
+	        
+	        <a href="#"><h2 style="padding-left:150px; padding-top:130px; font-size:250%; position:relative; z-index:9999;">立即嚐鮮GO</h2></a>
+	        
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+    
+    	</div> <!--#second-->
+	
+		<div id="sixth">
+		<div class="story">
+	    	<div class="float-left" style="padding-top:30px; padding-left:120px;">
+	        	<h2>藝奇　十周年感恩祭</h2>
+	            <p>我們的用心，期待您的光臨，謝謝！</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+</body>
+</html>

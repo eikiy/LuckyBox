@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<確認信函>
+  <郵件主旨>
+    <![CDATA[
+【恭喜報名成功】729穿浴衣饗口福 一起生日快樂~
+]]>
+  </郵件主旨>
+  <郵件內容>
+
+<![CDATA[
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>藝奇 新日本料理 十周年感恩祭 729浴衣饗口福 報名成功通知信</title>
+
+</head>
+
+<body style="line-height:32px; font-family:Helvetica, Arial, sans-serif, SimSun, "微軟正黑體", Microsoft JhengHei;">
+	<table border="0" cellpadding="0" cellspacing="0" style="width:700px;; margin:0 auto; border:1px dotted #ccc;">
+         <tr>
+          <td>
+         <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+            <tr>
+              <td><img src="http://www.ikki.com.tw/event/15_summer/images/email_title.gif" width="700" height="120"></td>
+           </tr>
+        </table>
+        <br>
+        <table border="0" cellpadding="0" cellspacing="0" style="width:90%; margin:0 auto;">
+            <tr>
+              <td colspan="2">
+                  ((sToName)) 貴賓  您好：<br />您已成功報名729浴衣饗口福活動，感謝您前來為藝奇慶祝十歲生日！<br />以下為活動當日注意事項：<br><br>
+              </td>
+          </tr>
+            <tr>
+              <td width="20%"><span style="color:#f00;">▌</span>報到編號：</td>
+              <td><span style="color:#f00; font-size:160%;">
+                  ((sToNo1)) ((sToNo2))
+                  </span></td>
+          </tr>
+              <tr>
+              <td><span style="color:#f00;">▌</span>場次時間：</td>
+              <td>7/29(三) 11:00~13:00  
+              
+             
+              <a href="((sSoreAddress))" target="_blank">((sStore))</a>
+              
+              
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;"><span style="color:#f00;">▌</span>入場需知：
+              </td>
+              <td>
+              <ol>
+			    <li>報名後將有該餐廳同仁於活動日前主動電話聯繫確認用餐資訊。</li>
+                <li>請攜帶身份證明文件，並出示本【報名成功通知信】<br>
+                  (<a href="#" title="列印本頁" onclick="window.print(); return false;">按印</a> / 儲存畫面)
+                並依指定日期/時間到場。</li>
+                <li>當日若不克前往，請務必於
+                <span style="color:#f00; font-size:160%;">7/20</span> 前主動來信告知<a href="mailto:marketing@ikki.com.tw">活動小組</a><br>感謝您的配合。</li>
+              </ol>
+              </td>
+            </tr>
+          </table>
+        <br>
+ 		<table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+            <tr>
+              <td><img src="http://www.ikki.com.tw/event/15_testmeal/images/email_footer.gif" width="700" height="50"></td>
+          </tr>
+        </table>
+           </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+]]>
+    
+</郵件內容>
+</確認信函>

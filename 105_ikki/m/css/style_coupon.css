@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: myFont;
+	src: local("新細明體"), local("儷黑 Pro"), local("PMingLiU"), local("LiHei Pro"), local("Verdana");
+}
+
+body {
+	background-color:#cccccc;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 新細明體, 'PMingLiU', Verdana;
+	color: #3e3e3e;
+}
+#warp {
+	background-image:url(../images/coupon_bg.png);
+	background-repeat:repeat-x;
+	width: 100%;     /* 這個一定要設置，某些流覽器不能配合實現居中 */
+	height: 836px;
+	margin: 0 auto; /* 自動邊距（與寬度一起）會將頁面居中 */
+	border: 0;
+}
+#main {
+	margin:0 auto;
+	width:320px;
+}
+
+#logo {
+	height:72px;
+	float:left;
+	padding-left:0px;	
+	padding-top:0px
+}
+
+#part1
+{
+	width:274px;
+	height:51px;
+	float:left;
+	margin-left:46px;
+	margin-top:13px;
+	text-align:left;
+	font-family:myFont;
+	font-size:13px;
+	color:#d50000;
+	line-height:18px;
+}
+
+#barcode {
+	position:relative;
+	float:left;
+	margin-left:10px; 
+	margin-top:5px;
+	width:300px;
+	height:300px;
+	z-index:0;
+	
+}
+
+#barcode .img {
+	
+	float:left;
+	margin-left:0px; 
+	margin-top:0px;
+	width:300px;
+	height:300px;
+	
+}
+
+#barcode .txt {
+	margin-top:268px;
+	width:320px;
+	height:20px;
+	text-align:center;
+	font-family:myFont;
+	font-size:19px;
+	color:#131313;
+	position:absolute;
+	top:0px;
+	z-index:2;
+	left:0px;
+}
+
+#gif {
+	float:left;
+	margin-left:54px; 
+	margin-top:0px;
+	width:195px;
+	height:72px;
+}
+
+#part2 {
+	float:left;
+	margin-left:48px; 
+	margin-top:11px;
+	width:272px;
+	height:136px;
+	text-align:left;
+	font-family:myFont;
+	font-size:12px;
+	color:#111183;
+	line-height:18px;
+}
+
+#footer
+{
+	width:320px;
+	height:187px;
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+#footer .txt1 { 
+	float:left;
+	padding-left:0px; 
+	padding-top:0px;
+	width:320px; 
+}
+
+#footer .txt2 { 
+	float:left;
+	padding-left:22px; 
+	padding-top:12px;
+	width:298px; 
+	font-family:myFont;
+	font-size:13px;
+	color:#000000;
+	line-height:20px;
+	text-align:left;
+}
+
+#footer .txt2 a{ 
+	font-family:myFont;
+	font-size:13px;
+	color:#000000;
+	line-height:20px;
+}

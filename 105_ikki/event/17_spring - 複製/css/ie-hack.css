@@ -1,0 +1,9 @@
+/*_:-ms-fullscreen,
+ :root #tube-background-wrap {
+    margin: 0 !important;
+}*/
+
+_:-ms-lang(x),
+#tube-background-wrap {
+    margin: 0 !important;
+}

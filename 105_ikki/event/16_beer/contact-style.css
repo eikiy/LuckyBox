@@ -1,0 +1,126 @@
+@import url("reset.css");
+
+body{
+	width:100%;
+	font-family:"微軟正黑體","Microsoft JhengHei","Heiti TC";
+	background-image:url(images/index-bg.jpg);
+	}
+
+#WRAPPER{
+	width:100%;
+	height:820px;
+	margin:0 auto;
+	background-image:url(images/contact-bg.png);
+	background-repeat:repeat-x;
+	z-index:1;
+	}
+
+#HEADER{
+	width:100%;
+	height:70px;
+	background-color:#CC0000;
+	box-shadow: 0px 5px 10px rgba(0%,0%,0%,0.3);
+	z-index:999;
+	}
+
+
+#NAV{
+	width:1024px;
+	height:70px;
+	margin:0 auto;
+	position:relative;
+	z-index:999;
+	
+}
+
+#NAV #LOGO{
+	position:absolute;
+	top:0px;}
+
+#NAV ul{
+	position:absolute;
+	right:30px;
+	top:0px;}
+
+#NAV ul li{
+	float:left;
+	}
+
+#NAV ul li a{
+	display:block;
+	width:80px;
+	font-size:15px;
+	text-decoration:none;
+	color:#FFFFFF;
+	line-height:70px;
+	font-weight:bold;
+	
+	letter-spacing:1px;
+	text-align:center;
+	
+}
+
+#NAV ul li a:hover{
+	font-weight:bold;
+	background-color:#CCCCCC;
+	color:#FF0000;}
+#BOX-1{
+	width:100%;
+	height:610px;
+	background-image:url(images/contact-bg.png);
+}
+	
+#CONTENT-1{
+	width:1024px;
+	height:610px;
+	margin:0 auto; 
+	background-image:url(images/contact-bg02.png);
+	z-index:1;
+}
+
+#BOX-2{
+	width:100%;
+	height:270px;
+	}
+	
+#CONTENT-2{
+	width:1024px;
+	height:270px;
+	margin:0 auto;
+	background-image:url(images/contact-02.png);
+	background-repeat:no-repeat;
+	}
+
+#CONTENT-2 img{
+	padding-left:30px;
+	padding-top:60px;
+	float:left;}
+
+#CONTENT-2 p{
+	font-size:18px;
+	color:#93897c;
+	font-weight:normal;
+	line-height:52px;
+	padding-top:58px;
+}
+
+#CONTENT-2 a{
+	display:block;
+	float:left;
+	text-decoration:none;
+	color:#93897c;
+	font-weight:normal;
+	padding-left:10px;
+	}
+
+#CONTENT-2 a:hover{
+	color:#FF0000;}
+
+#CONTENT-3{
+	width:1024px;
+	margin:0 auto;
+	}
+#CONTENT-3 img{
+	margin-left:800px;
+	margin-top:-150px;
+	}

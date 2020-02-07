@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.content{ background:#fff; width:930px; margin:0 auto; margin:130px 0 50px 50px;}
+
+.rights{
+	height:60px; 
+	width:100%; 
+	background:#666;
+	position:relative;
+	bottom:0;
+}
+
+.rights a{color: #aeaeae;}
+.rights a:hover{ color:#f9bb2d; text-decoration:none;}
+
+#f-menu {
+	margin: 0 auto;
+	margin-top:25px;
+	padding: 0;
+	list-style: none;	
+	width: 980px;
+}
+#f-menu li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#f-menu li a {
+	padding: 0;
+	padding-left:10px;
+	margin-left:50px;
+	margin-right:167px;
+	display: block;
+	text-decoration: none;
+	font-size:16px;
+	background:url(../images/arrow_01.png) no-repeat left center;
+}
+
+.line{height:1px; border-bottom:1px solid #000;}
+.f-time{position:absolute; top:-5px; left:50%; margin-left:-447px; color:#aeaeae; padding:5px 15px;}

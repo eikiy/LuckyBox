@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: myFont;
+	src: local("新細明體"), local("儷黑 Pro"), local("PMingLiU"), local("LiHei Pro"), local("Verdana");
+}
+
+body {
+	background-color:#cccccc;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 新細明體, 'PMingLiU', Verdana;
+	color: #3e3e3e;
+}
+
+#logo_warp {
+	background-image:url(../images/menu/bg.jpg);
+	background-repeat:repeat-x;
+	width:100%;
+	height:50px;
+}
+
+#logo {
+	margin:0 auto;
+	height:50px;
+	width:320px;
+}
+
+#warp {
+	background-color:#ffffff;
+	width: 100%;
+	min-height:120px;
+	display:table;
+}
+#main {
+	margin:0 auto;
+	width:320px;
+	min-height:140px;
+}
+
+#img {
+	width:320px;
+	height:175px;
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+.meal {
+	width:320px;
+	min-height:58px;
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+.meal .txt1 {
+	width:306px;
+	height:16px;
+	float:left;
+	margin-left:14px;
+	margin-top:14px;
+	font-family:myFont;
+	font-size:16px;
+	color:#010101;
+	line-height:16px;
+	text-align:left;
+	font-weight:bold;
+}
+
+.meal .txt1 a{
+	font-family:myFont;
+	font-size:16px;
+	color:#010101;
+	line-height:16px;
+	text-align:left;
+}
+
+.meal .txt2 {
+	width:306px;
+	height:14px;
+	float:left;
+	margin-left:14px;
+	margin-top:9px;
+	font-family:myFont;
+	font-size:14px;
+	color:#010101;
+	line-height:14px;
+	text-align:left;
+}
+
+.meal .line1 {
+	width:320px;
+	height:1px;
+	float:left;
+	margin-left:0px;
+	margin-top:5px;
+	margin-bottom:14px;
+}
+
+.line1 {
+	width:320px;
+	height:1px;
+	float:left;
+	margin-left:0px;
+	margin-top:5px;
+	margin-bottom:14px;
+}
+
+.meal_detail {
+	width:280px;
+	min-height:20px;
+	float:left;
+	margin-left:14px;
+	margin-top:14px;
+	margin-bottom:0px;
+	font-family:myFont;
+	font-size:16px;
+	line-height:23px;
+	text-align:left;
+}
+
+#remark {
+	width:320px;
+	min-height:80px;
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+#remark .txt {
+	width:320px;
+	float:left;
+	margin-left:0px;
+	margin-top:9px;
+	font-family:myFont;
+	font-size:14px;
+	color:#549a2e;
+	line-height:18px;
+	text-align:left;
+}
+
+#remark .txt ul {
+	width:270px;
+	float:left;
+	margin-left:0px;
+	margin-top:9px;
+	font-family:myFont;
+	font-size:14px;
+	color:#549a2e;
+	line-height:18px;
+	text-align:left;
+}
+
+#line2 {
+	width:320px;
+	height:2px;
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:16px;
+}
+
+#fb {
+	width:296px;
+	height:26px;
+	float:left;
+	margin-left:24px;
+	margin-top:16px;
+	text-align:left;
+}
+
+
+#line {
+	width:205px;
+	height:40px;
+	float:left;
+	margin-left:24px;
+	margin-top:16px;
+	margin-bottom:24px;
+}
+
+
+#footer_warp {
+	background-color:#cccccc;
+	width:100%;
+	height:149px;
+	margin-top:0px;
+	float:left;
+	margin-left:0px;
+}
+
+#footer
+{
+	margin: 0 auto;
+	width:320px;
+	height:140px;
+	margin-top:0px;
+}
+
+#footer .txt1 { 
+	float:left;
+	padding-left:0px; 
+	padding-top:0px;
+	width:320px; 
+}
+
+#footer .txt2 { 
+	float:left;
+	padding-left:0px; 
+	padding-top:10px;
+	width:320px; 
+	font-family:myFont;
+	font-size:13px;
+	color:#dacbdd;
+	line-height:20px;
+}
+
+#footer .txt2 a{ 
+	font-family:myFont;
+	font-size:13px;
+	color:#dacbdd;
+	line-height:20px;
+}

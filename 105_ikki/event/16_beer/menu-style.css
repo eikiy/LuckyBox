@@ -1,0 +1,118 @@
+@import url("reset.css");
+body{
+	width:100%;
+	font-family:"微軟正黑體","Microsoft JhengHei","Heiti TC";
+	background-image:url(images/menu-bg.jpg);
+	}
+
+#WRAPPER{
+	width:100%;
+	height:1480px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	}
+
+#HEADER{
+	width:100%;
+	height:70px;
+	background-color:#CC0000;
+	box-shadow: 0px 5px 10px rgba(0%,0%,0%,0.3);
+	z-index:999;
+	
+	}
+
+
+#NAV{
+	width:1044px;
+	height:70px;
+	margin:0 auto;
+	position:relative;
+	z-index:999;
+	
+}
+
+#NAV #LOGO{
+	position:absolute;
+	top:0px;
+	left:18px;
+	}
+
+#NAV ul{
+	position:absolute;
+	right:30px;
+	top:0px;}
+
+#NAV ul li{
+	float:left;
+	}
+
+#NAV ul li a{
+	display:block;
+	width:80px;
+	font-size:15px;
+	text-decoration:none;
+	color:#FFFFFF;
+	line-height:70px;
+	font-weight:bold;
+	
+	letter-spacing:1px;
+	text-align:center;
+	
+}
+
+#NAV ul li a:hover{
+	font-weight:bold;
+	background-color:#CCCCCC;
+	color:#FF0000;}
+
+#BOX-1{
+	width:100%;
+	height:695px;
+	background-image:url(images/menu-01.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+#BOX-2{
+	width:960px;
+	height:80px;
+	background-image:url(images/menu-02.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-100px; }
+
+#BOX-2 p{
+	font-size:18px;
+	color:#93897c;
+	font-weight:normal;
+	text-align:right;
+}
+
+#BOX-3{
+	width:960px;
+	height:540px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;}
+
+.tab-content{ width:800px; height:540px; position:absolute; top:0; left:0;}
+.detail{ position:absolute; left:00px; bottom:0; width:800px; height:90px; background:url(images/detailBG.png); padding:15px;}
+.detail h1{display:inline;color:#FFF; font-size:20px;border-bottom:#FFF solid 2px;padding-bottom:3px;}
+.detail p{ color:#FFF; font-size:16px; line-height:1.5;padding-top:15px;}
+.switch{ width:160px;height:540px;position:absolute;line-height:160px;bottom:0;right:0;}
+.switch a{ display:block; line-height:90px; text-align:center;background-color:#efeedc; color:#b37f54; text-decoration:none; height:90px;}
+.switch a:hover{ background:#b37f54; color:#efeedc;}
+
+a.now-tab, a.now-tab:hover{color:#efeedc;background-color:#b37f54; font-weight:bold; border:0;}
+
+
+#BOX-4 a{
+	display:block;
+	background-image:url(images/menu-07.png);
+	width:143px;
+	height:142px;
+	margin:0 auto;
+	margin-top:30px;
+	}

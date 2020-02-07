@@ -1,0 +1,250 @@
+/*---Animation Elements --- */
+
+
+img.aitem {
+	position: absolute;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+
+	-webkit-transition: all 0.9s ease 0s;
+	-moz-transition: all 0.9s ease 0s;
+	-o-transition: all 0.9s ease 0s;
+	-ms-transition: all 0.9s ease 0s;
+	transition: all 0.9s ease 0s;
+
+}
+
+
+img.aitem.a1 {
+	-webkit-transform: translateY(20%);
+	-moz-transform: translateY(20%);
+	-o-transform: translateY(20%);
+	-ms-transform: translateY(20%);
+	transform: translateY(20%);
+	-webkit-transition: all 1.5s .5s;
+	-moz-transition: all 1.5s .5s;
+	-o-transition: all 1.5s .5s;
+	transition: all 1.5s .5s;
+}
+
+img.aitem.a2 {
+	-webkit-transform: translateY(30%);
+	-moz-transform: translateY(30%);
+	-o-transform: translateY(30%);
+	-ms-transform: translateY(30%);
+	transform: translateY(30%);
+	-webkit-transition: all 1.5s 1s;
+	-moz-transition: all 1.5s 1s;
+	-ms-transition: all 1.5s 1s;
+	-o-transition: all 1.5s 1s;
+	transition: all 1.5s 1s;
+}
+
+img.aitem.a3 {
+	-webkit-transform: translateY(-30%);
+	-moz-transform: translateY(-30%);
+	-o-transform: translateY(-30%);
+	-ms-transform: translateY(-30%);
+	transform: translateY(-30%);
+	-webkit-transition: all 1.5s 1.5s;
+	-moz-transition: all 1.5s 1.5s;
+	-ms-transition: all 1.5s 1.5s;
+	-o-transition: all 1.5s 1.5s;
+	transition: all 1.5s 1.5s;
+}
+
+img.aitem.a4 {
+	-webkit-transform: translateY(-30%);
+	-moz-transform: translateY(-30%);
+	-o-transform: translateY(-30%);
+	-ms-transform: translateY(-30%);
+	transform: translateY(-30%);
+	-webkit-transition: all 1.5s .5s;
+	-moz-transition: all 1.5s .5s;
+	-ms-transition: all 1.5s .5s;
+	-o-transition: all 1.5s .5s;
+	transition: all 1.5s .5s;
+}
+
+img.aitem.a5 {
+	left: 304px;
+	top: 10px;
+	-webkit-transition: all 0.9s 1400ms;
+	-moz-transition: all 0.9s 1400ms;
+	-ms-transition: all 0.9s 1400ms;
+	-o-transition: all 0.9s 1400ms;
+	transition: all 0.9s 1400ms;
+}
+
+img.aitem.a6 {
+	left: 563px;
+	top: 0px;
+	-webkit-transition: all 0.9s 1700ms;
+	-moz-transition: all 0.9s 1700ms;
+	-ms-transition: all 0.9s 1700ms;
+	-o-transition: all 0.9s 1700ms;
+	transition: all 0.9s 1700ms;
+}
+
+img.aitem.a7 {
+	position: absolute;
+	left: 762px;
+	top: 205px;
+	-webkit-transition: all 0.9s 2000ms;
+	-moz-transition: all 0.9s 2000ms;
+	-ms-transition: all 0.9s 2000ms;
+	-o-transition: all 0.9s 2000ms;
+	transition: all 0.9s 2000ms;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+img.aitem.a8 {
+	position: absolute;
+	left: 462px;
+	top: 145px;
+	-webkit-transition: all 0.9s 3300ms;
+	-moz-transition: all 0.9s 3300ms;
+	-ms-transition: all 0.9s 3300ms;
+	-o-transition: all 0.9s 3300ms;
+	transition: all 0.9s 3300ms;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+
+a.slideDown {
+	display: block;
+	position: absolute;
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	text-align: center;
+
+	border: 1px solid white;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	line-height: 190px;
+	left: 50%;
+	bottom: 50px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-image: url(../img/explore.png);
+	background-repeat: no-repeat;
+	background-position: center 60%;
+	display: none;
+}
+
+img.aitem.animateIt {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/*! --- animated --- */
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+    
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+

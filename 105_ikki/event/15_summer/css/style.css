@@ -1,0 +1,8 @@
+.wrapper{width:980px; margin:0 auto;}
+.login-area{ font-size:14px;}
+.login-area td{line-height:24px; padding:2px 3px; color:#000}
+.menu{ position:absolute; top:841px; left:50%; margin-left:-425px;}
+
+
+.apply-area{ font-size:15px; line-height:28px; color:#333; width:85%; margin-left:20px;}
+.apply-area td{padding:5px 2px; vertical-align:top; }

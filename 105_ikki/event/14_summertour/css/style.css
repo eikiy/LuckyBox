@@ -1,0 +1,13 @@
+.wrapper{width:980px; margin:0 auto;}
+.login-area{ width:980px; margin:0 auto; font-size:12px;}
+.login-area td{line-height:24px; padding:2px 3px; color:#fff; font-size:120%;}
+.menu{ position:absolute; top:841px; left:50%; margin-left:-425px;}
+.font01{color:#ff0; font-size:160%}
+.font02{color:#f00;}
+
+.apply-area{ font-size:15px; line-height:28px; color:#ff0; width:85%; margin-left:20px;}
+.apply-area td{padding:5px 2px; vertical-align:top; }
+
+.tips{padding:20px 100px; color:#fff; line-height:24px; font-size:13px;}
+.tips ul{ color:#FF0;}
+.tips ul li{ list-style-type:disc;}

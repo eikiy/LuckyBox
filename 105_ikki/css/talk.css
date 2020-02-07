@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.side{ height:350px;}
+
+.word{padding:30px 15px; min-height:750px; width:65%;}
+.word table{width:95%; margin:15px 0 30px 30px;}
+.word table td{ padding:10px; vertical-align:top; border-bottom:1px #ccc dashed;}
+.word table th{ font-style:normal; padding:15px 0 15px 55px; background:url(../images/icon_f.png) left center no-repeat; color:#333; font-size:110%; line-height:24px; border-bottom:1px solid #d6000f;}
+.word a{ font-size:120%; color:#d6000f; text-decoration:none; }
+.word a:hover{ color:#333; text-decoration:underline; }
+
+.word_all{padding:30px 15px; width:92%;}
+.word_all table{width:95%; margin:15px 0 30px 30px;}
+.word_all table td{vertical-align:top; padding:7px;}
+
+
+
