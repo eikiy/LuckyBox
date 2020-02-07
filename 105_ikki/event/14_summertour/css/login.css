@@ -1,9 +1,0 @@
-@charset "utf-8";
-/* CSS Document */
-
-.login-area{ width:980px; margin:0 auto; font-size:12px;}
-.login-area td{line-height:24px; padding:5px 3px; color:#fff; font-size:120%;}
-
-.login-area li{ margin-left:10px;}
-
-td.line{ border-top:1px dotted #CCC; padding-top:10px;}
