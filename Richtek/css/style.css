@@ -23,7 +23,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ width: 1240px; padding: 0 20px; margin: 0 auto; }
+.contentsBox{ min-width: 1240px; padding: 0 20px; margin: 0 auto; }
 .img_default, .img_default::before, .img_default::after{ background-position: center center; background-repeat: no-repeat; background-size: contain;}
 
 .headerBox{ width: 100%; padding: 20px 0; background: rgb(7,43,97); background: -moz-linear-gradient(45deg, rgba(7,43,97,1) 0%, rgba(55,166,217,1) 100%); background: -webkit-linear-gradient(45deg, rgba(7,43,97,1) 0%,rgba(55,166,217,1) 100%); background: linear-gradient(45deg, rgba(7,43,97,1) 0%,rgba(55,166,217,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#072b61', endColorstr='#37a6d9',GradientType=1 ); }
@@ -52,11 +52,11 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .rightContents .main_banner h1.main_title{ font-size: 80px; }
 .mainBox .rightContents .main_banner h2.sub_title{ font-size: 32px; }
 
-.mainBox .rightContents .main_banner .searchBox{ width:100%; max-width: 800px; position: relative; margin-top: 10px; }
-.mainBox .rightContents .main_banner .searchBox input{ font-size: 24px; width: 100%; display: block; height: 50px; line-height: 30px; border-radius: 4px; padding: 10px; padding-left: 40px; background-color: #fff;}
+.mainBox .rightContents .main_banner .searchBox{ width:100%; max-width: 800px; position: relative; margin-top: 15px; }
+.mainBox .rightContents .main_banner .searchBox input{ font-size: 24px; width: 100%; display: block; height: 50px; line-height: 30px; border-radius: 4px; padding: 10px; padding-left: 50px; background-color: #fff;}
 .mainBox .rightContents .main_banner .searchBox input::placeholder{ color: #9B9B9B; }
 .mainBox .rightContents .main_banner .searchBox input:focus{ box-shadow: 0 0 10px rgba(0,0,0,.2);}
-.mainBox .rightContents .main_banner .searchBox a.search{ position: absolute; top: 10px; left: 0; z-index: 5; cursor: pointer; width: 34px; height: 34px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.svg) center center no-repeat; background-size: contain;  }
+.mainBox .rightContents .main_banner .searchBox a.search{ position: absolute; top: calc(50% - 17px); left: 10px; z-index: 5; cursor: pointer; width: 34px; height: 34px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.svg) center center no-repeat; background-size: contain;  }
 .mainBox .rightContents .main_banner .searchBox a.search:hover{opacity: .8;}
 
 .mainBox .rightContents .banner_home{ background-image: url(../images/main_banner.png); }
@@ -86,7 +86,27 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .rightContents ul.other_link li a{ display: block; }
 .mainBox .rightContents ul.other_link li a:hover{ opacity: .9; }
 
-.mainBox .insideContents ul.store_list{ width: 100%; }
+.mainBox .insideContents ul.store_list{ width: 100%; padding:50px 30px; max-width: 1380px; margin: 0 auto; }
+.mainBox .insideContents ul.store_list li{ float: left; padding:25px 20px; }
+.mainBox .insideContents ul.store_list li .store_content{ width: 400px; border-radius: 6px; box-shadow: 0 0 5px 5px rgba(0,0,0,.2); padding: 15px;}
+.mainBox .insideContents ul.store_list li .store_photo{ width: 100%; display: block; }
+.mainBox .insideContents ul.store_list li .store_photo img{ width: 100%; }
+.mainBox .insideContents ul.store_list li h3.store_name{ color: #37A6D9; font-size: 24px; padding: 8px 0; font-weight: bold; border-bottom: 1px solid #999; margin-bottom: 10px; }
+
+.mainBox .insideContents ul.store_list li .store_info{ width: 100%; height: 400px; overflow-y: auto; }
+.mainBox .insideContents ul.store_list li .store_info p{ font-size: 16px; line-height: 26px; }
+.mainBox .insideContents ul.store_list li .store_info p span{ color: #37A6D9; font-weight: bold; }
+
+.mainBox .insideContents ul.bottom_pages{ width: 80%; margin: 0 auto; text-align: center; border-bottom: 1px solid #D8D8D8; padding: 20px 0;}
+.mainBox .insideContents ul.bottom_pages li{ display: inline-block; }
+.mainBox .insideContents ul.bottom_pages li p{ font-size: 16px;}
+.mainBox .insideContents ul.bottom_pages li p a{ color: #A8A8A8; padding: 3px 10px; position: relative; display: block;}
+.mainBox .insideContents ul.bottom_pages li p a::after{ content: ""; position: absolute; width: 1px; height: 16px; background-color: #A8A8A8; left: 0px; top: 3px;} 
+.mainBox .insideContents ul.bottom_pages li p.btn_in a{ color: #333; }
+.mainBox .insideContents ul.bottom_pages li p a.prev , .mainBox .insideContents ul.bottom_pages li p a.next{ border: 1px solid #A8A8A8; border-radius: 4px; }
+.mainBox .insideContents ul.bottom_pages li:first-child p a::after, 
+.mainBox .insideContents ul.bottom_pages li:last-child p a::after,
+.mainBox .insideContents ul.bottom_pages li:nth-child(2) p a::after{ display: none; }
 
 .footerBox{ width: 100%;background-color: #072B61; padding: 30px 0; position: relative; }
 .footerBox .contentsBox{ width: 100%; padding: 0; padding-right: 120px; }
