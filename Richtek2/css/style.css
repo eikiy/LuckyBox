@@ -35,9 +35,9 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .leftMenu{ position: absolute; top: 0; left: 0; border-right: 10px solid #D8D8D8; background-color: #9B9B9B; width: 88px; height: 100%; }
 .mainBox .leftMenu ul{ width: 100%;}
 .mainBox .leftMenu ul li{ width: 100%; border-bottom: 1px solid #9B9B9B; }
-.mainBox .leftMenu ul li p{ font-size: 16px; text-align: center; }
-.mainBox .leftMenu ul li p a{position: relative; width: 100%; display: block; padding-top: 55px; height: 88px; background-color: #404F5F; color: #FFFFFF; }
-.mainBox .leftMenu ul li p a::after{ content: ""; position: absolute; width: 100%; height: 48px; display: block; top: 5px; left: 0; }
+.mainBox .leftMenu ul li p{ font-size: 14px; text-align: center; }
+.mainBox .leftMenu ul li p a{position: relative; width: 100%; display: block; padding-top: 50px; height: 78px; background-color: #404F5F; color: #FFFFFF; }
+.mainBox .leftMenu ul li p a::after{ content: ""; position: absolute; width: 100%; height: 45px; display: block; top: 5px; left: 0; }
 .mainBox .leftMenu ul li p.icon_01 a::after{ background-image: url(../images/menu_icon_01.svg);}
 .mainBox .leftMenu ul li p.icon_02 a::after{ background-image: url(../images/menu_icon_02.svg);}
 .mainBox .leftMenu ul li p.icon_03 a::after{ background-image: url(../images/menu_icon_03.svg);}
@@ -46,17 +46,17 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .leftMenu ul li.btn_in p a{ background-color: #009EB8; }
 
 .mainBox .rightContents{ width:100%; padding:0 0 40px 88px; }
-.mainBox .rightContents .main_banner{ width: 100%; height: 320px; background-size: cover; background-repeat: no-repeat; background-position: center center;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.mainBox .rightContents .main_banner{ width: 100%; height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .mainBox .rightContents .main_banner .banner_info{ padding:20px 0; width: 80%; }
 .mainBox .rightContents .main_banner h1.main_title, .mainBox .rightContents .main_banner h2.sub_title{ font-weight: bold; color: #fff; text-shadow: 5px 3px 5px rgba(0,0,0,.5); }
 .mainBox .rightContents .main_banner h1.main_title{ font-size: 80px; }
 .mainBox .rightContents .main_banner h2.sub_title{ font-size: 32px; }
 
 .mainBox .rightContents .main_banner .searchBox{ width:100%; max-width: 800px; position: relative; margin-top: 15px; }
-.mainBox .rightContents .main_banner .searchBox input{ font-size: 20px; width: 100%; display: block; height: 50px; line-height: 30px; border-radius: 4px; padding: 10px; padding-left: 50px; background-color: #fff;}
+.mainBox .rightContents .main_banner .searchBox input{ font-size: 18px; width: 100%; display: block; height: 50px; line-height: 30px; border-radius: 8px; padding: 10px; padding-left: 50px; background-color: #fff;}
 .mainBox .rightContents .main_banner .searchBox input::placeholder{ color: #9B9B9B; }
 .mainBox .rightContents .main_banner .searchBox input:focus{ box-shadow: 0 0 10px rgba(0,0,0,.2);}
-.mainBox .rightContents .main_banner .searchBox a.search{ position: absolute; top: calc(50% - 17px); left: 10px; z-index: 5; cursor: pointer; width: 34px; height: 34px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.svg) center center no-repeat; background-size: contain;  }
+.mainBox .rightContents .main_banner .searchBox a.search{ position: absolute; top: calc(50% - 15px); left: 10px; z-index: 5; cursor: pointer; width: 30px; height: 30px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.svg) center center no-repeat; background-size: contain;  }
 .mainBox .rightContents .main_banner .searchBox a.search:hover{opacity: .8;}
 
 .mainBox .rightContents .banner_home{ background-image: url(../images/main_banner.png); }
@@ -67,8 +67,8 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .rightContents .banner_hotel{ background-image: url(../images/inside_banner_hotel.jpg); }
 
 .mainBox .rightContents .main_banner h1.main_title, .mainBox .rightContents .main_banner h2.sub_title{ font-weight: bold; color: #fff; text-shadow: 5px 3px 5px rgba(0,0,0,.5); }
-.mainBox .rightContents .main_banner h1.main_title{ font-size: 62px; }
-.mainBox .rightContents .main_banner h2.sub_title{ font-size: 28px; }
+.mainBox .rightContents .main_banner h1.main_title{ font-size: 58px; }
+.mainBox .rightContents .main_banner h2.sub_title{ font-size: 26px; }
 
 .mainBox .rightContents .news_box{ width: 80%; margin: 0 auto; padding: 40px 0; }
 .mainBox .rightContents .news_box h3.top_title{ width: 100%; font-size: 30px; font-weight: bold; color: #009EB8; padding: 10px 0; }
@@ -76,7 +76,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .rightContents .news_box ul.new_list li:nth-child(even){ background-color: #EDFCFF; }
 .mainBox .rightContents .news_box ul.new_list li a{ display: block; padding: 15px 25px; }
 .mainBox .rightContents .news_box ul.new_list li a:hover p.new_title{ text-decoration: underline;}
-.mainBox .rightContents .news_box ul.new_list li p{ font-size: 20px; line-height: 40px; }
+.mainBox .rightContents .news_box ul.new_list li p{ font-size: 18px; line-height: 40px; }
 .mainBox .rightContents .news_box ul.new_list li p.type{ float: left; width: 240px; color: #00467F;}
 .mainBox .rightContents .news_box ul.new_list li p.new_title{ float: left; width: calc(100% - 240px); display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 40px; height: 40px * 1; overflow:hidden; }
 
@@ -90,9 +90,9 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .insideContents ul.store_list li .store_content{ width: 320px; border-radius: 6px; box-shadow: 0 0 5px 5px rgba(0,0,0,.1); padding: 20px;}
 .mainBox .insideContents ul.store_list li .store_photo{ width: 100%; display: block; }
 .mainBox .insideContents ul.store_list li .store_photo img{ width: 100%; }
-.mainBox .insideContents ul.store_list li h3.store_name{ color: #37A6D9; font-size: 21px; padding: 8px 0; font-weight: bold; border-bottom: 1px solid #c3c3c3; margin-bottom: 10px; }
+.mainBox .insideContents ul.store_list li h3.store_name{ color: #37A6D9; font-size: 20px; padding: 8px 0; font-weight: bold; border-bottom: 1px solid #c3c3c3; margin-bottom: 10px; }
 .mainBox .insideContents ul.store_list li .store_info{ width: 100%; height: 400px; overflow-y: auto; }
-.mainBox .insideContents ul.store_list li .store_info p{ font-size: 15px; line-height: 26px; }
+.mainBox .insideContents ul.store_list li .store_info p{ font-size: 14px; line-height: 24px; }
 .mainBox .insideContents ul.store_list li .store_info p span{ color: #37A6D9; font-weight: bold; }
 
 .mainBox .insideContents ul.bottom_pages{ width: 80%; margin: 0 auto; text-align: center; border-bottom: 1px solid #D8D8D8; padding: 20px 0;}
@@ -106,10 +106,12 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .insideContents ul.bottom_pages li:last-child p a::after,
 .mainBox .insideContents ul.bottom_pages li:nth-child(2) p a::after{ display: none; }
 
+.mainBox .insideContents .main_banner h2.sub_title{ font-size: 22px; }
+
 .footerBox{ width: 100%; background-color: #072B61; padding: 20px 0; position: relative; }
 .footerBox .contentsBox{ width: 100%;padding-right: 120px; }
-.footerBox a.logo{ float: left; width: 250px; height: 43px; display: block; background-image: url(../images/logo.svg); }
+.footerBox a.logo{ float: left; width: 200px; height: 50px; display: block; background-image: url(../images/logo.svg); }
 .footerBox a.top{ position: absolute; right: 0; top: 0; width: 50px; height:50px; display: block; background-color: #009EB8; }
 .footerBox a.top span{ position: relative; display: block; height: 100%;}
 .footerBox a.top span::after{ content: ""; width: 50px; height: 20px; display: block; background-image:url(../images/gotop.svg); position: absolute; left:calc(50% - 25px); top: calc(50% - 10px);}
-.footerBox p.copyright { font-size: 14px; float: right; color: #fff; line-height: 30px; padding-top: 8px; }
+.footerBox p.copyright { font-size: 13px; float: right; color: #fff; line-height: 30px; padding-top: 8px; }
