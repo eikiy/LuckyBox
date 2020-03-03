@@ -54,12 +54,7 @@ body{ background-color: #f4f4f4;}
 .main_container h3.top_title{ padding:10px 0 35px 0; font-size: 24px; font-weight: bold; color: #222; text-align: center; }
 .main_container h4.sub_title{ font-size: 18px; font-weight: bold; color: #ff9800; text-align: center; }
 
-.main_container .main_flexslider{ width: 100%; height: 400px; position: relative; overflow: hidden;}
-.main_container .main_flexslider ul.slides li{ height: 400px; background-position: center center; background-repeat: no-repeat; background-size: cover;position: relative;}
-.main_container .main_flexslider ul.slides li::after{ content: ""; background-color: rgba(0,0,0,.2); width: 100%; height: 100%; position: absolute; }
-.main_container .main_flexslider .flex-control-nav{ bottom: 3%;}
-.main_container .main_flexslider .banner_title{ width: 100%; position: absolute; top: 33%; font-family: 'Noto Sans TC', sans-serif; z-index: 1; color: #fff; font-size: 40px; font-weight: bold; text-align: center; text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);}
-.main_container .main_flexslider .banner_title span{ width:calc(100% - 20px); margin: 0 auto; }
+.main_container .main_flexslider{ width: 100%; max-width: 1200px; margin: 0 auto;}
 
 .main_container .area_content{ width:calc( 100% - 40px); max-width: 1200px; padding: 40px 0; margin: 0 auto; }
 .main_container .area_content ul.choose_area{ width: 100%; padding-bottom: 25px; text-align: center;}
@@ -212,8 +207,6 @@ body{ background-color: #f4f4f4;}
 	.main_container .area_content ul.area_list li h3.area_title{font-size: 20px;}
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 15px; }
 	.main_container .area_content ul.area_list li p.more{ font-size: 15px; }
-	.main_container .main_flexslider .banner_title{ font-size: 30px; }
-	.main_container .main_flexslider, .main_container .main_flexslider ul.slides li{ height: 300px;}
 	
 	.main_container .plan_content{padding: 20px 0;}
 	.main_container .wifi_router_info .img_wifi_router { width: 100%; max-width: 200px; float: none; margin: 0 auto; padding-right: 0px;}
@@ -243,8 +236,6 @@ body{ background-color: #f4f4f4;}
 	.main_container .area_content ul.area_list li h3.area_title, .main_container .area_content ul.area_list li h4.area_sub_title{ padding: 5px 0;}
 	.main_container .area_content ul.country_list li{ padding:3px 5px;}
 	.main_container .area_content ul.choose_area li p{ font-size: 16px; }
-	.main_container .main_flexslider .banner_title{ font-size: 24px; }
-	.main_container .main_flexslider, .main_container .main_flexslider ul.slides li{ height: 240px;}
 
 	.main_container .wifi_router_info ul.specification li p{ font-size: 14px; }
 	.main_container .plan_content ul.plan_list_row{ padding:15px 0 0 0;}
@@ -258,7 +249,7 @@ body{ background-color: #f4f4f4;}
 	.footer_info p, .header_container .header_nav .styled-select select { font-size: 12px; }
 }
 @media (max-width:400px){
-	.main_container h3.top_title{ font-size: 17px; padding-bottom: 5px; }
+	.main_container h3.top_title{ font-size: 17px; padding: 0 0 10px 0; }
 	.main_container .area_content ul.area_list li p.more{ font-size: 14px; line-height: 32px;}
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 14px; }
 	.main_container .area_content ul.area_list li h3.area_title, .main_container .area_content ul.area_list li h4.area_sub_title{ padding: 2.5px 0; }
