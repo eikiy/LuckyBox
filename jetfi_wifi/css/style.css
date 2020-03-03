@@ -84,6 +84,9 @@ body{ background-color: #f4f4f4;}
 .main_container .area_content ul.country_list li img{ width: 100%; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
 .main_container .area_content ul.country_list li img:hover{ box-shadow: 2px 5px 15px rgba(0,0,0,.4); }
 
+.main_container .for_en_fsize ul.area_list li p.more{ letter-spacing: 1px;}
+.main_container .for_en_fsize ul.area_list li h4.area_sub_title{ font-size: 15px; }
+
 .main_container .plan_content{ width:calc( 100% - 40px); max-width: 1200px; padding: 40px 0; margin: 0 auto; }
 .main_container .plan_content h3{ padding-bottom: 15px; }
 
@@ -237,6 +240,11 @@ body{ background-color: #f4f4f4;}
 	.main_container .area_content ul.country_list li{ padding:3px 5px;}
 	.main_container .area_content ul.choose_area li p{ font-size: 16px; }
 
+	.main_container .for_en_fsize ul.area_list li p.more{ letter-spacing: 1px;}
+	.main_container .for_en_fsize ul.area_list li h3.area_title{ font-size: 17px; line-height: 22px;}
+	.main_container .for_en_fsize ul.area_list li h4.area_sub_title{ font-size: 12px; line-height: 18px; padding-bottom: 8px;}
+	.main_container .for_en_fsize ul.area_list li p.more{ font-size: 11px; }
+
 	.main_container .wifi_router_info ul.specification li p{ font-size: 14px; }
 	.main_container .plan_content ul.plan_list_row{ padding:15px 0 0 0;}
 	.main_container .plan_content ul.plan_list_row li .plan_info .left_content{ padding-right: 10px; }
@@ -255,6 +263,11 @@ body{ background-color: #f4f4f4;}
 	.main_container .area_content ul.area_list li h3.area_title, .main_container .area_content ul.area_list li h4.area_sub_title{ padding: 2.5px 0; }
 	.main_container .area_content ul.choose_area li{ padding: 0 6px; }
 	.main_container .area_content ul.choose_area li p a{ padding-bottom: 2px;}
+
+	.main_container .for_en_fsize ul.area_list li h3.area_title{ font-size: 15px; }
+	.main_container .for_en_fsize ul.area_list li h4.area_sub_title{ font-size: 11px; line-height: 15px; padding-bottom: 5px; }
+	.main_container .for_en_fsize ul.area_list li p.more{ font-size: 11px; font-weight: normal; }
+
 	.main_container .plan_content ul.plan_list_row li .plan_info p.plan_price span{ font-size: 16px; }
 	.footer_info{ padding: 15px 20px; }
 	.footer_info p, .footer_info p.link{ font-size: 11px; line-height: 20px; }
@@ -270,6 +283,11 @@ body{ background-color: #f4f4f4;}
 	.main_container .area_content ul.area_list li h3.area_title{ font-size: 17px; }
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 13px; }
 	.main_container .area_content ul.choose_area li p{ font-size: 14px; }
+
+	.main_container .for_en_fsize ul.area_list li a{ min-height: 145px; }
+	.main_container .for_en_fsize ul.area_list li h3.area_title { font-size: 13px; line-height: 18px;}
+	.main_container .for_en_fsize ul.area_list li h4.area_sub_title{ font-size: 11px;}
+	.main_container .for_en_fsize ul.area_list li p.more{ font-size: 11px; letter-spacing: 0; }
 
 	.main_container .wifi_router_info ul.specification li p{ font-size: 13px; }
 
