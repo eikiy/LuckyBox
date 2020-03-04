@@ -23,7 +23,8 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /*===== start ======*/
-.contentsBox{ padding: 0 20px; margin: 0 auto; }
+main{ min-width: 320px; }
+.contentsBox{ padding: 0 20px; margin: 0 auto;}
 .img_default, .img_default::before, .img_default::after{ background-position: center center; background-repeat: no-repeat; background-size: contain;}
 
 .headerBox{ width: 100%; padding: 10px 0; background: rgb(7,43,97); background: -moz-linear-gradient(45deg, rgba(7,43,97,1) 0%, rgba(55,166,217,1) 100%); background: -webkit-linear-gradient(45deg, rgba(7,43,97,1) 0%,rgba(55,166,217,1) 100%); background: linear-gradient(45deg, rgba(7,43,97,1) 0%,rgba(55,166,217,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#072b61', endColorstr='#37a6d9',GradientType=1 ); }
@@ -46,17 +47,17 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .leftMenu ul li.btn_in p a{ background-color: #009EB8; }
 
 .mainBox .rightContents{ width:100%; padding:0 0 40px 88px; }
-.mainBox .rightContents .main_banner{ width: 100%; height: 250px; background-size: cover; background-repeat: no-repeat; background-position: center center;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.mainBox .rightContents .main_banner{ width: 100%; min-height: 180px; height: 250px; max-height: 30vh; background-size: cover; background-repeat: no-repeat; background-position: center center;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
 .mainBox .rightContents .main_banner .banner_info{ padding:20px 0; width: 80%; }
 .mainBox .rightContents .main_banner h1.main_title, .mainBox .rightContents .main_banner h2.sub_title{ font-weight: bold; color: #fff; text-shadow: 5px 3px 5px rgba(0,0,0,.5); }
-.mainBox .rightContents .main_banner h1.main_title{ font-size: 80px; }
+.mainBox .rightContents .main_banner h1.main_title{ font-size: 72px; }
 .mainBox .rightContents .main_banner h2.sub_title{ font-size: 32px; }
 
 .mainBox .rightContents .main_banner .searchBox{ width:100%; max-width: 800px; position: relative; margin-top: 15px; }
-.mainBox .rightContents .main_banner .searchBox input{ font-size: 18px; width: 100%; display: block; height: 50px; line-height: 30px; border-radius: 8px; padding: 10px; padding-left: 50px; background-color: #fff;}
+.mainBox .rightContents .main_banner .searchBox input{ font-size: 17px; width: 100%; max-width: 450px; display: block; height: 50px; line-height: 30px; border-radius: 40px; padding: 10px; padding-left: 53px; background-color: #fff;}
 .mainBox .rightContents .main_banner .searchBox input::placeholder{ color: #9B9B9B; }
 .mainBox .rightContents .main_banner .searchBox input:focus{ box-shadow: 0 0 10px rgba(0,0,0,.2);}
-.mainBox .rightContents .main_banner .searchBox a.search{ position: absolute; top: calc(50% - 15px); left: 10px; z-index: 5; cursor: pointer; width: 30px; height: 30px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.svg) center center no-repeat; background-size: contain;  }
+.mainBox .rightContents .main_banner .searchBox a.search{ position: absolute; top: calc(50% - 12.5px); left: 12px; z-index: 5; cursor: pointer; width: 40px; height: 25px; border-radius: 0px 4px 0px 0px; display: block; background: url(../images/icon_search.svg) center center no-repeat; background-size: contain;  }
 .mainBox .rightContents .main_banner .searchBox a.search:hover{opacity: .8;}
 
 .mainBox .rightContents .banner_home{ background-image: url(../images/main_banner.png); }
@@ -79,24 +80,28 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 
 .mainBox .rightContents ul.other_link{ text-align: center; padding: 20px 0; }
 .mainBox .rightContents ul.other_link li{ display: inline-block; margin: 0 30px; vertical-align: middle; }
-.mainBox .rightContents ul.other_link li a{ display: block; }
+.mainBox .rightContents ul.other_link li a{ display: block; width: 100%;}
+.mainBox .rightContents ul.other_link li img{ width: 100%; }
 .mainBox .rightContents ul.other_link li a:hover{ opacity: .9; }
+.mainBox .rightContents ul.other_link li a.link_01{ max-width: 100px; }
+.mainBox .rightContents ul.other_link li a.link_02{ max-width: 70px; }
+.mainBox .rightContents ul.other_link li a.link_03{ max-width: 300px; min-width: 300px; }
 
-.mainBox .insideContents .main_banner h1.main_title{ font-size: 58px; }
+.mainBox .insideContents .main_banner h1.main_title{ font-size: 54px; }
 .mainBox .insideContents .main_banner h2.sub_title{ font-size: 24px; }
 
-.mainBox .insideContents ul.store_list{ width: 100%; padding:50px 30px; max-width: 1142px; margin: 0 auto; }
+.mainBox .insideContents ul.store_list{ width: 90%; padding:50px 30px; margin: 0 auto; }
 .mainBox .insideContents ul.store_list li{ float: left; padding:25px 20px; }
 .mainBox .insideContents ul.store_list li .store_content{ width: 320px; border-radius: 6px; box-shadow: 0 0 5px 5px rgba(0,0,0,.1); padding: 20px;}
 .mainBox .insideContents ul.store_list li .store_photo{ width: 280px; height: 193px; background-color: #efefef; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.mainBox .insideContents ul.store_list li .store_photo img{ max-width: 100%; max-height: 100%; }
+.mainBox .insideContents ul.store_list li .store_photo img{ max-width: 280px; max-height: 193px; }
 .mainBox .insideContents ul.store_list li a.store_photo:hover{ opacity: .8; }
 .mainBox .insideContents ul.store_list li h3.store_name{ color: #37A6D9; font-size: 20px; padding: 8px 0; font-weight: bold; border-bottom: 1px solid #c3c3c3; margin-bottom: 10px; }
 .mainBox .insideContents ul.store_list li .store_info{ width: 100%; height: 300px; overflow-y: auto; }
 .mainBox .insideContents ul.store_list li .store_info p{ font-size: 14px; line-height: 24px; }
 .mainBox .insideContents ul.store_list li .store_info p span{ color: #37A6D9; font-weight: bold; }
 .mainBox .insideContents ul.store_list li .store_info p.btn{ font-size: 13.5px; margin-top: 8px;}
-.mainBox .insideContents ul.store_list li .store_info p.btn a{ color: #333; border: 1px solid #37A6D9; height: 24px; padding: 0 10px 0 20px; border-radius: 4px; display: inline-block; position: relative;}
+.mainBox .insideContents ul.store_list li .store_info p.btn a{ color: #333; border: 1px solid #37A6D9; line-height: 22px; height: 24px; padding: 0 10px 0 20px; border-radius: 4px; display: inline-block; position: relative;}
 .mainBox .insideContents ul.store_list li .store_info p.btn a:hover{ background-color: #37A6D9; color: #fff; }
 .mainBox .insideContents ul.store_list li .store_info p.btn a::after{ content: ""; position: absolute; left: 7px; top: 6px; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 8px;border-color: transparent transparent transparent #37a6d9;line-height: 0px;_border-color: #000000 #000000 #000000 #37a6d9;_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 .mainBox .insideContents ul.store_list li .store_info p.btn a:hover::after{border-color: transparent transparent transparent #fff;_border-color: #000000 #000000 #000000 #fff;}
@@ -105,6 +110,7 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .insideContents ul.bottom_pages li{ display: inline-block; }
 .mainBox .insideContents ul.bottom_pages li p{ font-size: 16px;}
 .mainBox .insideContents ul.bottom_pages li p a{ color: #A8A8A8; padding: 3px 10px; position: relative; display: block;}
+.mainBox .insideContents ul.bottom_pages li p a:hover{ color: #333; }
 .mainBox .insideContents ul.bottom_pages li p a::after{ content: ""; position: absolute; width: 1px; height: 16px; background-color: #A8A8A8; left: 0px; top: 3px;} 
 .mainBox .insideContents ul.bottom_pages li p.btn_in a{ color: #333; }
 .mainBox .insideContents ul.bottom_pages li p a.prev , .mainBox .insideContents ul.bottom_pages li p a.next{ border: 1px solid #A8A8A8; border-radius: 4px; }
@@ -113,10 +119,99 @@ select, input, textarea, button {  font-family:'Noto Sans TC',Arial,\5FAE\8EDF\6
 .mainBox .insideContents ul.bottom_pages li:nth-child(2) p a::after{ display: none; }
 
 
-.footerBox{ width: 100%; background-color: #072B61; padding: 20px 0; position: relative; }
+.footerBox{ width: 100%; background-color: #072B61; padding: 10px 0; position: relative; }
 .footerBox .contentsBox{ width: 100%;padding-right: 120px; }
 .footerBox a.logo{ float: left; width: 200px; height: 50px; display: block; background-image: url(../images/logo.svg); }
 .footerBox a.top{ position: absolute; right: 0; top: 0; width: 50px; height:50px; display: block; background-color: #009EB8; }
 .footerBox a.top span{ position: relative; display: block; height: 100%;}
 .footerBox a.top span::after{ content: ""; width: 50px; height: 20px; display: block; background-image:url(../images/gotop.svg); position: absolute; left:calc(50% - 25px); top: calc(50% - 10px);}
-.footerBox p.copyright { font-size: 13px; float: right; color: #fff; line-height: 30px; padding-top: 8px; }
+.footerBox p.copyright { font-size: 13px; float: right; color: #fff; line-height: 30px; max-width:calc(100% - 140px); padding-top: 8px; }
+
+@media (max-width:1500px){
+	.mainBox .rightContents .main_banner h1.main_title{ font-size: 62px; }
+	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 28px; }
+	.mainBox .insideContents .main_banner h1.main_title{ font-size: 50px; }
+	.mainBox .insideContents .main_banner h2.sub_title{ font-size: 26px; }
+	.mainBox .insideContents ul.store_list{ width: 100%; max-width: 1142px;}
+}
+@media (max-width:1200px){
+	.headerBox, .footerBox{padding: 0;}
+	.headerBox a.home{ width: 32px; height: 32px; margin-top: 7px; }
+
+	.mainBox .leftMenu{ width: 70px; border-width: 6px; }
+	.mainBox .leftMenu ul li p{ font-size: 13px; }
+	.mainBox .leftMenu ul li p a{ height: 70px; padding-top: 42px;}
+	.mainBox .leftMenu ul li p a::after{ height: 40px; }
+	.mainBox .rightContents{ padding-left: 70px; }
+	.mainBox .rightContents .main_banner h1.main_title{ font-size: 54px;}
+	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 24px;}
+
+	.mainBox .rightContents .main_banner .banner_info, 
+	.mainBox .rightContents .news_box{ width:85%;}
+	.mainBox .rightContents .news_box h3.top_title{ font-size: 26px; }
+	.mainBox .rightContents .news_box ul.new_list li p{ font-size: 16px; }
+	.mainBox .rightContents .news_box ul.new_list li p.type{ width: 120px; }
+	.mainBox .rightContents .news_box ul.new_list li p.new_title{ width: calc(100% - 120px); }
+	.footerBox .contentsBox{ padding-right: 100px;}
+	.footerBox p.copyright{ font-size: 12px; }
+}
+@media (max-width:1250px){
+	.mainBox .insideContents ul.store_list li{ width: 33.33%; }
+	.mainBox .insideContents ul.store_list li .store_content{ width: 100%; padding: 15px; }
+	.mainBox .insideContents ul.store_list li .store_photo{ width: 100%; }
+	.mainBox .insideContents ul.store_list li .store_photo img{ width: 100%; }
+	.mainBox .insideContents ul.store_list li .store_photo{ height: 150px; overflow: hidden; }
+}
+
+@media (max-width:1000px){
+	.mainBox .rightContents ul.other_link li a.link_01{ max-width: 80px; }
+	.mainBox .rightContents ul.other_link li a.link_02{ max-width: 50px; }
+	.mainBox .rightContents ul.other_link li a.link_03{ max-width: 180px; min-width: 180px; }
+	.mainBox .rightContents .news_box{ padding: 20px 0; }
+	.mainBox .insideContents ul.store_list{ padding: 20px 30px;}
+	.mainBox .insideContents ul.store_list li{ width: 50%; }
+	.mainBox .insideContents ul.store_list li h3.store_name{ font-size: 16px; }
+	.mainBox .insideContents ul.store_list li .store_info p{ font-size: 13px; line-height: 20px;}
+}
+@media (max-width:750px){
+	.mainBox .leftMenu{ width: 65px; border-width: 3px; }
+	.mainBox .rightContents{ padding-left: 65px; }
+	.mainBox .leftMenu ul li p a{ height: 62px; padding-top: 40px;}
+	.mainBox .leftMenu ul li p a::after{ top: 2px; }
+
+	.mainBox .rightContents .main_banner .banner_info, 
+	.mainBox .rightContents .news_box{ width:80%;}
+	.mainBox .rightContents .main_banner h1.main_title{ font-size: 42px; }
+	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 20px; }
+	.mainBox .rightContents .news_box h3.top_title{ font-size: 18px; }
+	.mainBox .rightContents .news_box ul.new_list li a{ padding: 8px 25px;}
+	.mainBox .rightContents ul.other_link{padding: 0;}
+	.mainBox .rightContents ul.other_link li{ margin: 0 15px;}
+
+	.mainBox .insideContents ul.store_list li h3.store_name{ min-height: 65px;}
+	.mainBox .insideContents ul.bottom_pages li p{font-size: 14px;}
+
+	.footerBox .contentsBox{ padding:10px 20px; }
+	.footerBox a.logo{ float: none; margin: 0 auto;}
+	.footerBox p.copyright{ float: none; max-width: inherit; padding: 0 0 10px; text-align: center;}
+}
+@media (max-width:650px){
+	.headerBox{z-index: 2; position: sticky; top: 0;}
+	.mainBox .leftMenu ul{ z-index: 1; position: sticky; top: 50px; }
+	.mainBox .leftMenu ul li p{ font-size: 12px; }
+	.mainBox .rightContents .main_banner{ height: 225px; }
+	.mainBox .rightContents .main_banner h1.main_title{ font-size: 36px; }
+	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 18px;}
+	.mainBox .rightContents .main_banner .searchBox input{ height: 40px; font-size: 16px; line-height: 20px; }
+	.mainBox .rightContents .main_banner .searchBox a.search{ height: 20px; top: calc(50% - 10px);}
+	.mainBox .insideContents ul.store_list{ padding: 0 5px; }
+	.mainBox .insideContents ul.store_list li{ width: 100%; padding-bottom: 8px; }
+	.mainBox .insideContents ul.store_list li h3.store_name{ min-height: initial; }
+	.mainBox .insideContents ul.store_list li .store_info{ padding-bottom: 20px; height: initial; min-height: initial; }
+	.footerBox p.copyright{ line-height: 17px;}
+}
+@media (max-width:500px){
+	.mainBox .rightContents .main_banner{ min-height: 120px; height: initial;}
+	.mainBox .rightContents .main_banner h1.main_title{ font-size: 32px; }
+	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 15px;}
+}
