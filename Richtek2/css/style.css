@@ -199,6 +199,10 @@ main{ min-width: 320px; }
 	.headerBox{z-index: 2; position: sticky; top: 0;}
 	.mainBox .leftMenu ul{ z-index: 1; position: sticky; top: 50px; }
 	.mainBox .leftMenu ul li p{ font-size: 12px; }
+	.mainBox .rightContents .news_box ul.new_list li a{ padding: 8px 12px;}
+	.mainBox .rightContents .news_box ul.new_list li p{ font-size: 15px; }
+	.mainBox .rightContents .news_box ul.new_list li p.type{ width: 100%; line-height: 22px;}
+	.mainBox .rightContents .news_box ul.new_list li p.new_title{ width: 100%; line-height: 22px;}
 	.mainBox .rightContents .main_banner{ height: 225px; }
 	.mainBox .rightContents .main_banner h1.main_title{ font-size: 36px; }
 	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 18px;}
@@ -209,10 +213,17 @@ main{ min-width: 320px; }
 	.mainBox .insideContents ul.store_list li h3.store_name{ min-height: initial; }
 	.mainBox .insideContents ul.store_list li .store_info{ padding-bottom: 20px; height: initial; min-height: initial; }
 	.footerBox p.copyright{ line-height: 17px;}
+	.mainBox .rightContents ul.other_link li{ margin: 0 10px;}
+	.mainBox .rightContents ul.other_link li a.link_01{ max-width: 60px; }
+	.mainBox .rightContents ul.other_link li a.link_02{ max-width: 40px; }
+	.mainBox .rightContents ul.other_link li a.link_03{ max-width: 120px; min-width: 120px; }
 }
 @media (max-width:500px){
+	.mainBox .rightContents{ padding-bottom: 20px; }
+	.mainBox .rightContents .main_banner .banner_info, .mainBox .rightContents .news_box{ width: 88%;}
 	.mainBox .rightContents .main_banner{ min-height: 120px; height: initial;}
 	.mainBox .rightContents .main_banner h1.main_title{ font-size: 28px; }
 	.mainBox .rightContents .main_banner h2.sub_title{ font-size: 15px;}
 	.mainBox .insideContents .banner_info{ text-align: center; }
+	.footerBox p.copyright { font-size: 10px;}
 }
