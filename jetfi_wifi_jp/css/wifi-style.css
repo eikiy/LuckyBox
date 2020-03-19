@@ -128,10 +128,11 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.capacity_content li .capacity_img{ max-width:100%; border-bottom: 2px solid #6091CD; font-size: 14px; min-height: 88px; padding:0 30% 10px 0; position: relative; display: grid;}
 .main_container ul.capacity_content li .capacity_img span{ font-size: 23px; font-weight: 600; display: block;}
 .main_container ul.capacity_content li .capacity_img::after{ content:""; position: absolute; right: 10px; top: 5px; width: 50px; height: 64px; display: block; }
+.main_container ul.capacity_content li .capacity_00::after{ background-image: url(../images/svg/capacity_img_00.svg);}
 .main_container ul.capacity_content li .capacity_01::after{ background-image: url(../images/svg/capacity_img_01.svg);}
 .main_container ul.capacity_content li .capacity_02::after{ background-image: url(../images/svg/capacity_img_02.svg);}
 .main_container ul.capacity_content li .capacity_03::after{ background-image: url(../images/svg/capacity_img_03.svg);}
-
+.main_container ul.capacity_content li.main_unlimited{ min-width: 200px; }
 .main_container ul.capacity_content li p.price{ text-align: center; color: #FF0000; font-weight: 600; padding: 10px 0; }
 
 .main_container ul.note{ width: 100%; max-width: 1100px; margin: 0 auto; }
@@ -261,7 +262,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 
 	.main_container ul.capacity_content li p.star{ top: 4px; font-size: 12px;}
 	.main_container ul.capacity_content li .capacity_img{ font-size: 10px; line-height: initial; min-height: 140px; }
-	.main_container ul.capacity_content li .capacity_img::after{ width: 32px; top: 53px; height: 34px; right: calc(50% - 16px); }
+	.main_container ul.capacity_content li .capacity_img::after{ width: 32px; top: 52px; height: 34px; right: calc(50% - 16px); }
 
 	.main_container .data_flow{ border-width: 1px; }
 	.main_container .data_flow h4 span::after{ width: 25px; right: -25px; background-image: url(../images/img_flow.png);}
