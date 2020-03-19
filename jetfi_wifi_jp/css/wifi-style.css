@@ -43,33 +43,100 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .home_banner .middle_content::before{ content: ""; z-index: 1; position: absolute; top: 0; right: 0; width: 159px; height: 100%; display: block; background-image: url(../images/main-banner/img_earth.svg); }
 .main_container .home_banner{ background-color: #8CCED4;}
 
+.main_container .choosed_area{ border:2px solid #333; max-width: 1100px; margin: 0 auto 40px auto; }
+.main_container .choosed_area p{ float: left; padding: 8px 10px; line-height: 30px;}
+.main_container .choosed_area p.left_p{  width: 230px; font-size: 16px; background-color: #FFC924; text-align: center; position: relative; }
+.main_container .choosed_area p.left_p::after{ content: ""; position: absolute; right: 0; top: 0; height: 100%; border-right: 1.5px solid #333; }
+.main_container .choosed_area p.area_title{ font-size: 20px; padding:8px 20px; font-weight: 500;}
+
 .main_container h3.top_title{ padding:12px 10px; max-width: 1100px; margin: 0 auto 30px auto; font-size: 20px; font-weight: bold; color: #222; background-color: #FFC924;}
 .main_container h3.top_title span{ position: relative; padding-left: 55px; font-weight: 500;}
 .main_container h3.top_title span::after{ content: ""; position: absolute; top: calc(50% - 13.5px); left: 15px; width: 27px; height: 27px; display: block; background-image: url(../images/svg/flag.svg); }
 .main_container h4.sub_title{ font-size: 18px; font-weight: bold; color: #ff9800; text-align: center; }
 
-.main_container .sub_title_content{ width: 100%; position: relative; padding: 0 10px; padding-top: 55px;}
+.main_container .sub_title_content{ width: 100%; position: relative; max-width: 1100px; padding-top: 55px; margin: 0 auto;}
 .main_container .sub_title_content::after{ content: ""; position: absolute; width:calc( 100% - 30px); top: 24px; left: 15px; z-index: 0; height: 1px; display: block; border-bottom: 5px solid #FFC924;  }
 .main_container .sub_title_content h4{ font-size: 25px; position: absolute; top: 12px; left: 0; width: 100%; z-index: 2; text-align: center;}
 .main_container .sub_title_content h4 span{ font-weight: 600; background-color: #fff; padding: 0 40px; min-width: 220px;}
 .main_container .sub_title_content p{ font-size: 16px; padding: 10px 0 18px; text-align: center; }
 .main_container .sub_title_content p span{ font-size: 13px; padding-top: 12px; display: inline-block;}
 
+.main_container .data_flow{ padding-top: 5px; border-top: 5px solid #C3C3C3;  }
+.main_container .data_flow::after{ display: none; }
+.main_container .data_flow h4{ font-size: 20px; background-color: #CDCDCD; padding: 28px 10px; position: inherit; margin-bottom: 20px; }
+.main_container .data_flow h4 span{ background-color: inherit; font-weight: 500; position: relative; }
+.main_container .data_flow h4 span::after{ content: ""; position: absolute; top: calc(50% - 21px); right: -100px; width: 40px; height: 42px; display: block; background-image: url(../images/img_flow.png); }
+.main_container .data_flow h4 span::before{ content: ""; position: absolute; top: calc(50% - 21px); left: -100px; width: 40px; height: 42px; display: block; background-image: url(../images/img_flow.png); }
+
 .main_container .area_content{ width:calc( 100% - 40px); max-width: 1130px; padding: 40px 0; margin: 0 auto; }
 .main_container .area_content ul.area_list li{ float: left; width:25%; padding:15px;}
 .main_container .area_content ul.area_list li.field_2{ width: 50%; }
-.main_container .area_content ul.area_list li a{ border-radius: 20px; border: 1.8px solid #333; display: block; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; min-height: 268px; overflow: hidden; box-shadow: 2px 2px 3px #FFAF24; position: relative; background-position: center center ;background-size:cover; background-repeat: no-repeat; }
+.main_container .area_content ul.area_list li a{ border-radius: 20px; border: 1.8px solid #333; display: block; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; min-height: 268px; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24; position: relative; background-position: center center ;background-size:cover; background-repeat: no-repeat; }
 
 .main_container .area_content ul.area_list li .area_photo{ width: 100%; height: 145px; background-position: center center; background-repeat: no-repeat; background-size: cover;}
+.main_container .area_content ul.area_list li .area_photo .labels{ position: absolute; top: 8px; left: 10px; }
+.main_container .area_content ul.area_list li .area_photo .labels p{ float: left; padding: 2px 6px; line-height: 21px; position: relative; margin-right: 5px; box-shadow: 2px 2px 0px #333; font-size: 12px; }
+.main_container .area_content ul.area_list li .area_photo .labels p.star{ background-color: #fff; font-size: 11px; padding-left: 20px;}
+.main_container .area_content ul.area_list li .area_photo .labels p.star::after{ content: ""; position: absolute; top: calc(50% - 8px); left: 3px; width: 15px; height: 15px; background-image: url(../images/svg/recommendation_star.svg); background-size: contain;}
+.main_container .area_content ul.area_list li .area_photo .labels p.hot{ background-color: #C90410; padding: 2px 12px; color: #fff; font-weight: 500;}
+
 .main_container .area_content ul.area_list li .area_info{ width: 100%; min-height: 128px; padding: 10px 0;}
 .main_container .area_content ul.area_list li h3.area_title{ text-align: center; font-weight: bold; font-size: 20px; color: #000; margin-bottom: 15px;}
-.main_container .area_content ul.area_list li h3.area_title span{ font-weight: 600; border-bottom: 1.8px solid #6091CD; padding: 6px 20px; line-height: 25px;}
+.main_container .area_content ul.area_list li h3.area_title span{ font-weight: 500; border-bottom: 1.8px solid #6091CD; padding: 6px 20px; line-height: 25px;}
+.main_container .area_content ul.area_list li h3.area_title span.f_s{ font-size: 17px; border: none; padding: 0; font-weight: 400; }
 .main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 15px; line-height: 25px; color: #000; padding: 7px 15px; display: inline-block; }
 .main_container .area_content ul.area_list li a:hover{ opacity: .9; }
 
 .main_container .area_content ul.area_list li p.label{ text-align: left; padding: 10px 0 5px 0; }
-.main_container .area_content ul.area_list li p.label span{ display: inline-block; text-align: center; font-size: 13px; color: #b6a791; padding:2px 5px; margin:0 8px 8px 0; min-width: 40px; border-radius: 40px; border:1px solid #b8afa1; }
+.main_container .area_content ul.area_list li p.label span{ display: inline-block; text-align: center; font-size: 13px; color: #333; padding:2px 5px; margin:0 8px 8px 0; min-width: 40px; border-radius: 40px; border:1px solid #b8afa1; }
 .main_container .area_content ul.area_list li p.price{ color: #e91e63; font-size: 18px; font-weight: bold; text-align: left;}
+
+.main_container .tab_capacity{ width:100%; padding-bottom: 40px;}
+.main_container .tab_capacity > ul{ display:block; margin:0;list-style:none;}
+.main_container .tab_capacity .tab_title{list-style:none;}
+.main_container .tab_capacity > ul > li{  display:inline-block; vertical-align:top; position: relative; margin:0 -1px -1px 0; padding: 10px 15px; border-radius: 0 50px 0 0; min-width: 200px; line-height:25px; background:#cdcdcd; list-style:none; box-sizing:border-box;}
+.main_container .tab_capacity > ul > li::after{ content: ""; position: absolute; width: 100%; height: 100%; background-color: #fff; opacity: .5; top: 0; left: 0; }
+.main_container .tab_capacity > ul > li p{font-size: 20px; font-weight: 600; padding-left: 30px; position: relative;}
+.main_container .tab_capacity > ul > li p::after{ content: ""; position: absolute; width: 21px; height: 26px; display: block; top: 0; left: 0; }
+.main_container .tab_capacity > ul > li a{ color:#000; text-decoration:none;}
+.main_container .tab_capacity > ul > li.btn_01{ background-color: #FFC924; }
+.main_container .tab_capacity > ul > li.btn_01 p::after{ background-image: url(../images/svg/capacity_img_01.svg); }
+.main_container .tab_capacity > ul > li.btn_02{ background-color: #FF9124; }
+.main_container .tab_capacity > ul > li.btn_02 p::after{ background-image: url(../images/svg/capacity_img_02.svg); }
+.main_container .tab_capacity > ul > li.btn_03{ background-color: #FF8026; }
+.main_container .tab_capacity > ul > li.btn_03 p::after{ background-image: url(../images/svg/capacity_img_03.svg); }
+.main_container .tab_capacity > ul > li.active{ background-color: #FFC924;}
+.main_container .tab_capacity > ul > li.active::after{  display: none; }
+.main_container .tab_capacity > .tab_inner{ clear:both; color:#000; border:5px #FFC924 solid;}
+
+.main_container .tab_capacity .tab_inner{ padding:25px; min-height: 350px; text-align: center;}
+.main_container .tab_capacity .tab_inner ul{ text-align: left; max-width: 930px; margin: 0 auto; }
+.main_container .tab_capacity .tab_inner ul li{ display: inline-block; width: 180px; padding: 20px 0; text-align: center; position: relative;}
+.main_container .tab_capacity .tab_inner img{ width: 100%; max-width: 54px; margin: 0 auto; padding-bottom: 10px; }
+.main_container .tab_capacity .tab_inner p.app_title, .main_container .tab_capacity .tab_inner p.return{ font-size: 16px; font-weight: 600; }
+.main_container .tab_capacity .tab_inner p.ex{ font-size: 12px; }
+.main_container .tab_capacity .tab_inner p.top{ position: absolute; top: -3px; font-size: 12px; left: 0; width: 100%; }
+
+.main_container ul.capacity_content{ width:calc( 100% - 40px); max-width: 1130px; padding:10px 0 50px 0; margin: 0 auto;  text-align: center;}
+.main_container ul.capacity_content li{ display: inline-block; width:32.5%; padding:15px; vertical-align: top;}
+.main_container ul.capacity_content li a{ border-radius: 20px; border: 1.8px solid #333; padding:40px 30px 10px 30px; min-height: 160px; display: block; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24; position: relative;}
+.main_container ul.capacity_content li a:hover{ opacity: .8; background-color: #fdfdfd; }
+.main_container ul.capacity_content li p.star{ position: absolute; top: 5px; left: 10px; background-color: #fff; font-size: 14px;}
+.main_container ul.capacity_content li p.star span{ position: relative; padding-left: 25px; }
+.main_container ul.capacity_content li p.star span::after{ content: ""; position: absolute; top:0px; left: 3px; width: 20px; height: 20px; background-image: url(../images/svg/recommendation_star.svg); background-size: contain;}
+
+.main_container ul.capacity_content li .capacity_img{ max-width:100%; border-bottom: 2px solid #6091CD; font-size: 14px; min-height: 88px; padding:0 30% 10px 0; position: relative; display: grid;}
+.main_container ul.capacity_content li .capacity_img span{ font-size: 23px; font-weight: 600; display: block;}
+.main_container ul.capacity_content li .capacity_img::after{ content:""; position: absolute; right: 10px; top: 5px; width: 50px; height: 64px; display: block; }
+.main_container ul.capacity_content li .capacity_01::after{ background-image: url(../images/svg/capacity_img_01.svg);}
+.main_container ul.capacity_content li .capacity_02::after{ background-image: url(../images/svg/capacity_img_02.svg);}
+.main_container ul.capacity_content li .capacity_03::after{ background-image: url(../images/svg/capacity_img_03.svg);}
+
+.main_container ul.capacity_content li p.price{ text-align: center; color: #FF0000; font-weight: 600; padding: 10px 0; }
+
+.main_container ul.note{ width: 100%; max-width: 1100px; margin: 0 auto; }
+.main_container ul.note li{ padding: 5px 0;}
+.main_container ul.note li p{ font-size: 14px; font-weight: 300;} 
 
 .main_container .support_area_list{ width:calc( 100% - 40px); max-width: 1100px; padding: 40px 0; margin: 0 auto; }
 .main_container .support_area_list h3.top_title_blue{ padding:12px 20px; max-width: 1100px; margin: 0 auto 30px auto; font-size: 20px; font-weight: 500; color: #fff; background-color: #608AC6; position: relative;}
@@ -78,10 +145,15 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .support_area_list ul.area_info li h4.area_title{ font-size: 15px; font-weight:500; border-bottom: 1px solid #608AC6; padding: 10px 0;}
 .main_container .support_area_list ul.area_info li p.info{ font-size: 14px; font-weight: 300; padding: 10px 0; }
 
-.main_container .travel_plan_content{ width: 100%; max-width: 1100px; margin: 0 auto 50px auto; border-radius: 20px; border: 1.8px solid #333; display: block; overflow: hidden; box-shadow: 2px 2px 3px #FFAF24;}
-.main_container .travel_plan_content .plan_info{ width: 60%; float: left; padding: 20px 35px;}
+.main_container .travel_plan_content{ width: 100%; max-width: 1100px; margin: 0 auto 50px auto; border-radius: 20px; border: 1.8px solid #333; display: block; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24;}
+.main_container .travel_plan_content .plan_info{ width: 60%; float: left; padding: 20px 35px; position: relative;}
+.main_container .travel_plan_content .plan_info .show_more_info{ margin-top: 10px;}
+.main_container .travel_plan_content .plan_info .show_more_info h4{ font-size: 16px; font-weight: 600; border-bottom: 1.8px solid #6091CD; padding: 5px 0; position: relative;}
+.main_container .travel_plan_content .plan_info .show_more_info h4::before{ content: "◆"; padding-right: 5px;} 
+.main_container .travel_plan_content .plan_info .show_more_info p{ font-size: 13px; }
+.main_container .travel_plan_content .plan_info .show_more_info .mob_show{ padding: 5px 0; }
 .main_container .travel_plan_content .area_photo{ width: 40%; float: left; background-color: #f3f3f3; height: 470px;}
-.main_container .travel_plan_content .area_photo .the_photo{ float: left; width: 33.33%; height: 50%; display: block;  background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.main_container .travel_plan_content .area_photo .the_photo{ float: left; width:calc(100% / 3); height: 50%; display: block;  background-position: center center; background-repeat: no-repeat; background-size: cover; }
 .main_container .travel_plan_content .area_photo .photo_01, .main_container .travel_plan_content .area_photo .photo_02{ width: 50%;}
 
 .inside_container .top_banner{ background-color: inherit; }
@@ -96,18 +168,34 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .inside_container .area_content ul.area_list li h3.area_title{ margin-bottom: 10px;}
 .inside_container .area_content ul.area_list li h4.area_sub_title{ text-align: center; color: #FF0000; width: 100%; }
 
+
 @media (max-width:1200px){
 	.main_container .area_content .area_menu ul.choose_country li{ min-width: 30%; }
+	.main_container .area_content ul.area_list li{ width: calc(100% / 3); }
+	.main_container .area_content ul.area_list li h3.area_title{font-size: 18px;}
+	.main_container .area_content ul.area_list li h3.area_title span.f_s{ font-size: 14px; }
 }
 @media (max-width:1000px){
 	.main_container .area_content ul.area_list li{ width:50%;}
 	.main_container .area_content ul.area_list li.field_2{ width: 100%; }
-	.main_container .area_content ul.area_list li h3.area_title{font-size: 18px;}
+	.main_container .area_content ul.area_list li h3.area_title{font-size: 17px;}
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 13px; }
 
 	.main_container .support_area_list h3.top_title_blue{ font-size: 18px;}
 	.main_container .travel_plan_content .plan_info{ width: 100%; }
-	.main_container .travel_plan_content .area_photo{ width: 100%; }
+	.main_container .travel_plan_content .area_photo{ width: 100%; height: 270px; }
+	.main_container .travel_plan_content .area_photo .the_photo{ height: 100%; }
+	.main_container .travel_plan_content .area_photo .photo_01, .main_container .travel_plan_content .area_photo .photo_02{ width:calc(100% / 3);}
+	.main_container .travel_plan_content .area_photo .photo_04, .main_container .travel_plan_content .area_photo .photo_05{ display: none; }
+	.main_container ul.capacity_content{ width:100%;}
+	.main_container ul.capacity_content li a{ padding: 40px 20px 10px 20px;}
+}
+@media (max-width:960px){
+	.main_container ul.capacity_content{ padding: 0px 0 30px 0;}
+	.main_container ul.capacity_content li .capacity_img{ padding: 0 0 10px 0;}
+	.main_container ul.capacity_content li .capacity_img span{ padding-top: 100px;}
+	.main_container ul.capacity_content li .capacity_img::after{ top: 54px; right: calc(50% - 25px);}
+	.main_container ul.capacity_content li p.star{ top: 10px; width: calc( 100% - 20px);}
 }
 @media (max-width:800px){
 	.main_container h3.top_title{ font-size: 18px;}
@@ -119,7 +207,6 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 	.main_container .top_banner p span::after{ height: 40px; width: 96px; top: calc(50% - 20px);}
 	.main_container .top_banner h3{ font-size: 25px; }
 
-	.main_container .area_content{ padding: 20px 0; width: calc( 100% - 20px);}
 	.main_container .area_content .area_menu .search_box{ position: initial; margin: 15px 10px; }
 	.main_container .area_content .area_menu ul.choose_area{ padding-top: 5px; }
 	.main_container .area_content .area_menu ul.choose_area li p.btn_in a{ border-color: transparent; }
@@ -129,27 +216,69 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 
 	.main_container .support_area_list ul.area_info li h4.area_title{font-size: 14px;}
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 13px; }
+	.main_container .sub_title_content::after{ width:calc(100% + 40px); left: -20px; }
+	.main_container .sub_title_content h4{ font-size: 18px; top: 15px; }
+	.main_container .sub_title_content h4 span{ padding: 0 20px; }
+	.main_container .sub_title_content p{ font-size: 14px; }
+	.main_container .sub_title_content p span{ font-size: 11px; }
 
 	.inside_container .top_banner .middle_content::before, .inside_container .top_banner .middle_content::after{ display: none;}
+	.main_container ul.capacity_content li a{ padding: 30px 10px 0px 10px;}
 }
 @media screen and (max-width: 768px){
 	.main_container{ padding-top: 50px;}
+	.main_container .travel_plan_content .plan_info .show_more_info{ border: 1.8px solid #60A4E0;}
+	.main_container .travel_plan_content .plan_info .show_more_info .mob_show{ padding: 10px; }
+	.main_container .travel_plan_content .plan_info .show_more_info h4{ font-weight: 400; background-color: #60A4E0; color: #fff; padding-left: 15px; padding: 5px 10px;}
+	.main_container .travel_plan_content .plan_info .show_more_info h4::before{ display: none; }
+	.main_container .travel_plan_content .plan_info .show_more_info h4::after{ content: ""; top:calc(50% - 8.25px); right: 8px; position: absolute; width: 16.5px; height: 16.5px; display: block; background: url(../images/svg/arr_blue.svg) center center no-repeat; background-size: contain;}
 }
 @media (max-width:650px){
 	.main_container h3.top_title{ text-align: center; }
+	.main_container h3.top_title span{ padding-left: 42px;}
+	.main_container h3.top_title span::after{ width: 18px; }
 	.main_container .top_banner .middle_content::before{ width: 100px;}
 	.main_container .top_banner .middle_content::after{ width: 100px;}
 
+	.main_container .area_content{ padding: 20px 0; }
 	.main_container .area_content ul.area_list li{ padding: 5px; }
 	.main_container .area_content ul.area_list li a{ min-height: 220px;}
-	.main_container .area_content ul.area_list li .area_info{ min-height: 115px; }
+	.main_container .area_content ul.area_list li .area_info{ min-height: 115px; padding-top: 0; }
 	.main_container .area_content ul.area_list li .area_photo{ height: 115px;}
+	.main_container .area_content ul.area_list li h3.area_title{ margin-bottom: 0; }
+	.main_container .area_content ul.area_list li h3.area_title span{display: inline-block;}
+	.main_container .area_content ul.area_list li h3.area_title span.f_s{ display: block; }
+
+	.main_container .travel_plan_content .plan_info{ padding: 20px 22px; }
+	.main_container .travel_plan_content .area_photo{ height:170px; }
+
+	.main_container .sub_title_content h4{ font-size: 16px; width: calc(100% + 40px); left: -20px; }
+	.main_container .sub_title_content h4 span{ padding: 0 15px; }
+	.main_container .sub_title_content p{font-size: 13px; padding-top: 0;}
+	.main_container .sub_title_content p span{ line-height: 18px; text-align: left; padding-top: 6px; }
+
 	.inside_container .area_content ul.area_list li .area_info{min-height: initial;}
-}
+
+	.main_container ul.capacity_content li p.star{ top: 4px; font-size: 12px;}
+	.main_container ul.capacity_content li .capacity_img{ font-size: 10px; line-height: initial; min-height: 140px; }
+	.main_container ul.capacity_content li .capacity_img::after{ width: 32px; top: 53px; height: 34px; right: calc(50% - 16px); }
+
+	.main_container .data_flow{ border-width: 1px; }
+	.main_container .data_flow h4 span::after{ width: 25px; right: -25px; background-image: url(../images/img_flow.png);}
+	.main_container .data_flow h4 span::before{ width: 25px; left: -25px;}
+	.main_container .tab_capacity > ul > li{min-width: initial; width: calc(98% / 3); padding: 5px 12px;}
+	.main_container .tab_capacity > ul > li p{ font-size: 11.5px; font-weight: 600; padding-left: 14px;}
+	.main_container .tab_capacity > ul > li p::after{ width: 12px; height: 17px; left: -3px; top: 3px;}
+
+	.main_container .tab_capacity .tab_inner{ min-height: initial; padding-bottom: 5px; }
+	.main_container .tab_capacity .tab_inner img{ width: 44px; }
+	.main_container .tab_capacity .tab_inner ul li{ width: calc(97% / 3); vertical-align: top; padding: 20px 0 0 0;}
+	.main_container .tab_capacity .tab_inner p.app_title, .main_container .tab_capacity .tab_inner p.return{ font-size: 12px; }
+}	
+
 @media (max-width:599px){
 	.main_container h3.top_title{ font-size: 17px; }
 	.main_container .area_content ul.area_list li a{ min-height: 175px;}
-	.main_container .area_content ul.area_list li h3.area_title{ margin-bottom: 10px;}
 	.main_container .area_content ul.area_list li .area_photo{ height: 92px; }
 	.main_container .area_content ul.area_list li .area_info{ min-height: 108px; padding-bottom: 0;}
 	.inside_container .area_content ul.area_list li .area_info{min-height: initial;}
@@ -167,9 +296,24 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 	.main_container .support_area_list ul.area_info li h4.area_title{ font-size: 13px; }
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 12px; }
 
-	.inside_container  .top_banner h3{ font-size: 20px; }
+	.main_container ul.capacity_content li{ padding: 3px; }
+	.main_container ul.capacity_content li a{ font-size: 12px; }
+	.main_container ul.capacity_content li a{ border-radius: 10px; }
+	.main_container ul.capacity_content li .capacity_img span{ font-size: 15px; padding-top: 56px; }
+
+	.inside_container .top_banner h3{ font-size: 20px; }
 	.inside_container .top_banner p.sub_title{ font-size: 14px; padding-top: 5px; }
+
 	.main_container .top_banner .middle_content p.left_p{ font-size: 11px; }
+	.main_container .travel_plan_content .area_photo{ height:100px;}
+	.main_container .choosed_area{ margin: 0 auto 0px auto; width: calc(100% + 40px); margin-left: -20px; border-width: 1px; }
+	.main_container .choosed_area p.left_p{ width: 120px; font-size: 11px; }
+	.main_container .choosed_area p.area_title{ font-size: 14px; padding: 8px 10px; }
+	.main_container .choosed_area p.left_p::after{ border-right: 1px solid #333; }
+
+	.main_container .area_content{ padding: 0 0 25px 0;}
+	.main_container h3.top_title{width: calc(100% + 40px); margin-left: -20px;}
+	.main_container .tab_capacity .tab_inner{ padding: 15px; }
 }
 @media (max-width:400px){
 	.main_container h3.top_title{ font-size: 16px; }
@@ -178,13 +322,20 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 	.main_container .top_banner h3{ font-size: 14px; }
 	.main_container .top_banner .middle_content::after{ width: 60px; left: 5px;}
 	.main_container .top_banner .middle_content::before{ width: 50px; right: 5px; }
+	.main_container ul.capacity_content li p.star{ font-size: 10px; }
 }
 @media (max-width:350px){
-	.main_container .area_content{ padding: 10px 0; }
+	.main_container .area_content{ padding:0 0 10px 0; }
 	.main_container .area_content ul.area_list li a{ min-height: 135px;}
 	.main_container .area_content ul.area_list li h3.area_title{ font-size: 17px; }
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 11px; }
 
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 13px; }
 	.main_container .support_area_list h3.top_title_blue{ font-size: 12px; }
+	.main_container ul.capacity_content li .capacity_img span{ font-size: 12px; }
+	.main_container .tab_capacity .tab_inner img{ width: 38px; }
+	.main_container .tab_capacity .tab_inner p.ex{ font-size: 10px; }
+    .main_container .tab_capacity > ul > li{padding: 2px 6px;}
+	.main_container .tab_capacity > ul > li p{ font-size: 10px; }
+
 }
