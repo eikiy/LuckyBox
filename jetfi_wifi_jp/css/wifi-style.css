@@ -67,7 +67,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .sub_title_content p{ font-size: 16px; padding: 10px 0 18px; text-align: center; }
 .main_container .sub_title_content p span{ font-size: 13px; padding-top: 12px; display: inline-block;}
 
-.main_container .data_flow{ padding-top: 5px; border-top: 5px solid #C3C3C3;  }
+.main_container .data_flow{ padding-top: 5px; border-top: 2px solid #C3C3C3;  }
 .main_container .data_flow::after{ display: none; }
 .main_container .data_flow h4{ font-size: 20px; background-color: #CDCDCD; padding: 28px 10px; position: inherit; margin-bottom: 20px; }
 .main_container .data_flow h4 span{ background-color: inherit; font-weight: 500; position: relative; }
@@ -79,19 +79,23 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .area_content ul.area_list li.field_2{ width: 50%; }
 .main_container .area_content ul.area_list li a{ border-radius: 20px; border: 1.8px solid #333; display: block; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; min-height: 268px; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24; position: relative; background-position: center center ;background-size:cover; background-repeat: no-repeat; }
 
+.main_container .labels p{ float: left; padding: 2px 6px; line-height: 21px; position: relative; margin-right: 5px; font-size: 14px; }
+.main_container .labels p.star{ background-color: #fff; font-size: 16px; padding-left: 20px;}
+.main_container .labels p.star::after{ content: ""; position: absolute; top: calc(50% - 8px); left: 3px; width: 15px; height: 15px; background-image: url(../images/svg/recommendation_star.svg); background-size: contain;}
+.main_container .labels p.hot{ background-color: #C90410; padding: 2px 12px; color: #fff; font-weight: 500;}
+
 .main_container .area_content ul.area_list li .area_photo{ width: 100%; height: 145px; background-position: center center; background-repeat: no-repeat; background-size: cover;}
-.main_container .area_content ul.area_list li .area_photo .labels{ position: absolute; top: 8px; left: 10px; }
-.main_container .area_content ul.area_list li .area_photo .labels p{ float: left; padding: 2px 6px; line-height: 21px; position: relative; margin-right: 5px; box-shadow: 2px 2px 0px #333; font-size: 12px; }
-.main_container .area_content ul.area_list li .area_photo .labels p.star{ background-color: #fff; font-size: 11px; padding-left: 20px;}
-.main_container .area_content ul.area_list li .area_photo .labels p.star::after{ content: ""; position: absolute; top: calc(50% - 8px); left: 3px; width: 15px; height: 15px; background-image: url(../images/svg/recommendation_star.svg); background-size: contain;}
-.main_container .area_content ul.area_list li .area_photo .labels p.hot{ background-color: #C90410; padding: 2px 12px; color: #fff; font-weight: 500;}
+.main_container .area_content ul.area_list li .labels{ position: absolute; top: 8px; left: 10px; }
+.main_container .area_content ul.area_list li .labels p{ box-shadow: 2px 2px 0px #333;}
+.main_container .area_content ul.area_list li .labels p.star{ font-size: 11px;}
+.main_container .area_content ul.area_list li .labels p.hot{font-size: 12px;}
 
 .main_container .area_content ul.area_list li .area_info{ width: 100%; min-height: 128px; padding: 10px 0;}
-.main_container .area_content ul.area_list li h3.area_title{ text-align: center; font-weight: bold; position: relative; font-size: 20px; color: #000; margin-bottom: 15px;}
+.main_container .area_content ul.area_list li h3.area_title{ text-align: center; font-weight: bold; position: relative; font-size: 19px; color: #000; margin-bottom: 15px;}
 .main_container .area_content ul.area_list li h3.area_title::after{ content: ""; bottom: -10px; left: 25%; display: block; width: 50%; position: absolute; border-bottom: 1.8px solid #6091CD;}
-.main_container .area_content ul.area_list li h3.area_title span{ font-weight: 500; padding: 6px 20px; line-height: 25px;}
-.main_container .area_content ul.area_list li h3.area_title span.f_s{ font-size: 17px; border: none; padding: 0; font-weight: 400; }
-.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 15px; line-height: 25px; color: #000; padding: 7px 15px; display: inline-block; }
+.main_container .area_content ul.area_list li h3.area_title span{ font-weight: 500; padding: 6px 8px; line-height: 25px;}
+.main_container .area_content ul.area_list li h3.area_title span.f_s{ font-size: 16px; border: none; padding: 0; font-weight: 400; }
+.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 15px; line-height: 25px; color: #000; padding: 7px 15px; display: inline-block; font-weight: 400;}
 .main_container .area_content ul.area_list li a:hover{ opacity: .9; }
 
 .main_container .area_content ul.area_list li p.label{ text-align: left; padding: 10px 0 5px 0; }
@@ -128,10 +132,6 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.capacity_content li{ display: inline-block; width:32.5%; padding:15px; vertical-align: top;}
 .main_container ul.capacity_content li a{ border-radius: 20px; border: 1.8px solid #333; padding:40px 30px 10px 30px; min-height: 160px; display: block; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24; position: relative;}
 .main_container ul.capacity_content li a:hover{ opacity: .8; background-color: #fdfdfd; }
-.main_container ul.capacity_content li p.star{ position: absolute; top: 5px; left: 10px; background-color: #fff; font-size: 14px;}
-.main_container ul.capacity_content li p.star span{ position: relative; padding-left: 25px; }
-.main_container ul.capacity_content li p.star span::after{ content: ""; position: absolute; top:0px; left: 3px; width: 20px; height: 20px; background-image: url(../images/svg/recommendation_star.svg); background-size: contain;}
-
 .main_container ul.capacity_content li .capacity_img{ max-width:100%; border-bottom: 2px solid #6091CD; font-size: 14px; min-height: 88px; padding:0 30% 10px 0; position: relative; display: grid;}
 .main_container ul.capacity_content li .capacity_img span{ font-size: 23px; font-weight: 600; display: block;}
 .main_container ul.capacity_content li .capacity_img::after{ content:""; position: absolute; right: 10px; top: 5px; width: 50px; height: 64px; display: block; }
@@ -140,7 +140,11 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.capacity_content li .capacity_02::after{ background-image: url(../images/svg/capacity_img_02.svg);}
 .main_container ul.capacity_content li .capacity_03::after{ background-image: url(../images/svg/capacity_img_03.svg);}
 .main_container ul.capacity_content li.main_unlimited{ min-width: 200px; }
+
 .main_container ul.capacity_content li p.price{ text-align: center; color: #FF0000; font-weight: 600; padding: 10px 0; }
+.main_container ul.capacity_content li .labels{ position: absolute; top: 10px; left: 10px; }
+.main_container ul.capacity_content li .labels p.star{ font-size: 11px;}
+.main_container ul.capacity_content li .labels p.hot{font-size: 12px;}
 
 .main_container ul.note{ width: 100%; max-width: 1100px; margin: 0 auto; }
 .main_container ul.note li{ padding: 5px 0;}
@@ -164,6 +168,38 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .travel_plan_content .area_photo .the_photo{ float: left; width:calc(100% / 3); height: 50%; display: block;  background-position: center center; background-repeat: no-repeat; background-size: cover; }
 .main_container .travel_plan_content .area_photo .photo_01, .main_container .travel_plan_content .area_photo .photo_02{ width: 50%;}
 
+.main_container .travel_plan_content_two{ width: 100%; max-width: 1100px; margin: 0 auto 50px auto;}
+.main_container .travel_plan_content_two .plan_info{ width: 65%; float: left; padding: 20px 25px; position: relative; border-radius: 20px; border: 1.8px solid #333;display: block; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24;}
+.main_container .travel_plan_content_two .plan_info .show_more_info{ margin-top: 10px;}
+.main_container .travel_plan_content_two .plan_info .show_more_info h4{ font-size: 16px; font-weight: 600; border-bottom: 1.8px solid #6091CD; padding: 5px 0; position: relative;}
+.main_container .travel_plan_content_two .plan_info .show_more_info h4::before{ content: "◆"; padding-right: 5px;} 
+.main_container .travel_plan_content_two .plan_info .show_more_info p{ font-size: 13px; }
+.main_container .travel_plan_content_two .plan_info .show_more_info .mob_show{ padding: 5px 0; }
+.main_container .travel_plan_content_two .labels { padding-bottom: 5px; }
+
+.main_container .travel_plan_content_two .country_amount{ text-align: left; border-bottom: 1.8px solid #6091CD; margin-bottom: 10px; position: relative;}
+.main_container .travel_plan_content_two .country_amount::before{ content: ""; position: absolute; width: 126px; height:57px; display: block; right: 0; bottom: 0; background-image: url(../images/bg_img_aircraft.png);}
+.main_container .travel_plan_content_two .country_amount h4{ display: inline-block; font-size: 23px; font-weight: 600; padding-right: 40px;}
+.main_container .travel_plan_content_two .country_amount p{ display: inline-block; font-size: 17px; color: #FF0000; font-weight: 600; padding: 5px 0;}
+
+.main_container .travel_plan_content_two ul.note{ padding-top: 5px; }
+.main_container .travel_plan_content_two ul.note li{ padding: 0; }
+.main_container .travel_plan_content_two ul.note li p{ font-size: 11px; }
+
+.main_container .travel_plan_content_two .right_info{ width: 35%; max-width: 355px; float: right; padding-left: 30px;}
+.main_container .travel_plan_content_two .right_info .country_amount{ padding-top: 30px; text-align: center;}
+.main_container .travel_plan_content_two .right_info .country_amount h4{ padding-right: 0; }
+.main_container .travel_plan_content_two .right_info .country_amount::before{ display: none; }
+.main_container .travel_plan_content_two .right_info .country_info{ text-align: center; }
+.main_container .travel_plan_content_two .right_info p.top_note{ text-align: center; font-size: 12px; font-weight: 400; padding-bottom: 10px; }
+.main_container .travel_plan_content_two .country_info{ width: 100%; }
+.main_container .travel_plan_content_two .country_info .sub_info_box{ float: left; width:calc(100% - 165px); padding-right: 35px;}
+.main_container .travel_plan_content_two .SNS_icon{ float: left; width: 165px; }
+.main_container .travel_plan_content_two .SNS_icon::after{ content: ""; width: 100%; height: 100px; display: block; background-image: url(../images/svg/SNS_icons.svg); }
+.main_container .travel_plan_content_two .SNS_icon p{ font-size: 12px; padding-bottom: 15px; font-weight: 400;}
+.main_container .travel_plan_content_two .right_info .SNS_icon{ margin: 0 auto; display: inline-block; margin: 0 auto; float: none; }
+.main_container .travel_plan_content_two .right_info .SNS_icon::after{background-image: url(../images/svg/SNS_icons_gray.svg);  }
+
 .inside_container .top_banner{ background-color: inherit; }
 .inside_container .top_banner h3{ font-size: 40px; color:#fff; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9); }
 .inside_container .top_banner p.sub_title{ padding-top: 15px; z-index: 1; font-size: 25px; letter-spacing: 5px; color:#fff; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9); }
@@ -171,7 +207,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .inside_container .top_banner .middle_content::after{ content: ""; z-index: 1; position: absolute; top: 0; left: 0; width: 177px; height: 100%; display: block;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */}
 .inside_container .top_banner .middle_content::before{ content: ""; z-index: 1; position: absolute; top: 0; right: 0; width: 177px; height: 100%; display: block;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */}
 
-.inside_container .area_content ul.area_list li .area_photo{ height: 135px; }
+.inside_container .area_content ul.area_list li .area_photo{ height: 135px; background-size: cover; background-repeat: no-repeat; background-position: center center; }
 .inside_container .area_content ul.area_list li a, .inside_container .area_content ul.area_list li .area_info{min-height: initial;}
 .inside_container .area_content ul.area_list li h3.area_title{ margin-bottom: 10px;}
 .inside_container .area_content ul.area_list li h4.area_sub_title{ text-align: center; color: #FF0000; width: 100%; }
@@ -214,17 +250,22 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 @media (max-width:1200px){
 	.main_container .area_content .area_menu ul.choose_country li{ min-width: 30%; }
 	.main_container .area_content ul.area_list li{ width: calc(100% / 3); }
-	.main_container .area_content ul.area_list li h3.area_title{font-size: 18px;}
+	.main_container .area_content ul.area_list li h3.area_title{font-size: 17px;}
 	.main_container .area_content ul.area_list li h3.area_title span.f_s{ font-size: 14px; }
 	.main_container .area_content ul.area_list li.field_2{ width:66.66%; }
+
+	.main_container .travel_plan_content_two .right_info{
+		width: calc(35% - 35px);
+	}
 }
 @media (max-width: 1024px) {
 	#container .content-inner,	footer div.inner {width: 90%;}
+	.main_container .travel_plan_content_two .right_info .country_amount{ padding-top: 0; text-align: left; }
 }
 @media (max-width:1000px){
 	.main_container .area_content ul.area_list li{ width:50%;}
 	.main_container .area_content ul.area_list li.field_2{ width: 100%; }
-	.main_container .area_content ul.area_list li h3.area_title{font-size: 17px;}
+	.main_container .area_content ul.area_list li h3.area_title{font-size: 16px;}
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 13px; }
 
 	.main_container .support_area_list h3.top_title_blue{ font-size: 18px;}
@@ -257,7 +298,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .area_content .area_menu ul.choose_area{ padding-top: 5px; }
 	.main_container .area_content .area_menu ul.choose_area li p.btn_in a{ border-color: transparent; }
 	.main_container .area_content .area_menu ul.choose_country li{ min-width: 48%; }
-	.main_container .area_content ul.area_list li h3.area_title{ font-size: 16px; }
+	.main_container .area_content ul.area_list li h3.area_title{ font-size: 15px; }
 	.main_container .area_content ul.area_list li h3.area_title span{ padding: 6px 10px;}
 
 	.main_container .support_area_list ul.area_info li h4.area_title{font-size: 14px;}
@@ -270,6 +311,16 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 
 	.inside_container .top_banner .middle_content::before, .inside_container .top_banner .middle_content::after{ display: none;}
 	.main_container ul.capacity_content li a{ padding: 30px 10px 0px 10px;}
+
+	.main_container .travel_plan_content_two .plan_info{ width: 100%; }
+	.main_container .travel_plan_content_two .right_info{ width: 100%; max-width: initial; margin-top: 25px; }
+	.main_container .travel_plan_content_two .SNS_icon{ width: 100%; text-align: center; padding-top: 10px; }
+	.main_container .travel_plan_content_two .SNS_icon::after{ background-image: url(../images/svg/SNS_icons_mob.svg); height: 36px; }
+	.main_container .travel_plan_content_two .right_info .SNS_icon{ float: left; width: 42%; }
+	.main_container .travel_plan_content_two .right_info .SNS_icon::after{ height: 70px; }
+	.main_container .travel_plan_content_two .right_info .for_left{ width: 58%; float: left; padding-right: 10px; }
+	.main_container .travel_plan_content_two .country_info .sub_info_box{ width: 100%; padding: 0; }
+	.main_container .travel_plan_content_two .country_amount h4{ padding: 0; font-size: 18px; }
 }
 @media (min-width:769px) {
 	footer div.inner {margin: 0 auto; padding: 4em 0; padding-bottom:120px;text-align: left; background: url(../images/bg_footer.jpg) right bottom no-repeat; background-size: 663px 173px;}
@@ -311,6 +362,8 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 
 	.main_container .travel_plan_content .plan_info{ padding: 20px 22px; }
 	.main_container .travel_plan_content .area_photo{ height:170px; }
+	.main_container .travel_plan_content_two .country_amount h4{ font-size: 16px; }
+	.main_container .travel_plan_content_two .country_amount p{ font-size: 13px; display: block; }
 
 	.main_container .sub_title_content h4{ font-size: 16px; width: calc(100% + 40px); left: -20px; }
 	.main_container .sub_title_content h4 span{ padding: 0 15px; }
@@ -399,7 +452,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 @media (max-width:350px){
 	.main_container .area_content{ padding:0 0 10px 0; }
 	.main_container .area_content ul.area_list li a{ min-height: 135px;}
-	.main_container .area_content ul.area_list li h3.area_title{ font-size: 17px; }
+	.main_container .area_content ul.area_list li h3.area_title{ font-size: 14px; }
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 11px; }
 
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 13px; }
