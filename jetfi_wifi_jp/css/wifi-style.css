@@ -65,7 +65,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .sub_title_content h4{ font-size: 25px; position: absolute; top: 12px; left: 0; width: 100%; z-index: 2; text-align: center;}
 .main_container .sub_title_content h4 span{ font-weight: 600; background-color: #fff; padding: 0 40px; min-width: 220px;}
 .main_container .sub_title_content p{ font-size: 16px; padding: 10px 0 18px; text-align: center; }
-.main_container .sub_title_content p span{ font-size: 13px; padding-top: 12px; display: inline-block;}
+.main_container .sub_title_content p span{ font-size: 13px; padding-top: 12px; display: inline-block; font-weight: 400;}
 
 .main_container .data_flow{ padding-top: 5px; border-top: 2px solid #C3C3C3;  }
 .main_container .data_flow::after{ display: none; }
@@ -142,7 +142,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.capacity_content li.main_unlimited{ min-width: 200px; }
 
 .main_container ul.capacity_content li p.price{ text-align: center; color: #FF0000; font-weight: 600; padding: 10px 0; }
-.main_container ul.capacity_content li .labels{ position: absolute; top: 10px; left: 10px; }
+.main_container ul.capacity_content li .labels{ position: absolute; top: 6px; left: 10px; }
 .main_container ul.capacity_content li .labels p.star{ font-size: 11px;}
 .main_container ul.capacity_content li .labels p.hot{font-size: 12px;}
 
@@ -199,6 +199,10 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .travel_plan_content_two .SNS_icon p{ font-size: 12px; padding-bottom: 15px; font-weight: 400;}
 .main_container .travel_plan_content_two .right_info .SNS_icon{ margin: 0 auto; display: inline-block; margin: 0 auto; float: none; }
 .main_container .travel_plan_content_two .right_info .SNS_icon::after{background-image: url(../images/svg/SNS_icons_gray.svg);  }
+
+.main_container .btn_more{ font-size: 14px; padding: 10px 5px; }
+.main_container .btn_more a{ background-color: #FFC924; display: block; border:1px solid #333; padding: 5px 10px; color: #333; position: relative; }
+.main_container .btn_more a::after{ content: ""; position: absolute; top: calc(50% - 7.5px); right: 10px; width: 15px; height: 15px; background-image: url(../images/svg/arr_more_k.svg); }
 
 .inside_container .top_banner{ background-color: inherit; }
 .inside_container .top_banner h3{ font-size: 40px; color:#fff; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9); }
@@ -282,7 +286,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container ul.capacity_content li .capacity_img{ padding: 0 0 10px 0;}
 	.main_container ul.capacity_content li .capacity_img span{ padding-top: 100px;}
 	.main_container ul.capacity_content li .capacity_img::after{ top: 54px; right: calc(50% - 25px);}
-	.main_container ul.capacity_content li p.star{ top: 10px; width: calc( 100% - 20px);}
+	/*.main_container ul.capacity_content li p.star{ top: 10px; width: calc( 100% - 20px);}*/
 }
 @media (max-width:800px){
 	.main_container h3.top_title{ font-size: 18px;}
@@ -372,14 +376,14 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 
 	.inside_container .area_content ul.area_list li .area_info{min-height: initial;}
 
-	.main_container ul.capacity_content li p.star{ top: 4px; font-size: 12px;}
+	.main_container ul.capacity_content li p.star{ font-size: 12px;}
 	.main_container ul.capacity_content li .capacity_img{ font-size: 10px; line-height: initial; min-height: 140px; }
 	.main_container ul.capacity_content li .capacity_img::after{ width: 32px; top: 52px; height: 34px; right: calc(50% - 16px); }
 
 	.main_container .data_flow{ border-width: 1px; }
 	.main_container .data_flow h4 span::after{ width: 25px; right: -25px; background-image: url(../images/img_flow.png);}
 	.main_container .data_flow h4 span::before{ width: 25px; left: -25px;}
-	.main_container .tab_capacity > ul > li{min-width: initial; width: calc(98% / 3); padding: 5px 12px;}
+	.main_container .tab_capacity > ul > li{min-width: initial; width: calc(97.5% / 3); padding: 5px 10px;}
 	.main_container .tab_capacity > ul > li p{ font-size: 11.5px; font-weight: 600; padding-left: 14px;}
 	.main_container .tab_capacity > ul > li p::after{ width: 12px; height: 17px; left: -3px; top: 3px;}
 
@@ -421,6 +425,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .support_area_list ul.area_info li h4.area_title{ font-size: 13px; }
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 12px; }
 
+	.main_container ul.note li p{ font-size: 13px; }
 	.main_container ul.capacity_content li{ padding: 3px; }
 	.main_container ul.capacity_content li a{ font-size: 12px; }
 	.main_container ul.capacity_content li a{ border-radius: 10px; }
@@ -441,26 +446,37 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .tab_capacity .tab_inner{ padding: 15px; }
 }
 @media (max-width:400px){
+	footer .copyright-area a ,footer .copyright-area span{ font-size: 0.875rem; }
+	#ftr_2019 h3{ font-size: 1.5rem; }
+	#ftr_2019 .mail, #ftr_2019 .tokou-tel, #ftr_2019 .tel, #ftr_2019 .contact_info_title{ font-size: 1.5rem; }
 	.main_container h3.top_title{ font-size: 16px; }
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 12px; line-height: 18px; }
 	.main_container .top_banner p span{ font-size: 11px;}
 	.main_container .top_banner h3{ font-size: 14px; }
 	.main_container .top_banner .middle_content::after{ width: 60px; left: 5px;}
 	.main_container .top_banner .middle_content::before{ width: 50px; right: 5px; }
+	.main_container .labels p.hot{ padding: 0px 8px; line-height: 18px; margin-top: 2px;}
+	.main_container ul.capacity_content li .labels{ top: 0; left: 5px; }
+	.main_container ul.capacity_content li .labels p.star,
+	.main_container ul.capacity_content li .labels p.hot,
 	.main_container ul.capacity_content li p.star{ font-size: 10px; }
+	.main_container ul.note li p{ font-size: 12px; }
 }
 @media (max-width:350px){
-	.main_container .area_content{ padding:0 0 10px 0; }
+	.main_container h3.top_title{ font-size: 14px; }
+	.main_container .area_content{ padding:0 0 10px 0; width: calc( 100% - 20px); }
 	.main_container .area_content ul.area_list li a{ min-height: 135px;}
 	.main_container .area_content ul.area_list li h3.area_title{ font-size: 14px; }
 	.main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 11px; }
-
-	.main_container .support_area_list ul.area_info li p.info{ font-size: 13px; }
+	.main_container .labels p{ padding: 2px 2px;}
+	.main_container .support_area_list ul.area_info li p.info{ font-size: 11px; }
 	.main_container .support_area_list h3.top_title_blue{ font-size: 12px; }
+
 	.main_container ul.capacity_content li .capacity_img span{ font-size: 12px; }
 	.main_container .tab_capacity .tab_inner img{ width: 38px; }
 	.main_container .tab_capacity .tab_inner p.ex{ font-size: 10px; }
     .main_container .tab_capacity > ul > li{padding: 2px 6px;}
 	.main_container .tab_capacity > ul > li p{ font-size: 10px; }
+	.main_container .tab_capacity .tab_inner p.app_title, .main_container .tab_capacity .tab_inner p.return{ font-size: 11px; }
 
 }
