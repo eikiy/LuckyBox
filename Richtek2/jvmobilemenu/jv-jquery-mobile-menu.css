@@ -1,0 +1,35 @@
+html,body{width:100%;margin:0;padding:0}
+.page{width:100%;min-height:100%;overflow:auto;z-index:1;position:relative;}
+.mobile-nav{ display:none;}
+.mobile-nav ul{margin:0 0 25px; padding:0px;}
+.mobile-nav ul li{list-style:none}
+.mobile-nav h3{ font-size: 18px; font-weight: bold; color: #fff; padding:15px 20px; }
+ul.submenu{ padding-top:10px;}
+
+.hamburger{ position: fixed; display: none; top:5px; right: 10px;  padding:10px 10px 9px; cursor:pointer; z-index:200;}
+.hamburger .hamburger-inner{position:relative;height:21px;width:24px;display:block;margin:0;padding:0;}
+.hamburger .bar{width:24px;height:2px;background:#fff;position:absolute;top:0}
+.hamburger .bar.bar2,.hamburger .bar.bar3{top:9px; }
+.hamburger .bar.bar4{top:18px; }
+.hamburger.open{position: fixed; top: 5px;}
+.hamburger.open .bar1,.hamburger.open .bar4{display:none}
+.hamburger.open .bar2,.hamburger.open .bar3{height:3px; background-color: #fff;}
+
+.mobile-nav{ width:260px !important; background-color:#072b61; z-index:16;}
+.mobile-nav a.accesskey{ color: #0177bb; }
+.mobile-nav ul.Oneself{ width:100%; background-color: #404f5f;}
+.mobile-nav ul.Oneself li{ border-bottom: 2px solid #072b61;}
+.mobile-nav ul.Oneself li p { color:#fff; font-size: 16px; position: relative; font-weight: bold;}
+.mobile-nav ul.Oneself li p.choosed a{ background-color: #009eb8; }
+.mobile-nav ul.Oneself li p a{ color: #fff; padding: 20px; display: inline-block; cursor: pointer; position: relative; width: 100%; display: block; background-color: #404F5F; color: #FFFFFF; padding-left: 60px; }
+.mobile-nav ul.Oneself li p a::after{ content: ""; position: absolute; width: 35px; height:35px; display: block; top:calc(50% - 17.5px); left: 15px; background-size: contain; }
+.mobile-nav ul.Oneself li p a.icon_01::after{ background-image: url(../images/menu_icon_01.svg);}
+.mobile-nav ul.Oneself li p a.icon_02::after{ background-image: url(../images/menu_icon_02.svg);}
+.mobile-nav ul.Oneself li p a.icon_03::after{ background-image: url(../images/menu_icon_03.svg);}
+.mobile-nav ul.Oneself li p a.icon_04::after{ background-image: url(../images/menu_icon_04.svg);}
+.mobile-nav ul.Oneself li p a.icon_05::after{ background-image: url(../images/menu_icon_05.svg);}
+
+.mobile-menu-inner{ padding:0 !important; padding-bottom: 10px; }
+
+@media (max-width:760px){.hamburger{ display:block;}}
+

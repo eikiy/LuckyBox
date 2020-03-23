@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>特約商店享好康 - 美食餐飲</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name='description' content=""/>
 		<meta name='keywords' content=""/>
 		<meta name="MobileOptimized" content="width">
@@ -10,8 +11,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
+		<script type="text/javascript">
+			$(function(){
+			   	$('.gotop').click(function(){ $('html,body').stop(true,false).animate({scrollTop:0}, 800); });
+				return false;
+			});
+		</script>
 	</head>
-	<body>
+	<body class="page">
+	    <div class="mobile-nav" id="sideMenu">
+	    	<h3>選單</h3>
+	        <ul class="Oneself">
+	        	<!-- 選到該分類要 + choosed -->
+	            <li><p class="choosed"><a class="icon_01" href="food.html">美食餐飲</a></p></li>
+	            <li><p><a class="icon_02" href="hotel.html">飯店住宿</a></p></li>
+	            <li><p><a class="icon_03" href="entertainment.html">休閒娛樂</a></p></li>
+	            <li><p><a class="icon_04" href="education.html">教育文化</a></p></li>
+	            <li><p><a class="icon_05" href="other.html">其他類別</a></p></li>
+	        </ul>
+	    </div>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	    <script src="jvmobilemenu/jv-jquery-mobile-menu-min.js"></script>
+	    <script src="jvmobilemenu/script-right.js"></script>
+
+		
 		<header class="headerBox">
 			<section class="contentsBox clearfix">
 				<a class="logo img_default" href="index.html"></a>
@@ -54,7 +78,7 @@
 									新竹市湳雅街87號<br>
 									<span class="c_blue">電　　話：</span>
 									03-5422234<br>
-									<span class="c_blue">優惠內容：</span>
+									<span class="c_blue">優惠內容：</span><br>
 									1. 凡內用單點消費於$1000以上享有9折優惠； $1000以內 9.5折優惠，外帶、合菜及酒水不適用(需於結帳前告知服務人員特約商並提供識別證)<br>
 									2. 特約只限新竹湳雅店適用
 								</p>
@@ -72,9 +96,9 @@
 								<p>
 									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span>
+									<span class="c_blue">地　　址：</span>
 									竹北市光明六路118號<br>
-									<span class="c_blue">電話：</span>
+									<span class="c_blue">電　　話：</span>
 									03-6568619<br>
 									<span class="c_blue">優惠內容：</span>
 									1.凡來店消費點餐小吃消費或預約商業合菜消費，即享菜色9折優惠。<br>
@@ -94,11 +118,11 @@
 							<h3 class="store_name">POLO CAFÉ-竹北店/巨成店</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									新竹縣竹北市環北路一段105號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03-5559999<br>
 									<span class="c_blue">優惠內容：</span><br>
 									出示識別來店消費即享有所有店內商品9折優惠
@@ -115,11 +139,11 @@
 							<h3 class="store_name">千葉火鍋-新竹忠孝店</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									新竹市東區忠孝路281號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03 5723525 / 03-5723997<br>
 									<span class="c_blue">優惠內容：</span><br>
 									出示識別來店消費即享有所有店內商品9折優惠
@@ -136,11 +160,11 @@
 							<h3 class="store_name">全家福客家餐館</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									竹北市光明六路118號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03-6568619<br>
 									<span class="c_blue">優惠內容：</span><br>
 									1.凡來店消費點餐小吃消費或預約商業合菜消費，即享菜色9折優惠。<br>
@@ -160,11 +184,11 @@
 							<h3 class="store_name">千葉火鍋-新竹忠孝店</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									新竹市東區忠孝路281號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03 5723525 / 03-5723997<br>
 									<span class="c_blue">優惠內容：</span><br>
 									出示識別來店消費即享有所有店內商品9折優惠
@@ -181,11 +205,11 @@
 							<h3 class="store_name">全家福客家餐館</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									竹北市光明六路118號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03-6568619<br>
 									<span class="c_blue">優惠內容：</span><br>
 									1.凡來店消費點餐小吃消費或預約商業合菜消費，即享菜色9折優惠。<br>
@@ -209,11 +233,11 @@
 							<h3 class="store_name">千葉火鍋-新竹忠孝店</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									新竹市東區忠孝路281號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03 5723525 / 03-5723997<br>
 									<span class="c_blue">優惠內容：</span><br>
 									出示識別來店消費即享有所有店內商品9折優惠
@@ -230,11 +254,11 @@
 							<h3 class="store_name">千葉火鍋-新竹忠孝店</h3>
 							<div class="store_info">
 								<p>
-									<span class="c_blue">優惠截止：</span><br>
+									<span class="c_blue">優惠截止：</span>
 									2020/12/31<br>
-									<span class="c_blue">地址：</span><br>
+									<span class="c_blue">地　　址：</span>
 									新竹市東區忠孝路281號 <br>
-									<span class="c_blue">電話：</span><br>
+									<span class="c_blue">電　　話：</span>
 									03 5723525 / 03-5723997<br>
 									<span class="c_blue">優惠內容：</span><br>
 									出示識別來店消費即享有所有店內商品9折優惠
@@ -268,7 +292,7 @@
 		<footer class="footerBox clearfix">
 			<section class="contentsBox clearfix">
 				<a class="logo img_default" href="index.html"></a>
-				<a class="top"><span class="img_default"></span></a>
+				<a class="top gotop"><span class="img_default"></span></a>
 				<p class="copyright">Copyright © 2020 Richtek Technology Corporation. All Rights Reserved.</p>
 			</section>
 		</footer>

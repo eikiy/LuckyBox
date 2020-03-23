@@ -74,9 +74,9 @@ main{ min-width: 320px; }
 .mainBox .rightContents .news_box ul.new_list li:nth-child(even){ background-color: #EDFCFF; }
 .mainBox .rightContents .news_box ul.new_list li a{ display: block; padding: 15px 25px; }
 .mainBox .rightContents .news_box ul.new_list li a:hover p.new_title{ text-decoration: underline;}
-.mainBox .rightContents .news_box ul.new_list li p{ font-size: 18px; line-height: 40px; }
+.mainBox .rightContents .news_box ul.new_list li p{ font-size: 18px; line-height: 30px; }
 .mainBox .rightContents .news_box ul.new_list li p.type{ float: left; width: 240px; color: #00467F;}
-.mainBox .rightContents .news_box ul.new_list li p.new_title{ float: left; width: calc(100% - 240px); display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; line-height: 40px; height: 40px * 1; overflow:hidden; }
+.mainBox .rightContents .news_box ul.new_list li p.new_title{ float: left; width: calc(100% - 240px); display: block; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-height: 30px; height: 30px * 3; overflow:hidden; }
 
 .mainBox .rightContents ul.other_link{ text-align: center; padding: 20px 0; }
 .mainBox .rightContents ul.other_link li{ display: inline-block; margin: 0 30px; vertical-align: middle; }
@@ -173,12 +173,12 @@ main{ min-width: 320px; }
 	.mainBox .insideContents ul.store_list li h3.store_name{ font-size: 16px; }
 	.mainBox .insideContents ul.store_list li .store_info p{ font-size: 13px; line-height: 20px;}
 }
+@media (max-width:760px){
+	.headerBox a.home{ margin-right: 25px;}
+	.mainBox .leftMenu{ display: none; }
+	.mainBox .rightContents{padding-left: 0;}
+}
 @media (max-width:750px){
-	.mainBox .leftMenu{ width: 65px; border-width: 3px; }
-	.mainBox .rightContents{ padding-left: 65px; }
-	.mainBox .leftMenu ul li p a{ height: 62px; padding-top: 40px;}
-	.mainBox .leftMenu ul li p a::after{ top: 2px; }
-
 	.mainBox .rightContents .main_banner .banner_info, 
 	.mainBox .rightContents .news_box{ width:80%;}
 	.mainBox .rightContents .main_banner h1.main_title{ font-size: 42px; }
@@ -197,8 +197,6 @@ main{ min-width: 320px; }
 }
 @media (max-width:650px){
 	.headerBox{z-index: 2; position: sticky; top: 0;}
-	.mainBox .leftMenu ul{ z-index: 1; position: sticky; top: 50px; }
-	.mainBox .leftMenu ul li p{ font-size: 12px; }
 	.mainBox .rightContents .news_box ul.new_list li a{ padding: 8px 12px;}
 	.mainBox .rightContents .news_box ul.new_list li p{ font-size: 15px; }
 	.mainBox .rightContents .news_box ul.new_list li p.type{ width: 100%; line-height: 22px;}
@@ -217,6 +215,8 @@ main{ min-width: 320px; }
 	.mainBox .rightContents ul.other_link li a.link_01{ max-width: 60px; }
 	.mainBox .rightContents ul.other_link li a.link_02{ max-width: 40px; }
 	.mainBox .rightContents ul.other_link li a.link_03{ max-width: 120px; min-width: 120px; }
+	.footerBox a.top{ width: 40px; height: 40px; }
+	.footerBox a.top span::after{ width: 40px; left: calc(50% - 20px); height: 14px; top: calc(50% - 8px);}
 }
 @media (max-width:500px){
 	.mainBox .rightContents{ padding-bottom: 20px; }
