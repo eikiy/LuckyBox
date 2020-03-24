@@ -139,6 +139,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.capacity_content li .capacity_01::after{ background-image: url(../images/svg/capacity_img_01.svg);}
 .main_container ul.capacity_content li .capacity_02::after{ background-image: url(../images/svg/capacity_img_02.svg);}
 .main_container ul.capacity_content li .capacity_03::after{ background-image: url(../images/svg/capacity_img_03.svg);}
+.main_container ul.capacity_content li .capacity_04::after{ background-image: url(../images/svg/capacity_img_04.svg);}
 .main_container ul.capacity_content li.main_unlimited{ min-width: 200px; }
 
 .main_container ul.capacity_content li p.price{ text-align: center; color: #FF0000; font-weight: 600; padding: 10px 0; }
