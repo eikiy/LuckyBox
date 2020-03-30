@@ -225,11 +225,17 @@ p.error i{ padding-right: 5px; }
 /*變圓角在input內 END*/
 
 .shopping_cart ul.the_btn{ width: 100%; max-width: 800px;  padding: 15px  0; text-align: center; margin: 0 auto;}
-.shopping_cart ul.the_btn li{  display: inline-block; margin: 0 5px 10px 5px;}
-.shopping_cart ul.the_btn li p{ font-size: 16px; display: inline-block; cursor: pointer; border-radius: 50px; padding: 0px 10px; font-size: 14px; color: #5f6368; line-height: 38px; height: 40px; border:2px solid #f0f0f0; background-color: #fff; min-width: 120px; text-align: center; }
+.shopping_cart ul.the_btn li{  display: inline-block; margin: 0 2px 10px 2px;}
+.shopping_cart ul.the_btn li p{ font-size: 16px; display: inline-block; cursor: pointer; border-radius: 50px; padding: 0px 10px; font-size: 14px; color: #5f6368; line-height: 38px; height: 40px; border:2px solid #f0f0f0; background-color: #fff; min-width: 100px; text-align: center; }
 .shopping_cart ul.the_btn li p a{ color: #5f6368; display: block;}
 .shopping_cart ul.the_btn li span{ display: block;}
 .shopping_cart ul.the_btn li.the_selected p{ border-color: #ffcd00; }
+
+.shopping_cart .time_choosed{ line-height: 38px; height: 40px; max-width: 318px; cursor: pointer; margin: 0 auto; border-radius: 50px; border: 2px solid #f0f0f0; padding: 0 15px;}
+.shopping_cart .time_choosed p{ font-size: 14px; }
+.shopping_cart .time_choosed p.l_p{ float: left; }
+.shopping_cart .time_choosed p.r_p{ float: right; }
+.shopping_cart .time_choosed p.r_p i{ padding-left: 5px; color: #555; }
 
 .shopping_cart .a_box{ width: 100%; max-width: 500px; margin: 0 auto; padding-bottom: 35px; display: none; }
 .shopping_cart .a_box p.sub_title{ text-align: center; padding: 10px 0; }
@@ -363,6 +369,8 @@ ul.order_list_done li p.s_f{ font-size: 12px; color: #666; padding-left: 15px; }
 	ul.shopping_car_list .sbox{ width: calc(50% - 65px);}
 	ul.shopping_car_list .car_nb{ width: 130px; }
 	ul.shopping_car_list .car_name{width: 100%;}
+	.shopping_cart ul.the_btn li p{ min-width: 86px;}
+	
 }
 @media (max-width:370px){
 	.shop_mainbox .btn_swtich p,
@@ -381,10 +389,11 @@ ul.order_list_done li p.s_f{ font-size: 12px; color: #666; padding-left: 15px; }
 	.fadebox input{font-size: 12px;}
 	.fadebox h3.top_title{ font-size: 16px; }
 	.modal{padding: 15px !important;}
-
+	
 	.shopping_cart h3.top_title{ font-size: 16px; }
 	.shopping_cart p.quantity_products{ font-size: 12px; }
 	.shopping_cart p.quantity_products span{ font-size: 14px; }
+	.shopping_cart .time_choosed{ max-width: 275px; }
 	ul.order_list_done li p, .order_list p, .shopping_cart ul.fillin li.the_invoice label, .shopping_order .order_list p{ font-size: 13px; }
 }
 @media screen and (max-height: 450px) {

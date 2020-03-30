@@ -22,7 +22,7 @@
     	.blocker{ background-color: rgba(0,0,0,0.5); z-index: 3;} /*層級改3不然最上面衡的選單會蓋到上面*/
     	.modal{box-shadow: 0 0 10px #0009;}
     </style>
-    // <script type="text/javascript">
+    <script type="text/javascript">
     	// 我寫的好爛XD
     	// 選到變外框顏色
 	    $(function(){
@@ -38,6 +38,7 @@
 		$(function(){
 		  	$("ul.the_btn li .takeout_in").click(function(){
 		  		$(this).parent().parent().next(".a_box").hide();
+		  		$(this).parent().parent().next().next().next(".takeout_show").show();
 		  		$(this).parent().parent().next().next(".orderin_show").hide();
 		  		$(this).parent().parent().next().next(".inside_show").hide();
 		  		$(this).parent().parent().find("li").removeClass("the_selected");
@@ -196,55 +197,93 @@
 						<label for="pickup-delivery">外送</label>
 					</li>
 				</ul> -->
-			</form>
-			<form class="shopping_cart padding_bottom_100">
-				<h3 class="top_title">取餐時間</h3>
-				<p class="sub_title">立即取餐<span class="f_red">需估等待10分鐘</span></h3>
-				<ul class="the_btn">
-					<li>
-						<p class="btn">立即取餐</p>
-					</li>
-					<li>
-						<p class="other_time">其他時段</p>
-					</li>
-				</ul>
-				<!-- 未選擇時間 提醒 + error_tips -->
-				<div class="a_box other_time_show error_tips">
-					<p class="sub_title">請選擇取餐時間</p>
-					<!-- <div class="the_datepicker">
-						<i class="far fa-calendar-alt"></i>
-						<input class="fill_in" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
-					</div> -->
-					<div class="styled-select w_01">
-						<select class="fill_in" name="" v-show="" v-model="takeMealtime">
-							<option value="" selected>請選擇時間</option>
-							<option value="" selected>2019-08-30 13:15</option>
-							<option value="" selected>2019-08-30 13:30</option>
-							<option value="" selected>2019-08-30 13:45</option>
-							<option value="" selected>2019-08-30 14:00</option>
-						</select>
+				<div class="a_box takeout_show" style="display: none;">
+					<a href="#phone_code" rel="modal:open">
+					<div class="btn time_choosed clearfix">
+						<p class="l_p">取餐時間</p>
+						<p class="r_p">立即（<span class="f_red">約20分鐘</span>）<i class="fas fa-chevron-down"></i></p>
 					</div>
-					<p class="error"><i class="fas fa-exclamation-circle"></i>請選擇時間</p>
+					</a>
+					<!-- 未選擇時間 提醒 + error_tips -->
+					<div class="a_box other_time_show error_tips">
+						<p class="sub_title">請選擇取餐時間</p>
+						<!-- <div class="the_datepicker">
+							<i class="far fa-calendar-alt"></i>
+							<input class="fill_in" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+						</div> -->
+						<div class="styled-select w_01">
+							<select class="fill_in" name="" v-show="" v-model="takeMealtime">
+								<option value="" selected>請選擇時間</option>
+								<option value="" selected>2019-08-30 13:15</option>
+								<option value="" selected>2019-08-30 13:30</option>
+								<option value="" selected>2019-08-30 13:45</option>
+								<option value="" selected>2019-08-30 14:00</option>
+							</select>
+						</div>
+						<p class="error"><i class="fas fa-exclamation-circle"></i>請選擇時間</p>
+					</div>
 				</div>
 			</form>
 		</section>
 
 		<!-- 電話驗證 -->
-	    <!-- <div id="phone_code" class="modal fade fadebox">
+	    <div id="phone_code" class="modal fade fadebox">
 	    	<div class="verification">
-	    		<h3 class="top_title">手機驗證</h3>
-	    		<input type="text" name="" placeholder="請輸入手機號碼">
-	    		<div class="both clearfix">
-	    			<button  class="btn" type="button">驗證此手機號碼</button>
-	    			<input type="text" name="" placeholder="請輸入驗證碼">
-	    		</div>
-	    		<a href="#">沒收到驗證碼?</a>
+	    		<h3 class="top_title">取餐日期</h3>
+	    		<div class="styled-select w_01">
+					<select class="fill_in" name="" v-show="" v-model="takeMealtime">
+						<option value="">請選擇時日期</option>
+						<option value="" selected>今天 03/18</option>
+						<option value="">明天 03/19</option>
+						<option value="">後天 03/20</option>
+						<option value="">2020/03/21</option>
+					</select>
+				</div>
+				<h3 class="top_title">取餐時間</h3>
+	    		<div class="styled-select w_01">
+					<select class="fill_in" name="" v-show="" v-model="takeMealtime">
+						<option value="">請選擇時間</option>
+						<option value="" selected>立即</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+						<option value="">13:15</option>
+						<option value="">13:30</option>
+						<option value="">13:45</option>
+						<option value="">14:00</option>
+					</select>
+				</div>
 	    	</div>
 	    	<div class="the_button">
-	    		<a class="btn" href="#" rel="modal:close">取消</a>
-	    		<a class="btn c_org" class="done" href="#">送出</a>
+	    		<a class="btn c_gray" href="#" rel="modal:close">取消</a>
+	    		<a class="btn c_org" class="done" href="#">確定</a>
 	  		</div>
-	    </div> -->
+	    </div>
 	</main>
 </script>
 </body>
