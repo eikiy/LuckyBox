@@ -232,8 +232,8 @@ p.error i{ padding-right: 5px; }
 .shopping_cart ul.the_btn li.the_selected p{ border-color: #ffcd00; }
 
 .shopping_cart .time_choosed{ line-height: 38px; height: 40px; max-width: 318px; cursor: pointer; margin: 0 auto; border-radius: 50px; border: 2px solid #f0f0f0; padding: 0 15px;}
-.shopping_cart .time_choosed p{ font-size: 14px; }
-.shopping_cart .time_choosed p.l_p{ float: left; }
+.shopping_cart .time_choosed p{ font-size: 13px; }
+.shopping_cart .time_choosed p.l_p{ float: left; color: #7b7b7b; font-weight: bold; }
 .shopping_cart .time_choosed p.r_p{ float: right; }
 .shopping_cart .time_choosed p.r_p i{ padding-left: 5px; color: #555; }
 
@@ -395,6 +395,8 @@ ul.order_list_done li p.s_f{ font-size: 12px; color: #666; padding-left: 15px; }
 	.shopping_cart p.quantity_products span{ font-size: 14px; }
 	.shopping_cart .time_choosed{ max-width: 275px; }
 	ul.order_list_done li p, .order_list p, .shopping_cart ul.fillin li.the_invoice label, .shopping_order .order_list p{ font-size: 13px; }
+	.shopping_cart .time_choosed {padding: 0 12px;}
+	.shopping_cart .time_choosed p{ font-size: 12px; font-weight: bold; }
 }
 @media screen and (max-height: 450px) {
 }
