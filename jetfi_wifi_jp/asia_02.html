@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/wifi-style.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		<link rel="icon" href="https://www.jetfi.jp/wifi/images/favicon.ico">
+		<link rel="icon" href="https://www.jetfi.jp/template/default/img/common/favicon-32x32.png">
 		<link rel="apple-touch-icon" href="https://www.jetfi.jp/wifi/images/apple-touch-icon.png">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i" rel="stylesheet">
@@ -115,14 +115,44 @@
 						</a>
 					</li>
 				</ul>
+				<!-- 示範上方無小標 -->
+				<ul class="capacity_content">
+					<!-- 若是上面沒有小標的話需+no_subtitle -->
+					<li class="no_subtitle">
+						<a href="#">
+							<p class="capacity_img capacity_01 img_default">
+								<span>“ グローバル<br>350MB ”</span>
+							</p>
+							<p class="price">680円/日</p>
+						</a>
+					</li>
+					<!-- 若是上面沒有小標的話需+no_subtitle -->
+					<li class="no_subtitle">
+						<a href="#">
+							<p class="capacity_img capacity_02 img_default">
+								<span>“ グローバル<br> 500MB ”</span>
+							</p>
+							<p class="price">980円/日</p>
+						</a>
+					</li>
+					<!-- 若是上面沒有小標的話需+no_subtitle -->
+					<li class="no_subtitle">
+						<a href="#">
+							<p class="capacity_img capacity_03 img_default">
+								<span>“ グローバル<br>1GB ”</span>
+							</p>
+							<p class="price">1,280円/日</p>
+						</a>
+					</li>
+				</ul>
 				<div class="sub_title_content data_flow">
 					<h4><span class="img_default">データ通信量の目安</span></h4>
 					<p>プラン選択の参考にご活用ください<br><span>※周遊プランを選択の方のみ、通信容量をお選びいただけます</span></p>
 				</div>
 				<div class="tab_capacity">
 					<ul class="tab_title clearfix">
-				    	<li class="btn_01"><a href="#tab01"><p class="img_default">350Mプラン</p></a></li>
-				        <li class="btn_02"><a href="#tab02"><p class="img_default">500Mプラン</p></a></li>
+				    	<li class="btn_01"><a href="#tab01"><p class="img_default">350MBプラン</p></a></li>
+				        <li class="btn_02"><a href="#tab02"><p class="img_default">500MBプラン</p></a></li>
 				        <li class="btn_03"><a href="#tab03"><p class="img_default">1GBプラン</p></a></li>
 				    </ul>
 				    <div id="tab01" class="tab_inner">
@@ -190,54 +220,115 @@
 				    			<img src="images/safari_icon.png">
 				    			<p class="app_title">Webサイト</p>
 				    			<p class="ex">Google検索/1回</p>
-				    			<p class="return">約1,500回</p>
+				    			<p class="return">約2,500回</p>
 				    		</li>
 				    		<li>
 				    			<p class="top">目的地検索</p>
 				    			<img src="images/googlemap_icon.png">
 				    			<p class="app_title">Googleマップ</p>
 				    			<p class="ex">/1回 (3MB程度)</p>
-				    			<p class="return">約60回</p>
+				    			<p class="return">約100回</p>
 				    		</li>
 				    		<li>
 				    			<img src="images/gmail_icon.png">
 				    			<p class="app_title">メール送受信</p>
 				    			<p class="ex">100文字/１通</p>
-				    			<p class="return">約3,500通</p>
+				    			<p class="return">約5,000通</p>
 				    		</li>
 				    		<li>
 				    			<img src="images/line_icon.png">
 				    			<p class="app_title">LINE</p>
 				    			<p class="ex">テキストトーク</p>
-				    			<p class="return">約3,000通</p>
+				    			<p class="return">約5,000通</p>
 				    		</li>
 				    		<li>
 				    			<img src="images/line_icon.png">
 				    			<p class="app_title">LINE</p>
 				    			<p class="ex">音声通話</p>
-				    			<p class="return">約5時間</p>
+				    			<p class="return">約7時間</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/twitter_icon.png">
+				    			<p class="app_title">Twitter</p>
+				    			<p class="ex">ツイート</p>
+				    			<p class="return">約500回</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/insta_icon.png">
+				    			<p class="app_title">Instagram</p>
+				    			<p class="ex">写真投稿/1回 (約1.5MB)</p>
+				    			<p class="return">約300回</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/insta_icon.png">
+				    			<p class="app_title">Instagram</p>
+				    			<p class="ex">閲覧利用</p>
+				    			<p class="return">約30分</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/youtube_icon.png">
+				    			<p class="app_title">YouTube</p>
+				    			<p class="ex">標準画質480p</p>
+				    			<p class="return">約60分</p>
 				    		</li>
 				    	</ul>
 				    </div>
 				    <div id="tab03" class="tab_inner">
 				    	<ul class="note">
 				    		<li>
+				    			<img src="images/safari_icon.png">
+				    			<p class="app_title">Webサイト</p>
+				    			<p class="ex">Google検索/1回</p>
+				    			<p class="return">約5,000回</p>
+				    		</li>
+				    		<li>
+				    			<p class="top">目的地検索</p>
+				    			<img src="images/googlemap_icon.png">
+				    			<p class="app_title">Googleマップ</p>
+				    			<p class="ex">/1回 (3MB程度)</p>
+				    			<p class="return">約200回</p>
+				    		</li>
+				    		<li>
 				    			<img src="images/gmail_icon.png">
 				    			<p class="app_title">メール送受信</p>
 				    			<p class="ex">100文字/１通</p>
-				    			<p class="return">約3,500通</p>
+				    			<p class="return">約10,000通</p>
 				    		</li>
 				    		<li>
 				    			<img src="images/line_icon.png">
 				    			<p class="app_title">LINE</p>
 				    			<p class="ex">テキストトーク</p>
-				    			<p class="return">約3,000通</p>
+				    			<p class="return">約10,000通</p>
 				    		</li>
 				    		<li>
 				    			<img src="images/line_icon.png">
 				    			<p class="app_title">LINE</p>
 				    			<p class="ex">音声通話</p>
-				    			<p class="return">約5時間</p>
+				    			<p class="return">約14時間</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/twitter_icon.png">
+				    			<p class="app_title">Twitter</p>
+				    			<p class="ex">ツイート</p>
+				    			<p class="return">約1,000回</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/insta_icon.png">
+				    			<p class="app_title">Instagram</p>
+				    			<p class="ex">写真投稿/1回 (約1.5MB)</p>
+				    			<p class="return">約600回</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/insta_icon.png">
+				    			<p class="app_title">Instagram</p>
+				    			<p class="ex">閲覧利用</p>
+				    			<p class="return">約60分</p>
+				    		</li>
+				    		<li>
+				    			<img src="images/youtube_icon.png">
+				    			<p class="app_title">YouTube</p>
+				    			<p class="ex">標準画質480p</p>
+				    			<p class="return">約120分</p>
 				    		</li>
 				    	</ul>
 				    </div>

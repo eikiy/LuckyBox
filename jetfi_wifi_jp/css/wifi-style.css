@@ -102,7 +102,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .area_content ul.area_list li p.label span{ display: inline-block; text-align: center; font-size: 13px; color: #333; padding:2px 5px; margin:0 8px 8px 0; min-width: 40px; border-radius: 40px; border:1px solid #b8afa1; }
 .main_container .area_content ul.area_list li p.price{ color: #e91e63; font-size: 18px; font-weight: bold; text-align: left;}
 
-.main_container .tab_capacity{ width:100%; padding-bottom: 40px;}
+.main_container .tab_capacity{ width:100%; padding-bottom: 40px; max-width: 1100px; margin: 0 auto;}
 .main_container .tab_capacity > ul{ display:block; margin:0;list-style:none;}
 .main_container .tab_capacity .tab_title{list-style:none;}
 .main_container .tab_capacity > ul > li{  display:inline-block; vertical-align:top; position: relative; margin:0 -1px -1px 0; padding: 10px 15px; border-radius: 0 50px 0 0; min-width: 200px; line-height:25px; background:#cdcdcd; list-style:none; box-sizing:border-box;}
@@ -117,8 +117,13 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .tab_capacity > ul > li.btn_03{ background-color: #FF8026; }
 .main_container .tab_capacity > ul > li.btn_03 p::after{ background-image: url(../images/svg/capacity_img_03.svg); }
 .main_container .tab_capacity > ul > li.active{ background-color: #FFC924;}
+.main_container .tab_capacity > ul > li.active:nth-child(2){background-color: #FF9124;}
+.main_container .tab_capacity > ul > li.active:nth-child(3){background-color: #FF8026;}
+
 .main_container .tab_capacity > ul > li.active::after{  display: none; }
 .main_container .tab_capacity > .tab_inner{ clear:both; color:#000; border:5px #FFC924 solid;}
+.main_container .tab_capacity > .tab_inner#tab02{border-color: #FF9124;}
+.main_container .tab_capacity > .tab_inner#tab03{border-color: #FF8026;}
 
 .main_container .tab_capacity .tab_inner{ padding:25px; min-height: 350px; text-align: center;}
 .main_container .tab_capacity .tab_inner ul{ text-align: left; max-width: 930px; margin: 0 auto; }
@@ -140,6 +145,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.capacity_content li .capacity_02::after{ background-image: url(../images/svg/capacity_img_02.svg);}
 .main_container ul.capacity_content li .capacity_03::after{ background-image: url(../images/svg/capacity_img_03.svg);}
 .main_container ul.capacity_content li .capacity_04::after{ background-image: url(../images/svg/capacity_img_04.svg);}
+.main_container ul.capacity_content li.no_subtitle .capacity_img::after{top: 3px;}
 .main_container ul.capacity_content li.main_unlimited{ min-width: 200px; }
 
 .main_container ul.capacity_content li p.price{ text-align: center; color: #FF0000; font-weight: 600; padding: 10px 0; }
@@ -384,9 +390,9 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .data_flow{ border-width: 1px; }
 	.main_container .data_flow h4 span::after{ width: 25px; right: -25px; background-image: url(../images/img_flow.png);}
 	.main_container .data_flow h4 span::before{ width: 25px; left: -25px;}
-	.main_container .tab_capacity > ul > li{min-width: initial; width: calc(97.5% / 3); padding: 5px 10px;}
-	.main_container .tab_capacity > ul > li p{ font-size: 11.5px; font-weight: 600; padding-left: 14px;}
-	.main_container .tab_capacity > ul > li p::after{ width: 12px; height: 17px; left: -3px; top: 3px;}
+	.main_container .tab_capacity > ul > li{min-width: initial; width: calc(98.5% / 3); padding: 5px 10px;}
+	.main_container .tab_capacity > ul > li p{ font-size: 11.5px; font-weight: 600; padding-left: 16px;}
+	.main_container .tab_capacity > ul > li p::after{ width: 12px; height: 17px; left: 0px; top: 3px;}
 
 	.main_container .tab_capacity .tab_inner{ min-height: initial; padding-bottom: 5px; }
 	.main_container .tab_capacity .tab_inner img{ width: 44px; }
@@ -429,7 +435,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container ul.note li p{ font-size: 13px; }
 	.main_container ul.capacity_content li{ padding: 3px; }
 	.main_container ul.capacity_content li a{ font-size: 12px; }
-	.main_container ul.capacity_content li a{ border-radius: 10px; }
+	.main_container ul.capacity_content li a{ border-radius: 10px; padding-left: 1px; padding-right: 1px; }
 	.main_container ul.capacity_content li .capacity_img span{ font-size: 15px; padding-top: 56px; }
 
 	.inside_container .top_banner h3{ font-size: 20px; }
@@ -462,6 +468,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container ul.capacity_content li .labels p.hot,
 	.main_container ul.capacity_content li p.star{ font-size: 10px; }
 	.main_container ul.note li p{ font-size: 12px; }
+	.main_container .tab_capacity > ul > li{ border-radius: 0 20px 0 0;}
 }
 @media (max-width:350px){
 	.main_container h3.top_title{ font-size: 14px; }
@@ -477,7 +484,8 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .tab_capacity .tab_inner img{ width: 38px; }
 	.main_container .tab_capacity .tab_inner p.ex{ font-size: 10px; }
     .main_container .tab_capacity > ul > li{padding: 2px 6px;}
-	.main_container .tab_capacity > ul > li p{ font-size: 10px; }
+	.main_container .tab_capacity > ul > li p{ font-size: 10px; padding-left: 22px;}
+	.main_container .tab_capacity > ul > li p::after{left: 4px; top: 4px;}
 	.main_container .tab_capacity .tab_inner p.app_title, .main_container .tab_capacity .tab_inner p.return{ font-size: 11px; }
-
+	.main_container .sub_title_content p span{ font-size: 10px;}
 }
