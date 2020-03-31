@@ -269,19 +269,19 @@ background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(252,252,2
 background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(252,252,252,1) 34%,rgba(247,247,247,1) 98%,rgba(247,247,247,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 */}
 .arr_go_right .dots { width: 40px;  display: flex;  flex-flow: row nowrap;  align-items: center;  justify-content: space-between;}
-.arr_go_right .dots div { width: 10px;  height: 15px;  clip-path: polygon(38% 0, 100% 50%, 38% 100%, 0 99%, 60% 50%, 0 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
+.arr_go_right .dots div { width: 10px;  height: 15px; display: block; -webkit-clip-path: polygon(38% 0, 100% 50%, 38% 100%, 0 99%, 60% 50%, 0 0); clip-path: polygon(38% 0, 100% 50%, 38% 100%, 0 99%, 60% 50%, 0 0); background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
 .arr_go_right .dots div:nth-of-type(1) { animation-delay: -0.4s;}
 .arr_go_right .dots div:nth-of-type(2) { animation-delay: -0.2s;}
 
 .arr_go_left, .arr_go_top{display: inline-block;}
 .arr_go_left .dots { width: 40px;  display: flex;  flex-flow: row nowrap;  align-items: center;  justify-content: space-between;}
-.arr_go_left .dots div { width: 10px;  height: 15px;  clip-path: polygon(100% 0, 38% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
+.arr_go_left .dots div { width: 10px;  height: 15px;  display: block; -webkit-clip-path: polygon(100% 0, 38% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0); clip-path: polygon(100% 0, 38% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
 .arr_go_left .dots div:nth-of-type(1) { animation-delay: -0.2s;}
 .arr_go_left .dots div:nth-of-type(2) { animation-delay: -0.4s;}
 .arr_go_left .dots div:nth-of-type(3) { animation-delay: -0.6s;}
 
 .arr_go_top .dots { width: 15px;}
-.arr_go_top .dots div { width: 15px;  height: 10px;  clip-path: polygon(100% 40%, 100% 65%, 50% 30%, 0 65%, 0 40%, 50% 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
+.arr_go_top .dots div { width: 15px;  height: 10px;  display: block; -webkit-clip-path: polygon(100% 40%, 100% 65%, 50% 30%, 0 65%, 0 40%, 50% 0); clip-path: polygon(100% 40%, 100% 65%, 50% 30%, 0 65%, 0 40%, 50% 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
 .arr_go_top .dots div:nth-of-type(1) { animation-delay: -0.2s;}
 .arr_go_top .dots div:nth-of-type(2) { animation-delay: -0.4s;}
 .arr_go_top .dots div:nth-of-type(3) { animation-delay: -0.6s;}
