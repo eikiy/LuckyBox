@@ -197,7 +197,8 @@ ul.shopping_car_list .car_delete a:hover{ color: #e85718; }
 .shopping_cart ul.fillin li.the_invoice label{ font-size: 13.5px; font-weight: bold; color: #333; padding: 0; padding-left: 30px; }
 .shopping_cart ul.fillin li.the_invoice input{ padding: 0; height: inherit;}
 .shopping_cart ul.fillin li.invoice_fillin input{ margin-top: 5px; }
-
+.shopping_cart ul.fillin .the_checkbox{ position: relative; padding: 5px 0; }
+.shopping_cart ul.fillin .the_checkbox label{ padding: 0 0 0 30px; font-size: 13.5px; font-weight: bold; color: #333;}
 .shopping_cart .error_tips input, .shopping_cart .error_tips textarea{ background-color: #fff4f4; }
 
 .shopping_cart ul.fillin li .f_box{ width: 100%;}

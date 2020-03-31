@@ -1,4 +1,3 @@
-4
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 /* CSS Document */
@@ -258,15 +257,61 @@ ul.option_list .out_of_stock input[type=radio]:checked + label, ul.option_list .
 .food_items .input_quantity input{ width: 90px; }
 /*品項多選單選*/
 
-.explanation_contents{ width: 100%; height: 100vh; background-color: rgba(0,0,0,.5); position: fixed; z-index: 4; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.explanation_contents .explanation_middle{ max-height: 90vh; width: 90%; max-width: 500px; background-color: #fff; border-radius: 8px; overflow: hidden; -webkit-box-shadow: 0 0 10px #000; -moz-box-shadow: 0 0 10px #000; -o-box-shadow: 0 0 10px #000; -ms-box-shadow: 0 0 10px #000; box-shadow: 0 0 10px #000;}
-.explanation_contents .explanation_middle .ex_photo{ max-height: 90vh; overflow: hidden; position: relative; }
-.explanation_contents .explanation_middle .ex_photo p{ position: absolute; z-index: 2; text-align: center; color: #fff; background-color: #e91e63c4; font-weight: bold; padding: 10px 15px; border-radius: 4px;}
-.explanation_contents .explanation_middle .ex_photo p.ex1{ top: 10px; left: 0;}
-.explanation_contents .explanation_middle .ex_photo p.ex2{ top: calc(50%); right:0;}
-.explanation_contents .explanation_middle .ex_photo p.ex3{ bottom: 10px; left: 0;}
 
+/*選單上的箭頭*/
+.top_menu_box .arr_go_right{ position: absolute;}
+.top_menu_box .arr_go_right .dots div{ background-color: #ff9900;}
+.arr_go_right{ width: 40px; height: 100%; padding: 5px 10px 5px 5px; display: block; z-index: 10; right: 0; top: 0; 
+	display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f7f7f7+99&0+0,1+34,1+98 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(252,252,252,1) 34%, rgba(247,247,247,1) 98%, rgba(247,247,247,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(252,252,252,1) 34%,rgba(247,247,247,1) 98%,rgba(247,247,247,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(252,252,252,1) 34%,rgba(247,247,247,1) 98%,rgba(247,247,247,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 */}
+.arr_go_right .dots { width: 40px;  display: flex;  flex-flow: row nowrap;  align-items: center;  justify-content: space-between;}
+.arr_go_right .dots div { width: 10px;  height: 15px;  clip-path: polygon(38% 0, 100% 50%, 38% 100%, 0 99%, 60% 50%, 0 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
+.arr_go_right .dots div:nth-of-type(1) { animation-delay: -0.4s;}
+.arr_go_right .dots div:nth-of-type(2) { animation-delay: -0.2s;}
 
+.arr_go_left, .arr_go_top{display: inline-block;}
+.arr_go_left .dots { width: 40px;  display: flex;  flex-flow: row nowrap;  align-items: center;  justify-content: space-between;}
+.arr_go_left .dots div { width: 10px;  height: 15px;  clip-path: polygon(100% 0, 38% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
+.arr_go_left .dots div:nth-of-type(1) { animation-delay: -0.2s;}
+.arr_go_left .dots div:nth-of-type(2) { animation-delay: -0.4s;}
+.arr_go_left .dots div:nth-of-type(3) { animation-delay: -0.6s;}
+
+.arr_go_top .dots { width: 15px;}
+.arr_go_top .dots div { width: 15px;  height: 10px;  clip-path: polygon(100% 40%, 100% 65%, 50% 30%, 0 65%, 0 40%, 50% 0);  background-color: #fff;  animation: fade 0.8s ease-in-out alternate infinite;}
+.arr_go_top .dots div:nth-of-type(1) { animation-delay: -0.6s;}
+.arr_go_top .dots div:nth-of-type(2) { animation-delay: -0.4s;}
+.arr_go_top .dots div:nth-of-type(3) { animation-delay: -0.2s;}
+
+/*說明*/
+.explanation_contents{ width: 100%; height: 100vh; margin: 0; padding: 0; background-color: rgba(0,0,0,.5); position: fixed; z-index: 4; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.explanation_contents .explanation_middle{ max-height: 90vh; width: 90%; max-width: 460px; background-color: #fff; border-radius: 8px; overflow: hidden; -webkit-box-shadow: 0 0 10px #000; -moz-box-shadow: 0 0 10px #000; -o-box-shadow: 0 0 10px #000; -ms-box-shadow: 0 0 10px #000; box-shadow: 0 0 10px #000;}
+.explanation_contents .explanation_middle .ex_photo{ max-height:calc( 80vh - 65px); overflow: hidden; position: relative; }
+.explanation_contents .explanation_middle .ex_photo::after{ content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 100px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+99 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+ z-index: 2;}
+.explanation_contents .explanation_middle .ex_photo .ex{ position: absolute; z-index: 3; width: 100%; text-align: center; background-color: #747474c4; font-weight: bold; padding: 5px 15px; border-radius: 40px;}
+.explanation_contents .explanation_middle .ex_photo .ex p{ font-weight: bold; color: #fff; padding: 0; margin: 0; display: inline-block; font-size: 13.5px;}
+.explanation_contents .explanation_middle .ex_photo .ex1{ max-width: 200px; top: 30px; left:calc(50% - 100px);}
+.explanation_contents .explanation_middle .ex_photo .ex2{ max-width: 90px; right: 10px; border-radius: 15px; top: calc(50%);}
+.explanation_contents .explanation_middle .ex_photo .ex2 p{ padding-top: 5px; line-height: 20px;}
+.explanation_contents .explanation_middle .ex_photo .ex3{ max-width: 260px; bottom: 10px; left:calc(50% - 130px);}
+.explanation_contents .explanation_middle .ex_photo .ex3 p{ padding: 0 5px; }
+
+.explanation_contents .explanation_middle .arr_go_right{ background: none; display: inline-block;}
+.explanation_contents .the_button{ padding:15px 0;}
+
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+	
 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
     ul.shopping_car_list .car_delete a.yesDelets{ top:0px;}
 }
@@ -333,7 +378,7 @@ ul.option_list .out_of_stock input[type=radio]:checked + label, ul.option_list .
 
     .the_productbox .products_box ul.products_list li .product_info h4.sub_info{min-height: inherit;}
    /* ul.shopping_car_list .car_delete a.yesDelets{left:calc(50% - 25px); width: 50px; padding:6px 10px;}
-    ul.shopping_car_list .car_delete a.yesDelets p{ font-size: 13px;  }*/
+    ul.shopping_car_list .car_delete a.yesDelets p{ font-size: 13px;  }
 }
 @media (max-width:500px){
     .the_productbox .products_box{ padding: 15px;}
