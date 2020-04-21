@@ -467,6 +467,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 
 	.main_container .top_banner .middle_content p.left_p{ font-size: 11px; }
 	.main_container .travel_plan_content .area_photo{ height:100px;}
+	.main_container .travel_plan_content_two ul.note{ width: 100%; }
 	.main_container .choosed_area{ margin: 0 auto 0px auto; border-width: 1px; }
 	.main_container .choosed_area p.left_p{ width: 120px; font-size: 11px; }
 	.main_container .choosed_area p.area_title{ font-size: 14px; padding: 8px 10px; }
@@ -501,8 +502,9 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container ul.capacity_content li p.star{ font-size: 10px; }
 	.main_container ul.capacity_content li .capacity_img{ font-size: 9px;}
 	.main_container ul.note li p{ font-size: 12px; }
+	.main_container .tab_capacity .tab_inner ul li{ width: calc(96.5% / 3);}
 	.main_container .tab_capacity{ width: calc(100% - 30px);}
-	.main_container .tab_capacity > ul > li{ border-radius: 0 20px 0 0 padding: 5px 5px 5px 10px;}
+	.main_container .tab_capacity > ul > li{ border-radius: 0 20px 0 0 ;padding: 5px 5px 5px 10px; width: 33%; float: left; margin-right: 0.33%;}
 	.main_container .tab_capacity > ul > li p{ font-size: 11px; }
 }
 @media (max-width:350px){
@@ -516,7 +518,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 11px; }
 	.main_container .support_area_list h3.top_title_blue{ font-size: 12px; }
 
-	.main_container ul.capacity_content li .capacity_img span.main_title{ font-size: 12px; }
+	.main_container ul.capacity_content li .capacity_img span.main_title{ font-size: 12px; min-height: 108px; }
 	.main_container .tab_capacity .tab_inner img{ width: 38px; }
 	.main_container .tab_capacity .tab_inner p.ex{ font-size: 10px; }
     .main_container .tab_capacity > ul > li{ padding: 2px 6px; width: calc(98% / 3);}
