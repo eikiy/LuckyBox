@@ -8,7 +8,6 @@
 	<meta name="MobileOptimized" content="width">
 	<meta name="HandheldFriendly" content="true">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
 	<link rel="stylesheet" href="css/style-menu.css">
 	<link rel="stylesheet" href="css/standard-flow.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -30,13 +29,20 @@
 	    	return false;
 	    });
 	 });
+	 $(function(){
+	  	$(".single_order").click(function(){
+	  		$(this).find(".open_detail").slideToggle();
+	    	return false;
+	    });
+	 });
 	</script>
 </head>
 <body>
 	<main class="shop_mainbox shopping_order">
 		<section class="order_tools">
 			<div class="the_button">
-				<a class="btn gray" href="shoppingcart_01.html">上一步</a>
+				<a class="btn gray" href="shoppingcart_01.html">等待訂單</a>
+				<a class="btn c_org" href="finished.html">前往結帳</a>
 			</div>
 		</section>
 		<section class="content_box">
@@ -81,17 +87,150 @@
 		    				<span class="r_info">立刻取餐</span>
 		    			</p>
 		    		</li>
-		    		<li>
+		    		<!-- <li>
 		    			<p class="s_f">訂單項目</p>
+		    		</li> -->
+		    		<li class="none_line">
+		    			<div class="order_group_total">
+				    		<div class="top_title clearfix">
+				                <div class="abox car_name">
+				                   <p>訂單</p>
+				                </div>
+				                <div class="abox car_nb">
+				                    <p>商品數量</p>
+				                </div>
+				                <div class="abox car_money">
+				                    <p>金額</p>
+				                </div>
+				            </div>
+				    		<div class="single_order clearfix">
+				    			<div class="abox car_name">
+				    				<p class="product_name">Ken</p>
+					            </div>
+					            <div class="abox car_nb">
+					            	<p>2</p>
+				                </div>
+				                <div class="abox car_money">
+				                   <p>NT$200</p>
+				                </div>
+				                <div class="abox switch">
+				                	<i class="fas fa-sort-down"></i>
+				                </div>
+				                <div class="open_detail">
+					                <table class="order_list" cellpadding="0" cellspacing="" border="0">
+							    		<tr class="top_title clearfix">
+							                <th class="sbox car_name">
+							                   <p>商品名稱</p>
+							                </th>
+							                <th class="sbox car_nb">
+							                    <p>數量</p>
+							                </th>
+							                <th class="sbox car_money">
+							                    <p>金額</p>
+							                </th>
+							            </tr>
+							    		<tr class="clearfix">
+							    			<td class="sbox car_name">
+							    				<p class="product_name">產品AAAAA產品AAAAA產品AAAAA</p>
+								            </td>
+								            <td class="sbox car_nb">
+								            	<p>1</p>
+							                </td>
+							                <td class="sbox car_money">
+							                   <p>NT$100</p>
+							                </td>
+							    		</tr>
+							    		<tr class="clearfix">
+							    			<td class="sbox car_name">
+							    				<p class="product_name">產品AAAAA</p>
+								            </td>
+								            <td class="sbox car_nb">
+								            	<p>1</p>
+							                </td>
+							                <td class="sbox car_money">
+							                   <p>NT$100</p>
+							                </td>
+							    		</tr>
+							    		<tr class="clearfix">
+							    			<td colspan="3" class="sbox order_user_total">
+							    				<p>總金額：$200</p>
+							    			</td>
+							    		</tr>
+							        </table>
+							    </div>
+				    		</div>
+				    		<div class="single_order clearfix">
+				    			<div class="abox car_name">
+				    				<p class="product_name">Kay lai</p>
+					            </div>
+					            <div class="abox car_nb">
+					            	<p>2</p>
+				                </div>
+				                <div class="abox car_money">
+				                   <p>NT$280</p>
+				                </div>
+				                <div class="abox switch">
+				                	<i class="fas fa-sort-down"></i>
+				                </div>
+				                <div class="open_detail">
+					                <table class="order_list" cellpadding="0" cellspacing="" border="0">
+							    		<tr class="top_title clearfix">
+							                <th class="sbox car_name">
+							                   <p>商品名稱</p>
+							                </th>
+							                <th class="sbox car_nb">
+							                    <p>數量</p>
+							                </th>
+							                <th class="sbox car_money">
+							                    <p>金額</p>
+							                </th>
+							            </tr>
+							    		<tr class="clearfix">
+							    			<td class="sbox car_name">
+							    				<p class="product_name">產品AAAAA產品AAAAA產品AAAAA</p>
+								            </td>
+								            <td class="sbox car_nb">
+								            	<p>1</p>
+							                </td>
+							                <td class="sbox car_money">
+							                   <p>NT$140</p>
+							                </td>
+							    		</tr>
+							    		<tr class="clearfix">
+							    			<td class="sbox car_name">
+							    				<p class="product_name">產品AAAAA</p>
+								            </td>
+								            <td class="sbox car_nb">
+								            	<p>1</p>
+							                </td>
+							                <td class="sbox car_money">
+							                   <p>NT$140</p>
+							                </td>
+							    		</tr>
+							    		<tr class="clearfix">
+							    			<td colspan="3" class="sbox order_user_total">
+							    				<textarea>不要洋蔥，謝謝。</textarea>
+							    			</td>
+							    		</tr>
+							    		<tr class="clearfix">
+							    			<td colspan="3" class="sbox order_user_total">
+							    				<p>總金額：$280</p>
+							    			</td>
+							    		</tr>
+							        </table>
+							    </div>
+				    		</div>
+				        </div>
+		    			
 		    		</li>
-		    		<li class="buy_list">
+		    		<li class="buy_list none_line">
 		    			<p class="clearfix">
-		    				<span class="l_t">蝦仁蛋炒飯</span>
-		    				<span class="r_nb">1$80 = $80</span>
+		    				<span class="l_t">一般折扣(金額滿100折10元)</span>
+		    				<span class="r_nb c_org">-$10</span>
 		    			</p>
 		    		</li>
 		    		<li class="width_f">
-		    			<p>總金額：$160</p>
+		    			<p>總金額：$470</p>
 		    		</li>
 		        </ul>
 		    </form>

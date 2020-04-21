@@ -98,9 +98,8 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .the_button a.c_gray{ background-color: #bebebe; color: #fff; }
 .the_button a.copy{ min-width: 120px; }
 .shopping_order .input_quantity{text-align: center;}
-.shopping_order .the_button{ padding: 15px 0;}
+.shopping_order .the_button{ padding: 8px 0;}
 .shopping_order .the_button a.btn{ margin: 0 5px; }
-
 
 .fadebox{ width: 100% !important; }
 .fadebox input{ width: 100%; max-width: 500px; border:1px solid #fff; padding: 0 15px; margin: 0 auto; text-align: center; font-size: 15px; border-radius: 50px; height: 40px; background-color: #f8f8f8;}
@@ -152,7 +151,7 @@ select{ appearance:none;  -moz-appearance:none;  -webkit-appearance:none;  -ms-a
 .shop_mainbox .top_step ul li.btn_in p span{ color: #e85718; }
 
 .shop_mainbox .other_remarks .top_step ul li{ float: none; margin: 0 auto;}
-
+.groupbuy_container .top_step{ top: 44px; }
 ul.shopping_car_list{padding-bottom: 25px;}
 ul.shopping_car_list .sbox{ float: left; width: 25%; padding: 10px 0; min-height: 95px;  border-bottom: 1px solid #f5f5f5;text-align: center;  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
 ul.shopping_car_list .top_title .sbox{ min-height: inherit; background-color: #f5f5f5; border-top: 1px solid #e4e4e4;}
@@ -278,13 +277,17 @@ p.error i{ padding-right: 5px; }
 .order_list{ width: 100%; padding: 0 15px; margin: 0 auto; padding-bottom: 25px;}
 .order_list .sbox{ width:25%; padding: 10px 0; vertical-align: middle; font-weight: inherit; /* min-height: 45px;*/  border-bottom: 1px solid #f5f5f5; }
 .order_list .top_title .sbox{ text-align: center; background-color: #f5f5f5; border-top: 1px solid #e4e4e4; vertical-align: middle; align-content: center; }
+.order_list .order_user{ border-top: 1px solid #dfdfdf; padding: 5px 0;}
+.order_list .order_user p{ font-weight: bold;}
+.order_list .order_user_total{ text-align: right; padding: 10px; }
+.order_list .order_user_total p{ font-weight: bold; }
 .order_list .car_name{width:calc(75% - 80px);}
 .order_list tr td.car_nb, .order_list tr td.car_money{text-align: center;}/*  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center*/}
 .order_list .car_name p.product_name{ text-align:left; padding: 5px; width: 100%;}
 .order_list .car_nb{ width: 80px; }
 
 ul.order_list_done{ width: 100%; margin: 0 auto; max-width: 500px; padding: 10px 0;}
-ul.order_list_done li{padding: 6px 0; border-bottom: 1px solid #f5f5f5;}
+ul.order_list_done li{padding: 8px 0; border-bottom: 1px solid #f5f5f5;}
 ul.order_list_done li p{ font-size: 14px; line-height: 20px; }
 ul.order_list_done li span{ float: left; letter-spacing: 1px; }
 ul.order_list_done li span.l_t{ width: 90px; text-align: left; padding-left: 15px; color: #555;}
@@ -292,9 +295,38 @@ ul.order_list_done li span.r_info{ width:calc(100% - 90px); }
 ul.order_list_done li.bottom_line{ border-bottom: 1px dashed #a2a2a2; padding-bottom: 8px; margin-bottom: 12px;}
 ul.order_list_done li.buy_list span.l_t{ width:calc(100% - 120px); text-align: left; color: #333; padding-left: 15px;}
 ul.order_list_done li.buy_list span.r_nb{ width:120px; text-align: right; padding-right: 15px;}
+ul.order_list_done li.buy_list .c_org{ color: #e85718; }
 ul.order_list_done li.width_f{ border: none; }
 ul.order_list_done li.width_f p{ text-align: center; padding: 10px 0; font-size: 15px; color: #e85718; font-weight: bold; background-color: #fff7f7; border-radius: 10px;}
 ul.order_list_done li p.s_f{ font-size: 12px; color: #666; padding-left: 15px; }
+ul.order_list_done .none_line{ border: none; }
+
+.order_group_total{ width: 100%; }
+.order_group_total .abox{ float: left; width: 30%; text-align: center; }
+.order_group_total .switch{ width: 10%; }
+.order_group_total .switch i{ width: 30px; height: 30px; line-height: 30px; text-align: center; cursor: pointer; color: #cd9999; }
+.order_group_total .abox p{ padding:10px;}
+.order_group_total .top_title{ background-color: #f2e4e4; border-radius: 10px; }
+.order_group_total .top_title .abox p{ font-weight: bold;}
+.order_group_total .single_order{ border-bottom: 1px dashed #c5c5c5; }
+.order_group_total .single_order .switch:hover{ opacity: .8; }
+.order_group_total .order_list{ padding-bottom: 5px; }
+.order_group_total .order_list .top_title{ background-color: initial; }
+.order_group_total .order_list .order_user_total{ border:none; }
+.order_group_total .order_list .order_user_total p{ color: #8b7272;}
+.order_group_total .open_detail ul.order_list_done li p{ font-size: 13px; }
+.order_group_total .open_detail{ display: none; padding:0 10px 10px 10px; float: left; width: 100%; }
+.order_group_total .open_detail table{ width: 100%; }
+
+.order_finished ul.order_list_done li span{ letter-spacing: 0;}
+.order_finished ul.order_list_done li span.l_t{ width: 120px; text-align: right;  padding-left: 0; padding-right: 15px;}
+.order_finished ul.order_list_done li span.r_info{width: calc(100% - 120px);}
+
+.order_finished .btn_type{ padding: 0px 10px; border-radius: 50px; display: inline-block; font-size: 12px; color: #fff; line-height: 22px; background-color: #ff9800; margin: 0 3px; }
+.order_finished .bg_c_green{ background-color: #8BC34A; }
+.order_finished .bg_c_org{ background-color: #e85718; }
+.order_finished .order_status{ text-align: center; }
+.order_finished ul.order_list_done .none_line{ padding-bottom: 0; }
 
 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 	ul.shopping_car_list .car_delete a.yesDelets{ top:0px;}
@@ -339,7 +371,7 @@ ul.order_list_done li p.s_f{ font-size: 12px; color: #666; padding-left: 15px; }
 	.shopping_cart h3.top_title{padding-bottom: 0px;}
 	.shopping_order .shopping_cart{ padding: 0 15px !important;}
 	.shopping_order .order_list{ padding: 0}
-	.shopping_order .order_list p{ font-size: 14px; }
+	.shopping_order .order_list p{ font-size: 13px; }
 	.shopping_cart p.quantity_products{padding-bottom: 10px;}
 	ul.shopping_car_list li.top_title{display: none;}
 	ul.shopping_car_list .sbox{width:calc(100% - 160px); padding: 0; min-height: 75px;}

@@ -79,7 +79,29 @@
   	</script>    
 </head>
 <body>
-	<main class="shop_mainbox shopping_order">
+	<main class="shop_mainbox shopping_order groupbuy_container">
+		<div class="icon_group_buy">
+			<a href="#group_buy" rel="modal:open">
+				<i class="fas fa-link"></i><br>
+				<p>分享</p>
+			</a>
+		</div>
+		<div class="icon_update">
+			<a href="#" rel="modal:open">
+				<i class="fas fa-sync-alt"></i>
+				<p>取得訂單</p>
+			</a>
+		</div>
+		<section class="top_group_buy_tools clearfix">
+			<div class="group_title clearfix">
+				<i class="fas fa-user-friends"></i>
+				<div class=" clearfix">
+					<p>一起點進行中</p>
+					<p>編號 123258498798</p>
+				</div>
+			</div>
+			<p class="btn"><a class="btn c_org" href="#stop_group_buy" rel="modal:open">取消</a></p>
+		</section>
 		<section class="order_tools">
 			<div class="the_button">
 				<a class="btn gray" href="index.html">繼續選購</a>
@@ -98,6 +120,11 @@
 		    	<h3 class="top_title">愛物聯小吃店 - 分店1</h3>
 		    	<p class="quantity_products">共有 <span>21</span> 項商品</p>
 		    	<table class="order_list" cellpadding="0" cellspacing="" border="0">
+		    		<tr class="clearfix">
+		    			<th colspan="3" class="order_user">
+		    				<p>KEN 的訂單</p>
+		    			</th>
+		    		</tr>
 		    		<tr class="top_title clearfix">
 		                <th class="sbox car_name">
 		                   <p>商品名稱</p>
@@ -117,7 +144,7 @@
 			            	<p>1</p>
 		                </td>
 		                <td class="sbox car_money">
-		                   <p>NT$105</p>
+		                   <p>NT$100</p>
 		                </td>
 		    		</tr>
 		    		<tr class="clearfix">
@@ -128,8 +155,63 @@
 			            	<p>1</p>
 		                </td>
 		                <td class="sbox car_money">
-		                   <p>NT$105</p>
+		                   <p>NT$100</p>
 		                </td>
+		    		</tr>
+		    		<tr class="clearfix">
+		    			<td colspan="3" class="sbox order_user_total">
+		    				<p>總金額:$200</p>
+		    			</td>
+		    		</tr>
+		        </table>
+		        <table class="order_list" cellpadding="0" cellspacing="" border="0">
+		    		<tr class="clearfix">
+		    			<th colspan="3" class="order_user">
+		    				<p>KAY LAI 的訂單</p>
+		    			</th>
+		    		</tr>
+		    		<tr class="top_title clearfix">
+		                <th class="sbox car_name">
+		                   <p>商品名稱</p>
+		                </th>
+		                <th class="sbox car_nb">
+		                    <p>數量</p>
+		                </th>
+		                <th class="sbox car_money">
+		                    <p>金額</p>
+		                </th>
+		            </tr>
+		    		<tr class="clearfix">
+		    			<td class="sbox car_name">
+		    				<p class="product_name">產品AAAAA產品AAAAA產品AAAAA</p>
+			            </td>
+			            <td class="sbox car_nb">
+			            	<p>1</p>
+		                </td>
+		                <td class="sbox car_money">
+		                   <p>NT$140</p>
+		                </td>
+		    		</tr>
+		    		<tr class="clearfix">
+		    			<td class="sbox car_name">
+		    				<p class="product_name">產品AAAAA</p>
+			            </td>
+			            <td class="sbox car_nb">
+			            	<p>1</p>
+		                </td>
+		                <td class="sbox car_money">
+		                   <p>NT$140</p>
+		                </td>
+		    		</tr>
+		    		<tr class="clearfix">
+		    			<td colspan="3" class="sbox order_user_total">
+		    				<textarea>不要洋蔥，謝謝。</textarea>
+		    			</td>
+		    		</tr>
+		    		<tr class="clearfix">
+		    			<td colspan="3" class="sbox order_user_total">
+		    				<p>總金額:$280</p>
+		    			</td>
 		    		</tr>
 		        </table>
 		    </form>
@@ -283,6 +365,18 @@
 	    		<a class="btn c_gray" href="#" rel="modal:close">取消</a>
 	    		<a class="btn c_org" class="done" href="#">確定</a>
 	  		</div>
+	    </div>
+	    <!-- 停止一起點 -->
+	    <div id="stop_group_buy" class="modal fade fadebox group_buy stop_buy">
+	    	
+	    	<p class="top_title">
+	    		<i class="fas fa-exclamation-triangle"></i>
+	    		訂單確認後將停止「一起點」，尚未送出訂單的點友將無法送單，確定要繼續嗎?
+	    	</p>
+	    	<div class="the_button">
+		    	<a class="btn c_gray" href="#" rel="modal:close">取消</a>
+		    	<a class="btn c_org" href="#" rel="modal:close">確定</a>
+		  	</div>
 	    </div>
 	</main>
 </script>
