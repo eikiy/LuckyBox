@@ -134,7 +134,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .tab_capacity .tab_inner p.top{ position: absolute; top: -3px; font-size: 12px; left: 0; width: 100%; }
 
 .main_container ul.capacity_content{ width:calc( 100% - 40px); max-width: 1130px; padding:10px 0 50px 0; margin: 0 auto;  text-align: center;}
-.main_container ul.capacity_content li{ display: inline-block; width:32.5%; padding:15px; vertical-align: top;}
+.main_container ul.capacity_content li{ display: inline-block; width:32.3%; padding:15px; vertical-align: top;}
 .main_container ul.capacity_content li a{ border-radius: 20px; border: 1.8px solid #333; padding:40px 30px 10px 30px; min-height: 160px; display: block; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24; position: relative;}
 .main_container ul.capacity_content li a:hover{ opacity: .8; background-color: #fdfdfd; }
 .main_container ul.capacity_content li .capacity_img{ max-width:100%; border-bottom: 2px solid #6091CD; font-size: 13.5px; font-weight: 500; min-height: 88px; padding:0 30% 10px 0; position: relative; display: grid;}
@@ -456,7 +456,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container .support_area_list ul.area_info li p.info{ font-size: 12px; }
 
 	.main_container ul.note li p{ font-size: 13px; }
-	.main_container ul.capacity_content li{ padding: 3px; }
+	.main_container ul.capacity_content li{ padding: 2px; }
 	.main_container ul.capacity_content li a{ font-size: 12px; }
 	.main_container ul.capacity_content li a{ border-radius: 10px; padding-left: 1px; padding-right: 1px; }
 	.main_container ul.capacity_content li .capacity_img{ min-height: 140px; }
@@ -499,8 +499,10 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 	.main_container ul.capacity_content li .labels p.star,
 	.main_container ul.capacity_content li .labels p.hot,
 	.main_container ul.capacity_content li p.star{ font-size: 10px; }
+	.main_container ul.capacity_content li .capacity_img{ font-size: 9px;}
 	.main_container ul.note li p{ font-size: 12px; }
-	.main_container .tab_capacity > ul > li{ border-radius: 0 20px 0 0;}
+	.main_container .tab_capacity{ width: calc(100% - 30px);}
+	.main_container .tab_capacity > ul > li{ border-radius: 0 20px 0 0 padding: 5px 5px 5px 10px;}
 	.main_container .tab_capacity > ul > li p{ font-size: 11px; }
 }
 @media (max-width:350px){
