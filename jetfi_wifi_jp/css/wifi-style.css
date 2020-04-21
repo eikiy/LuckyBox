@@ -242,12 +242,12 @@ body { font-size: 1.6rem;}
 
 footer{ background-color: #ededed;}
 footer .contact_info_inner { padding: 20px 40px 40px;}
-footer div.inner{width: 100%; max-width: 1100px; margin: 0 auto;padding: 2em 2em 6em;;text-align: left;background: url(../images/svg/bg_footer.jpg) 80% bottom no-repeat;background-size: contain}
+footer div.inner{width: 100%; max-width: 1100px; margin: 0 auto;padding: 2em 2em 6em;;text-align: left;background: url(../images/svg/bg_footer.jpg) 80% bottom no-repeat;background-size: contain;}
 footer .copyright-area{ position: relative; padding: 5px 20px 12px; color: #fff; background-color: #221815; text-align: center; font-weight: 400;}
 footer .copyright-area span { font-size: 11px; font-size: 1.1rem; color: #fff; display:block; }
 footer .copyright-area a { display:block; font-size: 13px; font-size: 1.3rem; line-height:2.1; color: #efefef; }
 footer .copyright-area a:hover { opacity:0.7; transition: 0.4s ease;}
-footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color: #221815}
+footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color: #221815;}
 
 #ftr_2019{ position: relative;}
 #ftr_2019 h3{ color: #1b3b7c; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-feature-settings: "pwid";	font-size: 2rem; display: inline-block; vertical-align:top; padding: 5px 40px 5px 0;}
