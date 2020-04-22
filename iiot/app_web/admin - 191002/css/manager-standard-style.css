@@ -237,6 +237,19 @@ h3.top_title{ text-align: center; padding: 20px 0 0; font-size: 16px; font-weigh
 .setting_list ul.list li.textarea_box p.l_title{ width: 100%; font-weight: bold; padding-bottom: 5px; border-bottom: 1px solid #e2e2e2; }
 .setting_list ul.list li.textarea_box textarea{ float: left; width: 100%; min-height: 50px; max-width: 364px; min-width: 200px; padding: 5px 0px; border-radius: 4px; }
 .setting_list ul.list li.textarea_box textarea::placeholder{ color: #999; }
+
+.setting_list ul.list li.upload_photo{ border-radius: 18px; padding: 0;  overflow: hidden; background-size: cover; background-position: center center; background-repeat: no-repeat;}
+.setting_list ul.list li.upload_photo a{ width:100%; height: 220px; display: block; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.setting_list ul.list li.upload_photo a:hover{ opacity: .8; }
+.setting_list ul.list li.upload_photo a i{ color: #d7cfcf; font-size: 55px; padding:3px 0; display: block; }
+.setting_list ul.list li.upload_photo a p{ color: #333; font-size: 14px; }
+.setting_list ul.list li.upload_photo a p span{ font-size: 12px; color: #999; padding: 5px 10px; display: inline-block; }
+.setting_list ul.list li.upload_photo a.upload_first{ display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.setting_list ul.list li.upload_photo a.photo_choosed { position: relative; }
+.setting_list ul.list li.upload_photo a.photo_choosed p{ position: absolute; bottom: 0; width: 100%; color: #fff; padding:10px 0; line-height: 18px; background-color: rgba(0,0,0,.5); }
+.setting_list ul.list li.upload_photo a.photo_choosed i{ font-size: 20px; padding-bottom: 10px; color: #fff;}
+.setting_list ul.list li.upload_photo a.photo_choosed p span{ color: #c5c5c5; }
+
 .setting_list .bottom_btn{  width:calc(100% - 30px); z-index: 1;  max-width: 404px; margin: 0 auto;}
 .setting_list .bottom_btn p.btn{ cursor: pointer; }
 .setting_list .bottom_btn p.btn a{ color: #fff; text-align: center; padding: 12px 5px; display: block; background-color: #ff9900; border-radius: 40px;}
@@ -455,6 +468,9 @@ ul.pageBox li p a.btn_in{ color: #ff9900; font-weight: bold;}
 	.order_management ul.order_detail li p, .terms_status ul.status_info li p, .gallery_box .top_box a.the_add{ font-size: 13px; }
 	.gallery_box .top_box{ padding: 5px 15px; }
 	.setting_list .bottom_btn p.btn, .order_management .bottom_btn p.btn{ font-size: 14px; }
+	.setting_list ul.list li.upload_photo a{ height: 170px;}
+	.setting_list ul.list li.upload_photo a p span{ font-size: 10px; }
+	.setting_list ul.list li.upload_photo a i{ font-size: 40px; }
 	ul.pageBox li p a{ padding:5px;}
 	.fadebox .manager_granted ul.granted_item li p{ font-size: 13px; }
 }
@@ -492,9 +508,9 @@ ul.pageBox li p a.btn_in{ color: #ff9900; font-weight: bold;}
 	.modal{padding: 15px !important;}
 }
 @media (max-width:350px){
-	.setting_list ul.list li p, .setting_list ul.list li.textarea_box textarea{ font-size: 13px; }
+	.setting_list ul.list li p, .setting_list ul.list li.textarea_box textarea, .setting_list ul.list li.upload_photo a p{ font-size: 13px; }
 	.fadebox .category_list ul.list{ padding: 0; }
-	.fadebox .category_list ul.list li p{font-size: 13px;}
+	.fadebox .category_list ul.list li p{ font-size: 13px;}
 	.fadebox .category_list .sequence a{ min-width: 35px; height: 35px; margin: 0; line-height: 35px; font-size: 10px; }
 	.bottom_manager_tools p.btn{ font-size: 12px; }
 	.bottom_manager_tools p.btn a{ padding: 6px 8px; }
