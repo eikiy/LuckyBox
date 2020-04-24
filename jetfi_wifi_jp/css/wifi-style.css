@@ -29,7 +29,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .header_container{ z-index:100; width: 100%; background-color: #fff; padding:16px 26px;border-bottom: 1px solid #d6d6d6;}
 .header_container p.tagline{ float: left; font-size: 13px; margin-left:24px; font-weight: 500; padding-top: 3px; }
 .header_container a.gnav-logo{ float: left; display: inline-block; }
-.header_container a.gnav-logo img{ width: 110px;}
+.header_container a.gnav-logo img{ width: 110px; max-height: 44px;}
 
 
 .img_default, .img_default::before, .img_default::after{ background-position: center center; background-repeat: no-repeat; background-size: contain;}
@@ -40,7 +40,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .top_banner{ width: 100%; text-align: center;}
 .main_container .top_banner h3{ font-size: 30px;}
 .main_container .top_banner .middle_content{ position: relative; height: 240px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.main_container .top_banner .middle_content p.left_p{ position: absolute; top: 10px; left: 25px; font-size: 17px; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 3px rgba(0,0,0,.8); }
+.main_container .top_banner .middle_content p.left_p{ position: absolute; top: 10px; left: 25px; font-size: 17px; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 3px rgba(0,0,0,.8);  font-weight: bold\9; font-weight: bold\0 ; +font-weight: bold; _font-weight: bold;}
 
 .main_container .home_banner h3{ padding-top: 30px; }
 .main_container .home_banner p span{ font-size: 25px; position: relative; padding-right: 150px; }
@@ -53,7 +53,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .choosed_area p{ float: left; padding: 8px 10px; line-height: 30px;}
 .main_container .choosed_area p.left_p{  width: 230px; font-size: 16px; background-color: #FFC924; text-align: center; position: relative; }
 .main_container .choosed_area p.left_p::after{ content: ""; position: absolute; right: 0; top: 0; height: 100%; border-right: 1.5px solid #333; }
-.main_container .choosed_area p.area_title{ font-size: 20px; padding:8px 20px; font-weight: 500;}
+.main_container .choosed_area p.area_title{ font-size: 20px; padding:8px 20px; font-weight: 500; font-weight: bold\9; font-weight: bold\0 ; +font-weight: bold; _font-weight: bold;}
 
 .main_container h3.top_title{ padding:12px 10px; max-width: 1100px; margin: 0 auto 30px auto; font-size: 20px; font-weight: bold; color: #222; background-color: #FFC924;}
 .main_container h3.top_title span{ position: relative; padding-left: 55px; font-weight: 500;}
@@ -93,8 +93,9 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .area_content ul.area_list li .area_info{ width: 100%; min-height: 128px; padding: 10px 0;}
 .main_container .area_content ul.area_list li h3.area_title{ text-align: center; font-weight: bold; position: relative; font-size: 19px; color: #000; margin-bottom: 15px;}
 .main_container .area_content ul.area_list li h3.area_title::after{ content: ""; bottom: -10px; left: 25%; display: block; width: 50%; position: absolute; border-bottom: 1.8px solid #6091CD;}
-.main_container .area_content ul.area_list li h3.area_title span{ font-weight: 500; padding: 6px 8px; line-height: 25px;}
+.main_container .area_content ul.area_list li h3.area_title span{ font-weight: 500; padding: 6px 8px; line-height: 25px; font-weight: bold\9; font-weight: bold\0 ; +font-weight: bold; _font-weight: bold;}
 .main_container .area_content ul.area_list li h3.area_title span.f_s{ font-size: 16px; border: none; padding: 0; font-weight: 400; }
+
 .main_container .area_content ul.area_list li h4.area_sub_title{ font-size: 15px; line-height: 25px; color: #000; padding: 7px 15px; display: inline-block; font-weight: 400;}
 .main_container .area_content ul.area_list li a:hover{ opacity: .9; }
 
@@ -161,10 +162,10 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container ul.note li p{ font-size: 14px; font-weight: 300;} 
 
 .main_container .support_area_list{ width:calc( 100% - 40px); max-width: 1100px; padding: 40px 0; margin: 0 auto; }
-.main_container .support_area_list h3.top_title_blue{ padding:12px 20px; max-width: 1100px; margin: 0 auto 30px auto; font-size: 20px; font-weight: 500; color: #fff; background-color: #608AC6; position: relative;}
+.main_container .support_area_list h3.top_title_blue{ padding:12px 20px; max-width: 1100px; margin: 0 auto 30px auto; font-size: 20px; font-weight: 500; color: #fff; background-color: #608AC6; position: relative; font-weight: bold\9; font-weight: bold\0 ; +font-weight: bold; _font-weight: bold;}
 .main_container .support_area_list ul.area_info{ width: 100%; padding: 0 10px; }
 .main_container .support_area_list ul.area_info li{ padding-bottom: 20px; }
-.main_container .support_area_list ul.area_info li h4.area_title{ font-size: 15px; font-weight:500; border-bottom: 1px solid #608AC6; padding: 10px 0;}
+.main_container .support_area_list ul.area_info li h4.area_title{ font-size: 15px; font-weight:500; border-bottom: 1px solid #608AC6; padding: 10px 0; font-weight: bold\9; font-weight: bold\0 ; +font-weight: bold; _font-weight: bold;}
 .main_container .support_area_list ul.area_info li p.info{ font-size: 14px; font-weight: 300; padding: 10px 0; }
 
 .main_container .travel_plan_content{ width: 100%; max-width: 1100px; margin: 0 auto 50px auto; border-radius: 20px; border: 1.8px solid #333; display: block; overflow: hidden; box-shadow: 4px 4px 0 #FFAF24;}
@@ -175,7 +176,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .travel_plan_content .plan_info .show_more_info p{ font-size: 13px; }
 .main_container .travel_plan_content .plan_info .show_more_info .mob_show{ padding: 5px 0; }
 .main_container .travel_plan_content .area_photo{ width: 40%; float: left; background-color: #f3f3f3; height: 470px;}
-.main_container .travel_plan_content .area_photo .the_photo{ float: left; width:calc(100% / 3); height: 50%; display: block;  background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.main_container .travel_plan_content .area_photo .the_photo{ float: left; width:33.33%; height: 50%; display: block;  background-position: center center; background-repeat: no-repeat; background-size: cover; }
 .main_container .travel_plan_content .area_photo .photo_01, .main_container .travel_plan_content .area_photo .photo_02{ width: 50%;}
 
 .main_container .travel_plan_content_two{ width: 100%; max-width: 1100px; margin: 0 auto 50px auto;}
@@ -225,7 +226,7 @@ select{ appearance:none; -moz-appearance:none; -webkit-appearance:none; -ms-appe
 .main_container .premium_plan .plan_img div p{ padding: 10px 0; font-size: 13px; font-weight: 500; text-align: center;}
 
 .inside_container .top_banner{ background-color: inherit; }
-.inside_container .top_banner h3{ font-size: 40px; color:#fff; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9); }
+.inside_container .top_banner h3{ font-size: 40px; color:#fff; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9); font-weight: bold\9; font-weight: bold\0 ; +font-weight: bold; _font-weight: bold; }
 .inside_container .top_banner p.sub_title{ padding-top: 15px; z-index: 1; font-size: 25px; letter-spacing: 5px; color:#fff; font-weight: 600; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,.9); }
 .inside_container .top_banner .middle_content{ background-size: cover; }
 .inside_container .top_banner .middle_content::after{ content: ""; z-index: 1; position: absolute; top: 0; left: 0; width: 75px; height: 100%; display: block;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */}
@@ -270,6 +271,12 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 
 .sp{ display: none !important;}
 
+:root .inside_container .top_banner h3,
+:root .main_container .top_banner .middle_content p.left_p,
+:root .main_container .support_area_list h3.top_title_blue,
+:root .main_container .choosed_area p.area_title,
+:root .main_container .support_area_list ul.area_info li h4.area_title,
+:root .banne .main_container .area_content ul.area_list li h3.area_title span{ font-weight: bold; }
 
 @media (max-width:1200px){
 	.main_container .area_content .area_menu ul.choose_country li{ min-width: 30%; }
@@ -355,7 +362,7 @@ footer p.copyright{padding: 1em;text-align: center;color: #fff;background-color:
 @media (max-width:768px) {
 	.header_container{ position: fixed; top: 0; left: 0; padding: 4.5px 20px; -webkit-box-shadow: 0px -3px 10px 0 #333;text-align: center;}
 	.header_container a.gnav-logo{ float: none; }
-	.header_container a.gnav-logo img{ width: 90px;}
+	.header_container a.gnav-logo img{ width: 90px; height: 36px;}
 	.header_container p.tagline{ display: none; }
 	.main_container{ padding-top: 50px;}
 	.main_container .travel_plan_content .plan_info .show_more_info{ border: 1.8px solid #60A4E0;}
