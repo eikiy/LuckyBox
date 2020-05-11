@@ -8,8 +8,6 @@
 	<meta name="MobileOptimized" content="width">
 	<meta name="HandheldFriendly" content="true">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style-menu.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -22,14 +20,6 @@
     	.modal{box-shadow: 0 0 10px #0009;}
     </style>
     <script type="text/javascript">
-     $(function(){
-     	// top 菜單
-	  	$(".swiper-slide").click(function(){
-	  		$(this).parent().find(".swiper-slide p").removeClass("btn_in");
-	        $(this).find("p").addClass("btn_in");
-	    	return false;
-	    });
-	 });
 	 $(function () {
  		$('#store_notice').modal('show');
 	});
@@ -67,21 +57,20 @@
 				  <div></div>
 				</div>
 			</div>
-			<!-- Swiper -->
-		  <div class="swiper-container">
-		    <div class="swiper-wrapper">
-		      <div class="swiper-slide"><p class="btn_in">Category 1</p></div>
-		      <div class="swiper-slide"><p>Category 2<span class="nb">5</span></p></div>
-		      <div class="swiper-slide"><p>Category 3</p></div>
-		      <div class="swiper-slide"><p>Category 4</p></div>
-		      <div class="swiper-slide"><p>Category 5</p></div>
-		      <div class="swiper-slide"><p>Category 6</p></div>
-		      <div class="swiper-slide"><p>如果文字有八個字</p></div>
-		      <div class="swiper-slide"><p>Category 8</p></div>
-		      <div class="swiper-slide"><p>Category 9</p></div>
-		      <div class="swiper-slide"><p>Category 10</p></div>
-		    </div>
-		  </div>
+		  	<div class="swiper-container">
+		    	<div class="swiper-wrapper" style="width: 1000%;"><!-- 要算寬度的樣子 -->
+			      <div class="swiper-slide"><p class="btn_in">Category 1</p></div>
+			      <div class="swiper-slide"><p>Category 2<span class="nb">5</span></p></div>
+			      <div class="swiper-slide"><p>Category 3</p></div>
+			      <div class="swiper-slide"><p>Category 4</p></div>
+			      <div class="swiper-slide"><p>Category 5</p></div>
+			      <div class="swiper-slide"><p>Category 6</p></div>
+			      <div class="swiper-slide"><p>如果文字有八個字</p></div>
+			      <div class="swiper-slide"><p>Category 8</p></div>
+			      <div class="swiper-slide"><p>Category 9</p></div>
+			      <div class="swiper-slide"><p>Category 10</p></div>
+			    </div>
+			 </div>
 		</section>
 		<div class="icon_group_buy">
 			<a href="#group_buy" rel="modal:open">
@@ -491,15 +480,6 @@
 		    </div>
 	    </div>
 	</main>
-
-	<!-- Swiper JS -->
-	<script src="js/swiper.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-    	var swiper = new Swiper('.swiper-container');
-	</script>
-
 </body>
 </html>
 
