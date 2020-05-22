@@ -283,6 +283,7 @@ ul.option_list .out_of_stock input[type=radio]:checked + label, ul.option_list .
 .food_items .the_button{ padding: 15px 0;}
 .food_items p.order_title{ font-weight: bold; font-size: 16.5px; border-bottom: 1px solid #d8d8d8; text-align: center; padding-bottom: 12px; }
 .food_items .input_quantity{ max-width: 100%; padding: 5px 0; }
+.food_items .photo{ width: 470px; height: 470px; display: block; margin:0 auto 10px auto; background-position: center center; background-repeat: no-repeat; background-size: cover; }
 .food_items .input_quantity input{ width: 90px; }
 /*品項多選單選*/
 
@@ -413,6 +414,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .the_productbox .products_box ul.products_list li .product_info h4.sub_info{min-height: inherit;}
     .the_productbox .products_box ul.products_list li .product_info p.product_inventory{ font-size: 12px; }
 }
+@media (max-width:600px){
+    .food_items .photo{ width: 350px; height: 350px; margin-top: 30px; }
+}
 @media (max-width:500px){
 	.group_buy .top_title{ font-size: 15px;}
 	.group_buy .qrcode_img{ max-width: 170px; }
@@ -420,10 +424,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.group_buy .copy_link input{padding: 0 15px;}
 	.group_buy .copy_link button{ position: initial; display: inline-block; border-radius:50px; margin-top: 10px;}
 	.group_buy .qrcode_img{ margin-top: 15px; }
+
+	.food_items .photo{ width: 300px; height: 300px; margin-top: 30px; }
 }
 @media (max-width:414px){
 	.order_tools{ padding: 6px 15px;}
 	.top_menu_box .swiper-slide p{ font-size: 14px; }
+	.food_items .photo{ width: 300px; height: 300px; margin-top: 20px; }
 }
 @media (max-width:380px){
 	.the_productbox .products_box ul.products_list li .photo{ width: 90px; height: 90px;}
@@ -433,6 +440,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	.the_productbox .products_box ul.products_list li .product_info h4.sub_info{font-size: 11.5px;}
 	.the_productbox .products_box ul.style_one li .product_info{width: 100%;}
 	.the_productbox .products_box ul.style_one li .photo{ width: 100px; height: 100px; }
+	.food_items .photo{ width: 250px; height: 250px; margin-top: 15px; }
+}
+@media (max-width:350px){
+	.food_items .photo{ width: 220px; height: 220px; margin-top: 12px; }
 }
 @media screen and (max-height: 450px) {
 }
