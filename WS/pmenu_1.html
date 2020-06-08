@@ -1,0 +1,150 @@
+<div class="navbar visible-md-block visible-lg-block">
+	<div class="container">
+		<a class="logo" href="index_PASS_1101.html" data-menu="index" title="王品"> 
+			<img src="styles/images/logo.png" alt="王品logo">
+			<h1 class="text-hide">王品</h1>
+		</a>
+		<nav class="nav">
+			<h1 class="text-hide">主選單</h1>
+			<ul class="columns inline top-nav">
+				<li class="contact"><a href="contact.html" title="聯絡我們">聯絡我們</a></li>
+				<li><a href="en/about.html" target="_blank" title="English">English</a></li>
+				<li><a href="JP/about.html" target="_blank" title="日本語">日本語</a></li>
+			</ul>
+			<ul class="columns inline main-nav">
+				<li class="hasSub"><a href="about.html" title="關於王品">關於王品</a>
+					<ul class="columns inline sub-nav">
+						<li><a href="about.html">王品服務</a></li>
+						<li><a href="about2.html">經典饗宴</a></li>
+						<li><a href="about3.html">玫瑰公益</a></li>
+						<li><a href="about4.html">品牌榮耀</a></li>
+					</ul></li>
+				<li class="hasSub"><a href="store.aspx" title="據點查詢">王品版圖 </a>
+					<ul class="columns inline sub-nav">
+						<li><a
+							href="http://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SYTYW&stor"
+							target="_blank" onClick="ga('send', 'event', { eventCategory: 'store', eventAction: 'click to eztable', eventLabel: 'wspc_online_order'});">線上預約</a></li>
+						<li><a href="store.aspx">據點查詢</a></li>
+					</ul></li>
+				<li><a href="menu.html" title="珍藏美饌">珍藏美饌</a></li>
+				<li><a href="event.html" title="菁選活動">菁選活動</a></li>
+				<li><a href="member/index.html" title="電子菁英">電子菁英</a></li>
+				<li><a href="food.aspx" title="美食漫談">美食漫談</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="visible-sm-block visible-xs-block" style="position:fixed; z-index:90; background-color:rgba(0,0,0,0.5); height:50px; width:100%;">
+	<button type="button" class="navbar-toggle">
+		<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span> <span class="icon-bar"></span>
+	</button>
+	<button type="button" class="navbar-toggle" style="right:50px;">
+		<a class="glyphicon glyphicon-map-marker" href="store.aspx"><div class="txt">據點查詢</div></a>
+	</button>
+	<button type="button" class="navbar-toggle" style="right:100px;">
+		<a class="glyphicon glyphicon-glass" href="menu.html"><div class="txt">珍藏美饌</div></a>
+	</button>
+	<button type="button" class="navbar-toggle" style="right:150px;">
+	</button>
+</div>
+
+<div id="menu-sm">
+	<nav>
+		<ul>
+			<li><a href="index_PASS_1101.html" title="首頁">
+				<span class="glyphicon glyphicon-home"></span>&nbsp;首頁</a></li>
+			<li><a href="about.html" title="關於王品">關於王品</a>
+				<ul>
+					<li><a href="about.html">王品服務</a></li>
+					<li><a href="about2.html">經典饗宴</a></li>
+					<li><a href="about3.html">玫瑰公益</a></li>
+					<li><a href="about4.html">品牌榮耀</a></li>
+				</ul></li>
+			<li><a href="store.html" title="據點查詢">王品版圖 </a>
+				<ul>
+					<li><a href="http://partner.eztable.com/booking.php?page_name=wangsteak" target="_blank" onClick="ga('send', 'event', { eventCategory: 'store', eventAction: 'click to eztable', eventLabel: 'wspc_online_order'});">線上預約</a></li>
+					<li><a href="store.aspx">據點查詢</a></li>
+				</ul></li>
+			<li><a href="menu.html" title="珍藏美饌">珍藏美饌</a></li>
+            <li><a href="http://cct.wowprime.com/cct/cctapp/cctwebreservation.do?&prog=cctweb_reservation&brnd_fid=SYTYW&stor"
+							target="_blank" onClick="ga('send', 'event', { eventCategory: 'store', eventAction: 'click to eztable', eventLabel: 'wspc_online_order'});">線上預約</a></li>
+			<li><a href="event.html" title="菁選活動">菁選活動</a></li>
+			<li><a href="member/index.html" target="_blank" title="電子菁英">電子菁英</a></li>
+			<li><a href="about.html" title="其它連結">其它連結</a>
+				<ul>
+					<li><a href="search.aspx">禮券查詢</a></li>
+					<li><a href="links.html">友好連結</a></li>
+					<li><a href="recruit.html">人才招募</a></li>
+                    <li><a href="food.aspx">美食漫談</a></li>
+			        <li><a href="contact.html">聯絡我們</a></li>
+			        <li><a href="en/about.html">English</a></li>
+			        <li><a href="JP/about.html">日本語</a></li>
+				</ul></li>
+		</ul>
+	</nav>
+</div>
+
+<script type="text/javascript">
+$().ready(function(){
+    var menu_sm_params = {
+			collapsed: true,
+			fullCollapse: true,
+			menuWidth: '180px',
+			menuHeight: '100%',
+			preventItemClick: false,
+			onItemClick: function() {
+			    var event = arguments[0],
+					$menuLevelHolder = arguments[1],
+					$item = arguments[2],
+					options = arguments[3];
+			    event.preventDefault();
+			    var itemHref = $item.find('a:first').attr('href');
+			    var target = $item.find('a:first').attr('target');
+			    if (typeof target !== typeof undefined && target !== false) {
+			        window.open(itemHref, '_blank');
+			    } else {
+			        location.href = itemHref;
+			    }
+			}
+		};
+    
+    var collapsed = true;
+	$("#menu-sm").multilevelpushmenu(menu_sm_params).css({"display":"block"});
+
+	$(window).resize(function(){
+		strip_menu_image();
+		$("#menu-sm").multilevelpushmenu(menu_sm_params)
+	});
+
+	$("button.navbar-toggle").click(function(){
+		$("#menu-sm").multilevelpushmenu(collapsed ? 'expand' : 'collapse');
+		collapsed = !collapsed;
+	});
+
+    $('.page-menu').each(function() {
+
+        function projectInterface() {
+            this.run = run;
+
+            function run() {
+                var tabber = new HashTabber();
+                tabber.run();
+            }
+        }
+        var hashTabberSoundsLikeDrugs = new projectInterface();
+        hashTabberSoundsLikeDrugs.run();
+
+        $('.view').click(function() {
+            $namelink = $(this).attr("href");
+            $('html,body').animate({
+                scrollTop: $($namelink).offset().top - 100
+            }, 800);
+
+        });
+
+    });
+    
+    strip_menu_image();
+});
+</script>

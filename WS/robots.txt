@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /UploadFile
+Disallow: /member/apply-FormFb.html
+Disallow: /coupon-tickets.html

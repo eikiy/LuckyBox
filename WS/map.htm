@@ -1,0 +1,29 @@
+<html>
+<body>
+	<img id="pic" src="" width="100%">
+	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script >
+	    $(function () {
+	        $('#pic').attr('src', 'http://wowfoods.wowprime.com/download?parent=store&filename=' + getUrlParameter('filename'));
+	    });
+
+
+	    var getUrlParameter = function getUrlParameter(sParam) {
+	        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+	        for (i = 0; i < sURLVariables.length; i++) {
+	            sParameterName = sURLVariables[i].split('=');
+
+	            if (sParameterName[0] === sParam) {
+	                return sParameterName[1] === undefined ? true : sParameterName[1];
+	            }
+	        }
+
+	    };
+
+	</script>
+</body>
+</html>

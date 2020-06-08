@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d60be00e-cea7-4645-a1fd-9a618bea4343" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://bizapi.ticketxpress.com.tw/PublicService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PublicService.xsd" MetadataType="Schema" ID="94dbe2fc-240e-455e-8394-71a269a40b87" SourceId="1" SourceUrl="http://bizapi.ticketxpress.com.tw/PublicService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PublicService.wsdl" MetadataType="Wsdl" ID="4bbbd31a-2ba2-4ce4-ad96-dc91b1be3793" SourceId="1" SourceUrl="http://bizapi.ticketxpress.com.tw/PublicService.svc?wsdl" />
+    <MetadataFile FileName="PublicService1.xsd" MetadataType="Schema" ID="24cf70f9-d065-4b86-8836-b46d3cd25fac" SourceId="1" SourceUrl="http://bizapi.ticketxpress.com.tw/PublicService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PublicService.disco" MetadataType="Disco" ID="ce55f7e7-6695-468f-a2a1-89c6b8e38bca" SourceId="1" SourceUrl="http://bizapi.ticketxpress.com.tw/PublicService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

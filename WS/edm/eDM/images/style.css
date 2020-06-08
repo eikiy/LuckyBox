@@ -1,0 +1,255 @@
+/* set the font face and default size for everything; could     */
+/* set colors, too, but NN4 doesn't work too well with that...  */
+
+
+/* Stytle Foundation Start Here */
+
+body, p, ol, ul, li, dt, dl, dd, td, TD, h1, h2, h3, 
+img, em, a, b, blockquote
+  { font-family : Verdana, Arial, Helvetica, sans-serif; font-size : 13px; letter-spacing:1px; line-height:25px; font-weight: normal; color : #484848;}
+
+/* Stytle Foundation End Here */
+
+
+
+/* Font Definition Start Here */
+
+.pagetitle           {color: #333333;                             font-size : 13px; line-height:20px; font-weight: bold; font-family: "Arial", "Verdana", "Sans-serif", "新細明體", "taipei";}
+.pagetitle A:link    {color: #333333; text-decoration: underline; font-size : 13px; line-height:20px; ffont-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pagetitle A:visited {color: #333333; text-decoration: underline; font-size : 13px; line-height:20px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pagetitle A:hover   {color: #333333; text-decoration: none;      font-size : 13px; line-height:20px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.serachtitle           {color: #333333;                             font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.serachtitle A:link    {color: #333333; text-decoration: underline; font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.serachtitle A:visited {color: #333333; text-decoration: underline; font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.serachtitle A:hover   {color: #333333; text-decoration: none;      font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.sitmaptitle           {
+	color: #03F;
+	font-size : 13px;
+	line-height:22px;
+	font-weight: normal;
+	font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;
+}
+.sitmaptitle A:link    {color: #333333; text-decoration: underline; font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.sitmaptitle A:visited {color: #333333; text-decoration: underline; font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.sitmaptitle A:hover   {color: #333333; text-decoration: none;      font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.title           {color: #990000;                             font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.title A:link    {color: #333333; text-decoration: underline; font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.title A:visited {color: #333333; text-decoration: underline; font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.title A:hover   {color: #333333; text-decoration: none;      font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.subtitle           {
+	color: #360;
+	text-decoration: none;
+	font-size : 15px;
+	line-height:22px;
+	font-weight: bold;
+	font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;
+}
+.subtitle           {color: #8b5f00; text-decoration: none; font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.subtitle A:link    {color: #8b5f00; text-decoration: none; font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.subtitle A:visited {color: #8b5f00; text-decoration: none; font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.subtitle A:hover   {color: #8b5f00; text-decoration: none; font-size : 15px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.big_title           {color: #006600;                             font-size : 22px; line-height:25px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.big_title A:link    {color: #006600; text-decoration: underline; font-size : 22px; line-height:25px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.big_title A:visited {color: #006600; text-decoration: underline; font-size : 22px; line-height:25px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.big_title A:hover   {color: #006600; text-decoration: none;      font-size : 22px; line-height:25px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.pd_title           {color: #006600;                             font-size : 12px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pd_title A:link    {color: #006600; text-decoration: underline; font-size : 12px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pd_title A:visited {color: #006600; text-decoration: underline; font-size : 12px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pd_title A:hover   {color: #006600; text-decoration: none;      font-size : 12px; line-height:22px; font-weight: bold; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.pd_subtitle           {
+	font-size : 13px;
+	line-height:22px;
+	font-weight: normal;
+	font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;
+}
+.pd_subtitle           {color: #066; text-decoration: none; font-size : 13px; line-height:22px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif, 新細明體, taipei;}
+.pd_subtitle A:link    {color: #066; text-decoration: none; font-size : 13px; line-height:22px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif, 新細明體, taipei;}
+.pd_subtitle A:visited {color: #066; text-decoration: none; font-size : 13px; line-height:22px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif, 新細明體, taipei;}
+.pd_subtitle A:hover   {color: #066; text-decoration: none; font-size : 13px; line-height:22px; font-weight: normal; font-family: Verdana, Arial, Helvetica, sans-serif, 新細明體, taipei;}
+
+.pd_list           {color: #333333;                             font-size : 12px; line-height:18px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pd_list A:link    {color: #333333; text-decoration: underline; font-size : 12px; line-height:18px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pd_list A:visited {color: #333333; text-decoration: underline; font-size : 12px; line-height:18px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pd_list A:hover   {color: #333333; text-decoration: none;      font-size : 12px; line-height:18px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.newstitle           {color: #333333;                             font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.newstitle A:link    {color: #333333; text-decoration: underline; font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.newstitle A:visited {color: #333333; text-decoration: underline; font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.newstitle A:hover   {color: #333333; text-decoration: none;      font-size : 13px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.newsdate           {color: #333333;                             font-size : 10px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.newsdate A:link    {color: #333333; text-decoration: underline; font-size : 10px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.newsdate A:visited {color: #333333; text-decoration: underline; font-size : 10px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.newsdate A:hover   {color: #333333; text-decoration: none;      font-size : 10px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.content           {color: #FF6699;                        font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei; }
+.content A:link    {color: #007630; text-decoration: none; font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei; }
+.content A:visited {color: #007630; text-decoration: none; font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei; }
+.content A:hover   {color: #FF0000; text-decoration: none; font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei; }
+
+.list           {color: #666666;                             font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.list A:link    {color: #2E4814; text-decoration: none; font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.list A:visited {color: #2E4814; text-decoration: none; font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.list A:hover   {color: #666666; text-decoration: none;      font-size : 12px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.pageindex           {color: #b40000;                             font-size : 15px; line-height:22px; font-weight: bold; font-family: "Arial", "Verdana", "Sans-serif", "新細明體", "taipei";}
+.pageindex A:link    {color: #b40000; text-decoration: underline; font-size : 15px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pageindex A:visited {color: #b40000; text-decoration: underline; font-size : 15px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.pageindex A:hover   {color: #b40000; text-decoration: none;      font-size : 15px; line-height:22px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.small           {color: #ffffff;                             font-size : 11px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.small A:link    {color: #ffffff; text-decoration: underline; font-size : 11px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.small A:visited {color: #ffffff; text-decoration: underline; font-size : 11px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.small A:hover   {color: #ffffff; text-decoration: none;      font-size : 11px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.footer           {color: #FFFFFF; text-decoration: none; font-size : 12px; line-height:19px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.footer A:link    {color: #FFFFFF; text-decoration: none; font-size : 12px; line-height:19px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.footer A:visited {color: #FFFFFF; text-decoration: none; font-size : 12px; line-height:19px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.footer A:hover   {color: #d4d4d4; text-decoration: none; font-size : 12px; line-height:19px; font-weight: underline; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;} 
+
+.footerlink           {color: #FF5700;                             font-size : 15px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.footerlink A:link    {color: #FF5700; text-decoration: underline; font-size : 15px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.footerlink A:visited {color: #FF5700; text-decoration: underline; font-size : 15px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+.footerlink A:hover   {color: #FF5700; text-decoration: none;      font-size : 15px; line-height:15px; font-weight: normal; font-family: Arial, Verdana, Sans-serif, 新細明體, taipei;}
+
+.store_line {
+	background-repeat: no-repeat;
+	background-position: bottom;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+	color: #484848;
+	letter-spacing:1px;
+	text-align: left;
+	background-image: url(images/line3.gif);
+}
+
+.member_p1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #363430;
+	height: 38px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #C5C5C5;
+}
+.member_g1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 27px;
+	color: #363430;
+	height: 38px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #C5C5C5;
+}
+.member_work {
+	height: 24px;
+	width: 250px;
+	line-height: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #363430;
+	border: 1px solid #BFBFBF;
+	background-color: #dadada;
+}
+
+
+.member_inputtxt {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	color: #333;
+	height: 24px;
+	width: 170px;
+	line-height: 24px;
+	border: 1px solid #BFBFBF;
+}
+.member_year {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	height: 24px;
+	border: 1px solid #BFBFBF;
+	line-height: 24px;
+}
+
+
+.member_gray {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #333;
+	height: 40px;
+}
+
+.title_red_18 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #be0000;
+	height: 40px;
+}
+
+.note {color: #FF0000}
+.ps {color: #936500}
+
+.en_txtboder {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #333;
+	height: 30px;
+	font-size: 13px;
+	line-height: 30px;
+}
+
+/* Font Definition End Here */
+
+
+/* link colors Start Here*/ 
+/* the explicit class link color assignments are needed for NN4 */
+
+A:link    { color: #484848; text-decoration: underline; font-weight: normal;}
+A:visited { color: #484848; text-decoration: underline; font-weight: normal;}
+A:active  { color: #785800; text-decoration: underline; font-weight: normal;}
+A:hover   { color: #785800; text-decoration: none; font-weight: normal;}
+
+/* link colors End Here*/
+
+/* From Textarea Start Here */
+
+input ,textarea, select
+{
+color :          #666666;
+font-family :    Verdana, Arial, Helvetica, sans-serif;
+line-height:     1.2em;
+font-size :      9pt;
+font-weight :    normal;
+border :         1px solid #DEDEDE;
+padding-top:     1px;
+padding-left:    1px;
+padding-right:   1px;
+BACKGROUND-COLOR:#FFFFFF;
+}
+
+/* From Textarea End Here */
+
+
+
+
+/* From Inputarea Start Here */
+
+.inputText    { font-family: "Verdana, Arial, Helvetica, sans-serif"; font-size: 9pt; line-height: 1.2em; border: 0px ; background-color: #F3F3F3 }
+.inputBotttn  { font-family: "Verdana, Arial, Helvetica, sans-serif"; font-size: 9pt; line-height: 1.2em; border: 1px #000000 solid; background-color: #ADC9AD }
+.inputSelect  { font-family: "Verdana, Arial, Helvetica, sans-serif"; font-size: 9pt; line-height: 1.2em; background-color: #CCCCFF }
+.inputsearch  { font-family: "Verdana, Arial, Helvetica, sans-serif"; font-size: 9pt; line-height: 1.2em; border: 1px #000000 solid; background-color: #658598; color :#FFFFFF }
+
+/* From Textarea End Here */
+
+img{
+	border-color : 666666;
+	text-align: right;
+}

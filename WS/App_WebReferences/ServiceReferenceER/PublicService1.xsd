@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ticketxpress.com.tw/" elementFormDefault="qualified" targetNamespace="http://ticketxpress.com.tw/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Invoke">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="consumerCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="parameters" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InvokeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,242 @@
+@charset "utf-8";
+header nav ul.menu{
+
+	margin:60px 0 0 0;}
+.homepage{
+	background:url(../images/home/decorationbg.png) no-repeat top;
+	background-size:100% auto;
+}
+.homepage img.mainImg{
+	width:50%;}
+.hometxt{
+	padding-left:60px;}
+.homepage a.arrow{
+	width:60px;
+	height:60px;
+	border-radius:99em;
+	background:url(../images/arrow.png) no-repeat #d2d2d2;
+	display:inline-block;
+	overflow:hidden;
+	text-indent:-99999px;
+}
+.adBox{position:relative;
+text-align:center;
+width:100%;}
+.adBox li{
+	float:left;
+	width:25%;
+	position:relative;
+	background:#e41c3c;
+	}
+.adBox li img{
+	width:100%;
+	float:left;
+	opacity:1;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	}
+.adBox li:hover img{
+	opacity:0.2;}
+.adBox li .Txt{
+	position: absolute;
+	border: 1px solid rgba(255,255,255,0.40);
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	padding:50px 0 0 0;
+	opacity:0;
+	-webkit-transition:all 0.6s ease;
+	-moz-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;
+}
+.adBox li:hover .Txt{
+	opacity:1;}
+.adBox li h2{
+	margin-top:-10px;
+	font-size:26px;
+	color:#fff;
+	font-weight:normal;
+	-webkit-transition:all 0.6s ease;
+	-moz-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;}
+.adBox li:hover h2{
+	margin-top:10px;}
+.adBox li p{
+	display:block;
+	font-size:15px;
+	line-height:20px;
+	height:60px;
+	margin:30px 0;
+	color:#fff;
+	overflow:hidden;}
+.adBox li a{
+	display:inline-block;
+	padding:10px 30px;
+	background:#fff;
+	border-radius:6px;
+	font-size:15px;
+	color:#e41c3c;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	margin-top:40px;
+	}
+.adBox li:hover a{
+	margin-top:10px;
+	}
+.adBox li a:hover{
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);}
+@media screen and (max-width:1600px){
+.adBox li .Txt {
+    padding: 20px 0 0 0;
+}
+}
+
+@media screen and (max-width:1370px){
+.adBox li p{
+	margin:10px 0;
+}
+}
+
+@media screen and (max-width:1140px){
+.adBox li h2{
+	font-size:20px;
+}
+.adBox li p{
+	font-size:13px;
+	margin:5px 0;
+}
+.adBox li .Txt{
+	padding:10px 0 0 0;
+}
+.adBox li a{
+	font-size:12px;
+	margin-top:0px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+header nav ul.menu{
+	margin:0px;}
+}
+
+@media screen and (max-width:980px){
+.adBox li{
+	width:50%;
+}
+.adBox li h2{
+	font-size:26px;
+}
+.adBox li p{
+	font-size:15px;
+	margin:15px 0;
+}
+.adBox li .Txt{
+	padding:40px 0 0 0;
+}
+.adBox li a{
+	font-size:15px;
+	margin-top:0px;
+	}
+}
+
+
+@media screen and (max-width:768px){
+.adBox li .Txt{
+	padding:0;
+}
+.adBox li p{
+	margin:15px 0;
+}
+}
+
+
+@media screen and (max-width:740px){
+.adBox li .Txt{
+	padding:40px 0 0 0;
+}
+.adBox li{
+	width:50%;
+	margin-bottom:20px;
+	background:transparent;
+}
+.adBox li p{
+	margin:30px 0;
+}
+
+.adBox li:hover img{
+	opacity:1;}
+.adBox li .Txt{
+	width:100%;
+	float:left;
+	position:relative;
+	border: none;
+	top: auto;
+	left: auto;
+	bottom: auto;
+	right: auto;
+	padding:20px 0;
+	opacity:1;
+	height:190px;
+	overflow:hidden;
+}
+.adBox li h2{
+	color:#000;
+}
+.adBox li:hover h2{
+	margin-top:0px;}
+.adBox li p{
+	display:block;
+	font-size:13px;
+	margin:20px 0;
+	color:#000;
+}
+.adBox li a{
+	display:inline-block;
+	padding:10px 30px;
+	background:#e41c3c;
+	border-radius:6px;
+	font-size:15px;
+	color:#fff;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	margin-top:10px;
+	}
+.adBox li a:hover{
+	-webkit-transform: translateY(-7px);
+	transform: translateY(-7px);}
+}
+
+@media screen and (max-width:620px){
+.adBox li{
+	width:100%;
+	margin-bottom:20px;
+	background:transparent;
+}	
+}
+
+@media screen and (max-width:480px){
+.homepage img.mainImg{
+	display:none;}
+.hometxt{
+	padding-left:0px;}
+	
+.homepage{
+	background:none;
+}
+.homepage a.arrow{
+	display:none;
+}
+
+}
+
+

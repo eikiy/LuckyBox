@@ -1,0 +1,36 @@
+/*
+Error: Inconsistent indentation: " \t    " was used for indentation, but the rest of the document was indented using 1 tab.
+        on line 168 of D:\000-website\103_wangsteak\member\css\rwd.sass
+
+163: 		background: #fff
+164: 		padding-bottom: 15px
+165: 		z-index: 999999
+166: 		-webkit-transition: all 0.3s
+167: 		-moz-transition: all 0.3s
+168:  	    -ms-transition: all 0.3s
+169:  	    -o-transition: all 0.3s
+170:  	    transition: all 0.3s
+171: 		-webkit-box-shadow: 0px -1px 20px rgba(0,0,0,0.1)
+172: 		box-shadow: 0px -1px 20px rgba(0,0,0,0.1)
+173: 		
+
+Backtrace:
+D:\000-website\103_wangsteak\member\css\rwd.sass:168
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:483:in `block in tabulate'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:441:in `each'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:441:in `each_with_index'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:441:in `tabulate'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:278:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:420:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: \" \t    \" was used for indentation, but the rest of the document was indented using 1 tab.\A         on line 168 of D:\000-website\103_wangsteak\member\css\rwd.sass\A \A 163: 		background: #fff\A 164: 		padding-bottom: 15px\A 165: 		z-index: 999999\A 166: 		-webkit-transition: all 0.3s\A 167: 		-moz-transition: all 0.3s\A 168:  	    -ms-transition: all 0.3s\A 169:  	    -o-transition: all 0.3s\A 170:  	    transition: all 0.3s\A 171: 		-webkit-box-shadow: 0px -1px 20px rgba(0,0,0,0.1)\A 172: 		box-shadow: 0px -1px 20px rgba(0,0,0,0.1)\A 173: 		"; }

@@ -1,0 +1,766 @@
+/* ==========================================================================
+    clear
+ ========================================================================== */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+    outline: 0;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type='search'] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    nowhitespace: afterproperty;
+    ;
+}
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+figure,
+address {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+bottom,
+img {
+    outline: 0;
+    border: 0px
+}
+
+* {
+    outline: 0;
+}
+
+address {
+    font-weight: normal;
+    font-style: normal;
+}
+
+dl,
+dd,
+dt {
+    margin: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+}
+
+.rows,
+ul.rows,
+ol.rows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & > li {
+        display: block;
+        clear: both;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.columns,
+ul.columns,
+ol.columns {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        content: '';
+    }
+    & .list-item,
+    & > li {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.columns.inline,
+ul.columns.inline,
+ol.columns.inline {
+    letter-spacing: -.31em;
+    *word-spacing: -.43em;
+    & > .listItem,
+    & > li {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        letter-spacing: normal;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+}
+
+
+/* ==========================================================================
+   html 
+   ========================================================================== */
+
+.html img {
+    max-width: 100%;
+}
+
+
+/* ==========================================================================
+    jquery
+ ========================================================================== */
+
+.jqimgFill {
+    position: relative;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: auto;
+        min-width: 100%;
+        max-width: none;
+        height: auto;
+        min-height: 100%;
+        max-height: none;
+        margin: 0;
+    }
+    .max-sm-size &.sm {
+        width: 100%!important;
+        height: auto!important;
+        background: none!important;
+    }
+    .max-sm-size &.sm img {
+        display: block!important;
+        width: 100%!important;
+        height: auto!important;
+    }
+    .max-xs-size &.xs {
+        width: 100%!important;
+        height: auto!important;
+        background: none!important;
+    }
+    .max-xs-size &.xs img {
+        display: block!important;
+        width: 100%!important;
+        height: auto!important;
+    }
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        &:focus {
+            outline: none;
+        }
+        &.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+        & .slick-list {
+            background: #ffffff url('./ajax-loader.gif') center center no-repeat;
+        }
+    }
+    .slick-track,
+    .slick-list {
+        height: 100%;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .slick-track {
+        position: relative;
+        display: block;
+        height: 100%;
+        &:before,
+        &:after {
+            display: table;
+            content: '';
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    .slick-prev,
+    .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        z-index: 99;
+        bottom: 30%;
+        /*top: 50%;*/
+        display: block;
+        width: 55px;
+        height: 55px;
+        margin-top: -10px;
+        padding: 0;
+        cursor: pointer;
+        transition: background .5s, color .5s;
+        /*background: rgba(230, 6, 23, 0.6);*/
+        color: #ffffff;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        &:hover,
+        &:focus {
+            outline: none;
+            &:before {
+                opacity: 1;
+            }
+        }
+        &.slick-disabled {
+            color: rgb(210, 33, 41);
+            background: rgba(255, 255, 255, .6);
+            &:before {
+                opacity: .25;
+            }
+        }
+        &:before {
+            font-family: 'style';
+            font-size: 55px;
+            font-weight: normal;
+            font-style: normal;
+            /* opacity: .8; */
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+            display: inline-block;
+            display: block;
+            width: 1em;
+            width: 25px;
+            height: 25px;
+            margin: auto;
+            margin-right: .2em;
+            /* Animation center compensation - margins should be symmetric */
+            /* remove if not needed */
+            margin-left: .2em;
+            text-align: center;
+            text-decoration: inherit;
+            text-transform: none;
+            speak: none;
+            /* you can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+    .slick-prev {
+        left: -35px;
+        &:before {
+            content: '\e809';
+        }
+    }
+    .slick-next {
+        right: -35px;
+        &:before {
+            content: '\e818';
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -45px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            position: relative;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+            button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 10px;
+                height: 10px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 2px solid #ffffff;
+                border-radius: 100%;
+                outline: none;
+                &:hover,
+                &:focus {
+                    outline: none;
+                    &:hover:before {
+                        opacity: 1;
+                    }
+                }
+                &:before {
+                    font-family: 'slick';
+                    font-size: 6px;
+                    line-height: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 10px;
+                    height: 10px;
+                    text-align: center;
+                    opacity: .25;
+                    color: black;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+            }
+            &.slick-active button {
+                border: 2px solid #ffffff;
+                background-color: #ffffff;
+                &:before {
+                    opacity: .75;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    [dir='rtl'] & {
+        float: right;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+.noSlider {
+    .slick-list {
+        text-align: center;
+        .slick-track {
+            left: inherit;
+            display: inline-block;
+            width: auto!important;
+            transform: none!important;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Common Styles
+   ========================================================================== */
+
+.auto {
+    overflow: hidden;
+    zoom: 1;
+    & > .left {
+        float: left;
+    }
+    & > .right {
+        overflow: hidden;
+        zoom: 1;
+    }
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    border: 0;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.si {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.mr0 {
+    margin: 0;
+}
+
+.pd0 {
+    padding: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.w10 {
+    width: 9%;
+}
+
+.w15 {
+    width: 14%;
+}
+
+.w20 {
+    width: 19%;
+}
+
+.w25 {
+    width: 24%;
+}
+
+.w30 {
+    width: 29%;
+}
+
+.w40 {
+    width: 39%;
+}
+
+.w50 {
+    width: 49%;
+}
+
+.w70 {
+    width: 69%;
+}
+
+.w80 {
+    width: 79%;
+}
+
+.w90 {
+    width: 89%;
+}
+
+.w100 {
+    width: 99%;
+}
+
+.shadow {
+    box-shadow: 0 4px 3px rgba(0%, 0%, 0%, .3);
+}
+
+.hidden {
+    display: none;
+}
+
+.centert {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    display: inline-block;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.wp {}
+
+hr.line {
+    position: relative;
+    border: 0;
+    border-bottom: 1px dashed #afafaf;
+    margin: 20px auto;
+    display: block;
+}
+
+.red {
+    color: #ff6666;
+}
+
+
+/* ==========================================================================
+   style default
+   ========================================================================== */
+
+.list-item {
+    position: relative;
+    .mark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .45);
+    }
+}
+
+
+/*font*/
+
+body {
+    font-family: '微軟正黑體', 'MHei', 'PingFang TC', 'Helvetica Neue', 'Helvetica', 'STHeitiTC-Light', 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    .si;
+}
+
+button {
+    font-family: '微軟正黑體', 'MHei', 'PingFang TC', 'Helvetica Neue', 'Helvetica', 'STHeitiTC-Light', 'Arial', sans-serif;
+}
+
+a {
+    color: #777777;
+}
+
+
+/* ==========================================================================
+   case default
+   ========================================================================== */
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    &.lg {
+        max-width: 1400px;
+    }
+    &.sm {
+        max-width: 980px;
+    }
+    &.xs {
+        max-width: 500px;
+    }
+}
+
+.minw {
+    min-width: 1280px;
+}
+
+.tite_en {
+    font-family: 'Playfair Display SC';
+    font-weight: normal;
+}
+
+.fs45 {
+    font-size: 3em;
+    line-height: 2em;
+    .max-sm-size & {
+        font-size: 1.5em;
+    }
+}
+
+.fs25 {
+    font-size: 1.6em;
+    line-height: 1.4em;
+}
+
+.fs22 {
+    font-size: 1.46em;
+    line-height: 1.4em;
+}
+
+.fs18 {
+    font-size: 1.26em;
+}
+
+.fs16 {
+    font-size: 1.06em;
+    .max-sm-size & {
+        font-size: 12px;
+    }
+}
+
+.fs14 {
+    font-size: .93em;
+}
+
+.fs12 {
+    font-size: .8em;
+    .max-sm-size & {
+        font-size: 12px;
+    }
+}
+
+.text {
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+    }
+}
+
+img {
+    vertical-align: bottom;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+    .in & {
+        opacity: 1;
+    }
+}
+
+.col {
+    display: inline-block;
+}
+
+.dl-horizontal {
+    dt,
+    dd {
+        padding: 5px;
+        .si;
+    }
+    dt {
+        width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        float: left;
+        left: 0;
+        top: 0;
+    }
+    dd {
+        padding-left: 100px;
+        display: block;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.note {
+    color: #999999;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}

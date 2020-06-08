@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>王品電子菁英</title>
+    <!--[if lt IE 10]>
+    <script>alert('請使用IE10以上或Ghrome瀏覽器閱覽本站哦，謝謝');</script>    
+    <![endif]-->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/pace.css"><script type="text/javascript" src="js/pace.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" 
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/apply.css">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+<!--WS Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119765785-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119765785-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '163116041206705');
+fbq('track', "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=163116041206705&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code --> 
+</head>
+
+<body>
+
+
+    <header class="p0"></header>
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider"></div>
+    </div>
+    <div class="slideTitle"></div>
+    <div class="content">
+        <div class="t1">
+            <i class="demo-icon icon-member">&#xe800;</i>
+            <hr> 線上預約
+        </div>
+        <div class="box unhome">
+            <div class="container applyBox">
+                <div class="leftWelcome vTop">
+                    <img src="img/Welcome.png" alt="">
+                    <p>
+                        歡迎使用線上預約，請提供真實且正確無誤的資料，以免影響您訂位權益，謝謝！。
+                        </p>
+                   
+                </div>
+                <div class="rightForm vTop">
+                    <h4>標示 ※ 字為必填欄位</h4>
+                    <!-- <form action=""> -->
+                        <div class="form-group label-floating mobileForm">
+                            <label for="i5" class="control-label">※選擇門店</label>
+                            <input type="number" class="form-control" id="mobile">
+                        </div>
+                        
+                        <div class=" form-group label-floating pwForm" id="lblpwd">
+                            <label for="i5" class="control-label">※連絡電話</label>
+                            <input type="password" class="form-control" id="pwd" maxlength="8">
+                            <p>ex : 0900111222</p>
+                        </div>
+                        <div class="form-group label-floating nameForm">
+                            <label for="i5" class="control-label">※連絡姓名</label>
+                            <input type="text" class="form-control" id="cname" maxlength="50">
+                        </div>
+                        <div class="form-group radio genderForm">
+                            <h5 class="control-label"></h5>
+                            <label>
+                                <input type="radio" name="gender" value="F" id="female" checked=""> 女士
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" id="male" value="M">先生
+                            </label>
+                        </div>
+                        <div class="form-group date birthForm">
+                            <h5 class="control-label">大 人</h5>
+                            <input type="text" id="birthday">
+                        </div>
+                        <div class="form-group date">
+                            <h5 class="control-label">小 孩 （12 歲以下）</h5>
+                            <input type="text" id="merryday">
+                        </div>
+									<div class="form-group date">
+                            <h5 class="control-label">※日 期</h5>
+                            <input type="text" id="merryday">
+                        </div>
+									<div class="form-group date">
+                            <h5 class="control-label">※時 段</h5>
+                            <input type="text" id="merryday">
+                        </div>
+                        <div class="form-group label-floating email">
+                            <label for="i5" class="control-label">特殊需求</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group checkbox">
+                            <label>
+                                貼心服務：
+                                <input type="checkbox" id="isgetcareerad">
+                            </label>
+                        </div>
+                        <div class="form-group checkbox idoForm">
+                            <label>
+                                請詳細閱讀<a href="../privacy.html">隱私權條款</a>。
+                                <input type="checkbox" id="ido">我已閱讀，充分了解並同意
+                            </label>
+                        </div>
+                        <button class="submit" onclick="chk();">確認送出</button>
+                        <!-- <a href="confirm.html" class="submit" onclick="return chk();">確認送出</a> -->
+                    <!-- </form> -->
+                    <div class="ps">
+                        <h5>提供真實且正確無誤,以免影響您訂位權益，謝謝！</h5>
+                         <ul>
+
+<li>使用條款</li>
+<li>1	需於用餐前24小時訂位。</li>
+<li>2	如有特別需求，請於「特殊需求」欄位註明，您的需求將視現場實際狀況與座位安排。</li>
+<li>3	本餐廳於用餐當日將為您保留座位10分鐘，逾時將自動取消座位。</li>
+<li>4	訂位完成後，將透過簡訊確認您的訂位資訊。</li>
+<li>5	如要取消訂位，請於收到簡訊時，點選取消訂位。</li>
+<li>6	訂位完成後，如欲修改訂位，請您先取消原訂單重新訂位。</li>
+<li>7	用餐當日如需增加人數，本餐廳得視現場實際情況調整。</li>
+<li>8	本餐廳保留條款內容變更與解釋、暫停或終止本線上訂位之權利。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="js/material.min.js"></script>
+    <script src="WPJS/jquery.maskedinput.js"></script>
+    <script src="WPJS/base.js"></script>
+    <script src="WPJS/member.js"></script>    
+    
+    <script>
+    
+    $(function() {
+        $.material.init();
+        $('#merryday').mask("?99/?99");
+        $('#birthday').mask("?9999/?99/?99");
+        sessionStorage.clear();
+
+        $('#mobile').keypress(function (event) {
+            if(this.value.length==10) 
+                {
+                    if (event.which == 8) { return; }
+                    if (event.which == 46) { return; }
+                    return false;
+                }
+            })
+    });
+
+   
+
+    $("#ido").click(function() {
+        if ($("#ido").hasClass("is-checked")) {
+            $("#ido").removeClass('is-checked');
+        } else {
+            $("#ido").addClass('is-checked');
+        }
+    });
+
+    function chk(){ 
+        if(!isValidMobile($('#mobile').val())) 
+            {   $('#mobile').focus(); sweetAlert("Oops...", '手機號碼不正確', "error");
+                $('.mobileForm').addClass('has-error');
+             return false; 
+                   
+             } 
+        if($('#pwd').val()=='')
+        {
+
+         $('#pwd').focus();
+         sweetAlert("Oops...", '請輸入密碼', "error"); 
+         $('.pwForm').addClass('has-error');
+         
+           return false; 
+        }    
+       
+        if($('#pwd').val().length < 4 || $('#pwd').val().length > 8)
+        {
+            $('#pwd').focus();
+            sweetAlert("Oops...", '請輸入4-8個字的密碼', "error"); 
+            $('.pwForm').addClass('has-error');
+            // $('#lblpwd').attr('class','form-group label-floating has-error');
+             return false; 
+        }
+        
+        if($('#cname').val()=='')        
+        {
+         
+          $('#cname').focus();
+            sweetAlert("Oops...", '請輸入您的姓名', "error"); 
+            $('.nameForm').addClass('has-error');
+            return false; 
+
+        }
+
+        if($('#birthday').val()=='')
+        {
+            $('#birthday').focus(); 
+            sweetAlert("Oops...", '請輸入您的生日', "error"); 
+            $('.birthForm').addClass('has-error');
+            return false; 
+        }
+
+        if($('#birthday').val() != '') 
+        { 
+           if(!IsValidDate($('#birthday').val()))             
+            {
+                $('#birthday').focus(); 
+                sweetAlert("Oops...", '請輸入正確的生日', "error"); 
+                $('.birthForm').addClass('has-error');
+                return false; 
+            } 
+        }
+
+        if($('#email').val()!='')        
+        {
+         
+          if(!isValidEmailAddress($('#email').val()))
+             {
+              $('#email').focus();
+                sweetAlert("Oops...", '請輸入正確的EMail', "error"); 
+                $('.email').addClass('has-error');
+                return false; 
+             }   
+
+        }
+
+        if($('#merryday').val() != '') 
+        { 
+           if(!IsValidDate('2000/'+$('#merryday').val()))             
+            {
+                $('#merryday').focus(); 
+                sweetAlert("Oops...", '請輸入正確的結婚紀念日', "error"); 
+                $('.birthForm').addClass('has-error');
+                return false; 
+            } 
+        }
+
+
+        if($('#ido').hasClass('is-checked'))
+        {
+         
+        }else{
+            $('#ido').focus();
+             sweetAlert("Oops...", '請確認已同意隱私權條款', "error"); 
+             $('.idoForm').addClass('has-error');
+             return false;  
+        }
+
+        var gender='';
+            if($('#male').prop('checked'))
+            {
+                gender='M';
+            }
+            if($('#female').prop('checked'))
+            {
+                gender='F';
+            }
+                        
+            var isgetcareerad=0;
+            if($('#isCareerAD').prop('checked')==true)
+            {
+                isgetcareerad=1;
+            }
+
+            var isgetallcareerad=0;
+            if($('#isAllCareerAD').prop('checked')==true)
+            {
+                isgetallcareerad=1;
+            }
+
+        api_Add($('#cname').val(),$('#email').val(),$('#pwd').val(),gender,$('#birthday').val(),$('#merrydate').val(),$('#mobile').val(),isgetcareerad,isgetallcareerad);
+
+    }
+    </script>
+</body>
+
+</html>

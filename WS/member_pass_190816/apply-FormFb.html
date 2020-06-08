@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>王品電子菁英</title>
+    <link rel="stylesheet" type="text/css" href="css/pace.css"><script type="text/javascript" src="js/pace.js"></script>
+    <!--[if lt IE 10]>
+    <script>alert('請使用IE10以上或Ghrome瀏覽器閱覽本站哦，謝謝');</script>    
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/apply.css">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p0"></header>
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider"></div>
+    </div>
+    <div class="slideTitle"></div>
+    <div class="content">
+        <div class="t1">
+            <i class="demo-icon icon-member">&#xe800;</i>
+            <hr> 申請電子菁英會員
+        </div>
+        <div class="box unhome applyFb">
+            <div class="container applyBox">
+                <div class="leftWelcome vTop">
+                    <img src="img/Welcome.png" alt="">
+                    <p>
+                        歡迎加入電子菁英會員行列，完成手機簡訊認證(註1)註冊成功後，爾後登入會員手機號碼與密碼領取優惠並為您累積消費金額 (註2)，作為會員分級依據，並給予不同分級的優惠回饋。</p>
+                    <p>
+                        請提供真實且正確無誤的資料，以免影響您會員優惠權益，謝謝！
+                    </p>
+                  
+                </div>
+                <div class="rightForm vTop">
+                    <h4>標示 ※ 字為必填欄位</h4>
+                    <!-- <form action=""> -->
+                        <div class="form-group label-floating">
+                            <label for="i5" class="control-label">※手機號碼</label>
+                            <input type="number" class="form-control" id="mobile">
+                            <p>ex : 0900111222，請輸入手機號碼註冊，每支門號限申請1組會員帳號</p>
+                        </div>
+                        <div class="form-group label-floating">
+                            <label for="i5" class="control-label">※密 碼</label>
+                            <input type="password" class="form-control" id="pwd" maxlength="8">
+                            <p>輸入4-8個字元</p>
+                        </div>
+                        <div class="form-group label-floating has-error is-focused">
+                            <label for="i5" class="control-label">※姓 名</label>
+                            <input type="text" class="form-control" id="cname" placeholder="王小明" maxlength="50">
+                            <p>建議您填寫真實姓名，以確保您的會員權益</p>
+                        </div>
+                        <div class="form-group radio">
+                            <h5 class="control-label">※姓 別</h5>
+                            <label>
+                                <input type="radio" name="gender" value="female" id="female" checked=""> 女 Femal
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="male" id="male"> 男 Male
+                            </label>
+                        </div>
+                        <div class="form-group date">
+                            <h5 class="control-label">※生 日</h5>
+                            <input type="text" id="birthday">
+                            <p>ex : 2016/01/01，會員生日申請後無法異動</p>
+                        </div>
+                        <div class="form-group date">
+                            <h5 class="control-label" >結婚紀念日</h5>
+                            <input type="text" id="marryday">
+                            <p>月份/日期，例：05/08，請輸入正確結婚紀念日以利領取專屬優惠</p>
+                        </div>
+                        <div class="form-group label-floating email">
+                            <label for="i5" class="control-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" readonly="true">
+                        </div>
+                        <div class="form-group checkbox">
+                            <label>
+                                願意收到王品牛排優惠：
+                                <input type="checkbox" id="isCareerAD">
+                            </label>
+                        </div>
+                        <div class="form-group checkbox idoForm">
+                            <label>
+                                請詳細閱讀<a href="">隱私權條款</a>。
+                                <input type="checkbox" id="ido">我已閱讀，充分了解並同意
+                            </label>
+                        </div>
+                        <button class="submit" onclick="chk();">確認送出</button>
+                        <!-- <a href="" class="submit">確認送出</a> -->
+                       
+                    <!-- </form> -->
+                    <div class="ps">
+                        <h5>請確認填入的會員資料，並完成手機簡訊認證即成為電子菁英。</h5>
+                        <ul>
+                            <li>*註1：手機認證簡訊將於您完成會員註冊或修改會員手機資料後，寄送至您的手機，每筆認證簡訊的有效驗證期間為5分鐘，若超過時間仍未收到簡訊或完成認證流程，請重新選擇補發認證簡訊。</li>
+                            <li>*註2：以實際結帳金額為主，電子菁英結帳時提供您的手機號碼即可將當次消費金額，累積於您的會員帳戶中；出示會員優惠券掃瞄QRCODE即享優惠。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="js/material.min.js"></script>
+    <script src="WPJS/jquery.maskedinput.js"></script>
+    <script src="WPJS/base.js"></script>
+    <script src="WPJS/fb.js"></script>
+    <script src="WPJS/member.js"></script>
+    <script>
+    $(function() {
+        $.material.init();
+
+        if(typeof(loadSessionStorage("m3mfrom"))=="undefined" || loadSessionStorage("m3mfrom")=='')
+        {
+            window.location.href="memLogin.html";
+        }
+
+         $('#marryday').mask("?99/?99");
+         $('#birthday').mask("?9999/?99/?99");
+
+        $('#cname').val(loadSessionStorage("m3mname"));
+
+        if(loadSessionStorage("m3mgender")=='F')
+             {
+                $('input[name="gender"]')[0].checked = true                        
+             }
+             else
+             {
+                $('input[name="gender"]')[1].checked = true                        
+             } 
+        $('#email').val(loadSessionStorage("m3memail"));
+    
+    });
+
+     $("#ido").click(function() {
+        if ($("#ido").hasClass("is-checked")) {
+            $("#ido").removeClass('is-checked');
+        } else {
+            $("#ido").addClass('is-checked');
+        }
+    });
+     
+
+    function chk()
+    {
+        if(!isValidMobile($('#mobile').val())) 
+        {   $('#mobile').focus(); sweetAlert("Oops...", '手機號碼不正確', "error");
+            $('.mobileForm').addClass('has-error');
+         return false; 
+               
+         } 
+
+
+        if($('#pwd').val().length < 4 || $('#pwd').val().length > 8)
+        {
+            $('#pwd').focus();
+            sweetAlert("Oops...", '請輸入4-8個字的密碼', "error"); 
+            $('.pwForm').addClass('has-error');            
+             return false; 
+        }
+
+        if($('#cname').val()=='')        
+        {
+         
+          $('#cname').focus();
+            sweetAlert("Oops...", '請輸入您的姓名', "error"); 
+            $('.nameForm').addClass('has-error');
+            return false; 
+
+        }
+      
+        if(!IsValidDate($('#birthday').val()))             
+            {
+                $('#birthday').focus(); 
+                sweetAlert("Oops...", '請輸入正確的生日', "error"); 
+                $('.birthForm').addClass('has-error');
+                return false; 
+            } 
+        if($('#marryday').val() != '') 
+        { 
+           if(!IsValidDate('2000/'+$('#marryday').val()))             
+            {
+                $('#marryday').focus(); 
+                sweetAlert("Oops...", '請輸入正確的結婚紀念日', "error"); 
+                $('.birthForm').addClass('has-error');
+                return false; 
+            } 
+        }
+
+          if($('#ido').hasClass('is-checked'))
+        {
+         
+        }else{
+            $('#ido').focus();
+             sweetAlert("Oops...", '請確認已同意隱私權條款', "error"); 
+             $('.idoForm').addClass('has-error');
+             return false;  
+        }
+
+        var gender='';
+            if($('#male').prop('checked'))
+            {
+                gender='M';
+            }
+            if($('#female').prop('checked'))
+            {
+                gender='F';
+            }
+                        
+        var isgetcareerad=0;
+            if($('#isCareerAD').prop('checked')==true)
+            {
+                isgetcareerad=1;
+            }
+
+        var isgetallcareerad=0;
+            if($('#isAllCareerAD').prop('checked')==true)
+            {
+                isgetallcareerad=1;
+            }
+            Pace.restart();   
+        fb_intodata($('#cname').val(),$('#pwd').val(),gender,$('#birthday').val(),$('#marryday').val(),$('#mobile').val(),isgetcareerad,isgetallcareerad);
+
+
+    }
+    </script>
+</body>
+
+</html>

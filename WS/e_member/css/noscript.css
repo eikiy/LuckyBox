@@ -1,0 +1,48 @@
+@charset "utf-8";
+.wrap{
+	width:800px;
+	margin:20px auto;
+	font-family: "微軟正黑體", "新細明體", sans-serif;
+	text-align:center;}
+h1 img{
+	max-width:100%;
+	}
+.noscriptsbox{
+	border: solid 1px #eaeaea;
+	padding: 50px 30px;
+	line-height: 2.2;
+	-webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.2);
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.2);
+	}
+.noscriptsbox a{
+	margin:0 30px;
+	display:inline-block;
+	color:#0963b6;}
+.noscriptsbox a:hover{
+	color:#b81311;}
+a.backlink{
+	color:#0963b6;
+	font-size:15px;
+	padding-top:30px;
+	display:block;
+	}
+a.backlink:hover{
+	color:#b81311;}
+	
+@media screen and (max-width:800px){
+	
+		
+	.wrap{
+	width:100%;
+}
+	
+}
+
+
+@media screen and (max-width:450px){
+	
+.noscriptsbox a{
+	margin:0 10px;
+}
+	
+}

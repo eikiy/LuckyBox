@@ -1,0 +1,520 @@
+.box.unhome {
+  margin-bottom: 60px;
+}
+
+.applyBox.container {
+  background: #FFF;
+  padding: 0;
+  height: 860px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.leftWelcome {
+  width: calc(50% - 3px);
+  height: 870px;
+  display: inline-block;
+  background: #000 url(../img/leftBg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -webkit-background-size--o-background-size: cover;
+  -webkit-background-size-background-size: cover;
+}
+
+.leftWelcome img {
+  width: 340px;
+  left: 60px;
+  top: 70px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.leftWelcome p {
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.9;
+  letter-spacing: 0px;
+  text-align: left;
+  display: block;
+  padding-left: 60px;
+  padding-right: 180px;
+  margin-bottom: 25px;
+}
+
+.leftWelcome p span {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.fbLink {
+  text-align: center;
+}
+
+.fbLink span {
+  display: block;
+  color: #FFF;
+}
+
+.fbLink .fbBtn {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 15px 43px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b5998+0,274584+100 */
+  background: #3b5998;
+}
+
+.fbLink .fbBtn:hover {
+  background-color: #4664a5;
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fbLink button.fbBtn {
+  border: none;
+  margin: 5px auto;
+  padding: 12px 43px;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.fbLink p {
+  margin-bottom: 30px;
+}
+
+.rightForm {
+  width: calc(50% - 3px);
+  display: inline-block;
+  padding: 48px 33px;
+  text-align: center;
+}
+
+.rightForm h4 {
+  font-size: 15px;
+  color: #B50306;
+  line-height: 1;
+  letter-spacing: 0;
+  display: block;
+  text-align: left;
+  margin-left: 18px;
+}
+
+.rightForm .ps {
+  background: #DCDCDC;
+  width: calc(100% + 73px);
+  padding: 24px 40px;
+  margin: 0 -30px;
+  margin-left: -37px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.rightForm .ps h5 {
+  font-size: 17px;
+  color: #777;
+  line-height: 2;
+  letter-spacing: 0px;
+  border-bottom: 1px solid #afafaf;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.rightForm .ps ul {
+  padding-left: 0;
+}
+
+.rightForm .ps ul li {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.8;
+  letter-spacing: 0px;
+  padding: 0;
+  padding-left: 41px;
+  text-indent: -41px;
+}
+
+.rightForm .ps ul li:before {
+  content: " ";
+}
+
+.box .form-group {
+  width: calc(50% - 40px);
+  height: 75px;
+  margin: 15px 18px;
+  text-align: left;
+  padding-bottom: 0;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.box .form-group p {
+  font-size: 13px;
+  color: #9a9a9b;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding: 0;
+}
+
+.box .form-group label {
+  color: #9a9a9b;
+}
+
+.box .form-group.has-error p {
+  color: #e60021;
+  font-weight: 500;
+}
+
+.box .form-group.label-floating label.control-label {
+  line-height: 17px;
+}
+
+.box .form-group.label-floating label.control-label {
+  color: #9a9a9b;
+  background: #FFF;
+}
+
+.box .form-group.is-focused .form-control, .box .form-group .form-control {
+  padding: 6px 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#B50306), to(#B50306)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+  background-image-background-image: -webkit-linear-gradient(#B50306, #B50306), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image-background-image: -o-linear-gradient(#B50306, #B50306), -o-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image-background-image: linear-gradient(#B50306, #B50306), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.box .form-group.is-focused label.control-label, .box .form-group.is-focused.label-floating label.control-label, .box .form-group.label-floating:not(.is-empty) label.control-label {
+  color: #B50306;
+  font-size: 14px;
+}
+
+.box .form-group.has-error.is-focused .form-control {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#B50306), to(#B50306)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+  background-image-background-image: -webkit-linear-gradient(#B50306, #B50306), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image-background-image: -o-linear-gradient(#B50306, #B50306), -o-linear-gradient(#D2D2D2, #D2D2D2);
+  background-image-background-image: linear-gradient(#B50306, #B50306), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.box .form-group.radio h5 {
+  color: #B50306;
+  margin-top: -15px;
+}
+
+.box .form-group.radio input[type=radio]:checked ~ .circle, .box .form-group.radio label.radio-inline input[type=radio]:checked ~ .circle {
+  border-color: #e60021;
+}
+
+.box .form-group.radio input[type=radio]:checked ~ .check, .box .form-group.radio label.radio-inline input[type=radio]:checked ~ .check {
+  background: #e60021;
+}
+
+.box .form-group.radio label {
+  color: #9a9a9b;
+  padding-left: 25px;
+  margin-right: 10px;
+}
+
+.box .form-group.radio label span.circle, .box .form-group.radio label span.check {
+  left: 2px;
+  top: 4px;
+}
+
+.box .form-group.radio.is-focused label {
+  color: #9a9a9b;
+  padding-left: 25px;
+}
+
+.box .form-group.date {
+  position: relative;
+  top: -15px;
+}
+
+.box .form-group.date h5 {
+  color: #B50306;
+  margin-top: -15px;
+}
+
+.box .form-group.date input {
+  width: 100%;
+  margin-bottom: 8px;
+  color: #9a9a9b;
+  border: 1px solid #dadada;
+}
+
+.box .form-group.email {
+  width: calc(100% - 40px);
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.box .form-group.checkbox {
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+.box .form-group.checkbox label {
+  padding-left: 0;
+}
+
+.box .form-group.checkbox .checkbox-material {
+  margin-right: 9px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.box .form-group.checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  color: #d40004;
+  border-color: #d40004;
+}
+
+.box .form-group.checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
+  color: #d40004;
+}
+
+.box .form-group.checkbox.is-focused label {
+  color: #9a9a9b;
+}
+
+.box .submit {
+  font-size: 18px;
+  color: #fff;
+  line-height: 2;
+  letter-spacing: 2px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 15px auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 10px;
+  border: none;
+  display: inline-block;
+  padding: 12px 60px;
+  background: #c4233c;
+  background: -moz-linear-gradient(top, #e41c3c 0%, #c4233c 100%);
+  background: -webkit-linear-gradient(top, #e41c3c 0%, #c4233c 100%);
+  background: linear-gradient(to bottom, #e41c3c 0%, #c4233c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4233c', endColorstr='#e41c3c',GradientType=0 );
+}
+
+.box .submit:hover {
+  -webkit-box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  background: #f42e31;
+  background: -moz-linear-gradient(top, #f42e31 0%, #d62629 100%);
+  background: -webkit-linear-gradient(top, #f42e31 0%, #d62629 100%);
+  background: linear-gradient(to bottom, #f42e31 0%, #d62629 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f42e31', endColorstr='#d62629',GradientType=0 );
+}
+
+.edit.box .form-group label.control-label {
+  color: #B50306;
+  font-size: 14px;
+}
+
+.box.confirm {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.box.confirm .card {
+  width: 690px;
+  -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  padding: 30px 50px;
+  background: #FFF;
+  position: relative;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.box.confirm .card.level-a{ background: url("../img/level01-bg.jpg"); }
+
+
+
+.box.confirm .card.level-b{ background: url("../img/level02-bg.jpg"); }
+
+.box.confirm .card.level-c{ background: url("../img/level03-bg.jpg"); }
+
+.box.confirm .card.level-d{ background: url("../img/level04-bg.jpg"); }
+
+.box.confirm .card.level-d h1.memberH1{ color: #fff; }
+
+.box.confirm .card.level-d h2{ color: #FFF; }
+
+.box.confirm .card hr {
+  border-top: 1px solid #9a9a9b;
+  margin-bottom: 15px;
+}
+
+.box.confirm .card h1 {
+  font-size: 24px;
+  color: #775a48;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.box.confirm .card h2 {
+  font-size: 20px;
+  color: #000;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.box.confirm .card p {
+  font-size: 17px;
+}
+
+.box.confirm .card ul {
+  font-size: 17px;
+  color: #9a9a9b;
+  line-height: 1.8;
+  letter-spacing: 0px;
+  margin-top: 15px;
+  text-align: left;
+  list-style-type: square;
+  padding-left: 30px;
+}
+
+.box.confirm .card ul li {
+  margin: 20px 0;
+}
+
+.box.confirm .card ul li:first-child {
+  margin-top: 0;
+}
+
+.box.confirm .card .submit.wi155 {
+  width: 155px;
+  padding: 12px 0;
+  margin: 0 10px;
+}
+
+.box.confirm .card .submit.disagree {
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background: #e98091;
+  background: -moz-linear-gradient(top, #e98091 0%, #a95d69 100%);
+  background: -webkit-linear-gradient(top, #e98091 0%, #a95d69 100%);
+  background: linear-gradient(to bottom, #e98091 0%, #a95d69 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e98091', endColorstr='#a95d69',GradientType=0 );
+}
+
+.box.confirm .card .submit.disagree:hover {
+  opacity: 0.8;
+}
+
+.box.confirm .card form {
+  margin-top: 25px;
+  display: block;
+}
+
+.box.confirm .card .form-group {
+  margin-left: 0;
+  height: 35px;
+}
+
+.box.confirm .card .reSend {
+  background: #CA8F8F;
+  padding: 16px 25px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0px;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.box.confirm .card .reSend:hover {
+  background: #F59292;
+}
+
+.box.confirm .card .LT {
+  width: 202px;
+  height: 137px;
+  position: absolute;
+  top: -5px;
+  left: -36px;
+  background: url(../img/LT.png) no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box.confirm .card .RB {
+  width: 173px;
+  height: 106px;
+  position: absolute;
+  bottom: -4px;
+  right: -41px;
+  background: url(../img/RB.png) no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box.confirm .higher {
+  padding: 60px 50px;
+}
+
+.applyFb.box .form-group.date {
+  top: -5px;
+}
+
+.fbNotice.box .card {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.error .applyBox.container {
+  height: 895px;
+}
+
+.error .applyBox.container .leftWelcome {
+  height: 900px;
+}
+
+.error .redTip {
+  display: block;
+  font-weight: 600;
+  font-weight-margin: 15px 0;
+  font-weight-margin-bottom: 30px;
+  font-size: 17px;
+  color: #e60021;
+  line-height: 2;
+  letter-spacing: 1px;
+}

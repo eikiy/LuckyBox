@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>王品電子菁英</title>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/pace.css"><script type="text/javascript" src="js/pace.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js" 
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/apply.css">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p1"></header>
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider"></div>
+    </div>
+    <div class="content">
+        <div class="t1">
+            <i class="demo-icon icon-member">&#xe800;</i>
+            <hr> 會員登入
+        </div>
+        <div class="box coupon mLogin">
+            <div class="container card">
+
+                 <div class="leftCol">
+                    <h2 class="desc">
+                        會員立即登入手機與密碼，即可領取專屬電子優惠券、查詢個人消費記錄!
+                    </h2>
+                    <hr>
+                    <div class="or"><span>or</span></div>
+                    <div class="quickLogin fbLink">
+                        <button id="fblogin" class="fbBtn">Facebook登入</button>
+                        <p>使用FB帳號快速登入</p>
+                    </div>
+                </div>
+
+                <div class="rightCol">
+                    <!-- <form action=""> -->
+                        <div class="form-group label-floating">
+                            <label for="i5" class="control-label">手機號碼</label>
+                            <input type="number" class="form-control" id="mobile">
+                            <p>ex:0900111222，請輸入註冊的手機號碼</p>
+                        </div>
+
+                        <div class="form-group label-floating">
+                            <label for="i5" class="control-label">密碼</label>
+                            <input type="password" class="form-control" id="pwd">
+                            <p>輸入4-8個字元</p>
+                        </div>
+                        <button id="send" class="submit" onclick="chk();">會員登入</button>    
+                        <!-- <a href="" class="submit">領取優惠</a> -->
+
+                        <a href="forgetPW.html" class="forgetPw">忘記密碼</a>
+                    <!-- </form> -->
+                </div>
+
+                <div class="quickLogin fbLink M-fbLink">
+                    <hr>
+                    <div class="or"><span>or</span></div>
+                    <button id="fblogin" class="fbBtn">Facebook登入</button>
+                    <p>使用FB帳號快速登入</p>
+                </div>
+
+                <div class="ps">
+                    領取優惠券請先<a href="application.html">註冊</a>加入電子菁英<br>
+個人資料異動請登入會員後，至<a href="apply-FormEdit.html">修改會員資料</a>中，修改基本資料。
+                </div>
+                
+                <div class="LT"></div>
+                <div class="RB"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="js/material.min.js"></script>
+    <script src="WPJS/base.js"></script>
+    <script src="WPJS/member.js"></script>
+    <script src="WPJS/fb.js"></script>
+    <script>
+    $(function() {
+        $.material.init();
+
+         if (debug_mode == false) {
+                var ishttps = 'https:' == document.location.protocol ? true : false;
+                if (!ishttps) {
+                    var hostname = location.host;
+                    location.href = "https://" + hostname;
+                }
+            }
+
+       
+
+    });
+
+    function chk()
+    {
+
+        var autoplay='';
+        if($('#mobile').val()==''||$('#pwd').val()=='')
+        {
+            sweetAlert("Oops...", "帳號或密碼未輸入", "error");                        
+            return;
+        }
+        if(typeof(loadSessionStorage("backurl"))!="undefined" && loadSessionStorage("backurl")!='')
+        {
+            autoplay=loadSessionStorage("backurl");
+        }
+        else
+        {
+            autoplay='coupon-tickets.html';
+        }
+        api_login($('#mobile').val(), $('#pwd').val(), autoplay);
+    }
+
+    $('#fblogin').click(function() {  
+        Pace.restart();        
+        fb_login('');
+    });
+
+  
+
+    </script>
+</body>
+
+</html>

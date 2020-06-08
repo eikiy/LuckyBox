@@ -1,0 +1,67 @@
+
+.mediaBox{ width: 100%; center center no-repeat; background-attachment: fixed; background-size: cover;}
+.mediaBox ul.MBox{ width: 100%; margin: 0 auto; padding: 30px 0; max-width: 1870px;}
+.mediaBox ul.MBox li{ float: left; width: 25%; padding: 0 1%; }
+.mediaBox ul.MBox li a{ display: block; padding: 10px 0; width: 100%; }
+.mediaBox ul.MBox li a:hover{ opacity: .9; }
+@media (max-width:1880px){.mediaBox ul.MBox{ width: 90%; }}
+
+@media (max-device-width:1200px) {
+	.mediaBox, .foodinfo{ background-attachment: inherit;}
+}
+
+@media (max-width:800px){
+	.DataBox .box_title p.t01{ width:75%; }
+	.mediaBox ul.MBox li{ width: 50%; }
+
+}
+
+
+.mBox{ width: 100%; padding: 20px 0;}
+.mBox .lBox{  width: 48%; float: left; }
+.mBox .rBox{  width: 48%; float: right; }
+.mBox h4{ color: #fbf7f8; font-size: 17px; padding: 20px 0 5px 0; font-family: "微軟正黑體",'SabonLTStd-Roman','Hiragino Mincho ProN', 'MingLiU', "MS PMincho", "MS 明朝" ,'LiHeiPro', Helvetica, Arial, sans-serif; }
+.mBox p{ color: #fbf7f8; font-size: 14px; padding-bottom: 10px; }
+.mBox{ width: 100%; position: relative; min-height: 450px;}
+.mBox p{ padding: 20px 0; color: #fbf7f8; font-size: 15px; }
+.mBox .btnBox{ position: absolute; right: 120px; top:155px;/* width: 152px;*/ height: 246px; /*border-radius: 200px;*/ padding: 0 47px; background: url(../images/br_k.png) 0 0 repeat;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center}
+.map2 .mBox .btnBox .bothBox{}
+
+@media (max-width:1880px){.mediaBox ul.MBox{ width: 90%; }}
+@media (max-width:1440px){.mBox { right: 150px;}}
+@media (max-width:1300px){.mBox { right:100px; }}
+@media (max-width:1215px){.ContentsBox{ width: 90%;}.map2{width: 100%;}}
+@media (max-width:1200px){
+	.mBox { right:5%; }
+
+	}
+
+@media (max-width:850px){
+	.mBox{ right: 72px;}
+
+
+@media (max-width:800px){
+	.box_title p.t01{ width:75%; }
+	.mediaBox ul.MBox li{ width: 50%; }
+
+}@media (max-width:700px){
+	.mBox .lBox, .map .mBox .rBox{ width: 100%; float: none;}
+	.mBox{padding: 0;}
+	.mBox p{padding-bottom: 15px;}
+
+}
+
+
+
+@media (max-width:450px){
+	.mBox{ right: 0;border-radius:0px; padding: 10px; height: inherit;right: initial; left: 0; top:40%;}
+
+}
+
+
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden;	line-height: 0;	height: 0;}
+
+.clearfix:after {  content: ".";  display: block;  height: 0;  clear: both;  visibility: hidden;}
+
+* html .clearfix { height: 1%;}
+.clearfix  {min-height: 1%;}

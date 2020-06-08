@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://ticketxpress.com.tw/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="PublicService" targetNamespace="http://ticketxpress.com.tw/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ticketxpress.com.tw/Imports">
+      <xsd:import schemaLocation="http://bizapi.ticketxpress.com.tw/PublicService.svc?xsd=xsd0" namespace="http://ticketxpress.com.tw/" />
+      <xsd:import schemaLocation="http://bizapi.ticketxpress.com.tw/PublicService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPublicService_Invoke_InputMessage">
+    <wsdl:part name="parameters" element="tns:Invoke" />
+  </wsdl:message>
+  <wsdl:message name="IPublicService_Invoke_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPublicService">
+    <wsdl:operation name="Invoke">
+      <wsdl:input wsaw:Action="http://ticketxpress.com.tw/IPublicService/Invoke" message="tns:IPublicService_Invoke_InputMessage" />
+      <wsdl:output wsaw:Action="http://ticketxpress.com.tw/IPublicService/InvokeResponse" message="tns:IPublicService_Invoke_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPublicService" type="tns:IPublicService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Invoke">
+      <soap:operation soapAction="http://ticketxpress.com.tw/IPublicService/Invoke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PublicService">
+    <wsdl:port name="BasicHttpBinding_IPublicService" binding="tns:BasicHttpBinding_IPublicService">
+      <soap:address location="http://bizapi.ticketxpress.com.tw/PublicService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

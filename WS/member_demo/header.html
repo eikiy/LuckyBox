@@ -1,0 +1,55 @@
+
+<a class="logo" href="https://www.wangsteak.com.tw/index.html"><img src="img/logo.png" alt="" class="logo-b"><img src="img/logo-sticky.png" alt="" class="logo-sticky"><img src="img/logo-m.png" alt="" class="logo-s"></a>
+<div class="m-quickLink">
+    <a href="coupon-tickets.html"><i class="demo-icon icon-gift">&#xe801;</i>專屬回饋</a>
+    <a href="history-list.html"><i class="demo-icon icon-history">&#xe802;</i>消費記錄</a>
+    <a href="apply-FormEdit.html"><i class="demo-icon icon-member">&#xe800;</i>修改資料</a>
+</div>
+<div class="menuTriger"><i class="demo-icon icon-menu">&#xe804;</i></div>
+<div class="menus">
+    <nav class="white">
+        <a href="member.html">電子菁英</a>
+        <a href="coupon-tickets.html">我的專屬回饋 </a>
+        <a href="history-list.html">我的消費記錄</a>
+        <a href="apply-FormEdit.html">修改我的資料</a>
+        <a href="level&QA.html">分級辦法與常見問題</a>
+    </nav>
+    <a class="backHome" href="member.html">
+        <img src="img/home.png" alt="">回首頁</a>
+    <i class="demo-icon icon-close">&#xe805;</i>
+</div>
+
+<script>
+
+	$("header.p0>nav>a").eq(0).addClass('act');
+	$("header.p1>nav>a").eq(1).addClass('act');
+	$("header.p2>nav>a").eq(2).addClass('act');
+	$("header.p3>nav>a").eq(3).addClass('act');
+	$("header.p4>nav>a").eq(4).addClass('act');
+
+    if ($(window).width() < 992) {
+        $(".menuTriger").click(function(){
+            $(".menus").removeClass("go_left").addClass("go_right");//"+=200"遞增200
+            $(".menuTriger").fadeOut(300);
+            $(".icon-close").fadeIn(300);
+        });
+
+
+
+        $(".icon-close, .slider-wrapper, .content, .footer").click(function(){
+
+            if ($(".menus").hasClass('go_right')) {
+                $(".menus").removeClass("go_right").addClass("go_left");
+                $(".icon-close").fadeOut(300);
+                $(".menuTriger").fadeIn(300);
+            } else {
+                
+            }
+            
+        });
+    }else{
+     
+
+     
+    }
+</script>

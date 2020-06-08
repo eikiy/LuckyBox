@@ -1,0 +1,4 @@
+.AmountInputLimit
+{
+	behavior:url(AmountInputLimit.htc);
+}

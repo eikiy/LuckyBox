@@ -1,0 +1,44 @@
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script>
+  $(function(){
+  
+   var strUrl = location.search;
+  var getPara, ParaVal;
+  var aryPara = [];
+
+  if (strUrl.indexOf("?") != -1) {
+    var getSearch = strUrl.split("?");
+    getPara = getSearch[1].split("&");
+    for (i = 0; i < getPara.length; i++) {
+      ParaVal = getPara[i].split("=");
+      aryPara.push(ParaVal[0]);
+      aryPara[ParaVal[0]] = ParaVal[1];
+    }    
+  }
+  fbid=ParaVal[1];
+  
+	  var u = navigator.userAgent;
+	  var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android?ºÝ  
+	  var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios?ºÝ
+	  if(isAndroid)
+	  {
+		window.location.href="fb://page/"+fbid;
+	  }
+	  else if(isiOS)
+	  {
+	  window.location.href="fb://page/?id="+fbid;
+	  }
+	  else
+	  {
+	  window.location.href="https://facebook.com/"+fbid;
+	  }
+  
+  })
+      
+</script>
+
+

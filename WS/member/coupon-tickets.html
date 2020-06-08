@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>王品電子菁英</title>
+    <!--[if lt IE 10]>
+    <script>alert('請使用IE10以上或Ghrome瀏覽器閱覽本站哦，謝謝');</script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/pace.css">
+    <script type="text/javascript" src="js/pace.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/apply.css">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '163116041206705');
+        fbq('track', "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=163116041206705&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+    <header class="p1"></header>
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider"></div>
+    </div>
+    <div class="slideTitle"></div>
+    <div class="slideTitle"></div>
+    <div class="content">
+        <div class="t1">
+            <i class="demo-icon icon-gift">&#xe801;</i>
+            <hr> 我的專屬回饋
+        </div>
+        <div class="box coupon">
+            <div class="container card wi800">
+
+                <div class="redTitle">
+                    我的專屬回饋
+                </div>
+                <p class="tl g3" id="lblHello">
+
+                </p>
+                <p class="tl g3" id="lbltitle">
+
+                </p>
+
+                <div id="couponlist">
+
+                </div>
+
+                <div class="LT"></div>
+                <div class="RB"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="js/material.min.js"></script>
+    <script src="WPJS/base.js"></script>
+    <script src="WPJS/member.js"></script>
+    <script src="WPJS/voucher.js"></script>
+    <script>
+        $(function () {
+            if (typeof (loadSessionStorage("user_id")) == "undefined" || loadSessionStorage("user_id") == '') {
+                saveSessionStorage('backurl', 'coupon-tickets.html');
+                window.location.href = "memLogin.html";
+            }
+
+            $.material.init();
+            $('#lblHello').html('王品貴賓您好，您已成為' + loadSessionStorage("txtlv") + '，以下是您專屬的電子優惠券；爾後至門店用餐結帳時出示優惠券掃瞄QRCODE，即享下列優惠，同時將累積您的消費金額於會員帳戶中。');
+            $('#lbltitle').html(loadSessionStorage("txtlv") + loadSessionStorage("user_name") + ' 您好，以下為您專屬的電子優惠券：');
+            voucher_list('couponlist');
+        });
+    </script>
+</body>
+
+</html>

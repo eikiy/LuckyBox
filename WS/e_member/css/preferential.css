@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul.preferential{position:relative;
+padding-bottom:100px;}
+ul.preferential li{
+	margin:0 0 25px 0;
+	float:left;
+	width:33.33%;
+	position:relative;	
+	text-align:center;
+	
+	}
+ul.preferential li div.Img{
+	background:#e41c3c;
+	float:left;
+	width:100%;
+	position:relative;
+}
+ul.preferential li div.Img:before{
+	position:absolute;
+	opacity:0;
+	border: 1px solid rgba(255,255,255,0.40);
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	content:"";
+	bottom:10px;}
+ul.preferential li:hover div.Img:before{
+	opacity:1;
+}
+ul.preferential li div.Img img{
+	width:100%;
+	float:left;
+	opacity:1;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	}
+ul.preferential li:hover div.Img img{
+	opacity:0.2;}
+ul.preferential li .Txt{
+	position: absolute;
+
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	padding:50px 0 0 0;
+	opacity:0;
+	-webkit-transition:all 0.6s ease;
+	-moz-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;
+}
+ul.preferential li:hover .Txt{
+	opacity:1;
+}
+ul.preferential li h3{
+	font-size:26px;
+	color:#fff;
+	font-weight:normal;
+	-webkit-transition:all 0.6s ease;
+	-moz-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;}
+ul.preferential li:hover h3{
+	margin-top:20px;}
+ul.preferential li p{
+	display:block;
+	font-size:15px;
+	line-height:25px;
+	margin:30px 0;
+	color:#fff;
+}
+ul.preferential li h4{
+	font-size:14px;
+	color:#000;
+	line-height:30px;
+	padding:0 5px;
+	text-align:left;
+	font-weight:normal;}
+
+
+@media screen and (max-width:1030px){
+ul.preferential li{
+	width:50%;
+}	
+}
+
+
+
+@media screen and (max-width:740px){
+
+ul.preferential li .Txt{
+	text-align:left;
+	position:relative;
+	border: none;
+	top: auto;
+	left: auto;
+	bottom: auto;
+	right: auto;
+	margin:0 10px;
+	padding:0;
+	opacity:1;
+	height:180px;
+	overflow:hidden;
+}
+ul.preferential li h3{
+	font-size:26px;
+	color:#e41c3c;
+}
+ul.preferential li:hover h3{
+	margin-top:0px;}
+ul.preferential li h4{
+	margin:0 10px;
+	color:#000;
+}
+ul.preferential li p{
+	margin:10px 0;
+	color:#000;
+}
+ul.preferential li:hover div.Img img{
+	opacity:1;}
+ul.preferential li:hover div.Img:before{
+	opacity:0;
+}
+}
+
+@media screen and (max-width:700px){
+	ul.preferential li{
+	width:100%;
+}
+
+}
