@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://eip2.wowprime.com/web2app/Website2API.asmx?wsdl" docRef="https://eip2.wowprime.com/web2app/Website2API.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://eip2.wowprime.com/web2app/Website2API.asmx" xmlns:q1="http://tempuri.org/" binding="q1:Website2APISoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://eip2.wowprime.com/web2app/Website2API.asmx" xmlns:q2="http://tempuri.org/" binding="q2:Website2APISoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

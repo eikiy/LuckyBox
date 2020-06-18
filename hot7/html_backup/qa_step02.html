@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>hot 7</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="js/scroll_toolbar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<a href="#"><div class="btn_01 pos alp"><img src="images/f_01.png" width="98" height="96" onmouseover="this.src='images/f_01a.png'" onmouseout="this.src='images/f_01.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_02 pos alp"><img src="images/f_02.png" width="78" height="109" onmouseover="this.src='images/f_02a.png'" onmouseout="this.src='images/f_02.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_03 pos alp"><img src="images/f_03.png" width="129" height="134" onmouseover="this.src='images/f_03a.png'" onmouseout="this.src='images/f_03.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_04 pos alp"><img src="images/f_04.png" width="75" height="126" onmouseover="this.src='images/f_04a.png'" onmouseout="this.src='images/f_04.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_05 pos alp"><img src="images/f_05.png" width="79" height="102" onmouseover="this.src='images/f_05a.png'" onmouseout="this.src='images/f_05.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+
+
+<div class="wrapper">
+    <div class="container">
+      <a href="index.html"><div class="logo_m"></div></a>
+      <div class="word">
+          <img src="images/qa_01.png" width="694" height="180" border="0" usemap="#Map">
+          <map name="Map">
+            <area shape="rect" coords="575,23,697,123" href="#">
+          </map>
+	<br>
+  <div class="rightss">
+      © 2015 hot 7, Inc. All Rights Reserved.<img src="images/space.gif" width="200" height="1">
+      <span style="border-bottom:#090 dotted 1px; font-size:100%;"><a href="#" onclick="MM_openBrWindow('rule.htm','','scrollbars=yes,width=550,height=600')">使用條款</a></span> / 
+      <span style="border-bottom:#090 dotted 1px; font-size:100%;"><a href="#" onclick="MM_openBrWindow('rights.htm','','scrollbars=yes,width=550,height=600')">隱私權政策</a></span>
+  </div>
+        <div style="padding:0 21px;" class="font_01">感謝您光臨hot 7日式鐵板料理！<br>今天的餐點及服務是否讓您滿意呢？您的建議，是讓我們不斷進步的動力！<br>請您給我們一些寶貴的意見與指教。</div>
+           <form runat="server" name="form1" method="post" action="">
+              <table width="600" border="0" cellspacing="3" class="tb_qa">
+                       <tr>
+                         <td class="font_01 font_w">填寫建議卡 (*為必填)</td>
+                       </tr>
+                       <tr>
+                         <td>
+                             <table>
+                                <tr>
+                                   <td class="font_01">1. 請問您這是第一次到hot 7用餐嗎？</td>
+                                   <td>
+                                    <asp:RadioButtonList ID="rblQ1" runat="server"  CssClass="t12_dgray"  OnSelectedIndexChanged="rblQ1_SelectedIndexChanged1" RepeatDirection="Horizontal" AutoPostBack="True"></asp:RadioButtonList>
+                                   </td>
+                                </tr>
+                             </table>
+                             <asp:Label ID="lblQ1" runat="server" Visible="False"></asp:Label>
+                         </td>
+                       </tr>
+                       <tr>
+                          <td class="font_01">
+                          *2. 請問您最近半年總共到hot 7用餐幾次
+                          	<asp:DropDownList ID="drpQ2" runat="server">
+                            </asp:DropDownList>
+                            <asp:Label ID="lblQ2" runat="server" Visible="False"></asp:Label>
+                          </td>
+                          </tr>
+                          <tr>
+                             <td class="font_01">
+                             *3.請問您是如何知道本店？ (可複選) 
+                            <asp:Label ID="lblQ3" runat="server" Visible="False"></asp:Label>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td>
+                             <asp:CheckBoxList ID="chkQ3" runat="server" CssClass="t12_dgray" RepeatDirection="Horizontal" RepeatColumns="4"></asp:CheckBoxList>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td class="font_01">
+                             *4. 請問您個人點的主餐是？
+                             <asp:DropDownList ID="drpQ5" runat="server" CssClass="board_12"></asp:DropDownList>
+                            <asp:Label ID="lblQ5" runat="server" Visible="False"></asp:Label>
+                            </td>
+                           </tr>
+                           <tr>
+                             <td class="font_01">
+                             *5.請問您今天用餐後的感覺是…（單選）
+                             <input id="hidFood" runat="server" name="hidFood" size="1" type="hidden" />
+                            <asp:Label ID="lblQ6" runat="server" Visible="False"></asp:Label>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td class="font_01">
+                             <asp:GridView ID="grdQ6" runat="server" AutoGenerateColumns="False" CssClass="board_12" Font-Bold="False" Font-Size="X-Small" ForeColor="DimGray" GridLines="None" OnRowDataBound="grdQ6_RowDataBound1">
+                              <Columns>
+                                <asp:TemplateField ShowHeader="False">
+                                    <ItemTemplate>
+                                        <asp:Label ID="lblQ6AnsName" runat="server"  Text='<%# Eval("AnsName") %>'></asp:Label>
+                                        <asp:Label ID="lblQ6AnsGUID" runat="server" Visible="false" Text='<%# Eval("AnsGUID") %>'></asp:Label>
+                                        <asp:Label ID="lblQ6AnsOrder" runat="server" Visible="false" Text='<%# Eval("AnsOrder") %>'></asp:Label>                                        
+                                        <asp:Label ID="lblQ6AnsLocal" runat="server" Visible="false" Text='<%# Eval("AnsLocal") %>'></asp:Label>
+                                        <asp:Label ID="lblQ6AnsScore" runat="server" Visible="false" Text='<%# Eval("AnsScore") %>'></asp:Label>
+                                  </ItemTemplate>
+                                    <HeaderStyle BorderColor="#999999" HorizontalAlign="Center" Width="5%" />
+                                    <ItemStyle HorizontalAlign="Center"/>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="非常滿意"   ShowHeader="False">
+                                    <ItemTemplate>
+                                        <asp:RadioButton  ID="radQ61" GroupName="Q" runat="server" />   
+                                        <asp:Label ID="lblQ61GUID" runat="server" Visible="false" Text='<%# Eval("SatisfactionGUID1") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ61Y" runat="server"  Visible="false" Text='<%# Eval("SatisfactionY1") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ61X" runat="server"  Visible="false" Text='<%# Eval("SatisfactionX1") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ61Code" runat="server"  Visible="false" Text='<%# Eval("SatisfactionCode1") %>'></asp:Label>                                         
+                                                                     </ItemTemplate>
+                                    <HeaderStyle BorderColor="#999999" HorizontalAlign="Center" Width="5%" />
+                                    <ItemStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="滿意" ShowHeader="False">
+                                    <ItemTemplate>
+                                        <asp:RadioButton ID="radQ62" GroupName="Q" runat="server" />  
+                                          <asp:Label ID="lblQ62GUID" runat="server" Visible="false" Text='<%# Eval("SatisfactionGUID2") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ62Y" runat="server"  Visible="false" Text='<%# Eval("SatisfactionY2") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ62X" runat="server"  Visible="false" Text='<%# Eval("SatisfactionX2") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ62Code" runat="server"  Visible="false" Text='<%# Eval("SatisfactionCode2") %>'></asp:Label>    
+                                                                        </ItemTemplate>
+                                    <HeaderStyle BorderColor="#999999" HorizontalAlign="Center" Width="5%" />
+                                    <ItemStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="普通" ShowHeader="False">
+                                    <ItemTemplate>
+                                        <asp:RadioButton ID="radQ63" GroupName="Q" runat="server" />    
+                                        <asp:Label ID="lblQ63GUID" runat="server" Visible="false" Text='<%# Eval("SatisfactionGUID3") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ63Y" runat="server"  Visible="false" Text='<%# Eval("SatisfactionY3") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ63X" runat="server"  Visible="false" Text='<%# Eval("SatisfactionX3") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ63Code" runat="server"  Visible="false" Text='<%# Eval("SatisfactionCode3") %>'></asp:Label>                                 </ItemTemplate>
+                                    <HeaderStyle BorderColor="#999999" HorizontalAlign="Center" Width="5%" />
+                                    <ItemStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="差" ShowHeader="False">
+                                    <ItemTemplate>
+                                        <asp:RadioButton ID="radQ64" GroupName="Q" runat="server" />  
+                                         <asp:Label ID="lblQ64GUID" runat="server" Visible="false" Text='<%# Eval("SatisfactionGUID4") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ64Y" runat="server" Visible="false" Text='<%# Eval("SatisfactionY4") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ64X" runat="server" Visible="false" Text='<%# Eval("SatisfactionX4") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ64Code" runat="server" Visible="false" Text='<%# Eval("SatisfactionCode4") %>'></asp:Label>                                </ItemTemplate>
+                                    <HeaderStyle BorderColor="#999999" HorizontalAlign="Center" Width="5%" />
+                                    <ItemStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                                 <asp:TemplateField HeaderText="很差" ShowHeader="False">
+                                    <ItemTemplate>
+                                        <asp:RadioButton ID="radQ65" GroupName="Q" runat="server" />   
+                                         <asp:Label ID="lblQ65GUID" runat="server" Visible="false" Text='<%# Eval("SatisfactionGUID5") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ65Y" runat="server" Visible="false" Text='<%# Eval("SatisfactionY5") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ65X" runat="server" Visible="false" Text='<%# Eval("SatisfactionX5") %>'></asp:Label>  
+                                       <asp:Label ID="lblQ65Code" runat="server" Visible="false" Text='<%# Eval("SatisfactionCode5") %>'></asp:Label>                             </ItemTemplate>
+                                    <HeaderStyle BorderColor="#999999" HorizontalAlign="Center" Width="5%" />
+                                    <ItemStyle HorizontalAlign="Center" />
+                                </asp:TemplateField>
+                              </Columns>
+                            </asp:GridView>                          
+                             
+                             </td>
+                           </tr>
+                           <tr>
+                             <td class="font_01">*6.您認為hot 7最吸引人的2項特色是…(限填2項喔~) 
+                               <asp:Label ID="lblAlert" runat="server" ForeColor="Red" Visible="False">只可以選2項喔!</asp:Label>
+                            <asp:Label ID="lblQ7" runat="server" Visible="False"></asp:Label></td>
+                           </tr>
+                           <tr>
+                             <td>
+                             <asp:CheckBoxList ID="chkQ7" runat="server" CssClass="t12_dgray" OnSelectedIndexChanged="chkQ7_SelectedIndexChanged1" RepeatDirection="Horizontal" AutoPostBack="True">
+                            </asp:CheckBoxList>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td>
+                             <table>
+                                <tr>
+                                   <td colspan="2" class="font_01" rowspan="">
+                                      *7. 請問您會不會介紹朋友來本店用餐？
+                                   </td>
+                                   <td class="t12_dgray">
+                                      <asp:RadioButtonList ID="rblQ8" runat="server" CssClass="t12_dgray" RepeatDirection="Horizontal"></asp:RadioButtonList>
+                                   </td>
+                                   <td>
+                                      <asp:Label ID="lblQ8" runat="server" Visible="False"></asp:Label>      
+                                   </td>  
+                                </tr>                               
+                            </table>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td class="font_01">8.請問您對本店或服務人員的建議是…</td>
+                           </tr>
+                           <tr>
+                             <td>
+                             <table width="70%"  border="0" cellspacing="5">
+                          <tr>
+                            <td width="34%" valign="top">
+                                <asp:DropDownList ID="drpSugType" CssClass="t12_dgray" runat="server">
+                                </asp:DropDownList> </td>
+                            <td width="34%" valign="top"><asp:DropDownList ID="drpAnalysisMain" CssClass="t12_dgray" runat="server">
+                                </asp:DropDownList>
+                               </td>
+                            <td style="width: 66%">
+                                &nbsp;<asp:TextBox ID="txtSuggestion" runat="server" CssClass="join_board" Height="80px" TextMode="MultiLine"
+                                    Width="317px" onfocus="CleanText();" >(限100字以內)</asp:TextBox></td>
+                          </tr>
+                        </table>
+                             </td>
+                           </tr>
+                           <tr>
+                              <td align="center" style="padding:20px 0 0 20px;">
+                              <table width="65%" border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td><img src="images/btn_sumityes.png" width="118" height="46" onmouseover="this.src='images/btn_sumityesa.png'" onmouseout="this.src='images/btn_sumityes.png'" alt="" style="cursor:pointer; border: none;" />
+    <asp:ImageButton ID="btnSendY" runat="server" ImageUrl="images/btn_sumityes.png" OnClick="btnSendY_Click" />
+    </td>
+    <td>
+      <img src="images/btn_sumitno.png" width="118" height="45" onMouseOver="this.src='images/btn_sumitnoa.png'" onMouseOut="this.src='images/btn_sumitno.png'" alt="" style="cursor:pointer; border: none;" />
+      <asp:ImageButton ID="btnSendN" runat="server" ImageUrl="images/btn_sumitno.png" OnClick="btnSendN_Click" /></td>
+    </tr>
+</table>
+                              </td>
+                           </tr>
+                       </table>
+           </form>
+      </div>
+    </div>
+    <div class="footer"><img src="images/footer.png" width="761" height="72"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+.x_tb{margin:0 auto; margin-top:20px; }
+.x_tb td{padding:3px; line-height:28px;}
+.x_tb li{ margin-left:16px; list-style-type:disc; font-weight:normal;}
+.x_tb img{vertical-align:baseline;}
+
+.x_store{margin:0 auto; margin-top:20px; }
+.x_store td{text-align:center; padding:3px; line-height:24px;}
+.x_store a{ text-decoration:none; color:#C00; font-weight:bold;}
+.x_store a:hover{ text-decoration:none; color:#90c31f; font-weight:bold;}
+
+.x_store_list{margin:0 auto; margin-bottom:20px;}
+.x_store_list td{border-bottom: #999 dashed 1px; vertical-align:middle; padding:3px; line-height:28px;}
+.x_store_list a{ text-decoration:none; color:#C00;}
+.x_store_list a:hover{ text-decoration:none; font-weight:bold;}
+
+.x_store_all{margin:0 auto; margin-top:20px;}
+.x_store_all td{vertical-align:top; padding:3px; line-height:28px;}
+.x_store_all a{ text-decoration:none; color:#C00;}
+.x_store_all a:hover{ text-decoration:none; font-weight:bold;}
+
+.x_store_list_img td{text-align:right;}
+
+.x_menu{}
+.x_menu td{ vertical-align:top;}
+.x_menu a{font-size:14px; font-weight:bold;}
+
+.x_f01{color:#900; font-size:14px; font-weight:bold;}
+.x_f02{color:#000; font-size:15px; font-weight:bold; background:#CCC; line-height:28px; }
+.x_f03{color:#699900;}
+.x_f03s{color:#699900; width:180px; font-size:11px; line-height:22px;}
+.x_f04{color:#aa020b; font-size:15px; font-weight:bold;}
+.x_f04a{color:#aa020b; font-size:15px;}
+.x_f04t{ border-top:1px #999 dashed;}
+.x_f05{color:#009900; font-size:24px; font-weight:bold;}
+.x_f06{font-weight:bold;}
+.x_f07{color:#aa020b; font-size: 12px; font-weight:normal; margin-left:22px;}
+.x_f08{font-size:13px; color:#666;}
+.x_f09{font-size:18px; color:#009900; font-weight:bold;}
+.x_f10{font-size:15px; color:#009900; font-weight:bold;}
+
+.x_line{height:25px; background:url(/images/four/line.png) center repeat-x;}
+.x_line_y{height:30px; background:url(/images/four/line_y.png) center repeat-x;}
+.x_Line_g{height:50px; background:url(/images/four/line_g.png) left no-repeat;}

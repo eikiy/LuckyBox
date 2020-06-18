@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>hot 7</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="js/scroll_toolbar.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body>
+<a href="#"><div class="btn_01 pos alp"><img src="images/f_01.png" width="98" height="96" onmouseover="this.src='images/f_01a.png'" onmouseout="this.src='images/f_01.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_02 pos alp"><img src="images/f_02.png" width="78" height="109" onmouseover="this.src='images/f_02a.png'" onmouseout="this.src='images/f_02.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_03 pos alp"><img src="images/f_03.png" width="129" height="134" onmouseover="this.src='images/f_03a.png'" onmouseout="this.src='images/f_03.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_04 pos alp"><img src="images/f_04.png" width="75" height="126" onmouseover="this.src='images/f_04a.png'" onmouseout="this.src='images/f_04.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+<a href="#"><div class="btn_05 pos alp"><img src="images/f_05.png" width="79" height="102" onmouseover="this.src='images/f_05a.png'" onmouseout="this.src='images/f_05.png'" alt="" style="cursor:pointer; border: none;" /></div></a>
+
+
+<div class="wrapper">
+    <div class="container">
+      <a href="index.html"><div class="logo_m"></div></a>
+      <div class="word" style="margin-top:180px;">      
+        <form name="form1" method="post" action="" runat="server">
+          <table width="95%" border="0" cellpadding="5" cellspacing="0" class="tb_qa">
+          <tr>
+            <td colspan="2" class="font_01" align="right"><table width="95%" border="0" cellpadding="5" cellspacing="0" class="tb_qa">
+              <tr>
+                <td colspan="4" class="font_01"><span class="font_w">加入會員</span>(▌為必填的唷~)</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="font_01" align="right"></td>
+              </tr>
+              <tr>
+                <td width="15%" class="font_01 bg_01">▌姓名</td>
+                <td colspan="3" bgcolor="#eee" class="t12_dgray bg_01">
+                  <asp:TextBox ID="txtName" runat="server" CssClass="join_board" MaxLength="20"></asp:TextBox>
+                  <span class="font_01">▌暱稱</span>
+                  <asp:TextBox ID="txtPetName" runat="server" CssClass="join_board" Width="80px" MaxLength="20"></asp:TextBox>
+                  代表參加網路活動時顯示名稱</td>
+              </tr>
+              <tr>
+                <td class="font_01">▌性別</td>
+                <td colspan="3" class="t12_dgray"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="6%" class="t12_dgray"><asp:RadioButton ID="radSex1" runat="server" GroupName="grpSex"></asp:RadioButton></td>
+                    <td width="8%" class="t12_dgray">男</td>
+                    <td width="5%" class="t12_dgray"><asp:RadioButton ID="radSex2" runat="server" GroupName="grpSex"></asp:RadioButton></td>
+                    <td width="81%" class="t12_dgray">女</td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr bgcolor="#eee">
+                <td valign="top" class="font_01 bg_01">▌email帳號</td>
+                <td colspan="3" class="t12_dgray bg_01"><asp:TextBox ID="txtEmail" runat="server" CssClass="join_board" Width="200px" MaxLength="50"></asp:TextBox>
+                  <br/>
+                  為確保您的權益，請確實填寫。目前已知免費郵件信箱Yahoo,Pchome等有擋信的狀況，建議避免使用</td>
+              </tr>
+              <tr>
+                <td class="font_01">▌出生年月日</td>
+                <td colspan="3" class="t12_dgray">西元&nbsp;
+                  <asp:DropDownList ID="ddlYearBirthday" runat="server" class="join_board"
+                CssClass="join_board" Width="160px"> </asp:DropDownList>
+                  年
+                  <select name="selebirmonth" size="1" class="join_board" id="selebirmonth" runat="server">
+                    <option value="" selected>請選擇</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  月
+                  <select name="selebirday" size="1" class="join_board" id="selebirday" runat="server">
+                    <option value="" selected>請選擇</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  日</td>
+              </tr>
+              <tr bgcolor="#eee">
+                <td class="font_01 bg_01">‧結婚紀念日</td>
+                <td colspan="3" class="t12_dgray bg_01">西元&nbsp;
+                  <asp:DropDownList ID="ddlYearMarry" runat="server" class="join_board" CssClass="join_board"
+                Width="160px"> </asp:DropDownList>
+                  年
+                  <select name="select2" size="1" class="join_board" id="selemarrymonth" runat="server">
+                    <option value="" selected>請選擇</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  月
+                  <select name="select3" size="1" class="join_board" id="selemarryday" runat="server">
+                    <option value="" selected>請選擇</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  日</td>
+              </tr>
+              <tr>
+                <td valign="top" class="font_01">▌地址<br>
+                  <label></label></td>
+                <td colspan="3" class="t12_dgray"><label>
+                  <asp:RadioButton ID="radAddType1" runat="server" GroupName="grpAdd"/>            
+                  家裡
+                  <asp:RadioButton ID="radAddType2" runat="server" GroupName="grpAdd" />
+                  公司 </label>
+                  <asp:DropDownList AutoPostBack="True" CssClass="join_board" Height="24px" ID="selecity" runat="server"
+											Width="73px" OnSelectedIndexChanged="selecity_SelectedIndexChanged"> </asp:DropDownList>
+                  <asp:TextBox ID="txtAdd" runat="server" CssClass="join_board" MaxLength="50"></asp:TextBox>
+                  <br/>
+                  請填寫完整地址，確保您參與活動中獎權益！</td>
+              </tr>
+              <tr class="t12_dgray">
+                <td bgcolor="#eee" class="font_01 bg_01">▌密碼</td>
+                <td colspan="3" bgcolor="#eee" class="t12_dgray bg_01"><asp:TextBox ID="txtPwd" runat="server" CssClass="join_board" TextMode="Password"
+                Width="100px" MaxLength="8"></asp:TextBox>
+                  (4 -8個字母) ▌確認密碼
+                  <asp:TextBox ID="txtPwd2" runat="server" CssClass="join_board" TextMode="Password"
+                Width="100px" MaxLength="8"></asp:TextBox></td>
+              </tr>
+              <tr class="t12_dgray">
+                <td class="font_01">▌電話</td>
+                <td colspan="3" class="t12_dgray">手
+                  <asp:DropDownList CssClass="join_board" Height="22px" ID="cbozip" runat="server" Width="100px"></asp:DropDownList>
+                  機
+                  <asp:TextBox ID="txtMobile" runat="server" CssClass="join_board" Width="100px" MaxLength="10"></asp:TextBox>
+                  &nbsp; <span class="t12_lgray">或</span>市話/區碼
+                  <input class="join_board" id="txtPhoneArea" maxlength="3" size="3" name="txtPhoneArea"
+											runat="server">
+                  -
+                  <input class="join_board" id="txtPhone" maxlength="8" size="8" name="txtPhone"
+											runat="server">
+                  分機
+                  <input class="join_board" id="txtPhoneExt" maxlength="5" size="5" name="txtPhoneExt"
+											runat="server"></td>
+              </tr>
+              <tr>
+                <td bgcolor="#EEEEEE" class="font_01 bg_01">‧職業</td>
+                <td width="105" bgcolor="#EEEEEE" class="t12_dgray bg_01"><select name="select4" size="1" class="join_board" id="seleoccupation" runat="server">
+                  <option value="" selected>請選擇</option>
+                  <option value="1">企業負責人</option>
+                  <option value="2">中高階層主管</option>
+                  <option value="3">基層主管</option>
+                  <option value="4">一般職員</option>
+                  <option value="5">家管</option>
+                  <option value="6">學生</option>
+                  <option value="7">其他</option>
+                </select></td>
+                <td width="329" colspan="2" bgcolor="#EEEEEE" class="t12_dgray bg_01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="28%" class="font_01">‧教育程度</td>
+                    <td width="72%" class="t12_dgray"><select name="select5" size="1" class="join_board" id="seleeducation" runat="server">
+                      <option value="" selected>請選擇</option>
+                      <option value="14">國中以下</option>
+                      <option value="9">高中職</option>
+                      <option value="10">專科</option>
+                      <option value="11">大專院校</option>
+                      <option value="12">研究所</option>
+                      <option value="13">其他</option>
+                    </select></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr class="t12_dgray">
+                <td class="font_01">‧最常去的店</td>
+                <td colspan="3" class="t12_dgray"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="48%" class="font_01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="26%"><asp:DropDownList ID="drpStore" runat="server" CssClass="join_board" Width="100px"> </asp:DropDownList></td>
+                        <td width="48%" class="font_01">‧請問您半年內第幾次到hot 7用餐</td>
+                        <td width="26%" class="t12_dgray"><select name="seleTimes" class="join_board" id="seleTimes" runat="server">
+                          <option value="" selected>請選擇</option>
+                          <option value="0">無</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6次以上</option>
+                        </select></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr class="t12_dgray">
+                <td colspan="4" class="t12_dgray"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="41%" bgcolor="#EEEEEE" class="font_01 bg_01">‧我願意收到hot 7優惠訊息</td>
+                    <td width="59%" bgcolor="#EEEEEE" class="t12_dgray bg_01">
+                      <asp:RadioButton ID="rdEdm1" runat="server" GroupName="grpNomail" Checked="True"></asp:RadioButton>
+                      要
+                      <asp:RadioButton ID="rdEdm0" runat="server" GroupName="grpNomail"></asp:RadioButton>
+                      不要 </td>
+                  </tr>
+                </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="41%" class="font_01">‧我願意收到本公司所有餐廳優惠訊息 </td>
+                      <td width="59%" class="t12_dgray"><asp:RadioButtonList ID="radAllCareerMail" runat="server" RepeatDirection="Horizontal" Font-Size="10pt" CssClass="t12_dgray">
+                        <asp:ListItem Value="1" Selected="True">要</asp:ListItem>
+                        <asp:ListItem Value="0">不要</asp:ListItem>
+                      </asp:RadioButtonList></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr class="t12_dgray">
+                <td colspan="4" class="t12_dgray"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top" class="font_01">▌請詳細閱讀<a href="#" onClick="MM_openBrWindow('rights.htm','','menubar=yes,scrollbars=yes,width=400,height=450')">隱私權與條款</a></td>
+                    <td width="59%" class="t12_dgray">&nbsp;
+                      <asp:CheckBox ID="CheckBox1" runat="server" Text="我已閱讀，充分了解並同意"></asp:CheckBox></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr class="t12_dgray">
+                <td height="30" colspan="4" align="center" class="t12_dgray"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td style="padding-top:30px;"><img src="images/btn_check.png" width="106" height="45"onMouseOver="this.src='images/btn_checka.png'" onMouseOut="this.src='images/btn_check.png'" alt="" style="cursor:pointer; border: none;" /></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          </table>
+        </form>
+        
+        
+      </div>
+  </div>
+    <div class="footer"><img src="images/footer.png" width="761" height="72"></div>
+</div>
+</body>
+</html>
