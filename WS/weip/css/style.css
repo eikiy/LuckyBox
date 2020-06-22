@@ -181,6 +181,7 @@ body:not(.home) .bg-anibox{ opacity: 0.6; position: relative; z-index: -1;}
 }
 @media (max-width:650px) {
 	.main-wrapper .sec-title{ font-size: 1.650rem; }
+	.main-wrapper .heading{}
 	.main-wrapper .heading .sec-title{ letter-spacing: 2px; }
 	.main-wrapper .about h3{ font-size: 2rem; letter-spacing: 2PX; }
 	.main-wrapper .about p, .main-wrapper .lecture .editor p{ font-size: 1rem; }
@@ -195,7 +196,7 @@ body:not(.home) .bg-anibox{ opacity: 0.6; position: relative; z-index: -1;}
 	.title-underline::before{ height: 8px; }
 	.main-wrapper .video .col-lg{ -ms-flex: 0 0 100%;  flex: 0 0 100%;  max-width: 100%;}
 	.main-wrapper .pf-item{ margin-bottom: 25PX; }
-	.main-wrapper .row{ margin-top: 0; }
+	.main-wrapper .row{ margin-top: 0 !important; }
 	.main-wrapper .video iframe{ height: 200px; }
 	.main-wrapper .sec-title{ font-size: 1.35rem; }
 	.main-wrapper .sec-title span{ font-size: 1.8rem; top: -5px; }
