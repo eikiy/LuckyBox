@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /UploadFile
-Disallow: /member_success.aspx
-Disallow: /coupon.aspx
