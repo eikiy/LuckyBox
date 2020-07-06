@@ -7,21 +7,32 @@
  * 	Default theme - Owl Carousel CSS File
  */
  body{ background-color: #ececec;  font-family:'Roboto', 'Noto Sans TC',Arial,"微軟正黑體","新細明體", sans-serif;}
- .the-continue{ height: 100%; width: 100%; border: none !important; box-shadow: none !important;}
- .the-continue a{text-align: center; display: block; width: 100%; max-width: 250px; margin:5vh auto 0 auto; background-color: #fff; border-radius: 10%; min-height: 250px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+
+ .the-continue{ height: 100%; width: 100%; border: none !important; box-shadow: none !important; padding-top:140px;}
+ /*.the-continue a{text-align: center; display: block; width: 100%; max-width: 250px; margin:5vh auto 0 auto; background-color: #fff; border-radius: 10%; min-height: 250px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }*/
  .the-continue p{font-family: "FontAwesome"; font-weight: 900; font-size: 1rem;}
  .the-continue p span{ display: block; font-size: 40px; }
-
- .tos-check-box{ background-color: rgba(0,0,0,.7); width: 100%; position: fixed; bottom: 0; left: 0; z-index: 5; text-align: center; letter-spacing: 1px;}
- .tos-check-box label.checkbox{ padding: 20px 0; color: #fff;}
+ .the-continue .to-continue{text-align: center; display: block; width: 100%; max-width: 250px; padding: 20px 0; box-shadow: 2px 3px 5px rgba(0,0,0,.2); margin:0 auto; background-color: #fff; border-radius: 6px;/* display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;*/ }
+ .btn-style{ color: #fff; font-size: 14px; background: #8fc31f; min-width: 100px; padding: 6px 12px;}
+ .btn-style:hover{ opacity: .9; }
+ .btn-round{ border-radius: 50px;}
+ .color-gray{ background-color: #a5a5a5;}
+ button.btn-style[disabled]{ background-color: #cacaca; }
+ .the-continue .btn-style{ min-width: initial; min-width: 100px; border-radius:4px}
+ .w100{ width: 100%; padding: 5px 0;  }
+ .tos-check-box{ background-color: rgba(0,0,0,.7); width: 100%; position: fixed; bottom: 0; padding-bottom: 10px; left: 0; z-index: 5; text-align: center; letter-spacing: 1px;}
+ .tos-check-box label.checkbox{ padding: 15px 0 10px; color: #fff;}
  .tos-check-box input[type="checkbox"]{margin: 0;}
 
- p.the-copyrights{width: 100%; text-align: center; font-size: .8rem; color: #999999; padding: .5rem 0 60px 0;}
+ p.the-copyrights{width: 100%; text-align: center; font-size: .8rem; color: #999999; padding: .5rem 0 50px 0;}
  p.the-copyrights a, .tos-check-box a{color: #72c02c;}
  p.the-copyrights a:hover,.tos-check-box a:hover{ text-decoration: underline; }
 
-
- #demos .owl-carousel{ position: relative; }
+.the-language { width: 120px; position: relative; margin: 0 auto;}
+.the-language .form-select { max-width: 105px; display: block; background-color: transparent; height: 30px; width: 100%; margin: 0 auto; -moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; padding: 0 20px; font-size: 13px; line-height: 22px; color: #fff; -webkit-appearance: none; /* Chrome */ -moz-appearance: none; /* Firefox */ text-indent: 0.01px text-overflow: ' '; /* space */        }
+.the-language::after{ content: ""; position: absolute; top:calc(50% - 7.5px); color: #fff; right: 20px; width: 12px; height: 15px; display: block; background: url(../images/chevron-down-solid.svg) center center no-repeat; background-size: contain;}
+.the-language select option{ color: #555; }
+#demos .owl-carousel{ position: relative; }
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -70,3 +81,8 @@
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
+
+@media (max-width:640px){
+  .the-continue{ padding-top: calc(50vh - 100px);}
+  .the-continue .btn-style{ font-size: 16px; min-width: 125px;}
+}
