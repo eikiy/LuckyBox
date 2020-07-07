@@ -32,7 +32,7 @@
 .the-language .form-select { max-width: 105px; display: block; background-color: transparent; height: 30px; width: 100%; margin: 0 auto; -moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; padding: 0 20px; font-size: 13px; line-height: 22px; color: #fff; -webkit-appearance: none; /* Chrome */ -moz-appearance: none; /* Firefox */ text-indent: 0.01px text-overflow: ' '; /* space */        }
 .the-language::after{ content: ""; position: absolute; top:calc(50% - 7.5px); color: #fff; right: 20px; width: 12px; height: 15px; display: block; background: url(../images/chevron-down-solid.svg) center center no-repeat; background-size: contain;}
 .the-language select option{ color: #555; }
-#demos .owl-carousel{ position: relative; }
+#demos .owl-carousel{ position: relative; padding-top: 20px; }
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -63,6 +63,9 @@
   margin-top: 10px; }
 
 .owl-theme .owl-dots {
+  position: absolute;
+  top: 5px;
+  width: 100%;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-dots .owl-dot {
