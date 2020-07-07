@@ -24,7 +24,7 @@
  .tos-check-box label.checkbox{ padding: 15px 0 10px; color: #fff;}
  .tos-check-box input[type="checkbox"]{margin: 0;}
 
- p.the-copyrights{width: 100%; text-align: center; font-size: .8rem; color: #999999; padding: .5rem 0 80px 0;}
+ p.the-copyrights{width: 100%; text-align: center; font-size: .8rem; color: #999999; padding:0 0 80px 0;}
  p.the-copyrights a, .tos-check-box a{color: #72c02c;}
  p.the-copyrights a:hover,.tos-check-box a:hover{ text-decoration: underline; }
 
@@ -34,7 +34,6 @@
 .the-language select option{ color: #555; }
 #demos .owl-carousel{ position: relative; padding-top: 20px; }
 .owl-theme .owl-nav {
-  margin-top: 10px;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-nav [class*='owl-'] {
@@ -46,7 +45,7 @@
     cursor: pointer;
     border-radius: 3px;
     font-family: "FontAwesome"; font-weight: 900;
-    position: absolute; z-index: 20;  position: absolute; top:calc(50% - 49px); width: 45px; height: 45px; display: block; 
+    position: absolute; z-index: 20;  position: absolute; top:calc(50% - 27px); width: 45px; height: 45px; display: block; 
     background-repeat: no-repeat; background-position: center center; background-size: contain;}
     .owl-theme .owl-nav i, .the-continue p i{  font-style: inherit!important;}
     .owl-theme .owl-nav [class*='owl-']:hover {
