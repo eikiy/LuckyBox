@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(animate.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
 html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
@@ -22,7 +23,8 @@ a:hover{ text-decoration:none;}
 select, input, textarea, button {  font-family:'lato', 'Noto Sans TC', '微軟正黑體', sans-serif; font-size: 14px;color: #4A4A4A;}
 *:link, *:visited, *:hover, *:active, *:focus , * {border: none;outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
-
+a.gotop{ cursor: pointer; position: fixed; bottom: 40px; right: 18px; z-index: 15; width: 50px; color: #fff; background-color: #c3c3c3;  opacity: 0; font-size: 18px; line-height: 50px; text-align: center; height: 50px; display: block; border-radius: 50%; background-color: #9e9e9e87; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+a.gotop img{ max-width: 18px;}
 .wrapper{ width: 100%; background: url(../images/bg_main.png) center center no-repeat; background-size: cover; background-attachment: fixed; position: relative; }
 .wrapper .logo{ position: absolute; right: calc(50% - 160px); top: 25px; z-index: 5; width: 320px; height: 120px; display: block; background: url(../images/logo.svg) center center no-repeat; background-size: contain;}
 .wrapper .mag_bg{ width: 100%; background-image: url(../images/map_bg.png); background-position: center top; background-repeat: no-repeat; }
@@ -33,10 +35,17 @@ select, input, textarea, button {  font-family:'lato', 'Noto Sans TC', '微軟�
 .map_content img{ width: 100%; }
 .map area{ cursor: pointer;}
 .store_content{ width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; padding: 20px 0; }
-.store_content .list{ width: 33%;/* float: left;*/ padding: 15px;  display: flex; justify-content: center; align-items: flex-start; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;transform: scale(1);}
+
+.store_content .list{ width: 33%; position: relative; padding: 15px;  display: flex; justify-content: center; align-items: flex-start; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;transform: scale(1);}
 .store_content .list:hover{transform: scale(1.05);}
 .store_content .grid_container{ width: 100%; background-color: #fff; box-shadow: 0px 2px 10px rgba(0,0,0,.1); border-radius: 10px; overflow: hidden;}
 .store_content .grid_container .pic{ width: 100%; height: 180px; display: block; background-repeat: no-repeat; background-size: cover; background-position: center center; }
+
+.store_content .img_map_icon{ position: absolute; width: 50px; height: 70px; left: 10px; top: 0px; padding-top: 6px; background-repeat: no-repeat; background-position: top center; background-size: contain; }
+.store_content .img_map_icon p{ width: 36px; height: 36px; display: block; border-radius: 50%; color: #fff; margin: 0 auto; text-align: center; line-height: 36px; font-size: 18px; font-weight: bold; background-color: rgba(256,256,256,0.1); }
+.store_content .bg_color_01{ background-image: url(../images/icon_color_01.svg); }
+.store_content .bg_color_02{ background-image: url(../images/icon_color_02.svg); }
+.store_content .bg_color_03{ background-image: url(../images/icon_color_03.svg); }
 
 .store_content .grid_container .store_info{ width: 100%; padding: 15px 20px; }
 .store_content .grid_container .store_info h3.store_name{ text-align: center; font-size: 21px; font-weight: bold; color: #E36503; font-family: 'Noto Serif TC', serif; }
@@ -61,7 +70,9 @@ select, input, textarea, button {  font-family:'lato', 'Noto Sans TC', '微軟�
     .wrapper .mag_bg{background-size: 364%;}
 }
 @media (max-width:600px) {
+    a.gotop{ width: 44px; height: 44px; line-height: 44px; }
     .wrapper .mag_bg{padding-top: 110px; }
+    .store_content .img_map_icon{ left: 0px; top: -10px; }
     .store_content .list{ padding:6px 5px;}
     .store_content .grid_container .pic{ height: 100px; }
     .store_content .grid_container .store_info{padding: 10px; }
@@ -75,5 +86,7 @@ select, input, textarea, button {  font-family:'lato', 'Noto Sans TC', '微軟�
     .footer p{ font-size: 12px; }
 }
 @media (max-width:415px) {
+    .store_content .img_map_icon{ width: 40px; padding-top: 5px; }
+    .store_content .img_map_icon p{ width: 30px; height: 30px; line-height: 30px; }
     .wrapper .mag_bg{ background-size: 433%;}
 }
