@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台東美食地圖</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/jquery.rwdImageMaps.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="mag_bg">
+            <div class="container">
+                <div class="map_content">
+                    <!-- <img src="images/taitungfoods_map.png"> -->
+                    <img class="icon" src="images/map_icon.png" usemap="#map" id="map123" alt="food map">
+                    <map name="map">
+                        <area target="" alt="明奎冷飲店" title="明奎冷飲店" href="#part1-1" coords="340,809,22" shape="circle">
+                        <area target="" alt="早安美芝城成功中山店" title="早安美芝城成功中山店" href="#part1-2" coords="567,436,24" shape="circle">
+                        <area target="" alt="活力寶中店" title="活力寶中店" href="#part1-3" coords="420,738,22" shape="circle">
+                        <area target="" alt="美芝城活力更生店" title="美芝城活力更生店" href="#part1-4" coords="316,778,23" shape="circle">
+                        <area target="" alt="早安美芝城-新生店" title="早安美芝城-新生店" href="#part1-5" coords="399,769,19" shape="circle">
+                        <area target="" alt="巨森早餐吧傳廣店" title="巨森早餐吧傳廣店" href="#part1-6" coords="381,714,22" shape="circle">
+                        <area target="" alt="小星星早餐店" title="小星星早餐店" href="#part1-7" coords="441,482,20" shape="circle">
+                        <area target="" alt="正氣路美而美" title="正氣路美而美" href="#part1-8" coords="370,790,21" shape="circle">
+                        <area target="" alt="橙之堡早餐店" title="橙之堡早餐店" href="#part1-9" coords="358,750,24" shape="circle">
+                        <area target="" alt="早安美芝城台東活力正氣店" title="早安美芝城台東活力正氣店" href="#part1-10" coords="329,723,22" shape="circle">
+                        <area target="" alt="巨森早餐吧 新生店" title="巨森早餐吧 新生店" href="#part1-11" coords="414,680,22" shape="circle">
+                        <area target="" alt="東方大鎮賞味家" title="東方大鎮賞味家" href="#part1-12" coords="453,713,25" shape="circle">
+                        <area target="" alt="簡單生活早午餐" title="簡單生活早午餐" href="#part1-13" coords="367,668,21" shape="circle">
+                        <area target="" alt="99早餐吧" title="99早餐吧" href="#part1-14" coords="283,740,21" shape="circle">
+                        <area target="" alt="馬蘭巨森早餐店" title="馬蘭巨森早餐店" href="#part1-15" coords="277,787,23" shape="circle">
+                        <area target="" alt="一凡茶作" title="一凡茶作" href="#part2-1" coords="380,578,19" shape="circle">
+                        <area target="" alt="四吉好物" title="四吉好物" href="#part2-2" coords="436,640,20" shape="circle">
+                        <area target="" alt="伊田菓業" title="伊田菓業" href="#part2-3" coords="333,621,22" shape="circle">
+                        <area target="" alt="全記手工饅頭坊" title="全記手工饅頭坊" href="#part2-4" coords="497,636,21" shape="circle">
+                        <area target="" alt="曲禾酒莊" title="曲禾酒莊" href="#part2-5" coords="392,526,25" shape="circle">
+                        <area target="" alt="京亞農創市集" title="京亞農創市集" href="#part2-6" coords="431,576,23" shape="circle">
+                        <area target="" alt="來樂美食廚坊" title="來樂美食廚坊" href="#part2-7" coords="317,666,22" shape="circle">
+                        <area target="" alt="梨迦初走" title="梨迦初走" href="#part2-8" coords="385,623,24" shape="circle">
+                        <area target="" alt="東太陽製酒" title="東太陽製酒" href="#part2-9" coords="471,573,21" shape="circle">
+                        <area target="" alt="肯杜爾高山咖啡" title="肯杜爾高山咖啡" href="#part2-10" coords="512,581,22" shape="circle">
+                        <area target="" alt="夏戀蔬果產銷" title="夏戀蔬果產銷" href="#part2-11" coords="489,534,21" shape="circle">
+                        <area target="" alt="薑黃伯" title="薑黃伯" href="#part2-12" coords="307,826,24" shape="circle">
+                        <area target="" alt="金日昇農場" title="金日昇農場" href="#part2-13" coords="237,841,20" shape="circle">
+                        <area target="" alt="台東阿吉旅遊Go" title="台東阿吉旅遊Go" href="#part2-14" coords="465,674,22" shape="circle">
+                        <area target="" alt="活泉自然生態農場" title="活泉自然生態農場" href="#part2-15" coords="169,1135,23" shape="circle">
+                    </map>
+					<!-- <map name="map">
+						<area name="#part1-1" shape="circle" coords="" alt="明奎冷飲店" class="part1" title="明奎冷飲店">
+					</map> -->
+                </div>
+                <div class="logo"></div>
+                <div class="store_content clearfix">
+                    <!-- 台東餐飲業 15間 -->
+                    <div class="list" id="part1-1">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_01.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    明奎冷飲店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/ALDcaQcpKAEvMaCc9" target="_blank">
+                                        台東縣台東市正氣路390號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/B3fsbQ8" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-2">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_02.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    早安美芝城成功中山店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/rzKbxFkKZbFSSqpL7" target="_blank">
+                                        台東縣成功鎮忠智里中山路58號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/ecM6P4p" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-3">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_03.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    活力寶中店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/qN7pNwyD24q6QBY78" target="_blank">
+                                        台東市傳廣路505號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/62wkeae" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-4">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_04.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    美芝城活力更生店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/fS7KBnCj7zAfUPav5" target="_blank">
+                                        台東市更生路801號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/CDzp4Ho" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-5">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_05.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    早安美芝城-新生店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/3H8MV9LReDVWcH216" target="_blank">
+                                        臺東縣臺東市馬蘭里新生路695號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/6uaqB9H" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-6">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_06.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    巨森早餐吧傳廣店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/cYcAhBqsh3gu4H6M6" target="_blank">
+                                        臺東縣臺東市自強里傳廣路149號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/xFBvj0L" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-7">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_07.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    小星星早餐店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/FUBU6BM5FFmFsYBz8" target="_blank">
+                                        臺東縣關山鎮中正路1-3號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/dOGc4iy" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-8">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_08.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    正氣路美而美
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/FueckinJ5GCyrxgG7" target="_blank">
+                                        臺東縣臺東市民族里正氣路392號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/jFAU0tA" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-9">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_09.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    橙之堡早餐店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/aDNZXmXuf9jNDM6W6" target="_blank">
+                                        臺東縣太麻里鄉太麻里街232號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/h4J51Na" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-10">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_10.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    早安美芝城台東活力正氣店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/64F5wSJpdH9Tbaek8" target="_blank">
+                                        台東市正氣路395號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/v5W6QgH" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-11">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_11.png); background-position: center top">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    巨森早餐吧 新生店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/P5iNT75i15tRKvUB9" target="_blank">
+                                        台東縣台東市新生路451號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/2hgU5JF" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-12">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_12.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    東方大鎮賞味家
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/JacRyXzYL5sfPj9HA" target="_blank">
+                                        臺東縣臺東市中興路二段417巷1號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/mWEFvn6" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-13">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_13.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    簡單生活早午餐
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/mKohhwm1Qu5LRq6s9" target="_blank">
+                                        台東縣台東市新生路677號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/cvg1Mth" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-14">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_14.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    99早餐吧
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/x4SKCbPCFpEtWSpZ8" target="_blank">
+                                        臺東縣臺東市民生里更生路128號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/L7gH6Fv" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list" id="part1-15">
+                        <div class="grid_container">
+                            <div class="pic" style="background-image:url(images/food_15.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    馬蘭巨森早餐店
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/gSTuqwiH158JorH3A" target="_blank">
+                                        臺東縣臺東市馬蘭里新生路698號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/7DdT36B" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 台東餐飲業 15間 EDN -->
+                    <!-- 台東零售業者 15間 -->
+                    <div class="list">
+                        <div class="grid_container" id="part2-1">
+                            <div class="pic" style="background-image:url(images/shop_01.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    一凡茶作
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/5dz7gUnFSkHt4TXc6" target="_blank">
+                                        臺東縣鹿野鄉鹿野村6鄰中華路一段391號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/H2IsxKD" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-2">
+                            <div class="pic" style="background-image:url(images/shop_02.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    四吉好物
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/G15wyEhib5WxhbiZ8" target="_blank">
+                                        臺東縣臺東市馬蘭里新生路819巷18號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/mZ9GWCf" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-3">
+                            <div class="pic" style="background-image:url(images/shop_03.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    伊田菓業
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/d2DZkG7rUREQRQTVA" target="_blank">
+                                        臺東縣卑南鄉賓朗村後湖5號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/cDPrIZC" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-4">
+                            <div class="pic" style="background-image:url(images/shop_04.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    全記手工饅頭坊
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/iqs4HB3NnnavQvBD7" target="_blank">
+                                        臺東縣臺東市更生北路181巷40號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/K7ZKNPm" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-5">
+                            <div class="pic" style="background-image:url(images/shop_05.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    曲禾酒莊
+                                </h3>
+                                <p class="address">
+                                    <a href="#" target="_blank">
+                                        台東縣卑南鄉鹿鳴橋29之3號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/DVJfiug" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-6">
+                            <div class="pic" style="background-image:url(images/shop_06.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    京亞農創市集 <span class="f_s">Jingya Farmers Market</span>
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/jcXvtNNuiCZTvwP3A" target="_blank">
+                                        臺東縣東河鄉東河村10鄰南東河264號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/RjfJnvF" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-7">
+                            <div class="pic" style="background-image:url(images/shop_07.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    來樂美食廚坊
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/Kg7euyUmWDed3UbT9" target="_blank">
+                                        臺東縣臺東市光明里連航路88巷17號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/RC4WdUp" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-8">
+                            <div class="pic" style="background-image:url(images/shop_08.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    梨迦初走
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/HMt8WAL9RXJZV7kZA" target="_blank">
+                                        台東縣卑南鄉文泰路18號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/H0sNzdD" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-9">
+                            <div class="pic" style="background-image:url(images/shop_09.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    東太陽製酒-職人純釀的恆酒食光
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/XbZL55GRWmZghknh9" target="_blank">
+                                        台東縣台東市中興路三段629-5號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/8gGp4jC" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-10">
+                            <div class="pic" style="background-image:url(images/shop_10.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    肯杜爾高山咖啡
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/ogUfTqCZ58v4mio99" target="_blank">
+                                        臺東縣臺東市民權里博愛路229號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/dHESmsk" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-11">
+                            <div class="pic" style="background-image:url(images/shop_11.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    夏戀蔬果產銷
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/rQT8hQEhMDsH52XV8" target="_blank">
+                                        臺東縣鹿野鄉鹿野村中華路二段151號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/nxNjmT3" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-12">
+                            <div class="pic" style="background-image:url(images/shop_12.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    薑黃伯
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/1wjvxqfHQepeR5277" target="_blank">
+                                        臺東縣臺東市更生路288號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/klGiGgw" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-13">
+                            <div class="pic" style="background-image:url(images/shop_13.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    金日昇農場
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/ygvxX4bqMaVRP5ZdA" target="_blank">
+                                        臺東縣台東縣太麻里鄉北里村山棕寮1鄰2-13號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/8qB7gm7" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-14">
+                            <div class="pic" style="background-image:url(images/shop_14.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    台東阿吉旅遊Go
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/KoSKmuPAwvLhGq7c6" target="_blank">
+                                        臺東縣臺東市民生里寧波街21巷32弄7號2樓
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/UHVMDaD" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="grid_container" id="part2-15">
+                            <div class="pic" style="background-image:url(images/shop_15.png);">
+                            </div>
+                            <div class="store_info">
+                                <h3 class="store_name">
+                                    活泉自然生態農場
+                                </h3>
+                                <p class="address">
+                                    <a href="https://goo.gl/maps/QBXaGpj4JguADsfk9" target="_blank">
+                                        臺東縣大武鄉南興村圓山路36之6號
+                                    </a>
+                                </p>
+                                <p class="btn_go">
+                                    <a href="https://lin.ee/XUaujwr" target="_blank">加LINE好友選購</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 台東零售業者 15間 END -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyrights All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
