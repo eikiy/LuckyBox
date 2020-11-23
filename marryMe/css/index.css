@@ -1,0 +1,110 @@
+/* main */
+body{  background: url("../images/index/bg_01.png") repeat top center; background-size: 100% auto;  }
+.wrap-content { padding: 40px 0; width: 100%;  max-width: 100vw; overflow: hidden; margin: 0 auto; background: url("../images/index/bg_00.png") no-repeat top center; background-size: 100% auto;}
+.wrap-content img{ width: 100%; }
+img.mob{display: none;}
+.btnFixed {z-index: 10; position: fixed;top: 80%; left: 50%; width: 30%; transform: translateX(-50%);}
+.contents-box{ max-width: 1440px; padding:0 20px 20px 20px; margin: 0 auto; min-width: 320px;}
+/* 主視覺 */
+.main_KV { position: relative; max-width: 1440px; margin: 0 auto;}
+.main_KV .main_title { margin-left: 22%; max-width: 1000px; animation: mainKvTitle 2s linear;}
+.main_KV .teacher{ position: absolute;  width: 28%; left: -2%;   top: 100px;  z-index: 10; animation: mainKvTeacher 1.5s ease-out;}
+.main_KV .subtitle { max-width: 1000px; margin: 0 auto; animation: mainKvSubtitle 1.5s ease-out;}
+
+.subtitle_box{ width: 100%; max-width: 1350px; margin: 0 auto;}
+.subtitle_box .subtitle_info{ float: left; width: 68%; position: relative;}
+.subtitle_box .ill_01{ float: right; width: 29%; position: absolute; bottom: 0; right: 0;}
+
+.form_box{ width: 100%; border-radius: 50px; border: 8px solid #fff; margin: 0 auto; box-shadow: 0 5px 5px rgb(181 159 167 / 22%); padding-bottom: 50px; position: relative;}
+.form_box .w50{position: relative; float: left;width: 50%; padding: 20px; }
+.form_box .w50 figure, .form_box .w50 fieldset{ max-width: 495px; margin: 0 auto; }
+.form_box .w50 figure.form_title{ max-width: 240px; margin:0 auto; }
+.form_box .w50:nth-child(2)::before{ content: ""; position: absolute; width: 4px; left: -2px; top: 30px; height: 250px; display: block; background:url(../images/index/img_dotted.png) 0 0 repeat; }
+.form_box .w50:nth-child(2)::after{ content: ""; position: absolute; width:206px; left:-100px; bottom: 0px; height:302px; display: block; z-index: 4; background:url(../images/index/illustration_02.png) bottom center no-repeat; background-size: contain; }
+.form_box fieldset{ padding: 10px 0; }
+.form_box input{ background:url(../images/index/dot-grid.png) 0 0 repeat; width: 100%; font-size: 24px; font-weight: bold; height: 75px; padding: 5px; text-align: center; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
+.form_box input::placeholder{ font-weight: normal; font-size: 22px; color: #666; }
+.form_box input:focus{ box-shadow: 0 5px 5px rgb(255 161 64 / 52%); }
+.form_box .styled-select { position: relative; width: 100%; font-size: 24px; font-weight: bold; background:url(../images/index/dot-grid.png) 0 0 repeat; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  overflow: hidden; }
+.form_box .styled-select::after{ content: ""; position: absolute; top:calc(50% - 7px); pointer-events:none; right: 22px; width: 24px; height: 14px; display: block; background: url(../images/index/arr.png) center center no-repeat ; background-size: contain;}
+.form_box .styled-select select { width: 100%; line-height: 75px; *width: 120%; _width: 120%; text-align: center;text-align-last: center; font-size: 24px;  padding: 0 20px; background: transparent; text-align: center; border: 0; border-radius: 0; -webkit-appearance: none; }
+.form_box .styled-select select:focus{ box-shadow: 0 5px 5px rgb(255 161 64 / 52%); }
+.form_box .styled-select select option { background-color: #fff; text-align: center;  color: #333; }
+
+.form_box button.btn_next{ position: absolute; bottom: -50px; left: calc(50% - 220px); width: 100%; max-width: 439px; height: 109px; display: block; background-color: transparent; background-image:url(../images/index/btn_next.png); background-position: center center; background-repeat: no-repeat; text-indent: -9999px; background-size: contain; }
+.form_box button.btn_next:hover{ background-image:url(../images/index/btn_next_hover.png);  }
+.features, .user_feedback{ max-width: 1200px; margin: 0 auto; }
+
+@keyframes mainKvTitle {
+    0% {transform: translateY(-100vh) rotate(0deg);}
+    20% {transform: translateY(-50vh) rotate(5deg);}
+    40% {transform: translateY(0) rotate(-5deg);}
+    60% {transform: translateY(0) rotate(5deg);}
+    80% { transform: translateY(0) rotate(-5deg);}
+    100% {transform: translateY(0) rotate(0deg);}
+}
+@keyframes mainKvTeacher {
+    0% {transform: translateX(-100vw);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes mainKvSubtitle {
+    0% {transform: translateX(100vw);}
+    100% {transform: translateY(0); }
+}
+@media screen and (device-aspect-ratio: 16/9) {
+    .main_KV { width: 80%;}
+}
+@media screen and (device-aspect-ratio: 16/10) {
+    .main_KV { width: 80%; }
+}
+@media screen and (device-aspect-ratio: 4/3) {
+    .main_KV {width: 100%; }
+}
+/*@media screen and (max-width: 768px) {
+    section.main_KV {height: calc( 100vh - 65px );}
+}*/
+/*@media screen and (max-width: 575px) {
+    section.main_KV { height: calc( 100vh - 56px ); }
+}
+*/
+
+@media (max-width:1400px){
+    .main_KV .teacher{ top: 20px; width: 32%; left: -8%; }
+    .form_box .w50 figure, .form_box .w50 fieldset{ width: 88%; max-width: 400px; }
+    .form_box input{ font-size: 22px; height: 55px; }
+    .form_box input::placeholder{ font-size: 20px;}
+    .form_box .styled-select select{ line-height: 55px; font-size: 20px; }
+
+    .form_box .w50:nth-child(2)::after{ width: 140px; left: -70px; bottom: -22px; }
+    .form_box button.btn_next{ width: 300px; left: calc(50% - 150px);}
+}
+@media (max-width:800px){
+    .form_box{ max-width: 90%; }
+    .form_box .w50{ width: 100%; }
+    .form_box .w50:nth-child(2)::before{ width: 80%; left: 10%; top: 10px; height: 4px; background: url(../images/index/img_dotted2.png) 0 0 repeat; }
+    .form_box .w50:nth-child(2)::after{ left: initial; bottom: -62px; right: -65px; }
+}
+@media (max-width:800px){
+    .main_KV .teacher{ left: 0%; top: 20px; width: 29%; }
+    .main_KV .main_title{ margin-left: 24%; }
+}
+@media (max-width:800px){
+    img.pc{ display: none; }
+    img.mob{display: block;}
+}
+@media (max-width:600px){
+    .wrap-content{ padding: 20px 0; }
+    .main_KV .teacher{ left: 0; }
+    .subtitle_box .subtitle_info{ width: 100%; }
+    .subtitle_box .ill_01{ width: 23%; bottom: 85px; }
+    .form_box .w50 figure.form_title{ width: 180px; }
+    .form_box{ border-width: 6px; width: 96%; border-radius: 20px;}
+    .form_box .w50 figure, .form_box .w50 fieldset{ width: 100%; }
+    .form_box input{ font-size: 16px;}
+    .form_box input::placeholder{ font-size: 16px;}
+    .form_box .styled-select select{ font-size: 16px; }
+    .form_box .styled-select::after{ width: 18px; }
+    .form_box .w50:nth-child(2)::after{ width: 100px; height: 130px; bottom: 305px; right: 0;}
+    .form_box button.btn_next{ width: 240px; left: calc(50% - 120px); }
+}

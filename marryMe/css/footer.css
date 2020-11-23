@@ -1,0 +1,97 @@
+/*------ Footer ------*/
+.wrap-footer {
+    background: url("../images/header_footer/footer_bg.png") no-repeat center center;
+    background-size: cover;
+    padding: 6px 0 10px;
+}
+.wrap-footer .footer_logo {
+    width: 7%;
+    margin: 12px auto;
+}
+.wrap-footer-content {
+    width: 50%;
+    margin: 24px auto;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.wrap-footer-content h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+.wrap-footer-content h4 a{
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+.wrap-footer-content h4 a:hover{
+    text-decoration: none;
+    color: saddlebrown;
+}
+.wrap-footer-content .line {
+    width: 2px;
+    background-color: #fff;
+    height: 1.1rem;
+    margin: 0 12px;
+}
+.wrap-footer-icon {
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin: 0 auto;
+}
+.wrap-footer-icon figure{
+    padding: 6px 12px;
+}
+.copyright{
+    font-size: .9rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.6px;
+}
+.copyright a{
+    color: white;
+}
+.mail {
+    text-align: center;
+    margin: 24px 0 6px 0;
+}
+.mail a{
+    font-size: .9rem;
+    color: white;
+    letter-spacing: 2.6px;
+}
+.mail a:hover, .copyright a:hover{
+    transition: .3s;
+    text-decoration: none;
+    color: saddlebrown;
+}
+@media screen and (max-width: 575px) {
+    .wrap-footer-icon {
+        width: 50%;
+    }
+    .wrap-footer-content h4 a{
+        font-size: 1rem;
+    }
+    .wrap-footer .footer_logo {
+        width: 20%;
+    }
+    .wrap-footer-content {
+        width: 80%;
+        margin: 12px auto;
+    }
+    .copyright{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .mail {
+        margin: 8px 0 3px 0;
+    }
+    .mail a{
+        font-size: 12px;
+        letter-spacing: 1.4px;
+    }
+}
