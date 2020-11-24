@@ -3,7 +3,7 @@ body{  background: url("../images/index/bg_01.png") repeat top center; backgroun
 .wrap-content { padding: 40px 0; width: 100%;  max-width: 100vw; overflow: hidden; margin: 0 auto; background: url("../images/index/bg_00.png") no-repeat top center; background-size: 100% auto;}
 .wrap-content img{ width: 100%; }
 img.mob{display: none;}
-.contents-box{ max-width: 1440px; padding:0 20px 20px 20px; margin: 0 auto; min-width: 320px;}
+.contents_box{ max-width: 1440px; padding:0 20px 20px 20px; margin: 0 auto; min-width: 320px;}
 
 /* 主視覺 */
 .main_KV { position: relative; max-width: 1460px; margin: 0 auto; padding: 0 20px;}
@@ -56,13 +56,16 @@ img.mob{display: none;}
 .features, .user_feedback{ max-width: 1200px; margin: 0 auto; }
 
 .result_contents{ position: relative; max-width: 900px; margin: 0 auto; }
-.result_contents .result_top_title1{ position: absolute; top: -90px; z-index: 3; width: 100%; text-align: center;}
+.result_contents .result_top_title1{ position: absolute; top: -145px; z-index: 3; width: 100%; text-align: center;}
 .result_contents .result_top_title1 figure{ max-width: 793px; display: inline-block;}
 .result_contents .result_fee{ position: absolute; bottom: -64px; z-index: 3; width: 100%; text-align: center;}
 .result_contents .result_fee figure{ max-width: 793px; display: inline-block;}
 
-.result_contents p.congratulations{ font-size: 28px; padding:60px 20px 40px 20px; }
-.result_contents .result_infobox{ max-width: 877px; margin: 0 auto; background-color: #fff; border:8px solid #fff; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); overflow:hidden; }
+.result_contents p.congratulations{ font-size: 28px; padding:20px 20px 40px 20px; font-weight: bold; color: #444; }
+.result_contents .result_infobox{ max-width: 877px; margin: 0 auto; background-color: #f5f0f0; border:8px solid #fff; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); overflow:hidden; }
+.result_contents .result_infobox p{ padding: 20px; font-size: 20px;}
+.result_contents .fraction_box{ width: 280px; height: 280px; margin:50px auto 0 auto; display: block; background: url(../images/index/bg_fraction.png) center center no-repeat; background-size: contain; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.result_contents .fraction_box p{ font-size: 76px; text-align: center; font-weight: bold; color: #fff; margin-bottom: 2rem; text-shadow: 0 5px 5px rgb(132 74 95 / 52%); }
 
 @keyframes mainKvTitle {
     0% {transform: translateY(-100vh) rotate(0deg);}
@@ -103,10 +106,13 @@ img.mob{display: none;}
     .form_box .w50:nth-child(2)::after{ width: 140px; left: -70px; bottom: -22px; }
     .form_box button.btn_next{ width: 300px; left: calc(50% - 150px);}
     .go_pay button.btn_pay{  width: 300px; height: 137px;}
+    .result_contents .fraction_box{width: 220px; height: 220px;}
+    .result_contents .fraction_box p{ font-size: 70px; }
 }
 @media (max-width:1000px){
     .subtitle_box .the_date p.day{ font-size: 32px;}
     .form_box .user_avatar{ width: 120px; height: 120px; }
+    .result_contents .fraction_box{width: 180px; height: 180px;}
 }
 @media (max-width:800px){
     .form_box{ max-width: 90%; }
@@ -114,8 +120,9 @@ img.mob{display: none;}
     .form_box .w50:nth-child(2)::before{ width: 80%; left: 10%; top: 10px; height: 4px; background: url(../images/index/img_dotted2.png) 0 0 repeat; }
     .form_box .w50:nth-child(2)::after{ left: initial; bottom: -62px; right: -65px; }
     .form_box .result_ill:nth-child(2)::before{ width: 80%; height: 50px; left: 10%; top: 0; background:url(../images/index/img_love.png) center center no-repeat; background-size: contain;}
+    .result_contents .fraction_box{width: 160px; height: 160px;}
 }
-@media (max-width:800px){
+@media (max-width:750px){
     .main_KV .teacher{ left: 0%; top: 20px; width: 29%; }
     .main_KV .main_title{ margin-left: 24%; }
 }
@@ -123,6 +130,7 @@ img.mob{display: none;}
     img.pc{ display: none; }
     img.mob{display: block;}
     .subtitle_box .the_date p.day{ font-size: 26px; top: calc(44% - 20px); left: 53.5%;}
+    .result_contents p.congratulations{ font-size: 24px; }
 }
 @media (max-width:600px){
     .wrap-content{ padding: 20px 0; }
@@ -144,16 +152,30 @@ img.mob{display: none;}
     .go_pay button.btn_pay{  width: 240px; height: 109px;}
     .form_box .user_avatar{ width: 100px; height: 100px; }
     .subtitle_box .the_date p.day{ font-size: 18px; top: calc(44% - 13px); left: 52%; }
+    .result_contents .result_top_title1{ top: -100px; }
+    .result_contents .result_fee{ bottom: -58px; }
+    .result_contents p.congratulations{ font-size: 22px; }
+    .go_pay{ padding-top: 80px; }
 }
 @media (max-width:500px){
+    .form_box .w50{ padding: 10px 20px; }
+    .main_KV .teacher{ top: 0; width: 32%; }
     .main_KV .subtitle .the_result{ margin: 0 15px; border-radius: 25px; padding: 20px 20px 25px 20px;}
-    .main_KV .subtitle .the_result p{ font-size: 17px; }
+    .main_KV .subtitle .the_result p{ font-size: 16px; }
     .main_KV .subtitle .the_result p.ss{ font-size: 15px; margin-bottom: 5px; margin-top: 10px;}
     .main_KV .subtitle .the_result p span{ font-size: 20px; }
+    .form_box .user_avatar{ width: 80px; height:80px; margin-bottom: 10px; }
+    .result_contents .result_fee{ bottom: -35px; }
+    .result_contents p.congratulations{ font-size: 20px; padding: 40px 20px 15px 20px;}
+    .go_pay{ padding-top: 40px;}
 }
 
 @media (max-width:400px){
-    .main_KV .subtitle .the_result{ margin: 0 30px;}
+    .main_KV .subtitle .the_result p{ font-size: 15px; }
+    .main_KV .subtitle .the_result p span{ font-size: 18px; }
+    .main_KV .subtitle .the_result{ margin: 0 20px;}
+    .result_contents p.congratulations{ font-size: 17px; padding: 20px 20px 5px 20px;}
+    .form_box .result_ill:nth-child(2)::after{ right: -30px; }
 }
 /*-------- popup ---------*/
 .wrap_popup {  position: fixed; top: 0; left: 0; width: 100%; height: 100vh; color: #333; transition: .5s; z-index: -1; background: transparent;}
