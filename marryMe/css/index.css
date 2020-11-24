@@ -3,16 +3,22 @@ body{  background: url("../images/index/bg_01.png") repeat top center; backgroun
 .wrap-content { padding: 40px 0; width: 100%;  max-width: 100vw; overflow: hidden; margin: 0 auto; background: url("../images/index/bg_00.png") no-repeat top center; background-size: 100% auto;}
 .wrap-content img{ width: 100%; }
 img.mob{display: none;}
-.btnFixed {z-index: 10; position: fixed;top: 80%; left: 50%; width: 30%; transform: translateX(-50%);}
 .contents-box{ max-width: 1440px; padding:0 20px 20px 20px; margin: 0 auto; min-width: 320px;}
+
 /* 主視覺 */
-.main_KV { position: relative; max-width: 1440px; margin: 0 auto;}
+.main_KV { position: relative; max-width: 1460px; margin: 0 auto; padding: 0 20px;}
 .main_KV .main_title { margin-left: 22%; max-width: 1000px; animation: mainKvTitle 2s linear;}
 .main_KV .teacher{ position: absolute;  width: 28%; left: -2%;   top: 100px;  z-index: 10; animation: mainKvTeacher 1.5s ease-out;}
 .main_KV .subtitle { max-width: 1000px; margin: 0 auto; animation: mainKvSubtitle 1.5s ease-out;}
+.main_KV .subtitle .the_result{ background:url(../images/index/dot-grid.png) 0 0 repeat; padding: 45px; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
+.main_KV .subtitle .the_result p{ font-weight: bold; font-size: 25px; padding-right: 10%; }
+.main_KV .subtitle .the_result p.ss{ font-size: 20px; color: #666; }
+.main_KV .subtitle .the_result p span{ color: #bc7c38; font-size: 35px; }
 
 .subtitle_box{ width: 100%; max-width: 1350px; margin: 0 auto;}
-.subtitle_box .subtitle_info{ float: left; width: 68%; position: relative;}
+.subtitle_box .subtitle_info{ float: left; width: 68%; position: relative; height: 100%;}
+.subtitle_box .the_date p.day{ font-size: 40px; font-weight: bold; position: absolute; top:calc(44% - 30px); left: 55%; color: #bc7c38; }
+
 .subtitle_box .ill_01{ float: right; width: 29%; position: absolute; bottom: 0; right: 0;}
 
 .form_box{ width: 100%; border-radius: 50px; border: 8px solid #fff; margin: 0 auto; box-shadow: 0 5px 5px rgb(181 159 167 / 22%); padding-bottom: 50px; position: relative;}
@@ -21,19 +27,42 @@ img.mob{display: none;}
 .form_box .w50 figure.form_title{ max-width: 240px; margin:0 auto; }
 .form_box .w50:nth-child(2)::before{ content: ""; position: absolute; width: 4px; left: -2px; top: 30px; height: 250px; display: block; background:url(../images/index/img_dotted.png) 0 0 repeat; }
 .form_box .w50:nth-child(2)::after{ content: ""; position: absolute; width:206px; left:-100px; bottom: 0px; height:302px; display: block; z-index: 4; background:url(../images/index/illustration_02.png) bottom center no-repeat; background-size: contain; }
+.form_box .result_ill:nth-child(2)::after{ background:url(../images/index/illustration_03.png) bottom center no-repeat; background-size: contain; }
+.form_box .result_ill:nth-child(2)::before{ width: 80%; height: 148px; left: -40%; background:url(../images/index/img_dotted_love.png) center center no-repeat; background-size: contain;}
 .form_box fieldset{ padding: 10px 0; }
 .form_box input{ background:url(../images/index/dot-grid.png) 0 0 repeat; width: 100%; font-size: 24px; font-weight: bold; height: 75px; padding: 5px; text-align: center; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
 .form_box input::placeholder{ font-weight: normal; font-size: 22px; color: #666; }
 .form_box input:focus{ box-shadow: 0 5px 5px rgb(255 161 64 / 52%); }
+
+.form_box .result_name, .form_box .result_bday{ background:url(../images/index/dot-grid.png) 0 0 repeat; width: 100%; text-align: center; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
+.form_box .result_name p{ margin-bottom: 0; font-size: 30px; font-weight: bold; line-height: 75px;}
+.form_box .result_bday p{margin-bottom: 0; font-size: 20px; font-weight: bold; line-height: 75px;}
+.form_box .user_avatar{ width: 135px; height: 135px; display: block; border-radius: 50%; background-color: #f9ede6; overflow: hidden; margin: 0px auto 20px auto; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
+
 .form_box .styled-select { position: relative; width: 100%; font-size: 24px; font-weight: bold; background:url(../images/index/dot-grid.png) 0 0 repeat; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  overflow: hidden; }
 .form_box .styled-select::after{ content: ""; position: absolute; top:calc(50% - 7px); pointer-events:none; right: 22px; width: 24px; height: 14px; display: block; background: url(../images/index/arr.png) center center no-repeat ; background-size: contain;}
 .form_box .styled-select select { width: 100%; line-height: 75px; *width: 120%; _width: 120%; text-align: center;text-align-last: center; font-size: 24px;  padding: 0 20px; background: transparent; text-align: center; border: 0; border-radius: 0; -webkit-appearance: none; }
 .form_box .styled-select select:focus{ box-shadow: 0 5px 5px rgb(255 161 64 / 52%); }
 .form_box .styled-select select option { background-color: #fff; text-align: center;  color: #333; }
 
-.form_box button.btn_next{ position: absolute; bottom: -50px; left: calc(50% - 220px); width: 100%; max-width: 439px; height: 109px; display: block; background-color: transparent; background-image:url(../images/index/btn_next.png); background-position: center center; background-repeat: no-repeat; text-indent: -9999px; background-size: contain; }
+.form_box button.btn_next{ transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; bottom: -50px; left: calc(50% - 220px); width: 100%; max-width: 439px; height: 109px; display: block; background-color: transparent; background-image:url(../images/index/btn_next.png); background-position: center center; background-repeat: no-repeat; text-indent: -9999px; background-size: contain; }
 .form_box button.btn_next:hover{ background-image:url(../images/index/btn_next_hover.png);  }
+.form_box button.btnFixed {z-index: 10; position: fixed; bottom: 2%;}
+
+.go_pay{ text-align: center; padding-top: 120px; }
+.go_pay button.btn_pay{ transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 100%; max-width: 439px; height: 200px; display: inline-block; background-color: transparent; background-image:url(../images/index/btn_pay.png); background-position: top center; background-repeat: no-repeat; text-indent: -9999px; background-size: contain; }
+.go_pay button.btn_pay:hover{ background-image:url(../images/index/btn_pay_hover.png);  }
+
 .features, .user_feedback{ max-width: 1200px; margin: 0 auto; }
+
+.result_contents{ position: relative; max-width: 900px; margin: 0 auto; }
+.result_contents .result_top_title1{ position: absolute; top: -90px; z-index: 3; width: 100%; text-align: center;}
+.result_contents .result_top_title1 figure{ max-width: 793px; display: inline-block;}
+.result_contents .result_fee{ position: absolute; bottom: -64px; z-index: 3; width: 100%; text-align: center;}
+.result_contents .result_fee figure{ max-width: 793px; display: inline-block;}
+
+.result_contents p.congratulations{ font-size: 28px; padding:60px 20px 40px 20px; }
+.result_contents .result_infobox{ max-width: 877px; margin: 0 auto; background-color: #fff; border:8px solid #fff; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); overflow:hidden; }
 
 @keyframes mainKvTitle {
     0% {transform: translateY(-100vh) rotate(0deg);}
@@ -61,37 +90,39 @@ img.mob{display: none;}
 @media screen and (device-aspect-ratio: 4/3) {
     .main_KV {width: 100%; }
 }
-/*@media screen and (max-width: 768px) {
-    section.main_KV {height: calc( 100vh - 65px );}
-}*/
-/*@media screen and (max-width: 575px) {
-    section.main_KV { height: calc( 100vh - 56px ); }
-}
-*/
 
 @media (max-width:1400px){
     .main_KV .teacher{ top: 20px; width: 32%; left: -8%; }
     .form_box .w50 figure, .form_box .w50 fieldset{ width: 88%; max-width: 400px; }
     .form_box input{ font-size: 22px; height: 55px; }
     .form_box input::placeholder{ font-size: 20px;}
+    .form_box .result_name p{ font-size: 24px; line-height: 55px;}
+    .form_box .result_bday p{font-size: 18px; line-height: 55px;}
     .form_box .styled-select select{ line-height: 55px; font-size: 20px; }
 
     .form_box .w50:nth-child(2)::after{ width: 140px; left: -70px; bottom: -22px; }
     .form_box button.btn_next{ width: 300px; left: calc(50% - 150px);}
+    .go_pay button.btn_pay{  width: 300px; height: 137px;}
+}
+@media (max-width:1000px){
+    .subtitle_box .the_date p.day{ font-size: 32px;}
+    .form_box .user_avatar{ width: 120px; height: 120px; }
 }
 @media (max-width:800px){
     .form_box{ max-width: 90%; }
     .form_box .w50{ width: 100%; }
     .form_box .w50:nth-child(2)::before{ width: 80%; left: 10%; top: 10px; height: 4px; background: url(../images/index/img_dotted2.png) 0 0 repeat; }
     .form_box .w50:nth-child(2)::after{ left: initial; bottom: -62px; right: -65px; }
+    .form_box .result_ill:nth-child(2)::before{ width: 80%; height: 50px; left: 10%; top: 0; background:url(../images/index/img_love.png) center center no-repeat; background-size: contain;}
 }
 @media (max-width:800px){
     .main_KV .teacher{ left: 0%; top: 20px; width: 29%; }
     .main_KV .main_title{ margin-left: 24%; }
 }
-@media (max-width:800px){
+@media (max-width:700px){
     img.pc{ display: none; }
     img.mob{display: block;}
+    .subtitle_box .the_date p.day{ font-size: 26px; top: calc(44% - 20px); left: 53.5%;}
 }
 @media (max-width:600px){
     .wrap-content{ padding: 20px 0; }
@@ -106,5 +137,43 @@ img.mob{display: none;}
     .form_box .styled-select select{ font-size: 16px; }
     .form_box .styled-select::after{ width: 18px; }
     .form_box .w50:nth-child(2)::after{ width: 100px; height: 130px; bottom: 305px; right: 0;}
+    .form_box .result_ill:nth-child(2)::after{ bottom: -50px; }
+    .form_box .result_name p{ font-size: 18.5px;}
+    .form_box .result_bday p{font-size: 15px;}
     .form_box button.btn_next{ width: 240px; left: calc(50% - 120px); }
+    .go_pay button.btn_pay{  width: 240px; height: 109px;}
+    .form_box .user_avatar{ width: 100px; height: 100px; }
+    .subtitle_box .the_date p.day{ font-size: 18px; top: calc(44% - 13px); left: 52%; }
+}
+@media (max-width:500px){
+    .main_KV .subtitle .the_result{ margin: 0 15px; border-radius: 25px; padding: 20px 20px 25px 20px;}
+    .main_KV .subtitle .the_result p{ font-size: 17px; }
+    .main_KV .subtitle .the_result p.ss{ font-size: 15px; margin-bottom: 5px; margin-top: 10px;}
+    .main_KV .subtitle .the_result p span{ font-size: 20px; }
+}
+
+@media (max-width:400px){
+    .main_KV .subtitle .the_result{ margin: 0 30px;}
+}
+/*-------- popup ---------*/
+.wrap_popup {  position: fixed; top: 0; left: 0; width: 100%; height: 100vh; color: #333; transition: .5s; z-index: -1; background: transparent;}
+.wrap_popup.show { z-index: 10; background: rgba(0,0,0,.5);}
+.popup_box.show { transform: translateY(calc(50vh - 125px));}
+.popup_box { transition: .5s; position: absolute; width: 500px; height: 250px; background: #e2e1e0; transform: translateY(1500px); left: calc(50vw - 250px); border-radius: 20px; box-shadow: 2px 2px 4px 1px rgba(0,0,0,.3);}
+.popup_cancel { position: relative; width: 50px; height: 50px; background: #f2bc67; clip-path: inset(0px 0px 0px 0px round 0 0 20% 20%); -webkit-clip-path: inset(0px 0px 0px 0px round 0 0 20% 20%); margin-left: 420px;}
+.popup_cancel span { position: absolute; left: 50%; transform: translate(-50%,-50%); color: white; font-size: 1.5rem; cursor: pointer;}
+.popup_title { margin: 20px 0; text-align: center;}
+.btn_submit { text-align: center; margin: 25px 0 20px 0;}
+.btn_submit span { background: #f2bc67; padding: 5px 80px; border-radius: 20px; color: white; cursor: pointer;}
+.btn_submit span:hover { box-shadow: 1px 1px 3px rgba(0,0,0,.5);}
+
+@media screen and (max-width: 575px){ 
+    .popup_box { width: 300px; height: 250px; transform: translateY(1000px); left: calc(50vw - 150px); }
+    .popup_box.show {transform: translateY(calc(50vh - 110px)); }
+    .popup_cancel { margin-left: 220px;}
+}
+@media screen and (max-width: 320px){
+    .popup_box { width: 250px; height: 200px;left: calc(50vw - 125px);}
+    .popup_box.show {transform: translateY(calc(50vh - 100px)); }
+    .popup_cancel {position: relative; width: 50px; height: 30px; background: #f2bc67; clip-path: inset(0px 0px 0px 0px round 0 0 20% 20%); margin-left: 180px; }
 }
