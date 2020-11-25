@@ -11,7 +11,7 @@ img.mob{display: none;}
 .main_KV .teacher{ position: absolute;  width: 28%; left: -2%;   top: 100px;  z-index: 10; animation: mainKvTeacher 1.5s ease-out;}
 .main_KV .subtitle { max-width: 1000px; margin: 0 auto; animation: mainKvSubtitle 1.5s ease-out;}
 .main_KV .subtitle .the_result{ background:url(../images/index/dot-grid.png) 0 0 repeat; padding: 45px; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
-.main_KV .subtitle .the_result p{ font-weight: bold; font-size: 25px; padding-right: 10%; }
+.main_KV .subtitle .the_result p{ font-weight: bold; font-size: 25px; padding-right: 10%; margin: 0;}
 .main_KV .subtitle .the_result p.ss{ font-size: 20px; color: #666; }
 .main_KV .subtitle .the_result p span{ color: #bc7c38; font-size: 35px; }
 
@@ -64,14 +64,49 @@ img.mob{display: none;}
 .result_contents p.congratulations{ font-size: 28px; padding:20px 20px 40px 20px; font-weight: bold; color: #444; }
 .result_contents .result_infobox{ max-width: 877px; margin: 0 auto; background-color: #f5f0f0; border:8px solid #fff; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); overflow:hidden; }
 .result_contents .result_infobox p{ padding: 20px; font-size: 20px;}
-.result_contents .fraction_box{ width: 280px; height: 280px; margin:50px auto 0 auto; display: block; background: url(../images/index/bg_fraction.png) center center no-repeat; background-size: contain; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
-.result_contents .fraction_box p{ font-size: 76px; text-align: center; font-weight: bold; color: #fff; margin-bottom: 2rem; text-shadow: 0 5px 5px rgb(132 74 95 / 52%); }
+.result_contents .fraction_box{ position: relative; width: 280px; height: 280px; margin:50px auto 0 auto; display: block; background: url(../images/index/bg_fraction.png) center center no-repeat; background-size: contain; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.result_contents .fraction_box p{font-size: 110px; text-align: center; font-weight: bold; color: #fff; margin-bottom: 2rem; text-shadow: 0 5px 5px rgb(132 74 95 / 52%); }
+.result_contents .fraction_box::after{ content: ""; top:-10px; right: -215px; z-index: 5;  position: absolute; width: 210px; height: 220px; background-size: contain; background-repeat: no-repeat; background-position: center center;}
+.result_contents .expression_01::after{ background-image: url(../images/index/img_expression_01.png); } 
+.result_contents .expression_02::after{ background-image: url(../images/index/img_expression_02.png); } 
+.result_contents .expression_03::after{ background-image: url(../images/index/img_expression_03.png); } 
+.result_contents .expression_04::after{ background-image: url(../images/index/img_expression_04.png); } 
+.result_contents .expression_05::after{ background-image: url(../images/index/img_expression_05.png); } 
+.result_contents .expression_06::after{ background-image: url(../images/index/img_expression_06.png); } 
 
 .other_app{ width: 100%; max-width: 800px; margin: 0 auto; }
 .other_app ul{ width: 100%; }
-.other_app ul li{ width: 25%; float: left; padding:0 20px 20px 20px; }
+.other_app ul li{ width: 20%; float: left; padding:0 20px 20px 20px; }
 .other_app ul li a{ display: block; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
 .other_app ul li a:hover{ opacity: .8; }
+
+
+.bg_mask{ top: 0; background-color: #ffa5a5a1; width: 100%; height: 100%; display: block; position: fixed; z-index: 20; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.bg_mask .chest { max-width: 300px; height: 300px; margin: 0 auto; position: relative; }
+.bg_mask .chest p { position: absolute; width: 180px; bottom: 20px; left: calc(50% - 90px); text-align: center; display: block; font-size: 20px; font-weight: bold; color: #fff; text-shadow: 0 3px 5px rgb(152 57 92 / 70%);}
+.bg_mask .heart { position: absolute; z-index: 2; background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%); animation: beat 0.7s ease 0s infinite normal; }
+.bg_mask .heart.center { background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%); }
+.bg_mask .heart.top { z-index: 3; }
+.bg_mask .side {top: 70px; width: 86px; height: 86px; border-radius: 90px; }
+.bg_mask .center { width: 84px; height: 84px; bottom: 109px; left:calc(50% - 42px); transform: rotateZ(225deg);}
+.bg_mask .left { left:calc(50% - 78px);}
+.bg_mask .right { right:calc(50% - 78px); }
+
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(225deg);
+        box-shadow:0 0 40px #d5093c;
+    }
+    50% {
+        transform: scale(1.1) rotate(225deg);
+        box-shadow:0 0 70px #d5093c;
+    }
+    100% {
+        transform: scale(1) rotate(225deg);
+        box-shadow:0 0 40px #d5093c;
+    }
+}
+
 
 @keyframes mainKvTitle {
     0% {transform: translateY(-100vh) rotate(0deg);}
@@ -114,11 +149,13 @@ img.mob{display: none;}
     .go_pay button.btn_pay{  width: 300px; height: 137px;}
     .result_contents .fraction_box{width: 220px; height: 220px;}
     .result_contents .fraction_box p{ font-size: 70px; }
+    .result_contents .fraction_box::after{ top: -20px; width: 190px; }
 }
 @media (max-width:1000px){
     .subtitle_box .the_date p.day{ font-size: 32px;}
     .form_box .user_avatar{ width: 120px; height: 120px; }
     .result_contents .fraction_box{width: 180px; height: 180px;}
+    .result_contents .fraction_box::after{ top: -40px; width: 160px; right: -170px; }
 }
 @media (max-width:800px){
     .form_box{ max-width: 90%; }
@@ -127,6 +164,7 @@ img.mob{display: none;}
     .form_box .w50:nth-child(2)::after{ left: initial; bottom: -62px; right: -65px; }
     .form_box .result_ill:nth-child(2)::before{ width: 80%; height: 50px; left: 10%; top: 0; background:url(../images/index/img_love.png) center center no-repeat; background-size: contain;}
     .result_contents .fraction_box{width: 160px; height: 160px;}
+    .result_contents .fraction_box::after{ top: -70px; width: 160px; }
 }
 @media (max-width:750px){
     .main_KV .teacher{ left: 0%; top: 20px; width: 29%; }
@@ -137,6 +175,8 @@ img.mob{display: none;}
     img.mob{display: block;}
     .subtitle_box .the_date p.day{ font-size: 26px; top: calc(44% - 20px); left: 53.5%;}
     .result_contents p.congratulations{ font-size: 24px; }
+    .other_app ul li{ padding: 0 10px 10px 10px; }
+    .result_contents .fraction_box::after{ top: -70px; width: 120px; right: -120px; }
 }
 @media (max-width:600px){
     .wrap-content{ padding: 20px 0; }
@@ -162,8 +202,8 @@ img.mob{display: none;}
     .result_contents .result_fee{ bottom: -58px; }
     .result_contents p.congratulations{ font-size: 22px; }
     .go_pay{ padding-top: 80px; }
-    .other_app ul{ max-width: 360px; margin: 0 auto; }
-    .other_app ul li{ width: 50%; padding: 10px; }
+    .other_app ul{ max-width: 360px; margin: 0 auto; text-align: center; }
+    .other_app ul li{ width: 30%; padding: 10px; float: none; display: inline-block; }
 }
 @media (max-width:500px){
     .form_box .w50{ padding: 10px 20px; }
@@ -176,7 +216,7 @@ img.mob{display: none;}
     .result_contents .result_fee{ bottom: -35px; }
     .result_contents p.congratulations{ font-size: 20px; padding: 40px 20px 15px 20px;}
     .go_pay{ padding-top: 40px;}
-    .other_app ul{ max-width:280px; margin: 0 auto; }
+    .other_app ul{ max-width:320px; margin: 0 auto; }
     .result_contents .result_infobox p{ font-size: 18px; }
 }
 
@@ -187,7 +227,8 @@ img.mob{display: none;}
     .result_contents p.congratulations{ font-size: 17px; padding: 20px 20px 5px 20px;}
     .form_box .result_ill:nth-child(2)::after{ right: -30px; }
     .result_contents .result_infobox p{ font-size: 16px; }
-    .other_app ul{ max-width:260px; margin: 0 auto; }
+    .other_app ul li{ padding: 7px; }
+    .result_contents .fraction_box::after{ top: -100px; width: 115px; right: -100px; }
 }
 /*-------- popup ---------*/
 .wrap_popup {  position: fixed; top: 0; left: 0; width: 100%; height: 100vh; color: #333; transition: .5s; z-index: -1; background: transparent;}
