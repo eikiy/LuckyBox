@@ -8,7 +8,7 @@ img.mob{display: none;}
 /* 主視覺 */
 .main_KV { position: relative; max-width: 1460px; margin: 0 auto; padding: 0 20px;}
 .main_KV .main_title { margin-left: 22%; max-width: 1000px; animation: mainKvTitle 2s linear;}
-.main_KV .teacher{ position: absolute;  width: 28%; left: -2%;   top: 100px;  z-index: 10; animation: mainKvTeacher 1.5s ease-out;}
+.main_KV .teacher{ position: absolute;  width: 28%; left: -2%;   top: 50px;  z-index: 10; animation: mainKvTeacher 1.5s ease-out;}
 .main_KV .subtitle { max-width: 1000px; margin: 0 auto; animation: mainKvSubtitle 1.5s ease-out;}
 .main_KV .subtitle .the_result{ background:url(../images/index/dot-grid.png) 0 0 repeat; padding: 45px; border-radius: 40px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
 .main_KV .subtitle .the_result p{ font-weight: bold; font-size: 25px; padding-right: 10%; margin: 0;}
@@ -136,7 +136,7 @@ img.mob{display: none;}
 }
 
 @media (max-width:1400px){
-    .main_KV .teacher{ top: 20px; width: 32%; left: -8%; }
+    .main_KV .teacher{ top: 20px; width: 32%; left: -6%; }
     .form_box .w50 figure, .form_box .w50 fieldset{ width: 88%; max-width: 400px; }
     .form_box input{ font-size: 22px; height: 55px; }
     .form_box input::placeholder{ font-size: 20px;}
@@ -152,6 +152,7 @@ img.mob{display: none;}
     .result_contents .fraction_box::after{ top: -20px; width: 190px; }
 }
 @media (max-width:1000px){
+    .main_KV .teacher{ top: 20px; width: 32%; left: -3%; }
     .subtitle_box .the_date p.day{ font-size: 32px;}
     .form_box .user_avatar{ width: 120px; height: 120px; }
     .result_contents .fraction_box{width: 180px; height: 180px;}
@@ -236,7 +237,7 @@ img.mob{display: none;}
 .popup_box.show { transform: translateY(calc(50vh - 125px));}
 .popup_box { transition: .5s; position: absolute; width: 500px; height: 250px; background: #e2e1e0; transform: translateY(1500px); left: calc(50vw - 250px); border-radius: 20px; box-shadow: 2px 2px 4px 1px rgba(0,0,0,.3);}
 .popup_cancel { position: relative; width: 50px; height: 50px; background: #f2bc67; clip-path: inset(0px 0px 0px 0px round 0 0 20% 20%); -webkit-clip-path: inset(0px 0px 0px 0px round 0 0 20% 20%); margin-left: 420px;}
-.popup_cancel span { position: absolute; left: 50%; transform: translate(-50%,-50%); color: white; font-size: 1.5rem; cursor: pointer;}
+.popup_cancel span { position: absolute; left: 50%; top: 46%; transform: translate(-50%,-50%); color: white; font-size: 1.5rem; cursor: pointer;}
 .popup_title { margin: 20px 0; text-align: center;}
 .btn_submit { text-align: center; margin: 25px 0 20px 0;}
 .btn_submit span { background: #f2bc67; padding: 5px 80px; border-radius: 20px; color: white; cursor: pointer;}
