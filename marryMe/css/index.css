@@ -30,7 +30,11 @@ img.mob{display: none;}
 .form_box .w50:nth-child(2)::after{ content: ""; position: absolute; width:206px; left:-100px; bottom: 0px; height:302px; display: block; z-index: 4; background:url(../images/index/illustration_02.png) bottom center no-repeat; background-size: contain; }
 .form_box .result_ill:nth-child(2)::after{ background:url(../images/index/illustration_03.png) bottom center no-repeat; background-size: contain; }
 .form_box .result_ill:nth-child(2)::before{ width: 80%; height: 148px; left: -40%; background:url(../images/index/img_dotted_love.png) center center no-repeat; background-size: contain;}
-.form_box fieldset{ padding: 10px 0; }
+.form_box fieldset{ padding: 10px 0; position: relative; }
+.form_box fieldset p.error{ position: absolute; width: 100%; text-align: center; bottom: -32px; right: 0px; z-index: 5;}
+.form_box fieldset p.error span{ background-color:rgba(255,41,41,.7); color: #fff; padding:5px 15px; border-radius: 30px; }
+.form_box fieldset p.error span::after{ content: ""; position: absolute; content: ""; top: -10px; left: calc(50% - 4px); width: 0; height: 0; border-style: solid;
+    border-width: 0 6px 6px 6px;  border-color: transparent transparent rgba(255,41,41,.7) transparent;  line-height: 0px;  _border-color: #000000 #000000 rgba(255,41,41,.7) #000000; _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');}
 .form_box input{ background:url(../images/index/dot-grid.png) 0 0 repeat; width: 100%; font-size: 24px; font-weight: bold; height: 75px; padding: 5px; text-align: center; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
 .form_box input::placeholder{ font-weight: normal; font-size: 22px; color: #666; }
 .form_box input:focus{ box-shadow: 0 5px 5px rgb(255 161 64 / 52%); }
@@ -41,11 +45,27 @@ img.mob{display: none;}
 .form_box .user_avatar{ width: 135px; height: 135px; display: block; border-radius: 50%; background-color: #f9ede6; overflow: hidden; margin: 0px auto 20px auto; box-shadow: 0 5px 5px rgb(181 159 167 / 52%);}
 
 .form_box .styled-select { position: relative; width: 100%; font-size: 24px; font-weight: bold; background:url(../images/index/dot-grid.png) 0 0 repeat; border-radius: 50px; box-shadow: 0 5px 5px rgb(181 159 167 / 52%); -webkit-transition: all 0.30s ease-in-out;  -moz-transition: all 0.30s ease-in-out;  -ms-transition: all 0.30s ease-in-out;  -o-transition: all 0.30s ease-in-out;  overflow: hidden; }
-.form_box .styled-select::after{ content: ""; position: absolute; top:calc(50% - 7px); pointer-events:none; right: 22px; width: 24px; height: 14px; display: block; background: url(../images/index/arr.png) center center no-repeat ; background-size: contain;}
+.form_box .styled-select::after{ content: ""; position: absolute; top:calc(50% - 7px); pointer-events:none; right: 19px; width: 24px; height: 14px; display: block; background: url(../images/index/arr.png) center center no-repeat ; background-size: contain;}
 .form_box .styled-select select { width: 100%; line-height: 75px; *width: 120%; _width: 120%; text-align: center;text-align-last: center; font-size: 24px;  padding: 0 20px; background: transparent; text-align: center; border: 0; border-radius: 0; -webkit-appearance: none; }
 .form_box .styled-select select:focus{ box-shadow: 0 5px 5px rgb(255 161 64 / 52%); }
 .form_box .styled-select select option { background-color: #fff; text-align: center;  color: #333; }
 
+.form_box .UserBD input{ text-align: center; font-weight: normal; }
+.form_box .UserBD::after{ pointer-events: none; width: 25px; height: 25px; top:calc(50% - 12.5px); right: 17px; background:url(../images/index/icon-calendar.png) 0 0 no-repeat; background-size: contain;}
+/*
+input[type="date"]::-webkit-calendar-picker-indicator {
+   display: none;
+}
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    }
+input[type="date"]::-webkit-clear-button{
+   display:none;
+}*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
 .form_box button.btn_next{ transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; position: absolute; bottom: -50px; left: calc(50% - 220px); width: 100%; max-width: 439px; height: 109px; display: block; background-color: transparent; background-image:url(../images/index/btn_next.png); background-position: center center; background-repeat: no-repeat; text-indent: -9999px; background-size: contain; }
 .form_box button.btn_next:hover{ background-image:url(../images/index/btn_next_hover.png);  }
 .form_box button.btnFixed {z-index: 10; position: fixed; bottom: 2%;}
@@ -147,8 +167,9 @@ img.mob{display: none;}
     .form_box .result_name p{ font-size: 24px; line-height: 55px;}
     .form_box .result_bday p{font-size: 18px; line-height: 55px;}
     .form_box .styled-select select{ line-height: 55px; font-size: 20px; }
+    .form_box .UserBD input{ font-size: 20px; }
 
-    .form_box .w50:nth-child(2)::after{ width: 140px; left: -70px; bottom: -22px; }
+    .form_box .w50:nth-child(2)::after{ width: 125px; left: -70px; bottom: -22px; }
     .form_box button.btn_next{ width: 300px; left: calc(50% - 150px);}
     .go_pay button.btn_pay{  width: 300px; height: 137px;}
     .result_contents .fraction_box{width: 220px; height: 220px;}
