@@ -27,7 +27,7 @@ a:hover { text-decoration: none; }
 
 .contents-box { margin: 0 auto; width: 1220px;}
 
-.wrapper { width: 100%; min-width: 1240px; min-height: calc(100vh - 60px); background:url(../images/bg_index.jpg) center center no-repeat; background-size: cover; padding: 4vh 0; }
+.wrapper { width: 100%; min-width: 1240px; min-height: calc(100vh - 60px); background:url(../images/bg_index.jpg) center center no-repeat; display: block; background-size: cover; padding: 4vh 0; }
 .wrapper .login-info{ float: right; width: 504px; }
 .wrapper .login-info .logo{ width: 258px; height: 159px; display: block; margin: 0 auto; background:url(../images/ctbc_logo.png) center center no-repeat; background-size: contain;}
 .wrapper .login-info h1.main-title{ max-width:400px; margin: 0 auto; padding-bottom: 15px;}
