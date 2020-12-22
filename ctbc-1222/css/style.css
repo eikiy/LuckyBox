@@ -26,7 +26,7 @@ a:hover { text-decoration: none; }
 
 .contents-box { margin: 0 auto; width: 980px;}
 
-.wrapper { width: 100%; min-width: 1024px; min-height: calc(100vh - 60px); background:url(../images/bg_index.jpg) center center no-repeat; display: block; background-size: cover; padding-bottom: 40px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.wrapper { width: 100%; min-width: 1024px; min-height: calc(100vh - 60px); background:url(../images/bg_index.jpg) center center no-repeat; display: block; background-size: cover; padding-bottom: 40px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; /*	*/}
 .wrapper .login-info{ float: right; width: 480px; }
 .wrapper .login-info .logo{ width: 258px; height: 130px; display: block; margin: 0 auto; background:url(../images/ctbc_logo.png) center center no-repeat; background-size: contain;}
 .wrapper .login-info h1.main-title{ max-width:370px; margin: 0 auto; padding-bottom: 15px;}
