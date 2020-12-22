@@ -24,7 +24,7 @@ a:hover { text-decoration: none; }
 /*===== start ======*/
 
 
-.contents-box { margin: 0 auto; width: 980px;}
+.contents-box { margin: 0 auto; width: 100%; max-width: 1400px; padding: 0 20px;}
 
 .wrapper { width: 100%; min-width: 1024px; min-height: calc(100vh - 60px); background:url(../images/bg_index.jpg) center center no-repeat; display: block; background-size: cover; padding-bottom: 40px; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; /*	*/}
 .wrapper .login-info{ float: right; width: 480px; }
