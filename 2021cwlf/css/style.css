@@ -364,7 +364,8 @@ header.open {
 \*------------------------------------*/
 .banner {
   background: url(../images/banner-bg.png) center top no-repeat;
-  padding: 9rem 0;
+  /*background-size: cover;*/
+  padding: 11rem 0 6.5rem 0;
 }
 
 .banner > .container {
@@ -377,8 +378,10 @@ header.open {
 }
 
 .banner .flexslider {
+  padding-top: 20px;
   background-color: transparent;
   border: none;
+  margin-bottom: 0;
 }
 
 .banner .flexslider .slides {
@@ -696,7 +699,7 @@ section::after {
 
 @media (min-width: 992px) {
   .about {
-    padding: 8rem 0 10rem;
+    padding: 8rem 0 5rem;
   }
   .about > .container {
     padding: 0 2rem;
@@ -783,7 +786,7 @@ section::after {
 }
 
 .buy .page-header {
-  margin-top: -10rem; z-index: 2;
+  margin-top: -12rem; z-index: 2; text-align: left;
 }
 
 .buy-content {
@@ -870,6 +873,7 @@ section::after {
 }
 
 .buy-txt-content {
+  padding-top: 2rem;
   /*border-bottom: 1px dashed #ffffff;*/
   font-size: 1.25rem;
   line-height: 2rem;
@@ -931,7 +935,7 @@ section::after {
     TICKET
 \*------------------------------------*/
 .ticket {
-  background: url(../images/ticket-bg.jpg) center bottom no-repeat #ffffff;
+  background: url(../images/dot-grid.png) 0 0 repeat;
   padding: 5rem 0;
 }
 
