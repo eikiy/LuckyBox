@@ -56,13 +56,15 @@ a:hover { text-decoration: none; }
 .buy-content .best{ font-size: 16px; border-top: 1px dashed #ffffff; padding-top: 20px; position: relative; }
 .buy-content .best::before{content:""; position: absolute; width: 204px; height: 177px; right: -3rem; top: -6rem; z-index: 1; background: url(../images/img_clothes_pink.png) center center no-repeat; background-size: contain; }
 .buy-content .pink{ color: #EA6580; }
-
+.mob{ display: none; }
+.mob .top-title{ text-align: center; }
 
 /*==== RWD ====*/
 @media (max-width:1200px) {
 	.contents-box{ width:95%; }
 }
 @media (max-width:1100px) {
+	.banner { background: url(../images/banner-bg-s.png) center top no-repeat;}
 	.about-content .about-pic-content2 .w50:last-child{ max-width: 46%; padding-top: 0rem; padding-bottom: 4rem;}
 	.buy{ position: relative; padding: 3rem 0 3rem;}
 	.buy .page-header{position: absolute; top: 5.5rem; left: 0; text-align: center;}
@@ -86,9 +88,11 @@ a:hover { text-decoration: none; }
 }
 @media (max-width:850px) {
 	.about-content .about-pic-content2 .w50:last-child{ float: left; width: 100%; max-width: 100%; }
-	.about-content .about-pic-content2 .about-pic{ width: 80%; margin-bottom: 0; }
+	.about-content .about-pic-content2 .about-pic{ width: 80%; margin-bottom: 1rem; }
 	#ticket .col-5{ max-width: 100% !important; flex: initial !important; text-align: center; }
 	#ticket .col-7{ max-width: 100% !important; flex: initial !important;}
+	.mob{ display: block; }
+	.pc{ display: none; }
 }
 @media (max-width:500px) {
 	.buy{padding: 0;}
