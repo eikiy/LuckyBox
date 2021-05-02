@@ -365,7 +365,7 @@ header.open {
 \*------------------------------------*/
 
 .banner {
-  background: url(../images/banner-bg.png) center top no-repeat;
+  background: url(../images/banner-bg.png) center top no-repeat #F5F6F8;
   
   padding: 11rem 0 6.5rem 0;
 }
@@ -398,7 +398,7 @@ header.open {
   width: auto;
 }
 @media (min-width: 1920px) {
-  .banner { background-size: cover;}
+  /*.banner { background-size: cover;}*/
 }
 @media (min-width: 992px) {
   .banner .flexslider .slides {
