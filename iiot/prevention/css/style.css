@@ -33,7 +33,7 @@ a:hover { text-decoration: none; }
 
 .landing-prevention ul.icon{ text-align: center; margin: 0 auto; }
 .landing-prevention ul.icon li{ display: inline-block; vertical-align: top; padding: 20px; }
-.landing-prevention ul.icon li .img{ padding-bottom: 10px; width: 100%; max-width: 125px; }
+.landing-prevention ul.icon li .img{ padding-bottom: 10px; width: 100%; max-width: 125px; margin: 0 auto; }
 .landing-prevention ul.icon li .img img{ width: 100%; }
 .landing-prevention ul.icon li .text h3{ font-weight: bold; font-size: 18px; }
 .landing-prevention ul.icon li .text p{ padding-top: 10px; }
@@ -44,6 +44,17 @@ a:hover { text-decoration: none; }
 .footer{ width: 100%; background-color: #EAEDEF; padding: 20px; text-align: center; position: fixed; bottom: 0; left: 0;}
 .footer .logo{ max-width: 200px; display: inline-block; }
 
+.verification-phone{ padding: 20px 0 0 0; }
+.verification-phone .title{ font-size: 18px; letter-spacing: 1px; font-weight: bold; padding-bottom: 20px; }
+.verification-phone .title span{ color: #CE3D6C; }
+
+.verification-phone .field {padding-bottom: 10px;}
+.verification-phone .field p{ padding: 10px 0;}
+.verification-phone .field .border{ border-radius: 50px; border:3px solid #CE3D6C; width: 100%; max-width: 400px; height: 50px; margin: 0 auto; position: relative;}
+.verification-phone .field .border input{ float: left; width: 100%; height: 46px; line-height: 46px; font-size: 18px; text-align: center; font-weight: bold; background-color: transparent; padding: 0 140px 0 20px; }
+.verification-phone .field .border input::placeholder{ color: #9e9e9e; font-size: 15px; font-weight: normal; }
+.verification-phone .field .border button{ position: absolute; top: -1px; right: -2px; float: left; width: 120px; font-size: 15px; color: #fff; background-color: #CE3D6C; border-radius: 0 50px 50px 0; height: 46px; cursor: pointer; }
+.verification-phone .field .border button:hover{ opacity: 0.9; }
 
 @media (max-height:1000px) {
 	.landing-prevention{ max-height: inherit; padding: 25px 0 80px 0; }
