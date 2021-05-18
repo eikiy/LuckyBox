@@ -56,6 +56,27 @@ a:hover { text-decoration: none; }
 .verification-phone .field .border button{ position: absolute; top: -1px; right: -2px; float: left; width: 120px; font-size: 15px; color: #fff; background-color: #CE3D6C; border-radius: 0 50px 50px 0; height: 46px; cursor: pointer; }
 .verification-phone .field .border button:hover{ opacity: 0.9; }
 
+p.personal_info{ padding: 10px 0; font-size: 15px; letter-spacing: 2px; font-weight: bold; }
+p.personal_info a{ color: #CE3D6C; text-decoration: underline; }
+p.personal_info a:hover{ text-decoration: none; }
+
+.prevention-img{ max-width: 700px; margin: 0 auto; }
+.prevention-qrcode{ max-width: 200px; margin: 0 auto; }
+.prevention-data h1.maintitle{ font-size: 36px; }
+
+table.data-list{ width: 100%; margin-top: 40px; text-align: left; font-size: 16px;}
+table.data-list tr th{ font-weight: bold; padding: 10px; background-color: #d85384; color: #fff; vertical-align: middle;}
+table.data-list tr th:first-child{ border-radius: 40px 0 0 40px; }
+table.data-list tr th:last-child{ border-radius: 0 40px 40px 0; }
+table.data-list tr td:first-child{ border-radius: 40px 0 0 40px; }
+table.data-list tr td:last-child{ border-radius: 0 40px 40px 0; }
+table.data-list tr td{ padding: 10px; text-align: left; vertical-align: middle;}
+table.data-list tr td:first-child{ text-align: center; }
+table.data-list tr:nth-child(odd){ background-color: #f3f3f3; }
+
+button.btn-style{ cursor: pointer; width: 100%; color: #fff; background-color: #d85384; border-radius:50px; height: 40px; font-size: 15px; max-width: 400px; margin: 20px 0;}
+button.btn-style:hover{ opacity: .9; }
+
 @media (max-height:1000px) {
 	.landing-prevention{ max-height: inherit; padding: 25px 0 80px 0; }
 }
@@ -70,6 +91,12 @@ a:hover { text-decoration: none; }
 
 	.landing-prevention .bt_info h5{font-size: 14px;}
 	.landing-prevention .bt_info p{font-size: 12px;}
+
+	.prevention-data h1.maintitle{ font-size: 26px; }
+	table.data-list{ margin-top: 10px; font-size: 14px; }
+	table.data-list tr th, table.data-list tr td{ padding: 5px; }
+
+	.prevention-qrcode{ max-width: 160px; }
 }
 @media (max-width:400px) {
 	.landing-prevention{padding-top: 10px;}
@@ -77,4 +104,10 @@ a:hover { text-decoration: none; }
 	.landing-prevention .subtitle span{font-size: 14px;}
 	.landing-prevention ul.icon li{padding: 10px 0;}
 	.landing-prevention ul.icon li .text h3{font-size: 17px; padding-top: 10px;}
+
+	.prevention-data h1.maintitle{ font-size: 24px; }
+	.prevention-data{ padding-top: 0; }
+	table.data-list{ font-size: 13px; }
+
+	.prevention-qrcode{ max-width: 140px; }
 }
