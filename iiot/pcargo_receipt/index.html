@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="created" content="">
+        <title>快一點訂單支付</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <main class="pcargo_receipt_container">
+            <section class="content">
+                <div class="top_banner">
+                    <img src="images/cover_cargo_receipt.png" width="100%" alt="快一點LINE智慧點餐系統 系統裝備簽收單" />
+                </div>
+                <form class="cargo_receipt_items">
+                    <figure class="top_title">
+                        <h2 class="subtitle">一、客戶資料</h2>
+                    </figure>
+                    <fieldset class="clearfix"> 
+                        <label for="">
+                            <p class="label_title">公司/商店名稱<span class="c_red">*</span></p>
+                        </label>
+                        <div class="field">
+                            <input class="" type="text" name="" maxlength="" placeholder="" required="" class="LastName" minlength="1" maxlength="" value="">
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix">
+                        <label for="">
+                            <p class="label_title">連絡電話/手機<span class="c_red">*</span></p>
+                        </label>
+                        <div class="field">
+                            <!-- error 要幫我 + b_red (紅邊框) -->
+                            <input class="b_red" type="text" name="" value="ee18498">
+                            <p class="error">格式錯誤，請輸入數字！</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix">
+                        <label for="">
+                            <p class="label_title">商店 ID<span class="c_red">*</span></p>
+                        </label>
+                        <div class="field">
+                            <input class="" type="text" name="">
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix">
+                        <label for="">
+                            <p class="label_title">負責人<span class="c_red">*</span></p>
+                        </label>
+                        <div class="field">
+                            <input class="" type="text" name="">
+                        </div>
+                    </fieldset>
+
+                    <figure class="top_title">
+                        <h2 class="subtitle">二、驗收日期 </h2>
+                    </figure>
+                    <fieldset class="clearfix">
+                        <label for="">
+                            <p class="label_title">請選擇日期</p>
+                        </label>
+                        <div class="field">
+                            <input id="date" type="date">
+                        </div>
+                    </fieldset>
+
+                    <figure class="top_title">
+                        <h2 class="subtitle">三、驗收內容與結果</h2>
+                    </figure>
+                    <fieldset class="clearfix dotted_line">
+                        <div class="detail clearfix">
+                            <label for="">
+                                <p class="label_title"><b class="c_org">出單機安裝</b></p>
+                            </label>
+                            <ul>
+                                <li>
+                                    <p>設備正常</p>
+                                </li>
+                                <li>
+                                    <p>網路訊號正常連線</p>
+                                </li>
+                                <li>
+                                    <p>成功綁定店家管理帳號</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix">
+                            <label for="">
+                                <p class="label_title">安裝數量</p>
+                            </label>
+                            <div class="styled-select">
+                                <select class="md-input" name="">
+                                    <option disabled="" selected="" value="" selected="">請選擇</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>      
+                        </div>
+                        <div class="bg_gray clearfix">
+                            <label for="">
+                                <p class="label_title">驗收結果</p>
+                            </label>
+                            <div class="field">
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-1" value="通過">
+                                        <label for="option">通過</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-1" value="失敗">
+                                        <label for="option">失敗</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-1" value="無此品項">
+                                        <label for="option">無此品項</label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix dotted_line">
+                        <div class="detail clearfix">
+                            <label for="">
+                                <p class="label_title"><b class="c_org">標籤機安裝</b></p>
+                            </label>
+                            <ul>
+                                <li>
+                                    <p>設備正常</p>
+                                </li>
+                                <li>
+                                    <p>網路訊號正常連線</p>
+                                </li>
+                                <li>
+                                    <p>成功綁定店家管理帳號</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix">
+                            <label for="">
+                                <p class="label_title">安裝數量</p>
+                            </label>
+                            <div class="styled-select">
+                                <select class="md-input" name="">
+                                    <option disabled="" selected="" value="" selected="">請選擇</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>   
+                        </div>
+                        <div class="bg_gray clearfix">
+                            <label for="">
+                                <p class="label_title">驗收結果</p>
+                            </label>
+                            <div class="field">
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-2" value="通過">
+                                        <label for="option">通過</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-2" value="失敗">
+                                        <label for="option">失敗</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-2" value="無此品項">
+                                        <label for="option">無此品項</label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix dotted_line">
+                        <div class="detail clearfix">
+                            <label for="">
+                                <p class="label_title"><b class="c_org">平板或電腦用接單網頁</b></p>
+                            </label>
+                            <ul>
+                                <li>
+                                    <p>已獲得帳號與密碼</p>
+                                </li>
+                                <li>
+                                    <p>下測試單後有新訂單通知</p>
+                                </li>
+                                <li>
+                                    <p>知道如何從接單網頁取消訂單</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg_gray clearfix">
+                            <label for="">
+                                <p class="label_title">驗收結果</p>
+                            </label>
+                            <div class="field">
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-3" value="通過">
+                                        <label for="option">通過</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-3" value="失敗">
+                                        <label for="option">失敗</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-3" value="無此品項">
+                                        <label for="option">無此品項</label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix dotted_line">
+                        <div class="detail clearfix">
+                            <label for="">
+                                <p class="label_title"><b class="c_org">首次帳號設定</b></p>
+                            </label>
+                            <ul>
+                                <li>
+                                    <p>商店設定</p>
+                                </li>
+                                <li>
+                                    <p>菜單建置</p>
+                                </li>
+                                <li>
+                                    <p>圖文選單上版</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg_gray clearfix">
+                            <label for="">
+                                <p class="label_title">驗收結果</p>
+                            </label>
+                            <div class="field">
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-4" value="通過">
+                                        <label for="option">通過</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-4" value="失敗">
+                                        <label for="option">失敗</label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix dotted_line">
+                        <div class="detail clearfix">
+                            <label for="">
+                                <p class="label_title"><b class="c_org">手機系統指導</b></p>
+                            </label>
+                            <ul>
+                                <li>
+                                    <p>商店設定</p>
+                                </li>
+                                <li>
+                                    <p>菜單建置</p>
+                                </li>
+                                <li>
+                                    <p>圖文選單上版</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg_gray clearfix">
+                            <label for="">
+                                <p class="label_title">驗收結果</p>
+                            </label>
+                            <div class="field">
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-5" value="通過">
+                                        <label for="option">通過</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-5" value="失敗">
+                                        <label for="option">失敗</label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix dotted_line">
+                        <div class="detail clearfix">
+                            <label for="">
+                                <p class="label_title"><b class="c_org">訂單通知</b></p>
+                            </label>
+                            <ul>
+                                <li>
+                                    <p>下測試單後，機台設備確實列印出單</p>
+                                </li>
+                                <li>
+                                    <p>下測試單後，LINE訂單推播群組確實推播通知</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg_gray clearfix">
+                            <label for="">
+                                <p class="label_title">驗收結果</p>
+                            </label>
+                            <div class="field">
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-6" value="通過">
+                                        <label for="option">通過</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="items-6" value="失敗">
+                                        <label for="option">失敗</label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <fieldset class="clearfix">
+                        <div class="clearfix">
+                            <label for="">
+                                <p class="label_title">備註</p>
+                            </label>
+                            <div class="field">
+                                <textarea></textarea>
+                            </div>    
+                        </div>
+                    </fieldset>
+                    <figure class="top_title">
+                        <h2 class="subtitle">四、快一點服務滿意度調查</h2>
+                    </figure>
+                    <fieldset class="clearfix">
+                        <ul class="service_survey">
+                            <li>
+                                <label for="">
+                                    <p>業務接洽與產品介紹</p>
+                                </label>
+                                <p class="description">最初接洽時，業務對快一點服務與產品的介紹是否清晰，並清楚了解您的需求</p>
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-1" value="非常不滿意">
+                                        <label for="option">非常不滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-1" value="不滿意">
+                                        <label for="option">不滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-1" value="普通">
+                                        <label for="option">普通</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-1" value="滿意">
+                                        <label for="option">滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-1" value="非常滿意">
+                                        <label for="option">非常滿意</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="">
+                                    <p>開店與系統建置</p>
+                                </label>
+                                <p class="description">系統建置期間專員是否清楚了解您的設定需求，另開店效率是否符合您的期待</p>
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-2" value="非常不滿意">
+                                        <label for="option">非常不滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-2" value="不滿意">
+                                        <label for="option">不滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-2" value="普通">
+                                        <label for="option">普通</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-2" value="滿意">
+                                        <label for="option">滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-2" value="非常滿意">
+                                        <label for="option">非常滿意</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="">
+                                    <p>系統驗收與教學指導</p>
+                                </label>
+                                <p class="description">進行驗收與系統教學指導時，專員講解是否清晰易懂，並確實協助您了解如何操作</p>
+                                <ul class="result_item clearfix">
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-3" value="非常不滿意">
+                                        <label for="option">非常不滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-3" value="不滿意">
+                                        <label for="option">不滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-3" value="普通">
+                                        <label for="option">普通</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-3" value="滿意">
+                                        <label for="option">滿意</label>
+                                    </li>
+                                    <li class="clearfix">
+                                        <input id="" type="radio" name="survey-3" value="非常滿意">
+                                        <label for="option">非常滿意</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <figure class="top_title">
+                        <h2 class="subtitle">五、其他意見回饋 </h2>
+                    </figure>
+                    <fieldset>
+                        <textarea></textarea>
+                    </fieldset>
+                </form>
+                <p align="center"><b>客戶簽名</b><br>
+                    請於下面區域<span class="c_org">簽名視同驗收完成</span><br>
+                </p>
+                <div class="wrapper" align="center">
+                    <canvas id="signature-pad" class="signature-pad" width=500 height=250></canvas>
+                </div>
+                <div align="center">
+                    <button class="btn_style" id="save">確認送出</button>
+                    <button class="btn_style" id="clear">重新簽名</button>
+                </div>
+                <br>
+                <div class="footer_info clearfix">
+                    <div class="logo">
+                        <img src="https://support.quickclick.cc/wp-content/uploads/logo.png" width="100%">
+                    </div>
+                    <div class="contact_us">
+                        <p>為加速解決您的問題，可先查看：<a class="c_org" target="_blank" href="https://support.quickclick.cc/category/faq/">常見問答</a><br/>
+                            客服信箱：<a class="c_org" target="_blank" href="mailto:service@quickclick.cc">service@quickclick.cc</a><br/>
+                            LINE官方客服ID：<span class="c_green">@quickclick</span>  or  <a class="c_green" target="_blank" href="https://line.me/R/ti/p/%40tba6961e">點此加入</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!--================================================== -->
+
+        <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+        <script data-pace-options='{ "restartOnRequestAfter": true }' src="/js/plugin/pace/pace.min.js"></script>
+
+        <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+            if (!window.jQuery) {
+                document.write('<script src="/js/libs/jquery-2.1.1.min.js"><\/script>');
+            }
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script>
+            if (!window.jQuery.ui) {
+                document.write('<script src="/js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+            }
+        </script>
+
+        <!-- IMPORTANT: APP CONFIG -->
+        <script src="/js/app.config.js"></script>
+
+        <!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+        <script src="/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+        <!-- BOOTSTRAP JS -->
+        <script src="/js/bootstrap/bootstrap.min.js"></script>
+
+        <!-- CUSTOM NOTIFICATION -->
+        <script src="/js/notification/SmartNotification.min.js"></script>
+
+        <!-- JARVIS WIDGETS -->
+        <script src="/js/smartwidgets/jarvis.widget.min.js"></script>
+
+        <!-- EASY PIE CHARTS -->
+        <script src="/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+        <!-- SPARKLINES -->
+        <script src="/js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- JQUERY VALIDATE -->
+        <script src="/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+        <!-- JQUERY MASKED INPUT -->
+        <script src="/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+        <!-- JQUERY SELECT2 INPUT -->
+        <script src="/js/plugin/select2/select2.min.js"></script>
+
+        <!-- JQUERY UI + Bootstrap Slider -->
+        <script src="/js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+        <!-- browser msie issue fix -->
+        <script src="/js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+        <!-- FastClick: For mobile devices -->
+        <script src="/js/plugin/fastclick/fastclick.min.js"></script>
+
+        <!--[if IE 8]>
+
+        <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+        <![endif]-->
+
+        <!-- Demo purpose only -->
+        <script src="/js/demo.min.js"></script>
+
+        <!-- MAIN APP JS FILE -->
+        <script src="/js/app.min.js"></script>
+
+        <!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+        <!-- Voice command : plugin -->
+        <script src="/js/speech/voicecommand.min.js"></script>
+
+        <!-- SmartChat UI : plugin -->
+        <script src="/js/smart-chat-ui/smart.chat.ui.min.js"></script>
+        <script src="/js/smart-chat-ui/smart.chat.manager.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+        <script src="/js/waitMe.min.js"></script>
+        <script>
+            var saveButton = document.getElementById('save');
+            var cancelButton = document.getElementById('clear');
+
+            var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    minWidth : 1,
+                    maxWidth : 4,
+                    penColor: 'rgb(0, 0, 0)'
+            });
+
+            saveButton.addEventListener('click', function (event) {
+                var data = signaturePad.toDataURL('image/png');
+                run_waitMe($('.container > table'), 1, 'progressBar');
+                var request = $.ajax({
+                        url: "/api/orders/QC20210608E2LSQOJ/signature",
+                        type: "POST",
+                        data: { signature: data },
+                })
+                .done(function(msg){
+                        $('.container > table').waitMe('hide');
+                        location = msg.contract;
+                        console.log(msg);
+                })
+                .fail(function(msg){
+                        alert('Oh！線上簽約失敗');
+                        console.log(msg);
+                });
+            });
+
+            cancelButton.addEventListener('click', function (event) {
+                signaturePad.clear();
+            });
+
+            function run_waitMe(el, num, effect){
+                text = 'Please wait...';
+                fontSize = '';
+                switch (num) {
+                    case 1:
+                    maxSize = '';
+                    textPos = 'vertical';
+                    break;
+                    case 2:
+                    text = '';
+                    maxSize = 30;
+                    textPos = 'vertical';
+                    break;
+                    case 3:
+                    maxSize = 30;
+                    textPos = 'horizontal';
+                    fontSize = '18px';
+                    break;
+                }
+                el.waitMe({
+                    effect: effect,
+                    text: text,
+                    bg: 'rgba(255,255,255,0.7)',
+                    color: '#000',
+                    maxSize: maxSize,
+                    waitTime: -1,
+                    source: 'img.svg',
+                    textPos: textPos,
+                    fontSize: fontSize,
+                    onClose: function(el) {}
+                });
+            }
+
+        </script>
+
+        <!-- Your GOOGLE ANALYTICS CODE Below -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+                _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </body>
+</html>
