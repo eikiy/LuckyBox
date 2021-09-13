@@ -104,6 +104,7 @@ form.cargo_receipt_items ul.service_survey li ul.result_item{ max-width: initial
     form.cargo_receipt_items fieldset{ padding: 5px 0px 17px 0px; padding-left: 0px; }
     form.cargo_receipt_items .detail label,
     form.cargo_receipt_items .detail ul{ width: 100%; }
+    form.cargo_receipt_items ul.service_survey li label{ width: 100%; display: inline-block;}
 }
 
 @media (max-width:600px) {
