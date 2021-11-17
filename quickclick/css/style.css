@@ -220,6 +220,15 @@ body {
   opacity: 0.9;
 }
 
+@media all and (max-width: 650px) {
+  .btn--primary-l {
+    width: 125px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1rem;
+  }
+}
+
 .btn--primary-xl {
   min-width: 150px;
   height: 50px;
@@ -427,6 +436,7 @@ input.default::placeholder {
   bottom: -25px;
   left: 10px;
   font-size: 0.688rem;
+  line-height: 0.875rem;
   color: #b5b5b5;
 }
 
@@ -451,8 +461,9 @@ input.default::placeholder {
 
 .main-container .middle-content .menu-list .card .features-menu {
   display: none;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
+  width: 210px;
   top: 47px;
   right: -12px;
 }
@@ -729,6 +740,9 @@ input.default::placeholder {
 @media all and (max-width: 600px) {
   .main-container {
     padding: 15px;
+  }
+  .main-container .middle-content .menu-list .add-new-card p {
+    font-size: 1rem;
   }
 }
 
@@ -1152,6 +1166,12 @@ input.default::placeholder {
 }
 
 @media all and (max-width: 760px) {
+  .popup-container .top-title h4 {
+    font-size: 1.125rem;
+  }
+  .popup-container ul.choose-method li a p {
+    font-size: 1rem;
+  }
   .popup-container ul.choose-store-list li {
     width: calc(33% - 12px);
   }
