@@ -227,6 +227,9 @@ body {
   cursor: pointer;
   border: 1px transparent solid;
   background-color: #11948a;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn--primary-xl:hover {
@@ -245,6 +248,9 @@ body {
   line-height: 46px;
   cursor: pointer;
   border: 1px transparent solid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn--primary-l:hover {
@@ -264,6 +270,9 @@ body {
   cursor: pointer;
   text-align: center;
   display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn--primary-m:hover {
@@ -1355,7 +1364,6 @@ ul.edit-tool li a:hover {
   padding-left: 34px;
   line-height: 24px;
   font-size: 0.875rem;
-  font-size: 0.875rem;
 }
 
 .option-list input[type="radio"]:not(old) + label::before {
@@ -2004,6 +2012,9 @@ ul.edit-tool li a:hover {
   }
   .popup-container .fillin-box .field .fillin-info fieldset .both-for-discount .discount {
     width: 40%;
+  }
+  .popup-container .fillin-box .field .fillin-info fieldset p.text-error {
+    top: 102px;
   }
   .popup-container .bottom-btn-tool ul.edit-tool {
     position: initial;
