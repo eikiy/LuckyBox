@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="js/menu.js"></script>
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <main class="main-container">
+        <section class="top-content clearfix">
+            <h3 class="main-title">菜單管理</h3>
+            <a class="btn-products btn--primary-l">
+                <p>
+                    <span><i class="fas fa-shopping-basket"></i></span>
+                    商品庫
+                </p>
+            </a>
+        </section>
+        <section class="middle-content">
+            <div class="menu-list">
+                <div class="add-new-card">
+                    <a class="popup-link" href="#popup-add-menu">
+                        <p>新增或匯入菜單</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="features-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fas fa-pencil-alt"></i></span>
+                                    編輯
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="far fa-copy"></i></span>
+                                    複製
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="#popup-delete-menu">
+                                    <span><i class="far fa-trash-alt"></i></span>
+                                    刪除
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fas fa-history"></i></span>
+                                    歷史紀錄
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="#popup-choose-store">
+                                    <span><i class="fas fa-share-square"></i></span>
+                                    將此菜單複製到其他店
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="#popup-choose-platform">
+                                    <span><i class="fas fa-share-square"></i></span>將此菜單上架到其他平台
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo-quickclick.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="假日菜單">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo-foodpanda.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo-ubereats.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo-quickclick.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="一到五的商業菜單" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <!-- 編輯過未啟用菜單會一直顯示紅色提醒語 -->
+                        <a class="btn--primary-m popup-link bg-c-red" href="#popup-activate-menu">啟用
+                            <div class="tooltip">
+                                上次的新修改尚未啟用，請點選「啟用」來更新菜單內容。
+                            </div>
+                        </a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo-quickclick.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/logo-quickclick.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <!-- popup 新增菜單:預設建出來的第一個菜單 就是~快一點 -->
+    <section id="popup-add-menu" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>請選擇新建或匯入</span></h4>
+            </div>
+            <ul class="choose-method">
+                <li>
+                    <a href="#">
+                        <p class="menu">新建一個菜單</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="upload">請選擇上傳檔案或拖曳檔案至此</p>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-remind">
+                <a class="download-template" href="#">下載匯入範本</a>
+                <a class="icon-faq"><i class="fas fa-question-circle"></i></a>
+            </p>
+        </div>
+    </section>
+    <!-- popup 將此菜單複製到其他店：請選擇發佈店家 -->
+    <section id="popup-choose-store" class="white-popup mfp-hide ">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>請選擇發佈店家</span></h4>
+            </div>
+            <ul class="choose-store-list">
+                <li class="selected">
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 153</p>
+                    <p class="store-name">Eikiy測試店</p>
+                </li>
+                <li>
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 154</p>
+                    <p class="store-name">麥町吐司工房新莊中原店</p>
+                </li>
+                <li>
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 1052</p>
+                    <p class="store-name">1甜點微烤黃金小甜餅（南瓜餅）2五分熟神戶小牛肉配珍珠甜米飯</p>
+                </li>
+                <li>
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 1545</p>
+                    <p class="store-name">麥町吐司工房內湖大直店</p>
+                </li>
+                <li>
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 153</p>
+                    <p class="store-name">Eikiy測試店</p>
+                </li>
+                <li class="selected">
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 154</p>
+                    <p class="store-name">麥町吐司工房新莊中原店</p>
+                </li>
+                <li>
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 1052</p>
+                    <p class="store-name">「宴會專案管理」討論過菜單的分配原則與教大家看懂常見的菜名</p>
+                </li>
+                <li>
+                    <div class="top-icon"><img src="images/svg/store-solid.svg"></div>
+                    <p class="store-id">商店ID 1545</p>
+                    <p class="store-name">麥町吐司工房內湖大直店</p>
+                </li>
+            </ul>
+            <div class="bottom-btn-tool">
+                <input class="btn--primary-xl " type="submit" value="發布">
+            </div>
+        </div>
+    </section>
+    <!-- popup 將此菜單上架到其他平台：選擇上架平台 -->
+    <section id="popup-choose-platform" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>請選擇上架平台</span></h4>
+            </div>
+            <ul class="choose-platform-list">
+                <li class="selected">
+                    <div class="icon">
+                        <img src="images/platform-logo/quickclick.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/foodpanda.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/ubereats.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/dudoo.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/ichef.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/nidin.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/foodomo.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/yo-woo.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/foodomo.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <img src="images/platform-logo/yo-woo.png">
+                    </div>
+                </li>
+            </ul>
+            <div class="bottom-btn-tool">
+                <input class="btn--primary-xl " type="submit" value="上架此平台">
+            </div>
+        </div>
+    </section>
+    <!-- popup 菜單刪除確認 -->
+    <section id="popup-delete-menu" class="white-popup mfp-hide popup-width-s">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>菜單刪除確認</span></h4>
+            </div>
+            <p class="text-remind">
+                刪除就是刪除，無法復原的哦~
+            </p>
+            <div class="bottom-btn-tool">
+                <input class="btn--primary-xl " type="submit" value="我知道">
+            </div>
+        </div>
+    </section>
+    <!-- popup 啟用 > 備註 -->
+    <section id="popup-activate-menu" class="white-popup mfp-hide popup-width-s">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>菜單備註</span></h4>
+            </div>
+            <fieldset>
+                <input class="default" type="" name="" value="" placeholder="此備註將顯示於歷史紀錄上。ex:修改漢堡加購。">
+            </fieldset>
+            <div class="bottom-btn-tool">
+                <input class="btn--primary-xl " type="submit" value="送出">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
