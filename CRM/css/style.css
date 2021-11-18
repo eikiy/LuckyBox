@@ -2143,6 +2143,33 @@ ul.edit-tool li a:hover {
   padding-right: 10px;
 }
 
+.popup-finish .terms-info {
+  padding: 0 20px;
+  background-color: #ebf5f4;
+}
+
+.popup-finish .terms-info .terms-field {
+  background-color: #fff;
+  max-width: 694px;
+  padding: 20px 30px 30px 30px;
+  margin: 0 auto;
+  border-radius: 18px;
+}
+
+.popup-finish .terms-info .terms-field p.terms-title {
+  padding: 15px 0 20px 0;
+  font-size: 1.063rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.popup-finish .terms-info .terms-field p.terms-description {
+  font-size: 0.938rem;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
 .popup-finish p.text-confirm {
   float: left;
   width: 100%;
@@ -2188,6 +2215,9 @@ ul.edit-tool li a:hover {
 }
 
 @media all and (max-width: 650px) {
+  .popup-finish .fillin-box p.product-title {
+    font-size: 0.938rem;
+  }
   .popup-finish .fillin-box .field .fillin-info fieldset {
     padding: 0px;
   }
@@ -2204,6 +2234,17 @@ ul.edit-tool li a:hover {
   }
   .popup-finish .fillin-box .field .fillin-info ul.list-terms-single {
     padding: 10px 0 0 20px;
+  }
+  .popup-finish .terms-info .terms-field {
+    padding: 15px 25px;
+  }
+  .popup-finish .terms-info .terms-field p.terms-title {
+    font-size: 0.938rem;
+    padding: 10px 0 15px;
+  }
+  .popup-finish .terms-info .terms-field p.terms-description {
+    font-size: 0.813rem;
+    line-height: 1.375rem;
   }
   .popup-finish p.text-confirm {
     text-align: left;

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 附加條款</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="product.html">產品</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="admin.html">使用者管理</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <div class="logo"></div>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="product.html">產品</a>
+                </li>
+                <li>
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li>
+                    <a class="selected" href="terms.html">附加條款</a>
+                </li>
+                <li>
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a href="admin.html">使用者管理</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">附加條款</h3>
+                <div class="tools-bar clearfix">
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋條款名稱">
+                        <p class="btn-text"><a>搜尋</a></p>
+                    </div>
+                    <div class="filter-box">
+                        <a href="#" class=" btn--primary-line-m">
+                            <i class="fas fa-eye"></i>
+                            <span>全部顯示</span>
+                        </a>
+                        <div class="filter-list">
+                            <ul>
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="filter-show" value="內含" checked>
+                                        <label for="option">全部顯示</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list circle-green">
+                                        <input type="radio" name="filter-show" value="內含">
+                                        <label for="option">上架中</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list circle-gray">
+                                        <input type="radio" name="filter-show" value="已下架">
+                                        <label for="option">已下架</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#popup-add-terms-new" class="btn-add btn--primary-m popup-link">
+                        <i class="fas fa-plus"></i>
+                        <span>新增條款</span>
+                    </a>
+                </div>
+                <div class="data-list">
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-terms-info">
+                            <h4 class="product-name">條款名稱文字捷徑</h4>
+                            <p class="product-description">
+                                條款內容條款內條款內容條款內條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-terms">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy popup-link" href="#popup-copy-terms">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">條款名稱-金物流文字捷徑</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                       <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">AAAA條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">條款名稱條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">素人口碑行銷條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內條款內容條款內容條款內條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">廣告素材製條款名稱廣告素材製條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內條款內容條款內容條款內條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">威旭炫光短影音-條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內條款內容條款內容條款內條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">社區電梯螢幕看板廣告社區電梯螢幕看板廣告 條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內條款內容條款內容條款內條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">條款名稱條款名稱條款名稱條款名稱條款名稱條款名稱條款名稱條款名稱條款名稱條款名稱</h4>
+                            <p class="product-description">
+                                條款內容條款內容條款內條款內容條款內容條款內條款內容條款內容條款內
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-50列(共220列 )</p>
+                    <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul>
+                </p>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2021 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup 條款 - 內容-->
+    <section id="popup-terms-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>條款</span></h4>
+            </div>
+            <div class="terms-info">
+                <div class="terms-field">
+                    <p class="terms-title">第三方工具之服務</p>
+                    <p class="terms-description">使用第三方工具之服務時，請確保商家對其熟悉度，並同意其使用條款；holkee
+                        無法監視或控制由第三方產生之結果。為增加商家或消費者方便性，holkee 提供連結至第三方工具之服務；此服務提供不表示 holkee 認可第三方之服務內容，或與第三方有任何關係。holkee
+                        提供連結的外部網站，holkee 不保證其內容之合適性、即時性、有效性及正確性。商家或消費者連結至 holkee
+                        提供連結的網站時，應自行決定是否離開；若商家或消費者連結至第三方網站而產生之任何損害，holkee 不負任何損害賠償之連帶責任。<br><br>
+                        於使用第三方工具前，holkee 建議商家或消費者事先充分瞭解第三方工具之所有細節。<br>
+                        商家應符合第三方工具業者所定之資格，並經該業者驗證通過後，始得使用之。如因可歸責於商家之事由致商家無法使用該服務時，概與本平台無涉。</p>
+                </div>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <ul class="edit-record-user">
+                        <li class="clearfix">
+                            <p class="time">更新：2021/02/29 14:59:00 </p>
+                            <p class="id"><span class="bg-c-1">E</span>Eikiy Chang</p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="time">建立：2021/05/24 15:30:15 </p>
+                            <p class="id"><span class="bg-c-2">S</span>Sandy Yu</p>
+                        </li>
+                    </ul>
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-terms">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="history">
+                                <i class="fas fa-history" title="變更紀錄"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="copy popup-link" href="#popup-copy-terms">
+                                <i class="far fa-copy" title="複製"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="delete popup-link" href="#popup-delete">
+                                <i class="far fa-trash-alt" title="下架"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 下架確認-->
+    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>下架確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要下架此「條款」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認刪除">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 新增條款-->
+    <section id="popup-add-terms-new" class="popup-bg-white white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增條款</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <input class="width-100 default" type="" name="" placeholder="新增文字捷徑，捷徑必須至少包含 3 個字元。" value="">
+                            </fieldset>
+                            <fieldset>
+                                <textarea class="width-100" placeholder="請輸入條款內容"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="建立">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 編輯條款-->
+    <section id="popup-edit-terms" class="popup-bg-white white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>編輯條款</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <input class="width-100 default" type="" name="" placeholder="新增文字捷徑，捷徑必須至少包含 3 個字元。"
+                                    value="第三方工具之服務">
+                            </fieldset>
+                            <fieldset>
+                                <textarea class="width-100" placeholder="請輸入條款內容">
+使用第三方工具之服務時，請確保商家對其熟悉度，並同意其使用條款；holkee 無法監視或控制由第三方產生之結果。
+為增加商家或消費者方便性，holkee 提供連結至第三方工具之服務；此服務提供不表示 holkee 認可第三方之服務內容，或與第三方有任何關係。
+holkee 提供連結的外部網站，holkee 不保證其內容之合適性、即時性、有效性及正確性。
+商家或消費者連結至 holkee 提供連結的網站時，應自行決定是否離開；若商家或消費者連結至第三方網站而產生之任何損害，holkee 不負任何損害賠償之連帶責任。
+於使用第三方工具前，holkee 建議商家或消費者事先充分瞭解第三方工具之所有細節。
+商家應符合第三方工具業者所定之資格，並經該業者驗證通過後，始得使用之。如因可歸責於商家之事由致商家無法使用該服務時，概與本平台無涉。
+                                </textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="建立">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 複製條款-->
+    <section id="popup-copy-terms" class="popup-bg-white white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增條款</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <input class="width-100 default" type="" name="" placeholder="新增文字捷徑，捷徑必須至少包含 3 個字元。"
+                                    value="第三方工具之服務">
+                            </fieldset>
+                            <fieldset>
+                                <textarea class="width-100" placeholder="請輸入條款內容">
+使用第三方工具之服務時，請確保商家對其熟悉度，並同意其使用條款；holkee 無法監視或控制由第三方產生之結果。
+為增加商家或消費者方便性，holkee 提供連結至第三方工具之服務；此服務提供不表示 holkee 認可第三方之服務內容，或與第三方有任何關係。
+holkee 提供連結的外部網站，holkee 不保證其內容之合適性、即時性、有效性及正確性。
+商家或消費者連結至 holkee 提供連結的網站時，應自行決定是否離開；若商家或消費者連結至第三方網站而產生之任何損害，holkee 不負任何損害賠償之連帶責任。
+於使用第三方工具前，holkee 建議商家或消費者事先充分瞭解第三方工具之所有細節。
+商家應符合第三方工具業者所定之資格，並經該業者驗證通過後，始得使用之。如因可歸責於商家之事由致商家無法使用該服務時，概與本平台無涉。
+                                    </textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="建立">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
