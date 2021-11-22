@@ -1712,6 +1712,20 @@ ul.edit-tool li a:hover {
   padding-left: 5px;
 }
 
+.popup-container .fillin-box .field .width-100 {
+  width: 100%;
+}
+
+.popup-container .fillin-box .field .width-100 fieldset input,
+.popup-container .fillin-box .field .width-100 fieldset input.default,
+.popup-container .fillin-box .field .width-100 fieldset textarea {
+  max-width: 100%;
+}
+
+.popup-container .fillin-box .field .width-100 fieldset textarea {
+  height: 200px;
+}
+
 .popup-container .fillin-box .field ul.list-terms-single {
   float: left;
   width: 100%;
@@ -1803,6 +1817,11 @@ ul.edit-tool li a:hover {
   height: 42px;
   line-height: 42px;
   font-weight: bold;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
 .popup-container .fillin-box .field ul.list-project-single li a {
@@ -2059,26 +2078,6 @@ ul.edit-tool li a:hover {
   padding-bottom: 0;
 }
 
-.popup-bg-white .popup-container .fillin-box .field {
-  padding: 0;
-}
-
-.popup-bg-white .popup-container .fillin-box .field .fillin-info {
-  width: 100%;
-}
-
-.popup-bg-white .popup-container .fillin-box .field .fillin-info fieldset {
-  padding: 16px 0 0 0;
-}
-
-.popup-bg-white .popup-container .fillin-box .field .fillin-info fieldset .width-100 {
-  max-width: 100%;
-}
-
-.popup-bg-white .popup-container .fillin-box .field .fillin-info fieldset textarea {
-  height: 200px;
-}
-
 .popup-bg-white .popup-container .bottom-btn-tool {
   background-color: transparent;
 }
@@ -2144,14 +2143,13 @@ ul.edit-tool li a:hover {
 }
 
 .popup-finish .terms-info {
-  padding: 0 20px;
-  background-color: #ebf5f4;
+  border-bottom: 3px solid #ebf5f4;
 }
 
 .popup-finish .terms-info .terms-field {
   background-color: #fff;
   max-width: 694px;
-  padding: 20px 30px 30px 30px;
+  padding: 0px 0px 30px 0px;
   margin: 0 auto;
   border-radius: 18px;
 }
@@ -2164,7 +2162,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-finish .terms-info .terms-field p.terms-description {
-  font-size: 0.938rem;
+  font-size: 0.875rem;
   line-height: 1.75rem;
   letter-spacing: 1px;
   text-align: justify;
