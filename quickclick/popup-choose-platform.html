@@ -3,21 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理</title>
+    <title></title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $(".middle-content .more-features").click(function () {
-                $(this).next(".features-menu").fadeToggle(0);
-                return false;
-            });
-        });
-    </script>
 </head>
 <body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <!-- popup 將此菜單上架到其他平台：選擇上架平台 -->
+                <section id="popup-choose-platform" class="white-popup mfp-hide popup-width-s">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>請選擇上架平台</span></h4>
+                        </div>
+                        <ul class="choose-platform-list">
+                            <li class="selected">
+                                <div class="icon">
+                                    <img src="images/platform-logo/quickclick.png">
+                                </div>
+                            </li>
+                            <li class="selected">
+                                <div class="icon">
+                                    <img src="images/platform-logo/counter.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/platform-logo/gofoodie.png">
+                                </div>
+                            </li>
+                            <li class="selected">
+                                <div class="icon">
+                                    <img src="images/platform-logo/linespot.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/platform-logo/foodpanda.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="images/platform-logo/ubereats.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="上架此平台">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <section class="top-content clearfix">
             <h3 class="main-title">菜單管理</h3>
@@ -31,7 +74,7 @@
         <section class="middle-content">
             <div class="menu-list">
                 <div class="add-new-card">
-                    <a class="popup-link" href="add_new_menu.html">
+                    <a class="popup-link" href="#popup-add-menu">
                         <p>新增或匯入菜單</p>
                     </a>
                 </div>
@@ -57,25 +100,25 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="popup-link" href="popup-delete-menu.html">
+                                <a class="popup-link" href="#popup-delete-menu">
                                     <span><i class="far fa-trash-alt"></i></span>
                                     刪除
                                 </a>
                             </li>
                             <li>
-                                <a href="menu-history.html">
+                                <a href="#">
                                     <span><i class="fas fa-history"></i></span>
                                     歷史紀錄
                                 </a>
                             </li>
                             <li>
-                                <a class="popup-link" href="popup-choose-store.html"">
+                                <a class="popup-link" href="#popup-choose-store">
                                     <span><i class="fas fa-share-square"></i></span>
                                     將此菜單複製到其他店
                                 </a>
                             </li>
                             <li>
-                                <a class="popup-link" href="popup-choose-platform.html"">
+                                <a class="popup-link" href="#popup-choose-platform">
                                     <span><i class="fas fa-share-square"></i></span>將此菜單上架到其他平台
                                 </a>
                             </li>

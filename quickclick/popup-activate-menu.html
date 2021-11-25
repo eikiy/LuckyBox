@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理</title>
+    <title>popup 啟用 > 備註</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $(".middle-content .more-features").click(function () {
-                $(this).next(".features-menu").fadeToggle(0);
-                return false;
-            });
-        });
-    </script>
 </head>
 <body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <!-- popup 啟用 > 備註 -->
+                <section id="popup-activate-menu" class="white-popup mfp-hide popup-width-s">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>菜單備註</span></h4>
+                        </div>
+                        <fieldset>
+                            <input class="default" type="" name="" value="" placeholder="此備註將顯示於歷史紀錄上。ex:修改漢堡加購。">
+                        </fieldset>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="送出">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <section class="top-content clearfix">
             <h3 class="main-title">菜單管理</h3>
@@ -31,7 +45,7 @@
         <section class="middle-content">
             <div class="menu-list">
                 <div class="add-new-card">
-                    <a class="popup-link" href="add_new_menu.html">
+                    <a class="popup-link" href="#popup-add-menu">
                         <p>新增或匯入菜單</p>
                     </a>
                 </div>
@@ -57,25 +71,25 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="popup-link" href="popup-delete-menu.html">
+                                <a class="popup-link" href="#popup-delete-menu">
                                     <span><i class="far fa-trash-alt"></i></span>
                                     刪除
                                 </a>
                             </li>
                             <li>
-                                <a href="menu-history.html">
+                                <a href="#">
                                     <span><i class="fas fa-history"></i></span>
                                     歷史紀錄
                                 </a>
                             </li>
                             <li>
-                                <a class="popup-link" href="popup-choose-store.html"">
+                                <a class="popup-link" href="#popup-choose-store">
                                     <span><i class="fas fa-share-square"></i></span>
                                     將此菜單複製到其他店
                                 </a>
                             </li>
                             <li>
-                                <a class="popup-link" href="popup-choose-platform.html"">
+                                <a class="popup-link" href="#popup-choose-platform">
                                     <span><i class="fas fa-share-square"></i></span>將此菜單上架到其他平台
                                 </a>
                             </li>
