@@ -273,6 +273,7 @@ body {
 input.default {
   width: 100%;
   height: 46px;
+  line-height: 46px;
   padding: 0 10px;
   border-radius: 4px;
   background-color: #fff;
@@ -292,6 +293,13 @@ input.default::-ms-input-placeholder {
 
 input.default::placeholder {
   color: #b5b5b5;
+}
+
+@media all and (max-width: 600px) {
+  input.default {
+    height: 36px;
+    line-height: 36px;
+  }
 }
 
 .option-list {
@@ -399,28 +407,21 @@ input.default::placeholder {
   display: block;
 }
 
-.tools-bar {
-  max-width: 580px;
-  margin: 0 auto;
-  padding-bottom: 10px;
-}
-
-.tools-bar .search-box {
+.search-box {
   position: relative;
   width: 100%;
-  margin: 0 15px 15px 0;
 }
 
-.tools-bar .search-box input {
+.search-box input {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
   padding-left: 45px;
 }
 
-.tools-bar .search-box::after {
+.search-box::after {
   content: "";
   position: absolute;
-  top: 13px;
+  top: calc(50% - 8.5px);
   left: 15px;
   width: 17px;
   height: 17px;
@@ -429,6 +430,16 @@ input.default::placeholder {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.tools-bar {
+  max-width: 580px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.tools-bar .search-box {
+  margin-bottom: 15px;
 }
 
 .pages {
@@ -501,6 +512,16 @@ input.default::placeholder {
   padding: 30px;
 }
 
+.main-container p.breadcrumb {
+  padding: 0 10px 5px 10px;
+  color: #8d909c;
+  font-size: 0.813rem;
+}
+
+.main-container p.breadcrumb span {
+  padding: 0 5px;
+}
+
 .main-container .top-content {
   width: 100%;
   padding: 0 10px 20px 10px;
@@ -512,6 +533,18 @@ input.default::placeholder {
   line-height: 50px;
 }
 
+.main-container .top-content h3.main-title span {
+  padding-right: 10px;
+}
+
+.main-container .top-content h3.main-title a {
+  color: #333;
+}
+
+.main-container .top-content h3.main-title a:hover {
+  opacity: 0.6;
+}
+
 .main-container .top-content .btn-products {
   float: right;
 }
@@ -519,6 +552,27 @@ input.default::placeholder {
 .main-container .top-content .btn-products span {
   color: #f0941d;
   padding-right: 5px;
+}
+
+.main-container .top-content .search-box {
+  float: right;
+  max-width: 350px;
+}
+
+.main-container .top-content .search-box input {
+  border-radius: 50px;
+}
+
+@media all and (max-width: 650px) {
+  .main-container .top-content h3.main-title {
+    font-size: 1.125rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main-container .top-content .search-box {
+    max-width: 100%;
+  }
 }
 
 .main-container a .tooltip {
@@ -942,12 +996,194 @@ input.default::placeholder {
   }
 }
 
+.main-container .middle-content .menu-history-list {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
+}
+
+.main-container .middle-content .menu-history-list .field {
+  width: 100%;
+  vertical-align: top;
+  border-bottom: 1px dashed #b1b5c4;
+  padding: 5px 10px;
+  text-align: left;
+  position: relative;
+  padding-left: 60px;
+}
+
+.main-container .middle-content .menu-history-list .field:hover {
+  background-color: #fffbf2;
+}
+
+.main-container .middle-content .menu-history-list .field:last-child {
+  border: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.main-container .middle-content .menu-history-list .field p.label-type {
+  position: absolute;
+  left: -6px;
+  top: 13px;
+  background-color: #90c31f;
+  color: #fff;
+  width: 60px;
+  text-align: center;
+  padding: 6px 5px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.625rem;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-remark,
+.main-container .middle-content .menu-history-list .field .menu-renew,
+.main-container .middle-content .menu-history-list .field .menu-executor,
+.main-container .middle-content .menu-history-list .field .menu-tools {
+  vertical-align: top;
+  display: inline-block;
+  padding: 5px;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-remark p,
+.main-container .middle-content .menu-history-list .field .menu-renew p,
+.main-container .middle-content .menu-history-list .field .menu-executor p,
+.main-container .middle-content .menu-history-list .field .menu-tools p {
+  font-size: 0.875rem;
+  color: #666666;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 34px;
+  height: 34px;
+  overflow: hidden;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-remark p a,
+.main-container .middle-content .menu-history-list .field .menu-renew p a,
+.main-container .middle-content .menu-history-list .field .menu-executor p a,
+.main-container .middle-content .menu-history-list .field .menu-tools p a {
+  color: #333;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-remark p a:hover,
+.main-container .middle-content .menu-history-list .field .menu-renew p a:hover,
+.main-container .middle-content .menu-history-list .field .menu-executor p a:hover,
+.main-container .middle-content .menu-history-list .field .menu-tools p a:hover {
+  color: #f0941d;
+  text-decoration: underline;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-remark {
+  width: calc(60% - 70px);
+}
+
+.main-container .middle-content .menu-history-list .field .menu-remark a {
+  height: 34px;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-renew,
+.main-container .middle-content .menu-history-list .field .menu-executor {
+  width: 20%;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-renew p,
+.main-container .middle-content .menu-history-list .field .menu-executor p {
+  color: #8f8f8f;
+  font-size: 0.813rem;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-tools {
+  width: 50px;
+  text-align: center;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-tools a {
+  color: #848484;
+  display: block;
+  line-height: 34px;
+}
+
+.main-container .middle-content .menu-history-list .field .menu-tools a:hover {
+  color: #f0941d;
+}
+
+.main-container .middle-content .menu-history-list .field-title {
+  background-color: #ffefd8;
+  border-bottom: 1px solid #ffcd85;
+  border-radius: 4px 4px 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-radius: 4px 4px 0 0;
+}
+
+.main-container .middle-content .menu-history-list .field-title:hover {
+  background-color: #ffefd8;
+}
+
+.main-container .middle-content .menu-history-list .field-title .menu-renew p,
+.main-container .middle-content .menu-history-list .field-title .menu-executor p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
 @media all and (max-width: 600px) {
   .main-container {
     padding: 15px;
   }
+  .main-container p.breadcrumb {
+    font-size: 0.688rem;
+    padding-bottom: 0;
+  }
   .main-container .middle-content .menu-list .add-new-card p {
-    font-size: 1rem;
+    font-size: 0.813rem;
+  }
+  .main-container .middle-content .menu-history-list .field {
+    padding: 5px 5px 5px 36px;
+  }
+  .main-container .middle-content .menu-history-list .field p.label-type {
+    left: -11px;
+    width: 50px;
+    top: 7px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .main-container .middle-content .menu-history-list .field .menu-remark,
+  .main-container .middle-content .menu-history-list .field .menu-renew,
+  .main-container .middle-content .menu-history-list .field .menu-executor,
+  .main-container .middle-content .menu-history-list .field .menu-tools {
+    padding: 2.5px 5px;
+  }
+  .main-container .middle-content .menu-history-list .field .menu-remark p,
+  .main-container .middle-content .menu-history-list .field .menu-renew p,
+  .main-container .middle-content .menu-history-list .field .menu-executor p,
+  .main-container .middle-content .menu-history-list .field .menu-tools p {
+    font-size: 0.813rem;
+    line-height: 20px;
+    height: 20px;
+  }
+  .main-container .middle-content .menu-history-list .field .menu-remark a,
+  .main-container .middle-content .menu-history-list .field .menu-renew a,
+  .main-container .middle-content .menu-history-list .field .menu-executor a,
+  .main-container .middle-content .menu-history-list .field .menu-tools a {
+    line-height: 20px;
+    font-size: 0.813rem;
+  }
+  .main-container .middle-content .menu-history-list .field .menu-remark {
+    width: 100%;
+  }
+  .main-container .middle-content .menu-history-list .field .menu-renew,
+  .main-container .middle-content .menu-history-list .field .menu-executor {
+    width: calc(50% - 32px);
+  }
+  .main-container .middle-content .menu-history-list .field .menu-renew p,
+  .main-container .middle-content .menu-history-list .field .menu-executor p {
+    font-size: 0.688rem;
+    word-break: break-all;
   }
 }
 
@@ -981,7 +1217,7 @@ input.default::placeholder {
   width: 100%;
   left: 0;
   top: 0;
-  padding: 0 8px;
+  padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1298,6 +1534,10 @@ input.default::placeholder {
   border-bottom: 1px solid #ffcd85;
   padding: 0 10px;
   border-radius: 4px 4px 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .popup-container .choose-store-list .field-title:hover {
@@ -1310,6 +1550,9 @@ input.default::placeholder {
 }
 
 @media all and (max-width: 760px) {
+  .popup-container .top-title {
+    padding: 30px 0 5px;
+  }
   .popup-container .top-title h4 {
     font-size: 1.125rem;
   }
@@ -1319,6 +1562,9 @@ input.default::placeholder {
 }
 
 @media all and (max-width: 600px) {
+  .popup-container .choose-store-list .field {
+    padding: 0 10px;
+  }
   .popup-container .choose-store-list .field p {
     font-size: 0.813rem;
   }
