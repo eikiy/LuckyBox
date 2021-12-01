@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>菜單管理 - 新增一個菜單</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <main class="main-container">
+        <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span></p>
+        <section class="top-content top-set-function clearfix">
+            <h3 class="main-title">
+                <a href="menu.html">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                    返回菜單管理
+                </a>
+            </h3>
+            <a class="btn-sort btn--primary-l">排序</a>
+            <div class="search-box">
+                <input class="default" type="text" placeholder="搜尋關鍵字">
+            </div>
+            <a class="btn-batch-operation btn--primary-l">批次操作</a>
+            <input class="btn-save btn--primary-xl " type="submit" value="儲存後啟用菜單">
+            <ul class="btn-menu-actions">
+                <li>
+                    <a class="save btn--primary-l" href="#" title="儲存"></a>
+                </li>
+                <li>
+                    <a class="eye btn--primary-l" href="#" title="預覽"></a>
+                </li>
+                <li>
+                    <a class="import btn--primary-l" href="#" title="匯入"></a>
+                </li>
+            </ul>
+        </section>
+        <section class="middle-content both-content">
+            <!-- 狀態二：選取該項目 -->
+            <div class="menu-content clearfix">
+                <div class="menu-item">
+                    <div class="field">
+                        <!-- 類別 -->
+                        <div class="category">
+                            <div class="bars"></div>
+                            <!-- 展開類別內的單品項目 + arr-down-->
+                            <div class="arr arr-down"></div>
+                            <input class="default" type="text" name="" value="主打套餐系列" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- 單品 -->
+                        <!-- 選到該單品 input 要編輯時，整個底色 + selected-bgcolor -->
+                        <div class="product-single selected-bgcolor">
+                            <!-- 選到該單品 input 或價錢時 + selected 價錢那邊要變換內容 -->
+                            <div class="product selected clearfix">
+                                <div class="bars"></div>
+                                <!-- 展開 + arr-down  -->
+                                <div class="arr arr-down"></div>
+                                <div class="product-photo" style="background-image: url(images/img-001.jpg);"></div>
+                                <input class="product-name default" type="text" name="" value="國王套餐" placeholder="請填寫單品">
+                                <div class="product-price">
+                                    <p class="money">$</p>
+                                    <input class="default" type="text" name="" value="18000">
+                                </div>
+                                <div class="menu-tools">
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-content">
+                                <div class="category clearfix">
+                                    <div class="bars"></div>
+                                    <div class="arr"></div>
+                                    <p class="product-name">甜點</p>
+                                    <div class="menu-tools">
+                                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div><div class="additional-content">
+                                <div class="category clearfix">
+                                    <div class="bars"></div>
+                                    <div class="arr"></div>
+                                    <p class="product-name">沙拉</p>
+                                    <div class="menu-tools">
+                                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional-content">
+                                <div class="category clearfix">
+                                    <div class="bars"></div>
+                                    <div class="arr arr-down"></div>
+                                    <p class="product-name">飲料</p>
+                                    <div class="menu-tools">
+                                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="additional-title clearfix">
+                                        <h5>紅茶紅茶紅茶紅茶紅茶字太長會怎樣呢</h5>
+                                        <p class="money">+$1255</p>
+                                    </div>
+                                    <p>尺寸（大杯+$5、中杯)<p>
+                                    <p>糖（無糖、三分糖+$5）</p>
+                                </div>
+                                <div class="product">
+                                    <div class="additional-title clearfix">
+                                        <h5>咖啡</h5>
+                                        <p class="money">+$25</p>
+                                    </div>
+                                    <p>尺寸（大杯+$15、中杯+$5)<p>
+                                    <p>溫度（常溫、去冰）</p>
+                                </div>
+                                <div class="product">
+                                    <div class="additional-title clearfix">
+                                        <h5>可樂一罐</h5>
+                                        <p class="money">+$10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 單品 -->
+                        <div class="product-single">
+                            <div class="product clearfix">
+                                <div class="bars"></div>
+                                <div class="product-photo"></div>
+                                <input class="product-name default" type="text" name="" value="皇后套餐（無加購旁邊無展開箭頭）" placeholder="請填寫單品">
+                                <div class="product-price">
+                                    <p>$18,000</p>
+                                </div>
+                                <div class="menu-tools">
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="text-add-product default" placeholder="新增單品">
+                        <input class="text-add-category default" placeholder="新增類別">
+                    </div>
+                    <div class="field">
+                        <div class="category">
+                            <div class="bars"></div>
+                            <div class="arr"></div>
+                            <input class="default" type="text" name="" value="國王皇后的吐司＆三明治＆花生系列" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="category">
+                            <div class="bars"></div>
+                            <div class="arr"></div>
+                            <input class="default" type="text" name="" value="飲品＆小點" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="category">
+                            <div class="bars"></div>
+                            <div class="arr"></div>
+                            <input class="default" type="text" name="" value="Uber" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 請幫我判斷設定↓ menu-product-info 的最小高度 
+                     會抓取 menu-item 的隨機高度(展開就要再變動)-->
+                <!-- 我這邊暫時隨便給個高度--> 
+                <!-- style="min-height: 400px;" -->
+                <div class="menu-product-info">
+                    <h3 class="product-title">國王套餐</h3>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                               <p>基本資訊</p>
+                                <div class="arr arr-down"></div> 
+                            </div>
+                        </div>
+                        <from class="fillin-info">
+                            <!-- 錯誤添加 p:text-error, input + has-error -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <div class="fillin-box">
+                                    <input class="has-error" type="" name="" value="國王套餐">
+                                    <p class="text-error">此欄位為必填項目。</p>
+                                </div>
+                                
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">商品描述</label>
+                                <div class="fillin-box">
+                                    <textarea placeholder="商品描述"></textarea>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">商品代碼</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">庫存</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">卡路里</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">停售設定</label>
+                                <div class="fillin-box">
+                                    <div class="swtich-type">
+                                        <input id="" name="" type="checkbox" checked="">
+                                        <label class="switchbutton" for=""></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">類別</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">請選擇類別</option>
+                                            <option value="1">aaa</option>
+                                            <option value="2">cccc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">加購選項</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">套餐組合這裡選</option>
+                                            <option value="1">aaa</option>
+                                            <option value="2">cccc</option>
+                                        </select>
+                                    </div>
+                                    <p class="go-seting">
+                                        <a href="#">加購選項設定</a>
+                                    </p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">商品屬性</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">當日送</option>
+                                            <option value="1">aaa</option>
+                                            <option value="2">cccc</option>
+                                        </select>
+                                    </div>
+                                    <p class="go-seting">
+                                        <a href="#">商品屬性設定</a>
+                                        <a class="reminder"></a>
+                                        <span class="tooltip">
+                                            為商品設定屬性，出單時商品順序將可依照屬性分群排序。
+                                        </span>
+                                    </p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">商品標籤</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">請選擇商品標籤</option>
+                                            <option value="1">西班牙豬肉</option>
+                                            <option value="2">韓國泡菜</option>
+                                        </select>
+                                    </div>
+                                    <p class="go-seting">
+                                        <a href="#">商品標籤設定</a>
+                                        <a class="reminder"></a>
+                                        <span class="tooltip">
+                                            將顯示於前台商品名稱旁。
+                                        </span>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </from>
+                    </div>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                                <p>定價設定</p>
+                                <div class="arr"></div>
+                            </div>
+                        </div>
+                        <from class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>原價</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="60">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">特價</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                        </from>
+                    </div>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                                <p>加購設定</p>
+                                <div class="arr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                                <p>商品圖片設定</p>
+                                <div class="arr"></div>
+                            </div>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">照片</label>
+                                <div class="upload-cover">
+                                    <a>
+                                        <p>新增圖片</p>
+                                    </a>
+                                    <p class="note">上傳正方形圖檔效果最佳。<br>
+                                    建議規格：1200*1200px / JPG 或 PNG。<br>
+                                    檔案容量：1MB以下</p>
+                                    <input class=" btn--primary-xl " type="submit" value="上傳圖片">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+</body>
+</html>
