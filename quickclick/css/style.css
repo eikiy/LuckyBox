@@ -243,6 +243,9 @@ body {
   text-align: center;
   border-radius: 50px;
   font-size: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn--primary-xl:hover {
@@ -260,6 +263,9 @@ body {
   color: #fff;
   font-size: 0.875rem;
   border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn--primary-m:hover {
