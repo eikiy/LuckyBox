@@ -683,6 +683,7 @@ a.reminder:hover {
 
 .main-container .top-set-function .btn-save {
   float: right;
+  min-width: 115px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
 }
@@ -741,10 +742,15 @@ a.reminder:hover {
     margin-left: 0;
   }
   .main-container .top-set-function .btn-batch-operation {
-    margin-left: 0px;
+    position: absolute;
+    top: 0;
+    right: 180px;
   }
   .main-container .top-set-function .btn-menu-actions {
     padding-right: 0;
+    position: absolute;
+    top: 0;
+    right: 130px;
   }
   .main-container .top-set-function .search-box {
     max-width: calc(100% - 56px);
@@ -771,6 +777,14 @@ a.reminder:hover {
     line-height: 36px;
     font-size: 0.813rem;
   }
+  .main-container .top-set-function .btn-batch-operation {
+    top: 5px;
+    right: 112px;
+  }
+  .main-container .top-set-function .btn-menu-actions {
+    top: 5px;
+    right: 75px;
+  }
   .main-container .top-set-function .btn-menu-actions li {
     padding: 0 2px;
   }
@@ -785,26 +799,37 @@ a.reminder:hover {
     line-height: 36px;
     font-size: 0.875rem;
     padding: 0 10px;
-    min-width: initial;
+    min-width: 70px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .main-container .top-set-function h3.main-title {
+    font-size: 1rem;
+  }
+  .main-container .top-set-function .btn-save {
+    min-width: 65px;
   }
 }
 
 .main-container .tooltip {
-  z-index: 2;
   position: absolute;
+  width: 100%;
   min-width: 40px;
-  text-align: left;
-  background-color: #ff5555;
-  padding: 15px;
-  font-size: 0.875rem;
-  font-weight: bold;
+  max-width: 244px;
+  padding: 7px 10px;
+  top: 28px;
   color: #fff;
+  background-color: #000000a7;
+  z-index: 2;
+  text-align: left;
+  font-size: 0.813rem;
   -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
   margin: 0;
-  border-radius: 0.625rem;
+  border-radius: 4px;
   line-height: 1.25rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
@@ -818,10 +843,9 @@ a.reminder:hover {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 9px 8px 9px;
-  border-color: transparent transparent #ff5555 transparent;
-  line-height: 0px;
-  _border-color: #000000 #000000 #ff5555 #000000;
+  border-width: 0 9px 7px 9px;
+  border-color: transparent transparent #000000a7 transparent;
+  _border-color: #000000a7 #000000a7 transparent #000000a7;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
 
@@ -1130,6 +1154,18 @@ a.reminder:hover {
   width: 222px;
   right: 0;
   top: 43px;
+  background-color: #ff5555;
+  padding: 15px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 0.625rem;
+}
+
+.main-container .middle-content .menu-list .card .btn-menu-actions .bg-c-red .tooltip::after {
+  border-color: transparent transparent #ff5555 transparent;
+  line-height: 0px;
+  _border-color: #000000 #000000 #ff5555 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
 
 .main-container .middle-content .menu-list .cardhover {
@@ -1252,6 +1288,10 @@ a.reminder:hover {
   font-size: 0.625rem;
 }
 
+.main-container .middle-content .menu-history-list .field p.edit-type {
+  background-color: #ff5555;
+}
+
 .main-container .middle-content .menu-history-list .field .menu-remark,
 .main-container .middle-content .menu-history-list .field .menu-renew,
 .main-container .middle-content .menu-history-list .field .menu-executor,
@@ -1292,7 +1332,7 @@ a.reminder:hover {
 }
 
 .main-container .middle-content .menu-history-list .field .menu-remark {
-  width: calc(60% - 70px);
+  width: calc(60% - 85px);
 }
 
 .main-container .middle-content .menu-history-list .field .menu-remark a {
@@ -1307,11 +1347,12 @@ a.reminder:hover {
 .main-container .middle-content .menu-history-list .field .menu-renew p,
 .main-container .middle-content .menu-history-list .field .menu-executor p {
   color: #8f8f8f;
+  word-break: break-all;
   font-size: 0.813rem;
 }
 
 .main-container .middle-content .menu-history-list .field .menu-tools {
-  width: 50px;
+  width: 65px;
   text-align: center;
 }
 
@@ -1344,6 +1385,21 @@ a.reminder:hover {
 .main-container .middle-content .menu-history-list .field-title .menu-executor p {
   font-size: 0.875rem;
   color: #666;
+}
+
+.main-container .middle-content .menu-history-list .field-title .menu-tools {
+  text-align: center;
+  position: relative;
+}
+
+.main-container .middle-content .menu-history-list .field-title .menu-tools a.reminder {
+  display: inline-block;
+}
+
+.main-container .middle-content .menu-history-list .field-title .menu-tools .tooltip {
+  top: 32px;
+  right: -34px;
+  width: 118px;
 }
 
 .main-container .middle-content .menu-content {
@@ -1641,24 +1697,32 @@ a.reminder:hover {
   padding-bottom: 3px;
 }
 
-.main-container .middle-content .menu-content .field .text-add-product,
-.main-container .middle-content .menu-content .field .text-add-category {
+.main-container .middle-content .menu-content .field .text-add-product input,
+.main-container .middle-content .menu-content .field .text-add-category input {
+  min-width: 84px;
+  margin: 5px 0;
   background-color: #f4f4f4;
-  line-height: 40px;
-  height: 40px;
-  margin-top: 4px;
+  color: #555;
+  font-size: 0.813rem;
+}
+
+.main-container .middle-content .menu-content .field .text-add-product input:hover,
+.main-container .middle-content .menu-content .field .text-add-category input:hover {
+  color: #f0941d;
 }
 
 .main-container .middle-content .menu-content .field .text-add-product {
-  margin-left: 65px;
-  max-width: calc(100% - 150px);
+  margin-left: 32px;
+  padding-left: 34px;
+  border-bottom: 1px dashed #dddddd;
 }
 
 .main-container .middle-content .menu-content .field .text-add-category {
-  margin: 4px 0 2px 32px;
-  max-width: calc(100% - 118px);
+  margin-left: 32px;
+}
+
+.main-container .middle-content .menu-content .field .text-add-category input {
   font-weight: bold;
-  font-size: 0.875rem;
 }
 
 .main-container .middle-content .menu-product-info {
@@ -1756,7 +1820,7 @@ a.reminder:hover {
 }
 
 .main-container .middle-content .menu-product-info .set-card .fillin-info fieldset .item-title {
-  width: 75px;
+  width: 105px;
   padding-right: 15px;
   float: left;
   line-height: 36px;
@@ -1769,7 +1833,7 @@ a.reminder:hover {
   position: relative;
   float: left;
   width: 100%;
-  max-width: calc(100% - 75px);
+  max-width: calc(100% - 105px);
 }
 
 .main-container .middle-content .menu-product-info .set-card .fillin-info fieldset p.go-setting {
@@ -1791,11 +1855,10 @@ a.reminder:hover {
 }
 
 .main-container .middle-content .menu-product-info .set-card .fillin-info fieldset p.go-setting .tooltip {
-  text-align: center;
   padding: 7px 10px;
   width: 100%;
-  max-width: 210px;
-  left: -73px;
+  max-width: 244px;
+  left: -105px;
   top: 28px;
   background-color: #000000a7;
 }
@@ -1914,7 +1977,7 @@ a.reminder:hover {
 .main-container .middle-content .menu-product-info .set-card .fillin-info fieldset .upload-cover {
   float: left;
   width: 100%;
-  max-width: calc(100% - 75px);
+  max-width: calc(100% - 105px);
 }
 
 .main-container .middle-content .menu-product-info .set-card .fillin-info fieldset .upload-cover a {
@@ -2145,12 +2208,19 @@ a.reminder:hover {
     line-height: 20px;
     font-size: 0.813rem;
   }
+  .main-container .middle-content .menu-history-list .field .menu-remark .tooltip,
+  .main-container .middle-content .menu-history-list .field .menu-renew .tooltip,
+  .main-container .middle-content .menu-history-list .field .menu-executor .tooltip,
+  .main-container .middle-content .menu-history-list .field .menu-tools .tooltip {
+    top: 22px;
+    right: -32px;
+  }
   .main-container .middle-content .menu-history-list .field .menu-remark {
     width: 100%;
   }
   .main-container .middle-content .menu-history-list .field .menu-renew,
   .main-container .middle-content .menu-history-list .field .menu-executor {
-    width: calc(50% - 32px);
+    width: calc(50% - 37px);
   }
   .main-container .middle-content .menu-history-list .field .menu-renew p,
   .main-container .middle-content .menu-history-list .field .menu-executor p {
@@ -2485,7 +2555,7 @@ a.reminder:hover {
   max-width: 580px;
   margin: 0 auto;
   text-align: left;
-  padding: 15px 0;
+  padding: 0 0 15px 0;
 }
 
 .popup-container .choose-store-list .selected {
@@ -2565,7 +2635,7 @@ a.reminder:hover {
 
 @media all and (max-width: 760px) {
   .popup-container .top-title {
-    padding: 30px 0 5px;
+    padding: 30px 0 15px;
   }
   .popup-container .top-title h4 {
     font-size: 1.125rem;
