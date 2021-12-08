@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 客戶管理 - 佳量企業股份有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="product.html">產品</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="admin.html">使用者管理</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <div class="logo"></div>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="product.html">產品</a>
+                </li>
+                <li>
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li>
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li>
+                    <a class="selected" href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a href="admin.html">使用者管理</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <div class="company-content clearfix">
+                    <div class="company-title">
+                        <div>
+                            <h3>佳量企業股份有限公司 - 台北分公司</h3>
+                            <p>零售產業</p>
+                        </div>
+                    </div>
+                    <div class="company-information">
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-customer">
+                                    <i class="fas fa-pencil-alt" title="編輯公司資料"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="add"">
+                                    <i class="fas fa-plus" title="新增"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="menu" style="display: none;">
+                            <ul>
+                                <li>
+                                    <a class="popup-link" href="#">委刊單</a>
+                                </li>
+                                <li>
+                                    <a class="popup-link" href="#popup-add-department">部門</a>
+                                </li>
+                                <li>
+                                    <a class="popup-link" href="#popup-add-contact">聯絡人</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="info">
+                            <li>
+                                <p><span>統編</span>24814848</p>
+                            </li>
+                            <li>
+                                <p><span>電話</span>02-2481-4848</p>
+                            </li>
+                            <li>
+                                <p><span>傳真</span>02-2481-4848</p>
+                            </li>
+                            <li>
+                                <p><span>地址</span>487 台北市中山區南京東路三段63號5</p>
+                            </li>
+                            <li>
+                                <p><span>Email</span><a href="mailto:service@gmail.com">service@gmail.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company-contact-list clearfix">
+                    <h4 class="main-title">聯絡人<br>資訊</h4>
+                    <ul class="info">
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-contact">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-contact-info" class="popup-link clearfix">
+                                <!-- 主要聯絡人會有星星 -->
+                                <p class="star name">張菁嵐</p>
+                                <p>0988-000123/02-2914-2658</p>
+                                <p>eikiychang@weblisher.com.tw</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-contact">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-contact-info" class="popup-link  clearfix">
+                                <p class="name">黃宏偉</p>
+                                <p>0988-845454/02-8041-1235</p>
+                                <p>janischen@weblisher.com.tw</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-contact">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-contact-info" class="popup-link  clearfix">
+                                <p class="name">陳小春</p>
+                                <p>0916-854941/02-2914-2658</p>
+                                <p>jennieli@weblisher.com.tw</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-contact">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-contact-info" class="popup-link  clearfix">
+                                <p class="name">張震</p>
+                                <p>0916-000123/02-2914-0000</p>
+                                <p>marketing@weblisher.com.tw</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-contact">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-contact-info" class="clearfix">
+                                <p class="name">吳怡霖</p>
+                                <p>0988-000123/02-2914-2658</p>
+                                <p>service@holkee.com</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-more"><a href="#">More...</a></p>
+                <div class="company-department-list clearfix">
+                    <h4 class="main-title">部門</h4>
+                    <ul class="info">
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-department">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-department-info" class="popup-link clearfix">
+                                <p class="name">廣告行銷部門</p>
+                                <p>產業</p>
+                                <p>高雄市三民區高雄市三民區高雄市三民區 807大昌二路67號5樓之2</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-department">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-department-info" class="popup-link clearfix">
+                                <p class="name">產品部門</p>
+                                <p>零售業</p>
+                                <p>新北市三峽區 237隆恩街191-1號</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-department">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-department-info" class="popup-link clearfix">
+                                <p class="name">設計部門</p>
+                                <p>美容</p>
+                                <p>台北市中正區 100開封街1段37號5樓</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-department">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-department-info" class="popup-link clearfix">
+                                <p class="name">廣告行銷部門</p>
+                                <p>工業設計</p>
+                                <p>新北市鶯歌區 239鶯桃路91巷3-1號</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-department">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                            <a href="#popup-department-info" class="popup-link clearfix">
+                                <p class="name">產品部門</p>
+                                <p>服務業</p>
+                                <p>嘉義縣太保市 612東勢里博愛路300號</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-more"><a href="#">More...</a></p>
+
+                <div class="tools-bar clearfix">
+                    <h4 class="main-title">委刊單紀錄</h4>
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋名稱/統編/網址">
+                        <p class="btn-text"><a>搜尋</a></p>
+                    </div>
+                    <div class="filter-box">
+                        <a href="#" class=" btn--primary-line-m">
+                            <i class="fas fa-eye"></i>
+                            <span>全部顯示</span>
+                        </a>
+                        <div class="filter-list percentage-step">
+                            <ul>
+                                <li>
+                                    <div class="option-list">
+                                        <input type="checkbox" name="filter-show" value="內含" checked>
+                                        <label for="option">全部顯示</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list step-one">
+                                        <input type="checkbox" name="filter-show" value="已建立">
+                                        <label for="option">已建立</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list step-two">
+                                        <input type="checkbox" name="filter-show" value="已成立">
+                                        <label for="option">已成立</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list step-three">
+                                        <input type="checkbox" name="filter-show" value="已簽回">
+                                        <label for="option">已簽回</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#popup-add-order" class="btn-add btn--primary-m popup-link">
+                        <i class="fas fa-plus"></i>
+                        <span>新增委刊單</span>
+                    </a>
+                </div>
+                <div class="data-list">
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-red">25%</p>
+                            </div>
+                            <p class="order-customer">雙影創藝有限公司 - 陳啟中(粉粉)</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-protuct">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy popup-link" href="#popup-copy-protuct">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link">
+                            <h4 class="order-name step-two">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-orange">75%</p>
+                            </div>
+                            <p class="order-customer">高筱蘋 - 高筱蘋</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link">
+                            <h4 class="order-name step-one">夏季優惠專案-如果名稱太常究竟會變怎樣呢</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">菁品創意事業有限公司意事業有限公司 - 黃素菁</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">菁品創意事業有限公司 - 黃素菁</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link">
+                            <h4 class="order-name step-three">夏季優惠專案</h4>
+                            <div class="order-percentage">
+                                <p class="c-green">100%</p>
+                            </div>
+                            <p class="order-customer">日商再春館股份有限公司台灣分公司</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">翃泰股份有限公司</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">巴黎萊雅L'Oréal Paris</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-two">購一波專案</h4>
+                            <div class="order-percentage">
+                                <p class="c-orange">55%</p>
+                            </div>
+                            <p class="order-customer">I MIA Scent.</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-two">AAAA專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-orange">50%</p>
+                            </div>
+                            <p class="order-customer">昱驊養生瑜珈中心-台北松山店</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-three">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-green">95%</p>
+                            </div>
+                            <p class="order-customer">生活的藝術 台灣中心 - 宵曉晴</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-50列(共220列 )</p>
+                    <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2021 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup  新增部門-->
+    <section id="popup-add-department" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增部門資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>部門資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">地址</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <textarea></textarea>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">聯絡人</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增聯絡人</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>產業分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇產業分類</option>
+                                        <option value="1" selected>農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0" selected>請選擇產業小分類</option>
+                                        <option value="1">農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup  修改部門-->
+    <section id="popup-edit-department" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>修改部門資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>部門資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" placeholder="" value="廣告行銷部門">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">地址</label>
+                                <input class="default" type="" name="" value="高雄市三民區 807大昌二路67號5樓之2">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <textarea>2021年新成立部門</textarea>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">聯絡人</label>
+                                <div class="confirm">
+                                    <ul class="show-contact-list">
+                                        <li>
+                                            <!-- star + selected 主要聯絡人 -->
+                                            <div class="star selected"></div>
+                                            <!-- 預設聯絡人就先展開，點了再收起-->
+                                            <p class="name">陳小姐</p>
+                                            <div class="info clearfix">
+                                                <p class="phone">
+                                                    <span>電話</span>0900-123546
+                                                </p>
+                                                <p class="fax">
+                                                    <span>傳真</span>02-2214-2152
+                                                </p>
+                                                <p class="mail">
+                                                    <span>E-mail</span>
+                                                    <span>apple123173cakestoretaiwan@service.com.tw</span>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="star"></div>
+                                            <p class="name">劉先生</p>
+                                            <div class="info clearfix">
+                                                <p class="phone">
+                                                    <span>電話</span>0900-123546
+                                                </p>
+                                                <p class="fax">
+                                                    <span>傳真</span>02-2214-2152
+                                                </p>
+                                                <p class="mail">
+                                                    <span>E-mail</span>173cake@service.com
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增聯絡人</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>產業分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇產業分類</option>
+                                        <option value="1" selected>農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0" selected>請選擇產業小分類</option>
+                                        <option value="1">農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+    
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="copy" href="#">
+                                <i class="far fa-copy" title="複製"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="delete popup-link" href="#popup-delete">
+                                <i class="far fa-trash-alt" title="下架"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 部門 - 內容-->
+    <section id="popup-department-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>部門資訊</span></h4>
+            </div>
+            <div class="liaison-info">
+                <div class="fillin-box">
+                    <div class="field clearfix">
+                        <p class="product-title">廣告行銷部門</p>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">地址</label>
+                                <p class="input-value">10487台北市中山區南京東路三段63號5樓</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <p class="input-value">台灣台北分公司</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">聯絡人</label>
+                                <ul class="show-contact-list">
+                                    <li>
+                                        <!-- star + selected 主要聯絡人 -->
+                                        <div class="star selected"></div>
+                                        <!-- 預設聯絡人就先展開，點了再收起-->
+                                        <p class="name">陳小姐</p>
+                                        <div class="info clearfix">
+                                            <p class="phone">
+                                                <span>電話</span>0900-123546
+                                            </p>
+                                            <p class="fax">
+                                                <span>傳真</span>02-2214-2152
+                                            </p>
+                                            <p class="mail">
+                                                <span>E-mail</span>
+                                                <span><a href="mailto:apple123173cakestoretaiwan@service.com.tw">apple123173cakestoretaiwan@service.com.tw</a></span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="star"></div>
+                                        <p class="name">劉先生</p>
+                                        <div class="info clearfix">
+                                            <p class="phone">
+                                                <span>電話</span>0900-123546
+                                            </p>
+                                            <p class="fax">
+                                                <span>傳真</span>02-2214-2152
+                                            </p>
+                                            <p class="mail">
+                                                <span>E-mail</span><a href="mailto:173cake@service.com">173cake@service.com</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業分類</label>
+                                <p class="input-value">農、林、漁、牧業</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <p class="input-value">科技</p>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-btn-tool">
+                    <fieldset class="field">
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-contact">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popup  新增聯絡人-->
+    <section id="popup-add-contact" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增聯絡人資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>聯絡人<br>資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>姓名</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>Email</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>手機</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>市內電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>聯絡人屬性</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇屬性</option>
+                                        <option value="1">財務</option>
+                                        <option value="2">客服?</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">部門</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-department">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增部門</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">LINE ID</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">Messenger</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">skype</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup  修改聯絡人-->
+    <section id="popup-edit-contact" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>修改聯絡人資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>聯絡人<br>資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>姓名</label>
+                                <input class="default" type="" name="" placeholder="" value="張菁嵐">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>Email</label>
+                                <input class="default" type="" name="" placeholder="" value="eikiychang@weblisher.com.tw">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>手機</label>
+                                <input class="default" type="" name="" placeholder="" value="0988-000123">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>市內電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="22112123">
+                                    <input class="" type="" name="" value="905" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>聯絡人屬性</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇屬性</option>
+                                        <option value="1">財務</option>
+                                        <option value="2">客服</option>
+                                        <option value="3" selected>holkee team</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">部門</label>
+                                <!-- <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-department">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增部門</span>
+                                    </a>
+                                </div> -->
+                                <!-- 按XX後出現"新增部門"按鈕↑ -->
+                                <div class="confirm">
+                                    <ul class="list-project-single clearfix">
+                                        <li>
+                                            <p>holkee team</p>
+                                            <a class="delete"><i class="fas fa-times"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">LINE ID</label>
+                                <input class="default" type="" name="" value="eikiy" placeholder="">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">Messenger</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">skype</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="delete popup-link" href="#popup-delete">
+                                <i class="far fa-trash-alt" title="下架"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 聯絡人 - 內容-->
+    <section id="popup-contact-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>聯絡人</span></h4>
+            </div>
+            <div class="liaison-info">
+                <div class="fillin-box">
+                    <div class="field clearfix">
+                        <p class="product-title">Jennie Li 李依庭</p>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">Email</label>
+                                <p class="input-value"><a href="#" target="_blank">jennieli@weblisher.com.tw</a></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">手機</label>
+                                <p class="input-value">0930555153</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">市內電話</label>
+                                <p class="input-value">886-2-2502-1980 #315</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">部門</label>
+                                <p class="input-value">有寫才出現這欄位</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">LINE ID</label>
+                                <p class="input-value">@bca1493j</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">Messerager</label>
+                                <p class="input-value"><a href="#" target="_blank">https://www.facebook.com/holkeego/</a></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">Skype</label>
+                                <p class="input-value"><a href="#" target="_blank">https://www.instagram.com/holkee_taiwan/</a></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <p class="input-value">行銷廣告-主要負責人</p>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-btn-tool">
+                    <fieldset class="field">
+                        <!-- 更新項目要保留嗎?? -->
+                        <ul class="edit-record-user">
+                            <li class="clearfix">
+                                <p class="time">更新：2021/02/29 14:59:00 </p>
+                                <p class="id"><span class="bg-c-1">E</span>Eikiy Chang</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="time">建立：2021/05/24 15:30:15 </p>
+                                <p class="id"><span class="bg-c-2">S</span>Sandy Yu</p>
+                            </li>
+                        </ul>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-contact">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="history">
+                                    <i class="fas fa-history" title="變更紀錄"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popup 選擇聯絡人-->
+    <section id="popup-choose-contact" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>聯絡人</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <input type="" name="" value="" placeholder="搜尋關鍵字">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm contact-list clearfix">
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    張菁嵐
+                                </label>
+                                <span class="mail">eikiychang@weblisher.com.tw</span>
+                                <span class="phone">0988-000123/02-2914-2658</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    黃宏偉
+                                </label>
+                                <span class="mail">zkiow@weblisher.com.tw</span>
+                                <span class="phone">0988-000123</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="" checked>
+                                <label for="option">
+                                    陳小春
+                                </label>
+                                <span class="mail">eikiychang@weblisher.com.tw</span>
+                                <span class="phone">02-2914-2658</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    張震
+                                </label>
+                                <span class="mail">zkiowzkiowzkiow@weblisher.com.tw</span>
+                                <span class="phone">0988-000123/02-2914-2658</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    Angelina Jolie Voight
+                                </label>
+                                <span class="mail">zkiowzkiowzkiowzkiowzkiowzkiow@weblisher.com.tw</span>
+                                <span class="phone">0988-000123</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    游小姐
+                                </label>
+                                <span class="mail">zkiow@weblisher.com.tw</span>
+                                <span class="phone">0988-000123/02-2914-2658</span>
+                            </div>
+                            <p class="text-add"><a class="popup-link" href="#popup-add-contact">新增聯絡人</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 選擇部門-->
+    <section id="popup-choose-department" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>部門</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <input type="" name="" value="" placeholder="搜尋關鍵字">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm contact-list department-list clearfix">
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    廣告行銷部門
+                                </label>
+                                <span class="add">487 台北市中山區南京東路三段63號5樓</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    產品部門
+                                </label>
+                                <span class="add">487 台北市信義區市府路45號</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    設計部門
+                                </label>
+                                <span class="add">No.45, Shifu Rd., Xinyi Dist., Taipei City, Taiwan (R.O.C.)</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    廣告行銷部門
+                                </label>
+                                <span class="add">487 台北市中山區中山北路二段16巷22號台北市中山區中山北路二段16巷22號</span>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">
+                                    客服部門
+                                </label>
+                                <span class="add">487 台北市中山區南京東路三段63號5樓</span>
+                            </div>
+                            <p class="text-add"><a class="popup-link" href="#popup-add-department">新增部門</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 修改客戶資料-->
+    <section id="popup-edit-customer" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>修改客戶資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" placeholder="公司名稱/個人名稱" value="佳量企業股份有限公司">
+                            </fieldset>
+                            <!-- 統編/身分證編號 不可修改 input + disabled-->
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>統編/身分證編號</label>
+                                <input class="default" type="" name="" placeholder="統一編號/身分證編號" value="24814848" disabled>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司地址</label>
+                                <input class="default" type="" name="" value="487 台北市中山區南京東路三段63號5樓">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="22151236 ">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司傳真</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司網址</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司 Facebook</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>產業分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇產業分類</option>
+                                        <option value="1" selected>農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0" selected>請選擇產業小分類</option>
+                                        <option value="1">農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+        
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>電子發票<br>付款條件</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>電子發票形式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立三聯式電子發票" checked>
+                                        <label for="option">開立三聯式電子發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
+                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>開立發票方式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="逐月付款後開立發票" checked>
+                                        <label for="option">逐月付款後開立發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="預先開立發票後請款">
+                                        <label for="option">預先開立發票後請款</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice1" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款條件</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前逐月付款" checked>
+                                        <label for="option">上檔前逐月付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
+                                        <label for="option">上檔前季繳(3個月)付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前一次付清  ">
+                                        <label for="option">上檔前一次付清</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款方式</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="匯款" >
+                                        <label for="option">匯款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="支票">
+                                        <label for="option">支票</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment1" value="其他" checked>
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="月初以現金支付">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>發票
+                                    Email</label>
+                                <input class="default" type="" name="" value="johnnychang@weblisher.com.tw">
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 下架確認-->
+    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>下架確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要下架此「聯絡人（或部門）」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認下架">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

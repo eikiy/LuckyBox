@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRM 管理後台 - 產品</title>
+    <title>CRM 管理後台 - 委刊單</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -72,10 +72,10 @@
         <nav class="side-menu">
             <ul>
                 <li>
-                    <a href="order.html">委刊單</a>
+                    <a class="selected" href="order.html">委刊單</a>
                 </li>
                 <li>
-                    <a class="selected" href="product.html">產品</a>
+                    <a href="product.html">產品</a>
                 </li>
                 <li>
                     <a href="project.html">促銷專案</a>
@@ -93,50 +93,59 @@
         </nav>
         <main class="main-container">
             <section class="content">
-                <h3 class="main-title">產品</h3>
+                <h3 class="main-title">委刊單</h3>
                 <div class="tools-bar clearfix">
                     <div class="search-box">
-                        <input class="default" type="text" placeholder="搜尋產品名稱/類型">
-                        <p class="btn-text"><a>進階搜尋</a></p>
+                        <input class="default" type="text" placeholder="搜尋名稱/統編/網址">
+                        <p class="btn-text"><a>搜尋</a></p>
                     </div>
                     <div class="filter-box">
                         <a href="#" class=" btn--primary-line-m">
                             <i class="fas fa-eye"></i>
                             <span>全部顯示</span>
                         </a>
-                        <div class="filter-list">
+                        <div class="filter-list percentage-step">
                             <ul>
                                 <li>
                                     <div class="option-list">
-                                        <input type="radio" name="filter-show" value="內含" checked>
+                                        <input type="checkbox" name="filter-show" value="內含" checked>
                                         <label for="option">全部顯示</label>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="option-list circle-green">
-                                        <input type="radio" name="filter-show" value="內含">
-                                        <label for="option">上架中</label>
+                                    <div class="option-list step-one">
+                                        <input type="checkbox" name="filter-show" value="已建立">
+                                        <label for="option">已建立</label>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="option-list circle-gray">
-                                        <input type="radio" name="filter-show" value="已下架">
-                                        <label for="option">已下架</label>
+                                    <div class="option-list step-two">
+                                        <input type="checkbox" name="filter-show" value="已成立">
+                                        <label for="option">已成立</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list step-three">
+                                        <input type="checkbox" name="filter-show" value="已簽回">
+                                        <label for="option">已簽回</label>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <a href="#popup-add-protuct" class="btn-add btn--primary-m popup-link">
+                    <a href="#popup-add-order" class="btn-add btn--primary-m popup-link">
                         <i class="fas fa-plus"></i>
-                        <span>新增產品</span>
+                        <span>新增委刊單</span>
                     </a>
                 </div>
                 <div class="data-list">
                     <div class="card clearfix">
                         <a class="go-detail popup-link" href="#popup-protuct-info">
-                            <h4 class="product-name">如果標題文字會長怎樣呢?會破掉嗎??威旭質感廣告影片 1支如果標題文字會長怎樣呢?會破掉嗎??威旭質感廣告影片 1支</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯15~60秒，含腳本、拍攝、剪輯</p>
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-red">25%</p>
+                            </div>
+                            <p class="order-customer">雙影創藝有限公司 - 陳啟中(粉粉)</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -158,9 +167,12 @@
                         </ul>
                     </div>
                     <div class="card clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">威旭炫光短影音-直+橫 1組</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
+                        <a class="go-detail popup-link">
+                            <h4 class="order-name step-two">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-orange">75%</p>
+                            </div>
+                            <p class="order-customer">高筱蘋 - 高筱蘋</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                        <ul class="edit-tool">
@@ -183,9 +195,12 @@
                     </div>
                     <!-- 下架：class + state-off -->
                     <div class="card state-off clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">業配口碑行銷 3篇/月</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯15~60秒，含腳本、拍攝、剪輯15~60秒，含腳本、拍攝、剪輯</p>
+                        <a class="go-detail popup-link">
+                            <h4 class="order-name step-one">夏季優惠專案-如果名稱太常究竟會變怎樣呢</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">菁品創意事業有限公司意事業有限公司 - 黃素菁</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -199,67 +214,15 @@
                                     <i class="far fa-copy" title="複製"></i>
                                 </a>
                             </li>
-                            <!-- 下架：隱藏下架按鈕 -->
-                            <!-- <li>
-                                <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
-                                </a>
-                            </li> -->
                         </ul>
                     </div>
-                    <div class="card clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">社區電梯螢幕看板廣告 200面</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">威旭炫光短影音-直or橫 1支</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 下架：class + state-off -->
                     <div class="card state-off clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">業配口碑行銷 3篇/月</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">菁品創意事業有限公司 - 黃素菁</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -275,11 +238,79 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- 下架：class + state-off -->
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link">
+                            <h4 class="order-name step-three">夏季優惠專案</h4>
+                            <div class="order-percentage">
+                                <p class="c-green">100%</p>
+                            </div>
+                            <p class="order-customer">日商再春館股份有限公司台灣分公司</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="card state-off clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">業配口碑行銷 3篇/月</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">翃泰股份有限公司</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p></p>
+                            </div>
+                            <p class="order-customer">巴黎萊雅L'Oréal Paris</p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-two">購一波專案</h4>
+                            <div class="order-percentage">
+                                <p class="c-orange">55%</p>
+                            </div>
+                            <p class="order-customer">I MIA Scent.</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -296,9 +327,12 @@
                         </ul>
                     </div>
                     <div class="card clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">社區電梯螢幕看板廣告 200面</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-two">AAAA專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-orange">50%</p>
+                            </div>
+                            <p class="order-customer">昱驊養生瑜珈中心-台北松山店</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -310,19 +344,17 @@
                             <li>
                                 <a class="copy">
                                     <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="card clearfix">
-                        <a class="go-detail" href="#">
-                            <h4 class="product-name">威旭炫光短影音-直or橫 1支</h4>
-                            <p class="product-description">15~60秒，含腳本、拍攝、剪輯</p>
+                        <a class="go-detail popup-link" href="#popup-protuct-info">
+                            <h4 class="order-name step-three">購一波專案-C_專案委刊單</h4>
+                            <div class="order-percentage">
+                                <p class="c-green">95%</p>
+                            </div>
+                            <p class="order-customer">生活的藝術 台灣中心 - 宵曉晴</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -334,11 +366,6 @@
                             <li>
                                 <a class="copy">
                                     <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
                                 </a>
                             </li>
                         </ul>
@@ -381,19 +408,29 @@
     <!-- pushy JS -->
     <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
 
-    <!-- popup 新增產品-->
-    <section id="popup-add-protuct" class="white-popup mfp-hide">
+    <!-- popup 新增委刊單-->
+    <section id="popup-add-order" class="white-popup mfp-hide">
         <div class="popup-container">
             <div class="top-title">
-                <h4><span>新增產品</span></h4>
+                <h4><span>新增委刊單</span></h4>
             </div>
             <div class="fillin-box">
                 <form>
                     <div class="field clearfix">
                         <div class="left-sub-title">
-                            <p>產品資訊</p>
+                            <p>受刊公司</p>
                         </div>
                         <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>受刊公司</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇公司</option>
+                                        <option value="1" selected>威旭數位媒體有限公司</option>
+                                        <option value="2">英屬維京群島商弘日數位科技股份有限公司台灣分公司</option>
+                                    </select>
+                                </div>
+                            </fieldset>
                             <fieldset class="clearfix">
                                 <label class="item-title"><span class="c-red">*</span>名稱</label>
                                 <input class="default" type="" name="" value="威旭質感廣告影片 1支">
@@ -412,29 +449,14 @@
                                 <p class="text-error c-red">此欄位為必填項目。</p>
                             </fieldset>
                             <fieldset>
-                                <label class="item-title">必選產品</label>
-                                <div class="confirm clearfix">
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="必選產品">
-                                        <label for="option">委刊單內必有此產品</label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
                                 <label class="item-title">庫存量</label>
                                 <input class="default" type="" name="" value="">
                             </fieldset>
                             <fieldset>
                                 <label class="item-title">起迄日期</label>
-                                <div class="confirm clearfix">
-                                    <div class="both-for-date clearfix">
-                                        <input type="date" value="2021-11-06">
-                                        <input type="date" value="2022-05-06">
-                                    </div>
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="永久刊登">
-                                        <label for="option">永久刊登</label>
-                                    </div>
+                                <div class="confirm both-for-date clearfix">
+                                    <input type="date" value="2021-11-06">
+                                    <input type="date" value="2022-05-06">
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -472,6 +494,8 @@
                                         <label for="option">委刊單需主管同意</label>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
                             </fieldset>
                         </div>
                     </div>
@@ -576,31 +600,14 @@
                                 <input class="default" type="" name="" value="20000" class="has-error">
                             </fieldset>
                             <fieldset>
-                                <label class="item-title">必選產品</label>
-                                <div class="confirm clearfix">
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="必選產品" checked >
-                                        <label for="option">委刊單內必有此產品</label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
                                 <label class="item-title">庫存量</label>
                                 <input class="default" type="" name="" value="999">
                             </fieldset>
                             <fieldset>
                                 <label class="item-title">起迄日期</label>
-                                <div class="confirm clearfix">
-                                    <!-- 當勾選"永久刊登" class:"both-for-date" + disabled-bg -->
-                                    <!-- 狀態變成不能點 input也要 + disabled -->
-                                    <div class="both-for-date disabled-bg clearfix">
-                                        <input type="date" value="" disabled>
-                                        <input type="date" value="" disabled>
-                                    </div>
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="永久刊登" checked>
-                                        <label for="option">永久刊登</label>
-                                    </div>
+                                <div class="confirm both-for-date clearfix">
+                                    <input type="date" value="2021-11-06">
+                                    <input type="date" value="2022-11-06">
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -794,16 +801,9 @@
                             </fieldset>
                             <fieldset>
                                 <label class="item-title">起迄日期</label>
-                                <div class="confirm clearfix">
-                                    <div class="both-for-date has-error clearfix">
-                                        <input type="date" value="2021-11-06">
-                                        <input type="date" value="2022-05-06">
-                                        <p class="text-error c-red">錯誤訊息，ex：銷售期間勿小於30天。</p>
-                                    </div>
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="永久刊登">
-                                        <label for="option">永久刊登</label>
-                                    </div>
+                                <div class="confirm both-for-date clearfix">
+                                    <input type="date" value="2021-11-06">
+                                    <input type="date" value="2022-11-06">
                                 </div>
                             </fieldset>
                             <fieldset>

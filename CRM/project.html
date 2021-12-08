@@ -442,7 +442,8 @@
                         <div class="fillin-info">
                             <fieldset class="clearfix">
                                 <label class="item-title"><span class="c-red">*</span>名稱</label>
-                                <input class="default" type="" name="" value="年約回饋專案">
+                                <input class="default has-error" type="" name="" value="年約回饋專案">
+                                <p class="text-error c-red">此為必填寫欄位。</p>
                             </fieldset>
                             <fieldset>
                                 <label class="item-title">描述</label>
@@ -450,11 +451,17 @@
                             </fieldset>
                             <fieldset>
                                 <label class="item-title"><span class="c-red">*</span>銷售日期</label>
-                                <div class="confirm both-for-date has-error clearfix">
-                                    <input type="date" value="2021-11-06">
-                                    <input type="date" value="2022-05-06">
+                                <div class="confirm clearfix">
+                                    <div class="both-for-date has-error clearfix">
+                                        <input type="date" value="2021-11-06">
+                                        <input type="date" value="2022-05-06">
+                                        <p class="text-error c-red">錯誤訊息，ex：銷售期間勿小於30天。</p>
+                                    </div>
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="永久刊登">
+                                        <label for="option">永久刊登</label>
+                                    </div>
                                 </div>
-                                <p class="text-error c-red">錯誤訊息，ex：銷售期間勿小於30天。</p>
                             </fieldset>
                             <fieldset>
                                 <label class="item-title">主管同意</label>
@@ -566,10 +573,18 @@
                                 <textarea></textarea>
                             </fieldset>
                             <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>銷售日期</label>
-                                <div class="confirm both-for-date clearfix">
-                                    <input type="date" value="2021-11-06">
-                                    <input type="date" value="2022-05-06">
+                                <label class="item-title">起迄日期</label>
+                                <div class="confirm clearfix">
+                                    <!-- 當勾選"永久刊登" class:"both-for-date" + disabled-bg -->
+                                    <!-- 狀態變成不能點 input也要 + disabled -->
+                                    <div class="both-for-date disabled-bg clearfix">
+                                        <input type="date" value="" disabled>
+                                        <input type="date" value="" disabled>
+                                    </div>
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="永久刊登" checked>
+                                        <label for="option">永久刊登</label>
+                                    </div>
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -637,7 +652,7 @@
                                     <li class="clearfix">
                                         <div class="delete">
                                             <a class="icon">
-                                                <i class="far fa-trash-alt" title="刪除"></i>
+                                                <i class="far fa-trash-alt" title="下架"></i>
                                             </a>
                                         </div>
                                         <p class="project">產品名稱產品名稱產品名稱</p>
@@ -646,7 +661,7 @@
                                     <li class="clearfix">
                                         <div class="delete">
                                             <a class="icon">
-                                                <i class="far fa-trash-alt" title="刪除"></i>
+                                                <i class="far fa-trash-alt" title="下架"></i>
                                             </a>
                                         </div>
                                         <p class="project">產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</p>
@@ -745,10 +760,16 @@
                                 <textarea></textarea>
                             </fieldset>
                             <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>銷售日期</label>
-                                <div class="confirm both-for-date clearfix">
-                                    <input type="date" value="2021-11-06">
-                                    <input type="date" value="2022-05-06">
+                                <label class="item-title">起迄日期</label>
+                                <div class="confirm clearfix">
+                                    <div class="both-for-date clearfix">
+                                        <input type="date" value="2021-11-06">
+                                        <input type="date" value="2022-05-06">
+                                    </div>
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="永久刊登">
+                                        <label for="option">永久刊登</label>
+                                    </div>
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -1095,7 +1116,7 @@
             </div>
             <div class="bottom-btn-tool">
                 <fieldset class="field">
-                    <input class="btn--primary-xl " type="submit" value="確認刪除">
+                    <input class="btn--primary-xl " type="submit" value="確認下架">
                 </fieldset>
             </div>
         </div>

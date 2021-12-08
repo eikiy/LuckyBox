@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 客戶管理</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="product.html">產品</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="admin.html">使用者管理</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <div class="logo"></div>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="product.html">產品</a>
+                </li>
+                <li>
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li>
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li>
+                    <a class="selected" href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a href="admin.html">使用者管理</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">客戶管理</h3>
+                <div class="tools-bar clearfix">
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋客戶名稱/統一編號/網址/類型">
+                        <p class="btn-text"><a>搜尋</a></p>
+                    </div>
+                    <div class="filter-box">
+                        <a href="#" class=" btn--primary-line-m">
+                            <i class="fas fa-eye"></i>
+                            <span>全部顯示</span>
+                        </a>
+                        <div class="filter-list">
+                            <ul>
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="filter-show" value="內含" checked>
+                                        <label for="option">全部顯示</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="filter-show" value="內含">
+                                        <label for="option">上架中</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="filter-show" value="已下架">
+                                        <label for="option">已下架</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#popup-add-customer" class="btn-add btn--primary-m popup-link">
+                        <i class="fas fa-plus"></i>
+                        <span>新增客戶</span>
+                    </a>
+                </div>
+                <div class="data-list">
+                    <div class="card clearfix">
+                        <a class="go-detail" href="customer_info.html">
+                            <h4 class="customer-name">佳量企業股份有限公司</h4>
+                            <p class="customer-number">53255353</p>
+                            <p class="customer-contact">林奕澄</p>
+                            <p class="customer-address">高雄市三民區 807大昌二路67號5樓之2</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-customer">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy popup-link" href="#popup-copy-customer">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">隆印創意有限公司</h4>
+                            <p class="customer-number">53255353</p>
+                            <p class="customer-contact">林大小姐林大小姐</p>
+                            <p class="customer-address">231 新北市三峽區 237 隆恩街191-1號（某某某大樓）</p>
+                        </a>
+                       <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">英屬維京群島商弘日數位科技股份有限公司臺灣分公司</h4>
+                            <p class="customer-number">83505358</p>
+                            <p class="customer-contact">張強尼</p>
+                            <p class="customer-address">10487 台北市中山區南京東路三段63號5樓</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">強哥批發貿易有限公司</h4>
+                            <p class="customer-number">83505358</p>
+                            <p class="customer-contact">Amanda chang</p>
+                            <p class="customer-address">台北市中正區 100開封街1段37號5樓</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">阿舍加國際實業有限公司</h4>
+                            <p class="customer-number">83505358</p>
+                            <p class="customer-contact">林奕澄</p>
+                            <p class="customer-address">台北市中正區 100開封街1段37號5樓</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">菁品創意事業有限公司</h4>
+                            <p class="customer-number"></p>
+                            <p class="customer-contact">林奕澄</p>
+                            <p class="customer-address">台北市中正區 100開封街1段37號5樓</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">童心好食館</h4>
+                            <p class="customer-number">83105070</p>
+                            <p class="customer-contact">Adelaide</p>
+                            <p class="customer-address">台北市中正區 100開封街1段37號5樓</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">雙影創藝有限公司</h4>
+                            <p class="customer-number"></p>
+                            <p class="customer-contact">高筱蘋</p>
+                            <p class="customer-address">台北市中正區 100開封街1段37號5樓</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="customer-name">強哥批發貿易有限公司</h4>
+                            <p class="customer-number">83105070</p>
+                            <p class="customer-contact">高筱蘋高筱蘋</p>
+                            <p class="customer-address">嘉義縣太保市 612東勢里博愛路300號</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="下架"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-50列(共220列 )</p>
+                    <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul>
+                </p>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2021 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup 新增客戶資料-->
+    <section id="popup-add-customer" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增客戶資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" placeholder="公司名稱/個人名稱">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>統編/身分證編號</label>
+                                <input class="default" type="" name="" placeholder="統一編號/身分證編號">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司地址</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司傳真</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司網址</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司 Facebook</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>產業分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇產業分類</option>
+                                        <option value="1" selected>農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0" selected>請選擇產業小分類</option>
+                                        <option value="1">農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>電子發票<br>付款條件</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>電子發票形式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立三聯式電子發票" checked>
+                                        <label for="option">開立三聯式電子發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
+                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>開立發票方式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="逐月付款後開立發票" checked>
+                                        <label for="option">逐月付款後開立發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="預先開立發票後請款">
+                                        <label for="option">預先開立發票後請款</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice1" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款條件</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前逐月付款" checked>
+                                        <label for="option">上檔前逐月付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
+                                        <label for="option">上檔前季繳(3個月)付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前一次付清  ">
+                                        <label for="option">上檔前一次付清</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款方式</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="匯款" checked>
+                                        <label for="option">匯款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="支票">
+                                        <label for="option">支票</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment1" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <!-- <input class="other" type="" name="" value=""> -->
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>發票Email</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>聯絡人<br>資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>聯絡人姓名</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>Email</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>手機</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <textarea></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 修改客戶資料-->
+    <section id="popup-edit-customer" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>修改客戶資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" placeholder="公司名稱/個人名稱" value="佳量企業股份有限公司">
+                            </fieldset>
+                            <!-- 統編/身分證編號 不可修改 input + disabled-->
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>統編/身分證編號</label>
+                                <input class="default" type="" name="" placeholder="統一編號/身分證編號" value="24814848" disabled>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司地址</label>
+                                <input class="default" type="" name="" value="487 台北市中山區南京東路三段63號5樓">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="has-error" type="" name="" value="22151236 ">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                                <p class="text-error c-red">此欄位為必填項目。</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司傳真</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司網址</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司 Facebook</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>產業分類</label>
+                                <div class="the-select has-error">
+                                    <select class="" name="">
+                                        <option value="0">請選擇產業分類</option>
+                                        <option value="1" selected>農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                                <p class="text-error c-red">此欄位為必填項目。</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0" selected>請選擇產業小分類</option>
+                                        <option value="1">農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+        
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>電子發票<br>付款條件</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>電子發票形式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立三聯式電子發票">
+                                        <label for="option">開立三聯式電子發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
+                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                                <p class="text-error c-red">此欄位為必填項目。</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>開立發票方式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="逐月付款後開立發票" checked>
+                                        <label for="option">逐月付款後開立發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="預先開立發票後請款">
+                                        <label for="option">預先開立發票後請款</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice1" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款條件</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前逐月付款" checked>
+                                        <label for="option">上檔前逐月付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
+                                        <label for="option">上檔前季繳(3個月)付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前一次付清  ">
+                                        <label for="option">上檔前一次付清</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款方式</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="匯款" >
+                                        <label for="option">匯款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="支票">
+                                        <label for="option">支票</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment1" value="其他" checked>
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="月初以現金支付">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>發票
+                                    Email</label>
+                                <input class="default" type="" name="" value="johnnychang@weblisher.com.tw">
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 複製客戶資料 -->
+    <section id="popup-copy-customer" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增客戶資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" placeholder="公司名稱/個人名稱" value="佳量企業股份有限公司">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>統編/身分證編號</label>
+                                <input class="default" type="" name="" placeholder="統一編號/身分證編號" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司地址</label>
+                                <input class="default" type="" name="" value="487 台北市中山區南京東路三段63號5樓">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="22151236 ">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司傳真</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司網址</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">公司 Facebook</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>產業分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇產業分類</option>
+                                        <option value="1" selected>農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">產業小分類</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0" selected>請選擇產業小分類</option>
+                                        <option value="1">農、林、漁、牧業</option>
+                                        <option value="2">農、林、漁、牧業</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                    
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>電子發票<br>付款條件</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>電子發票形式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立三聯式電子發票" checked>
+                                        <label for="option">開立三聯式電子發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
+                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>開立發票方式</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="逐月付款後開立發票" checked>
+                                        <label for="option">逐月付款後開立發票</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="invoice1" value="預先開立發票後請款">
+                                        <label for="option">預先開立發票後請款</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="invoice1" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款條件</label>
+                                <div class="confirm both-for-invoice clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前逐月付款" checked>
+                                        <label for="option">上檔前逐月付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
+                                        <label for="option">上檔前季繳(3個月)付款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment" value="上檔前一次付清  ">
+                                        <label for="option">上檔前一次付清</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment" value="其他">
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>付款方式</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="匯款">
+                                        <label for="option">匯款</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="payment1" value="支票">
+                                        <label for="option">支票</label>
+                                    </div>
+                                    <!-- 勾選了其他才出現下面 input -->
+                                    <div class="option-list option-other">
+                                        <input type="radio" name="payment1" value="其他" checked>
+                                        <label for="option">其他</label>
+                                    </div>
+                                    <input class="other" type="" name="" value="月初以現金支付">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>發票
+                                    Email</label>
+                                <input class="default" type="" name="" value="johnnychang@weblisher.com.tw">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>聯絡人<br>資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>聯絡人姓名</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>Email</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>手機</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <textarea></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 下架確認-->
+    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>下架確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要下架此「客戶」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認下架">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
