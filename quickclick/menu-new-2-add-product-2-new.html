@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 編輯菜單 - 加購 - 新增加購題型</title>
+    <title>菜單管理 - 編輯菜單 - 加購 - 編輯加購題型</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -15,11 +15,11 @@
     <div class="mfp-wrap" style="overflow-y: auto;">
         <div class="mfp-container">
             <div class="mfp-content ">
-                <!-- popup 新增加購題型：自動儲存 -->
+                <!-- popup 編輯加購題型 -->
                 <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
                     <div class="popup-container">
                         <div class="top-title">
-                            <h4><span>新增加購題型</span></h4>
+                            <h4><span>編輯加購題型：甜點</span></h4>
                         </div>
                         <div class="menu-product-info">
                             <div class="set-card">
@@ -41,26 +41,22 @@
                                     <fieldset class="clearfix">
                                         <label class="item-title">
                                             <span class="c-red">*</span>題型選項
-                                            <a class="reminder"></a>
-                                            <!-- 待修改文案 -->
-                                            <span class="tooltip">
-                                                【最多】ex:填寫3，最多可選3項。
-                                            </span>
                                         </label>
                                         <ul class="fillin-box three-box clearfix">
                                             <li class="clearfix">
                                                 <p>最多</p>
-                                                <input type="" name="" value="">
+                                                <input type="" name="" value="3">
                                             </li>
                                             <li class="clearfix">
                                                 <p>最少</p>
-                                                <input type="" name="" value="">
+                                                <input type="" name="" value="1">
                                             </li>
                                             <li class="clearfix">
                                                 <p>複選</p>
-                                                <input type="" name="" value="">
+                                                <input type="" name="" value="2">
                                             </li>
                                         </ul>
+                                        <p class="text-note">【範例】假設以"飲品"當題型，最多欄位填寫3，則代表飲品下的選項，最多可選3項不同的飲品；若最少填寫1，則表示最少要選擇1項飲品；複選若填寫2，代表相同的飲品最多只可選擇2項。</p>
                                     </fieldset>
                                     <fieldset class="clearfix">
                                         <label class="item-title">必填選項</label>
@@ -119,7 +115,7 @@
                             <div class="set-card">
                                 <div class="top-item-title">
                                     <div class="title-content">
-                                        <p>已套用商品</p>
+                                        <p>已套用商品/加購</p>
                                         <div class="arr arr-down"></div>
                                     </div>
                                 </div>
@@ -144,11 +140,68 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bottom-btn-right clearfix">
+                                    <!-- <div class="bottom-btn-right clearfix">
                                         <a class="btn btn--primary-m" href="menu-new-2-add-product-3.html">+ 套用其它商品</a>
-                                        <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增選項"> -->
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>語系設定<span>（顯示於消費者看）</span></p>
+                                        <div class="arr arr-down"></div>
                                     </div>
                                 </div>
+                                <from class="fillin-info">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>繁體中文</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">简体中文</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">ENGLISH</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">日本語</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                            <div class="bottom-btn-tool">
+                                <input class="btn--primary-xl " type="submit" value="儲存">
                             </div>
                         </div>
                     </div>

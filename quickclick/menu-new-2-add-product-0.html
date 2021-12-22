@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 編輯菜單 - 加購 - 加購選項列表</title>
+    <title>菜單管理 - 編輯菜單 - 加購 - 選擇加購題型</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -15,33 +15,79 @@
     <div class="mfp-wrap" style="overflow-y: auto;">
         <div class="mfp-container">
             <div class="mfp-content">
-                <!-- popup 加購選項列表-->
+                <!-- popup 選擇加購題型-->
+                <!-- 狀態一：無 -->
                 <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
                     <div class="popup-container">
                         <div class="top-title">
-                            <h4><span>加購選項列表</span></h4>
+                            <h4><span>選擇加購題型(無)</span></h4>
+                            <p class="sub-title">選擇既有題型或點選按鈕新增一個新題型</p>
                         </div>
-                        <div class="choose-add-group-list single-product">
+                        <div class="choose-add-group-list">
                             <div class="tools-bar">
                                 <div class="search-box">
-                                    <input class="default" type="text" placeholder="搜尋選項名稱或新增選項" value="" >
-                                    <!-- 有填寫無此題型才會出現"新增加購選項"這按鈕 -->
+                                    <input class="default" type="text" placeholder="搜尋加購名稱或新增加購題型" value="">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
                                     <!-- 可改 input  -->
-                                    <!-- <input class="btn btn--primary-m " type="submit" value="新增加購選項"> -->
-                                    <a class="btn btn--primary-m" href="menu-new-2-add-product-2-new.html">新增加購選項</a>
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購題型"> -->
+                                    <a class="btn btn--primary-m" href="menu-new-2-add-product-1-new.html">+ 新增加購題型</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 選擇加購題型-->
+                <!-- 狀態二：搜尋結果 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>選擇加購題型(搜尋結果)</span></h4>
+                            <p class="sub-title">選擇既有題型或點選按鈕新增一個新題型</p>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋加購名稱或新增加購題型" value="紅茶">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購題型"> -->
+                                    <a class="btn btn--primary-m" href="menu-new-2-add-product-1-new.html">+ 新增加購題型</a>
+                                </div>
+                            </div>
+                            <div class="text-none">
+                                <p>（無符合的資料）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 選擇加購題型-->
+                <!-- 狀態三：已有題型 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>選擇加購題型</span></h4>
+                            <p class="sub-title">選擇既有題型或點選按鈕新增一個新題型</p>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋加購名稱或新增加購題型" value="">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購題型"> -->
+                                    <a class="btn btn--primary-m" href="menu-new-2-add-product-1-new.html">+ 新增加購題型</a>
                                 </div>
                             </div>
                             <div class="field-title field">
                                 <div class="option-list">
                                 </div>
-                                <div class="add-product-name">
-                                    <p>名稱/代號</p>
-                                </div>
                                 <div class="add-group-name">
-                                    <p>題型</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>停售設定</p>
+                                    <p>題型名稱</p>
                                 </div>
                                 <div class="add-group-time">
                                     <p>更新時間</p>
@@ -56,20 +102,15 @@
                                     <input id="" type="checkbox" name="" value="" checked>
                                     <label for="option">勾選</label>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>巧克力冰淇淋</p>
-                                </div>
                                 <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
+                                    <p>甜度</p>
+                                    <p class="group-info">此題型目前包含：全糖、半糖、微糖、無糖</p>
                                 </div>
                                 <div class="add-group-time">
                                     <p>09/12 週一 11:38:24</p>
                                 </div>
                                 <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="menu-new-2-add-product-2-new.html"><i class="fas fa-cog"></i></a>
                                     <a href="#"><i class="far fa-copy"></i></a>
                                     <a href="#"><i class="far fa-trash-alt"></i></a>
                                 </div>
@@ -79,83 +120,9 @@
                                     <input id="" type="checkbox" name="" value="">
                                     <label for="option">勾選</label>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>巧克力奶昔巧克力奶昔巧克力奶昔</p>
-                                </div>
                                 <div class="add-group-name">
-                                    <p>飲料飲料飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>牛奶泡泡</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>咖啡拿鐵</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>抹茶拿鐵</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大大杯、中杯、小杯、大杯、特中杯、迷你小杯</p>
                                 </div>
                                 <div class="add-group-time">
                                     <p>09/12 週一 11:38:24</p>
@@ -171,60 +138,9 @@
                                     <input id="" type="checkbox" name="" value="" checked>
                                     <label for="option">勾選</label>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>抹茶冰淇淋抹茶冰淇淋抹茶冰淇淋</p>
-                                </div>
                                 <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field selected">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="" checked>
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>草莓冰淇淋</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field selected">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="" checked>
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>花生冰淇淋</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
                                 </div>
                                 <div class="add-group-time">
                                     <p>09/12 週一 11:38:24</p>
@@ -240,14 +156,9 @@
                                     <input id="" type="checkbox" name="" value="">
                                     <label for="option">勾選</label>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>大小珍珠鮮奶茶哦哦哦大小珍珠鮮奶茶哦哦哦</p>
-                                </div>
                                 <div class="add-group-name">
-                                    <p>飲料飲料飲料飲料飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
                                 </div>
                                 <div class="add-group-time">
                                     <p>09/12 週一 11:38:24</p>
@@ -263,14 +174,81 @@
                                     <input id="" type="checkbox" name="" value="">
                                     <label for="option">勾選</label>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>黑糖豆漿牛奶</p>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
                                 </div>
                                 <div class="add-group-name">
-                                    <p>飲料</p>
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
                                 </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>冰淇淋</p>
+                                    <p class="group-info">此題型目前包含：抹茶、草莓、巧克力、香草、紅豆、花生、黑糖、芋頭</p>
                                 </div>
                                 <div class="add-group-time">
                                     <p>09/12 週一 11:38:24</p>
