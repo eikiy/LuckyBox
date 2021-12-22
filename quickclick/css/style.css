@@ -1876,6 +1876,84 @@ a.reminder:hover {
   width: 118px;
 }
 
+.main-container .middle-content .store-list {
+  width: calc(100% - 20px);
+  margin: 0 auto 15px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
+}
+
+.main-container .middle-content .store-list .field {
+  width: 100%;
+  vertical-align: top;
+  border-bottom: 1px dashed #b1b5c4;
+  padding: 5px 10px;
+  text-align: left;
+  display: block;
+}
+
+.main-container .middle-content .store-list .field:hover {
+  background-color: #fffbf2;
+}
+
+.main-container .middle-content .store-list .field:hover p {
+  color: #f0941d;
+}
+
+.main-container .middle-content .store-list .field p {
+  font-size: 0.875rem;
+  color: #666666;
+  line-height: 34px;
+}
+
+.main-container .middle-content .store-list .field .store-id {
+  padding: 5px;
+  width: 80px;
+  display: inline-block;
+}
+
+.main-container .middle-content .store-list .field .store-name {
+  vertical-align: top;
+  width: calc(100% - 85px);
+  display: inline-block;
+  padding: 5px;
+}
+
+.main-container .middle-content .store-list .field .store-name p {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 34px;
+  height: 34px;
+  overflow: hidden;
+}
+
+.main-container .middle-content .store-list .field:last-child {
+  border: none;
+}
+
+.main-container .middle-content .store-list .field-title {
+  background-color: #ffefd8;
+  border-bottom: 1px solid #ffcd85;
+  padding: 0 10px;
+  border-radius: 4px 4px 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-container .middle-content .store-list .field-title:hover {
+  background-color: #ffefd8;
+}
+
+.main-container .middle-content .store-list .field-title:hover p {
+  color: #666666;
+}
+
 .main-container .middle-content .menu-content {
   margin-bottom: 10px;
   background-color: #fff;
@@ -3001,14 +3079,14 @@ a.reminder:hover {
     width: 60px;
   }
   .popup-container .single-product .field .add-sell p {
+    padding: 7px 5px;
     text-align: right;
-    line-height: 34px;
     font-size: 0.813rem;
   }
   .popup-container .single-product .field .add-group-time {
-    padding: 0;
+    padding: 7px 5px;
   }
-  .popup-container .single-product .field .add-group-tools p {
+  .popup-container .single-product .field s .add-group-tools p {
     text-align: right;
   }
 }
