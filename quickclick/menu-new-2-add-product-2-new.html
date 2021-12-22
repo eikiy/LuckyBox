@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 新增一個菜單</title>
+    <title>菜單管理 - 編輯菜單 - 加購 - 新增加購題型</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -11,6 +11,152 @@
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 </head>
 <body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content ">
+                <!-- popup 新增加購題型：自動儲存 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>新增加購題型</span></h4>
+                        </div>
+                        <div class="menu-product-info">
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>題型資訊</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <from class="fillin-info">
+                                    <!-- 錯誤添加 p:text-error, input + has-error -->
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>題型名稱</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="甜點">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">
+                                            <span class="c-red">*</span>題型選項
+                                            <a class="reminder"></a>
+                                            <!-- 待修改文案 -->
+                                            <span class="tooltip">
+                                                【最多】ex:填寫3，最多可選3項。
+                                            </span>
+                                        </label>
+                                        <ul class="fillin-box three-box clearfix">
+                                            <li class="clearfix">
+                                                <p>最多</p>
+                                                <input type="" name="" value="">
+                                            </li>
+                                            <li class="clearfix">
+                                                <p>最少</p>
+                                                <input type="" name="" value="">
+                                            </li>
+                                            <li class="clearfix">
+                                                <p>複選</p>
+                                                <input type="" name="" value="">
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">必填選項</label>
+                                        <div class="fillin-box">
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox" checked="">
+                                                <label class="switch-button" for=""></label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>加購選項</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <div class="fillin-info">
+                                    <div class="choose-add-group-list">
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>紅茶</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="menu-new-2-add-product-3.html"><i class="fas fa-cog"></i></a>
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>巧克力奶昔</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="#"><i class="fas fa-cog"></i></a>
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>牛奶泡泡</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="#"><i class="fas fa-cog"></i></a>
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-right clearfix">
+                                        <a class="btn btn--primary-m" href="menu-new-2-add-product-4.html">+ 增加選項</a>
+                                        <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增選項"> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>已套用商品</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <div class="fillin-info">
+                                    <div class="choose-add-group-list">
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>套餐A</p>
+                                                <p class="group-info">單品</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>紅茶</p>
+                                                <p class="group-info">加購選項</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-right clearfix">
+                                        <a class="btn btn--primary-m" href="menu-new-2-add-product-3.html">+ 套用其它商品</a>
+                                        <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增選項"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span></p>
         <section class="top-content top-set-function clearfix">
@@ -212,7 +358,6 @@
                                 <label class="item-title">商品描述</label>
                                 <div class="fillin-box" style="max-width: 100%;">
                                     <!-- <textarea placeholder="商品描述"></textarea> -->
-                                    <!-- 再幫我移除編輯器不需要的功能~謝謝 -->
                                     <textarea name="editor1"></textarea>
                                     <script>CKEDITOR.replace("editor1");</script>
                                 </div>
@@ -447,8 +592,7 @@
                                 </div>
                             </div>
                             <div class="bottom-btn-right clearfix">
-                                <a class="btn btn--primary-m" href="menu-new-2-add-product-1.html">+ 新增加購選項</a>
-                                <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項"> -->
+                                <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項">
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 新增一個菜單</title>
+    <title>菜單管理 - 編輯菜單 - 加購 - 選擇加購題型</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -11,6 +11,238 @@
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 </head>
 <body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <!-- popup 選擇加購題型-->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>選擇加購題型</span></h4>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋加購名稱或新增加購題型" value="紅茶" >
+                                    <!-- 有填寫無此題型才會出現"新增加購題型"這按鈕 -->
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="新增加購選項"> -->
+                                    <a class="btn btn--primary-m" href="menu-new-2-add-product-2-new.html">新增加購題型</a>
+                                </div>
+                            </div>
+                            <div class="field-title field">
+                                <div class="option-list">
+                                </div>
+                                <div class="add-group-name">
+                                    <p>題型名稱</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>更新時間</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <p>操作設定</p>
+                                </div>
+                            </div>
+                            <!-- 有勾選 + selected ：底色變白色 -->
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>甜度</p>
+                                    <p class="group-info">此題型目前包含：全糖、半糖、微糖、無糖</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大大杯、中杯、小杯、大杯、特中杯、迷你小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>尺寸</p>
+                                    <p class="group-info">此題型目前包含：大杯、中杯、小杯</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="add-group-name">
+                                    <p>冰淇淋</p>
+                                    <p class="group-info">此題型目前包含：抹茶、草莓、巧克力、香草、紅豆、花生、黑糖、芋頭</p>
+                                </div>
+                                <div class="add-group-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-group-tools">
+                                    <a href="#"><i class="fas fa-cog"></i></a>
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pages clearfix">
+                            <p>1-50列(共220列 )</p>
+                            <ul class="page-nb">
+                                <li>
+                                    <a class="none">上一頁</a>
+                                </li>
+                                <li>
+                                    <a class="selected">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    ...
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">9</a>
+                                </li>
+                                <li>
+                                    <a href="#">下一頁</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="儲存">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span></p>
         <section class="top-content top-set-function clearfix">
@@ -212,7 +444,6 @@
                                 <label class="item-title">商品描述</label>
                                 <div class="fillin-box" style="max-width: 100%;">
                                     <!-- <textarea placeholder="商品描述"></textarea> -->
-                                    <!-- 再幫我移除編輯器不需要的功能~謝謝 -->
                                     <textarea name="editor1"></textarea>
                                     <script>CKEDITOR.replace("editor1");</script>
                                 </div>
@@ -447,8 +678,7 @@
                                 </div>
                             </div>
                             <div class="bottom-btn-right clearfix">
-                                <a class="btn btn--primary-m" href="menu-new-2-add-product-1.html">+ 新增加購選項</a>
-                                <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項"> -->
+                                <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項">
                             </div>
                         </div>
                     </div>

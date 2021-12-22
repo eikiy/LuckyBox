@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>popup 啟用 > 備註</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>popup 儲存/離開通知</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
 <body>
     <div class="mfp-bg"></div>
     <div class="mfp-wrap">
         <div class="mfp-container">
             <div class="mfp-content">
-                <!-- popup 啟用 > 備註 -->
-                <section id="popup-activate-menu" class="white-popup mfp-hide popup-width-s">
+                <!-- popup 離開編輯畫面 -->
+                <section id="popup-delete-menu" class="white-popup mfp-hide popup-width-s">
                     <div class="popup-container">
                         <div class="top-title">
-                            <h4><span>菜單備註</span></h4>
+                            <h4><span>離開編輯畫面</span></h4>
                         </div>
-                        <fieldset>
-                            <input class="default" type="" name="" value="" placeholder="此備註將顯示於歷史紀錄上。ex:修改漢堡加購。">
-                        </fieldset>
+                        <p class="text-remind">
+                            確定要離開編輯畫面？離開前請確認您已存檔。
+                        </p>
                         <div class="bottom-btn-tool">
-                            <input class="btn--primary-xl " type="submit" value="送出">
+                            <input class="btn--primary-line-xl " type="submit" value="返回編輯">
+                            <input class="btn--primary-xl " type="submit" value="離開">
                         </div>
                     </div>
                     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
@@ -87,13 +85,13 @@
                             </li>
                             <li>
                                 <a class="popup-link" href="popup-choose-store.html"">
-                                    <span><i class=" fas fa-share-square"></i></span>
+                                        <span><i class=" fas fa-share-square"></i></span>
                                     將此菜單複製到其他店
                                 </a>
                             </li>
                             <li>
                                 <a class="popup-link" href="popup-choose-platform.html"">
-                                    <span><i class=" fas fa-share-square"></i></span>將此菜單上架到其他平台
+                                        <span><i class=" fas fa-share-square"></i></span>將此菜單上架到其他平台
                                 </a>
                             </li>
                         </ul>
@@ -203,5 +201,4 @@
         </section>
     </main>
 </body>
-
 </html>

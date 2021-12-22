@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 新增一個菜單</title>
+    <title>菜單管理 - 編輯菜單 - 加購 - 編輯加購選項</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -11,6 +11,79 @@
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 </head>
 <body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content ">
+                <!-- popup 編輯或新增加購選項(換title) -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>編輯(or新增)加購選項</span></h4>
+                        </div>
+                        <div class="menu-product-info">
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>加購資訊</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <from class="fillin-info">
+                                    <!-- 錯誤添加 p:text-error, input + has-error -->
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>選項名稱</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="紅茶">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">商品代碼</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">卡路里</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">販售設定</label>
+                                        <div class="fillin-box">
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox" checked="">
+                                                <label class="switch-button" for=""></label>
+                                                <!-- 無開啟文字顯示:無販售-->
+                                                <!-- <p>無販售</p> -->
+                                                <!-- 開啟+c-green 文字顯示:販售中-->
+                                                <p class="c-green">販售中</p>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">選擇加購題型</label>
+                                        <div class="fillin-box">
+                                            <div class="the-select">
+                                                <select class="" name="">
+                                                    <option value="0" selected="">請選擇</option>
+                                                    <option value="1">尺寸</option>
+                                                    <option value="2">甜度</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span></p>
         <section class="top-content top-set-function clearfix">
@@ -212,7 +285,6 @@
                                 <label class="item-title">商品描述</label>
                                 <div class="fillin-box" style="max-width: 100%;">
                                     <!-- <textarea placeholder="商品描述"></textarea> -->
-                                    <!-- 再幫我移除編輯器不需要的功能~謝謝 -->
                                     <textarea name="editor1"></textarea>
                                     <script>CKEDITOR.replace("editor1");</script>
                                 </div>
@@ -447,8 +519,7 @@
                                 </div>
                             </div>
                             <div class="bottom-btn-right clearfix">
-                                <a class="btn btn--primary-m" href="menu-new-2-add-product-1.html">+ 新增加購選項</a>
-                                <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項"> -->
+                                <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項">
                             </div>
                         </div>
                     </div>
