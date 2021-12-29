@@ -2304,6 +2304,23 @@ ul.edit-tool li a:hover {
   float: left;
 }
 
+.popup-container .fillin-box .field fieldset .both-for-add {
+  position: relative;
+}
+
+.popup-container .fillin-box .field fieldset .both-for-add .the-select {
+  max-width: calc(50% - 5px);
+  margin-bottom: 7px;
+}
+
+.popup-container .fillin-box .field fieldset .both-for-add .the-select:nth-child(2) {
+  float: right;
+}
+
+.popup-container .fillin-box .field fieldset .both-for-add input {
+  max-width: 100%;
+}
+
 .popup-container .fillin-box .field fieldset .both-for-date {
   border: 1px solid #f6f6f6;
   background-color: #f6f6f6;
@@ -3226,6 +3243,9 @@ ul.edit-tool li a:hover {
   .popup-container .fillin-box .field .fillin-info fieldset .confirm,
   .popup-container .fillin-box .field .fillin-info fieldset .the-select {
     max-width: 100%;
+  }
+  .popup-container .fillin-box .field .fillin-info fieldset .both-for-add .the-select {
+    max-width: calc(50% - 5px);
   }
   .popup-container .fillin-box .field .fillin-info fieldset .both-for-discount .discount {
     width: 40%;
