@@ -519,6 +519,95 @@ input.has-error:hover, input.has-error:focus {
   display: block;
 }
 
+.show-add-list {
+  width: 100%;
+  position: absolute;
+  top: 46px;
+  z-index: 2;
+}
+
+.show-add-list ul {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.show-add-list ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 22px 10px 18px;
+  min-height: 42px;
+  background-color: #ebf5f4;
+  position: relative;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.show-add-list ul li a p {
+  width: calc(100% - 10px);
+  font-size: 0.813rem;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 15px;
+  overflow: hidden;
+}
+
+.show-add-list ul li a p span {
+  color: #11948a;
+}
+
+.show-add-list ul li a p span.icon {
+  padding-left: 10px;
+}
+
+.show-add-list ul li a::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  display: block;
+  background: url(../images/svg/plus-solid-w.svg) center center no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.show-add-list ul li a:hover {
+  background-color: #11948a;
+}
+
+.show-add-list ul li a:hover p {
+  color: #fff;
+}
+
+.show-add-list ul li a:hover p span {
+  color: #fff;
+}
+
+.show-add-list ul li a:hover::after {
+  opacity: 1;
+}
+
+.show-add-list ul li.set a::after {
+  display: none;
+}
+
+.show-add-list ul li.set a span {
+  padding-left: 5px;
+}
+
 .logo {
   background-position: center center;
   background-repeat: no-repeat;
@@ -1141,6 +1230,79 @@ ul.edit-tool li a:hover {
   padding-left: 34px;
 }
 
+.middle-container .main-container .tools-bar .filter-search {
+  width: 355px;
+  float: left;
+}
+
+.middle-container .main-container .tools-bar .filter-search p.filter-title {
+  float: left;
+  line-height: 42px;
+  padding: 0 15px;
+  font-size: 0.875rem;
+  color: #11948a;
+  font-weight: bold;
+}
+
+.middle-container .main-container .tools-bar .filter-search .who {
+  font-size: 0.875rem;
+  border: 1px #11948a solid;
+  color: #11948a;
+  border-radius: 50px;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  float: left;
+  padding: 0 40px 0 15px;
+  position: relative;
+}
+
+.middle-container .main-container .tools-bar .filter-search .who p {
+  color: #11948a;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.middle-container .main-container .tools-bar .filter-search .who a {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 42px;
+}
+
+.middle-container .main-container .tools-bar .filter-search .search-box {
+  margin-right: 0;
+  max-width: 236px;
+}
+
+.middle-container .main-container .tools-bar .filter-search .search-box:after {
+  left: initial;
+  right: 20px;
+}
+
+.middle-container .main-container .tools-bar .filter-search .search-box .show-add-list {
+  top: 42px;
+  z-index: 1;
+}
+
+.middle-container .main-container .tools-bar .filter-search .search-box input {
+  padding: 0 50px 0 22px;
+}
+
+@media all and (max-width: 900px) {
+  .middle-container .main-container .tools-bar .filter-search {
+    width: 100%;
+  }
+}
+
 .middle-container .main-container .tools-bar a.btn-add {
   float: right;
   font-size: 0.813rem;
@@ -1360,6 +1522,39 @@ ul.edit-tool li a:hover {
           justify-content: center;
 }
 
+.middle-container .data-list .card .controller-order {
+  float: left;
+  width: 40%;
+}
+
+.middle-container .data-list .card .controller-order h4 {
+  color: #21534f;
+  font-size: 0.938rem;
+  line-height: 1.2rem;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 18px;
+  overflow: hidden;
+}
+
+.middle-container .data-list .card .controller-order span.day {
+  font-size: 0.813rem;
+  color: #9e9e9e;
+  padding-top: 5px;
+  display: block;
+}
+
+.middle-container .data-list .card .controller {
+  width: 15%;
+  float: left;
+  line-height: 1.25rem;
+}
+
 .middle-container .data-list .card .step-one::before {
   background-image: url(../images/svg/percentage-01.svg);
 }
@@ -1480,6 +1675,35 @@ ul.edit-tool li a:hover {
   opacity: 1;
 }
 
+.middle-container .data-list .card ul.f-r {
+  width: initial;
+  right: 20px;
+}
+
+.middle-container .data-list .card ul.f-r li {
+  float: right;
+}
+
+.middle-container .data-list .toptitle-style {
+  border-bottom: 1px solid #11948a;
+  padding: 12px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ebf5f4;
+}
+
+.middle-container .data-list .toptitle-style .controller-order h4,
+.middle-container .data-list .toptitle-style p.controller {
+  color: #11948a;
+  font-weight: bold;
+  line-height: 1.375rem;
+}
+
+.middle-container .data-list .toptitle-style:hover {
+  background-color: #ebf5f4;
+}
+
 .middle-container .data-list .state-off h4.product-name {
   font-weight: normal;
 }
@@ -1498,8 +1722,12 @@ ul.edit-tool li a:hover {
     display: inline-block;
   }
   .middle-container .data-list .card h4.product-name,
-  .middle-container .data-list .card h4.order-name {
+  .middle-container .data-list .card h4.order-name,
+  .middle-container .data-list .card .controller-order {
     width: 100%;
+  }
+  .middle-container .data-list .card .controller-order p {
+    font-size: 0.688rem;
   }
   .middle-container .data-list .card h4.order-name {
     padding-left: 35px;
@@ -1552,6 +1780,19 @@ ul.edit-tool li a:hover {
     line-height: 15px;
     padding: 0;
     font-size: 0.688rem;
+  }
+  .middle-container .data-list .card p.controller {
+    width: 25%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .middle-container .data-list .card p.controller {
+    width: 50%;
+  }
+  .middle-container .data-list .toptitle-style p.controller {
+    margin-top: 0;
   }
 }
 
@@ -2452,95 +2693,6 @@ ul.edit-tool li a:hover {
 
 .popup-container .fillin-box .field fieldset .search-list .btn-search:hover {
   color: #11948a;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list {
-  width: 100%;
-  position: absolute;
-  top: 46px;
-  z-index: 2;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul {
-  width: 100%;
-  border-radius: 15px;
-  overflow: hidden;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px 22px 10px 18px;
-  min-height: 42px;
-  background-color: #ebf5f4;
-  position: relative;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a p {
-  width: calc(100% - 10px);
-  font-size: 0.813rem;
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-height: 15px;
-  overflow: hidden;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a p span {
-  color: #11948a;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a p span.icon {
-  padding-left: 10px;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a::after {
-  content: "";
-  position: absolute;
-  right: 18px;
-  top: calc(50% - 6px);
-  width: 12px;
-  height: 12px;
-  display: block;
-  background: url(../images/svg/plus-solid-w.svg) center center no-repeat;
-  background-size: contain;
-  opacity: 0;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a:hover {
-  background-color: #11948a;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a:hover p {
-  color: #fff;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a:hover p span {
-  color: #fff;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li a:hover::after {
-  opacity: 1;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li.set a::after {
-  display: none;
-}
-
-.popup-container .fillin-box .field fieldset .search-list .show-add-list ul li.set a span {
-  padding-left: 5px;
 }
 
 .popup-container .fillin-box .field fieldset .width100 {

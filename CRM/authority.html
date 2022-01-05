@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 權限控制</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="product.html">產品</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="admin.html">使用者管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="authority.html">權限控制</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <div class="logo"></div>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="product.html">產品</a>
+                </li>
+                <li>
+                    <a href="project.html">促銷專案</a>
+                </li>
+                <li>
+                    <a href="terms.html">附加條款</a>
+                </li>
+                <li>
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a href="admin.html">使用者管理</a>
+                </li>
+                <li>
+                    <a class="selected" href="authority.html">權限控制</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">權限控制</h3>
+                <div class="tools-bar clearfix">
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋關鍵字">
+                        <p class="btn-text"><a>搜尋</a></p>
+                    </div>
+                    <!-- 搜尋前 -->
+                    <div class="filter-search clearfix">
+                        <p class="filter-title">選擇AE/AM</p>
+                        <div class="search-box search-list">
+                            <input class="default" type="text" placeholder="搜尋AE/AM名字" value="Sansy">
+                            <div class="show-add-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <p><span>Sansy</span> Yu</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span>Sansy</span> Chen</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 搜尋後，按XX後回去搜尋欄位-->
+                    <div class="filter-search clearfix">
+                        <p class="filter-title">選擇AE/AM</p>
+                        <div class="who">
+                            <p>張強尼 Johnny</p>
+                            <a class="delete"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-list">
+                    <div class="card toptitle-style clearfix">
+                        <div class="controller-order">
+                            <h4>委刊單名稱</h4>
+                        </div>
+                        <p class="controller">主管</p>
+                        <p class="controller">擁有者</p>
+                        <p class="controller">編輯者</p>
+                        <p class="controller">檢視者</p>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-authority-info">
+                            <div class="controller-order">
+                                <h4>佳量企業股份有限公司</h4>
+                                <span class="day">2022-02-02</span> 
+                            </div>
+                            <p class="controller">Kiki, Zoe</p>
+                            <p class="controller">Sandy yu</p>
+                            <p class="controller">chiao, sandy</p>
+                            <p class="controller">Eikiy</p>
+                        </a>
+                        <ul class="edit-tool f-r">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-authority">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-authority-info">
+                            <div class="controller-order">
+                                <h4>隆印創意有限公司</h4>
+                                <span class="day">2022-02-02</span>
+                            </div>
+                            <p class="controller">John</p>
+                            <p class="controller">Sandy yu</p>
+                            <p class="controller">朱小黑, 黃先生</p>
+                            <p class="controller">Edan, Kitty</p>
+                        </a>
+                        <ul class="edit-tool f-r">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-authority">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-authority-info">
+                            <div class="controller-order">
+                                <h4>童心好食館</h4>
+                                <span class="day">2022-02-02</span>
+                            </div>
+                            <p class="controller">Mavis</p>
+                            <p class="controller">Sandy yu</p>
+                            <p class="controller">vivi, chiao, sandy, Eikiy</p>
+                            <p class="controller">張強尼, Jojo</p>
+                        </a>
+                        <ul class="edit-tool f-r">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-authority">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-authority-info">
+                            <div class="controller-order">
+                                <h4>菁品創意事業有限公司</h4>
+                                <span class="day">2022-02-02</span>
+                            </div>
+                            <p class="controller">Nina</p>
+                            <p class="controller">Sandy yu</p>
+                            <p class="controller">張強尼</p>
+                            <p class="controller">vivi, chiao</p>
+                        </a>
+                        <ul class="edit-tool f-r">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-authority">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-authority-info">
+                            <div class="controller-order">
+                                <h4>雙影創藝有限公司</h4>
+                                <span class="day">2022-02-02</span>
+                            </div>
+                            <p class="controller">Happy</p>
+                            <p class="controller">JEFF</p>
+                            <p class="controller">黃曉明, 謝依</p>
+                            <p class="controller">DD</p>
+                        </a>
+                        <ul class="edit-tool f-r">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-authority">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-authority-info">
+                            <div class="controller-order">
+                                <h4>強哥批發貿易有限公司</h4>
+                                <span class="day">2022-02-02</span>
+                            </div>
+                            <p class="controller">Kiki</p>
+                            <p class="controller">vivi</p>
+                            <p class="controller">sandy, Eikiy</p>
+                            <p class="controller">sandy</p>
+                        </a>
+                        <ul class="edit-tool f-r">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-authority">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-50列(共220列 )</p>
+                    <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul>
+                </p>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2022 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+    
+    <!-- popup 權限-->
+    <section id="popup-authority-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>委刊單名稱AAAA</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>權限控制</p>
+                        </div>
+                        <div class="fillin-info">
+                            <!-- 只有擁有者單選 -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>擁有者</label>
+                                <p class="input-value"><span class="">Eikiy Chang</span></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">編輯者</label>
+                                <p class="input-value"><span class="">Jojo, Viola Huang</span></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">檢視者</label>
+                                <p class="input-value"><span class="">朱小黑, 黃先生, Edan</span></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>主管</label>
+                                <p class="input-value"><span class="">張強尼</span></p>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <ul class="edit-record-user">
+                        <li class="clearfix">
+                            <p class="time">更新：2021/02/29 14:59:00 </p>
+                            <p class="id"><span class="bg-c-1">E</span>Eikiy Chang</p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="time">建立：2021/05/24 15:30:15 </p>
+                            <p class="id"><span class="bg-c-2">S</span>Sandy Yu</p>
+                        </li>
+                    </ul>
+                    <ul class="edit-tool">
+                    <li>
+                        <a class="edit popup-link" href="#popup-edit-authority">
+                            <i class="fas fa-pencil-alt" title="編輯"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 編輯權限-->
+    <section id="popup-edit-authority" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>委刊單名稱AAAA</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>權限控制</p>
+                        </div>
+                        <div class="fillin-info">
+                            <!-- 只有擁有者單選 -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>擁有者</label>
+                                <div class="confirm search-list">
+                                    <div class="btn-search">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input class="" type="" name="" value="Eikiy Chang" placeholder="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">編輯者</label>
+                                <div class="confirm search-list">
+                                    <div class="btn-search">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input class="" type="" name="" value="" placeholder="">
+                                    <ul class="list-project-single clearfix">
+                                        <li>
+                                            <p>Jojo Yang</p>
+                                            <a class="delete"><i class="fas fa-times"></i></a>
+                                        </li>
+                                        <li>
+                                            <p>Viola Huang</p>
+                                            <a class="delete"><i class="fas fa-times"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">檢視者</label>
+                                <div class="confirm search-list">
+                                    <div class="btn-search">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input class="" type="" name="" value="" placeholder="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>主管</label>
+                                <div class="confirm search-list">
+                                    <div class="btn-search">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input class="" type="" name="" value="Ma" placeholder="搜尋主管">
+                                    <div class="show-add-list">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <p><span>Ma</span>vis</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <p><span>Ma</span>vis yu</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <p><span>Ma</span>vis Chang</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
