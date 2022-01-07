@@ -53,7 +53,7 @@ body { background-color: #c93035;}
 .edit-userinfo .field{ width: 100%; text-align: left; padding: 5px 0;}
 .edit-userinfo .field .r-input{ float: left; width: calc(100% - 105px); }
 .edit-userinfo .field .for-bd{position: relative;}
-.edit-userinfo .field .for-bd::after{ content: ""; pointer-events: none; position: absolute; top: 0; right: 0; width: 40px; height: 40px; line-height: 40px; text-align: center; color: #fff; background: url(../images/calendar-alt-solid.svg) center center no-repeat #e2655f; background-size: 35%; }
+.edit-userinfo .field .for-bd::after{ content: ""; pointer-events: none; position: absolute; top: 0; right: 0; width: 60px; height: 40px; line-height: 40px; text-align: center; color: #fff; background: url(../images/calendar-alt-solid.svg) center center no-repeat #e2655f; background-size: 25%; }
 .edit-userinfo .field input{ background:none;appearance:none;-moz-appearance:none; -webkit-appearance:none; background-color: #e2655f; border: 2px solid #e2655f; color: #fff; border-radius: 4px; text-align: center; width: 100%; line-height: 40px; height: 40px; padding:5px 20px; font-size: 17px;}
 .edit-userinfo .field input::placeholder{ color: #c93035;}
 /*input[type=date]::-webkit-inner-spin-button { visibility: hidden; }*/
