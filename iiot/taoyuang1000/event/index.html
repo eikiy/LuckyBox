@@ -35,6 +35,10 @@
 
 </head>
 <body>
+    <div id="cookie-accept" class="cookie-accept">
+        <span style="float: left;">為提供您更多優質的內容，本網站使用cookies分析技術。若繼續閱覽本網站內容，即表示您同意我們使用cookies，關於更多 cookies以及相關政策更新資訊，請閱讀我們的<a href="app/privacy" style="color: #FFE0DE;">隱私權及安全政策</a>。</span>
+        <div class="close" onclick="javascript: $('#cookie-accept').hide(); createCookie('cookieAccepted', '1', 365, '/');">✖️</div>
+    </div>
     <a class="gotop"><i class="fas fa-arrow-up"></i></a>
     <!-- Pushy Menu -->
     <nav class="pushy pushy-left" data-focus="#first-link">
@@ -42,6 +46,9 @@
             <ul>
                 <li class="pushy-link">
                     <a class="go-section-01">活動辦法</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="/app/privacy">隱私權及安全政策</a>
                 </li>
                 <li class="pushy-link">
                     <a href="/app/register">會員登入/註冊</a>
@@ -61,8 +68,7 @@
             <nav class="nav-menu">
                 <ul>
                     <li class="go-section-01">活動辦法</li>
-                    <!-- <li>登錄發票</li>
-                    <li>登錄發票</li> -->
+                    <li><a href="/app/privacy">隱私權及安全政策</a></li>
                     <li><a href="/app/register">會員登入/註冊</a></li>
                 </ul>
             </nav>
@@ -109,16 +115,17 @@
                                 </table>
                             </div>
                         
-                            <h5>登錄方法</h5>
+                            <h5>參與活動</h5>
                             <ul class="list">
                                 <li>
-                                    <p>輸碼掃Code－輸入桃園市市民卡Line ID或掃描QRCode二維碼。</p>
+                                    <p>輸碼掃Code－輸入桃園市市民卡<span> Line ID：@tycc</span> 或<span>掃描 QRCode 二維碼</span>。</p>
                                 </li>
                                 <li>
-                                    <p>一鍵加好友－點選「加入好友」，加入桃園市市民卡官方LINE帳號。</p>
+                                    <p>一鍵加好友－點選「加入好友」，加入<a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=497jygbl">桃園市市民卡官方 Line 帳號</a>。</p>
                                 </li>
                                 <li>
                                     <p>註冊為會員－填寫基本資料，成為市民卡會員</p>
+                                    <p class="text-remark">提醒您，資料請務必確實填寫，若資料錯誤或不符以致系統無法驗證身分，將影響您的活動參與資格。會員資料修改功能將於1/24（一）前上線，如有資料填寫錯誤之問題，請記得於活動截止前進行修正。</p>
                                 </li>
                             </ul>
                         
@@ -129,10 +136,10 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <p>中獎人經訊息通知後，需透過萊爾富Life-ET機台兌換小白單並於萊爾富消費結帳時直接出示折抵。</p>
+                                    <p>中獎人經訊息通知後，需透過萊爾富 Life-ET 機台兌換小白單並於萊爾富消費結帳時直接出示折抵。</p>
                                 </li>
                                 <li>
-                                    <p>本活動兌獎期限為活動結束後一個月內（111/3/15止）；逾期未領者將視為自動放棄資格。</p>
+                                    <p>本活動兌獎期限依萊爾富現金券顯示日期為主；逾期未領者將視為自動放棄資格。</p>
                                 </li>
                             </ul>
                         </div>
@@ -140,13 +147,13 @@
                             <h6>注意事項</h6>
                             <ul>
                                 <li>
-                                    <p>本活動限111/2/9（含）前設籍在桃園的市民卡持有人參與。因系統資料拋送問題，於111/2/8、9兩天遷入桃園戶籍者，需提供身分證影本查驗。</p>
+                                    <p>本活動限111/2/9（含）前設籍在桃園的市民卡持有人參與。因系統資料拋送問題，於111/2/8、9兩天遷入桃園戶籍者，需將身分證影本於活動截止前寄送至<a href="mailto:tycc@mail.tycg.gov.tw">客服信箱</a>，讓主辦單位進行查驗。</p>
                                 </li>
                                 <li>
                                     <p>每人只需要登記一次，同一位市民有多張市民卡無須重複參加活動。抽獎方式為隨機抽出登記者，市民卡持有人先抽168元紅包，未抽中名單再抽88元紅包，每人最高限中獎一次。</p>
                                 </li>
                                 <li>
-                                    <p>獎項圖片僅供參考，內容依實際提供為主，不可挑色、挑款，活動單位保有以等值贈品更動獎項之權利。</p>
+                                    <p>於註冊後及活動截止前申請或變更市民卡之桃園市民，系統將以您的最終資料驗證並作為判斷依據，確認您的抽獎資格。</p>
                                 </li>
                                 <li>
                                     <p>依中華民國稅法規定，中獎贈品或獎金價值超過1,001元者，填發扣（免）繳憑單予中獎人，中獎人於年度報稅時必須計入個人所得合併申報。</p>
@@ -164,7 +171,7 @@
                                     <p>活動辦法、期間、中獎名單及相關詳情，以本府市民卡主題網站之公告為準，本府保有修正、補充說明、暫停或終止活動之權利，如有任何變更將公布於活動網站，恕不另行通知；其他未盡事宜，悉依本府相關規定或解釋辦理。</p>
                                 </li>
                                 <li>
-                                    <p>詢問兌獎及活動相關事宜，請於上班時間電洽TEL：（03）332-2107。</p>
+                                    <p>詢問兌獎及活動相關事宜，請將問題及相關截圖寄送至<a href="mailto:tycc@mail.tycg.gov.tw">客服信箱</a>，由專人為您服務。</p>
                                 </li>
                             </ul>
                         </div>

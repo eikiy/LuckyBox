@@ -68,11 +68,30 @@ $f-size-ss: 0.688rem; //11px
     text-indent: -9999px;
   }
 }
-
+.cookie-accept {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  line-height: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #ac0708c4;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 2;
+  .close {
+    float: right;
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+    cursor: pointer;
+  }
+}
 a.gotop {
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 18px;
   z-index: 15;
   width: 50px;
@@ -232,7 +251,7 @@ a.gotop {
       h5 {
         font-size: 20px;
         padding: 15px 0;
-        color: #bf1c2d;
+        color: #00caca;
         font-weight: bold;
         @media all and (max-width: 1000px) {
           font-size: 18px;
@@ -333,8 +352,20 @@ a.gotop {
             text-align: justify;
             padding-bottom: 0;
             span {
-              font-weight: bold;
+              color: #bf1c2d;
             }
+            a {
+              color: #bf1c2d;
+              text-decoration: underline;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          p.text-remark {
+            font-size: 12px;
+            color: #ce3643;
+            line-height: 18px;
           }
         }
       }
@@ -398,6 +429,13 @@ a.gotop {
         text-align: justify;
         span {
           font-weight: bold;
+        }
+        a {
+          color: #bf1c2d;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
       @media all and (max-width: 1100px) {
