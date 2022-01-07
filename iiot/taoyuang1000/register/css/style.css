@@ -86,3 +86,20 @@ body { background-color: #c93035;}
 
 	.landing .text-important{ letter-spacing: 0; font-size: 14px; padding: 0 0 0 20px;}
 }
+
+/*popup - style---------*/
+.mfp-bg {top: 0; left: 0; width: 100%; height: 100%; z-index: 1042; overflow: hidden; position: fixed; background: #000000; opacity: 0.25;}
+.mfp-wrap {top: 0; left: 0; width: 100%; height: 100%; z-index: 1043; position: fixed; outline: none !important; backface-visibility: hidden; -webkit-backface-visibility: hidden;}
+.mfp-container { text-align: center; position: absolute; width: 100%; height: 100%; left: 0; top: 0; padding: 0 15px; -webkit-box-sizing: border-box; box-sizing: border-box;display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;}
+.mfp-content { position: relative; display: inline-block; vertical-align: middle; margin: 0 auto; text-align: left; z-index: 1045; width: 100%;}
+.mfp-close { width: 46px; cursor: pointer; height: 46px; line-height: 46px; position: absolute; right: 0; top: 0; text-decoration: none; text-align: center; opacity: 0.5; background: transparent; color: #555; font-style: normal; font-size: 32px; font-family: Arial, Baskerville, monospace;}
+.mfp-close:hover,.mfp-close:focus { opacity: 1;}
+.mfp-close:active { top: 1px;}
+.mfp-close-btn-in .mfp-close { color: #b1b5c4;}
+.white-popup { position: relative; background: #f6f6f6; width: auto; width: 100%; max-width: 400px; margin: 20px auto; border-radius: 4px; -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.1) 10px 10px 6px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.1) 10px 10px 6px;}
+
+.popup-container { width: 100%; padding: 20px; text-align: center; min-height: 200px;}
+.popup-container .maintitle{ font-size: 22px; color: #a3454f; letter-spacing: 4px; font-weight: bold; padding: 10px 0;}
+.popup-container .text-info{ color: #555; padding-bottom: 15px; font-size: 14px;}
+.popup-container .text-info a{ color: #a3454f; text-decoration: underline;}
+.popup-container .text-info a:hover{ text-decoration: none;}

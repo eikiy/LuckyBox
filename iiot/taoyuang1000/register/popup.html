@@ -1,0 +1,101 @@
+<!DOCTYPE html
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <title>註冊 - popup</title>
+        <meta name='description' content=""/>
+        <meta name='keywords' content=""/>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:type" content="website"/>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <!-- popup -->
+        <div class="mfp-bg"></div>
+        <div class="mfp-wrap" style="overflow-y: auto;">
+            <div class="mfp-container">
+                <div class="mfp-content">
+                    <section id="popup" class="white-popup mfp-hide">
+                        <div class="popup-container">
+                            <p class="maintitle">註冊失敗</p>
+                            <p class="text-info">您的資料核對不正確，請確認填寫無誤。<br>或聯繫客服協助處理。 0800-123456<br>
+                                客服信箱：<a href="mailto:">service@123.com</a></p>
+                            <button class="btn-style">重新填寫</button>
+                        </div>
+                        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--  main  -->
+        <main class="landing">
+            <section class="contents-box">
+                <div class="img">
+                    <img src="images/img-title.png" title="虎你好運抽紅包" width="100%">
+                </div>
+                <h1 class="maintitle">
+                    註冊/登入
+                </h1>
+                <p class="text-important">※ 提醒您，<span>資料請務必確實填寫</span>，若資料錯誤或不符以致系統無法驗證身分，將影響您的活動參與資格。</p>
+                <form class="edit-userinfo">
+                    <fieldset class="field">
+                        <label for="firstName"><span>*</span>真實姓名</label> 
+                        <div class="r-input for-error">
+                            <input type="text" id="" placeholder="" required="required">
+                        </div>
+                        <p class="text-error">！請完整填寫</p>
+                    </fieldset> 
+                    <fieldset class="field">
+                        <label for="firstName"><span>*</span>身分證號/<br>居留證號</label> 
+                        <div class="r-input">
+                            <input type="text" id="" placeholder="" required="required">
+                        </div>
+                    </fieldset> 
+                    <fieldset class="field">
+                        <label for="address"><span>*</span>出生日期<br>(西元)</label> 
+                        <div class="r-input">
+                            <input type="text" id="" placeholder="" required="required">
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <label for="address">市民卡號</label> 
+                        <div class="r-input for-disabled">
+                            <input type="text" id="" placeholder="" required="required" disabled >
+                        </div>
+                    </fieldset> 
+                    <fieldset class="field">
+                        <label for="address" class="form-label">手機號碼</label> 
+                        <div class="r-input">
+                            <input type="text" id="" placeholder="請輸入手機號碼" required="required">
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <label for="address" class="form-label">電子郵箱</label> 
+                        <div class="r-input">
+                            <input type="text" id="" placeholder="" required="required">
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <label for="address" class="form-label">通訊地址</label> 
+                        <div class="r-input">
+                            <input type="text" id="" placeholder="" required="required">
+                        </div>
+                    </fieldset>
+                </form>
+                <p class="link">註冊即表示您同意我們的 <a href="privacy.html">隱私權及安全政策</a></p>
+                <button class="btn-style">註冊</button>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="logo">
+                <img src="images/Logo-Taoyuan-Black.png" title="桃園市政府">
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
