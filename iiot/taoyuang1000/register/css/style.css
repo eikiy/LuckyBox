@@ -21,11 +21,19 @@ a:hover { text-decoration: none; }
 *:link, *:visited, *:hover, *:active, *:focus, * { border: none; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /*===== start ======*/
+body { background-color: #c93035;}
 .landing{ background-color: #c93035; display: block; padding-bottom: 80px;}
 .landing .contents-box{width: 100%; padding:20px; max-width: 600px; margin: 0 auto; text-align: center; }
 .landing .maintitle{ text-align: right; color: #fff; font-size: 24px; letter-spacing: 4px; font-weight: bold;}
-.landing .subtitle{ font-size: 22px;color: #fff; text-align: c; font-weight: bold; padding: 20px 0; }
+.landing .subtitle{ font-size: 22px;color: #fff; text-align: center; font-weight: bold; padding: 20px 0; }
 .landing .subtitle span{ font-size: 17px; font-weight: normal; display: inline-block; padding-top: 15px; }
+.landing .text-important{ font-size: 16px;color: #ffcc6f; text-align: right; font-weight: bold; padding: 5px 0 0 105px; letter-spacing: 3;}
+.landing .text-important span{ color: #fff; }
+.landing .text-info{ color: #ffcc6f;}
+.landing ul.nb{ padding: 15px 0; max-width: 260px; margin: 0 auto;}
+.landing ul.nb li{ border-bottom: 2px dashed #e84d52; padding: 5px 0;}
+.landing ul.nb li p{color: #ffcc6f; font-size: 24px; font-style: italic; font-weight: bold; }
+
 .landing .img{ max-width: 500px; margin: 0 auto; }
 .landing p.text-error{ width: 100%; float: left; text-align: right; color: #ffeb3b; }
 
@@ -37,8 +45,9 @@ a:hover { text-decoration: none; }
 .footer .logo{ max-width: 200px; display: inline-block; }
 .footer .logo img{ width: 100%; max-width: 156px; }
 
-button.btn-style{ cursor: pointer; width: 100%; color: #fff; background-color: #ffc107; border-radius:4px; height: 45px; font-size: 15px; max-width: 260px; margin: 10px 0;}
-button.btn-style:hover{ opacity: .9; }
+.btn-style{ cursor: pointer; width: 100%; color: #fff; background-color: #ffc107; font-weight: bold; border-radius:4px; height: 45px; line-height: 45px; font-size: 15px; display: inline-block; max-width: 260px; margin: 10px 0;}
+.btn-style:hover{ opacity: .9; }
+.btn-disabled-style { cursor: no-drop!important; background-color: lightgray!important;}
 
 .edit-userinfo{ width: 100%; padding: 5px 0 0; margin: 0 auto; }
 .edit-userinfo .field{ width: 100%; text-align: left; padding: 5px 0;}
@@ -74,4 +83,6 @@ button.btn-style:hover{ opacity: .9; }
 	.landing .privacy-content h3{ font-size: 17px;}
 	.landing .privacy-content h4{ font-size: 15px;}
 	.landing .privacy-content p{ font-size: 13px;}
+
+	.landing .text-important{ letter-spacing: 0; font-size: 14px; padding: 0 0 0 20px;}
 }
