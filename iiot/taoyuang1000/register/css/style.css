@@ -79,8 +79,9 @@ body { background-color: #c93035;}
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
 	.landing .maintitle{ font-size: 20px; padding-bottom: 5px; }
-	.edit-userinfo .field label{ font-size: 14px; padding: 5px 12px;}
+	.edit-userinfo .field label{ font-size: 14px; padding: 3px 15px 5px 0; width: 94px;}
 	.edit-userinfo .field input{  padding: 0 10px; font-size: 15px; }
+	.landing p.text-error{ padding-right: 12px; }
 	.landing ul.link li{ margin: 10px; display: block; text-align: center; }
 	.landing ul.link li p{display: inline-block; }
 
@@ -88,7 +89,7 @@ body { background-color: #c93035;}
 	.landing .privacy-content h4{ font-size: 15px;}
 	.landing .privacy-content p{ font-size: 13px;}
 
-	.landing .text-important{ letter-spacing: 0; font-size: 14px; padding: 0 0 0 20px;}
+	.landing .text-important{ letter-spacing: 0; font-size: 14px; padding: 0;}
 }
 
 /*popup - style---------*/
