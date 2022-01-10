@@ -14,17 +14,19 @@
   color: #b3b3b1;
   padding: 15px 30px;
   text-decoration: none;
-  text-align: center;
-  font-size: 13px;
+  text-align: left;
+  font-size: 14px;
   line-height: 26px;
 }
 .pushy a:hover {
-  color: #FFF;
+  color: #fff;
 }
 .pushy ul:first-child {
   margin-top: 20px;
 }
-.pushy ul li a{ padding-left: 20px;}
+.pushy ul li a {
+  padding-left: 20px;
+}
 .pushy.pushy-left {
   left: 0;
 }
@@ -90,7 +92,9 @@
   display: none;
 }
 
-.pushy-open-left{ overflow: hidden; }
+.pushy-open-left {
+  overflow: hidden;
+}
 .pushy-open-left .site-overlay,
 .pushy-open-right .site-overlay {
   display: block;
@@ -104,20 +108,22 @@
   -webkit-animation: fade 500ms;
   animation: fade 500ms;
 }
-@media (min-width:1400px){
-  .pushy.pushy-left{ 
+@media (min-width: 1400px) {
+  .pushy.pushy-left {
     -webkit-transform: translate3d(-230px, 0, 0);
     -ms-transform: translate3d(-230px, 0, 0);
     transform: translate3d(-230px, 0, 0);
   }
-  .pushy-open-left #container, .pushy-open-left .push{
+  .pushy-open-left #container,
+  .pushy-open-left .push {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  .pushy-open-left .site-overlay{ display: none; }
+  .pushy-open-left .site-overlay {
+    display: none;
+  }
 }
-
 
 @keyframes fade {
   0% {
@@ -156,10 +162,10 @@
   background: transparent;
   border: 0;
   padding-left: 20px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .pushy-submenu button:hover {
-  color: #FFF;
+  color: #fff;
 }
 .pushy-submenu > a,
 .pushy-submenu > button {
@@ -167,14 +173,16 @@
 }
 .pushy-submenu > a::after,
 .pushy-submenu > button::after {
-  content: "\f054";
+  content: "";
   display: block;
   height: 11px;
   width: 8px;
   position: absolute;
   top: 50%;
   right: 15px;
-  font-family:  Font Awesome\ 5 Free;
+  background: url(../images/svg/arr-menu-mob.svg) center center no-repeat;
+  background-size: contain;
+  /* font-family:  Font Awesome\ 5 Free; */
   font-weight: 900;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -183,6 +191,10 @@
   transition: transform 0.2s;
 }
 
+.pushy-submenu ul li a {
+  padding: 10px 30px 10px 20px;
+  font-size: 13px;
+}
 /* Submenu Movement */
 .pushy-submenu-closed > ul {
   max-height: 0;

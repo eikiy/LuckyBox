@@ -987,9 +987,65 @@ ul.edit-tool li a:hover {
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
 
-.middle-container .side-menu ul li a.selected {
+.middle-container .side-menu ul li .selected {
   background-color: #11948a;
   color: #fff;
+}
+
+.middle-container .side-menu ul li .selected:hover {
+  background-color: #11948a;
+}
+
+.middle-container .side-menu ul li a.sub-selected {
+  color: #11948a;
+}
+
+.middle-container .side-menu ul li ul {
+  padding: 0;
+  padding-top: 10px;
+}
+
+.middle-container .side-menu ul li ul li a {
+  line-height: 30px;
+  padding: 0;
+}
+
+.middle-container .side-menu ul li ul li a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  color: #11948a;
+}
+
+.middle-container .side-menu ul .pushy-submenu button {
+  text-align: center;
+  padding: 0;
+  color: #333;
+  line-height: 50px;
+  font-size: 0.813rem;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.middle-container .side-menu ul .pushy-submenu button:hover {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.middle-container .side-menu ul .pushy-submenu button::after {
+  background: url(../images/svg/arr-menu-green.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.middle-container .side-menu ul .pushy-submenu button.selected {
+  background-color: #11948a;
+  color: #fff;
+}
+
+.middle-container .side-menu ul .pushy-submenu button.selected::after {
+  background: url(../images/svg/arr-menu-mob.svg) center center no-repeat;
+  background-size: contain;
 }
 
 @media all and (max-width: 1200px) {

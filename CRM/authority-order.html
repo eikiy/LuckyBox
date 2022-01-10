@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRM 管理後台 - 權限控制</title>
+    <title>CRM 管理後台 - 委刊單權限</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -26,22 +26,32 @@
                     <a href="order.html">委刊單</a>
                 </li>
                 <li class="pushy-link">
-                    <a href="product.html">產品</a>
-                </li>
-                <li class="pushy-link">
-                    <a href="project.html">促銷專案</a>
-                </li>
-                <li class="pushy-link">
-                    <a href="terms.html">附加條款</a>
-                </li>
-                <li class="pushy-link">
                     <a href="customer.html">客戶管理</a>
                 </li>
-                <li class="pushy-link">
-                    <a href="admin.html">使用者管理</a>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="pushy-link">
-                    <a href="authority.html">權限控制</a>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -77,28 +87,38 @@
                     <a href="order.html">委刊單</a>
                 </li>
                 <li>
-                    <a href="product.html">產品</a>
-                </li>
-                <li>
-                    <a href="project.html">促銷專案</a>
-                </li>
-                <li>
-                    <a href="terms.html">附加條款</a>
-                </li>
-                <li>
                     <a href="customer.html">客戶管理</a>
                 </li>
-                <li>
-                    <a href="admin.html">使用者管理</a>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a class="selected" href="authority.html">權限控制</a>
+                <li class="pushy-submenu">
+                    <button class="selected">權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a class="sub-selected" href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
         <main class="main-container">
             <section class="content">
-                <h3 class="main-title">權限控制</h3>
+                <h3 class="main-title">委刊單權限</h3>
                 <div class="tools-bar clearfix">
                     <div class="search-box">
                         <input class="default" type="text" placeholder="搜尋關鍵字">
