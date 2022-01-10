@@ -82,7 +82,8 @@ body { background-color: #c93035;}
 .landing .open-card-nb ul.nb{ max-width: 100%;}
 .landing .open-card-nb ul.nb li{ float: left; width: 47%; padding-top: 95px; background-color: #ea5e79; border: 2px solid #ff829a; border-radius: 10px; margin: 0 1.5%; min-height: 115px; position: relative;}
 .landing .open-card-nb ul.nb li::after{ content: ""; position: absolute; width: 100px; top: 0px ; right: 10px; height: 100px; display: block; background: url(../images/icon.png) center center no-repeat; background-size: contain; }
-.landing .open-card-nb .btn-style{ min-width: initial; width: initial; padding: 0 10px; }
+.landing .open-card-nb .btn-style{ position: relative; min-width: initial; width: initial; padding: 0 10px; padding-left: 40px; }
+.landing .open-card-nb .btn-style::after{content: ""; position: absolute; top:calc(50% - 8px); left: 12px; width: 20px; height: 16px; display: block; background: url(../images/sync.svg) center center no-repeat; background-size:contain; }
 
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
