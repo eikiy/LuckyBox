@@ -76,6 +76,14 @@ body { background-color: #c93035;}
 .landing .privacy-content p a{color: #ffdada;  text-decoration: underline;}
 .landing .privacy-content p a:hover{text-decoration:none;}
 
+.landing .open-card-nb{padding:30px 0 0px 0;}
+.landing .open-card-nb .text-info{text-align: right;}
+.landing .open-card-nb .text-info span{ font-size: 20px; }
+.landing .open-card-nb ul.nb{ max-width: 100%; padding-bottom: 0; }
+.landing .open-card-nb ul.nb li{ float: left; width: 47%; padding-top: 95px; background-color: #ea5e79; border: 2px solid #ff829a; border-radius: 10px; margin: 0 1.5%; min-height: 115px; position: relative;}
+.landing .open-card-nb ul.nb li::after{ content: ""; position: absolute; width: 100px; top: 0px ; right: 10px; height: 100px; display: block; background: url(../images/icon.png) center center no-repeat; background-size: contain; }
+.landing .open-card-nb .btn-style{ min-width: initial; width: initial; padding: 0 10px; }
+
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
 	.landing .maintitle{ font-size: 20px; padding-bottom: 5px; }
@@ -90,6 +98,7 @@ body { background-color: #c93035;}
 	.landing .privacy-content p{ font-size: 13px;}
 
 	.landing .text-important{ letter-spacing: 0; font-size: 14px; padding: 0;}
+	.landing .open-card-nb ul.nb li{ width: 100%; float: none; max-width: 285px; margin:0 auto 15px auto;}
 }
 
 /*popup - style---------*/
