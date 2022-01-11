@@ -1451,6 +1451,114 @@ ul.edit-tool li a:hover {
   }
 }
 
+.middle-container .main-container .member-content {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  max-width: 695px;
+  background-color: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.middle-container .main-container .member-content ul.edit-tool {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+.middle-container .main-container .member-content ul.edit-tool li a {
+  background-color: #ebf5f4;
+}
+
+.middle-container .main-container .member-content ul.edit-tool li a:hover {
+  background-color: #fff;
+}
+
+.middle-container .main-container .member-content .top-info {
+  width: 100%;
+  background-color: #ebf5f4;
+  padding: 30px 50px;
+}
+
+.middle-container .main-container .member-content .top-info h4.name {
+  float: left;
+  color: #11948a;
+  font-size: 1.063rem;
+  font-weight: bold;
+}
+
+.middle-container .main-container .member-content .top-info p {
+  float: right;
+  font-size: 0.875rem;
+  padding-top: 5px;
+}
+
+.middle-container .main-container .member-content ul.member-info {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 15px 50px;
+  border-bottom: 1px dashed #aeaeae;
+}
+
+.middle-container .main-container .member-content ul.member-info li {
+  width: 100%;
+  padding: 12px 0;
+}
+
+.middle-container .main-container .member-content ul.member-info li p {
+  font-size: 0.875rem;
+  line-height: 0.938rem;
+}
+
+.middle-container .main-container .member-content ul.member-info li p a {
+  color: #333;
+}
+
+.middle-container .main-container .member-content ul.member-info li p a.mail {
+  text-decoration: underline;
+}
+
+.middle-container .main-container .member-content ul.member-info li p a.mail:hover {
+  text-decoration: none;
+}
+
+.middle-container .main-container .member-content ul.member-info li p a:hover {
+  text-decoration: underline;
+}
+
+.middle-container .main-container .member-content ul.member-info li p a.change-pw {
+  color: #11948a;
+  text-decoration: underline;
+  margin-left: 30px;
+  display: inline-block;
+  font-size: 0.813rem;
+}
+
+.middle-container .main-container .member-content ul.member-info li p a.change-pw:hover {
+  text-decoration: none;
+}
+
+.middle-container .main-container .member-content ul.member-info li .item-title {
+  float: left;
+  width: 120px;
+  text-align: right;
+  padding-right: 40px;
+  font-weight: bold;
+}
+
+.middle-container .main-container .member-content ul.member-info li .input-value {
+  float: left;
+  width: calc(100% - 120px);
+}
+
+.middle-container .main-container .member-content ul.member-info:last-child {
+  border: none;
+}
+
 @media all and (max-width: 1200px) {
   .middle-container .main-container {
     width: 100%;
@@ -1460,6 +1568,24 @@ ul.edit-tool li a:hover {
 @media all and (max-width: 600px) {
   .middle-container .main-container {
     padding: 20px;
+  }
+  .middle-container .main-container .member-content .top-info {
+    padding: 20px 25px;
+  }
+  .middle-container .main-container .member-content .top-info h4.name,
+  .middle-container .main-container .member-content .top-info p {
+    float: none;
+    text-align: center;
+  }
+  .middle-container .main-container .member-content ul.member-info {
+    padding: 15px 25px;
+  }
+  .middle-container .main-container .member-content ul.member-info li .item-title {
+    width: 90px;
+    padding-right: 20px;
+  }
+  .middle-container .main-container .member-content ul.member-info li .input-value {
+    width: calc(100% - 90px);
   }
 }
 
@@ -3355,6 +3481,35 @@ ul.edit-tool li a:hover {
   font-size: 0.813rem;
   display: inline-block;
   padding-right: 10px;
+}
+
+.popup-container .pw-box p {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.popup-container .pw-box input {
+  width: 100%;
+  text-align: center;
+  border: 1px transparent solid;
+}
+
+.popup-container .pw-box form {
+  position: relative;
+  padding-top: 20px;
+}
+
+.popup-container .pw-box form p.text-error {
+  color: #f44336;
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  font-size: 0.875rem;
+}
+
+.popup-container .pw-box .field {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .popup-container ul.edit-record-user li {

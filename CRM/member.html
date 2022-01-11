@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 帳號資料</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <div class="logo"></div>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">帳號資料</h3>
+                <div class="member-content">
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-member">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top-info clearfix">
+                        <h4 class="name">李依庭 Jennie Li</h4>
+                        <p>業務部</p>
+                    </div>
+                    <ul class="member-info">
+                        <li class="clearfix">
+                            <p class="item-title">帳號</p>
+                            <p class="input-value">jennieli</p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="item-title">密碼</p>
+                            <p class="input-value">
+                                <span>********</span>
+                                <a class="change-pw popup-link" href="#popup-change-pw">變更密碼</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="member-info">
+                        <li class="clearfix">
+                            <p class="item-title">Email</p>
+                            <p class="input-value">
+                                <a class="mail" href="mailto:jennieli@weblisher.com.tw">jennieli@weblisher.com.tw</a>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="item-title">手機</p>
+                            <p class="input-value">
+                                <a href="#">0930555153</a>
+                            </p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="item-title">公司電話</p>
+                            <p class="input-value">
+                                <a href="#">886-2-25021980</a> #315
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2022 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup 帳號資料 修改資料-->
+    <section id="popup-edit-member" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>修改資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>聯絡資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>手機</label>
+                                <input class="default" type="" name="" value="0930555153">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>市內電話</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="02-25021980">
+                                    <input class="" type="" name="" value="315" placeholder="分機">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 帳號資料 變更密碼-->
+    <section id="popup-change-pw" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>變更密碼</span></h4>               
+            </div>
+            <div class="fillin-box pw-box">
+                <p>請輸入您的密碼以繼續</p>
+                <form>
+                    <p class="text-error">填寫的密碼不一致。</p>
+                    <div class="field clearfix">
+                        <fieldset>
+                            <input class="" type="password" name="" placeholder="請輸入舊密碼" value="154165">
+                        </fieldset>
+                        <fieldset>
+                            <input class="" type="password" name="" placeholder="請輸入新密碼" value="123">
+                        </fieldset>
+                        <fieldset>
+                            <input class="has-error" type="password" name="" placeholder="請再次輸入新密碼" value="">
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
