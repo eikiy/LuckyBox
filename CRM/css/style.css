@@ -2317,25 +2317,7 @@ ul.edit-tool li a:hover {
 
 .middle-container .company-contact-list ul.info li a p.name,
 .middle-container .company-department-list ul.info li a p.name {
-  padding-left: 45px;
-}
-
-.middle-container .company-contact-list ul.info li a p.star,
-.middle-container .company-department-list ul.info li a p.star {
-  position: relative;
-}
-
-.middle-container .company-contact-list ul.info li a p.star::after,
-.middle-container .company-department-list ul.info li a p.star::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 6px);
-  left: 24px;
-  width: 12px;
-  height: 12px;
-  display: block;
-  background: url(../images/svg/star-yello.svg) center center no-repeat;
-  background-size: contain;
+  padding-left: 15px;
 }
 
 .middle-container .company-contact-list ul.info li a p:last-child,
@@ -3116,7 +3098,6 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field ul.show-contact-list li p.name {
-  padding-left: 30px;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -3144,25 +3125,6 @@ ul.edit-tool li a:hover {
   background-image: url(../images/svg/arr-up-green.svg);
 }
 
-.popup-container .fillin-box .field ul.show-contact-list li .star {
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  top: 8px;
-  left: 10px;
-  width: 12px;
-  height: 12px;
-  display: block;
-  background-image: url(../images/svg/star-gray.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.popup-container .fillin-box .field ul.show-contact-list li .selected {
-  background-image: url(../images/svg/star-yello.svg);
-}
-
 .popup-container .fillin-box .field ul.show-contact-list li .info {
   width: 100%;
 }
@@ -3185,6 +3147,10 @@ ul.edit-tool li a:hover {
   background-color: #f6f6f6;
 }
 
+.popup-container .fillin-box .field ul.show-contact-list li .info .mail {
+  width: 100%;
+}
+
 .popup-container .fillin-box .field ul.show-contact-list li .info .mail a {
   color: #11948a;
 }
@@ -3196,6 +3162,27 @@ ul.edit-tool li a:hover {
 .popup-container .fillin-box .field ul.show-contact-list li .info .mail span:nth-child(2) {
   max-width: calc(100% - 52px);
   word-wrap: break-word;
+}
+
+.popup-container .fillin-box .field ul.show-contact-list li .info label.item-title {
+  width: 100px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 0.813rem;
+  line-height: 30px;
+  padding: 0 15px 10px 5px;
+}
+
+.popup-container .fillin-box .field ul.show-contact-list li .info .the-select {
+  border-radius: 0;
+  float: right;
+  max-width: calc(100% - 100px);
+}
+
+.popup-container .fillin-box .field ul.show-contact-list li .info .the-select select {
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.813rem;
 }
 
 .popup-container .fillin-box .field ul.show-contact-list li:last-child {
@@ -3888,6 +3875,11 @@ ul.edit-tool li a:hover {
 
 .popup-finish .liaison-info .fillin-box .fillin-info fieldset p.input-value {
   width: calc(100% - 156px);
+}
+
+.popup-finish .liaison-info .fillin-box .fillin-info fieldset .show-contact-list .info p.input-value {
+  width: 100%;
+  max-width: 100%;
 }
 
 .popup-finish .liaison-info .bottom-btn-tool {

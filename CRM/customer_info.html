@@ -710,8 +710,6 @@
                                 <div class="confirm">
                                     <ul class="show-contact-list">
                                         <li>
-                                            <!-- star + selected 主要聯絡人 -->
-                                            <div class="star selected"></div>
                                             <!-- 預設聯絡人就先展開，點了再收起-->
                                             <p class="name">陳小姐</p>
                                             <div class="info clearfix">
@@ -725,6 +723,15 @@
                                                     <span>E-mail</span>
                                                     <span>apple123173cakestoretaiwan@service.com.tw</span>
                                                 </p>
+                                                <label class="item-title">聯絡人類型</label>
+                                                <div class="the-select">
+                                                    <select class="" name="">
+                                                        <option value="0">請選擇類型</option>
+                                                        <option value="1" selected>主要</option>
+                                                        <option value="2">財務</option>
+                                                        <option value="3">帳款</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </li>
                                         <li>
@@ -740,6 +747,15 @@
                                                 <p class="mail">
                                                     <span>E-mail</span>173cake@service.com
                                                 </p>
+                                                <label class="item-title">聯絡人類型</label>
+                                                <div class="the-select">
+                                                    <select class="" name="">
+                                                        <option value="0">請選擇類型</option>
+                                                        <option value="1">主要</option>
+                                                        <option value="2" selected>財務</option>
+                                                        <option value="3">帳款</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </li>
                                     </ul>
@@ -769,7 +785,6 @@
                                     </select>
                                 </div>
                             </fieldset>
-    
                         </div>
                     </div>
                 </form>
@@ -816,8 +831,6 @@
                                 <label class="item-title">聯絡人</label>
                                 <ul class="show-contact-list">
                                     <li>
-                                        <!-- star + selected 主要聯絡人 -->
-                                        <div class="star selected"></div>
                                         <!-- 預設聯絡人就先展開，點了再收起-->
                                         <p class="name">陳小姐</p>
                                         <div class="info clearfix">
@@ -831,6 +844,7 @@
                                                 <span>E-mail</span>
                                                 <span><a href="mailto:apple123173cakestoretaiwan@service.com.tw">apple123173cakestoretaiwan@service.com.tw</a></span>
                                             </p>
+                                            <p class="input-value">聯絡人類型：主要</p>
                                         </div>
                                     </li>
                                     <li>
@@ -846,6 +860,7 @@
                                             <p class="mail">
                                                 <span>E-mail</span><a href="mailto:173cake@service.com">173cake@service.com</a>
                                             </p>
+                                            <p class="input-value">聯絡人類型：款項</p>
                                         </div>
                                     </li>
                                 </ul>
