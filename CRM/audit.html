@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 委刊單審核 - 待審核</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">委刊單審核</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <div class="logo"></div>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a class="selected" href="audit.html">委刊單審核</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">委刊單審核</h3>
+                <div class="tools-bar clearfix">
+                    <div class="audit-filter">
+                        <ul class="clearfix">
+                            <li>
+                                <a class="selected" href="audit.html"><p>待審核</p></a>
+                            </li>
+                            <li>
+                                <a href="audit_done.html"><p>已審核</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋名稱">
+                        <p class="btn-text"><a>搜尋</a></p>
+                    </div>
+                </div>
+                <div class="data-list">
+                    <div class="card toptitle-style clearfix">
+                        <h4 class="audit-name">客戶名稱</h4>
+                        <p class="product-valid-period audit-time">走期</p>
+                        <p class="audit-money">金額</p>
+                        <p class="audit-project">專案</p>
+                        <p class="audit-ae">AE</p>
+                    </div>
+                    <div class="card clearfix">
+                        <ul class="audit-yes-no clearfix">
+                            <li>
+                                <a class="yes">同意</a>
+                            </li>
+                            <li>
+                                <a class="no selected-no">拒絕</a>
+                            </li>
+                        </ul>
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <h4 class="audit-name">年約回饋專案年約回饋專案年約回饋專案年約回饋專案</h4>
+                            <p class="product-valid-period audit-time">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">50,000</p>
+                            <p class="audit-project">年約回饋專案</p>
+                            <p class="audit-ae">vivi</p>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <ul class="audit-yes-no clearfix">
+                            <li>
+                                <a class="yes selected-yes">同意</a>
+                            </li>
+                            <li>
+                                <a class="no">拒絕</a>
+                            </li>
+                        </ul>
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <h4 class="audit-name">公司名稱公司名稱</h4>
+                            <p class="product-valid-period audit-time">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">150,000</p>
+                            <p class="audit-project"></p>
+                            <p class="audit-ae">zaa</p>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <ul class="audit-yes-no clearfix">
+                            <li>
+                                <a class="yes">同意</a>
+                            </li>
+                            <li>
+                                <a class="no">拒絕</a>
+                            </li>
+                        </ul>
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <h4 class="audit-name">菁品創意事業有限公司</h4>
+                            <p class="product-valid-period audit-time">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">15,800</p>
+                            <p class="audit-project">1804_418專案</p>
+                            <p class="audit-ae">Sandy yu</p>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <ul class="audit-yes-no clearfix">
+                            <li>
+                                <a class="yes">同意</a>
+                            </li>
+                            <li>
+                                <a class="no">拒絕</a>
+                            </li>
+                        </ul>
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <h4 class="audit-name">佳量企業股份有限公司</h4>
+                            <p class="product-valid-period audit-time">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">10,000</p>
+                            <p class="audit-project">年末促銷</p>
+                            <p class="audit-ae">Emi</p>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <ul class="audit-yes-no clearfix">
+                            <li>
+                                <a class="yes">同意</a>
+                            </li>
+                            <li>
+                                <a class="no">拒絕</a>
+                            </li>
+                        </ul>
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <h4 class="audit-name">隆印創意有限公司</h4>
+                            <p class="product-valid-period audit-time">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">3,000</p>
+                            <p class="audit-project">虎年新春吼吼叫</p>
+                            <p class="audit-ae">chiao</p>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <ul class="audit-yes-no clearfix">
+                            <li>
+                                <a class="yes">同意</a>
+                            </li>
+                            <li>
+                                <a class="no">拒絕</a>
+                            </li>
+                        </ul>
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <h4 class="audit-name">童心好食館</h4>
+                            <p class="product-valid-period audit-time">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">450,000</p>
+                            <p class="audit-project">年約回饋專案</p>
+                            <p class="audit-ae">莊大衛</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-50列(共220列 )</p>
+                    <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul>
+                </p>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2022 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup 委刊單-->
+    <section id="popup-order-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>委刊單</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>受刊公司<br>聯絡資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">受刊公司</label>
+                                <p class="input-value"><span class="">英屬維京群島商弘日數位科技股份有限公司台灣分公司</span></p>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">聯絡人</label>
+                                <p class="input-value"><span class="">張強尼 Johnny</span></p>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>委刊客戶<br>聯絡資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">委刊客戶</label>
+                                <p class="input-value"><span class="">一之鄉股份有限公司</span></p>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">付款人</label>
+                                <ul class="show-contact-list">
+                                    <li>
+                                        <p class="name name-pay">張小姐(財務)</p>
+                                        <div class="info clearfix">
+                                            <p>
+                                                <span>地址</span>
+                                                <span>104台北市中山區南京東路三段63號5樓</span>
+                                            </p>
+                                            <p class="phone">
+                                                <span>電話</span>0900-123546
+                                            </p>
+                                            <p class="fax">
+                                                <span>傳真</span>02-2214-2152
+                                            </p>
+                                            <p>
+                                                <span>統編</span>
+                                                <span>21245585</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">聯絡人</label>
+                                <ul class="show-contact-list">
+                                    <li>
+                                        <!-- star + selected 主要聯絡人 -->
+                                        <div class="star selected"></div>
+                                        <!-- 預設聯絡人就先展開，點了再收起-->
+                                        <p class="name">小珍妮(AE)</p>
+                                        <div class="info clearfix">
+                                            <p class="phone">
+                                                <span>電話</span>0900-123546
+                                            </p>
+                                            <p class="fax">
+                                                <span></span>
+                                            </p>
+                                            <p class="mail">
+                                                <span>E-mail</span>
+                                                <span>johnny_chang@service.com.tw</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <!-- 非必填，無部門不會出現 -->
+                            <fieldset>
+                                <label class="item-title">部門</label>
+                                <p class="input-value"><span class="">設計部門</span></p>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>委刊媒體</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">活動名稱</label>
+                                <p class="input-value"><span class="">品牌Q4冬季活動推廣看客戶想填啥就填啥</span></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">起迄日期</label>
+                                <p class="input-value">
+                                    <span class="calendar">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </span>
+                                    2021/04/30 - 2021/06/30
+                                </p>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">產品選項</label>
+                                <div class="confirm">
+                                    <ul class="list-project-single clearfix">
+                                        <li>
+                                            <p>產品名稱或專案名稱</p>
+                                        </li>
+                                        <li>
+                                            <p>威旭購一波-C案</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <div class="media-details">
+                                    <ul>
+                                        <li class="media-title clearfix">
+                                            <div class="ad-media">
+                                                <p>委刊媒體</p>
+                                            </div>
+                                            <div class="ad-type">
+                                                <p>廣告類型</p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <p>每月刊登費用<br><span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p>刊登費用小計<br><span>(未稅)</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>Google</p>
+                                            </div>
+                                            <div class="ad-type">
+                                                <p>關鍵字廣告</p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <p>$30,000</p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p>$90,000</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>Yahoo</p>
+                                            </div>
+                                            <div class="ad-type">
+                                                <p>原生廣告</p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <p>$20,000</p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p>$60,000</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>專案上線禮</p>
+                                            </div>
+                                            <div class="ad-note">
+                                                <p><span>素材1款2式、促銷短影音1支</span></p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p class="c-green">專案贈送</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>帳戶設定費<span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-note">
+                                                <p><span>$3,000-專案減免</span></p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>帳戶服務費<span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-note">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>廣告製作費<span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-note">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="bottom-total clearfix">
+                                        <p>廣告媒體金額小計</p>
+                                        <p class="total">$150,000</p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <div class="media-details">
+                                    <div class="confirm clearfix">
+                                        <h4>優惠加購項目 - 6選1 <span>(原價$30,000，限時85折)</span></h4>
+                                        <p class="input-value">廣告素材製作 6組 (1款9式/組)</p>
+                                    </div>
+                                    <div class="bottom-total clearfix">
+                                        <p>金額小計</p>
+                                        <p class="total">$25,500</p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <div class="media-details">
+                                    <div class="confirm clearfix">
+                                        <h4>小額購一波-3選1 <span>(專案優惠價$18,000)</span></h4>
+                                        <p class="input-value">威旭炫光短影音-直or橫 1支 (15秒，含腳本、拍攝、剪輯)</p>
+                                    </div>
+                                    <div class="bottom-total clearfix">
+                                        <p>金額小計</p>
+                                        <p class="total">-</p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="order-total clearfix">
+                            <p>營業稅 5%<span class="total">8,775</span></p>
+                            <p class="all">委刊總金額<span class="total">184,275</span></p>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>電子發票<br>付款條件</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">發票Email</label>
+                                <ul class="show-contact-list add-row-bg">
+                                    <li>
+                                        <div class="info clearfix">
+                                            <p>
+                                                楚小姐<br>
+                                                173cake@service.com
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info clearfix">
+                                            <p>
+                                                潔西卡<br>
+                                                bodusdsd@service.com
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info clearfix">
+                                            <p>
+                                                張明<br>
+                                                bchakld123bchakld123bchakld123@service.com
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">電子發票形式</label>
+                                <p class="input-value">開立三聯式電子發票</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">開立發票方式</label>
+                                <p class="input-value">逐月付款後開立發票</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">付款條件</label>
+                                <p class="input-value">上檔前逐月付款</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">付款方式</label>
+                                <p class="input-value">匯款</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">備註</label>
+                                <p class="input-value">
+                                    最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦
+                                </p>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool both-btn">
+                <fieldset class="field">
+                    <input class="btn--primary-xl btn-audit-yes" type="submit" value="同意">
+                    <input class="btn--primary-xl btn-audit-no" type="submit" value="拒絕">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

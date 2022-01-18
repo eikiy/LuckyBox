@@ -1359,6 +1359,53 @@ ul.edit-tool li a:hover {
   }
 }
 
+.middle-container .main-container .tools-bar .audit-filter {
+  float: left;
+  padding-right: 20px;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul {
+  border: 1px solid #11948a;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li {
+  float: left;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li a {
+  display: block;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li a p {
+  color: #11948a;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  min-width: 90px;
+  padding: 0 10px;
+  font-size: 0.813rem;
+  letter-spacing: 1px;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li a:hover {
+  background-color: #ebf5f4;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li a.selected {
+  background-color: #11948a;
+  color: #fff;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li a.selected p {
+  color: #fff;
+}
+
+.middle-container .main-container .tools-bar .audit-filter ul li:first-child {
+  border-right: 1px solid #11948a;
+}
+
 .middle-container .main-container .tools-bar a.btn-add {
   float: right;
   font-size: 0.813rem;
@@ -1370,6 +1417,9 @@ ul.edit-tool li a:hover {
   .middle-container .main-container .tools-bar h4.main-title {
     font-size: 1rem;
     width: 100%;
+  }
+  .middle-container .main-container .tools-bar .audit-filter {
+    padding-bottom: 15px;
   }
 }
 
@@ -1866,6 +1916,105 @@ ul.edit-tool li a:hover {
   float: right;
 }
 
+.middle-container .data-list .card ul.audit-yes-no {
+  position: absolute;
+  width: 100px;
+  min-height: 10px;
+  display: block;
+  top: 7px;
+  left: 10px;
+  z-index: 1;
+}
+
+.middle-container .data-list .card ul.audit-yes-no li {
+  width: 50%;
+  float: left;
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a {
+  padding-top: 40px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 0.688rem;
+  color: #b5d3d0;
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 8px;
+  left: calc(50% - 12.5px);
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a.yes::after {
+  background-image: url(../images/svg/audit-yes-lightgreen.svg);
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a.yes:hover, .middle-container .data-list .card ul.audit-yes-no li a.selected-yes {
+  color: #11948a;
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a.yes:hover::after, .middle-container .data-list .card ul.audit-yes-no li a.selected-yes::after {
+  background-image: url(../images/svg/audit-yes.svg);
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a.no::after {
+  background-image: url(../images/svg/audit-no-lightgreen.svg);
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a.no:hover, .middle-container .data-list .card ul.audit-yes-no li a.selected-no {
+  color: #d54848;
+}
+
+.middle-container .data-list .card ul.audit-yes-no li a.no:hover::after, .middle-container .data-list .card ul.audit-yes-no li a.selected-no::after {
+  background-image: url(../images/svg/audit-no.svg);
+}
+
+.middle-container .data-list .card h4.audit-name {
+  float: left;
+  width: calc(22% + 130px);
+  padding-left: 105px;
+  color: #21534f;
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 18px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.middle-container .data-list .card .audit-time {
+  float: left;
+  width: 23%;
+}
+
+.middle-container .data-list .card p.audit-money {
+  float: left;
+  width: 120px;
+}
+
+.middle-container .data-list .card p.audit-project {
+  float: left;
+  width: 18%;
+}
+
+.middle-container .data-list .card p.audit-ae {
+  float: left;
+  width: calc(37% - 250px);
+}
+
 .middle-container .data-list .toptitle-style {
   border-bottom: 1px solid #11948a;
   padding: 12px 20px;
@@ -1876,10 +2025,17 @@ ul.edit-tool li a:hover {
 }
 
 .middle-container .data-list .toptitle-style .controller-order h4,
-.middle-container .data-list .toptitle-style p.controller {
+.middle-container .data-list .toptitle-style h4.audit-name,
+.middle-container .data-list .toptitle-style p.controller,
+.middle-container .data-list .toptitle-style p.audit-time,
+.middle-container .data-list .toptitle-style p.audit-money,
+.middle-container .data-list .toptitle-style p.audit-project,
+.middle-container .data-list .toptitle-style p.audit-ae {
   color: #11948a;
   font-weight: bold;
   line-height: 1.375rem;
+  min-height: 22px;
+  margin-top: 0;
 }
 
 .middle-container .data-list .toptitle-style:hover {
@@ -1921,6 +2077,9 @@ ul.edit-tool li a:hover {
   .middle-container .data-list .card h4.customer-name {
     width: 100%;
     padding-left: 0;
+  }
+  .middle-container .data-list .card h4.audit-name {
+    width: calc(70% - 120px);
   }
   .middle-container .data-list .card p {
     padding-left: 35px;
@@ -1967,14 +2126,97 @@ ul.edit-tool li a:hover {
     width: 25%;
     padding-left: 0;
   }
+  .middle-container .data-list .card p.audit-time {
+    width: 30%;
+    height: 18px;
+  }
+  .middle-container .data-list .card p.audit-money {
+    line-height: 18px;
+  }
+  .middle-container .data-list .card p.audit-project {
+    padding-left: 105px;
+    width: 70%;
+  }
+  .middle-container .data-list .card p.audit-ae {
+    width: 120px;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .middle-container .data-list .card ul.audit-yes-no {
+    top: 10px;
+  }
+  .middle-container .data-list .card h4.audit-name {
+    width: 70%;
+    margin-top: 0;
+  }
+  .middle-container .data-list .card p.audit-time {
+    margin-top: 0;
+  }
+  .middle-container .data-list .card p.audit-money {
+    padding-left: 105px;
+    width: 250px;
+    line-height: initial;
+  }
+  .middle-container .data-list .card p.audit-project {
+    padding-left: 35px;
+    width: calc(70% - 250px);
+  }
+  .middle-container .data-list .card p.audit-ae {
+    width: 30%;
+    float: right;
+  }
 }
 
 @media screen and (max-width: 760px) {
   .middle-container .data-list .card p.controller {
     width: 50%;
   }
+  .middle-container .data-list .card ul.audit-yes-no {
+    left: calc(50% - 50px);
+    top: initial;
+    bottom: 10px;
+  }
+  .middle-container .data-list .card h4.audit-name {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
+  .middle-container .data-list .card p.audit-time {
+    width: calc(100% - 90px);
+    padding-left: 0px;
+    margin-bottom: 2px;
+  }
+  .middle-container .data-list .card p.audit-money {
+    padding-left: 0px;
+    width: 90px;
+    text-align: right;
+    margin-top: 0;
+  }
+  .middle-container .data-list .card p.audit-project {
+    width: calc(100% - 150px);
+    padding-left: 0px;
+    margin-top: 0;
+  }
+  .middle-container .data-list .card p.audit-ae {
+    width: 90px;
+    padding-left: 0px;
+    text-align: right;
+    margin-top: 0;
+    padding-bottom: 32px;
+  }
   .middle-container .data-list .toptitle-style p.controller {
     margin-top: 0;
+  }
+  .middle-container .data-list .toptitle-style h4.audit-name {
+    margin-bottom: 0;
+  }
+  .middle-container .data-list .toptitle-style p.audit-ae {
+    padding-bottom: 0;
+  }
+  .middle-container .data-list .toptitle-style p.audit-time {
+    margin-bottom: 0;
   }
 }
 
@@ -1982,6 +2224,161 @@ ul.edit-tool li a:hover {
   .middle-container .data-list .card .edit-tool {
     opacity: 1;
     background-color: transparent;
+  }
+}
+
+.middle-container .audit-final-list .card ul.audit-yes-no {
+  width: 50px;
+}
+
+.middle-container .audit-final-list .card ul.audit-yes-no li {
+  width: 100%;
+}
+
+.middle-container .audit-final-list .card p.final-time {
+  float: left;
+  padding-left: 50px;
+  width: 15%;
+  font-size: 0.813rem;
+  line-height: 1.063rem;
+  color: #21534f;
+}
+
+.middle-container .audit-final-list .card h4.audit-name {
+  width: 20%;
+  padding-left: 0;
+}
+
+.middle-container .audit-final-list .card p.audit-ae {
+  width: 8%;
+  padding: 0;
+}
+
+.middle-container .audit-final-list .card p.audit-money {
+  width: 10%;
+}
+
+.middle-container .audit-final-list .card .execution-status {
+  float: left;
+  width: 6%;
+  text-align: center;
+}
+
+.middle-container .audit-final-list .card .execution-status p {
+  width: initial;
+  font-size: 0.688rem;
+  float: none;
+  padding: 18px 0 0 0;
+  position: relative;
+}
+
+.middle-container .audit-final-list .card .execution-status p::before {
+  position: absolute;
+  top: 2px;
+  left: calc(50% - 17.5px);
+  content: "";
+  width: 35px;
+  height: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: none;
+}
+
+.middle-container .audit-final-list .card .execution-status .step-one::before {
+  background-image: url(../images/svg/percentage-01.svg);
+}
+
+.middle-container .audit-final-list .card .execution-status .step-two::before {
+  background-image: url(../images/svg/percentage-02.svg);
+}
+
+.middle-container .audit-final-list .card .execution-status .step-three::before {
+  background-image: url(../images/svg/percentage-03.svg);
+}
+
+.middle-container .audit-final-list .toptitle-style p.final-time,
+.middle-container .audit-final-list .toptitle-style .execution-status {
+  font-size: 0.875rem;
+  color: #11948a;
+  font-weight: bold;
+  min-height: 22px;
+  line-height: 1.375rem;
+}
+
+.middle-container .audit-final-list .toptitle-style .execution-status {
+  font-size: 0.813rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .middle-container .audit-final-list .card ul.audit-yes-no {
+    top: initial;
+    bottom: 10px;
+    left: 22px;
+  }
+  .middle-container .audit-final-list .card p {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .middle-container .audit-final-list .card p.final-time {
+    width: 90px;
+    padding-bottom: 35px;
+    padding-left: 0;
+  }
+  .middle-container .audit-final-list .card p.audit-time {
+    width: calc(70% - 90px);
+    margin-bottom: 8px;
+  }
+  .middle-container .audit-final-list .card h4.audit-name {
+    width: calc(100% - 160px);
+    margin-bottom: 5px;
+  }
+  .middle-container .audit-final-list .card p.audit-money {
+    width: 30%;
+    text-align: right;
+    padding: 0;
+  }
+  .middle-container .audit-final-list .card p.audit-project {
+    padding-left: 0;
+    width: calc(80% - 90px);
+  }
+  .middle-container .audit-final-list .card .execution-status {
+    width: 70px;
+  }
+  .middle-container .audit-final-list .card .execution-status p {
+    padding-top: 0px;
+    text-align: right;
+  }
+  .middle-container .audit-final-list .card .execution-status p::before {
+    top: -10px;
+    left: initial;
+    right: 0;
+  }
+  .middle-container .audit-final-list .card p.audit-ae {
+    width: 20%;
+    text-align: right;
+  }
+  .middle-container .audit-final-list .toptitle-style h4.audit-name,
+  .middle-container .audit-final-list .toptitle-style p.audit-time {
+    margin-bottom: 0;
+  }
+  .middle-container .audit-final-list .toptitle-style .execution-status {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .middle-container .audit-final-list .card p.audit-project {
+    width: calc(70% - 90px);
+  }
+  .middle-container .audit-final-list .card p.audit-ae {
+    width: 30%;
   }
 }
 
@@ -3560,6 +3957,20 @@ ul.edit-tool li a:hover {
 
 .popup-container .both-btn .btn--primary-xl {
   margin: 0 5px;
+}
+
+.popup-container .both-btn .btn-audit-yes,
+.popup-container .both-btn .btn-audit-no {
+  text-indent: 44px;
+  letter-spacing: 3px;
+}
+
+.popup-container .both-btn .btn-audit-yes {
+  background: url(../images/svg/audit-yes-white.svg) 42px center no-repeat #11948a;
+}
+
+.popup-container .both-btn .btn-audit-no {
+  background: url(../images/svg/audit-no-white.svg) 42px center no-repeat #d54848;
 }
 
 @media all and (max-width: 650px) {
