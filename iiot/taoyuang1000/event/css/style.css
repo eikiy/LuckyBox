@@ -771,12 +771,9 @@ a.gotop {
 }
 
 .middle-container .event-content .both .table-style {
-  width: calc(50% - 10px);
+  width: calc(33% - 10px);
   float: left;
-}
-
-.middle-container .event-content .both .table-style:last-child {
-  float: right;
+  margin: 5px;
 }
 
 @media all and (max-width: 800px) {
