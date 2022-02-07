@@ -3028,6 +3028,10 @@ ul.edit-tool li a:hover {
   background-color: #f8f8f8;
 }
 
+.popup-container .fillin-box input.w30 {
+  max-width: 30%;
+}
+
 .popup-container .fillin-box .field {
   width: 100%;
   padding: 15px 0;
