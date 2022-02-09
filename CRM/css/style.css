@@ -1718,25 +1718,18 @@ ul.edit-tool li a:hover {
   overflow: hidden;
 }
 
-.middle-container .data-list .card h4.order-name {
+.middle-container .data-list .card .order-name {
   float: left;
   color: #21534f;
   font-size: 0.938rem;
   line-height: 1.2rem;
   width: calc(60% - 230px);
-  padding-left: 48px;
+  padding-left: 55px;
   position: relative;
-  font-weight: bold;
   letter-spacing: 1px;
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-height: 18px;
-  overflow: hidden;
 }
 
-.middle-container .data-list .card h4.order-name::before {
+.middle-container .data-list .card .order-name::before {
   position: absolute;
   top: calc(50% - 2.5px);
   left: 2px;
@@ -1752,6 +1745,22 @@ ul.edit-tool li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.middle-container .data-list .card .order-name .department {
+  font-size: 0.813rem;
+  color: #5e5e5e;
+  display: block;
+}
+
+.middle-container .data-list .card h4.order-name {
+  font-weight: bold;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 18px;
+  overflow: hidden;
 }
 
 .middle-container .data-list .card .controller-order {
@@ -2224,6 +2233,74 @@ ul.edit-tool li a:hover {
   .middle-container .data-list .card .edit-tool {
     opacity: 1;
     background-color: transparent;
+  }
+}
+
+.middle-container .dashboard-list {
+  margin-bottom: 25px;
+}
+
+.middle-container .dashboard-list .card .order-name {
+  width: calc(70% - 270px);
+}
+
+.middle-container .dashboard-list .card .controller-order {
+  width: calc(70% - 320px);
+}
+
+.middle-container .dashboard-list .toptitle-style .order-name h4,
+.middle-container .dashboard-list .toptitle-style .order-percentage p,
+.middle-container .dashboard-list .toptitle-style p.product-valid-period,
+.middle-container .dashboard-list .toptitle-style p.date {
+  font-size: 0.875rem;
+  color: #11948a;
+  font-weight: bold;
+  min-height: 22px;
+  line-height: 1.375rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .middle-container .dashboard-list .card .order-name,
+  .middle-container .dashboard-list .card .controller-order {
+    width: 100%;
+  }
+  .middle-container .dashboard-list .card p.product-valid-period {
+    padding-left: 55px;
+  }
+  .middle-container .dashboard-list .card p.audit-money {
+    width: 50%;
+    padding-left: 55px;
+    margin-top: 8px;
+  }
+  .middle-container .dashboard-list .card p.date {
+    width: 50%;
+  }
+  .middle-container .dashboard-list .card .order-percentage {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .middle-container .dashboard-list .card p.audit-money {
+    text-align: left;
+  }
+  .middle-container .dashboard-list .toptitle-style p.product-valid-period,
+  .middle-container .dashboard-list .toptitle-style p.audit-money,
+  .middle-container .dashboard-list .toptitle-style p.date {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .middle-container .pd-none .card p.product-valid-period {
+    padding-left: 0px;
+  }
+  .middle-container .pd-none .card p.audit-money {
+    padding-left: 0px;
+    width: calc(50% - 40px);
+  }
+  .middle-container .pd-none .toptitle-style .order-percentage p {
+    margin-top: 0;
   }
 }
 

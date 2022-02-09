@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRM 管理後台 - 委刊單</title>
+    <title>CRM 管理後台 - Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -87,13 +87,13 @@
         <nav class="side-menu">
             <ul>
                 <li>
-                    <a  class="selected"href="order.html">委刊單</a>
+                    <a href="order.html">委刊單</a>
                 </li>
                 <li>
                     <a href="customer.html">客戶管理</a>
                 </li>
                 <li>
-                    <a href="customer.html">委刊單審核</a>
+                    <a href="audit.html">委刊單審核</a>
                 </li>
                 <li class="pushy-submenu">
                     <button>服務項目</button>
@@ -124,59 +124,29 @@
         </nav>
         <main class="main-container">
             <section class="content">
-                <h3 class="main-title">委刊單</h3>
-                <div class="tools-bar clearfix">
-                    <div class="search-box">
-                        <input class="default" type="text" placeholder="搜尋名稱/統編/網址">
-                        <p class="btn-text"><a>搜尋</a></p>
-                    </div>
-                    <div class="filter-box">
-                        <a href="#" class=" btn--primary-line-m">
-                            <i class="fas fa-eye"></i>
-                            <span>全部顯示</span>
-                        </a>
-                        <div class="filter-list percentage-step">
-                            <ul>
-                                <li>
-                                    <div class="option-list">
-                                        <input type="checkbox" name="filter-show" value="內含" checked>
-                                        <label for="option">全部顯示</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="option-list step-one">
-                                        <input type="checkbox" name="filter-show" value="已建立">
-                                        <label for="option">已建立</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="option-list step-two">
-                                        <input type="checkbox" name="filter-show" value="已成立">
-                                        <label for="option">已成立</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="option-list step-three">
-                                        <input type="checkbox" name="filter-show" value="已簽回">
-                                        <label for="option">已簽回</label>
-                                    </div>
-                                </li>
-                            </ul>
+                <h3 class="main-title">未完成委刊單</h3>
+                <div class="data-list dashboard-list">
+                    <div class="card toptitle-style clearfix">
+                        <div class="order-name">
+                            <h4>客戶名稱/部門</h4>
                         </div>
+                        <p class="product-valid-period">走期</p>
+                        <p class="audit-money">金額</p>
+                        <p class="date">建立時間</p>
                     </div>
-                    <a href="#popup-add-order" class="btn-add btn--primary-m popup-link">
-                        <i class="fas fa-plus"></i>
-                        <span>新增委刊單</span>
-                    </a>
-                </div>
-                <div class="data-list">
                     <div class="card clearfix">
                         <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p class="c-red">25%</p>
+                            <div class="order-name step-one">
+                                <h4>菁品創意事業有限公司</h4>
+                                <span class="department">行銷公關部門</span> 
                             </div>
-                            <p class="order-customer">雙影創藝有限公司 - 陳啟中(粉粉)</p>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">50,000</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
@@ -186,7 +156,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="copy popup-link" href="#popup-add-protuct">
+                                <a class="copy popup-link" href="#popup-add-order">
                                     <i class="far fa-copy" title="複製"></i>
                                 </a>
                             </li>
@@ -198,160 +168,28 @@
                         </ul>
                     </div>
                     <div class="card clearfix">
-                        <a class="go-detail popup-link">
-                            <h4 class="order-name step-two">購一波專案-C_專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p class="c-orange">75%</p>
-                            </div>
-                            <p class="order-customer">高筱蘋 - 高筱蘋</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                       <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 下架：class + state-off -->
-                    <div class="card state-off clearfix">
-                        <a class="go-detail popup-link">
-                            <h4 class="order-name step-one">夏季優惠專案-如果名稱太常究竟會變怎樣呢</h4>
-                            <div class="order-percentage">
-                                <p></p>
-                            </div>
-                            <p class="order-customer">菁品創意事業有限公司意事業有限公司 - 黃素菁</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card state-off clearfix">
                         <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p></p>
+                            <div class="order-name step-three">
+                                <h4>公司名稱公司名稱</h4>
+                                <span class="department">部門名稱</span>
                             </div>
-                            <p class="order-customer">菁品創意事業有限公司 - 黃素菁</p>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">50,000</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
                             <li>
-                                <a class="edit">
+                                <a class="edit popup-link" href="#popup-edit-order">
                                     <i class="fas fa-pencil-alt" title="編輯"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card clearfix">
-                        <a class="go-detail popup-link">
-                            <h4 class="order-name step-three">夏季優惠專案</h4>
-                            <div class="order-percentage">
-                                <p class="c-green">100%</p>
-                            </div>
-                            <p class="order-customer">日商再春館股份有限公司台灣分公司</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card state-off clearfix">
-                        <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p></p>
-                            </div>
-                            <p class="order-customer">翃泰股份有限公司</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card state-off clearfix">
-                        <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-one">購一波專案-C_專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p></p>
-                            </div>
-                            <p class="order-customer">巴黎萊雅L'Oréal Paris</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card state-off clearfix">
-                        <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-two">購一波專案</h4>
-                            <div class="order-percentage">
-                                <p class="c-orange">55%</p>
-                            </div>
-                            <p class="order-customer">I MIA Scent.</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
+                                <a class="copy popup-link" href="#popup-add-order">
                                     <i class="far fa-copy" title="複製"></i>
                                 </a>
                             </li>
@@ -359,331 +197,113 @@
                     </div>
                     <div class="card clearfix">
                         <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-two">AAAA專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p class="c-orange">50%</p>
+                            <div class="order-name step-two">
+                                <h4>佳量企業股份有限公司</h4>
+                                <span class="department">設計部</span>
                             </div>
-                            <p class="order-customer">昱驊養生瑜珈中心-台北松山店</p>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">50,000</p>
                             <p class="date">2021/09/16 10:10</p>
                         </a>
                         <ul class="edit-tool">
                             <li>
-                                <a class="edit">
+                                <a class="edit popup-link" href="#popup-edit-order">
                                     <i class="fas fa-pencil-alt" title="編輯"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card clearfix">
-                        <a class="go-detail popup-link" href="#popup-order-info">
-                            <h4 class="order-name step-three">購一波專案-C_專案委刊單</h4>
-                            <div class="order-percentage">
-                                <p class="c-green">95%</p>
-                            </div>
-                            <p class="order-customer">生活的藝術 台灣中心 - 宵曉晴</p>
-                            <p class="date">2021/09/16 10:10</p>
-                        </a>
-                        <ul class="edit-tool">
-                            <li>
-                                <a class="edit">
-                                    <i class="fas fa-pencil-alt" title="編輯"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="copy">
+                                <a class="copy popup-link" href="#popup-add-order">
                                     <i class="far fa-copy" title="複製"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="pages clearfix">
-                    <p>1-50列(共220列 )</p>
-                    <ul class="page-nb">
-                        <li>
-                            <a class="none">上一頁</a>
-                        </li>
-                        <li>
-                            <a class="selected">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            ...
-                        </li>
-                        <li>
-                            <a href="#">8</a>
-                        </li>
-                        <li>
-                            <a href="#">9</a>
-                        </li>
-                        <li>
-                            <a href="#">下一頁</a>
-                        </li>
-                    </ul>
-                </p>
-                </div> 
+                <h3 class="main-title">委刊單執行狀况</h3>
+                <div class="data-list dashboard-list pd-none">
+                    <div class="card toptitle-style clearfix">
+                        <div class="controller-order">
+                            <h4>客戶名稱/部門</h4>
+                        </div>
+                        <p class="product-valid-period">走期</p>
+                        <p class="audit-money">金額</p>
+                        <p class="audit-money">目前花費</p>
+                        <div class="order-percentage">
+                            <p>完成度</p>
+                        </div>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <div class="controller-order">
+                                <h4>佳量企業股份有限公司</h4>
+                                <span class="day">部門名稱</span> 
+                            </div>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">50,000</p>
+                            <p class="audit-money">49,000</p>
+                            <div class="order-percentage">
+                                <p class="c-green">100%</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <div class="controller-order">
+                                <h4>菁品創意事業有限公司</h4>
+                            </div>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">50,000</p>
+                            <p class="audit-money">10,000</p>
+                            <div class="order-percentage">
+                                <p class="c-orange">75%</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-order-info">
+                            <div class="controller-order">
+                                <h4>公司名稱公司名稱</h4>
+                                <span class="day">部門名稱</span>
+                            </div>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2021/04/30 - 2021/06/30
+                            </p>
+                            <p class="audit-money">150,000</p>
+                            <p class="audit-money">9,000</p>
+                            <div class="order-percentage">
+                                <p class="c-red">25%</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer-inside">
-            <p>Copyright© 2021 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+            <p>Copyright© 2022 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
         </footer>
     </section>
     </div>
     <!-- pushy JS -->
     <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
-
-    <!-- popup 新增委刊單-->
-    <section id="popup-add-order" class="white-popup mfp-hide">
-        <div class="popup-container">
-            <div class="top-title">
-                <h4><span>新增委刊單</span></h4>
-            </div>
-            <div class="fillin-box">
-                <form>
-                    <div class="field clearfix">
-                        <div class="left-sub-title">
-                            <p>受刊公司<br>聯絡資訊</p>
-                        </div>
-                        <div class="fillin-info">
-                            <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>受刊公司</label>
-                                <div class="the-select">
-                                    <select class="" name="">
-                                        <option value="0">請選擇公司</option>
-                                        <option value="1" selected>威旭數位媒體有限公司</option>
-                                        <option value="2">英屬維京群島商弘日數位科技股份有限公司台灣分公司</option>
-                                    </select>
-                                </div>
-                            </fieldset>
-                            <fieldset class="clearfix">
-                                <label class="item-title">聯絡人</label>
-                                <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
-                                        <i class="fas fa-plus"></i>
-                                        <span>新增聯絡人</span>
-                                    </a>
-                                </div>
-                            </fieldset>
-                        </div>
-                     </div>
-                    <div class="field clearfix">
-                        <div class="left-sub-title">
-                            <p>委刊客戶<br>聯絡資訊</p>
-                        </div>
-                        <div class="fillin-info">
-                            <fieldset class="clearfix">
-                                <label class="item-title">委刊客戶</label>
-                                <div class="confirm search-list">
-                                    <a class="btn-search popup-link" href="#popup-add-projects">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <input class="" type="" name="" value="威旭" placeholder="搜尋名稱">
-                                    <div class="show-add-list">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <p><span>威旭</span>數位</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <p><span>威旭</span>媒體如果文字太長會怎麼辦呢??會怎麼辦呢</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <p><span>威旭</span>數位有限公司-台灣分公司</p>
-                                                </a>
-                                            </li>
-                                            <li class="set">
-                                                <a href="#">
-                                                    <p>"威旭"（新建）</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <!-- 預設付款人帶入上方客戶資料（可改他人） -->
-                            <fieldset class="clearfix">
-                                <label class="item-title">付款人</label>
-                                <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
-                                        <i class="fas fa-plus"></i>
-                                        <span>新增付款人</span>
-                                    </a>
-                                </div>
-                            </fieldset>
-                            <fieldset class="clearfix">
-                                <label class="item-title">聯絡人</label>
-                                <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
-                                        <i class="fas fa-plus"></i>
-                                        <span>新增聯絡人</span>
-                                    </a>
-                                </div>
-                            </fieldset>
-                            <!-- 非必填，無部門不會出現 -->
-                            <fieldset>
-                                <label class="item-title">部門</label>
-                                <div class="the-select">
-                                    <select class="" name="">
-                                        <option value="0">請選擇公司部門</option>
-                                        <option value="1">設計部門</option>
-                                        <option value="2">業務部門</option>
-                                    </select>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="field clearfix">
-                        <div class="left-sub-title">
-                            <p>委刊媒體</p>
-                        </div>
-                        <div class="fillin-info">
-                            <fieldset>
-                                <label class="item-title">活動名稱</label>
-                                <input class="default" type="" name="" value="">
-                            </fieldset>
-                            <fieldset>
-                                <label class="item-title">起迄日期</label>
-                                <div class="confirm clearfix">
-                                    <div class="both-for-date clearfix">
-                                        <input type="date" value="2021-11-06">
-                                        <input type="date" value="2022-05-06">
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset class="clearfix">
-                                <label class="item-title">產品選項</label>
-                                <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
-                                        <i class="fas fa-plus"></i>
-                                        <span>新增產品</span>
-                                    </a>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="field clearfix">
-                        <div class="left-sub-title">
-                            <p>電子發票<br>付款條件</p>
-                        </div>
-                        <div class="fillin-info">
-                            <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>發票Email</label>
-                                <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
-                                        <i class="fas fa-plus"></i>
-                                        <span>新增發票 Email</span>
-                                    </a>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>電子發票形式</label>
-                                <div class="confirm both-for-invoice clearfix">
-                                    <div class="option-list">
-                                        <input type="radio" name="invoice" value="開立三聯式電子發票">
-                                        <label for="option">開立三聯式電子發票</label>
-                                    </div>
-                                    <div class="option-list">
-                                        <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
-                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
-                                    </div>
-                                    <!-- 勾選了其他才出現下面 input -->
-                                    <div class="option-list option-other">
-                                        <input type="radio" name="invoice" value="其他">
-                                        <label for="option">其他</label>
-                                    </div>
-                                    <input class="other" type="" name="" value="">
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>開立發票方式</label>
-                                <div class="confirm both-for-invoice clearfix">
-                                    <div class="option-list">
-                                        <input type="radio" name="invoice1" value="逐月付款後開立發票">
-                                        <label for="option">逐月付款後開立發票</label>
-                                    </div>
-                                    <div class="option-list">
-                                        <input type="radio" name="invoice1" value="預先開立發票後請款">
-                                        <label for="option">預先開立發票後請款</label>
-                                    </div>
-                                    <!-- 勾選了其他才出現下面 input -->
-                                    <div class="option-list option-other">
-                                        <input type="radio" name="invoice1" value="其他">
-                                        <label for="option">其他</label>
-                                    </div>
-                                    <input class="other" type="" name="" value="">
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>付款條件</label>
-                                <div class="confirm both-for-invoice clearfix">
-                                    <div class="option-list">
-                                        <input type="radio" name="payment" value="上檔前逐月付款">
-                                        <label for="option">上檔前逐月付款</label>
-                                    </div>
-                                    <div class="option-list">
-                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
-                                        <label for="option">上檔前季繳(3個月)付款</label>
-                                    </div>
-                                    <div class="option-list">
-                                        <input type="radio" name="payment" value="上檔前一次付清  ">
-                                        <label for="option">上檔前一次付清</label>
-                                    </div>
-                                    <!-- 勾選了其他才出現下面 input -->
-                                    <div class="option-list option-other">
-                                        <input type="radio" name="payment" value="其他">
-                                        <label for="option">其他</label>
-                                    </div>
-                                    <input class="other" type="" name="" value="">
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <label class="item-title"><span class="c-red">*</span>付款方式</label>
-                                <div class="confirm both-for-discount clearfix">
-                                    <div class="option-list">
-                                        <input type="radio" name="payment1" value="匯款">
-                                        <label for="option">匯款</label>
-                                    </div>
-                                    <div class="option-list">
-                                        <input type="radio" name="payment1" value="支票">
-                                        <label for="option">支票</label>
-                                    </div>
-                                    <!-- 勾選了其他才出現下面 input -->
-                                    <div class="option-list option-other">
-                                        <input type="radio" name="payment1" value="其他">
-                                        <label for="option">其他</label>
-                                    </div>
-                                    <!-- <input class="other" type="" name="" value=""> -->
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <label class="item-title">備註</label>
-                                <div class="confirm clearfix">
-                                    <textarea class="width100" placeholder="備註"></textarea>
-                                    <p class="text-remind">*請註明預計付款時間及付款含稅金額 / 如每個月匯款金額不同，需備註各媒體金額分配。</p>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="bottom-btn-tool">
-                <fieldset class="field">
-                    <input class="btn--primary-xl " type="submit" value="儲存">
-                </fieldset>
-            </div>
-        </div>
-    </section>
+    
     <!-- popup 修改委刊單-->
     <section id="popup-edit-order" class="white-popup mfp-hide">
         <div class="popup-container">
@@ -940,7 +560,8 @@
                                             <label for="option">威旭質感廣告影片 1支<span>(15~60秒，含腳本、拍攝、剪輯)</span> </label>
                                         </div>
                                         <div class="option-list">
-                                            <input id="" type="checkbox" name="" value="威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)" checked>
+                                            <input id="" type="checkbox" name="" value="威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)"
+                                                checked>
                                             <label for="option">威旭炫光短影音-直+橫 1組<span> (15秒，含腳本、一次拍攝、剪輯)</span></label>
                                         </div>
                                         <div class="option-list">
@@ -948,11 +569,13 @@
                                             <label for="option">社區電梯螢幕看板廣告 200面<span>(含素材設計1款)</span> </label>
                                         </div>
                                         <div class="option-list">
-                                            <input id="" type="checkbox" name="" value="業配口碑行銷 3篇/月 (日流量3,000以上部落客、粉絲人數5,000以上IG網紅)">
-                                            <label for="option">業配口碑行銷 3篇/月<span>(日流量3,000以上部落客、粉絲人數5,000以上IG網紅)</span> </label>
+                                            <input id="" type="checkbox" name=""
+                                                value="業配口碑行銷 3篇/月 (日流量3,000以上部落客、粉絲人數5,000以上IG網紅)">
+                                            <label for="option">業配口碑行銷 3篇/月<span>(日流量3,000以上部落客、粉絲人數5,000以上IG網紅)</span>
+                                            </label>
                                         </div>
                                         <div class="option-list">
-                                            <input id="" type="checkbox" name="" value= "素人口碑行銷 4組/月 (1開文+5回文/組)">
+                                            <input id="" type="checkbox" name="" value="素人口碑行銷 4組/月 (1開文+5回文/組)">
                                             <label for="option"> 素人口碑行銷 4組/月<span>(1開文+5回文/組)</span> </label>
                                         </div>
                                         <div class="option-list">
@@ -1424,7 +1047,9 @@
                             </fieldset>
                             <fieldset>
                                 <label class="item-title">備註</label>
-                                <p class="input-value">最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦</p>
+                                <p class="input-value">
+                                    最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦最後一個月的費用不同啪啦啪啦
+                                </p>
                             </fieldset>
                         </div>
                     </div>
@@ -1465,7 +1090,8 @@
                                         <li class="btn-add">
                                             <a href="#">
                                                 <p><i class="fas fa-upload"></i>
-                                                <span>上傳檔案</span></p>
+                                                    <span>上傳檔案</span>
+                                                </p>
                                             </a>
                                         </li>
                                     </ul>
@@ -1707,8 +1333,7 @@
                             </div>
                             <div class="option-list">
                                 <input id="" type="checkbox" name="" value="條款內容條款內容條款內容條款內容條款內容條款內容條款內容條款內容條款內容">
-                                <label
-                                    for="option">社區電梯螢幕看板廣告 200面 (含素材設計1款)</label>
+                                <label for="option">社區電梯螢幕看板廣告 200面 (含素材設計1款)</label>
                             </div>
                             <div class="option-list">
                                 <input id="" type="checkbox" name="" value="條款文字捷徑">
