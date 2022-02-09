@@ -435,6 +435,10 @@ a.gotop {
   margin: 0 auto;
 }
 
+.middle-container .main-container .content .main-title a {
+  display: block;
+}
+
 .middle-container .main-container .content .main-title .i-accessories {
   position: absolute;
   width: 15%;
@@ -443,12 +447,12 @@ a.gotop {
 }
 
 .middle-container .main-container .content .main-title .i-a {
-  width: 52%;
+  width: 56%;
   float: left;
 }
 
 .middle-container .main-container .content .main-title .i-b {
-  width: 48%;
+  width: 45%;
   float: left;
   position: absolute;
   bottom: -8px;
@@ -461,13 +465,6 @@ a.gotop {
   }
   .middle-container .main-container .content .main-title .i-b {
     width: 31%;
-    bottom: 39px;
-  }
-}
-
-@media all and (max-width: 400px) {
-  .middle-container .main-container .content .main-title .i-b {
-    bottom: 35px;
   }
 }
 
