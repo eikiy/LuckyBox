@@ -4451,6 +4451,7 @@ ul.edit-tool li a:hover {
 
 .print-order-info {
   padding: 20px;
+  padding-bottom: 75px;
 }
 
 .print-order-info table {
@@ -4516,5 +4517,15 @@ ul.edit-tool li a:hover {
 
 .print-order-info .border-r-none {
   border-right: none;
+}
+
+.print-order-info .bottom-btn-tool {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
