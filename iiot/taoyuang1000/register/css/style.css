@@ -47,6 +47,7 @@ body { background-color: #c93035;}
 
 .btn-style{ cursor: pointer; width: 100%; color: #fff; background-color: #ffc107; font-weight: bold; border-radius:4px; height: 45px; line-height: 45px; font-size: 15px; display: inline-block; max-width: 260px; margin: 10px 0;}
 .btn-style:hover{ opacity: .9; }
+.btn-out{ background-color: #ec759c; display: block; margin: 0 auto; }
 .btn-disabled-style { cursor: no-drop!important; background-color: lightgray!important;}
 
 .edit-userinfo{ width: 100%; padding: 5px 0 0; margin: 0 auto; }
