@@ -30,6 +30,7 @@ body { background-color: #c93035;}
 .landing .text-important{ font-size: 16px;color: #ffcc6f; text-align: right; font-weight: bold; padding: 5px 0 0 105px; letter-spacing: 3;}
 .landing .text-important span{ color: #fff; }
 .landing .text-info{ color: #ffcc6f;}
+.landing .text-info-w{ color: #fff; padding-bottom: 15px;}
 .landing ul.nb{ padding: 15px 0; max-width: 260px; margin: 0 auto;}
 .landing ul.nb li{ border-bottom: 2px dashed #e84d52; padding: 5px 0;}
 .landing ul.nb li p{color: #ffcc6f; font-size: 24px; font-style: italic; font-weight: bold; }
@@ -48,6 +49,7 @@ body { background-color: #c93035;}
 .btn-style{ cursor: pointer; width: 100%; color: #fff; background-color: #ffc107; font-weight: bold; border-radius:4px; height: 45px; line-height: 45px; font-size: 15px; display: inline-block; max-width: 260px; margin: 10px 0;}
 .btn-style:hover{ opacity: .9; }
 .btn-out{ background-color: #ec759c; display: block; margin: 0 auto; }
+.btn-green{background-color: #8bc34a;}
 .btn-disabled-style { cursor: no-drop!important; background-color: lightgray!important;}
 
 .edit-userinfo{ width: 100%; padding: 5px 0 0; margin: 0 auto; }
