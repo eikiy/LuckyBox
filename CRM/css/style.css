@@ -3886,6 +3886,10 @@ ul.edit-tool li a:hover {
   background-color: #ebf5f4;
 }
 
+.popup-container .fillin-box .no-line {
+  border-bottom: none;
+}
+
 .popup-container .fillin-box .text-add {
   padding: 15px 0px 15px 36px;
 }
