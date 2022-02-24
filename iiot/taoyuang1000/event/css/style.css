@@ -531,6 +531,15 @@ a.gotop {
   }
 }
 
+.middle-container .event-content .card .video-box {
+  padding: 20px 0;
+}
+
+.middle-container .event-content .card .video-box iframe {
+  width: 100%;
+  height: 500px;
+}
+
 .middle-container .event-content table.table-style {
   width: 100%;
   overflow: hidden;
@@ -645,6 +654,9 @@ a.gotop {
   .middle-container .event-content .info p {
     font-size: 15px;
   }
+  .middle-container .event-content .info .video-box iframe {
+    height: 420px;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -654,6 +666,18 @@ a.gotop {
   .middle-container .event-content .info a.btn-record {
     font-size: 17px;
     padding: 18px 12px;
+  }
+  .middle-container .event-content .info .video-box iframe {
+    height: 315px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .middle-container .event-content .info .video-box {
+    padding: 5px 0;
+  }
+  .middle-container .event-content .info .video-box iframe {
+    height: 200px;
   }
 }
 
@@ -944,5 +968,11 @@ a.gotop {
   .middle-container .event-content .step-box ul {
     padding-top: 5px;
   }
+}
+
+.middle-container .event-content .inquiret-style ul {
+  border: 4px solid #f45c5c;
+  -webkit-box-shadow: inset rgba(244, 92, 92, 0.46) 0px 2px 6px, rgba(244, 92, 92, 0.46) 0px 2px 6px, rgba(244, 92, 92, 0.46) 2px 2px 10px;
+          box-shadow: inset rgba(244, 92, 92, 0.46) 0px 2px 6px, rgba(244, 92, 92, 0.46) 0px 2px 6px, rgba(244, 92, 92, 0.46) 2px 2px 10px;
 }
 /*# sourceMappingURL=style.css.map */
