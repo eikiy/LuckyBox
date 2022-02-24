@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
     <head>
         <meta charset="UTF-8">
-        <title>註冊 - popup</title>
+        <title>註冊</title>
         <meta name='description' content=""/>
         <meta name='keywords' content=""/>
         <meta name="MobileOptimized" content="width">
@@ -10,31 +10,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:type" content="website"/>
         <link rel="stylesheet" href="css/style.css">
+        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
-        <!-- popup -->
-        <div class="mfp-bg"></div>
-        <div class="mfp-wrap" style="overflow-y: auto;">
-            <div class="mfp-container">
-                <div class="mfp-content">
-                    <section id="popup" class="white-popup mfp-hide">
-                        <div class="popup-container popup-taxi">
-                            <p class="maintitle">註冊失敗</p>
-                            <p class="text-info">您的資料核對不正確，請確認填寫無誤。<br>或聯繫客服協助處理。 0800-123456<br>
-                                客服信箱：<a href="mailto:">service@123.com</a></p>
-                            <button class="btn-style">重新填寫</button>
-                        </div>
-                        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-                    </section>
-                </div>
-            </div>
-        </div>
         <!--  main  -->
         <main class="landing style-taxi">
             <section class="contents-box">
                 <div class="img">
-                    <img src="images/img-title.png" title="虎你好運抽紅包" width="100%">
+                    <img src="images/img-title-taxi.png" title="桃園市民卡 安心乘車HAPPY購" width="100%">
                 </div>
                 <h1 class="maintitle">
                     註冊/登入
@@ -56,9 +40,9 @@
                     </fieldset> 
                     <fieldset class="field">
                         <label for="address"><span>*</span>出生日期<br>(西元)</label> 
-                        <div class="r-input">
-                            <input type="text" id="" placeholder="" required="required">
-                        </div>
+                        <div class="r-input for-bd">
+                            <input id="birthday" type="date" placeholder="出生日期">
+                        </div>  
                     </fieldset>
                     <fieldset class="field">
                         <label for="address">市民卡號</label> 
