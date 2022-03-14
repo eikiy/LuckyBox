@@ -100,7 +100,6 @@ body { background-color: #c93035;}
 .style-taxi ul.nb li{ border-bottom: 2px dashed #ffffff54;}
 
 /*invoice*/
-
 .style-invoice{ background-color: #ef9180;}
 .style-invoice .maintitle{ border-bottom: 2px solid #ffc5ba; margin-bottom: 10px; padding-bottom: 5px;}
 .style-invoice .text-important{ text-align: left; }
@@ -112,6 +111,9 @@ body { background-color: #c93035;}
 .style-invoice .text-important, .style-invoice .privacy-content p, .style-invoice .privacy-content p a, .style-invoice .link a{ color: #ffeb3b;}
 .style-invoice .edit-userinfo .input-both input:first-child{ width: calc(30% - 10px);}
 .style-invoice .edit-userinfo .input-both input:last-child{ width: 70%; float: right; }
+.style-invoice .edit-userinfo .input-verify-code input:first-child{ width: calc(45% - 10px);}
+.style-invoice .edit-userinfo .img-verify-code span{ padding-left: 10px; color: #fff; font-size: 14px;}
+
 .style-invoice p.instruction{ width: 100%; color: #890600; text-align: left; font-size: 13px; padding: 5px 0 15px 105px; }
 .style-invoice p.instruction span{ font-weight: bold; color: #673ab7; }
 .style-invoice p.instruction span.c-yello{ color: #ffeb3b; font-weight: bold; }
