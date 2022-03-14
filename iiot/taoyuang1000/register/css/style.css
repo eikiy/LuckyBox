@@ -99,6 +99,27 @@ body { background-color: #c93035;}
 .style-taxi .edit-userinfo .field .for-bd::after{ background: url(../images/calendar-alt-solid.svg) center center no-repeat #3a8cb1; background-size: 25%;}
 .style-taxi ul.nb li{ border-bottom: 2px dashed #ffffff54;}
 
+/*invoice*/
+
+.style-invoice{ background-color: #ef9180;}
+.style-invoice .maintitle{ border-bottom: 2px solid #ffc5ba; margin-bottom: 10px; padding-bottom: 5px;}
+.style-invoice .text-important{ text-align: left; }
+.style-invoice .text-important a, .style-invoice .a-link{ color: #673ab7; font-weight: bold; font-size: 13px;}
+.style-invoice .a-link{ width: 100%; text-align: right; padding: 5px 0; float: left;}
+.style-invoice .a-link a{ color: #673ab7;}
+.style-invoice .text-important a:hover, .style-invoice .a-link a:hover{ text-decoration: underline; }
+
+.style-invoice .text-important, .style-invoice .privacy-content p, .style-invoice .privacy-content p a, .style-invoice .link a{ color: #ffeb3b;}
+.style-invoice .edit-userinfo .input-both input:first-child{ width: calc(30% - 10px);}
+.style-invoice .edit-userinfo .input-both input:last-child{ width: 70%; float: right; }
+.style-invoice p.instruction{ width: 100%; color: #890600; text-align: left; font-size: 13px; padding: 5px 0 15px 105px; }
+.style-invoice p.instruction span{ font-weight: bold; color: #673ab7; }
+.style-invoice p.instruction span.c-yello{ color: #ffeb3b; font-weight: bold; }
+
+.style-invoice h3.invoice-type{ padding-left: 105px; text-align: left; padding-bottom: 5px; }
+.style-invoice h3.invoice-type a{ color: #fff; border-radius: 5px; border:2px solid #fff; font-weight: bold; padding:4px 12px; display: inline-block; margin: 0 3px; }
+.style-invoice h3.invoice-type a.btn-in{ background-color: #fff; color: #e2655f; }
+
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
 	.landing .maintitle{ font-size: 20px; padding-bottom: 5px; }
@@ -113,6 +134,7 @@ body { background-color: #c93035;}
 	.landing .privacy-content p{ font-size: 13px;}
 
 	.landing .text-important{ letter-spacing: 0; font-size: 14px; padding: 0;}
+	.style-invoice h3.invoice-type, .style-invoice p.instruction{padding-left: 0;}
 	.landing .open-card-nb ul.nb{ padding-bottom: 0; }
 	.landing .open-card-nb ul.nb li{ width: 100%; float: none; max-width: 285px; margin:0 auto 15px auto;}
 }
@@ -136,3 +158,5 @@ body { background-color: #c93035;}
 
 .popup-taxi .maintitle,
 .popup-taxi .text-info a{ color: #50a0c3; }
+.popup-taxi .maintitle,
+.style-invoice .text-info a{ color: #890600; }
