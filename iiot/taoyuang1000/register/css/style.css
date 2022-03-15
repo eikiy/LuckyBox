@@ -23,7 +23,7 @@ a:hover { text-decoration: none; }
 /*===== start ======*/
 body { background-color: #c93035;}
 .landing{ background-color: #c93035; display: block; padding-bottom: 80px;}
-.landing .contents-box{width: 100%; padding:20px; max-width: 600px; margin: 0 auto; text-align: center; }
+.landing .contents-box{min-height:100vh; width: 100%; padding:20px; max-width: 600px; margin: 0 auto; text-align: center; }
 .landing .maintitle{ text-align: right; color: #fff; font-size: 24px; letter-spacing: 4px; font-weight: bold;}
 .landing .subtitle{ font-size: 22px;color: #fff; text-align: center; font-weight: bold; padding: 20px 0; }
 .landing .subtitle span{ font-size: 17px; font-weight: normal; display: inline-block; padding-top: 15px; }
@@ -102,6 +102,8 @@ body { background-color: #c93035;}
 /*invoice*/
 .style-invoice{ background-color: #ef9180;}
 .style-invoice .maintitle{ border-bottom: 2px solid #ffc5ba; margin-bottom: 10px; padding-bottom: 5px;}
+.style-invoice h3.subtitle{ margin:30px auto 15px auto; text-align: center; padding:15px 20px 17px 20px; color: #fff;  font-size: 22px; letter-spacing: 4px; font-weight: bold; border: 2px dashed #ffd0d0; border-radius: 10px;}
+.style-invoice h3.subtitle span{ font-size: 17px; display: block; padding:0 0 5px 0; letter-spacing: 2}
 .style-invoice .text-important{ text-align: left; }
 .style-invoice .text-important a, .style-invoice .a-link{ color: #673ab7; font-weight: bold; font-size: 13px;}
 .style-invoice .a-link{ width: 100%; text-align: right; padding: 5px 0; float: left;}
@@ -119,8 +121,14 @@ body { background-color: #c93035;}
 .style-invoice p.instruction span.c-yello{ color: #ffeb3b; font-weight: bold; }
 
 .style-invoice h3.invoice-type{ padding-left: 105px; text-align: left; padding-bottom: 5px; }
-.style-invoice h3.invoice-type a{ color: #fff; border-radius: 5px; border:2px solid #fff; font-weight: bold; padding:4px 12px; display: inline-block; margin: 0 3px; }
+.style-invoice h3.invoice-type a{ color: #fff; border-radius: 5px; border:2px solid #fff; font-weight: bold; padding:4px 12px; display: inline-block; margin: 0 3px 5px 3px; }
 .style-invoice h3.invoice-type a.btn-in{ background-color: #fff; color: #e2655f; }
+
+.style-invoice .invoice-list{ background-color: #ffc5ba; border-radius: 4px; overflow: hidden; margin: 20px 0;}
+.style-invoice .invoice-list tr th{ background-color: #d17262; color: #fff; letter-spacing: 2px; vertical-align: middle; }
+.style-invoice .invoice-list tr th, .style-invoice .invoice-list tr td{ padding:7px 5px; font-size: 15px;}
+.style-invoice .invoice-list tr:nth-child(odd){ background-color: #ffd4cc; }
+.style-invoice .invoice-list a.icon-delete{ padding: 5px; display: block; }
 
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
