@@ -223,6 +223,12 @@ body {
   background-size: contain;
 }
 
+@media all and (max-width: 670px) {
+  .container .bg-icon {
+    display: none;
+  }
+}
+
 .container .content {
   margin: 0 auto;
   width: 100%;
@@ -271,6 +277,7 @@ body {
 .container .content ul.peach {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .container .content ul.peach li {
@@ -296,13 +303,60 @@ body {
   background-size: 60%;
 }
 
+.container .content ul.peach li.mob-show {
+  position: absolute;
+  display: none;
+}
+
+.container .content ul.peach li.mob-show img {
+  width: 88%;
+}
+
 @media all and (max-width: 670px) {
   .container .content ul.peach {
     width: 85%;
   }
   .container .content ul.peach li {
-    width: 50%;
-    padding: 10px;
+    width: 33%;
+    padding: 5px;
+  }
+  .container .content ul.peach li.mob-show {
+    display: block;
+    right: -30px;
+    bottom: -20px;
+  }
+}
+
+.container .content .event-info {
+  padding: 20px 100px 20px 0;
+}
+
+.container .content .event-info h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.container .content .event-info p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media all and (max-width: 670px) {
+  .container .content .event-info {
+    width: 95%;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+  .container .content .event-info h3 {
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+  .container .content .event-info p {
+    font-size: 13px;
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
