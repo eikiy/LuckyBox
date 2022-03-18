@@ -212,6 +212,25 @@ body {
   position: relative;
 }
 
+.container .fixed-note {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d70000d1;
+  padding: 15px 20px;
+  display: block;
+}
+
+.container .fixed-note p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .container .bg-icon {
   width: 100px;
   height: 100px;
@@ -274,6 +293,12 @@ body {
   }
 }
 
+.container .content .sub-text {
+  text-align: center;
+  color: #ffeb3b;
+  padding-bottom: 5px;
+}
+
 .container .content ul.peach {
   width: 100%;
   margin: 0 auto;
@@ -328,7 +353,7 @@ body {
 }
 
 .container .content .event-info {
-  padding: 20px 100px 20px 0;
+  padding: 20px 100px 70px 0;
 }
 
 .container .content .event-info h3 {
