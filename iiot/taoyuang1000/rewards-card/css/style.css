@@ -219,16 +219,36 @@ body {
   bottom: 0;
   width: 100%;
   background-color: #d70000d1;
-  padding: 15px 20px;
+  padding: 15px 20px 20px 20px;
   display: block;
+  text-align: center;
 }
 
 .container .fixed-note p {
   color: #fff;
   font-weight: bold;
-  text-align: center;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+
+.container .fixed-note button.btn {
+  background-color: #ffeb3b;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.container .fixed-note button.btn:hover {
+  opacity: 0.9;
 }
 
 .container .bg-icon {
@@ -253,7 +273,7 @@ body {
   width: 100%;
   max-width: 800px;
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 150px 20px;
 }
 
 .container .content .title {
@@ -353,7 +373,7 @@ body {
 }
 
 .container .content .event-info {
-  padding: 20px 100px 70px 0;
+  padding: 20px 100px 0px 0;
 }
 
 .container .content .event-info h3 {
