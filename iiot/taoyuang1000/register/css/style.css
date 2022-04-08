@@ -130,6 +130,27 @@ body { background-color: #c93035;}
 .style-invoice .invoice-list tr:nth-child(odd){ background-color: #ffd4cc; }
 .style-invoice .invoice-list a.icon-delete{ padding: 5px; display: block; }
 
+/*queen*/
+.style-queen{ background-color: #f5d2d1;}
+.style-queen .img{max-width: inherit;}
+.style-queen .contents-box{ padding-top: 0; }
+.style-queen .maintitle, .style-queen .text-important span,.style-queen .link a, .style-queen p.text-error, .style-queen .subtitle, .style-queen .privacy-content h4, .style-queen .privacy-content p a{ color: #c43b35; }
+.style-queen .edit-userinfo .field label, .style-queen .text-important, .style-queen .link, .style-queen .privacy-content h3, .style-queen .privacy-content p, .style-queen .privacy-content p a{ color: #333; }
+.style-queen .edit-userinfo .field label span{ color: #e91e63;}
+.style-queen .edit-userinfo .field input{ background-color: #fffdfd; border: 2px solid #efc1b1; color: #333;}
+.style-queen .edit-userinfo .field input::placeholder{ color: #b0b0b0;}
+.style-queen .edit-userinfo .field .for-bd::after{ background-color: #ecbdad; }
+.style-queen .edit-userinfo .field .for-disabled input{ background-color: #eed9d2;}
+.style-queen  .text-info{ color: #333; }
+
+.top-notes{ background-color: #ecbdad; border-radius: 10px; border: 2px solid #efc1b1; padding: 10px 15px 12px 15px; margin-bottom: 15px;}
+.top-notes h4{ font-weight: bold; font-size: 18px; padding-bottom: 8px; color: #c43b35;}
+.top-notes p{ font-weight: bold;  text-align: left;}
+.top-notes p a{ color: #c43b35; }
+.top-notes ul{  width: 100%; list-style: disc; list-style-position:inside; padding-top: 5px;}
+.top-notes ul li{ float: left; padding: 5px 10px 5px 0; font-size: 13px; }
+
+
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
 	.landing .maintitle{ font-size: 20px; padding-bottom: 5px; }
@@ -147,6 +168,7 @@ body { background-color: #c93035;}
 	.style-invoice h3.invoice-type, .style-invoice p.instruction{padding-left: 0;}
 	.landing .open-card-nb ul.nb{ padding-bottom: 0; }
 	.landing .open-card-nb ul.nb li{ width: 100%; float: none; max-width: 285px; margin:0 auto 15px auto;}
+	.top-notes ul li{ font-size: 12px; }
 }
 
 /*popup - style---------*/
@@ -170,3 +192,6 @@ body { background-color: #c93035;}
 .popup-taxi .text-info a{ color: #50a0c3; }
 .popup-taxi .maintitle,
 .style-invoice .text-info a{ color: #890600; }
+
+
+.popup-queen .maintitle{ color: #c43b35; }
