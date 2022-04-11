@@ -1,0 +1,127 @@
+<!DOCTYPE html
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <title>註冊 - popup</title>
+        <meta name='description' content=""/>
+        <meta name='keywords' content=""/>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:type" content="website"/>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <!-- popup -->
+        <div class="mfp-bg"></div>
+        <div class="mfp-wrap" style="overflow-y: auto;">
+            <div class="mfp-container">
+                <div class="mfp-content">
+                    <section id="popup" class="white-popup mfp-hide">
+                        <div class="popup-container">
+                            <div class="icon-404">
+                                <img src="images/circle-xmark-solid.svg">
+                            </div>
+                            <p class="maintitle">註冊失敗</p>
+                            <!-- <p class="text-info">您的資料核對不正確，請確認填寫無誤。<br>
+                                或聯繫客服協助處理。 0800-123456<br>
+                                客服信箱：<a href="mailto:">service@123.com</a></p> -->
+                            <button class="btn-default">確定</button>
+                        </div>
+                        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--  main  -->
+        <main class="landing for-register">
+            <section class="contents-box">
+                <div class="logo"></div>
+                <h1 class="maintitle">加入桃園市民卡</h1>
+                <form class="edit-userinfo">
+                    <fieldset class="field">
+                        <div class="bg-field for-error for-name clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="姓名" required="required">
+                            </div>
+                        </div>
+                        <p class="text-error">格式錯誤</p>
+                    </fieldset> 
+                    <fieldset class="field">
+                        <div class="bg-field for-gender clearfix">
+                            <label for="gender" class="form-label">性別</label> 
+                            <ul class="gender-list clearfix">
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="gender" value="先生" checked>
+                                        <label for="option">先生</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list circle-green">
+                                        <input type="radio" name="gender" value="女士">
+                                        <label for="option">女士</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset> 
+                    <fieldset class="field">
+                        <div class="bg-field for-bd clearfix">
+                            <div class="r-input">
+                                <input id="birthday" type="date" placeholder="生日">
+                            </div>
+                        </div>  
+                    </fieldset>
+
+                    <fieldset class="field">
+                        <div class="bg-field for-map clearfix">
+                            <div class="r-input">
+                            <div class="the-select">
+                                <select class="" name="">
+                                    <option value="0">請選擇國家</option>
+                                    <option value="1" selected="">台灣</option>
+                                    <option value="2">義大利</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-id clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="身分證字號 / 居留證號 / 護照號碼" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-phone clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="手機號碼" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-verify clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="驗證碼" required="required">
+                                <button class="btn-default">發送驗證碼</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-mail for-disabled clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="信箱" required="required" value="eikiy@gmail.com" disabled>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <button class="btn-default">完成註冊</button>
+            </section>
+        </main>
+    </body>
+</html>
+
+
+
