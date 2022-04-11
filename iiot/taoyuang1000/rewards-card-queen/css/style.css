@@ -245,7 +245,7 @@ button.bg-gray {
 .container {
   width: 100%;
   min-height: 100vh;
-  background-color: #f5d2d1;
+  background-color: #fae0df;
   background-size: cover;
   position: relative;
 }
@@ -275,7 +275,15 @@ button.bg-gray {
   width: 100%;
   max-width: 800px;
   position: relative;
-  padding: 20px 20px 180px 20px;
+  background-color: #fff;
+  padding-bottom: 170px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.container .content .title {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container .content .title img {
@@ -291,15 +299,15 @@ button.bg-gray {
 .container .content .sub-text {
   text-align: center;
   color: #e91e63;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .container .content ul.peach {
   width: 100%;
+  padding: 0 10px;
   margin: 0 auto;
   position: relative;
   border-radius: 160px;
-  margin-bottom: 10px;
 }
 
 .container .content ul.peach li {
@@ -357,10 +365,11 @@ button.bg-gray {
 }
 
 .container .content .event-info {
-  width: 100%;
+  width: calc(100% - 30px);
   padding: 25px 20px;
-  border-radius: 6px;
-  background-color: #ffffffd1;
+  border-radius: 20px;
+  background-color: #feedec;
+  margin: 0 auto;
 }
 
 .container .content .event-info h3 {
