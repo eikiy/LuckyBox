@@ -141,7 +141,9 @@ body { background-color: #c93035;}
 .style-queen .edit-userinfo .field input::placeholder{ color: #b0b0b0;}
 .style-queen .edit-userinfo .field .for-bd::after{ background-color: #ecbdad; }
 .style-queen .edit-userinfo .field .for-disabled input{ background-color: #eed9d2;}
-.style-queen  .text-info{ color: #333; }
+.style-queen .text-info{ color: #333; }
+.style-queen h3.subtitle{ margin:30px auto 15px auto; text-align: center; padding:15px 20px 17px 20px; color: #c43b35; background-color: #ffffff78;  font-size: 22px; letter-spacing: 4px; font-weight: bold; border: 2px dashed #c43b35; border-radius: 10px;}
+.style-queen h3.subtitle span{ font-size: 17px; display: block; padding:0 0 15px 0; letter-spacing: 2px}
 
 .top-notes{ background-color: #ecbdad; border-radius: 10px; border: 2px solid #efc1b1; padding: 10px 15px 12px 15px; margin-bottom: 15px;}
 .top-notes h4{ font-weight: bold; font-size: 18px; padding-bottom: 8px; color: #c43b35;}
