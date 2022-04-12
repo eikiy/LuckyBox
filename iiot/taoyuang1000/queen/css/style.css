@@ -441,7 +441,7 @@ a.gotop {
   top: -30px;
 }
 
-.middle-container .main-container h3.sub-title span {
+.middle-container .main-container h3.sub-title span.bg-pink {
   padding: 10px 45px;
   border-radius: 50px;
   margin: 15px auto;
@@ -459,13 +459,37 @@ a.gotop {
 
 @media all and (max-width: 600px) {
   .middle-container .main-container h3.sub-title {
-    font-size: 15px;
     line-height: 24px;
     padding: 20px;
     top: -55px;
   }
-  .middle-container .main-container h3.sub-title span {
-    padding: 6px 15px;
+  .middle-container .main-container h3.sub-title span.bg-pink {
+    padding: 6px 30px;
+  }
+  .middle-container .main-container h3.sub-title span.br {
+    display: block;
+  }
+  .middle-container .main-container h3.sub-title span.no-block {
+    display: none;
+  }
+}
+
+.middle-container .main-container h4.hot-title {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+@media all and (max-width: 500px) {
+  .middle-container .main-container h4.hot-title {
+    padding-top: 30px;
+    font-size: 17px;
+  }
+  .middle-container .main-container h4.hot-title span {
+    display: block;
   }
 }
 
@@ -695,15 +719,16 @@ a.gotop {
 }
 
 @media all and (max-width: 600px) {
-  .middle-container .event-content table.table-style tr th,
+  .middle-container .event-content table.table-style tr th {
+    font-size: 14px;
+  }
   .middle-container .event-content table.table-style tr td {
     line-height: 18px;
     font-size: 12px;
-    font-size: 0.688rem;
   }
-  .middle-container .event-content table.table-style tr th .text-remark,
   .middle-container .event-content table.table-style tr td .text-remark {
     font-size: 0.688rem;
+    padding: 0;
   }
 }
 
@@ -750,7 +775,6 @@ a.gotop {
 
 .middle-container .info ul.list li p {
   font-size: 0.875rem;
-  line-height: 18px;
   line-height: 24px;
   text-align: justify;
   padding-bottom: 0;
@@ -767,6 +791,12 @@ a.gotop {
 
 .middle-container .info ul.list li p a:hover {
   text-decoration: none;
+}
+
+@media all and (max-width: 500px) {
+  .middle-container .info ul.list li p {
+    line-height: 20px;
+  }
 }
 
 .middle-container .event-list {
@@ -870,6 +900,10 @@ a.gotop {
   .middle-container .event-list ul li p {
     font-size: 13px;
     line-height: 20px;
+  }
+  .middle-container .text-remark {
+    max-width: 75%;
+    margin: 0 auto;
   }
 }
 
