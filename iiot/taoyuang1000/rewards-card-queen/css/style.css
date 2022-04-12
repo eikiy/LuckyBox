@@ -378,6 +378,28 @@ button.bg-gray {
   padding-bottom: 15px;
 }
 
+.container .content .event-info h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.container .content .event-info .f-pink {
+  padding-top: 5px;
+  color: #ea6982;
+  font-weight: bold;
+}
+
+.container .content .event-info .f-b {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.container .content .event-info .t-red {
+  font-size: 11px;
+  color: #e91e63;
+}
+
 .container .content .event-info p {
   font-size: 15px;
   line-height: 24px;
@@ -401,19 +423,12 @@ button.bg-gray {
   font-weight: bold;
 }
 
-.container .content .event-info p.f-b {
-  font-weight: bold;
-  padding-top: 5px;
-}
-
-.container .content .event-info p.f-pink {
-  padding-top: 5px;
-  color: #ea6982;
-  font-weight: bold;
+.container .content .event-info ul {
+  padding: 5px 0;
 }
 
 .container .content .event-info ul li {
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
 .container .content .event-info ul.nb {
