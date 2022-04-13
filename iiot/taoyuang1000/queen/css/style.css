@@ -403,7 +403,10 @@ a.gotop {
 }
 
 .middle-container {
-  background-color: #fbebeb;
+  background: #f3c0bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3c0bd), to(#fbebeb));
+  background: linear-gradient(to bottom, #f3c0bd 0%, #fbebeb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c0bd', endColorstr='#fbebeb', GradientType=0);
   overflow: hidden;
 }
 
@@ -427,6 +430,13 @@ a.gotop {
 
 .middle-container .main-container .content .main-title .i-a {
   width: 100%;
+}
+
+.middle-container .main-container .content .main-title .i-b {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .middle-container .main-container h3.sub-title {
@@ -485,12 +495,15 @@ a.gotop {
 
 @media all and (max-width: 500px) {
   .middle-container .main-container h4.hot-title {
-    padding-top: 30px;
     font-size: 17px;
   }
   .middle-container .main-container h4.hot-title span {
     display: block;
   }
+}
+
+.middle-container .main-container h4.pa-01 {
+  padding-top: 10px;
 }
 
 .middle-container .main-container .main-introductio p {
@@ -926,5 +939,9 @@ a.gotop {
 
 .inside-container .main-container .table-style .info ul.list {
   padding-bottom: 0;
+}
+
+.inside-container .main-container .content .main-title .i-b {
+  max-width: 780px;
 }
 /*# sourceMappingURL=style.css.map */
