@@ -151,7 +151,11 @@ body { background-color: #c93035;}
 .top-notes p a{ color: #c43b35; }
 .top-notes ul{  width: 100%; list-style: disc; list-style-position:inside; padding-top: 5px;}
 .top-notes ul li{ float: left; padding: 5px 10px 5px 0; font-size: 13px; }
+.top-notes ul.nb-list{ list-style-type: decimal; }
+.top-notes ul.nb-list li{ float: none; text-align: justify; font-weight: bold; padding: 3px 0;}
+.top-notes ul.nb-list li a{ color: #c43b35; text-decoration: underline; }
 
+.mag-top{margin-top: 10px;}
 
 @media (max-width:650px) {
 	.landing .contents-box{padding-top: 0;}
