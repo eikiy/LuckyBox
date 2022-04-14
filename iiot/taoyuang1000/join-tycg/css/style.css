@@ -122,6 +122,13 @@ a:hover { text-decoration: none; }
 .landing .privacy-content p a{ color: #3e3e3e; text-decoration: underline;}
 .landing .privacy-content p a:hover{text-decoration:none;}
 
+.for-dark{ background: none; background-color: #301318; }
+.for-dark .maintitle{ color: #fff; font-weight: normal; }
+.for-dark .subtitle, .for-dark .middle-box p, .for-dark .text-confirm,
+.for-dark .edit-userinfo .field input, .for-dark .option-list input + label, .for-dark .for-gender label.form-label, .for-dark .the-select select{ color: #fff; }
+.for-dark .the-select select option{ color: #333; }
+.for-dark .edit-userinfo .field .bg-field, .for-dark .edit-userinfo .field .for-bd::before{ background-color: #333; }
+.for-dark .edit-userinfo .field .bg-field{border-color: #333;}
 
 @media (max-width:650px) {
 	.edit-userinfo .field input{ font-size: 14px; }
