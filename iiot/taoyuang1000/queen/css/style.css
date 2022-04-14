@@ -439,6 +439,20 @@ a.gotop {
   padding-bottom: 20px;
 }
 
+.middle-container .main-container .content .main-title .i-b a {
+  float: left;
+  width: 50%;
+  display: block;
+}
+
+.middle-container .main-container .content .main-title .i-b a:hover {
+  opacity: .9;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+}
+
 .middle-container .main-container h3.sub-title {
   position: absolute;
   width: 100%;
@@ -458,6 +472,9 @@ a.gotop {
   background-color: #e5677d;
   display: inline-block;
   color: #fff;
+  border: 2px solid #fff9c8;
+  -webkit-box-shadow: inset rgba(255, 159, 16, 0.46) 0px 2px 6px, rgba(255, 159, 16, 0.46) 0px 2px 6px, rgba(255, 159, 16, 0.46) 2px 2px 10px;
+          box-shadow: inset rgba(255, 159, 16, 0.46) 0px 2px 6px, rgba(255, 159, 16, 0.46) 0px 2px 6px, rgba(255, 159, 16, 0.46) 2px 2px 10px;
 }
 
 @media all and (max-width: 900px) {
