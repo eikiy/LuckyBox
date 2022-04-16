@@ -22,3 +22,11 @@ $(function(){
   $('.go-section-04').click(function(){ $('html,body').animate({scrollTop:$('#goThe04').offset().top-100}, 800); });
   $('.go-section-05').click(function(){ $('html,body').animate({scrollTop:$('#goThe05').offset().top-100}, 800); });
 });
+
+// sub-menu
+$(function(){
+  $('.dropdown a.title').click(function(){
+    $(this).next(".sub-menu").stop(true, true).fadeToggle();
+    return false;
+  });
+});
