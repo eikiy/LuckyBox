@@ -127,6 +127,82 @@ a.gotop {
       li {
         cursor: pointer;
         display: inline-block;
+        font-size: $f-size-m;
+        color: #333;
+        font-weight: bold;
+        padding: 0;
+        a {
+          // padding: 0 15px;
+          min-width: 40px;
+          line-height: 60px;
+          text-align: center;
+          display: block;
+          color: #333;
+          &:hover {
+            color: #e5677d;
+            text-decoration: none;
+          }
+        }
+        &:hover {
+          color: #e5677d;
+          text-decoration: none;
+        }
+        &.dropdown {
+          position: relative;
+          a.title {
+            padding-right: 32px;
+          }
+          &::after {
+            pointer-events: none;
+            position: absolute;
+            top: calc(50% - 7.5px);
+            right: 10px;
+            content: "";
+            width: 12px;
+            height: 15px;
+            display: block;
+            background: url(../images/down-arr.svg) center center no-repeat;
+            background-size: contain;
+          }
+          &:hover {
+            &::after {
+              background: url(../images/down-arr-in.svg) center center no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: calc(50% - 75px);
+      background-color: #f0f0f0;
+      width: 150px;
+      border-radius: 10px;
+      @include has-box-shadow;
+      overflow: hidden;
+      li {
+        padding: 0;
+        width: 100%;
+        float: none;
+        font-size: 13px;
+        a {
+          line-height: 45px;
+        }
+        a:hover {
+          background-color: #fae4e3;
+        }
+      }
+    }
+  }.nav-menu {
+    float: right;
+    ul {
+      text-align: right;
+      li {
+        cursor: pointer;
+        display: inline-block;
         line-height: 60px;
         padding: 0 15px;
         font-size: $f-size-m;
@@ -209,12 +285,6 @@ a.gotop {
           }
           .i-b {
             width: 31%;
-            // bottom: 39px;
-          }
-        }
-        @media all and (max-width: 400px) {
-          .i-b {
-            // bottom: 35px;
           }
         }
       }
