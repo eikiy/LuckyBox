@@ -857,6 +857,33 @@ a.gotop {
   }
 }
 
+.middle-container .info {
+  position: relative;
+}
+
+.middle-container .info .finish {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.753);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle-container .info .finish img {
+  max-width: 35%;
+}
+
 .middle-container .info p {
   font-size: 16px;
   color: #333;
