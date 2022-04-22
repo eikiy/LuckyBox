@@ -10,8 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:type" content="website"/>
         <link rel="stylesheet" href="css/style.css">
-        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     </head>
     <body>
         <!--  main  -->
@@ -19,10 +17,28 @@
             <section class="contents-box">
                 <div class="logo"></div>
                 <h1 class="maintitle">桃園市民卡</h1>
-                <div class="middle-box">
-                    <h2 class="subtitle">買得優惠、買得愉快<br>做自已的女王，盡情寵愛自己！</h2>
-                    <p>桃園市政府</p>
+                <form class="edit-userinfo"> 
+                    <fieldset class="field">
+                        <div class="bg-field for-phone clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="手機號碼" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-verify clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="密碼" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <p class="text-forget"><a href="changepw.html">忘記密碼?</a></p>
+                </form>
+                <div class="both-btn">
+                    <button class="btn-default btn-white">註冊</button>
+                    <button class="btn-default">登入</button>
                 </div>
+                <p class="text-or"><span>或</span></p>
                 <button class="btn-default btn-linelogin">與LINE連動</button>
                 <p class="text-confirm link">點擊市民卡LINE登入，即表示<br>您確認已詳閱<a href="#">隱私權政策</a>，並且同意<a href="#">使用條款</a></p>
             </section>

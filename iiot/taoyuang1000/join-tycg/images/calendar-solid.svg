@@ -2,10 +2,7 @@
 <!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 448 512" style="enable-background:new 0 0 448 512;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#EF6079;}
-</style>
-<path class="st0" d="M96,32c0-17.7,14.3-32,32-32s32,14.3,32,32v32h128V32c0-17.7,14.3-32,32-32s32,14.3,32,32v32h48
+<path fill="#EF6079" d="M96,32c0-17.7,14.3-32,32-32s32,14.3,32,32v32h128V32c0-17.7,14.3-32,32-32s32,14.3,32,32v32h48
 	c26.5,0,48,21.5,48,48v48H0v-48c0-26.5,21.5-48,48-48h48V32z M448,464c0,26.5-21.5,48-48,48H48c-26.5,0-48-21.5-48-48V192h448V464z"
 	/>
 </svg>

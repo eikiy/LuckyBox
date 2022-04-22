@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
     <head>
         <meta charset="UTF-8">
-        <title>註冊</title>
+        <title>註冊 - popup - 密碼重設成功</title>
         <meta name='description' content=""/>
         <meta name='keywords' content=""/>
         <meta name="MobileOptimized" content="width">
@@ -10,11 +10,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:type" content="website"/>
         <link rel="stylesheet" href="css/style.css">
-    </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
-        <!--  main  -->
-        <main class="landing for-register for-dark">
+        <!-- popup -->
+        <div class="mfp-bg"></div>
+        <div class="mfp-wrap" style="overflow-y: auto;">
+            <div class="mfp-container">
+                <div class="mfp-content">
+                    <section id="popup" class="white-popup mfp-hide">
+                        <div class="popup-container">
+                            <div class="img-icon">
+                                <img src="images/circle-done.svg">
+                            </div>
+                            <p class="maintitle">密碼重設成功</p>
+                            <button class="btn-default">確定</button>
+                        </div>
+                        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <main class="landing for-register">
             <section class="contents-box">
                 <h1 class="maintitle"><a class="return" href="#"></a>註冊</h1>
                 <form class="edit-userinfo">
@@ -102,25 +119,6 @@
                             </div>
                         </div>
                     </fieldset>
-                    <!-- <fieldset class="field">
-                        <div class="bg-field for-gender clearfix">
-                            <label for="gender" class="form-label">性別</label> 
-                            <ul class="gender-list clearfix">
-                                <li>
-                                    <div class="option-list">
-                                        <input type="radio" name="gender" value="先生" checked>
-                                        <label for="option">先生</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="option-list circle-green">
-                                        <input type="radio" name="gender" value="女士">
-                                        <label for="option">女士</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </fieldset>  -->
                 </form>
                 <p class="text-confirm link">按一下註冊按鈕，即表示您確認已詳閱<br><a href="#">隱私權政策</a>，並且同意<a href="#">使用條款</a></p>
                 <div class="both-btn">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
     <head>
         <meta charset="UTF-8">
-        <title>註冊</title>
+        <title>桃園市民卡 - 註冊</title>
         <meta name='description' content=""/>
         <meta name='keywords' content=""/>
         <meta name="MobileOptimized" content="width">
@@ -16,44 +16,25 @@
         <!--  main  -->
         <main class="landing for-register">
             <section class="contents-box">
-                <div class="logo"></div>
-                <h1 class="maintitle">加入桃園市民卡</h1>
+                <h1 class="maintitle"><a class="return" href="#"></a>註冊</h1>
                 <form class="edit-userinfo">
                     <fieldset class="field">
                         <div class="bg-field for-error for-name clearfix">
                             <div class="r-input">
+                                <p class="text-must">*必填</p>
                                 <input type="text" id="" placeholder="姓名" required="required">
                             </div>
                         </div>
                         <p class="text-error">格式錯誤</p>
                     </fieldset> 
                     <fieldset class="field">
-                        <div class="bg-field for-gender clearfix">
-                            <label for="gender" class="form-label">性別</label> 
-                            <ul class="gender-list clearfix">
-                                <li>
-                                    <div class="option-list">
-                                        <input type="radio" name="gender" value="先生" checked>
-                                        <label for="option">先生</label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="option-list circle-green">
-                                        <input type="radio" name="gender" value="女士">
-                                        <label for="option">女士</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </fieldset> 
-                    <fieldset class="field">
-                        <div class="bg-field for-bd clearfix">
+                        <div class="bg-field for-id clearfix">
                             <div class="r-input">
-                                <input id="birthday" type="date" placeholder="生日">
+                                <p class="text-must">*必填</p>
+                                <input type="text" id="" placeholder="身分證字號 / 居留證號 / 護照號碼" required="required">
                             </div>
-                        </div>  
+                        </div>
                     </fieldset>
-
                     <fieldset class="field">
                         <div class="bg-field for-map clearfix">
                             <div class="r-input">
@@ -67,13 +48,20 @@
                         </div>
                     </fieldset>
                     <fieldset class="field">
-                        <div class="bg-field for-id clearfix">
+                        <div class="bg-field for-bd clearfix">
                             <div class="r-input">
-                                <p class="text-must">*必填</p>
-                                <input type="text" id="" placeholder="身分證字號 / 居留證號 / 護照號碼" required="required">
+                                <input id="birthday" type="date" placeholder="生日">
+                            </div>
+                        </div>  
+                    </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-mail for-disabled clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="信箱" required="required" value="eikiy@gmail.com" disabled>
                             </div>
                         </div>
                     </fieldset>
+                    <br>
                     <fieldset class="field">
                         <div class="bg-field for-phone clearfix">
                             <div class="r-input">
@@ -91,14 +79,54 @@
                         </div>
                     </fieldset>
                     <fieldset class="field">
-                        <div class="bg-field for-mail for-disabled clearfix">
+                        <div class="bg-field for-verify clearfix">
                             <div class="r-input">
-                                <input type="text" id="" placeholder="信箱" required="required" value="eikiy@gmail.com" disabled>
+                                <p class="text-must">*必填</p>
+                                <input type="text" id="" placeholder="密碼" required="required">
                             </div>
                         </div>
                     </fieldset>
+                    <fieldset class="field">
+                        <div class="bg-field for-verify clearfix">
+                            <div class="r-input">
+                                <p class="text-must">*必填</p>
+                                <input type="text" id="" placeholder="確認" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="field">
+                        <div class="bg-field for-recommend clearfix">
+                            <div class="r-input">
+                                <input type="text" id="" placeholder="推薦碼" required="required">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- <fieldset class="field">
+                        <div class="bg-field for-gender clearfix">
+                            <label for="gender" class="form-label">性別</label> 
+                            <ul class="gender-list clearfix">
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="gender" value="先生" checked>
+                                        <label for="option">先生</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list circle-green">
+                                        <input type="radio" name="gender" value="女士">
+                                        <label for="option">女士</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>  -->
                 </form>
-                <button class="btn-default btn-disabled">完成註冊</button>
+                <p class="text-confirm link">按一下註冊按鈕，即表示您確認已詳閱<br><a href="#">隱私權政策</a>，並且同意<a href="#">使用條款</a></p>
+                <div class="both-btn">
+                    <button class="btn-default btn-white">略過</button>
+                    <button class="btn-default btn-disabled">完成註冊</button>
+                </div>
             </section>
         </main>
     </body>
