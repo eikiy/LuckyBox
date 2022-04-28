@@ -123,8 +123,9 @@ a:hover { text-decoration: none; }
 .edit-userinfo .field .for-mail::after{ background: url(../images/envelope-solid.svg) center center no-repeat; background-size: 33%;}
 .edit-userinfo .field .for-recommend::after{ background: url(../images/users-solid.svg) center center no-repeat; background-size: 40%;}
 
+.edit-userinfo .field .for-verify{ position: relative;}
 .edit-userinfo .field .for-verify input{ float: left; width: calc(100% - 90px); }
-.edit-userinfo .field .for-verify button{ float: left; min-width: 85px; height: 30px; line-height: 28px; font-size: 13px; margin: 4px 4px 0 0; }
+.edit-userinfo .field .for-verify button{ position: absolute; top: -1px; right: 0px;  min-width: 85px; height: 30px; line-height: 28px; font-size: 13px; margin: 4px 4px 0 0; }
 .edit-userinfo .field .for-verify::after{ background: url(../images/lock-solid.svg) center center no-repeat; background-size: 31%;}
 
 
