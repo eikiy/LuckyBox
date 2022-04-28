@@ -132,6 +132,7 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 
 .edit-userinfo .field input{ background:none;appearance:none;-moz-appearance:none; -webkit-appearance:none; background-color: transparent; text-align: left; width: 100%; line-height: 38px; height: 38px;}
 .edit-userinfo .field input::placeholder{ color: #BDBDBD;}
+.edit-userinfo .field input::-webkit-date-and-time-value {text-align: left;}
 
 .edit-userinfo .field .for-error{ border-color: #F2994A; }
 .edit-userinfo .field .for-disabled{ background-color: #e6e6e6; border-color: #e6e6e6; }
