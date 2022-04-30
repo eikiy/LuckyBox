@@ -67,7 +67,7 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .landing ul.nb li p{color: #ffcc6f; font-size: 24px; font-style: italic; font-weight: bold; }
 
 .landing .img{ max-width: 500px; margin: 0 auto; }
-.landing p.text-error{ width: 100%; font-size: 14px; font-weight: bold; color: #F2994A; padding: 5px 5px 5px 40px; }
+.landing p.text-error{ width: 100%; font-size: 14px; font-weight: bold; color: #F2994A; padding: 5px 5px 5px 47px; }
 .landing p.text-forget{ color: #828282; padding: 20px 0; }
 .landing p.text-forget a{ color: #828282; }
 .landing p.text-forget a:hover{ text-decoration: underline;}
@@ -111,8 +111,9 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .edit-userinfo .field .bg-field::after{ content: ""; position: absolute; left: 4px; top: 0px; pointer-events: none; width: 40px; height: 38px; display: block; visibility: visible;}
 .edit-userinfo .field .bg-field p.text-must{ position: absolute; right: 15px; color: #EB5757; top:calc(50% - 9.5px); font-size: 13px;}
 
-.edit-userinfo .field .r-input{ width: 100%;}
-
+.edit-userinfo label{ width: 80px; float: left;}
+.edit-userinfo label p.label-title{ font-size: 14px; font-weight: bold; color: #787878; line-height: 38px; }
+.edit-userinfo .field .r-input{ float: left; width:calc(100% - 80px);}
 .edit-userinfo .field .for-name::after{ background: url(../images/user-solid.svg) center center no-repeat; background-size: 30%;}
 .edit-userinfo .field .for-bd::after{ background: url(../images/calendar-solid.svg) center center no-repeat; background-size: 30%;}
 .edit-userinfo .field .for-bd input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
@@ -128,7 +129,7 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .edit-userinfo .field .for-verify input{ float: left; width: calc(100% - 90px); }
 .edit-userinfo .field .for-verify button{ position: absolute; top: -1px; right: 0px;  min-width: 85px; height: 30px; line-height: 28px; font-size: 13px; margin: 4px 4px 0 0; }
 .edit-userinfo .field .for-verify::after{ background: url(../images/lock-solid.svg) center center no-repeat; background-size: 31%;}
-
+.edit-userinfo p.text-note{ padding: 3px 0 0 47px; font-size: 12px; }
 
 .edit-userinfo .field input{ background:none;appearance:none;-moz-appearance:none; -webkit-appearance:none; background-color: transparent; text-align: left; width: 100%; line-height: 38px; height: 38px;}
 .edit-userinfo .field input::placeholder{ color: #BDBDBD;}
@@ -165,10 +166,13 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .for-dark .the-select select option{ color: #333; }
 .for-dark .edit-userinfo .field .bg-field, .for-dark .edit-userinfo .field .for-bd::before{ background-color: #333; }
 .for-dark .edit-userinfo .field .bg-field{border-color: #333;}
+.for-dark .edit-userinfo .field .for-error{ border-color: #F2994A; }
 .for-dark .privacy-content h4, .for-dark .privacy-content h3, .for-dark .privacy-content p{ color: #fff; }
 .for-dark .privacy-content p a{ color: #fff; }
 .for-dark .logo-s{ background: url(../images/img-TC-card-s-w.svg) center center no-repeat; background-size: contain;}
-.for-dark .text-note p, .for-dark .text-note ul{ color: #fff;}
+.for-dark .edit-userinfo label p.label-title{ font-weight: normal; color: #fff; }
+.for-dark .text-note p, .for-dark .text-note ul,
+.for-dark .edit-userinfo p.text-note{ color: #fff;}
 
 @media (max-width:650px) {
 	.edit-userinfo .field input{ font-size: 14px; }
@@ -184,6 +188,10 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 	.landing p.text-forget{padding: 10px 0;}
 	.landing p.text-or{padding: 20px 0;}		
 	.edit-userinfo{padding: 15px 0;}
+	.edit-userinfo label{ width: 70px }
+	.edit-userinfo label p.label-title,
+	.edit-userinfo .field input::placeholder{ font-size: 13px; }
+	.edit-userinfo .field .r-input{ width: calc(100% - 70px); }
 }
 @media (max-width:320px) {
 	.btn-linelogin{ text-indent: 30px; height: 35px; line-height: 35px; max-width: 240px; }
