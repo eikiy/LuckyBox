@@ -27,6 +27,7 @@ body { background-color: #c93035;}
 .landing .maintitle{ text-align: right; color: #fff; font-size: 24px; letter-spacing: 4px; font-weight: bold;}
 .landing .subtitle{ font-size: 22px;color: #fff; text-align: center; font-weight: bold; padding: 20px 0; }
 .landing .subtitle span{ font-size: 17px; font-weight: normal; display: inline-block; padding-top: 15px; }
+
 .landing .text-important{ font-size: 16px;color: #ffcc6f; text-align: right; font-weight: bold; padding: 5px 0 0 105px; letter-spacing: 3;}
 .landing .text-important span{ color: #fff; }
 .landing .text-info{ color: #ffcc6f;}
@@ -144,6 +145,7 @@ body { background-color: #c93035;}
 .style-queen .text-info{ color: #333; }
 .style-queen h3.subtitle{ margin:30px auto 15px auto; text-align: center; padding:15px 20px 17px 20px; color: #c43b35; background-color: #ffffff78;  font-size: 22px; letter-spacing: 4px; font-weight: bold; border: 2px dashed #c43b35; border-radius: 10px;}
 .style-queen h3.subtitle span{ font-size: 17px; display: block; padding:0 0 15px 0; letter-spacing: 2px}
+.style-queen h3.text_c_k a{ color: #ff9800; text-decoration: underline;}
 
 .style-queen table.table-style { width: 100%; overflow: hidden; border-collapse: initial; background-color: #faf3ee; border-radius: 10px; border: 3px solid #ffda4e; font-size: 15px;}
 .style-queen table.table-style .img-card-example { max-width: 220px;}
@@ -162,12 +164,16 @@ body { background-color: #c93035;}
 .top-notes{ background-color: #ecbdad; border-radius: 10px; border: 2px solid #efc1b1; padding: 10px 15px 12px 15px; margin-bottom: 15px;}
 .top-notes h4{ font-weight: bold; font-size: 18px; padding-bottom: 8px; color: #c43b35;}
 .top-notes p{ font-weight: bold;  text-align: left;}
-.top-notes p a{ color: #c43b35; }
+.top-notes p span,.top-notes p a{ color: #c43b35; }
 .top-notes ul{  width: 100%; list-style: disc; list-style-position:inside; padding-top: 5px;}
 .top-notes ul li{ float: left; padding: 5px 10px 5px 0; font-size: 13px; }
 .top-notes ul.nb-list{ list-style-type: decimal; }
 .top-notes ul.nb-list li{ float: none; text-align: justify; font-weight: bold; padding: 3px 0;}
 .top-notes ul.nb-list li a{ color: #c43b35; text-decoration: underline; }
+
+.top-notes ul.go-link{ list-style-type: none;}
+.top-notes ul.go-link li{ padding: 5px 2px 0px; font-size: 13px; font-weight: bold; }
+.top-notes ul.go-link li a{ border:2px solid #c43b35; background-color: #fae7e754; color: #c43b35; display: inline-block; border-radius: 4px; padding: 5px 10px; }
 
 .mag-top{margin-top: 10px;}
 
