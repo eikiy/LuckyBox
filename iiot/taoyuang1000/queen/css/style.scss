@@ -394,6 +394,9 @@ a.gotop {
         @media all and (max-width: 780px) {
           li{
             width: 50%;
+            p{
+              min-height: 34px;
+            }
           }
         }
         @media all and (max-width: 550px) {

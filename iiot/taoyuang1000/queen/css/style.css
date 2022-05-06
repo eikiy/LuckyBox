@@ -686,6 +686,9 @@ a.gotop {
   .middle-container .event-content .card .store-card li {
     width: 50%;
   }
+  .middle-container .event-content .card .store-card li p {
+    min-height: 34px;
+  }
 }
 
 @media all and (max-width: 550px) {
