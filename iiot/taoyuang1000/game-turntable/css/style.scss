@@ -1,0 +1,212 @@
+@import "../css/reset.scss";
+$radius-l: 50px;
+$radius-m: 28px;
+$radius-s: 10px;
+
+$f-size-xxl: 1.875rem; //30px
+$f-size-xl: 1.25rem; //20px
+$f-size-l: 0.938rem; //15px
+$f-size-m: 0.875rem; //14px
+$f-size-s: 0.813rem; //13px
+$f-size-ss: 0.688rem; //11px
+
+@keyframes scaleDraw {
+  0% {
+    transform: scale(1); /*開始為原始大小*/
+  }
+  25% {
+    transform: scale(1.1); /*放大1.1倍*/
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+@mixin has-box-shadow {
+  box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 3px 6px;
+}
+
+// header
+.header-container {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: #f27b8f;
+  padding: 10px;
+  .back-btn {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/fa-solid_chevron-left.svg) center center no-repeat;
+    background-size: 60%;
+  }
+  h2{ 
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color:#f27b8f ;
+    height: 45px;
+    display: block;
+    border-radius: 0 0 50% 50%;
+    left: 0;
+    visibility:visible;
+    @include has-box-shadow;
+  }
+}
+
+.middle-container {
+  min-height: 100vh;
+  // background-color: #fbebeb;
+  background: #f3c0bd;
+  background: -moz-linear-gradient(top, #f3c0bd 0%, #fbebeb 100%);
+  background: -webkit-linear-gradient(top, #f3c0bd 0%, #fbebeb 100%);
+  background: linear-gradient(to bottom, #f3c0bd 0%, #fbebeb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c0bd', endColorstr='#fbebeb', GradientType=0);
+  overflow: hidden;
+  button.start-btn{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #eb6077;
+    @include has-box-shadow;
+  }
+  .main-container{ 
+    padding: 160px 20px 0 20px;
+    width: 100%;
+    .content {
+      width: 100%;
+      margin: 0 auto;
+      .game-turntable{
+        width: 260px;
+        height: 260px;
+        background-color:#eb6077 ;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 0 auto 20px auto;
+        @include has-box-shadow;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          left: calc(50% - 12.5px);
+          top: 4px;
+          width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 12.5px 0 12.5px;
+            border-color: #eb6077 transparent transparent transparent;
+        }
+      }
+      ul{
+        background-color: #fff;
+        width: 240px;
+        height: 240px;
+        border-radius:200px;
+        position: relative;
+        overflow: hidden;
+        &::after{ 
+          content:"";
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: block;
+          background: url(../images/img-TC-card.svg) center center no-repeat #e5677d;
+          background-size: 85%;
+          left: calc(50% - 30px);
+          top:calc(50% - 30px);
+        }
+        li{
+          width: 99.4px;
+          height: 120px;
+          position: absolute;
+          bottom: 120px;
+          left: 70px;
+          text-align: center;
+          clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+          p{
+            width: 100%;
+            height: 120px;
+            display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              align-items: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              padding-bottom: 25px;
+              font-weight: bold;
+              line-height: 24px;
+              &.icon {
+                position: relative;
+                padding-top: 15px;
+                &::after{
+                  position: absolute;
+                  content: "";
+                  width: 30px;
+                  height: 30px;
+                  display: block;
+                  border-radius: 50%;
+                  display: block;
+                  background: url(../images/img-TC-card.svg) center center no-repeat #ffa1b1;
+                  background-size: 85%;
+                  left: calc(50% - 15px);
+                  top:10px;
+                }
+              }
+          }
+        }
+        .t2{
+          transform: rotate(45deg);
+          background-color: #eecdc6;
+          left: 113px;
+          bottom: 103px;
+        }
+        .t3{
+          transform: rotate(90deg );
+          left: 131px;
+          bottom: 60px;
+        }
+        .t4{
+          transform: rotate(135deg);
+          background-color:#eecdc6;
+          left: 112px;
+          bottom: 17px;
+        }
+        .t5{
+          top: 120px;
+          transform: rotate(180deg);
+        }
+        .t6 {
+          transform: rotate(225deg);
+          background-color: #eecdc6;
+          left: 28px;
+          bottom: 17px;
+        }
+        .t7 {
+          top: 60px;
+          transform: rotate(270deg);
+          left: 10px;
+        }
+        .t8 {
+          bottom: 103px;
+          transform: rotate(315deg);
+          background-color: #eecdc6;
+          left: 28px;
+        }
+      }
+    }
+  }
+}

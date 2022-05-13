@@ -1,0 +1,462 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active,
+*:focus,
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Noto Sans TC", Arial, "微軟正黑體", "新細明體", sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  font-size: 0.9375em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  border-color: #9e9e9e;
+}
+
+@-webkit-keyframes scaleDraw {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    /*開始為原始大小*/
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    /*放大1.1倍*/
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes scaleDraw {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    /*開始為原始大小*/
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    /*放大1.1倍*/
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.header-container {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: #f27b8f;
+  padding: 10px;
+}
+
+.header-container .back-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(../images/fa-solid_chevron-left.svg) center center no-repeat;
+  background-size: 60%;
+}
+
+.header-container h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #f27b8f;
+  height: 45px;
+  display: block;
+  border-radius: 0 0 50% 50%;
+  left: 0;
+  visibility: visible;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.middle-container {
+  min-height: 100vh;
+  background: #f3c0bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3c0bd), to(#fbebeb));
+  background: linear-gradient(to bottom, #f3c0bd 0%, #fbebeb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c0bd', endColorstr='#fbebeb', GradientType=0);
+  overflow: hidden;
+}
+
+.middle-container button.start-btn {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #eb6077;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.middle-container .main-container {
+  padding: 160px 20px 0 20px;
+  width: 100%;
+}
+
+.middle-container .main-container .content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.middle-container .main-container .content .game-turntable {
+  width: 260px;
+  height: 260px;
+  background-color: #eb6077;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  position: relative;
+}
+
+.middle-container .main-container .content .game-turntable::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 12.5px);
+  top: 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12.5px 0 12.5px;
+  border-color: #eb6077 transparent transparent transparent;
+}
+
+.middle-container .main-container .content ul {
+  background-color: #fff;
+  width: 240px;
+  height: 240px;
+  border-radius: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.middle-container .main-container .content ul::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: block;
+  background: url(../images/img-TC-card.svg) center center no-repeat #e5677d;
+  background-size: 85%;
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+}
+
+.middle-container .main-container .content ul li {
+  width: 99.4px;
+  height: 120px;
+  position: absolute;
+  bottom: 120px;
+  left: 70px;
+  text-align: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+}
+
+.middle-container .main-container .content ul li p {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 25px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.middle-container .main-container .content ul li p.icon {
+  position: relative;
+  padding-top: 15px;
+}
+
+.middle-container .main-container .content ul li p.icon::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  display: block;
+  background: url(../images/img-TC-card.svg) center center no-repeat #ffa1b1;
+  background-size: 85%;
+  left: calc(50% - 15px);
+  top: 10px;
+}
+
+.middle-container .main-container .content ul .t2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #eecdc6;
+  left: 113px;
+  bottom: 103px;
+}
+
+.middle-container .main-container .content ul .t3 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 131px;
+  bottom: 60px;
+}
+
+.middle-container .main-container .content ul .t4 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  background-color: #eecdc6;
+  left: 112px;
+  bottom: 17px;
+}
+
+.middle-container .main-container .content ul .t5 {
+  top: 120px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.middle-container .main-container .content ul .t6 {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  background-color: #eecdc6;
+  left: 28px;
+  bottom: 17px;
+}
+
+.middle-container .main-container .content ul .t7 {
+  top: 60px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  left: 10px;
+}
+
+.middle-container .main-container .content ul .t8 {
+  bottom: 103px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  background-color: #eecdc6;
+  left: 28px;
+}
+/*# sourceMappingURL=style.css.map */
