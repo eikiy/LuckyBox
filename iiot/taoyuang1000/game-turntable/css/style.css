@@ -203,48 +203,6 @@ body {
   border-color: #9e9e9e;
 }
 
-@-webkit-keyframes scaleDraw {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    /*開始為原始大小*/
-  }
-  25% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    /*放大1.1倍*/
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  75% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes scaleDraw {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    /*開始為原始大小*/
-  }
-  25% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    /*放大1.1倍*/
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  75% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
 .header-container {
   width: 100%;
   position: fixed;
@@ -278,8 +236,8 @@ body {
   border-radius: 0 0 50% 50%;
   left: 0;
   visibility: visible;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 4px 6px 8px;
+          box-shadow: rgba(0, 0, 0, 0.1) 4px 6px 8px;
 }
 
 .middle-container {
@@ -331,7 +289,7 @@ body {
   content: "";
   position: absolute;
   left: calc(50% - 12.5px);
-  top: 4px;
+  top: 2px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -339,16 +297,7 @@ body {
   border-color: #eb6077 transparent transparent transparent;
 }
 
-.middle-container .main-container .content ul {
-  background-color: #fff;
-  width: 240px;
-  height: 240px;
-  border-radius: 200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.middle-container .main-container .content ul::after {
+.middle-container .main-container .content .game-turntable::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -359,6 +308,16 @@ body {
   background-size: 85%;
   left: calc(50% - 30px);
   top: calc(50% - 30px);
+  z-index: 1;
+}
+
+.middle-container .main-container .content ul {
+  background-color: #fff;
+  width: 240px;
+  height: 240px;
+  border-radius: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .middle-container .main-container .content ul li {
@@ -391,7 +350,7 @@ body {
 
 .middle-container .main-container .content ul li p.icon {
   position: relative;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .middle-container .main-container .content ul li p.icon::after {
@@ -405,7 +364,7 @@ body {
   background: url(../images/img-TC-card.svg) center center no-repeat #ffa1b1;
   background-size: 85%;
   left: calc(50% - 15px);
-  top: 10px;
+  top: 15px;
 }
 
 .middle-container .main-container .content ul .t2 {
