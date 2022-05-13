@@ -249,20 +249,6 @@ body {
   overflow: hidden;
 }
 
-.middle-container button.start-btn {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 auto;
-  color: #fff;
-  background-color: #eb6077;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-}
-
 .middle-container .main-container {
   padding: 160px 20px 0 20px;
   width: 100%;
@@ -273,9 +259,23 @@ body {
   margin: 0 auto;
 }
 
+.middle-container .main-container .content button.start-btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #eb6077;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
 .middle-container .main-container .content .game-turntable {
-  width: 260px;
-  height: 260px;
+  width: 400px;
+  height: 400px;
   background-color: #eb6077;
   border-radius: 50%;
   padding: 10px;
@@ -300,32 +300,32 @@ body {
 .middle-container .main-container .content .game-turntable::before {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   display: block;
   background: url(../images/img-TC-card.svg) center center no-repeat #e5677d;
   background-size: 85%;
-  left: calc(50% - 30px);
-  top: calc(50% - 30px);
+  left: calc(50% - 45px);
+  top: calc(50% - 45px);
   z-index: 1;
 }
 
 .middle-container .main-container .content ul {
   background-color: #fff;
-  width: 240px;
-  height: 240px;
-  border-radius: 200px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
 
 .middle-container .main-container .content ul li {
-  width: 99.4px;
-  height: 120px;
+  width: 165px;
+  height: 190px;
   position: absolute;
-  bottom: 120px;
-  left: 70px;
+  bottom: 190px;
+  left: 107px;
   text-align: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
           clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
@@ -333,7 +333,8 @@ body {
 
 .middle-container .main-container .content ul li p {
   width: 100%;
-  height: 120px;
+  height: 200px;
+  font-size: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +344,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 25px;
+  padding-bottom: 55px;
   font-weight: bold;
   line-height: 24px;
 }
@@ -356,14 +357,14 @@ body {
 .middle-container .main-container .content ul li p.icon::after {
   position: absolute;
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: block;
   border-radius: 50%;
   display: block;
   background: url(../images/img-TC-card.svg) center center no-repeat #ffa1b1;
   background-size: 85%;
-  left: calc(50% - 15px);
+  left: calc(50% - 25px);
   top: 15px;
 }
 
@@ -371,27 +372,27 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #eecdc6;
-  left: 113px;
-  bottom: 103px;
+  left: 174px;
+  bottom: 163px;
 }
 
 .middle-container .main-container .content ul .t3 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  left: 131px;
-  bottom: 60px;
+  left: 203px;
+  bottom: 95px;
 }
 
 .middle-container .main-container .content ul .t4 {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   background-color: #eecdc6;
-  left: 112px;
-  bottom: 17px;
+  left: 175px;
+  bottom: 27px;
 }
 
 .middle-container .main-container .content ul .t5 {
-  top: 120px;
+  top: 191px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -400,22 +401,176 @@ body {
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
   background-color: #eecdc6;
-  left: 28px;
-  bottom: 17px;
+  left: 40px;
+  bottom: 28px;
 }
 
 .middle-container .main-container .content ul .t7 {
-  top: 60px;
+  top: 95px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  left: 10px;
+  left: 12px;
 }
 
 .middle-container .main-container .content ul .t8 {
-  bottom: 103px;
+  bottom: 162px;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
   background-color: #eecdc6;
-  left: 28px;
+  left: 39px;
+}
+
+@media all and (max-width: 450px) {
+  .middle-container .main-container .content button.start-btn {
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+  }
+  .middle-container .main-container .content .game-turntable {
+    width: 310px;
+    height: 310px;
+  }
+  .middle-container .main-container .content .game-turntable::after {
+    left: calc(50% - 12.5px);
+    top: 2px;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: #eb6077 transparent transparent transparent;
+  }
+  .middle-container .main-container .content .game-turntable::before {
+    width: 70px;
+    height: 70px;
+    left: calc(50% - 35px);
+    top: calc(50% - 35px);
+  }
+  .middle-container .main-container .content ul {
+    width: 290px;
+    height: 290px;
+  }
+  .middle-container .main-container .content ul li {
+    width: 128px;
+    height: 145px;
+    bottom: 145px;
+    left: 82px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+  }
+  .middle-container .main-container .content ul li p {
+    height: 120px;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .middle-container .main-container .content ul li p.icon {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  .middle-container .main-container .content ul li p.icon::after {
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+    top: 15px;
+  }
+  .middle-container .main-container .content ul .t2 {
+    left: 134px;
+    bottom: 124px;
+  }
+  .middle-container .main-container .content ul .t3 {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    left: 154px;
+    bottom: 72.5px;
+  }
+  .middle-container .main-container .content ul .t4 {
+    left: 134px;
+    bottom: 20px;
+  }
+  .middle-container .main-container .content ul .t5 {
+    top: 146px;
+  }
+  .middle-container .main-container .content ul .t6 {
+    left: 28px;
+    bottom: 17px;
+  }
+  .middle-container .main-container .content ul .t7 {
+    top: 74px;
+    left: 10px;
+  }
+  .middle-container .main-container .content ul .t8 {
+    bottom: 124px;
+    left: 30px;
+  }
+}
+
+@media all and (max-width: 389px) {
+  .middle-container .main-container .content .game-turntable {
+    width: 260px;
+    height: 260px;
+  }
+  .middle-container .main-container .content .game-turntable::after {
+    left: calc(50% - 12.5px);
+    top: 2px;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: #eb6077 transparent transparent transparent;
+  }
+  .middle-container .main-container .content .game-turntable::before {
+    width: 60px;
+    height: 60px;
+    background: url(../images/img-TC-card.svg) center center no-repeat #e5677d;
+    background-size: 85%;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+  }
+  .middle-container .main-container .content ul {
+    width: 240px;
+    height: 240px;
+  }
+  .middle-container .main-container .content ul li {
+    width: 99.4px;
+    height: 120px;
+    bottom: 120px;
+    left: 70px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+  }
+  .middle-container .main-container .content ul li p {
+    height: 105px;
+    padding-bottom: 25px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .middle-container .main-container .content ul li p.icon::after {
+    width: 30px;
+    height: 30px;
+    left: calc(50% - 15px);
+    top: 15px;
+  }
+  .middle-container .main-container .content ul .t2 {
+    left: 113px;
+    bottom: 103px;
+  }
+  .middle-container .main-container .content ul .t3 {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    left: 131px;
+    bottom: 60px;
+  }
+  .middle-container .main-container .content ul .t4 {
+    left: 112px;
+    bottom: 17px;
+  }
+  .middle-container .main-container .content ul .t5 {
+    top: 120px;
+  }
+  .middle-container .main-container .content ul .t6 {
+    left: 28px;
+    bottom: 17px;
+  }
+  .middle-container .main-container .content ul .t7 {
+    top: 60px;
+    left: 10px;
+  }
+  .middle-container .main-container .content ul .t8 {
+    bottom: 103px;
+    left: 28px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

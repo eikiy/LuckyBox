@@ -46,27 +46,27 @@
   background: linear-gradient(to bottom, #f3c0bd 0%, #fbebeb 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c0bd', endColorstr='#fbebeb', GradientType=0);
   overflow: hidden;
-  button.start-btn{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 auto;
-    color: #fff;
-    background-color: #eb6077;
-    @include has-box-shadow;
-  }
   .main-container{ 
     padding: 160px 20px 0 20px;
     width: 100%;
     .content {
       width: 100%;
       margin: 0 auto;
+      button.start-btn {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0 auto;
+          color: #fff;
+          background-color: #eb6077;
+          @include has-box-shadow;
+        }
       .game-turntable{
-        width: 260px;
-        height: 260px;
+        width: 400px;
+        height: 400px;
         background-color:#eb6077 ;
         border-radius: 50%;
         padding: 10px;
@@ -87,42 +87,43 @@
         &::before{ 
           content:"";
           position: absolute;
-          width: 60px;
-          height: 60px;
+          width: 90px;
+          height: 90px;
           border-radius: 50%;
           display: block;
           background: url(../images/img-TC-card.svg) center center no-repeat #e5677d;
           background-size: 85%;
-          left: calc(50% - 30px);
-          top:calc(50% - 30px);
+          left: calc(50% - 45px);
+          top:calc(50% - 45px);
           z-index: 1;
         }
       }
       ul{
         background-color: #fff;
-        width: 240px;
-        height: 240px;
-        border-radius:200px;
+        width: 380px;
+        height: 380px;
+        border-radius:50%;
         position: relative;
         overflow: hidden;
         li{
-          width: 99.4px;
-          height: 120px;
+          width: 165px;
+          height: 190px;
           position: absolute;
-          bottom: 120px;
-          left: 70px;
+          bottom: 190px;
+          left: 107px;
           text-align: center;
           clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
           p{
             width: 100%;
-            height: 120px;
+            height: 200px;
+            font-size: 17px;
             display: -webkit-flex;
               display: flex;
               -webkit-align-items: center;
               align-items: center;
               -webkit-justify-content: center;
               justify-content: center;
-              padding-bottom: 25px;
+              padding-bottom: 55px;
               font-weight: bold;
               line-height: 24px;
               &.icon {
@@ -131,14 +132,14 @@
                 &::after{
                   position: absolute;
                   content: "";
-                  width: 30px;
-                  height: 30px;
+                  width: 50px;
+                  height: 50px;
                   display: block;
                   border-radius: 50%;
                   display: block;
                   background: url(../images/img-TC-card.svg) center center no-repeat #ffa1b1;
                   background-size: 85%;
-                  left: calc(50% - 15px);
+                  left: calc(50% - 25px);
                   top:15px;
                 }
               }
@@ -147,40 +148,205 @@
         .t2{
           transform: rotate(45deg);
           background-color: #eecdc6;
-          left: 113px;
-          bottom: 103px;
+          left: 174px;
+          bottom: 163px;
         }
         .t3{
           transform: rotate(90deg );
-          left: 131px;
-          bottom: 60px;
+          left: 203px;
+          bottom: 95px;
         }
         .t4{
           transform: rotate(135deg);
           background-color:#eecdc6;
-          left: 112px;
-          bottom: 17px;
+          left: 175px;
+          bottom: 27px;
         }
         .t5{
-          top: 120px;
+          top: 191px;
           transform: rotate(180deg);
         }
         .t6 {
           transform: rotate(225deg);
           background-color: #eecdc6;
-          left: 28px;
-          bottom: 17px;
+          left: 40px;
+          bottom: 28px;
         }
         .t7 {
-          top: 60px;
+          top: 95px;
           transform: rotate(270deg);
-          left: 10px;
+          left: 12px;
         }
         .t8 {
-          bottom: 103px;
+          bottom: 162px;
           transform: rotate(315deg);
           background-color: #eecdc6;
-          left: 28px;
+          left: 39px;
+        }
+      }
+      @media all and (max-width: 450px) {
+        button.start-btn {
+            width: 90px;
+            height: 90px;
+            font-size: 18px;
+        }
+              .game-turntable {
+                width: 310px;
+                height: 310px;
+                &::after {
+                  left: calc(50% - 12.5px);
+                  top: 2px;
+                  border-width: 20px 12.5px 0 12.5px;
+                  border-color: #eb6077 transparent transparent transparent;
+                }
+                &::before {
+                  width: 70px;
+                  height: 70px;
+                  left: calc(50% - 35px);
+                  top: calc(50% - 35px);
+                }
+              }
+      
+              ul {
+                width: 290px;
+                height: 290px;
+      
+                li {
+                  width: 128px;
+                  height: 145px;
+                  bottom: 145px;
+                  left: 82px;
+                  clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+                  p {
+                    height: 120px;
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                    &.icon {
+                      padding-top: 50px;
+                      padding-bottom: 25px;
+                      &::after {
+                        width: 40px;
+                        height: 40px;
+                        left: calc(50% - 20px);
+                        top: 15px;
+                      }
+                    }
+                  }
+                }
+      
+                .t2 {
+                  left: 134px;
+                  bottom: 124px;
+                }
+      
+                .t3 {
+                  transform: rotate(90deg);
+                  left: 154px;
+                  bottom: 72.5px;
+                }
+      
+                .t4 {
+                  left: 134px;
+                  bottom: 20px;
+                }
+      
+                .t5 {
+                  top: 146px;
+                }
+      
+                .t6 {
+                  left: 28px;
+                  bottom: 17px;
+                }
+      
+                .t7 {
+                  top: 74px;
+                  left: 10px;
+                }
+                .t8 {
+                  bottom: 124px;
+                  left: 30px;
+                }
+              }
+      }
+      @media all and (max-width: 389px) {
+        .game-turntable {
+          width: 260px;
+          height: 260px;
+          &::after {
+            left: calc(50% - 12.5px);
+            top: 2px;
+            border-width: 20px 12.5px 0 12.5px;
+            border-color: #eb6077 transparent transparent transparent;
+          }
+          &::before {
+            width: 60px;
+            height: 60px;
+            background: url(../images/img-TC-card.svg) center center no-repeat #e5677d;
+            background-size: 85%;
+            left: calc(50% - 30px);
+            top: calc(50% - 30px);
+          }
+        }
+        ul {
+              width: 240px;
+              height: 240px;
+              li {
+                width: 99.4px;
+                height: 120px;
+                bottom: 120px;
+                left: 70px;
+                clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+                p {
+                  height: 105px;
+                  padding-bottom: 25px;
+                  line-height: 24px;
+                  font-size: 14px;
+                  &.icon {
+                    &::after {
+                      width: 30px;
+                      height: 30px;
+                      left: calc(50% - 15px);
+                      top: 15px;
+                    }
+                  }
+                }
+              }
+      
+              .t2 {
+                left: 113px;
+                bottom: 103px;
+              }
+      
+              .t3 {
+                transform: rotate(90deg);
+                left: 131px;
+                bottom: 60px;
+              }
+      
+              .t4 {
+                left: 112px;
+                bottom: 17px;
+              }
+      
+              .t5 {
+                top: 120px;
+              }
+      
+              .t6 {
+                left: 28px;
+                bottom: 17px;
+              }
+      
+              .t7 {
+                top: 60px;
+                left: 10px;
+              }
+      
+              .t8 {
+                bottom: 103px;
+                left: 28px;
+              }
         }
       }
     }
