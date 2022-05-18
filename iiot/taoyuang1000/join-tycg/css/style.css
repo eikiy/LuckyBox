@@ -29,16 +29,16 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .the-select select option::-ms-expand { display: none;}
 .the-select select option { -moz-appearance: none  /* Firefox */  -webkit-appearance: none; /* Safari 和 Chrome */  appearance: none;}
 
-.option-list {  position: relative;}
+.option-list {  position: relative; text-align: left;}
 .option-list input[type="checkbox"]:not(old),
 .option-list input[type="radio"]:not(old) {  position: absolute;  top: 0;  left: 0;  height: 100%;  width: 100% !important;  margin: 0;  padding: 0;  opacity: 0;  cursor: pointer;}
 
-.option-list input[type="checkbox"]:not(old) + label {  display: inline-block;  padding-left: 36px;  line-height: 38px;  z-index: 1;  font-size:14[x];}
+.option-list input[type="checkbox"]:not(old) + label {  display: inline-block;  padding-left: 36px;  /*line-height: 38px;*/  z-index: 1;  font-size:14px;}
 .option-list input[type="checkbox"]:not(old) + label span {  font-size: 0.688rem;}
-.option-list input[type="checkbox"]:not(old) + label::before {  position: absolute;  content: "";  left: 1px;  top: 12px;  background-color: #ebf5f4;  width: 20px;  height: 20px;  border-radius: 5px;  display: block;  z-index: 0;  pointer-events: none;}
+.option-list input[type="checkbox"]:not(old) + label::before {  position: absolute;  content: "";  left: 5px;  top: 0px;  background-color: #fff;  width: 20px;  height: 20px;  border-radius: 5px;  display: block;  z-index: 0;  pointer-events: none;}
 
-.option-list input[type="checkbox"]:not(old) + label::after { position: absolute;  content: "";  left: 4px;  top: 11px;  width: 23px;  height: 18px;  display: none;  background: url("../images/svg/check-yello.svg") no-repeat center center;  pointer-events: none;}
-.option-list input[type="checkbox"]:not(old):checked + label {  color: #11948a;  font-weight: bold;}
+.option-list input[type="checkbox"]:not(old) + label::after { position: absolute;  content: "";  left: 6px;  top: 0px;  width: 23px;  height: 18px;  display: none;  background: url("../images/check-yello.svg") no-repeat center center;  pointer-events: none;}
+.option-list input[type="checkbox"]:not(old):checked + label {  font-weight: bold;}
 .option-list input[type="checkbox"]:not(old):checked + label::after {  display: block;}
 
 .option-list input[type="radio"]:not(old) + label { cursor: pointer; display: inline-block;  padding-left: 34px;  line-height: 38px;  font-size:14px;}
@@ -78,7 +78,7 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .landing p.text-or span::before{ left: initial; right: -70px; }
 
 
-.landing .link{ padding:10px 0 5px 0; font-size: 13px;}
+.landing .link{ padding:10px 0; font-size: 13px;}
 .landing .link a{ color: #5CB8B2; text-decoration:underline;}
 .landing .link a:hover{text-decoration:none;}
 .landing .text-confirm{ color: #545454; }
