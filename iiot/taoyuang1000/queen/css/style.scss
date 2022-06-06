@@ -216,10 +216,10 @@ a.gotop {
 
 .middle-container {
   // background-color: #fbebeb;
-  background: #f3c0bd;
-  background: -moz-linear-gradient(top, #f3c0bd 0%, #fbebeb 100%);
-  background: -webkit-linear-gradient(top, #f3c0bd 0%, #fbebeb 100%);
-  background: linear-gradient(to bottom, #f3c0bd 0%, #fbebeb 100%);
+  background: #fae8e7;
+  background: -moz-linear-gradient(top, #fae8e7 0%, #fbebeb 100%);
+  background: -webkit-linear-gradient(top, #fae8e7 0%, #fbebeb 100%);
+  background: linear-gradient(to bottom, #fae8e7 0%, #fbebeb 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c0bd', endColorstr='#fbebeb', GradientType=0);
   overflow: hidden;
   .main-container {
@@ -235,6 +235,7 @@ a.gotop {
         }
         .i-a {
           width: 100%;
+          margin-bottom: 12px;
         }
         .i-b {
           width: 100%;

@@ -464,9 +464,9 @@ a.gotop {
 }
 
 .middle-container {
-  background: #f3c0bd;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3c0bd), to(#fbebeb));
-  background: linear-gradient(to bottom, #f3c0bd 0%, #fbebeb 100%);
+  background: #fae8e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fae8e7), to(#fbebeb));
+  background: linear-gradient(to bottom, #fae8e7 0%, #fbebeb 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3c0bd', endColorstr='#fbebeb', GradientType=0);
   overflow: hidden;
 }
@@ -491,6 +491,7 @@ a.gotop {
 
 .middle-container .main-container .content .main-title .i-a {
   width: 100%;
+  margin-bottom: 12px;
 }
 
 .middle-container .main-container .content .main-title .i-b {
