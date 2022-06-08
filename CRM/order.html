@@ -181,6 +181,11 @@
                         </a>
                         <ul class="edit-tool">
                             <li>
+                                <a class="edit" target="_blank" href="order_print.html">
+                                    <i class="fas fa-eye" title="預覽"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <a class="edit popup-link" href="#popup-edit-order">
                                     <i class="fas fa-pencil-alt" title="編輯"></i>
                                 </a>
@@ -568,6 +573,10 @@
                                         <i class="fas fa-plus"></i>
                                         <span>新增產品</span>
                                     </a>
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-projects">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增優惠專案</span>
+                                    </a>
                                 </div>
                             </fieldset>
                         </div>
@@ -589,13 +598,26 @@
                     </div>
                     <div class="field clearfix">
                         <div class="left-sub-title">
+                            <p>委刊媒體<br>備註</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">備註說明</label>
+                                <div class="confirm clearfix">
+                                    <textarea class="width100" placeholder="填寫備註"></textarea>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
                             <p>電子發票<br>付款條件</p>
                         </div>
                         <div class="fillin-info">
                             <fieldset>
                                 <label class="item-title"><span class="c-red">*</span>發票Email</label>
                                 <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
                                         <i class="fas fa-plus"></i>
                                         <span>新增發票 Email</span>
                                     </a>
@@ -849,6 +871,10 @@
                                         <i class="fas fa-plus"></i>
                                         <span>新增產品</span>
                                     </a>
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增優惠專案</span>
+                                    </a>
                                     <ul class="list-project-single clearfix">
                                         <li>
                                             <p>產品名稱或專案名稱</p>
@@ -869,13 +895,16 @@
                                                 <p>委刊媒體</p>
                                             </div>
                                             <div class="ad-type">
-                                                <p>廣告類型</p>
+                                                <p>廣告產品</p>
                                             </div>
                                             <div class="ad-money">
                                                 <p>每月刊登費用<br><span>(未稅)</span></p>
                                             </div>
                                             <div class="ad-subtotal">
                                                 <p>刊登費用小計<br><span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-other">
+                                                <p><span>備註 / 移除</span></p>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -891,6 +920,22 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="$90,000">
                                             </div>
+                                            <div class="ad-other">
+                                                <a class="edit gray-disabled">
+                                                    <i class="fas fa-pencil-alt" title="填寫備註"></i>
+                                                </a>
+                                                <a class="delete popup-link" href="#popup-delete-ad">
+                                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                                </a>
+                                            </div>
+                                            <!-- 產品規格描述 -->
+                                            <div class="ad-description">
+                                                <p>這邊是帶出產品規格描述~15~60秒影片拍攝含腳本、拍攝、剪輯等等</p>
+                                            </div>
+                                            <!-- 業務填寫的備註欄位 -->
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註">點選鉛筆後出現備註欄位填寫（鉛筆icon變灰色無法點選，這邊是業務填寫的備註欄）</textarea>
+                                            </div>
                                         </li>
                                         <li class="clearfix">
                                             <div class="ad-media">
@@ -905,6 +950,17 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="$60,000">
                                             </div>
+                                            <div class="ad-other">
+                                                <a class="edit" href="#">
+                                                    <i class="fas fa-pencil-alt" title="填寫備註"></i>
+                                                </a>
+                                                <a class="delete popup-link" href="#popup-delete-ad">
+                                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                                </a>
+                                            </div>
+                                            <div class="ad-description">
+                                                <p>威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯) 威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)</p>
+                                            </div>
                                         </li>
                                         <li class="clearfix">
                                             <div class="ad-media">
@@ -915,6 +971,14 @@
                                             </div>
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="-">
+                                            </div>
+                                            <div class="ad-other">
+                                                <a class="edit gray-disabled" href="#">
+                                                    <i class="fas fa-pencil-alt" title="填寫備註"></i>
+                                                </a>
+                                            </div>
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -927,6 +991,11 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="-">
                                             </div>
+                                            <div class="ad-other">
+                                                <a class="edit" href="#">
+                                                    <i class="fas fa-pencil-alt" title="填寫備註"></i>
+                                                </a>
+                                            </div>
                                         </li>
                                         <li class="clearfix">
                                             <div class="ad-media">
@@ -938,64 +1007,114 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="-">
                                             </div>
+                                            <div class="ad-other">
+                                                <a class="edit" href="#">
+                                                    <i class="fas fa-pencil-alt" title="填寫備註"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="bottom-total clearfix">
+                                            <div class="ad-media">
+                                                <p>廣告媒體金額小計</p>
+                                            </div>
+                                            <div class="ad-type">
+                                                <p></p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <p class="total">$50,000</p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p class="total">$150,000</p>
+                                            </div>
+                                            <div class="total">
+                                                <p>$200,000</p>
+                                            </div>
                                         </li>
                                     </ul>
-                                    <div class="bottom-total clearfix">
+                                    <!-- old -->
+                                    <!-- <div class="bottom-total clearfix">
                                         <p>廣告媒體金額小計</p>
                                         <p class="total">$150,000</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </fieldset>
                             <fieldset class="clearfix">
                                 <div class="media-details">
                                     <div class="confirm clearfix">
-                                        <h4>優惠加購項目 - 6選1 <span>(原價$30,000，限時85折)</span></h4>
-                                        <div class="option-list">
-                                            <input id="" type="checkbox" name="" value="威旭質感廣告影片 1支 (15~60秒，含腳本、拍攝、剪輯)">
-                                            <label for="option">威旭質感廣告影片 1支<span>(15~60秒，含腳本、拍攝、剪輯)</span> </label>
+                                        <div class="discount-title">
+                                            <h4>優惠加購項目 - 6選1 <span>(原價$30,000，限時85折)</span></h4>
+                                            <a class="delete popup-link" href="#popup-delete-ad">
+                                                <i class="far fa-trash-alt" title="刪除"></i>
+                                            </a>
                                         </div>
-                                        <div class="option-list">
-                                            <input id="" type="checkbox" name="" value="威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)" checked>
-                                            <label for="option">威旭炫光短影音-直+橫 1組<span> (15秒，含腳本、一次拍攝、剪輯)</span></label>
+                                        <div class="option-list check-item">
+                                            <input class="w-80" id="" type="checkbox" name="" value="威旭質感廣告影片 1支 (15~60秒，含腳本、拍攝、剪輯)" checked>
+                                            <label for="option">威旭質感廣告影片 1支<span>(15~60秒，含腳本、拍攝、剪輯)</span>
+                                            <span class="day">永久刊登</span></label>
+                                            <div class="ad-nb">
+                                                <!-- 勾選才出現欄位，預設1 -->
+                                                <input type="" name="" value="1">
+                                            </div>
+                                        </div>
+                                        <!-- 勾選 + check-item -->
+                                        <!-- input 標題 + w-80" -->
+                                        <!-- 增加 div：ad-nb -->
+                                        <div class="option-list check-item">
+                                            <input class="w-80" id="" type="checkbox" name="" value="威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)" checked>
+                                            <label for="option">威旭炫光短影音-直+橫 1組<span> (15秒，含腳本、一次拍攝、剪輯)</span><span class="day">2022/05/02 - 2022/12/30</span>
+                                            </label>
+                                            <div class="ad-nb">
+                                                <!-- 勾選才出現欄位，預設1 -->
+                                                <input type="" name="" value="1">
+                                            </div>
                                         </div>
                                         <div class="option-list">
                                             <input id="" type="checkbox" name="" value="社區電梯螢幕看板廣告 200面 (含素材設計1款)">
-                                            <label for="option">社區電梯螢幕看板廣告 200面<span>(含素材設計1款)</span> </label>
+                                            <label for="option">社區電梯螢幕看板廣告 200面<span>(含素材設計1款)</span><span class="day">永久刊登</span></label>
                                         </div>
-                                        <div class="option-list">
-                                            <input id="" type="checkbox" name="" value="業配口碑行銷 3篇/月 (日流量3,000以上部落客、粉絲人數5,000以上IG網紅)">
-                                            <label for="option">業配口碑行銷 3篇/月<span>(日流量3,000以上部落客、粉絲人數5,000以上IG網紅)</span> </label>
+                                        <div class="option-list check-item">
+                                            <input class="w-80"" id="" type="checkbox" name="" value="業配口碑行銷 3篇/月 (日流量3,000以上部落客、粉絲人數5,000以上IG網紅)" checked>
+                                            <label for="option">業配口碑行銷 3篇/月<span>(日流量3,000以上部落客、粉絲人數5,000以上IG網紅，業績嚇嚇叫)</span><span class="day">2022/05/02 - 2022/12/30</span></label>
+                                            <div class="ad-nb">
+                                                <!-- 勾選才出現欄位，預設1 -->
+                                                <input type="" name="" value="1">
+                                            </div>
                                         </div>
                                         <div class="option-list">
                                             <input id="" type="checkbox" name="" value= "素人口碑行銷 4組/月 (1開文+5回文/組)">
-                                            <label for="option"> 素人口碑行銷 4組/月<span>(1開文+5回文/組)</span> </label>
+                                            <label for="option"> 素人口碑行銷 4組/月<span>(1開文+5回文/組)</span><span class="day">2022/05/02 - 2022/12/30</span></label>
                                         </div>
                                         <div class="option-list">
                                             <input id="" type="checkbox" name="" value="廣告素材製作 6組 (1款9式/組)">
-                                            <label for="option"> 廣告素材製作 6組<span> (1款9式/組)</span></label>
+                                            <label for="option"> 廣告素材製作 6組<span> (1款9式/組)</span><span class="day">2022/05/02 - 2022/12/30</span></label>
                                         </div>
                                     </div>
                                     <div class="bottom-total clearfix">
                                         <p>金額小計</p>
-                                        <p class="total">$25,500</p>
+                                        <p class="total">$25,500<span class="c-green">（x3）</span></p>
                                     </div>
                                 </div>
                             </fieldset>
                             <fieldset class="clearfix">
                                 <div class="media-details">
                                     <div class="confirm clearfix">
-                                        <h4>小額購一波-3選1 <span>(專案優惠價$18,000)</span></h4>
+                                        <div class="discount-title">
+                                            <h4>小額購一波-3選1 <span>(專案優惠價$18,000)</span></h4>
+                                            <a class="delete popup-link" href="#popup-delete-ad">
+                                                <i class="far fa-trash-alt" title="刪除"></i>
+                                            </a>
+                                        </div>
                                         <div class="option-list">
                                             <input id="" type="checkbox" name="" value="威旭炫光短影音-直or橫 1支 (15秒，含腳本、拍攝、剪輯)">
-                                            <label for="option">威旭炫光短影音-直or橫 1支<span> (15秒，含腳本、拍攝、剪輯)</span></label>
+                                            <label for="option">威旭炫光短影音-直or橫 1支<span> (15秒，含腳本、拍攝、剪輯)</span><span class="day">永久刊登</span></label>
                                         </div>
                                         <div class="option-list">
                                             <input id="" type="checkbox" name="" value="社區電梯螢幕看板廣告 100面 (含素材設計1款)">
-                                            <label for="option">社區電梯螢幕看板廣告 100面<span>(含素材設計1款)</span></label>
+                                            <label for="option">社區電梯螢幕看板廣告 100面<span>(含素材設計1款)</span><span class="day">永久刊登</span></label>
                                         </div>
                                         <div class="option-list">
                                             <input id="" type="checkbox" name="" value="廣告素材製作 3組 (1款9式/組)">
-                                            <label for="option">廣告素材製作 3組<span>(1款9式/組)</span> </label>
+                                            <label for="option">廣告素材製作 3組<span>(1款9式/組)</span><span class="day">2022/05/02 - 2022/12/30</span></label>
                                         </div>
                                     </div>
                                     <div class="bottom-total clearfix">
@@ -1006,7 +1125,7 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="field clearfix">
+                    <div class="field no-line clearfix">
                         <div class="left-sub-title">
                             <p>其他費用</p>
                         </div>
@@ -1023,6 +1142,50 @@
                         <div class="order-total clearfix">
                             <p>營業稅 5%<span class="total">8,775</span></p>
                             <p class="all">委刊總金額<span class="total">184,275</span></p>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>附加條款</p>
+                        </div>
+                        <div class="fillin-info">
+                            <ul class="list-terms-single no-pad">
+                                <li>
+                                    <p>本案配合媒體為競價模式，可能會依循競價環境變化而有所提升或降低。</p>
+                                </li>
+                                <li>
+                                    <p>本專案媒體金額須於廣告上線起算3個月內花費完畢。</p>
+                                </li>
+                                <li>
+                                    <p>「優惠加購項目6選1」、「小額購一波3選1」使用注意事項</p>
+                                </li>
+                                <li>
+                                    <p>‣ (1) 執行門檻-於廣告媒體月預算金額達專案門檻並廣告上線，且支付該選購項目款項，方可安排執行，選購項目款項如下：
+- 優惠加購項目6選1：31,500(含稅)。8/31前簽約享專案優惠價85折：26,775(含稅)
+- 小額購一波3選1：18,900(含稅)
+(2) 一旦進入任一加購項目執行排程，恕不接受取消及退款。若遇尚未安排之情形，可接受將加購項目之未稅金額轉移至專案委刊註記之廣告媒體費用花費。
+(3) 加購項目須於專案委刊執行期間內提出申請並支付該加購款項，如未使用則視同放棄該項目加購及使用權益。
+(4) 如已支付加購金額，卻未於專案委刊執行期間內提出申請，則可將加購金額轉移至媒體費遞送，恕無法退款。
+(5) 加購項目提出申請後，須於申請日起算3個月內執行完畢。
+(6) 加購項目詳細使用規範請參照工作物製作合約詳細說明。
+‣ 所有加購項目之內容於完稿上刊後皆不接受任何更改。
+‣ 所有加購項目之內容皆不得以其他形式替換，如不執行則視同放棄。
+‣ 「專案上線禮」為專案贈送項目，恕不得以其他形式替換，如不執行則視同放</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>委刊媒體<br>備註</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">備註說明</label>
+                                <div class="confirm clearfix">
+                                    <textarea class="width100" placeholder="填寫備註"></textarea>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="field clearfix">
@@ -1291,11 +1454,15 @@
                                             <div class="ad-type">
                                                 <p>廣告類型</p>
                                             </div>
+                                            
                                             <div class="ad-money">
                                                 <p>每月刊登費用<br><span>(未稅)</span></p>
                                             </div>
                                             <div class="ad-subtotal">
                                                 <p>刊登費用小計<br><span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-other">
+                                                <p><span>產品規格描述</span></p>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -1310,6 +1477,12 @@
                                             </div>
                                             <div class="ad-subtotal">
                                                 <p>$90,000</p>
+                                            </div>
+                                            <div class="ad-other">
+                                                <p style=" text-align:left;">15~60秒影片拍攝含腳本、拍攝、剪輯等等</p>
+                                            </div>
+                                            <div class="ad-note-edit clearfix">
+                                                <p>點選鉛筆後出現的備註欄位內容：2022/1/1~2022/12/31</p>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -1376,11 +1549,16 @@
                                 <div class="media-details">
                                     <div class="confirm clearfix">
                                         <h4>優惠加購項目 - 6選1 <span>(原價$30,000，限時85折)</span></h4>
-                                        <p class="input-value">廣告素材製作 6組 (1款9式/組)</p>
+                                        <div class="check-item clearfix">
+                                            <p class="input-value w-80">廣告素材製作 6組 (1款9式/組)</p>
+                                            <div class="discount-nb">
+                                                <p class="input-value"><span class="c-green">2</span></p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="bottom-total clearfix">
                                         <p>金額小計</p>
-                                        <p class="total">$25,500</p>
+                                        <p class="total">$25,500<span class="c-green">（x2）</span></p>
                                     </div>
                                 </div>
                             </fieldset>
@@ -1398,7 +1576,7 @@
                             </fieldset>
                         </div>
                     </div>
-                    <div class="field clearfix">
+                    <div class="field no-line clearfix">
                         <div class="left-sub-title">
                             <p>其他費用</p>
                         </div>
@@ -1415,6 +1593,50 @@
                         <div class="order-total clearfix">
                             <p>營業稅 5%<span class="total">8,775</span></p>
                             <p class="all">委刊總金額<span class="total">184,275</span></p>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>附加條款</p>
+                        </div>
+                        <div class="fillin-info">
+                            <ul class="list-terms-single no-pad">
+                                <li>
+                                    <p>本案配合媒體為競價模式，可能會依循競價環境變化而有所提升或降低。</p>
+                                </li>
+                                <li>
+                                    <p>本專案媒體金額須於廣告上線起算3個月內花費完畢。</p>
+                                </li>
+                                <li>
+                                    <p>「優惠加購項目6選1」、「小額購一波3選1」使用注意事項</p>
+                                </li>
+                                <li>
+                                    <p>‣ (1) 執行門檻-於廣告媒體月預算金額達專案門檻並廣告上線，且支付該選購項目款項，方可安排執行，選購項目款項如下：
+- 優惠加購項目6選1：31,500(含稅)。8/31前簽約享專案優惠價85折：26,775(含稅)
+- 小額購一波3選1：18,900(含稅)
+(2) 一旦進入任一加購項目執行排程，恕不接受取消及退款。若遇尚未安排之情形，可接受將加購項目之未稅金額轉移至專案委刊註記之廣告媒體費用花費。
+(3) 加購項目須於專案委刊執行期間內提出申請並支付該加購款項，如未使用則視同放棄該項目加購及使用權益。
+(4) 如已支付加購金額，卻未於專案委刊執行期間內提出申請，則可將加購金額轉移至媒體費遞送，恕無法退款。
+(5) 加購項目提出申請後，須於申請日起算3個月內執行完畢。
+(6) 加購項目詳細使用規範請參照工作物製作合約詳細說明。
+‣ 所有加購項目之內容於完稿上刊後皆不接受任何更改。
+‣ 所有加購項目之內容皆不得以其他形式替換，如不執行則視同放棄。
+‣ 「專案上線禮」為專案贈送項目，恕不得以其他形式替換，如不執行則視同放</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>委刊媒體<br>備註</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">備註說明</label>
+                                <p class="input-value">
+                                    委刊媒體的備註說明欄位在此，有什麼想要備註的就在這裡說~
+                                </p>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="field clearfix">
@@ -1577,25 +1799,115 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <div class="confirm clearfix">
+                        <div class="confirm field-four clearfix">
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Yahoo</label>
+                                <p class="name">關鍵字廣告</p>
+                                <!-- 產品規格描述 -->
+                                <p class="description">譬如：15~60秒影片拍攝 含腳本、拍攝、剪輯等等</p>
+                                <p class="fee">5%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Google</label>
+                                <p class="name">原生廣告</p>
+                                <p class="description">威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯) 威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)</p>
+                                <p class="fee">3%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="" checked>
+                                <label class="media" for="option">Google</label>
+                                <p class="name">素人口碑</p>
+                                <p class="description">威旭BN製作*2</p>
+                                <p class="fee">10%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Google</label>
+                                <p class="name">聯播網</p>
+                                <p class="description">社區電梯螢幕看板廣告 200面 (含素材設計1款)</p>
+                                <p class="fee">5%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Google</label>
+                                <p class="name">威旭質感影片</p>
+                                <p class="description">15~60秒影片拍攝 含腳本、拍攝、剪輯等等</p>
+                                <p class="fee">5%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">其他</label>
+                                <p class="name">威旭質感影片</p>
+                                <p class="description">社區電梯螢幕看板廣告 200面 (含素材設計1款)</p>
+                                <p class="fee"></p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">其他</label>
+                                <p class="name">素人口碑</p>
+                                <p class="description">社區電梯螢幕看板廣告 200面 (含素材設計1款)</p>
+                                <p class="fee">1500</p>
+                            </div>
+                        </div>
+                        <p class="text-add"><a class="" href="#">新增產品</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 選擇專案-->
+    <section id="popup-add-projects" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>促銷專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <input type="" name="" value="" placeholder="搜尋專案">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm field-three clearfix">
                             <div class="option-list">
                                 <input id="" type="checkbox" name="" value="">
-                                <label for="option">產品名稱 (15~60秒，含腳本、拍攝、剪輯)</label>
+                                <!-- 專案名稱-->
+                                <label class="name" for="option">威旭質感廣告影片 1支</label>
+                                <!-- 專案描述 -->
+                                <p class="description">15~60秒，含腳本、拍攝、剪輯</p>
+                                <!-- 銷售日期 -->
+                                <p class="day">2022/05/02 - 2022/12/30</p>
                             </div>
                             <div class="option-list">
                                 <input id="" type="checkbox" name="" value="" checked>
-                                <label for="option">威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)</label>
+                                <label class="name" for="option">威旭炫光短影音-直+橫 1組</label>
+                                <p class="description">15秒，含腳本、一次拍攝、剪輯</p>
+                                <p class="day">永久刊登</p>
                             </div>
                             <div class="option-list">
                                 <input id="" type="checkbox" name="" value="">
-                                <label for="option">社區電梯螢幕看板廣告 200面 (含素材設計1款)</label>
+                                <label class="name" for="option">小額購一波-3選1</label>
+                                <p class="description">專案優惠價$18,000</p>
+                                <p class="day">永久刊登</p>
                             </div>
                             <div class="option-list">
-                                <input id="" type="checkbox" name="" value="條款文字捷徑">
-                                <label for="option">社區電梯螢幕看板廣告 200面 (含素材設計1款)</label>
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="name" for="option">專案名稱這裡出現業配口碑行銷 3篇/月</label>
+                                <p class="description">日流量3,000以上部落客、粉絲人數5,000以上IG網紅</p>
+                                <p class="day">2023/01/01 - 2024/01/30</p>
                             </div>
-                            <p class="text-add"><a class="" href="#">新增產品</a></p>
                         </div>
+                        <p class="text-add"><a class="" href="#">新增專案</a></p>
                     </div>
                 </form>
             </div>
@@ -1671,8 +1983,8 @@
                                 <span class="mail">zkiow@weblisher.com.tw</span>
                                 <span class="phone">0988-000123/02-2914-2658</span>
                             </div>
-                            <p class="text-add"><a class="popup-link" href="#popup-add-contact">新增聯絡人</a></p>
                         </div>
+                        <p class="text-add"><a class="popup-link" href="#popup-add-contact">新增聯絡人</a></p>
                     </div>
                 </form>
             </div>
@@ -1783,6 +2095,22 @@
             <div class="bottom-btn-tool">
                 <fieldset class="field">
                     <input class="btn--primary-xl " type="submit" value="確認下架">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 下架確認-->
+    <section id="popup-delete-ad" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>刪除確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要刪除此「廣告媒體」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認刪除">
                 </fieldset>
             </div>
         </div>

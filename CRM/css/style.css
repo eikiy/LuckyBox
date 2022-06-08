@@ -442,11 +442,16 @@ input.has-error:hover, input.has-error:focus {
   font-size: 0.688rem;
 }
 
+.option-list input[type="checkbox"]:not(old) + label span.day {
+  color: #7c7c7c;
+  display: block;
+}
+
 .option-list input[type="checkbox"]:not(old) + label::before {
   position: absolute;
   content: "";
   left: 1px;
-  top: 12px;
+  top: calc(50% - 10px);
   background-color: #ebf5f4;
   width: 20px;
   height: 20px;
@@ -460,7 +465,7 @@ input.has-error:hover, input.has-error:focus {
   position: absolute;
   content: "";
   left: 4px;
-  top: 11px;
+  top: calc(50% - 9px);
   width: 23px;
   height: 18px;
   display: none;
@@ -471,6 +476,11 @@ input.has-error:hover, input.has-error:focus {
 .option-list input[type="checkbox"]:not(old):checked + label {
   color: #11948a;
   font-weight: bold;
+}
+
+.option-list input[type="checkbox"]:not(old):checked + label span.day {
+  color: #7c7c7c;
+  font-weight: normal;
 }
 
 .option-list input[type="checkbox"]:not(old):checked + label::after {
@@ -1071,7 +1081,6 @@ ul.edit-tool li a:hover {
 
 .middle-container .main-container .tools-bar {
   padding: 15px 0 15px 0;
-  float: left;
   width: 100%;
 }
 
@@ -1346,7 +1355,7 @@ ul.edit-tool li a:hover {
 
 .middle-container .main-container .tools-bar .filter-search .search-box .show-add-list {
   top: 42px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .middle-container .main-container .tools-bar .filter-search .search-box input {
@@ -1644,7 +1653,6 @@ ul.edit-tool li a:hover {
   margin-top: 20px;
   background-color: #fff;
   border-radius: 18px;
-  overflow: hidden;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
@@ -1884,7 +1892,7 @@ ul.edit-tool li a:hover {
 }
 
 .middle-container .data-list .card ul.edit-tool {
-  width: 160px;
+  width: 205px;
   opacity: 0;
   position: absolute;
   right: 10px;
@@ -2027,9 +2035,13 @@ ul.edit-tool li a:hover {
 .middle-container .data-list .toptitle-style {
   border-bottom: 1px solid #11948a;
   padding: 12px 20px;
-  position: -webkit-sticky;
+  -webkit-position: -webkit-sticky;
+  -moz-position: sticky;
+  -ms-position: sticky;
+  -o-position: sticky;
   position: sticky;
-  top: 0;
+  z-index: 1;
+  top: 60px;
   background-color: #ebf5f4;
 }
 
@@ -3096,7 +3108,7 @@ ul.edit-tool li a:hover {
 
 .popup-container .fillin-box {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -3667,10 +3679,14 @@ ul.edit-tool li a:hover {
   border: none;
 }
 
+.popup-container .fillin-box .field ul.no-pad li {
+  padding: 0;
+}
+
 .popup-container .fillin-box .field .media-details {
   float: right;
   width: 100%;
-  max-width: 420px;
+  max-width: 530px;
 }
 
 .popup-container .fillin-box .field .media-details h4 {
@@ -3692,8 +3708,8 @@ ul.edit-tool li a:hover {
 .popup-container .fillin-box .field .media-details ul li div {
   padding: 0 5px;
   float: left;
-  width: 25%;
-  height: 40px;
+  width: 20%;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3727,11 +3743,11 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-media {
-  width: 30%;
+  width: 25%;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-type {
-  width: 20%;
+  width: 15%;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-money input, .popup-container .fillin-box .field .media-details ul li div.ad-subtotal input {
@@ -3740,7 +3756,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-note {
-  width: calc(45% - 10px);
+  width: calc(35% - 10px);
   margin: 0 5px;
 }
 
@@ -3748,13 +3764,112 @@ ul.edit-tool li a:hover {
   font-size: 0.688rem;
 }
 
+.popup-container .fillin-box .field .media-details ul li div.ad-other {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-other a {
+  color: #11948a;
+  padding: 10px;
+  display: inline-block;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-other a:hover {
+  opacity: .7;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-other a.gray-disabled {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-filter: gray;
+          filter: gray;
+  opacity: .5;
+  pointer-events: none;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-description {
+  float: left;
+  width: 100%;
+  height: initial;
+  padding: 10px 15px 5px 15px;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-description p {
+  width: 100%;
+  font-size: 0.688rem;
+  color: #7c7c7c;
+  text-align: left;
+  line-height: 18px;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-note-edit {
+  float: left;
+  width: 100%;
+  height: initial;
+  padding-top: 8px;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-note-edit textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 30px;
+  max-height: 100px;
+  line-height: 18px;
+  background-color: #f8f8f8;
+  padding: 5px 15px;
+  font-size: 0.688rem;
+  border-radius: 4px;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.ad-note-edit p {
+  background-color: #fff3f3;
+  width: 100%;
+  padding: 6px 5px;
+}
+
+.popup-container .fillin-box .field .media-details ul li div.total p {
+  color: #11948a;
+  font-size: .9rem;
+}
+
 .popup-container .fillin-box .field .media-details ul li.media-title {
   border: none;
   background-color: #ebf5f4;
 }
 
+.popup-container .fillin-box .field .media-details ul li.media-title .ad-other {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .popup-container .fillin-box .field .media-details ul li:last-child {
-  border: none;
+  margin-top: 3px;
+  border-bottom: none;
+  padding: 10px 0;
+}
+
+.popup-container .fillin-box .field .media-details .discount-title {
+  position: relative;
+}
+
+.popup-container .fillin-box .field .media-details .discount-title h4 {
+  padding-right: 50px;
+}
+
+.popup-container .fillin-box .field .media-details .discount-title a.delete {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 10px;
+  display: block;
+  color: #11948a;
+}
+
+.popup-container .fillin-box .field .media-details .discount-title a.delete:hover {
+  opacity: .7;
 }
 
 .popup-container .fillin-box .field .media-details .bottom-total {
@@ -3774,6 +3889,10 @@ ul.edit-tool li a:hover {
   float: right;
 }
 
+.popup-container .fillin-box .field .media-details .bottom-total p.total span.c-green {
+  color: #11948a;
+}
+
 .popup-container .fillin-box .field .media-details .confirm {
   max-width: 100%;
   float: none;
@@ -3782,6 +3901,42 @@ ul.edit-tool li a:hover {
 
 .popup-container .fillin-box .field .media-details .confirm .input-value {
   max-width: 100%;
+}
+
+.popup-container .fillin-box .field .media-details .check-item {
+  position: relative;
+}
+
+.popup-container .fillin-box .field .media-details .check-item .w-80 {
+  width: calc(100% - 80px) !important;
+}
+
+.popup-container .fillin-box .field .media-details .check-item label {
+  padding-right: 80px;
+}
+
+.popup-container .fillin-box .field .media-details .check-item .ad-nb {
+  position: absolute;
+  width: 65px;
+  top: calc(50% - 18px);
+  right: 0;
+}
+
+.popup-container .fillin-box .field .media-details .check-item .ad-nb input {
+  width: 100%;
+  height: 36px;
+  color: #11948a;
+  font-weight: bold;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.popup-container .fillin-box .field .media-details .check-item .discount-nb {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
 }
 
 .popup-container .fillin-box .field .order-total {
@@ -4007,7 +4162,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .bottom-btn-tool {
-  padding: 35px 20px;
+  padding: 25px 20px;
   background-color: #ebf5f4;
   text-align: center;
   border-radius: 0 0 18px 18px;
@@ -4060,6 +4215,7 @@ ul.edit-tool li a:hover {
 
 @media all and (max-width: 650px) {
   .popup-container .fillin-box {
+    padding: 15px;
     padding-top: 0;
   }
   .popup-container .fillin-box .field .left-sub-title {
@@ -4068,7 +4224,10 @@ ul.edit-tool li a:hover {
     min-height: 50px;
     width: 100%;
     padding: 5px;
-    position: -webkit-sticky;
+    -webkit-position: -webkit-sticky;
+    -moz-position: sticky;
+    -ms-position: sticky;
+    -o-position: sticky;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -4136,6 +4295,12 @@ ul.edit-tool li a:hover {
   border-bottom: 1px dashed #aeaeae;
 }
 
+.popup-choose .popup-container .fillin-box .confirm {
+  max-height: 35vh;
+  min-height: 65px;
+  overflow-y: auto;
+}
+
 .popup-choose .popup-container .fillin-box .field .fillin-info {
   float: none;
   width: 100%;
@@ -4146,12 +4311,170 @@ ul.edit-tool li a:hover {
 }
 
 .popup-choose .popup-container .fillin-box .field fieldset .search-list {
+  min-height: inherit;
   float: none;
   margin: 0 auto;
 }
 
+.popup-choose .popup-container .fillin-box .field-four .option-list {
+  border-bottom: 1px dashed #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list:last-child {
+  border-bottom: none;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list p {
+  line-height: 24px;
+  padding: 0 5px;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .media {
+  float: left;
+  width: 20%;
+  pointer-events: none;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .name {
+  float: left;
+  width: 30%;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .description {
+  color: #7c7c7c;
+  float: left;
+  width: 37%;
+  font-size: 0.813rem;
+  line-height: 18px;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .fee {
+  float: right;
+  width: 13%;
+  text-align: right;
+}
+
+.popup-choose .popup-container .fillin-box .field-three .option-list {
+  border-bottom: 1px dashed #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-choose .popup-container .fillin-box .field-three .option-list:last-child {
+  border-bottom: none;
+}
+
+.popup-choose .popup-container .fillin-box .field-three .option-list p {
+  line-height: 24px;
+  padding: 0 5px;
+}
+
+.popup-choose .popup-container .fillin-box .field-three .option-list .name {
+  float: left;
+  width: 35%;
+  pointer-events: none;
+}
+
+.popup-choose .popup-container .fillin-box .field-three .option-list .description {
+  color: #7c7c7c;
+  float: left;
+  width: 35%;
+  font-size: 0.813rem;
+  line-height: 18px;
+}
+
+.popup-choose .popup-container .fillin-box .field-three .option-list .day {
+  color: #7c7c7c;
+  font-size: 0.813rem;
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list {
+  border-bottom: 1px dashed #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list:last-child {
+  border-bottom: none;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list p {
+  line-height: 24px;
+  padding: 0 5px;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .media {
+  float: left;
+  width: 20%;
+  pointer-events: none;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .name {
+  float: left;
+  width: 30%;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .description {
+  color: #7c7c7c;
+  float: left;
+  width: 37%;
+  font-size: 0.813rem;
+  line-height: 18px;
+}
+
+.popup-choose .popup-container .fillin-box .field-four .option-list .fee {
+  float: right;
+  width: 13%;
+  text-align: right;
+}
+
 .popup-choose .popup-container .bottom-btn-tool {
   background-color: transparent;
+}
+
+@media all and (max-width: 600px) {
+  .popup-choose .popup-container .fillin-box .field-four .option-list {
+    display: table;
+  }
+  .popup-choose .popup-container .fillin-box .field-four .option-list .media {
+    width: 50%;
+  }
+  .popup-choose .popup-container .fillin-box .field-four .option-list .name {
+    width: 50%;
+  }
+  .popup-choose .popup-container .fillin-box .field-four .option-list .description {
+    width: calc(100% - 70px);
+    padding-left: 36px;
+  }
+  .popup-choose .popup-container .fillin-box .field-four .option-list .fee {
+    width: 70px;
+  }
 }
 
 .popup-bg-white .popup-container .fillin-box {
