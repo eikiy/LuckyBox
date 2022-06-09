@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>菜單管理 - 編輯菜單 - 屬性/標籤設定</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+</head>
+<body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <!-- popup 商品屬性設定-->
+                <!-- 狀態一：無 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>商品屬性設定(無)</span></h4>
+                            <p class="sub-title">為商品設定屬性，出單時商品順序將可依照屬性分群排序<br>
+                            1. 新增屬性，並排序屬性先後順序 → 2. 將商品套用屬性</p>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋屬性名稱或新增商品屬性 " value="">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增商品屬性"> -->
+                                    <a class="btn btn--primary-m" href="#">+ 新增商品屬性</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 商品屬性設定-->
+                <!-- 狀態二：搜尋結果 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>商品屬性設定(搜尋結果)</span></h4>
+                            <p class="sub-title">選擇既有屬性或點選按鈕新增一個新屬性<br>
+                                為商品設定屬性，出單時商品順序將可依照屬性分群排序<br>
+                            1. 新增屬性，並排序屬性先後順序 → 2. 將商品套用屬性</p>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋屬性名稱或新增商品屬性" value="當日送">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增商品屬性"> -->
+                                    <a class="btn btn--primary-m" href="#">+ 新增商品屬性</a>
+                                </div>
+                            </div>
+                            <div class="text-none">
+                                <p>（無符合的資料）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 商品屬性設定-->
+                <!-- 狀態三：已有屬性 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>商品屬性設定</span></h4>
+                            <p class="sub-title">選擇既有屬性或點選按鈕新增一個新屬性<br>
+                            為商品設定屬性，出單時商品順序將可依照屬性分群排序<br>
+                            1. 新增屬性，並排序屬性先後順序 → 2. 將商品套用屬性</p>
+                        </div>
+                        <div class="choose-add-attributes-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋屬性名稱或新增商品屬性" value="">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增加購題型"> -->
+                                    <a class="btn btn--primary-m" href="#">+ 新增商品屬性</a>
+                                </div>
+                            </div>
+                            <div class="field-title field">
+                                <div class="attributes-move">
+                                </div>
+                                <div class="add-attributes-name">
+                                    <p>屬性名稱</p>
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>更新時間</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <p>刪除</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="uber eat">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="當日送">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="每日優惠限量組">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="早鳥優惠">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>09/18 週五 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pages clearfix">
+                            <p>1-50列(共220列 )</p>
+                            <ul class="page-nb">
+                                <li>
+                                    <a class="none">上一頁</a>
+                                </li>
+                                <li>
+                                    <a class="selected">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    ...
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">9</a>
+                                </li>
+                                <li>
+                                    <a href="#">下一頁</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="儲存">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+
+                <!-- -------->
+                <!-- popup 商品標籤設定-->
+                <!-- 狀態一：無 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>商品標籤設定(無)</span></h4>
+                            <p class="sub-title">為商品設定標籤，將顯示於前台商品名稱旁。</p>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋標籤名稱或新增商品標籤 " value="">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增商品標籤"> -->
+                                    <a class="btn btn--primary-m" href="#">+ 新增商品標籤</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 商品標籤設定-->
+                <!-- 狀態二：搜尋結果 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>商品標籤設定(搜尋結果)</span></h4>
+                            <p class="sub-title">為商品設定標籤，將顯示於前台商品名稱旁。</p>
+                        </div>
+                        <div class="choose-add-group-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋標籤名稱或新增商品標籤" value="當日送">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增商品標籤"> -->
+                                    <a class="btn btn--primary-m" href="#">+ 新增商品標籤</a>
+                                </div>
+                            </div>
+                            <div class="text-none">
+                                <p>（無符合的資料）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 商品標籤設定-->
+                <!-- 狀態三：已有標籤 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>商品標籤設定</span></h4>
+                            <p class="sub-title">為商品設定標籤，將顯示於前台商品名稱旁。</p>
+                        </div>
+                        <div class="choose-add-attributes-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋標籤名稱或新增商品標籤" value="">
+                                </div>
+                                <div class="bottom-btn-right clearfix">
+                                    <!-- 可改 input  -->
+                                    <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增商品標籤"> -->
+                                    <a class="btn btn--primary-m" href="#">+ 新增商品標籤</a>
+                                </div>
+                            </div>
+                            <div class="field-title field">
+                                <div class="attributes-move">
+                                </div>
+                                <div class="add-attributes-name">
+                                    <p>標籤名稱</p>
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>更新時間</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <p>刪除</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="紐西蘭">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>09/12 週一 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="韓國泡菜">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>08/12 週五 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="西班牙豬肉">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>08/12 週五 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="美國生鮮蔬果">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>10/02 週一 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="attributes-move">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="add-attributes-name">
+                                    <input type="text" value="美國進口">
+                                </div>
+                                <div class="add-attributes-time">
+                                    <p>04/15 週五 11:38:24</p>
+                                </div>
+                                <div class="add-attributes-tools">
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="儲存">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <main class="main-container">
+        <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span></p>
+        <section class="top-content top-set-function clearfix">
+            <h3 class="main-title">
+                <a href="menu.html">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                    返回菜單管理
+                </a>
+            </h3>
+            <!-- 列表展開 按鈕 + btn-sort-open -->
+            <a class="btn-sort btn--primary-l btn-sort-open">
+                <span class="tooltip">
+                    展開/收起列表。
+                </span>
+            </a>
+            <div class="search-box">
+                <input class="default" type="text" placeholder="搜尋關鍵字">
+            </div>
+            <a class="btn-batch-operation btn--primary-l">批次操作</a>
+            <input class="btn-save btn--primary-xl " type="submit" value="儲存">
+            <ul class="btn-menu-actions">
+                <li>
+                    <a class="eye btn--primary-l" href="#" title="預覽"></a>
+                </li>
+            </ul>
+        </section>
+        <section class="middle-content both-content">
+            <!-- 狀態二：選取該項目 -->
+            <div class="menu-content clearfix">
+                <div class="menu-item">
+                    <div class="field">
+                        <!-- 類別 -->
+                        <div class="category">
+                            <div class="bars"></div>
+                            <!-- 展開類別內的單品項目 + arr-down-->
+                            <div class="arr arr-down"></div>
+                            <input class="default" type="text" name="" value="主打套餐系列" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- 單品 -->
+                        <!-- 選到該單品 input 要編輯時，整個底色 + selected-bgcolor -->
+                        <div class="product-single selected-bgcolor">
+                            <!-- 選到該單品 input 或價錢時 + selected 價錢那邊要變換內容 -->
+                            <div class="product selected clearfix">
+                                <div class="bars"></div>
+                                <!-- 展開 + arr-down  -->
+                                <div class="arr arr-down"></div>
+                                <div class="product-photo" style="background-image: url(images/img-001.jpg);"></div>
+                                <input class="product-name default" type="text" name="" value="國王套餐" placeholder="請填寫單品">
+                                <div class="product-price">
+                                    <p class="money">$</p>
+                                    <input class="default" type="text" name="" value="18000">
+                                </div>
+                                <div class="menu-tools">
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-content">
+                                <div class="category clearfix">
+                                    <div class="bars"></div>
+                                    <div class="arr"></div>
+                                    <p class="product-name">甜點</p>
+                                    <div class="menu-tools">
+                                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div><div class="additional-content">
+                                <div class="category clearfix">
+                                    <div class="bars"></div>
+                                    <div class="arr"></div>
+                                    <p class="product-name">沙拉</p>
+                                    <div class="menu-tools">
+                                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional-content">
+                                <div class="category clearfix">
+                                    <div class="bars"></div>
+                                    <div class="arr arr-down"></div>
+                                    <p class="product-name">飲料</p>
+                                    <div class="menu-tools">
+                                        <a href="#"><i class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="additional-title clearfix">
+                                        <h5>紅茶紅茶紅茶紅茶紅茶字太長會怎樣呢</h5>
+                                        <p class="money">+$1255</p>
+                                    </div>
+                                    <p>尺寸（大杯+$5、中杯)<p>
+                                    <p>糖（無糖、三分糖+$5）</p>
+                                </div>
+                                <div class="product">
+                                    <div class="additional-title clearfix">
+                                        <h5>咖啡</h5>
+                                        <p class="money">+$25</p>
+                                    </div>
+                                    <p>尺寸（大杯+$15、中杯+$5)<p>
+                                    <p>溫度（常溫、去冰）</p>
+                                </div>
+                                <div class="product">
+                                    <div class="additional-title clearfix">
+                                        <h5>可樂一罐</h5>
+                                        <p class="money">+$10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 單品 -->
+                        <div class="product-single">
+                            <div class="product clearfix">
+                                <div class="bars"></div>
+                                <div class="product-photo"></div>
+                                <input class="product-name default" type="text" name="" value="皇后套餐（無加購旁邊無展開箭頭）" placeholder="請填寫單品">
+                                <div class="product-price">
+                                    <p>$18,000</p>
+                                </div>
+                                <div class="menu-tools">
+                                    <a href="#"><i class="far fa-copy"></i></a>
+                                    <a href="#"><i class="far fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-add-product">
+                                <input class="btn--primary-m " type="submit" value="新增單品">
+                            </div>
+                        </div>
+                        <div class="text-add-category">
+                            <input class="btn--primary-m " type="submit" value="新增類別">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="category">
+                            <div class="bars"></div>
+                            <div class="arr"></div>
+                            <input class="default" type="text" name="" value="國王皇后的吐司＆三明治＆花生系列" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="category">
+                            <div class="bars"></div>
+                            <div class="arr"></div>
+                            <input class="default" type="text" name="" value="飲品＆小點" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="category">
+                            <div class="bars"></div>
+                            <div class="arr"></div>
+                            <input class="default" type="text" name="" value="Uber" placeholder="請填寫類別">
+                            <div class="menu-tools">
+                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-add-category">
+                            <input class="btn--primary-m " type="submit" value="新增類別">
+                        </div>
+                    </div>
+                </div>
+                <!-- 請幫我判斷設定↓ menu-product-info 的最小高度 
+                     會抓取 menu-item 的隨機高度(展開就要再變動)-->
+                <!-- 我這邊暫時隨便給個高度--> 
+                <!-- style="min-height: 400px;" -->
+                <div class="menu-product-info">
+                    <h3 class="product-title">國王套餐</h3>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                               <p>基本資訊</p>
+                                <div class="arr arr-down"></div> 
+                            </div>
+                        </div>
+                        <from class="fillin-info">
+                            <!-- 錯誤添加 p:text-error, input + has-error -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <div class="fillin-box">
+                                    <input class="has-error" type="" name="" value="國王套餐">
+                                    <p class="text-error">此欄位為必填項目。</p>
+                                </div>
+                                
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">商品描述</label>
+                                <div class="fillin-box" style="max-width: 100%;">
+                                    <!-- <textarea placeholder="商品描述"></textarea> -->
+                                    <textarea name="editor1"></textarea>
+                                    <script>CKEDITOR.replace("editor1");</script>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">商品代碼</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">庫存</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">庫存每日重設</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">卡路里</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">停售設定</label>
+                                <div class="fillin-box">
+                                    <div class="switch-type">
+                                        <input id="" name="" type="checkbox" checked="">
+                                        <label class="switch-button" for=""></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">類別</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">請選擇類別</option>
+                                            <option value="1">aaa</option>
+                                            <option value="2">cccc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">商品屬性</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">當日送</option>
+                                            <option value="1">aaa</option>
+                                            <option value="2">cccc</option>
+                                        </select>
+                                    </div>
+                                    <p class="go-setting">
+                                        <a href="#">商品屬性設定</a>
+                                        <a class="reminder"></a>
+                                        <span class="tooltip">
+                                            為商品設定屬性，出單時商品順序將可依照屬性分群排序。
+                                        </span>
+                                    </p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">商品標籤</label>
+                                <div class="fillin-box">
+                                    <div class="the-select">
+                                        <select class="" name="">
+                                            <option value="0" selected="">請選擇商品標籤</option>
+                                            <option value="1">西班牙豬肉</option>
+                                            <option value="2">韓國泡菜</option>
+                                        </select>
+                                    </div>
+                                    <p class="go-setting">
+                                        <a href="#">商品標籤設定</a>
+                                        <a class="reminder"></a>
+                                        <span class="tooltip">
+                                            顯示於消費者點餐畫面，商品名稱旁。
+                                        </span>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </from>
+                    </div>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                                <p>定價設定</p>
+                                <div class="arr arr-down"></div>
+                            </div>
+                        </div>
+                        <from class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>原價</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="60">
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">特價</label>
+                                <div class="fillin-box">
+                                    <input type="" name="" value="">
+                                </div>
+                            </fieldset>
+                        </from>
+                    </div>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                                <p>加購設定</p>
+                                <div class="arr arr-down"></div>
+                            </div>
+                        </div>
+                        <div class="fillin-info">
+                            <div class="additional-content">
+                                <div class="title-content">
+                                    <p>飲料</p>
+                                    <!-- 展開 + arr-down -->
+                                    <div class="arr arr-down"></div>
+                                </div>
+                                <div class="product">
+                                    <h4 class="main-title">紅茶</h4>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">尺寸</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>大杯(+$5)</p>
+                                            </li>
+                                            <li class="c-lightgray">
+                                                <p>中杯</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">溫度</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>常溫</p>
+                                            </li>
+                                            <li>
+                                                <p>去冰</p>
+                                            </li>
+                                            <li>
+                                                <p>熱</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">甜度</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>無糖</p>
+                                            </li>
+                                            <li>
+                                                <p>微糖</p>
+                                            </li>
+                                            <li>
+                                                <p>三分糖</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <h4 class="main-title">奶茶</h4>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">溫度</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>常溫</p>
+                                            </li>
+                                            <li>
+                                                <p>去冰</p>
+                                            </li>
+                                            <li>
+                                                <p>熱</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <h4 class="main-title">咖啡</h4>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">尺寸</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>大杯(+$25)</p>
+                                            </li>
+                                            <li>
+                                                <p>中杯(+$5)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">溫度</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>熱</p>
+                                            </li>
+                                            <li>
+                                                <p>去冰</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="additional-detail clearfix">
+                                        <p class="sub-title">甜度</p>
+                                        <ul>
+                                            <li class="c-orange">
+                                                <p>無糖</p>
+                                            </li>
+                                            <li>
+                                                <p>微糖</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional-content">
+                                <div class="title-content">
+                                    <p>沙拉</p>
+                                    <div class="arr"></div>
+                                </div>
+                            </div>
+                            <div class="additional-content">
+                                <div class="title-content">
+                                    <p>甜點</p>
+                                    <div class="arr"></div>
+                                </div>
+                            </div>
+                            <div class="bottom-btn-right clearfix">
+                                <input class="btn btn--primary-m " type="submit" value="+ 新增加購選項">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-card">
+                        <div class="top-item-title">
+                            <div class="title-content">
+                                <p>商品圖片設定</p>
+                                <div class="arr"></div>
+                            </div>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">照片</label>
+                                <div class="upload-cover">
+                                    <a>
+                                        <p>新增圖片</p>
+                                    </a>
+                                    <p class="note">上傳正方形圖檔效果最佳。<br>
+                                    建議規格：1200*1200px / JPG 或 PNG。<br>
+                                    檔案容量：1MB以下</p>
+                                    <input class=" btn--primary-m " type="submit" value="上傳圖片">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+</body>
+</html>

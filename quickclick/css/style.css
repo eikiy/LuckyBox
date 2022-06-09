@@ -2612,8 +2612,9 @@ a.reminder:hover {
 }
 
 .popup-container .top-title p.sub-title {
-  padding: 20px 0 0 0;
+  padding: 20px 10px 0 10px;
   color: #9e9e9e;
+  line-height: 20px;
 }
 
 .popup-container p.text-remind {
@@ -3033,6 +3034,223 @@ a.reminder:hover {
   color: #666;
 }
 
+.popup-container .choose-add-group-list {
+  width: calc(100% - 30px);
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 0 15px 0;
+}
+
+.popup-container .choose-add-group-list .selected {
+  background-color: #fff;
+}
+
+.popup-container .choose-add-group-list .field {
+  width: 100%;
+  vertical-align: top;
+  border-bottom: 1px dashed #b1b5c4;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.popup-container .choose-add-group-list .field:hover {
+  background-color: #fff;
+}
+
+.popup-container .choose-add-group-list .field p {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.popup-container .choose-add-group-list .field .option-list {
+  float: left;
+  width: 40px;
+  display: block;
+  vertical-align: middle;
+}
+
+.popup-container .choose-add-group-list .field .option-list input {
+  height: 40px;
+}
+
+.popup-container .choose-add-group-list .field .add-group-name {
+  vertical-align: top;
+  width: calc(100% - 310px);
+  display: inline-block;
+  padding: 7px 5px;
+  vertical-align: middle;
+}
+
+.popup-container .choose-add-group-list .field .add-group-name p.group-info {
+  font-size: 0.688rem;
+  padding-top: 5px;
+  color: #8f8f8f;
+}
+
+.popup-container .choose-add-group-list .field .add-group-time {
+  padding: 5px;
+  width: 140px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.popup-container .choose-add-group-list .field .add-group-time p {
+  color: #8f8f8f;
+  font-size: 0.688rem;
+}
+
+.popup-container .choose-add-group-list .field .add-group-tools {
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.popup-container .choose-add-group-list .field .add-group-tools p {
+  text-align: center;
+}
+
+.popup-container .choose-add-group-list .field .add-group-tools a {
+  width: 35px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #848484;
+  display: inline-block;
+}
+
+.popup-container .choose-add-group-list .field .add-group-tools a:hover {
+  color: #f0941d;
+}
+
+.popup-container .choose-add-group-list .field-title {
+  background-color: #ffefd8;
+  border-bottom: 1px solid #ffcd85;
+  padding: 0 10px;
+  border-radius: 4px 4px 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.popup-container .choose-add-group-list .field-title p,
+.popup-container .choose-add-group-list .field-title .add-group-time p {
+  line-height: 34px;
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.popup-container .choose-add-group-list .field-title:hover {
+  background-color: #ffefd8;
+}
+
+.popup-container .choose-add-attributes-list {
+  width: calc(100% - 30px);
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 0 15px 0;
+}
+
+.popup-container .choose-add-attributes-list .field {
+  width: 100%;
+  vertical-align: top;
+  border-bottom: 1px dashed #b1b5c4;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.popup-container .choose-add-attributes-list .field p {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.popup-container .choose-add-attributes-list .field .attributes-move {
+  width: 35px;
+  float: left;
+  cursor: move;
+  padding: 10px;
+  vertical-align: middle;
+  color: #B1B5C4;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-name {
+  width: calc(100% - 310px);
+  display: inline-block;
+  padding: 2.5px 5px;
+  vertical-align: middle;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-name input {
+  background-color: #fff;
+  width: 100%;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-time {
+  padding: 5px;
+  width: 140px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-time p {
+  color: #8f8f8f;
+  font-size: 0.688rem;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-tools {
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-tools p {
+  text-align: center;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-tools a {
+  width: 35px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #848484;
+  display: inline-block;
+}
+
+.popup-container .choose-add-attributes-list .field .add-attributes-tools a:hover {
+  color: #f0941d;
+}
+
+.popup-container .choose-add-attributes-list .field-title {
+  background-color: #ffefd8;
+  border-bottom: 1px solid #ffcd85;
+  padding: 0 10px;
+  border-radius: 4px 4px 0 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.popup-container .choose-add-attributes-list .field-title p,
+.popup-container .choose-add-attributes-list .field-title .add-attributes-time p {
+  line-height: 34px;
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.popup-container .choose-add-attributes-list .field-title:hover {
+  background-color: #ffefd8;
+}
+
 .popup-container .menu-product-info {
   max-width: 480px;
   margin: 0 auto;
@@ -3123,6 +3341,36 @@ a.reminder:hover {
     line-height: 36px;
     padding: 0 10px;
   }
+  .popup-container .choose-add-attributes-list .field p,
+  .popup-container .choose-add-attributes-list .field .add-Reference-time p {
+    font-size: 0.813rem;
+    line-height: 20px;
+  }
+  .popup-container .choose-add-attributes-list .field .add-attributes-name {
+    width: calc(100% - 35px);
+    padding-bottom: 0;
+  }
+  .popup-container .choose-add-attributes-list .field .add-attributes-time {
+    width: calc(100% - 166px);
+    margin-left: 40px;
+    padding-left: 0px;
+  }
+  .popup-container .choose-add-attributes-list .field .add-attributes-time p {
+    line-height: 20px;
+  }
+  .popup-container .choose-add-attributes-list .field .add-attributes-tools {
+    text-align: right;
+  }
+  .popup-container .choose-add-attributes-list .field .add-attributes-tools p {
+    text-align: right;
+  }
+  .popup-container .choose-add-attributes-list .field .add-attributes-tools a {
+    height: 32px;
+    line-height: 32px;
+  }
+  .popup-container .choose-add-attributes-list .field-title .add-attributes-name {
+    padding-top: 7px;
+  }
   .popup-container .single-product .field .option-list {
     padding-bottom: 0;
   }
@@ -3134,7 +3382,6 @@ a.reminder:hover {
     line-height: 34px;
   }
   .popup-container .single-product .field .add-group-name {
-    padding-top: 0;
     width: 25%;
   }
   .popup-container .single-product .field .add-group-name p {
@@ -3152,7 +3399,7 @@ a.reminder:hover {
   .popup-container .single-product .field .add-group-time {
     padding: 7px 5px;
   }
-  .popup-container .single-product .field s .add-group-tools p {
+  .popup-container .single-product .field .add-group-tools p {
     text-align: right;
   }
 }
