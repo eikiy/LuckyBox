@@ -250,7 +250,7 @@ body {
 }
 
 .middle-container .main-container {
-  padding: 160px 20px 0 20px;
+  padding: 150px 20px 0 20px;
   width: 100%;
 }
 
@@ -571,6 +571,23 @@ body {
   .middle-container .main-container .content ul .t8 {
     bottom: 103px;
     left: 28px;
+  }
+}
+
+@media all and (max-height: 670px) {
+  .header-container {
+    padding: 20px 10px 10px 10px;
+  }
+  .header-container .back-btn {
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+  }
+  .header-container::after {
+    height: 25px;
+  }
+  .middle-container .main-container {
+    padding: 90px 20px 0 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
