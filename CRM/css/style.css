@@ -1696,7 +1696,7 @@ ul.edit-tool li a:hover {
   float: none;
   width: initial;
   padding: 5px 8px;
-  z-index: 0;
+  z-index: 1;
   margin-top: 0;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -1933,6 +1933,7 @@ ul.edit-tool li a:hover {
   right: 10px;
   top: calc(50% - 22.5px);
   background-color: #ebf5f4;
+  z-index: 0;
 }
 
 .middle-container .data-list .card ul.edit-tool li a {
@@ -2075,7 +2076,7 @@ ul.edit-tool li a:hover {
   -ms-position: sticky;
   -o-position: sticky;
   position: sticky;
-  z-index: 1;
+  z-index: 2;
   top: 60px;
   background-color: #ebf5f4;
 }
