@@ -3,13 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 新增一個菜單</title>
+    <title>菜單管理 - 編輯菜單 - 整單加購</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+<div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content ">
+                <!-- popup 編輯整單加購 -->
+                <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>編輯整單加購</span></h4>
+                        </div>
+                        <div class="menu-product-info">
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>題型資訊</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <from class="fillin-info">
+                                    <!-- 錯誤添加 p:text-error, input + has-error -->
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>題型名稱</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="免洗餐具">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">
+                                            <span class="c-red">*</span>題型選項
+                                        </label>
+                                        <ul class="fillin-box three-box clearfix">
+                                            <li class="clearfix">
+                                                <p>最多</p>
+                                                <input type="" name="" value="3">
+                                            </li>
+                                            <li class="clearfix">
+                                                <p>最少</p>
+                                                <input type="" name="" value="1">
+                                            </li>
+                                            <li class="clearfix">
+                                                <p>複選</p>
+                                                <input type="" name="" value="2">
+                                            </li>
+                                        </ul>
+                                        <p class="text-note">【範例】假設以"飲品"當題型，最多欄位填寫3，則代表飲品下的選項，最多可選3項不同的飲品；若最少填寫1，則表示最少要選擇1項飲品；複選若填寫2，代表相同的飲品最多只可選擇2項。</p>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">必填選項</label>
+                                        <div class="fillin-box">
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox" checked="">
+                                                <label class="switch-button" for=""></label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>加購選項</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <div class="fillin-info">
+                                    <div class="choose-add-group-list">
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>筷子</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="menu-new-1-menu-add-0.html"><i class="fas fa-cog"></i></a>
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>湯匙</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="menu-new-1-menu-add-0.html"><i class="fas fa-cog"></i></a>
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="add-group-name">
+                                                <p>紙杯</p>
+                                            </div>
+                                            <div class="add-group-tools">
+                                                <a href="menu-new-1-menu-add-0.html"><i class="fas fa-cog"></i></a>
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-btn-right clearfix">
+                                        <a class="btn btn--primary-m" href="menu-new-2-add-product-4.html">+ 增加選項</a>
+                                        <!-- <input class="btn btn--primary-m " type="submit" value="+ 新增選項"> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>語系設定<span>（顯示於消費者看）</span></p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
+                                </div>
+                                <from class="fillin-info">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>繁體中文</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述">提倡環保，外帶用餐具，選擇是否付費加購。</textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">简体中文</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="免洗餐具">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">ENGLISH</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">日本語</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                            <div class="bottom-btn-tool">
+                                <input class="btn--primary-xl " type="submit" value="儲存">
+                            </div>
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span></p>
         <section class="top-content top-set-function clearfix">
@@ -28,14 +194,17 @@
             <div class="search-box">
                 <input class="default" type="text" placeholder="搜尋關鍵字">
             </div>
-            <a class="btn-batch-operation btn--primary-l" href="#">批次操作</a>
-            <a class="btn-menuadd-operation btn--primary-l" href="menu-new-1-menu-add.html">整單加購</a>
+            <a class="btn-batch-operation btn--primary-l">批次操作</a>
+            <!-- <a class="btn-menuadd-operation btn--primary-l">整單加購</a> -->
             <input class="btn-save btn--primary-xl " type="submit" value="儲存">
-            <!-- <ul class="btn-menu-actions">
+            <ul class="btn-menu-actions">
+                <li>
+                    <a class="menuadd btn--primary-l" href="#" title="預覽"></a>
+                </li>
                 <li>
                     <a class="eye btn--primary-l" href="#" title="預覽"></a>
                 </li>
-            </ul> -->
+            </ul>
         </section>
         <section class="middle-content">
             <!-- 狀態一：剛點進來，引導填寫 -->

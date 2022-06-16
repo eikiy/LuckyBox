@@ -1217,15 +1217,18 @@ a.reminder:hover {
   background-image: url(../images/svg/sort-open-orange.svg);
 }
 
-.main-container .top-set-function .btn-batch-operation {
+.main-container .top-set-function .btn-batch-operation,
+.main-container .top-set-function .btn-menuadd-operation {
   min-width: 90px;
   float: left;
   font-size: 0.875rem;
   padding: 0 10px;
-  margin: 0 10px;
+  margin-left: 10px;
+  color: #555;
 }
 
-.main-container .top-set-function .btn-batch-operation:hover {
+.main-container .top-set-function .btn-batch-operation:hover,
+.main-container .top-set-function .btn-menuadd-operation:hover {
   color: #f0941d;
 }
 
@@ -1249,6 +1252,7 @@ a.reminder:hover {
 .main-container .top-set-function .btn-menu-actions li {
   display: inline-block;
   padding: 0 4px;
+  position: relative;
 }
 
 .main-container .top-set-function .btn-menu-actions li a {
@@ -1296,7 +1300,12 @@ a.reminder:hover {
   .main-container .top-set-function .btn-batch-operation {
     position: absolute;
     top: 0;
-    right: 180px;
+    right: 235px;
+  }
+  .main-container .top-set-function .btn-menuadd-operation {
+    position: absolute;
+    top: 0;
+    right: 135px;
   }
   .main-container .top-set-function .btn-menu-actions {
     padding-right: 0;
@@ -1322,6 +1331,7 @@ a.reminder:hover {
     padding: 0 0 10px 0;
   }
   .main-container .top-set-function .btn-batch-operation,
+  .main-container .top-set-function .btn-menuadd-operation,
   .main-container .top-set-function .btn-sort,
   .main-container .top-set-function .btn-menu-actions li a {
     min-width: 36px;
@@ -1331,14 +1341,20 @@ a.reminder:hover {
   }
   .main-container .top-set-function .btn-batch-operation {
     top: 5px;
-    right: 112px;
+    right: 148px;
+    margin: 0;
+  }
+  .main-container .top-set-function .btn-menuadd-operation {
+    top: 5px;
+    right: 70px;
+    margin: 0;
   }
   .main-container .top-set-function .btn-menu-actions {
     top: 5px;
-    right: 75px;
+    right: 70px;
   }
   .main-container .top-set-function .btn-menu-actions li {
-    padding: 0 2px;
+    padding: 0;
   }
   .main-container .top-set-function .search-box {
     max-width: calc(100% - 46px);
@@ -1364,6 +1380,9 @@ a.reminder:hover {
 @media all and (max-width: 600px) {
   .main-container .top-set-function h3.main-title {
     font-size: 1rem;
+  }
+  .main-container .top-set-function h3.main-title span {
+    padding-right: 0;
   }
   .main-container .top-set-function .btn-save {
     min-width: 65px;
@@ -2983,57 +3002,6 @@ a.reminder:hover {
   background-color: #ffefd8;
 }
 
-.popup-container .single-product .field .add-product-name {
-  display: inline-block;
-  width: calc(88% - 385px);
-  vertical-align: middle;
-}
-
-.popup-container .single-product .field .add-product-name p {
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-height: 20px;
-  height: 20px;
-  overflow: hidden;
-}
-
-.popup-container .single-product .field .add-group-name {
-  width: 12%;
-}
-
-.popup-container .single-product .field .add-group-name p {
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-height: 20px;
-  height: 20px;
-  overflow: hidden;
-}
-
-.popup-container .single-product .field .add-sell {
-  display: inline-block;
-  width: 65px;
-}
-
-.popup-container .single-product .field .add-sell p {
-  font-size: 0.688rem;
-  color: #8f8f8f;
-  text-align: center;
-}
-
-.popup-container .single-product .field .add-sell p.c-green {
-  color: #90c31f;
-}
-
-.popup-container .single-product .field-title p,
-.popup-container .single-product .field-title .add-sell p {
-  font-size: 0.875rem;
-  color: #666;
-}
-
 .popup-container .choose-add-group-list {
   width: calc(100% - 30px);
   max-width: 580px;
@@ -3144,6 +3112,57 @@ a.reminder:hover {
 
 .popup-container .choose-add-group-list .field-title:hover {
   background-color: #ffefd8;
+}
+
+.popup-container .single-product .field .add-product-name {
+  display: inline-block;
+  width: calc(50% - 182px);
+  vertical-align: middle;
+}
+
+.popup-container .single-product .field .add-product-name p {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.popup-container .single-product .field .add-group-name {
+  width: 12%;
+}
+
+.popup-container .single-product .field .add-group-name p {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.popup-container .single-product .field .add-sell {
+  display: inline-block;
+  width: 65px;
+}
+
+.popup-container .single-product .field .add-sell p {
+  font-size: 0.688rem;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.popup-container .single-product .field .add-sell p.c-green {
+  color: #90c31f;
+}
+
+.popup-container .single-product .field-title p,
+.popup-container .single-product .field-title .add-sell p {
+  font-size: 0.875rem;
+  color: #666;
 }
 
 .popup-container .choose-add-attributes-list {
@@ -3375,6 +3394,7 @@ a.reminder:hover {
     padding-bottom: 0;
   }
   .popup-container .single-product .field .add-product-name {
+    vertical-align: top;
     width: calc(75% - 111px);
   }
   .popup-container .single-product .field .add-product-name p {
@@ -3382,25 +3402,29 @@ a.reminder:hover {
     line-height: 34px;
   }
   .popup-container .single-product .field .add-group-name {
+    vertical-align: top;
     width: 25%;
   }
   .popup-container .single-product .field .add-group-name p {
-    height: 34px;
-    line-height: 34px;
+    height: initial;
+    line-height: 24px;
   }
   .popup-container .single-product .field .add-sell {
     width: 60px;
   }
   .popup-container .single-product .field .add-sell p {
-    padding: 7px 5px;
+    padding: 7px 0px;
     text-align: right;
     font-size: 0.813rem;
   }
   .popup-container .single-product .field .add-group-time {
-    padding: 7px 5px;
+    padding: 7px 0px;
   }
   .popup-container .single-product .field .add-group-tools p {
     text-align: right;
+  }
+  .popup-container .single-product .field-title .add-sell p {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

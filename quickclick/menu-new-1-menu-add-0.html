@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>菜單管理 - 編輯菜單 - 加購 - 加購選項列表</title>
+    <title>菜單管理 - 編輯菜單 - 整單加購 - 編輯加購選項</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -14,308 +14,145 @@
     <div class="mfp-bg"></div>
     <div class="mfp-wrap" style="overflow-y: auto;">
         <div class="mfp-container">
-            <div class="mfp-content">
-                <!-- popup 加購選項列表-->
+            <div class="mfp-content ">
+                <!-- popup 編輯或新增加購選項(換title) -->
                 <section id="popup-choose-add-group" class="white-popup mfp-hide popup-width-m">
                     <div class="popup-container">
                         <div class="top-title">
-                            <h4><span>加購選項列表</span></h4>
+                            <h4><span>編輯整單加購選項：筷子</span></h4>
                         </div>
-                        <div class="choose-add-group-list single-product">
-                            <div class="tools-bar">
-                                <div class="search-box">
-                                    <input class="default" type="text" placeholder="搜尋選項名稱或新增選項" value="" >
-                                    <!-- 有填寫無此題型才會出現"新增加購選項"這按鈕 -->
+                        <div class="menu-product-info">
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>加購資訊</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
                                 </div>
-                                <div class="bottom-btn-right clearfix">
-                                    
-                                    <!-- 可改 input  -->
-                                    <!-- <input class="btn btn--primary-m " type="submit" value="新增加購選項"> -->
-                                    <a class="btn btn--primary-m" href="menu-new-2-add-product-2-new.html">+ 新增加購選項</a>
-                                </div>
+                                <from class="fillin-info">
+                                    <!-- 錯誤添加 p:text-error, input + has-error -->
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>選項名稱</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="筷子">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">商品代碼</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="b123456">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">卡路里</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">販售設定</label>
+                                        <div class="fillin-box">
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox" checked="">
+                                                <label class="switch-button" for=""></label>
+                                                <!-- 無開啟文字顯示:無販售-->
+                                                <!-- <p>無販售</p> -->
+                                                <!-- 開啟+c-green 文字顯示:販售中-->
+                                                <p class="c-green">販售中</p>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">套用題型</label>
+                                        <div class="fillin-box">
+                                            <ul class="add-list">
+                                                <li class="c-orange">
+                                                    <p>外帶餐具</p>
+                                                </li>
+                                            </ul>
+                                            <div class="bottom-btn-left clearfix">
+                                                <a class="btn btn--primary-m" href="menu-new-2-add-product-1.html">+ 選擇加購題型</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </from>
                             </div>
-                            <div class="field-title field">
-                                <div class="option-list">
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>定價設定</p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>名稱/代號</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>題型</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>停售設定</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>更新時間</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <p>操作設定</p>
-                                </div>
+                                <from class="fillin-info">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>價格</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="5">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                </from>
                             </div>
-                            <!-- 有勾選 + selected ：底色變白色 -->
-                            <div class="field selected">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="" checked>
-                                    <label for="option">勾選</label>
+                            <div class="set-card">
+                                <div class="top-item-title">
+                                    <div class="title-content">
+                                        <p>語系設定<span>（顯示於消費者看）</span></p>
+                                        <div class="arr arr-down"></div>
+                                    </div>
                                 </div>
-                                <div class="add-product-name">
-                                    <p>巧克力冰淇淋</p>
-                                    <p class="code">136EEE</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>冰淇淋</p> 
-                                    <p>冰品系列</p>
-                                    <p>下午茶</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
+                                <from class="fillin-info">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title"><span class="c-red">*</span>繁體中文</label>
+                                        <div class="fillin-box">
+                                            <input class="has-error" type="" name="" value="筷子">
+                                            <p class="text-error">此欄位為必填項目。</p>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述">外餐用餐具</textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">简体中文</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="筷子">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">ENGLISH</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="Chopsticks">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">日本語</label>
+                                        <div class="fillin-box">
+                                            <input type="" name="" value="箸">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <div class="fillin-box f-r clearfix">
+                                            <textarea placeholder="商品描述"></textarea>
+                                        </div>
+                                    </fieldset>
+                                </from>
                             </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>巧克力奶昔巧克力奶昔巧克力奶昔</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料飲料飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
+                            <div class="bottom-btn-tool">
+                                <input class="btn--primary-xl " type="submit" value="儲存">
                             </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>牛奶泡泡</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>咖啡拿鐵</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>抹茶拿鐵</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field selected">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="" checked>
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>抹茶冰淇淋抹茶冰淇淋抹茶冰淇淋</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field selected">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="" checked>
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>草莓冰淇淋</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field selected">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="" checked>
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>花生冰淇淋</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>冰淇淋</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p class="c-green">上架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>大小珍珠鮮奶茶哦哦哦大小珍珠鮮奶茶哦哦哦</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料飲料飲料飲料飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="option-list">
-                                    <input id="" type="checkbox" name="" value="">
-                                    <label for="option">勾選</label>
-                                </div>
-                                <div class="add-product-name">
-                                    <p>黑糖豆漿牛奶</p>
-                                </div>
-                                <div class="add-group-name">
-                                    <p>飲料</p>
-                                </div>
-                                <div class="add-sell">
-                                    <p>下架中</p>
-                                </div>
-                                <div class="add-group-time">
-                                    <p>09/12 週一 11:38:24</p>
-                                </div>
-                                <div class="add-group-tools">
-                                    <a href="#"><i class="fas fa-cog"></i></a>
-                                    <a href="#"><i class="far fa-copy"></i></a>
-                                    <a href="#"><i class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pages clearfix">
-                            <p>1-50列(共220列 )</p>
-                            <ul class="page-nb">
-                                <li>
-                                    <a class="none">上一頁</a>
-                                </li>
-                                <li>
-                                    <a class="selected">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    ...
-                                </li>
-                                <li>
-                                    <a href="#">8</a>
-                                </li>
-                                <li>
-                                    <a href="#">9</a>
-                                </li>
-                                <li>
-                                    <a href="#">下一頁</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom-btn-tool">
-                            <input class="btn--primary-xl " type="submit" value="儲存">
                         </div>
                     </div>
                     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
