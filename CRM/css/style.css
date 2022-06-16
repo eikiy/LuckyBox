@@ -802,7 +802,7 @@ p.text-remind {
   -o-position: sticky;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 4;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
@@ -1179,7 +1179,7 @@ ul.edit-tool li a:hover {
   position: absolute;
   left: 0;
   top: 52px;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 }
 
