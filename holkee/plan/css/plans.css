@@ -1156,6 +1156,7 @@ button {
   line-height: 120%;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   text-align: right;
+  z-index: 1;
 }
 
 .main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-middle {
@@ -1472,7 +1473,27 @@ button {
   background-position: center center;
   background-size: contain;
 }
-
+.main-content .content-wrapper.plans-plan .container .info-block .item .icon-shop::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_shop.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+.main-content .content-wrapper.plans-plan .container .info-block .item .icon-websiteaddshop::after {
+  background-image: url(../images/icon_websiteaddshop.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+.main-content .content-wrapper.plans-plan .container .info-block .item .icon-google::after {
+  background-image: url(../images/icon_google.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
 .main-content .content-wrapper.plans-plan .container .info-block .item.default[id="5994d46e05899d30fae4d0834d0cefc9"] .item-top,
 .main-content .content-wrapper.plans-plan .container .info-block .item.default[id="88efa90d501f45f59309e8132e55c89f"] .item-top {
   background: #ddbaf8;
@@ -1501,6 +1522,12 @@ button {
   background-size: contain;
 }
 
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="222222"] .item-top{
+  background: #2196f3;
+  background: linear-gradient(to right, #cecfff 0%, #2196f3 100%);
+}
+
+
 .main-content .content-wrapper.plans-plan .font-c-green {
   color: #27d0ca;
 }
@@ -1511,6 +1538,10 @@ button {
 
 .main-content .content-wrapper.plans-plan .font-c-pink {
   color: #f41387;
+}
+
+.main-content .content-wrapper.plans-plan .font-c-skyblue {
+  color: #2a99f4;
 }
 
 .main-content .content-wrapper.plans-additional {
