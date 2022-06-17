@@ -1,0 +1,2732 @@
+/**
+ * Variables: Color
+ */
+
+/**
+ * Variables: Font
+ */
+
+/**
+ * Variables: Space
+ */
+
+/**
+ * Functions: Common
+ */
+
+/**
+ * Index: Functions
+ *
+ * If you want to use this member, you needs declaration `@use "<url> as func"`
+ * then you can use `func.<function-name>`.
+ */
+
+/**
+ * Variables: Common
+ */
+
+/**
+ * Index: Variables
+ *
+ * If you want to use this member, you needs declaration `@use "<url>" as *`
+ * then you can use `$variables`.
+ */
+
+/**
+ * Mixins: Common
+ *
+ * If you have two or more related mixins, please move to a independent file.
+ */
+
+/**
+ * Mixins: Align
+ */
+
+/**
+ * Mixins: Background
+ */
+
+/**
+ * Mixins: Clear
+ *
+ * Clear various effects.
+ */
+
+/**
+ * Mixins: Decoration
+ */
+
+/**
+ * Component: Alert
+ */
+
+/**
+ * Component: Button
+ */
+
+/**
+ * Component: Input
+ */
+
+/**
+ * Index: Mixins
+ *
+ * If you want to use this member, you needs declaration `@use "<url> as mix"`
+ * then you can use `mix.<mixin-name>`.
+ */
+
+/**
+ * Component: Modal popup
+ */
+
+/**
+ * Reset
+ *
+ * Reset and initialize all styles.
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+a,
+span,
+select,
+input,
+textarea,
+button {
+  color: #333333;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+
+body:lang(en),
+h1:lang(en),
+h2:lang(en),
+h3:lang(en),
+h4:lang(en),
+h5:lang(en),
+h6:lang(en),
+p:lang(en),
+label:lang(en),
+a:lang(en),
+span:lang(en),
+select:lang(en),
+input:lang(en),
+textarea:lang(en),
+button:lang(en) {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body:lang(ja),
+h1:lang(ja),
+h2:lang(ja),
+h3:lang(ja),
+h4:lang(ja),
+h5:lang(ja),
+h6:lang(ja),
+p:lang(ja),
+label:lang(ja),
+a:lang(ja),
+span:lang(ja),
+select:lang(ja),
+input:lang(ja),
+textarea:lang(ja),
+button:lang(ja) {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body:lang(zh-CN),
+h1:lang(zh-CN),
+h2:lang(zh-CN),
+h3:lang(zh-CN),
+h4:lang(zh-CN),
+h5:lang(zh-CN),
+h6:lang(zh-CN),
+p:lang(zh-CN),
+label:lang(zh-CN),
+a:lang(zh-CN),
+span:lang(zh-CN),
+select:lang(zh-CN),
+input:lang(zh-CN),
+textarea:lang(zh-CN),
+button:lang(zh-CN) {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+body:lang(zh-TW),
+h1:lang(zh-TW),
+h2:lang(zh-TW),
+h3:lang(zh-TW),
+h4:lang(zh-TW),
+h5:lang(zh-TW),
+h6:lang(zh-TW),
+p:lang(zh-TW),
+label:lang(zh-TW),
+a:lang(zh-TW),
+span:lang(zh-TW),
+select:lang(zh-TW),
+input:lang(zh-TW),
+textarea:lang(zh-TW),
+button:lang(zh-TW) {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+p span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+}
+
+a {
+  cursor: pointer;
+  font-weight: normal;
+  text-decoration: none;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a[on],
+a:link,
+a:visited {
+  color: #27d0ca;
+}
+
+a:hover {
+  color: #1d9c98;
+  text-decoration: inherit;
+}
+
+a span {
+  color: inherit;
+}
+
+label {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+svg {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  vertical-align: -2px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: 0;
+}
+
+amp-script {
+  opacity: 1;
+}
+
+select,
+input,
+textarea {
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+button {
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+/**
+ * Layout: Header
+ */
+
+.main-header {
+  width: 100%;
+  min-height: 40px;
+  position: relative;
+  padding: 10px 0;
+  z-index: 1001;
+}
+
+.main-header.fixed {
+  position: fixed;
+}
+
+.main-header.fixed:not(.transparent) + .main-content {
+  padding-top: 60px;
+}
+
+.main-header.transparent .container .logo a {
+  background-image: url(https://cdn.holkee.com/images/main/logo_w.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-header.opaque,
+.main-header:not(.transparent) {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #27d0ca;
+  background-color: #ffffff;
+}
+
+.main-header .container {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.main-header .container .logo a {
+  width: 132px;
+  height: 40px;
+  display: block;
+  background-image: url(https://cdn.holkee.com/images/main/logo.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+  color: rgba(0, 0, 0, 0);
+  text-align: left;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+.main-header .container .user {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.main-header .container .user a,
+.main-header .container .user button {
+  color: #333333;
+}
+
+.main-header .container .user a:hover,
+.main-header .container .user button:hover {
+  color: #27d0ca;
+}
+
+.main-header .container .user button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.main-header .container .user > li {
+  height: 40px;
+  position: relative;
+  margin: 0 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header .container .user > li:first-child:hover .lang,
+.main-header .container .user > li:first-child:hover .menu {
+  display: block;
+}
+
+.main-header .container .user > li:last-child:hover .menu {
+  display: block;
+}
+
+.main-header .container .user > li .lang,
+.main-header .container .user > li .menu {
+  width: 150px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 50%;
+  margin-right: -75px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.main-header .container .user > li .lang > li,
+.main-header .container .user > li .menu > li {
+  height: 40px;
+  padding: 0 10px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #dfdfdf;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header .container .user > li .lang > li:first-child,
+.main-header .container .user > li .menu > li:first-child {
+  border: none;
+}
+
+.main-header .container .user > li .info {
+  min-width: 36px;
+}
+
+.main-header .container .user > li .info .user-photo {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  border-width: 1px;
+  border-style: hidden;
+  border-color: #333333;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main-header .container .user > li .info .user-name {
+  padding-left: 46px;
+  cursor: pointer;
+}
+
+.main-header .container .user > li .menu {
+  right: 0;
+  margin-right: 0;
+}
+
+.main-header .container .user > li .login a {
+  padding: 8px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 50px;
+}
+
+.main-header .container .user > li .login a:hover {
+  color: #ffffff;
+  background-color: #27d0ca;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #27d0ca;
+}
+
+@media (max-width: 900px) {
+  .main-header .container .user > li .info .user-name {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-header .container .user > li .login a .text {
+    display: none;
+  }
+}
+
+/**
+ * Layout: Common content mixins
+ */
+
+/**
+ * Index: Content
+ *
+ * If you want to use this member, you needs declaration
+ * `@use "<url> as content"` then you can use `content.<mixin-name>`.
+ */
+
+/**
+ * Layout: Footer
+ */
+
+.main-footer {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  padding: 30px 0;
+  z-index: 1001;
+  background-color: #333333;
+}
+
+.main-footer .container {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.main-footer .container p {
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.main-footer .container a {
+  color: #ffffff;
+}
+
+.main-footer .container a:hover {
+  text-decoration: underline;
+}
+
+.main-footer .container .l-box {
+  width: 100%;
+}
+
+.main-footer .container .l-box .logo {
+  position: relative;
+  padding-top: 45px;
+}
+
+.main-footer .container .l-box .logo::after {
+  content: "";
+  width: 118.8px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(https://cdn.holkee.com/images/main/logo.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-footer .container .l-box .copyright {
+  padding: 30px 0 15px 0;
+  color: #7e7e7e;
+  font-size: 0.6875rem;
+}
+
+.main-footer .container .r-box {
+  width: 100%;
+}
+
+.main-footer .container .r-box p {
+  color: #9e9e9e;
+  font-size: 0.8125rem;
+  line-height: 200%;
+  text-align: right;
+}
+
+.main-footer .container .r-box p a {
+  color: inherit;
+}
+
+.main-footer .container .r-box .other-link {
+  padding-bottom: 15px;
+  text-align: right;
+}
+
+.main-footer .container .r-box .other-link > li {
+  display: inline-block;
+}
+
+.main-footer .container .r-box .other-link > li > a {
+  padding-left: 30px;
+  font-size: 0.8125rem;
+  line-height: 200%;
+}
+
+.main-footer .container .r-box .follow-us {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.main-footer .container .r-box .follow-us > li {
+  display: inline-block;
+}
+
+.main-footer .container .r-box .follow-us > li > a {
+  padding: 0 15px;
+}
+
+.main-footer .container .r-box .follow-us > li > a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.main-footer .container .r-box .follow-us > li > a svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.main-footer .container .r-box .minor {
+  font-size: 0.6875rem;
+}
+
+@media (max-width: 700px) {
+  .main-footer .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .main-footer .container .l-box {
+    padding-top: 30px;
+  }
+
+  .main-footer .container .l-box p {
+    text-align: center;
+  }
+
+  .main-footer .container .l-box .logo::after {
+    left: calc(50% - (36px * 3.3) / 2);
+  }
+
+  .main-footer .container .l-box .copyright {
+    padding: 15px 0;
+  }
+
+  .main-footer .container .r-box p,
+  .main-footer .container .r-box .other-link,
+  .main-footer .container .r-box .follow-us {
+    text-align: center;
+  }
+
+  .main-footer .container .r-box p > li > a,
+  .main-footer .container .r-box .other-link > li > a,
+  .main-footer .container .r-box .follow-us > li > a {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-footer {
+    padding: 20px 0;
+  }
+}
+
+/**
+ * Class
+ *
+ * Custom common css class.
+ */
+
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-spin {
+  -webkit-animation: spinner 1.4s infinite linear;
+          animation: spinner 1.4s infinite linear;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.unselect {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.none-function {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.none-function:active {
+  pointer-events: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+/**
+ * Index: Layout
+ *
+ * If you want to use this member, you needs declaration
+ * `@use "<url> as lyaout"` then you can use `layout.<mixin-name>`.
+ */
+
+/**
+ * Page: Plans
+ */
+
+.main-content {
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  position: relative;
+}
+
+.main-content .content-wrapper {
+  width: 100%;
+}
+
+.main-content .content-wrapper .question-mark {
+  position: relative;
+}
+
+.main-content .content-wrapper .question-mark .question-note {
+  width: 250px;
+  position: absolute;
+  right: -15px;
+  font-size: 0.76rem;
+  text-align: left;
+  top: 27px;
+  z-index: 1;
+  background-color: #0000009e;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-content .content-wrapper .question-mark::after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  right: 1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent #0000009e;
+}
+
+.main-content .content-wrapper .container {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.main-content .content-wrapper .container .container-top {
+  position: relative;
+  padding: 30px 20px;
+}
+
+.main-content .content-wrapper .container .container-top::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -30px;
+  background-color: #27d0ca;
+}
+
+.main-content .content-wrapper .container .container-top h1,
+.main-content .content-wrapper .container .container-top h2,
+.main-content .content-wrapper .container .container-top h3,
+.main-content .content-wrapper .container .container-top h4,
+.main-content .content-wrapper .container .container-top p {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.main-content .content-wrapper .container .container-top h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-content .content-wrapper .container .container-top h2 {
+  font-size: 1.25rem;
+}
+
+.main-content .content-wrapper .container .container-top h3 {
+  font-size: 1.0625rem;
+}
+
+.main-content .content-wrapper .container .container-top h4 {
+  font-size: 1.5rem;
+}
+
+.main-content .content-wrapper .container .container-top::after {
+  display: none;
+}
+
+.main-content .content-wrapper .container .container-middle {
+  position: relative;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.main-content .content-wrapper .container .container-middle p {
+  text-align: center;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message:last-child {
+  margin-bottom: 0;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message p {
+  line-height: initial;
+  text-align: initial;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message p.icon {
+  padding-right: 3px;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message p.icon span {
+  display: none;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.success {
+  background-color: rgba(119, 170, 68, 0.1);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(119, 170, 68, 0.2);
+  border-radius: 4px;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.success p {
+  color: #77aa44;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.success p.icon .success {
+  display: block;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 193, 7, 0.2);
+  border-radius: 4px;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.warning p {
+  color: #ffc107;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.warning p.icon .warning {
+  display: block;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.failure {
+  background-color: rgba(255, 33, 33, 0.1);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.failure p {
+  color: #ff2121;
+}
+
+.main-content .content-wrapper .container .container-middle .alert-message.failure p.icon .failure {
+  display: block;
+}
+
+.main-content .content-wrapper.filling {
+  min-height: inherit;
+}
+
+.main-content .content-wrapper.plans-wrapper {
+  position: relative;
+  padding: 50px 0;
+}
+
+.main-content .content-wrapper.plans-wrapper:first-of-type {
+  padding-top: 0;
+}
+
+.main-content .content-wrapper.plans-wrapper:last-of-type {
+  padding-bottom: 100px;
+}
+
+.main-content .content-wrapper.plans-wrapper .btn-hollow-large {
+  padding: 50px 0 20px 0;
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-wrapper .btn-hollow-large > a {
+  max-width: 320px;
+  min-width: 240px;
+  padding: 15px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #27d0ca;
+  border-radius: 50px;
+  color: #27d0ca;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1rem;
+}
+
+.main-content .content-wrapper.plans-wrapper .btn-hollow-large > a:hover {
+  color: #ffffff;
+  background-color: #27d0ca;
+}
+
+.main-content .content-wrapper.plans-wrapper .container h3,
+.main-content .content-wrapper.plans-wrapper .container p {
+  line-height: 200%;
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item {
+  max-width: 380px;
+  min-width: 380px;
+  margin: 20px 15px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: table;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-top {
+  height: 110px;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-middle {
+  padding: 20px;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom {
+  padding: 20px 0;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .btn-hollow {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .btn-hollow > a {
+  max-width: 320px;
+  min-width: 160px;
+  padding: 5px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 50px;
+  color: #333333;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .btn-hollow > a:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .btn-not-allowed > a {
+  color: #27d0ca;
+  cursor: not-allowed;
+  border-color: #27d0ca;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .btn-not-allowed > a:hover {
+  color: #27d0ca;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-top {
+  background: #90eae7;
+  background: linear-gradient(to right, #90eae7 0%, #27d0ca 100%);
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-top::after {
+  content: "";
+  width: 111px;
+  height: 104px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-top .title {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 120%;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-middle {
+  background-color: #fafafa;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-bottom .text {
+  padding: 10px 0;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.image {
+  margin-top: 120px;
+  overflow: inherit;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.image .item-top {
+  background-color: #fafafa;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.image .item-top::after {
+  content: "";
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  top: -120px;
+  left: 0;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.image .item-middle .title {
+  padding: 15px 0;
+  font-size: 1.0625rem;
+  font-weight: bold;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.image .item-middle .text {
+  line-height: 150%;
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.nothing {
+  height: 0;
+  border: none;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.choose {
+  border-color: #ffc107;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.choose .item-middle::before {
+  background-color: #ffc107;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.choose .item-bottom .btn-hollow {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.choose .item-bottom .btn-hollow > a {
+  max-width: 320px;
+  min-width: 160px;
+  padding: 5px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #27d0ca;
+  border-radius: 50px;
+  background-color: #27d0ca;
+  color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .item.choose .item-bottom .btn-hollow > a:hover {
+  border-color: #1d9c98;
+  background-color: #1d9c98;
+}
+
+.main-content .content-wrapper.plans-wrapper .container .info-block .w50 {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-content .content-wrapper.plans-feature {
+  background-image: url(https://cdn.holkee.com/images/main/bg_feature.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item.image .item-middle .text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item[data-i="1"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_premium_main_01.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item[data-i="2"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_premium_main_02.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item[data-i="3"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_premium_main_03.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item[data-i="4"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_premium_main_04.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item[data-i="5"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_premium_main_05.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-feature .container .feature .item[data-i="6"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_premium_main_06.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-premium {
+  background-image: url(https://cdn.holkee.com/images/main/bg_levels.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item {
+  border: none;
+  max-width: inherit;
+  min-width: inherit;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.default .item-middle {
+  background-color: initial;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.default .item-middle .text {
+  line-height: 300%;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.free-member .item-top {
+  background: #ffd48a;
+  background: linear-gradient(to right, #ffd48a 0%, #ffa814 100%);
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.free-member .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_free.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.free-member .item-bottom .btn-solid {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.free-member .item-bottom .btn-solid > a {
+  max-width: 320px;
+  min-width: 160px;
+  padding: 5px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f3549a;
+  border-radius: 50px;
+  background-color: #f3549a;
+  color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.free-member .item-bottom .btn-solid > a:hover {
+  border-color: #e5106e;
+  background-color: #e5106e;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-member .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_diamond.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .item-middle {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .item-middle p {
+  line-height: 1.2rem;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .item-middle ul li {
+  position: relative;
+  padding: 10px 0;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .item-middle .font-s {
+  font-size: 0.76rem;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle {
+  padding: 0;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle ul {
+  padding: 20px;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle .top-banner {
+  background-color: #ffc107;
+  padding: 20px 0;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle .top-banner p {
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle.bg-shop {
+  position: relative;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle.bg-shop::after {
+  content: "";
+  width: 1px;
+  top: 0;
+  left: -2px;
+  height: 100%;
+  position: absolute;
+  background-color: #dedede;
+}
+
+.main-content .content-wrapper.plans-premium .container .info-block .item.premium-item .sub-item .item-middle.bg-shop .top-banner {
+  background-color: #ea7fa3;
+}
+
+.main-content .content-wrapper.plans-plan .container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item {
+  border: none;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_diamond.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item .item-middle .additional-text {
+  padding-bottom: 40px;
+  min-height: 250px;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item .item-middle .text .price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item .item-middle .text .price .original-price {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  text-decoration: line-through;
+  color: #9e9e9e;
+  font-size: 0.9375rem;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item .icon-website::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_website.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="5994d46e05899d30fae4d0834d0cefc9"] .item-top,
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="88efa90d501f45f59309e8132e55c89f"] .item-top {
+  background: #ddbaf8;
+  background: linear-gradient(to right, #ddbaf8 0%, #bb74f1 100%);
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="793749b3f3dca5aff3a2cc740dd48663"] .item-top,
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="5a35a388e29b22ef88d5502b77583498"] .item-top {
+  background: #fa89c3;
+  background: linear-gradient(to right, #fa89c3 0%, #f41387 100%);
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="5a35a388e29b22ef88d5502b77583498"] .icon-website::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_websiteandshop.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-plan .container .info-block .item.default[id="5be00891e015c85aefb72fc209944036"] .icon-website::after {
+  background-image: url(https://cdn.holkee.com/images/main/icon_shop.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-plan .font-c-green {
+  color: #27d0ca;
+}
+
+.main-content .content-wrapper.plans-plan .font-c-purple {
+  color: #bf7df2;
+}
+
+.main-content .content-wrapper.plans-plan .font-c-pink {
+  color: #f41387;
+}
+
+.main-content .content-wrapper.plans-additional {
+  z-index: 100;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: #27d0ca;
+  background-image: url(https://cdn.holkee.com/images/main/bg_support.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-content .content-wrapper .container .info-tab {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content .content-wrapper .container .info-tab p {
+  padding: 5px;
+  display: inline-block;
+}
+
+.main-content .content-wrapper .container .info-tab p.choose > a {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.main-content .content-wrapper .container .info-tab p > a {
+  max-width: 180px;
+  min-width: 150px;
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 4px;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper .container .info-tab p > a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item {
+  position: relative;
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item .item-middle::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item .item-middle::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(29% 32%, 44% 55%, 80% 0, 100% 9%, 44% 87%, 13% 46%);
+          clip-path: polygon(29% 32%, 44% 55%, 80% 0, 100% 9%, 44% 87%, 13% 46%);
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item .item-middle .title {
+  width: calc(100% - 55px);
+  padding-bottom: 15px;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  line-height: 150%;
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item .item-middle .text {
+  width: calc(100% - 55px);
+  line-height: 150%;
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item .item-middle .text .price {
+  font-size: 1.0625rem;
+  font-weight: bold;
+}
+
+.main-content .content-wrapper.plans-additional .container .info-block .item .item-bottom {
+  background-color: #ffffff;
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper {
+  position: fixed;
+  right: 3%;
+  bottom: calc(25% - 60px);
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper .btn-checkout {
+  line-height: 150%;
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper .btn-checkout > a {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffc107;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper .btn-checkout > a:hover {
+  background-color: #c59300;
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper .btn-checkout.disallow > a {
+  background-color: #eeeeee;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper .btn-checkout.disallow > a:hover {
+  background-color: #b3b3b3;
+}
+
+.main-content .content-wrapper.plans-additional .container .checkout-wrapper .btn-checkout.disallow > a:active {
+  pointer-events: none;
+}
+
+.main-content .content-wrapper.plans-faq .container .list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.main-content .content-wrapper.plans-faq .container .list > li {
+  padding: 25px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: #eeeeee;
+}
+
+.main-content .content-wrapper.plans-faq .container .list > li .question {
+  font-size: 1.0625rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-faq .container .list > li .answer {
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-payment {
+  background-image: url(https://cdn.holkee.com/images/main/bg_payment.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: cover;
+}
+
+.main-content .content-wrapper.plans-payment:last-of-type {
+  padding-top: 0;
+}
+
+.main-content .content-wrapper.plans-payment .container .table {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 0;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.main-content .content-wrapper.plans-payment .container .table .t-row {
+  padding: 0 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.main-content .content-wrapper.plans-payment .container .table .t-row > .t-col {
+  font-size: 0.8125rem;
+  font-weight: bold;
+}
+
+.main-content .content-wrapper.plans-payment .container .table .t-row > .t-col.t-head {
+  width: 120px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.main-content .content-wrapper.plans-payment .container .table .t-row > .t-col.t-body {
+  width: calc(100% - 110px);
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-payment .container .note {
+  padding: 20px 0;
+}
+
+.main-content .content-wrapper.plans-payment .container .order-info > div:not(.table) {
+  padding-top: 30px;
+}
+
+.main-content .content-wrapper.plans-payment .container .order-info > div .btn.radius {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .order-info > div .btn.radius > a {
+  max-width: 320px;
+  min-width: 160px;
+  padding: 5px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 50px;
+  color: #333333;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .order-info > div .btn.radius > a:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .order-info .table.order-details {
+  max-width: 550px;
+}
+
+.main-content .content-wrapper.plans-payment .container .order-info .table.order-details .total {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccccc;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div:not(.table) {
+  padding-top: 30px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container {
+  max-width: 790px;
+  padding: 25px 20px;
+  /**
+   * Variables: Color
+   */
+  /**
+   * Variables: Font
+   */
+  /**
+   * Variables: Space
+   */
+  /**
+   * Functions: Common
+   */
+  /**
+   * Index: Functions
+   *
+   * If you want to use this member, you needs declaration `@use "<url> as func"`
+   * then you can use `func.<function-name>`.
+   */
+  /**
+   * Variables: Common
+   */
+  /**
+   * Index: Variables
+   *
+   * If you want to use this member, you needs declaration `@use "<url>" as *`
+   * then you can use `$variables`.
+   */
+  /**
+   * Mixins: Common
+   *
+   * If you have two or more related mixins, please move to a independent file.
+   */
+  /**
+   * Mixins: Align
+   */
+  /**
+   * Mixins: Background
+   */
+  /**
+   * Mixins: Clear
+   *
+   * Clear various effects.
+   */
+  /**
+   * Mixins: Decoration
+   */
+  /**
+   * Component: Alert
+   */
+  /**
+   * Component: Button
+   */
+  /**
+   * Component: Input
+   */
+  /**
+   * Index: Mixins
+   *
+   * If you want to use this member, you needs declaration `@use "<url> as mix"`
+   * then you can use `mix.<mixin-name>`.
+   */
+  /**
+   * Component: Form box
+   */
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .note p {
+  text-align: left;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .note p:first-child {
+  color: #ff2121;
+  font-weight: bold;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .note p:last-child {
+  font-size: 0.8125rem;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box.amp-form-submitting .btn {
+  pointer-events: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box.amp-form-submitting .btn[data-type=disabled] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  background-color: #eeeeee;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box.amp-form-submitting .btn > a > .hide {
+  display: inline-block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box.amp-form-submitting .btn > a > .text {
+  display: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box > .col {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #cccccc;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box > .col:last-of-type {
+  border-right: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge > .row {
+  padding: 0;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text > * {
+  width: 100%;
+  height: 40px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text > *:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text > *.invalid {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff2121;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text > *.invalid:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: inherit;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice {
+  position: relative;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice:hover > .icon {
+  color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > input:checked ~ .icon {
+  color: #27d0ca;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > input:checked ~ .icon .unselected {
+  display: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > input:checked ~ .icon .selected {
+  display: block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > p {
+  display: table-cell;
+  text-align: initial;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > .icon {
+  padding-right: 3px;
+  color: #cccccc;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > .icon .unselected {
+  display: block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-choice > .icon .selected {
+  display: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .btn {
+  width: 100%;
+  max-width: 450px;
+  min-width: 120px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #27d0ca;
+  background-color: #27d0ca;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .btn > a {
+  padding: 10px;
+  display: block;
+  color: inherit;
+  line-height: 150%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .btn[data-provider=facebook] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3b5998;
+  background-color: #3b5998;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .btn[data-provider=google] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4285f4;
+  background-color: #4285f4;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fafafa;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset .row {
+  padding: 10px;
+  text-align: initial;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset .row.group {
+  padding: 0 10px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset .row.group > .row {
+  padding: 0;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset .row.group > .row.horizontal {
+  width: initial;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset .row.group > .row.horizontal:last-of-type {
+  padding-right: 0;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .fieldset .field-title {
+  font-weight: bold;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .input-box .row:last-of-type {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .disabled,
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .disabled > * {
+  background-color: #eeeeee;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  text-align: initial;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form p.icon {
+  padding-right: 3px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form p.icon span {
+  display: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form.success p {
+  color: #77aa44;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form.success p.icon .success {
+  display: block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form.warning p {
+  color: #ffc107;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form.warning p.icon .warning {
+  display: block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form.failure p {
+  color: #ff2121;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .alert-form.failure p.icon .failure {
+  display: block;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box > .col {
+  border: none;
+  padding: 20px 15px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > * {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > *:focus {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > *:focus::-moz-placeholder {
+  color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > *:focus:-ms-input-placeholder {
+  color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > *:focus::placeholder {
+  color: #333333;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > *.invalid {
+  color: #ff2121;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row .input-text-underline > *.valid {
+  color: #77aa44;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge > .row {
+  width: 50%;
+  max-width: calc(50% - 10px);
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .payer {
+  flex-basis: 150%;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .payment .card-info .card-type {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .payment .card-info .card-type > .icon {
+  height: 32px;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div .btn.radius {
+  text-align: center;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div .btn.radius > a {
+  max-width: 320px;
+  min-width: 160px;
+  padding: 5px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 50px;
+  color: #333333;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-content .content-wrapper.plans-payment .container .payer-info > div .btn.radius > a:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.main-content .content-wrapper.payment-result {
+  background-image: url(https://cdn.holkee.com/images/main/bg_shopform.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+
+.main-content .content-wrapper.payment-result .container .order-info .table.order-details {
+  margin-bottom: 30px;
+}
+
+.main-content .content-wrapper.payment-result .container .introduction .item[data-i="1"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_techunicorn.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.payment-result .container .introduction .item[data-i="2"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_shop_teaching.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.payment-result .container .introduction .item[data-i="3"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_showcase.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.payment-result .container .introduction .item[data-i="4"] .item-top::after {
+  background-image: url(https://cdn.holkee.com/images/main/img_marketing.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-content .content-wrapper.plans-marketing {
+  background-image: url(https://cdn.holkee.com/images/main/bg_shopform.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block {
+  width: 100%;
+  max-width: 790px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block .item {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  border-width: 0;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block .item .item-top {
+  width: 250px;
+  height: 150px;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom {
+  width: calc(100% - 250px);
+  padding: 20px;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 150%;
+  text-align: left;
+  overflow: hidden;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom p.title {
+  font-size: 1.1875rem;
+}
+
+.main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom p.text {
+  padding-top: 10px;
+  color: #888888;
+}
+
+@media (max-width: 750px) {
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item {
+    max-width: 320px;
+    min-width: 320px;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-top {
+    height: 90px;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-middle {
+    padding: 10px 20px;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-middle .title {
+    font-size: 1rem;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-middle .text {
+    font-size: 0.875rem;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom {
+    padding: 10px 0 20px 0;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .btn-hollow {
+    font-size: 0.875rem;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item .item-bottom .text {
+    font-size: 0.875rem;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-top::after {
+    height: 90px;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-top .title {
+    font-size: 1.5625rem;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item.default .item-middle {
+    min-height: 90px;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .item.image .item-top::after {
+    height: 210px;
+  }
+
+  .main-content .content-wrapper.plans-wrapper .container .info-block .w50 {
+    width: 100%;
+  }
+
+  .main-content .content-wrapper.plans-plan .container .info-block .item .item-middle .additional-text {
+    min-height: inherit;
+  }
+
+  .main-content .content-wrapper.plans-plan .container .info-block .item .item-middle .text .price {
+    font-size: 1.9375rem;
+  }
+
+  .main-content .content-wrapper.plans-additional .container .info-block .item .item-middle::before,
+  .main-content .content-wrapper.plans-additional .container .info-block .item .item-middle::after {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .main-content .content-wrapper.plans-additional .container .info-block .item .item-middle .title {
+    width: calc(100% - 40px);
+    padding-bottom: 10px;
+  }
+
+  .main-content .content-wrapper.plans-additional .container .info-block .item .item-middle .text {
+    width: calc(100% - 40px);
+  }
+
+  .main-content .content-wrapper.plans-additional .container .info-block .item .item-middle .text .price {
+    font-size: 1rem;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content .content-wrapper.content-wrapper .container .container-top h1 {
+    font-size: 1.375rem;
+  }
+
+  .main-content .content-wrapper.content-wrapper .container .container-top h2 {
+    font-size: 1.125rem;
+  }
+
+  .main-content .content-wrapper.content-wrapper .container .container-top h3 {
+    font-size: 0.9375rem;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .order-info .table.order-details .t-row {
+    flex-wrap: wrap;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .order-info .table.order-details .t-row > .t-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge {
+    display: block;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge > .row {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge > .row:nth-of-type(odd) {
+    padding-bottom: 10px;
+  }
+
+  .main-content .content-wrapper.plans-payment .container .payer-info > div.form-container .form-box .col .row.merge > .row:nth-of-type(even) {
+    padding-top: 10px;
+  }
+
+  .main-content .content-wrapper.payment-result {
+    background-image: url(https://cdn.holkee.com/images/main/bg_shopform_s.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+  }
+
+  .main-content .content-wrapper.plans-marketing {
+    background-image: url(https://cdn.holkee.com/images/main/bg_shopform_s.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+  }
+
+  .main-content .content-wrapper.plans-marketing .container .event-block {
+    max-width: 320px;
+  }
+
+  .main-content .content-wrapper.plans-marketing .container .event-block .item {
+    flex-direction: column;
+  }
+
+  .main-content .content-wrapper.plans-marketing .container .event-block .item .item-top {
+    width: 100%;
+    height: initial;
+  }
+
+  .main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom p.title {
+    font-size: 1.0625rem;
+  }
+
+  .main-content .content-wrapper.plans-marketing .container .event-block .item .item-bottom p.text {
+    font-size: 0.8125rem;
+  }
+}
+
+.component {
+  width: 0;
+  height: 0;
+}
+
+.component .lightbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1002;
+  display: none;
+}
+
+.component .lightbox:target {
+  display: block;
+}
+
+.component .modal-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden auto;
+  text-align: center;
+}
+
+.component .modal-wrapper::before {
+  content: "";
+  height: 100%;
+  margin-right: -0.8rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.component .modal-wrapper .modal-container {
+  max-width: 1000px;
+  min-width: 320px;
+  position: relative;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.component .modal-wrapper .modal-container .box-close {
+  position: absolute;
+  top: -0.8rem;
+  right: -0.8rem;
+  z-index: 100;
+}
+
+.component .modal-wrapper .modal-container .box-close a {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+.component .modal-wrapper .modal-container .box-subject {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.component .modal-wrapper .modal-container .box-subject::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -30px;
+  background-color: #27d0ca;
+}
+
+.component .modal-wrapper .modal-container .box-subject > :first-child {
+  padding-bottom: 15px;
+}
+
+.component .modal-wrapper .modal-container .box-subject > :last-child {
+  padding-bottom: 0;
+}
+
+.component .modal-wrapper .modal-container .box-subject .title {
+  font-size: 1.5rem;
+}
+
+.component .modal-wrapper .modal-container .box-subject .subtitle {
+  font-size: 1.25rem;
+}
+
+.component .modal-wrapper .modal-container .box-content .btn {
+  width: 100%;
+  max-width: 450px;
+  min-width: 120px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #27d0ca;
+  background-color: #27d0ca;
+  color: #ffffff;
+  text-align: center;
+}
+
+.component .modal-wrapper .modal-container .box-content .btn > a {
+  padding: 10px;
+  display: block;
+  color: inherit;
+  line-height: 150%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.component .modal-wrapper .modal-container .box-content .content {
+  line-height: 150%;
+}
+
+.component .modal-wrapper .modal-container .box-content .content .info-title {
+  font-size: 1.0625rem;
+  font-weight: bold;
+}
+
+.component .modal-wrapper .modal-container .box-content .content .info-subtitle {
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+
+@media (max-width: 360px) {
+  .component .modal-wrapper .modal-container {
+    min-width: 280px;
+  }
+}
+
+/**
+ * Variables: Color
+ */
+
+/**
+ * Variables: Font
+ */
+
+/**
+ * Variables: Space
+ */
+
+/**
+ * Functions: Common
+ */
+
+/**
+ * Index: Functions
+ *
+ * If you want to use this member, you needs declaration `@use "<url> as func"`
+ * then you can use `func.<function-name>`.
+ */
+
+/**
+ * Variables: Common
+ */
+
+/**
+ * Index: Variables
+ *
+ * If you want to use this member, you needs declaration `@use "<url>" as *`
+ * then you can use `$variables`.
+ */
+
+/**
+ * Mixins: Common
+ *
+ * If you have two or more related mixins, please move to a independent file.
+ */
+
+/**
+ * Mixins: Align
+ */
+
+/**
+ * Mixins: Background
+ */
+
+/**
+ * Mixins: Clear
+ *
+ * Clear various effects.
+ */
+
+/**
+ * Mixins: Decoration
+ */
+
+/**
+ * Component: Alert
+ */
+
+/**
+ * Component: Button
+ */
+
+/**
+ * Component: Input
+ */
+
+/**
+ * Index: Mixins
+ *
+ * If you want to use this member, you needs declaration `@use "<url> as mix"`
+ * then you can use `mix.<mixin-name>`.
+ */
+
+/**
+ * Component: Loader
+ */
+
+.loader-box > p {
+  text-align: center;
+}
+
+.loader-box > p svg {
+  width: 6rem;
+  height: 6rem;
+}
+
+.loader-fullscreen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: #000000;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+.loader-fullscreen > p {
+  color: #ffffff;
+}
+
+.loader-fullscreen > p svg {
+  width: 6rem;
+  height: 6rem;
+}
+
