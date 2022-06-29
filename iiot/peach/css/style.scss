@@ -87,9 +87,11 @@ $f-size-ss: 0.688rem; //11px
     color: transparent;
     text-shadow: 0 0 0 #fff;
     cursor: pointer;
-  }
-  @media all and (max-width: 450px) {
-    font-size: $f-size-s;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
   }
 }
 a.gotop {
@@ -620,10 +622,13 @@ a.gotop {
             text-align: justify;
             padding-bottom: 0;
             span {
-              color: #00c5be;
+              color: #ef6079;
+            }
+            span.blue {
+              color: #6fa8dd;
             }
             a {
-              color: #e5677d;
+              color: #ef6079;
               text-decoration: underline;
               &:hover {
                 text-decoration: none;
@@ -764,7 +769,7 @@ a.gotop {
         }
         p {
           padding-bottom: 20px;
-          font-size: 14px;
+          // font-size: 14px;
           text-align: center;
         }
       }

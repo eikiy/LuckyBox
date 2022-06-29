@@ -314,12 +314,8 @@ body {
   color: transparent;
   text-shadow: 0 0 0 #fff;
   cursor: pointer;
-}
-
-@media all and (max-width: 450px) {
-  .cookie-accept {
-    font-size: 0.813rem;
-  }
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 a.gotop {
@@ -968,11 +964,15 @@ a.gotop {
 }
 
 .middle-container .event-content .info ul.list li p span {
-  color: #00c5be;
+  color: #ef6079;
+}
+
+.middle-container .event-content .info ul.list li p span.blue {
+  color: #6fa8dd;
 }
 
 .middle-container .event-content .info ul.list li p a {
-  color: #e5677d;
+  color: #ef6079;
   text-decoration: underline;
 }
 
@@ -1130,7 +1130,6 @@ a.gotop {
   }
   .middle-container .event-content .info p {
     padding-bottom: 20px;
-    font-size: 14px;
     text-align: center;
   }
   .middle-container .event-content .event-list {
