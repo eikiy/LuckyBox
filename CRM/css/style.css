@@ -3716,6 +3716,10 @@ ul.edit-tool li a:hover {
   display: inline-block;
 }
 
+.popup-container .fillin-box .field ul.show-contact-list li .info .add {
+  width: 100%;
+}
+
 .popup-container .fillin-box .field ul.show-contact-list li .info .phone,
 .popup-container .fillin-box .field ul.show-contact-list li .info .fax {
   width: 50%;
