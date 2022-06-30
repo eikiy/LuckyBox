@@ -1692,7 +1692,7 @@ ul.edit-tool li a:hover {
   top: -2px;
   font-size: 0.688rem;
   color: #fff;
-  background-color: #d54848;
+  background-color: #ffad0a;
   float: none;
   width: initial;
   padding: 5px 8px;
@@ -1701,6 +1701,14 @@ ul.edit-tool li a:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   border-radius: 0 0 0 10px;
+}
+
+.middle-container .data-list .card p.audit-agree {
+  background-color: #11948a;
+}
+
+.middle-container .data-list .card p.audit-reject {
+  background-color: #d54848;
 }
 
 .middle-container .data-list .card h4.product-name {
@@ -3913,7 +3921,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-note-edit p {
-  background-color: #fff3f3;
+  background-color: #f8f8f8;
   width: 100%;
   padding: 6px 5px;
 }
