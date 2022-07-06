@@ -1196,6 +1196,14 @@ a.gotop {
           transform: scale(1);
 }
 
+.middle-container .event-content .how-box ul li a p {
+  text-align: center;
+  display: block;
+  font-size: 0.813rem;
+  padding-bottom: 0;
+  color: #555;
+}
+
 .middle-container .event-content .how-box ul li a:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
