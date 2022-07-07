@@ -41,24 +41,6 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TBZCW9V');</script>
     <!-- End Google Tag Manager -->
-        <script>
-        // 按下同意後，呼叫setAllowPrivacy
-        function setAllowPrivacy() {
-            localStorage.setItem('isPrivacyAllowed', true);
-        }
-        // 載入頁面時，呼叫getAllowPrivacy，確認是否需要呈現隱私權
-        function getAllowPrivacy() {
-            var isPrivacyAllowed = localStorage.getItem('isPrivacyAllowed');
-            if (isPrivacyAllowed === 'true') {
-                // 不顯示隱私權
-                $('#cookie-accept').hide();
-            } else {
-                // 顯示隱私權
-                $('#cookie-accept').show();
-            }
-        }
-        getAllowPrivacy();
-    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -300,5 +282,36 @@
     </div>
     <!-- pushy JS -->
     <script src="mobilemenu/pushy.js"></script>
+    <script>
+        // 按下同意後，呼叫setAllowPrivacy
+        function setAllowPrivacy() {
+            localStorage.setItem('isPrivacyAllowed', true);
+        }
+        // 載入頁面時，呼叫getAllowPrivacy，確認是否需要呈現隱私權
+        function getAllowPrivacy() {
+            var isPrivacyAllowed = localStorage.getItem('isPrivacyAllowed');
+            if (isPrivacyAllowed === 'true') {
+                // 不顯示隱私權
+                console.log('hide');
+                $('#cookie-accept').hide();
+            } else {
+                // 顯示隱私權
+                console.log('show');
+                $('#cookie-accept').show();
+            }
+        }
+        // 建立cookie
+        function createCookie(name, value, days, path) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name + "=" + value + expires + "; path=/";
+        }
+        
+        getAllowPrivacy();
+    </script>
 </body>
 </html>
