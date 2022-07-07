@@ -41,7 +41,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TBZCW9V');</script>
     <!-- End Google Tag Manager -->
-    <script>
+        <script>
         // 按下同意後，呼叫setAllowPrivacy
         function setAllowPrivacy() {
             localStorage.setItem('isPrivacyAllowed', true);
@@ -51,10 +51,13 @@
             var isPrivacyAllowed = localStorage.getItem('isPrivacyAllowed');
             if (isPrivacyAllowed === 'true') {
                 // 不顯示隱私權
+                $('#cookie-accept').hide();
             } else {
                 // 顯示隱私權
+                $('#cookie-accept').show();
             }
         }
+        getAllowPrivacy();
     </script>
 </head>
 <body>
@@ -63,7 +66,7 @@
     <!-- End Google Tag Manager (noscript) -->
    <div id="cookie-accept" class="cookie-accept">
         <span style="">為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies ，關於更多 cookies 以及相關政策更新資訊，請閱讀我們的<a href="privacy.html" style="color: #ffda4e;">隱私權及安全政策</a>。</span>
-        <button class="agree" onclick="javascript: $('#cookie-accept').hide(); createCookie('cookieAccepted', '1', 365, '/');">同意</button>
+        <button class="agree" onclick="javascript: $('#cookie-accept').hide(); createCookie('cookieAccepted', '1', 365, '/');setAllowPrivacy();">同意</button>
         <div class="close" onclick="javascript: $('#cookie-accept').hide(); createCookie('cookieAccepted', '1', 365, '/');">✖️</div>
     </div>
     <a class="gotop"><i class="fas fa-arrow-up"></i></a>
