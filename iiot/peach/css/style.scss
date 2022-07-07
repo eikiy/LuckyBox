@@ -940,6 +940,37 @@ a.gotop {
       }
     }
 }
+.privacy-container{
+  .main-container{
+    padding-top: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  h3.sub-title2 {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 25px;
+  }
+  h4 {
+    text-align: justify;
+    font-size: 15px;
+    padding: 30px 0 15px 0;
+  }
+  p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+    a {
+        color: #3e3e3e;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+  }
+}
 .foorer-content{
   background-color: #ef6079;
   padding: 30px 20px;
