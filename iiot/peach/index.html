@@ -41,13 +41,29 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TBZCW9V');</script>
     <!-- End Google Tag Manager -->
+    <script>
+        // 按下同意後，呼叫setAllowPrivacy
+        function setAllowPrivacy() {
+            localStorage.setItem('isPrivacyAllowed', true);
+        }
+        // 載入頁面時，呼叫getAllowPrivacy，確認是否需要呈現隱私權
+        function getAllowPrivacy() {
+            var isPrivacyAllowed = localStorage.getItem('isPrivacyAllowed');
+            if (isPrivacyAllowed === 'true') {
+                // 不顯示隱私權
+            } else {
+                // 顯示隱私權
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBZCW9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
    <div id="cookie-accept" class="cookie-accept">
-        <span style="float: left; width: calc(100% - 30px);">為提供您更多優質的內容，本網站使用cookies分析技術。若繼續閱覽本網站內容，即表示您同意我們使用cookies，關於更多 cookies以及相關政策更新資訊，請閱讀我們的<a href="privacy.html" style="color: #ffda4e;">隱私權及安全政策</a>。</span>
+        <span style="">為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies ，關於更多 cookies 以及相關政策更新資訊，請閱讀我們的<a href="privacy.html" style="color: #ffda4e;">隱私權及安全政策</a>。</span>
+        <button class="agree" onclick="javascript: $('#cookie-accept').hide(); createCookie('cookieAccepted', '1', 365, '/');">同意</button>
         <div class="close" onclick="javascript: $('#cookie-accept').hide(); createCookie('cookieAccepted', '1', 365, '/');">✖️</div>
     </div>
     <a class="gotop"><i class="fas fa-arrow-up"></i></a>

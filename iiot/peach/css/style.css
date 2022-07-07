@@ -294,6 +294,7 @@ body {
 }
 
 .cookie-accept {
+  text-align: center;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -309,13 +310,42 @@ body {
   font-size: 0.875rem;
 }
 
+.cookie-accept a {
+  text-decoration: underline;
+}
+
+.cookie-accept a:hover {
+  text-decoration: none;
+}
+
+.cookie-accept .agree {
+  display: inline-block;
+  font-weight: bold;
+  padding: 6px 20px;
+  border-radius: 4px;
+  color: #333;
+  background-color: #ffda4e;
+  text-shadow: 0 0 0 #fff;
+  cursor: pointer;
+  border: 1px solid #ffda4e;
+  margin-top: 5px;
+}
+
+.cookie-accept .agree:hover {
+  background-color: #ffe06c;
+  border-color: #ffb33e;
+}
+
 .cookie-accept .close {
-  float: right;
+  display: inline-block;
   color: transparent;
   text-shadow: 0 0 0 #fff;
   cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  margin-left: 10px;
 }
 
 a.gotop {
