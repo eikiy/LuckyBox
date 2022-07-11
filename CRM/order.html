@@ -579,6 +579,19 @@
                                     </div>
                                 </div>
                             </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>新舊單</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="order-type" value="新單">
+                                        <label for="option">新單</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="order-type" value="舊單">
+                                        <label for="option">舊單</label>
+                                    </div>
+                                </div>
+                            </fieldset>
                             <fieldset class="clearfix">
                                 <label class="item-title">產品選項</label>
                                 <div class="confirm">
@@ -877,6 +890,19 @@
                                     </div>
                                 </div>
                             </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>新舊單</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="order-type" value="新單">
+                                        <label for="option">新單</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="order-type" value="舊單">
+                                        <label for="option">舊單</label>
+                                    </div>
+                                </div>
+                            </fieldset>
                             <fieldset class="clearfix">
                                 <label class="item-title">產品選項</label>
                                 <div class="confirm">
@@ -913,12 +939,15 @@
                                             <div class="ad-money">
                                                 <p>每月刊登費用<br><span>(未稅)</span></p>
                                             </div>
+                                            <div class="ad-date">
+                                                <p>走期</p>
+                                            </div>
                                             <div class="ad-subtotal">
                                                 <p>刊登費用小計<br><span>(未稅)</span></p>
                                             </div>
-                                            <div class="ad-other">
+                                            <!-- <div class="ad-other">
                                                 <p><span>備註 / 移除</span></p>
-                                            </div>
+                                            </div> -->
                                         </li>
                                         <li class="clearfix">
                                             <div class="ad-media">
@@ -930,13 +959,16 @@
                                             <div class="ad-money">
                                                 <input type="" name="" value="$30,000">
                                             </div>
+                                            <div class="ad-date">
+                                                <input type="" name="" value="2">
+                                            </div>
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="$90,000">
                                             </div>
                                             <div class="ad-other">
-                                                <a class="edit gray-disabled">
+                                                <!-- <a class="edit gray-disabled">
                                                     <i class="fas fa-pencil-alt" title="填寫備註"></i>
-                                                </a>
+                                                </a> -->
                                                 <a class="delete popup-link" href="#popup-delete-ad">
                                                     <i class="far fa-trash-alt" title="刪除"></i>
                                                 </a>
@@ -947,7 +979,7 @@
                                             </div>
                                             <!-- 業務填寫的備註欄位 -->
                                             <div class="ad-note-edit clearfix">
-                                                <textarea placeholder="填寫備註">點選鉛筆後出現備註欄位填寫（鉛筆icon變灰色無法點選，這邊是業務填寫的備註欄）</textarea>
+                                                <textarea placeholder="填寫備註">（這邊是業務填寫的備註欄）</textarea>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -960,19 +992,23 @@
                                             <div class="ad-money">
                                                 <input type="" name="" value="$20,000">
                                             </div>
+                                            <div class="ad-date">
+                                                <input type="" name="" value="2">
+                                            </div>
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="$60,000">
                                             </div>
                                             <div class="ad-other">
-                                                <a class="edit" href="#">
-                                                    <i class="fas fa-pencil-alt" title="填寫備註"></i>
-                                                </a>
                                                 <a class="delete popup-link" href="#popup-delete-ad">
                                                     <i class="far fa-trash-alt" title="刪除"></i>
                                                 </a>
                                             </div>
                                             <div class="ad-description">
                                                 <p>威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯) 威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)</p>
+                                            </div>
+                                            <!-- 業務填寫的備註欄位 -->
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -985,11 +1021,11 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="-">
                                             </div>
-                                            <div class="ad-other">
+                                            <!-- <div class="ad-other">
                                                 <a class="edit gray-disabled" href="#">
                                                     <i class="fas fa-pencil-alt" title="填寫備註"></i>
                                                 </a>
-                                            </div>
+                                            </div> -->
                                             <div class="ad-note-edit clearfix">
                                                 <textarea placeholder="填寫備註"></textarea>
                                             </div>
@@ -1004,10 +1040,13 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="-">
                                             </div>
-                                            <div class="ad-other">
+                                            <!-- <div class="ad-other">
                                                 <a class="edit" href="#">
                                                     <i class="fas fa-pencil-alt" title="填寫備註"></i>
                                                 </a>
+                                            </div> -->
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
                                             </div>
                                         </li>
                                         <li class="clearfix">
@@ -1020,10 +1059,13 @@
                                             <div class="ad-subtotal">
                                                 <input type="" name="" value="-">
                                             </div>
-                                            <div class="ad-other">
+                                            <!-- <div class="ad-other">
                                                 <a class="edit" href="#">
                                                     <i class="fas fa-pencil-alt" title="填寫備註"></i>
                                                 </a>
+                                            </div> -->
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
                                             </div>
                                         </li>
                                         <li class="bottom-total clearfix">
@@ -1052,6 +1094,140 @@
                                 </div>
                             </fieldset>
                             <fieldset class="clearfix">
+                                <!-- 其他產品 -->
+                                <div class="media-details">
+                                    <ul>
+                                        <li class="media-title clearfix">
+                                            <div class="ad-title-other">
+                                                <p>其它產品項目</p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <p>每月刊登費用<br><span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-date">
+                                                <p>數量</p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p>刊登費用小計<br><span>(未稅)</span></p>
+                                            </div>
+                                            <!-- <div class="ad-other">
+                                                <p><span>備註 / 移除</span></p>
+                                            </div> -->
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-title-other">
+                                                <p>AAAAA</p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <input type="" name="" value="$30,000">
+                                            </div>
+                                            <div class="ad-date">
+                                                <input type="" name="" value="1">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <input type="" name="" value="$90,000">
+                                            </div>
+                                            <div class="ad-other">
+                                                <a class="delete popup-link" href="#popup-delete-ad">
+                                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                                </a>
+                                            </div>
+                                            <div class="ad-description">
+                                                <p>AAAAA規格描述</p>
+                                            </div>
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註">AAAAA</textarea>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-title-other">
+                                                <p>BBB</p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <input type="" name="" value="$20,000">
+                                            </div>
+                                            <div class="ad-date">
+                                                <input type="" name="" value="2">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <input type="" name="" value="$60,000">
+                                            </div>
+                                            <div class="ad-other">
+                                                <a class="delete popup-link" href="#popup-delete-ad">
+                                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                                </a>
+                                            </div>
+                                            <div class="ad-description">
+                                                <p>BBBBBB規格</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>帳戶設定費<span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-note">
+                                                <input type="" name="" value="$3,000-BBB優惠">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <input type="" name="" value="-">
+                                            </div>
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>帳戶服務費<span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-note">
+                                                <input type="" name="" value="">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <input type="" name="" value="-">
+                                            </div>
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="ad-media">
+                                                <p>廣告製作費<span>(未稅)</span></p>
+                                            </div>
+                                            <div class="ad-note">
+                                                <input type="" name="" value="">
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <input type="" name="" value="-">
+                                            </div>
+                                            <div class="ad-note-edit clearfix">
+                                                <textarea placeholder="填寫備註"></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="bottom-total clearfix">
+                                            <div class="ad-media">
+                                                <p>其他產品額小計</p>
+                                            </div>
+                                            <div class="ad-type">
+                                                <p></p>
+                                            </div>
+                                            <div class="ad-money">
+                                                <p class="total">$10,000</p>
+                                            </div>
+                                            <div class="ad-subtotal">
+                                                <p class="total">$90,000</p>
+                                            </div>
+                                            <div class="total">
+                                                <p>$100,000</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- old -->
+                                    <!-- <div class="bottom-total clearfix">
+                                        <p>廣告媒體金額小計</p>
+                                        <p class="total">$150,000</p>
+                                    </div> -->
+                                </div>
+                            </fieldset>                            <fieldset class="clearfix">
                                 <div class="media-details">
                                     <div class="confirm clearfix">
                                         <div class="discount-title">

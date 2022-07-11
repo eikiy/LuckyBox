@@ -3798,6 +3798,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field .media-details ul li {
+  position: relative;
   border-bottom: 1px #cdcdcd dashed;
   padding: 8px 0;
 }
@@ -3847,13 +3848,22 @@ ul.edit-tool li a:hover {
   width: 15%;
 }
 
+.popup-container .fillin-box .field .media-details ul li div.ad-title-other {
+  width: 40%;
+  text-align: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0 15px;
+}
+
 .popup-container .fillin-box .field .media-details ul li div.ad-money input, .popup-container .fillin-box .field .media-details ul li div.ad-subtotal input {
   color: #11948a;
   font-weight: bold;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-note {
-  width: calc(35% - 10px);
+  width: calc(55% - 10px);
   margin: 0 5px;
 }
 
@@ -3861,29 +3871,27 @@ ul.edit-tool li a:hover {
   font-size: 0.688rem;
 }
 
+.popup-container .fillin-box .field .media-details ul li div.ad-date {
+  width: 10%;
+}
+
 .popup-container .fillin-box .field .media-details ul li div.ad-other {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  width: 10%;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-other a {
   color: #11948a;
-  padding: 10px;
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fff;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-other a:hover {
   opacity: .7;
-}
-
-.popup-container .fillin-box .field .media-details ul li div.ad-other a.gray-disabled {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-filter: gray;
-          filter: gray;
-  opacity: .5;
-  pointer-events: none;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-description {
@@ -3915,7 +3923,7 @@ ul.edit-tool li a:hover {
   max-height: 100px;
   line-height: 18px;
   background-color: #f8f8f8;
-  padding: 5px 15px;
+  padding: 5px 12px;
   font-size: 0.688rem;
   border-radius: 4px;
 }
@@ -3946,6 +3954,10 @@ ul.edit-tool li a:hover {
   margin-top: 3px;
   border-bottom: none;
   padding: 10px 0;
+}
+
+.popup-container .fillin-box .field .media-details ul li:hover .ad-other {
+  opacity: 1;
 }
 
 .popup-container .fillin-box .field .media-details .discount-title {
