@@ -171,6 +171,12 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .for-dark .privacy-content h4, .for-dark .privacy-content h3, .for-dark .privacy-content p{ color: #fff; }
 .for-dark .privacy-content p a{ color: #fff; }
 .for-dark .logo-s{ background: url(../images/img-TC-card-s-w.svg) center center no-repeat; background-size: contain;}
+.for-dark .logo-point-s {
+	height: 65px;
+	background: url(../images/Logo-Taoyuan-Point-w.png) center center no-repeat;
+	background-size: contain;
+	margin-bottom: 20px;
+}
 .for-dark .edit-userinfo label p.label-title{ font-weight: normal; color: #fff; }
 .for-dark .text-note p, .for-dark .text-note ul,
 .for-dark .edit-userinfo p.text-note{ color: #fff;}
