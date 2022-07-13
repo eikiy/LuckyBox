@@ -1058,7 +1058,7 @@ a.gotop {
 .middle-container .event-content .info-logos ul li {
   padding: 0 25px 10px 0;
   float: left;
-  display: inline-block;
+  display: block;
 }
 
 .middle-container .event-content .info-logos ul li a {
@@ -1376,6 +1376,22 @@ a.gotop {
 
 .privacy-container p a:hover {
   text-decoration: none;
+}
+
+.privacy-container ul {
+  padding-top: 10px;
+  list-style-type: decimal;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.privacy-container ul li p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.privacy-container .r-box p {
+  text-align: center;
 }
 
 .foorer-content {

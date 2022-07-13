@@ -997,6 +997,22 @@ a.gotop {
         }
       }
   }
+  ul{ 
+    padding-top: 10px;
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 14px;
+    li p{
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+  }
+  .r-box{
+    p{
+      text-align: center;
+    }
+  }
 }
 .foorer-content{
   background-color: #ef6079;
