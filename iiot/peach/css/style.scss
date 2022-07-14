@@ -430,7 +430,7 @@ a.gotop {
         padding: 10px 0;
         li{
           float:left;
-          width: 50%;
+          width: 33.3%;
           padding: 5px 10px;
           a:hover{
             opacity: .9;
@@ -445,6 +445,11 @@ a.gotop {
             img{ 
               width: 100%;
             }
+          }
+        }
+        @media all and (max-width: 850px) {
+          li{
+            width: 50%;
           }
         }
         @media all and (max-width: 780px) {

@@ -729,7 +729,7 @@ a.gotop {
 
 .middle-container .event-content .card .tycg-card li {
   float: left;
-  width: 50%;
+  width: 33.3%;
   padding: 5px 10px;
 }
 
@@ -752,6 +752,12 @@ a.gotop {
 
 .middle-container .event-content .card .tycg-card li .tycg-photo img {
   width: 100%;
+}
+
+@media all and (max-width: 850px) {
+  .middle-container .event-content .card .tycg-card li {
+    width: 50%;
+  }
 }
 
 @media all and (max-width: 780px) {
