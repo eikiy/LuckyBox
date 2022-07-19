@@ -684,6 +684,14 @@ a.gotop {
   padding: 0px 0 20px 0;
 }
 
+.middle-container .event-content .store-more {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  display: block;
+  padding-bottom: 15px;
+}
+
 .middle-container .event-content .card {
   padding: 50px 30px 30px 30px;
   border-radius: 20px;
