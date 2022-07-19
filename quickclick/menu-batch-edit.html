@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>菜單管理 - 菜單 - 批次操作</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <main class="main-container">
+        <p class="breadcrumb"><span>快一點</span> > <span>麥町吐司工房新莊中原店</span> > 批次操作</p>
+        <section class="top-content top-set-function clearfix">
+            <h3 class="main-title">
+                <a href="menu.html">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                    返回
+                </a>
+            </h3>
+            <!-- <div class="search-box">
+                <input class="default" type="text" placeholder="搜尋關鍵字">
+            </div> -->
+            <input class="btn-save btn--primary-xl " type="submit" value="儲存">
+            <input class="btn-cancel btn--primary-xl " type="submit" value="取消">
+            <p class="sub-title"><span class="c-red">* </span>請選擇欲操作的商品項目，再點選下方功能，而修改後將無法復原哦。</p>
+            <div class="btn-batch-tools">
+                <ul class="btns clearfix">
+                    <!-- click 到此功能 li 才須 + selected -->
+                    <!-- 讓 icon 變橘色 -->
+                    <li class="selected">
+                        <a class="btn-properties btn--primary-l"></a>
+                        <!-- click 才出現 to-apply -->
+                        <div class="to-apply">
+                            <p class="top-title"><span class="f-w">套用屬性：</span>
+                            為商品設定屬性，出單時商品順序將可依照屬性分群排序。</p>
+                            <div class="search-text">
+                                <input class="" type="text" placeholder="搜尋或新建">
+                            </div>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">當日送</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">uber eat 先出</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">每日優惠限量組</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">早鳥優惠</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">午餐優先</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">門市才有的商品</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">各大外送平台專屬各大外送平台專屬送平台專屬</label>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>新建</a></p>
+                                <p><a>管理屬性</a></p>
+                            </div>
+                        </div>
+                        <!-- 看畫面用：如果input內輸入關鍵字，有結果 -->
+                        <div class="to-apply" style="top:500px;">
+                            <p class="top-title"><span class="f-w">套用屬性：</span>
+                                為商品設定屬性，出單時商品順序將可依照屬性分群排序。</p>
+                            <div class="search-text">
+                                <input class="" type="text" placeholder="搜尋或新建" value="uber eat">
+                            </div>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">uber eat 先出</label>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>套用</a></p>
+                            </div>
+                        </div>
+                        <!-- 看畫面用：如果input內輸入關鍵字，無結果 -->
+                        <div class="to-apply" style="top:693px;">
+                            <p class="top-title"><span class="f-w">套用屬性：</span>
+                                為商品設定屬性，出單時商品順序將可依照屬性分群排序。</p>
+                            <div class="search-text">
+                                <input class="" type="text" placeholder="搜尋或新建" value="food">
+                            </div>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <p class="note">無此屬性，點選下方「新建」一個新屬性。</p>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>"<span class="f-w">food</span>"（新建一個新的）</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="btn-hashtag btn--primary-l"></a>
+                        <!-- click 才出現 to-apply -->
+                        <div class="to-apply">
+                            <p class="top-title"><span class="f-w">套用標籤：</span>
+                                將顯示於前台商品名稱旁。</p>
+                            <div class="search-text">
+                                <input class="" type="text" placeholder="搜尋或新建">
+                            </div>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">義大利</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">美國牛</label>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>新建</a></p>
+                                <p><a>管理標籤</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="btn-category btn--primary-l"></a>
+                        <!-- click 才出現 to-apply -->
+                        <div class="to-apply">
+                            <p class="top-title"><span class="f-w">套用類別：</span>
+                                商品分類，顯示於前台上方可快速篩選商品類別。</p>
+                            <div class="search-text">
+                                <input class="" type="text" placeholder="搜尋或新建">
+                            </div>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">主打套餐系列</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">國王皇后的吐司＆三明治＆花生系列</label>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>新建</a></p>
+                                <p><a>管理類別</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="btn-shopadd btn--primary-l"></a>
+                        <!-- click 才出現 to-apply -->
+                        <div class="to-apply">
+                            <p class="top-title"><span class="f-w">套用加購選項：</span>
+                                將產品設為推薦後，將顯示於店家資訊的熱銷商品區塊。</p>
+                            <div class="search-text">
+                                <input class="" type="text" placeholder="搜尋或新建">
+                            </div>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">飲料</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">沙拉</label>
+                                </div>
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">甜點</label>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>新建</a></p>
+                                <p><a>管理加購選項</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 只有推薦商品，不一樣 -->
+                        <a class="btn-recommend btn--primary-l"></a>
+                        <!-- click 才出現 to-apply -->
+                        <div class="to-apply">
+                            <p class="top-title"><span class="f-w">推薦：</span>
+                                點選星星將產品設為推薦後，將顯示於店家資訊的《熱銷商品》區塊。</p>
+                            <div class="search-list">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">顯示已設推薦的商品</label>
+                                </div>
+                            </div>
+                            <div class="setting">
+                                <p><a>完成</a></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="middle-content">
+            <div class="menu-content menu-batch">
+                <div class="field">
+                    <!-- 類別 -->
+                    <div class="category">
+                        <div class="option-list">
+                            <input id="" type="checkbox" name="" value="">
+                            <label for="option">勾選</label>
+                        </div>
+                        <!-- 展開類別內的單品項目 + arr-down-->
+                        <div class="arr arr-down"></div>
+                        <p class="product-name">主打套餐系列</p>
+                    </div>
+                    <!-- 單品 -->
+                    <div class="product-single">
+                        <div class="product selected clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">勾選</label>
+                            </div>
+                            <!-- 展開 + arr-down  -->
+                            <!-- <div class="arr arr-down"></div> -->
+                            <div class="star star-shiny"></div>
+                            <div class="product-photo" style="background-image: url(images/img-001.jpg);"></div>
+                            <div class="product-name">
+                                <p>國王套餐</p>
+                            </div>
+                            <div class="tags clearfix">
+                                <div class="properties">
+                                    <p>當日送</p>
+                                    <a class="remove"></a>
+                                </div>
+                                <div class="hashtag">
+                                    <p>美國牛</p>
+                                    <a class="remove"></a>
+                                </div>
+                                <div class="hashtag">
+                                    <p>生鮮蔬菜</p>
+                                    <a class="remove"></a>
+                                </div>
+                                <div class="shopadd">
+                                    <p>甜點</p>
+                                    <a class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <p>$280</p>
+                            </div>
+                        </div>
+                        <!-- 先隱藏 -->
+                        <!-- <div class="additional-content">
+                            <div class="category clearfix">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="product-name">
+                                    <p>甜點</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additional-content">
+                            <div class="category clearfix">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="product-name">
+                                    <p>沙拉</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- 單品 -->
+                    <div class="product-single">
+                        <div class="product clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">勾選</label>
+                            </div>
+                            <div class="star"></div>
+                            <div class="product-photo"></div>
+                            <div class="product-name">
+                                <p>皇后套餐（無加購旁邊無展開箭頭）</p>
+                            </div>
+                            <div class="tags clearfix">
+                                <div class="properties">
+                                    <p>當日送</p>
+                                    <a class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <p>$1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <!-- 類別 -->
+                    <div class="category">
+                        <div class="option-list">
+                            <input id="" type="checkbox" name="" value="">
+                            <label for="option">勾選</label>
+                        </div>
+                        <!-- 展開類別內的單品項目 + arr-down-->
+                        <div class="arr"></div>
+                        <p class="product-name">下午茶系列</p>
+                    </div>
+                </div>
+                <div class="field">
+                    <!-- 類別 -->
+                    <div class="category">
+                        <div class="option-list">
+                            <input id="" type="checkbox" name="" value="">
+                            <label for="option">勾選</label>
+                        </div>
+                        <div class="arr arr-down"></div>
+                        <p class="product-name">國王皇后的吐司＆三明治＆花生系列</p>
+                    </div>
+                    <!-- 單品 -->
+                    <div class="product-single">
+                        <div class="product seected clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">勾選</label>
+                            </div>
+                            <!-- <div class="arr"></div> -->
+                            <div class="star star-shiny"></div>
+                            <div class="product-photo" style="background-image: url(images/img-003.jpg);"></div>
+                            <div class="product-name">
+                                <p>國王的花生吐司佐鳳梨拉拉醬</p>
+                            </div>
+                            <div class="tags clearfix">
+                                <div class="hashtag">
+                                    <p>生鮮蔬菜</p>
+                                    <a class="remove"></a>
+                                </div>
+                                <div class="shopadd">
+                                    <p>沙拉</p>
+                                    <a class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <p>$180</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-single">
+                        <div class="product clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">勾選</label>
+                            </div>
+                            <div class="star"></div>
+                            <div class="product-photo" style="background-image: url(images/img-002.jpg);"></div>
+                            <p class="product-name default">皇后的燕麥吐司佐焦糖</p>
+                            <div class="tags clearfix">
+                                <div class="shopadd">
+                                    <p>甜點</p>
+                                    <a class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <p>$380</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-single">
+                        <div class="product clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">勾選</label>
+                            </div>
+                            <div class="star"></div>
+                            <div class="product-photo" style="background-image: url(images/img-004.jpg);"></div>
+                            <p class="product-name default">黑天鵝公主漢堡</p>
+                            <div class="tags clearfix">
+                                <div class="hashtag">
+                                    <p>大韓民國</p>
+                                    <a class="remove"></a>
+                                </div>
+                                <div class="shopadd">
+                                    <p>水果</p>
+                                    <a class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <p>$480</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-single">
+                        <div class="product clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label for="option">勾選</label>
+                            </div>
+                            <div class="star"></div>
+                            <div class="product-photo"></div>
+                            <p class="product-name default">白馬王子薯條堡</p>
+                            <div class="tags clearfix">
+                                <div class="hashtag">
+                                    <p>大韓民國</p>
+                                    <a class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <p>$380</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+</body>
+</html>
