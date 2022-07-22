@@ -3026,6 +3026,30 @@ a.reminder:hover {
   width: 100%;
   padding: 40px 0 30px 0;
   text-align: center;
+  position: relative;
+}
+
+.popup-container .top-title .arr-back {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  z-index: 1;
+}
+
+.popup-container .top-title .arr-back a {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #555;
+  opacity: .5;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+
+.popup-container .top-title .arr-back a:hover {
+  opacity: 1;
 }
 
 .popup-container .top-title h4 {
@@ -3714,6 +3738,13 @@ a.reminder:hover {
 @media all and (max-width: 760px) {
   .popup-container .top-title {
     padding: 30px 0 15px;
+  }
+  .popup-container .top-title .arr-back {
+    top: 6px;
+    left: 8px;
+  }
+  .popup-container .top-title .arr-back a {
+    font-size: 1.2rem;
   }
   .popup-container .top-title h4 {
     font-size: 1.125rem;
