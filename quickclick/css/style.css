@@ -960,6 +960,89 @@ a.reminder:hover {
   min-height: 100px;
 }
 
+.menu-product-info .set-card .fillin-info fieldset .create-text {
+  width: 100%;
+  min-height: 36px;
+  line-height: 35px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .create-text .enter_new {
+  width: 180px;
+  position: relative;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .create-text .enter_new input {
+  border-radius: 20px;
+  padding: 2px;
+  line-height: initial;
+  font-size: 0.688rem;
+  border: 1px solid #dbdbdb;
+  line-height: 25px;
+  height: 30px;
+  padding: 2px 32px 2px 12px;
+  background-color: transparent;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .create-text .enter_new input:focus {
+  border-color: #f0941d;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .create-text .enter_new .add-icon {
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  width: 23px;
+  height: 23px;
+  display: block;
+  background-image: url(../images/svg/circle-plus-orange.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .shortcut-list {
+  width: 100%;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .shortcut-list .hashtag {
+  float: left;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  padding: 2px;
+  line-height: initial;
+  padding: 2px 32px 2px 12px;
+  position: relative;
+  margin: 0 5px 5px 0;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .shortcut-list .hashtag::after {
+  position: absolute;
+  content: "";
+  right: 2px;
+  top: 2px;
+  width: 23px;
+  height: 23px;
+  float: left;
+  display: block;
+  background-image: url(../images/svg/circle-plus-orange.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .shortcut-list .hashtag p {
+  line-height: 25px;
+  font-size: 0.688rem;
+}
+
+.menu-product-info .set-card .fillin-info fieldset .shortcut-list .hashtag:hover {
+  border-color: #f0941d;
+  background-color: #fffbf2;
+}
+
 .menu-product-info .set-card .fillin-info fieldset .upload-cover {
   float: left;
   width: 100%;
@@ -3359,7 +3442,7 @@ a.reminder:hover {
 
 .popup-container .choose-add-group-list .field .add-group-name {
   vertical-align: top;
-  width: calc(100% - 310px);
+  width: calc(100% - 165px);
   display: inline-block;
   padding: 7px 5px;
   vertical-align: middle;
@@ -3470,7 +3553,7 @@ a.reminder:hover {
 
 .popup-container .choose-add-group-list .field .add-group-name {
   vertical-align: top;
-  width: calc(100% - 310px);
+  width: calc(100% - 165px);
   display: inline-block;
   padding: 7px 5px;
   vertical-align: middle;
@@ -3542,7 +3625,7 @@ a.reminder:hover {
 
 .popup-container .single-product .field .add-product-name {
   display: inline-block;
-  width: calc(50% - 182px);
+  width: calc(50% - 42px);
   vertical-align: middle;
 }
 
@@ -3776,7 +3859,7 @@ a.reminder:hover {
     line-height: 20px;
   }
   .popup-container .choose-add-group-list .field .add-group-name {
-    width: calc(100% - 45px);
+    width: calc(100% - 165px);
     padding-bottom: 0;
   }
   .popup-container .choose-add-group-list .field .add-group-time {
@@ -3828,7 +3911,7 @@ a.reminder:hover {
   }
   .popup-container .single-product .field .add-product-name {
     vertical-align: top;
-    width: calc(75% - 111px);
+    width: calc(75% - 48px);
   }
   .popup-container .single-product .field .add-product-name p {
     height: 34px;
@@ -3843,18 +3926,22 @@ a.reminder:hover {
     line-height: 24px;
   }
   .popup-container .single-product .field .add-sell {
-    width: 60px;
+    width: calc(100% - 125px);
+    padding-left: 40px;
   }
   .popup-container .single-product .field .add-sell p {
     padding: 7px 0px;
-    text-align: right;
+    text-align: left;
     font-size: 0.813rem;
   }
   .popup-container .single-product .field .add-group-time {
     padding: 7px 0px;
   }
+  .popup-container .single-product .field .add-group-tools {
+    padding-left: 6px;
+  }
   .popup-container .single-product .field .add-group-tools p {
-    text-align: right;
+    text-align: left;
   }
   .popup-container .single-product .field-title .add-sell p {
     padding: 0;
