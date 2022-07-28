@@ -657,13 +657,13 @@
                                         <label for="option">開立三聯式電子發票</label>
                                     </div>
                                     <div class="option-list">
-                                        <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
-                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
+                                        <input type="radio" name="invoice" value="開立二聯式電子發票（請務必確認抬頭名稱）">
+                                        <label for="option">開立二聯式電子發票（請務必確認抬頭名稱）</label>
                                     </div>
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="invoice" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
                                     <input class="other" type="" name="" value="">
                                 </div>
@@ -682,7 +682,7 @@
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="invoice1" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
                                     <input class="other" type="" name="" value="">
                                 </div>
@@ -695,8 +695,8 @@
                                         <label for="option">上檔前逐月付款</label>
                                     </div>
                                     <div class="option-list">
-                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
-                                        <label for="option">上檔前季繳(3個月)付款</label>
+                                        <input type="radio" name="payment" value="上檔前季繳（3個月）付款">
+                                        <label for="option">上檔前季繳（3個月）付款</label>
                                     </div>
                                     <div class="option-list">
                                         <input type="radio" name="payment" value="上檔前一次付清  ">
@@ -705,7 +705,7 @@
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="payment" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
                                     <input class="other" type="" name="" value="">
                                 </div>
@@ -724,7 +724,7 @@
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="payment1" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
                                     <!-- <input class="other" type="" name="" value=""> -->
                                 </div>
@@ -1326,12 +1326,25 @@
                         </div>
                         <div class="fillin-info">
                             <fieldset>
-                                <label class="item-title">帳號設定費</label>
+                                <label class="item-title">帳號設定費(未稅)</label>
                                 <input class="default" type="" name="" value="3000">
+                                <div class="ad-note-edit clearfix">
+                                    <textarea placeholder="填寫備註"></textarea>
+                                </div>
                             </fieldset>
                             <fieldset>
-                                <label class="item-title">專案上線費</label>
-                                <input class="default" type="" name="" value="3000">
+                                <label class="item-title">廣告製作費(未稅)</label>
+                                <input class="default" type="" name="" value="">
+                                <div class="ad-note-edit clearfix">
+                                    <textarea placeholder="填寫備註"></textarea>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">帳戶服務費(未稅)</label>
+                                <input class="default" type="" name="" value="">
+                                <div class="ad-note-edit clearfix">
+                                    <textarea placeholder="填寫備註"></textarea>
+                                </div>
                             </fieldset>
                         </div>
                         <div class="order-total clearfix">
@@ -1432,14 +1445,14 @@
                                     </div>
                                     <div class="option-list">
                                         <input type="radio" name="invoice" value="開立二聯式電子發票(請務必確認抬頭名稱)">
-                                        <label for="option">開立二聯式電子發票(請務必確認抬頭名稱)</label>
+                                        <label for="option">開立二聯式電子發票（請務必確認抬頭名稱）</label>
                                     </div>
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="invoice" value="其他" checked>
-                                        <label for="option" checked>其他</label>
+                                        <label for="option" checked>其他（請於備註欄位說明）</label>
                                     </div>
-                                    <input class="other" type="" name="" value="待確認">
+                                    <!-- <input class="other" type="" name="" value="待確認"> -->
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -1456,9 +1469,9 @@
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="invoice1" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
-                                    <input class="other" type="" name="" value="">
+                                    <!-- <input class="other" type="" name="" value=""> -->
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -1469,8 +1482,8 @@
                                         <label for="option">上檔前逐月付款</label>
                                     </div>
                                     <div class="option-list">
-                                        <input type="radio" name="payment" value="上檔前季繳(3個月)付款">
-                                        <label for="option">上檔前季繳(3個月)付款</label>
+                                        <input type="radio" name="payment" value="上檔前季繳（3個月）付款">
+                                        <label for="option">上檔前季繳（3個月）付款</label>
                                     </div>
                                     <div class="option-list">
                                         <input type="radio" name="payment" value="上檔前一次付清" checked>
@@ -1479,9 +1492,9 @@
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="payment" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
-                                    <input class="other" type="" name="" value="">
+                                    <!-- <input class="other" type="" name="" value=""> -->
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -1498,7 +1511,7 @@
                                     <!-- 勾選了其他才出現下面 input -->
                                     <div class="option-list option-other">
                                         <input type="radio" name="payment1" value="其他">
-                                        <label for="option">其他</label>
+                                        <label for="option">其他（請於備註欄位說明）</label>
                                     </div>
                                     <!-- <input class="other" type="" name="" value=""> -->
                                 </div>
@@ -1783,12 +1796,21 @@
                         </div>
                         <div class="fillin-info">
                             <fieldset>
-                                <label class="item-title">帳號設定費</label>
-                                <p class="input-value"><span class="">3000</span></p>
+                                <label class="item-title">帳號設定費(未稅)</label>
+                                <p class="input-value">
+                                    <span class="">3000</span>
+                                </p>
+                                <div class="ad-note-edit clearfix">
+                                    <p>備註欄位內容包含 勾選其他 等等等</p>
+                                </div>
                             </fieldset>
                             <fieldset>
-                                <label class="item-title">專案上線費</label>
-                                <p class="input-value"><span class="">3000</span></p>
+                                <label class="item-title">廣告製作費(未稅)</label>
+                                <p class="input-value"><span class=""></span></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">帳戶服務費(未稅)</label>
+                                <p class="input-value"><span class=""></span></p>
                             </fieldset>
                         </div>
                         <div class="order-total clearfix">

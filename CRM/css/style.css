@@ -3372,6 +3372,10 @@ ul.edit-tool li a:hover {
   padding-right: 10px;
 }
 
+.popup-container .fillin-box .field fieldset .both-for-discount .option-other {
+  width: 100%;
+}
+
 .popup-container .fillin-box .field fieldset .both-for-discount .discount {
   position: relative;
   width: 42%;
@@ -3395,7 +3399,6 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field fieldset .both-for-invoice .option-other {
-  max-width: 100px;
   padding-right: 10px;
 }
 
@@ -3910,28 +3913,8 @@ ul.edit-tool li a:hover {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-note-edit {
-  float: left;
   width: 100%;
-  height: initial;
   padding-top: 8px;
-}
-
-.popup-container .fillin-box .field .media-details ul li div.ad-note-edit textarea {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 30px;
-  max-height: 100px;
-  line-height: 18px;
-  background-color: #f8f8f8;
-  padding: 5px 12px;
-  font-size: 0.688rem;
-  border-radius: 4px;
-}
-
-.popup-container .fillin-box .field .media-details ul li div.ad-note-edit p {
-  background-color: #f8f8f8;
-  width: 100%;
-  padding: 6px 5px;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.total p {
@@ -4148,6 +4131,32 @@ ul.edit-tool li a:hover {
 
 .popup-container .fillin-box .field ul.file-list li.btn-add a:hover {
   background-color: #ebf5f4;
+}
+
+.popup-container .fillin-box .field .ad-note-edit {
+  float: left;
+  width: 100%;
+  height: initial;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.popup-container .fillin-box .field .ad-note-edit textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 30px;
+  max-height: 100px;
+  line-height: 18px;
+  background-color: #f8f8f8;
+  padding: 5px 12px;
+  font-size: 0.688rem;
+  border-radius: 4px;
+}
+
+.popup-container .fillin-box .field .ad-note-edit p {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 6px 5px;
 }
 
 .popup-container .fillin-box .no-line {
@@ -4655,6 +4664,11 @@ ul.edit-tool li a:hover {
 
 .popup-finish .fillin-box .field .confirm .list-project-single {
   padding: 0;
+}
+
+.popup-finish .fillin-box .field .ad-note-edit p {
+  font-size: 0.813rem;
+  text-align: center;
 }
 
 .popup-finish .history-box {
