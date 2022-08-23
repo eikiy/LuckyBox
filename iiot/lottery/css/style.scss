@@ -1,0 +1,212 @@
+@import "../css/reset.scss";
+.lottery-container{
+  width: 100%;
+  background-color: #EED568;
+  padding: 15px;
+  .middle-container {
+    border: 3px solid #f1e7ce;
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    background: url(../images/line-02.png) center center repeat-y #F1E7CE;
+    background-size: contain;
+    img{
+      width: 100%;
+    }
+  }
+  .event-content-top{
+     width: 100%;
+     padding: 25px;
+     .both{
+      max-width: 720px;
+      margin: 0 auto;
+      .l-b{
+        width: 70%;
+        float: left;
+        padding: 15px;
+      }
+      .r-b{
+        width: 30%;
+        float: left;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 5px;
+      }
+     }
+  }
+  .event-content-01{
+    padding: 15px 20px 35px 35px;
+    .seal-content{
+      padding: 25px 0;
+    }
+    .the-seal{
+      width: 33%;
+      float: left;
+      padding:15px 25px 25px 25px;
+      text-align: center;
+      position: relative;
+      img{
+          display: inline-block;
+          max-width: 189px;
+          margin: 0 auto;
+        } 
+      p.nb{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 70px;
+        font-weight: bold;
+        color: #7c7c7c;
+        @media all and (max-width: 900px) {
+          top: 55px;
+          font-size: 50px;
+        }
+        @media all and (max-width: 600px) {
+          top:40px;
+          font-size: 40px;
+        }
+        @media all and (max-width: 500px) {
+          top:30px;
+          font-size: 30px;
+        }
+        @media all and (max-width: 400px) {
+          top: 25px;
+        }
+      }
+      .time{
+        background-color: #FBF8F0;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px 5px;
+        max-width: 165px;
+        margin: 0 auto;
+        min-height: 56px;
+        p{
+          font-size: 36px;
+          font-weight: bold;
+          color: #81c23d;
+        }
+      }
+    }
+    .the-points{
+      width: 33%;
+      float: left;
+      position: relative;
+      .points{
+        position:absolute;
+        bottom: 12%;
+        width: 100%;
+        p{
+          font-size: 55px;
+          font-weight: bold;
+          color: #009688;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .event-content-02{
+    padding: 15px 10px 20px 35px;
+    .nb{
+      padding-top: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      p{
+        font-size: 130px;
+        color: #009688;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .event-content-03{
+    padding:15px 10px 20px 35px;
+  }
+  @media all and (max-width: 650px) {
+    padding: 0;
+    .event-content-top {
+      padding:15px 25px;
+    }
+    .event-content-01 {
+      .the-points .points p {
+        font-size: 50px;
+      }
+      .the-seal{ 
+        padding: 5px 20px 20px 20px;
+        .time{
+          min-height: 44px;
+          p{
+            font-size: 25px;
+          }
+        } 
+      }
+    }
+    .event-content-02 {
+      .nb p{
+        font-size: 90px;
+      }
+    }
+  }
+  @media all and (max-width: 550px) {
+    .event-content-01 {
+      .the-points .points p {
+        font-size: 35px;
+      }
+      .the-seal{ 
+        padding: 5px 20px 10px 20px;
+          .time {
+          min-height: 30px;
+          padding: 5px;
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .event-content-02 {
+      .nb p {
+        font-size: 70px;
+      }
+    }
+  }
+  @media all and (max-width: 450px) {
+    .event-content-top {
+      padding:10px 25px 5px 25px;
+    }
+    .event-content-01 {
+      padding: 0px 25px 35px 25px;
+      .the-points .points p {
+        font-size: 25px;
+      }
+      .seal-content{
+        padding: 15px 0;
+      }
+      .the-seal{ 
+        padding: 0px 12px 10px 12px;
+        .time {
+          min-height: 25px;
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .event-content-02 {
+      padding-right: 25px;
+      padding-bottom: 10px;
+      .nb p {
+        font-size: 58px;
+      }
+    }
+    .event-content-03 {
+      padding: 15px 20px 20px 25px;
+    }
+  }
+}
+

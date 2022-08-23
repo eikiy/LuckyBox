@@ -1,0 +1,445 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active,
+*:focus,
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Noto Sans TC", Arial, "微軟正黑體", "新細明體", sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  font-size: 0.9375em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  border-color: #9e9e9e;
+}
+
+.lottery-container {
+  width: 100%;
+  background-color: #EED568;
+  padding: 15px;
+}
+
+.lottery-container .middle-container {
+  border: 3px solid #f1e7ce;
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  background: url(../images/line-02.png) center center repeat-y #F1E7CE;
+  background-size: contain;
+}
+
+.lottery-container .middle-container img {
+  width: 100%;
+}
+
+.lottery-container .event-content-top {
+  width: 100%;
+  padding: 25px;
+}
+
+.lottery-container .event-content-top .both {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.lottery-container .event-content-top .both .l-b {
+  width: 70%;
+  float: left;
+  padding: 15px;
+}
+
+.lottery-container .event-content-top .both .r-b {
+  width: 30%;
+  float: left;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.lottery-container .event-content-01 {
+  padding: 15px 20px 35px 35px;
+}
+
+.lottery-container .event-content-01 .seal-content {
+  padding: 25px 0;
+}
+
+.lottery-container .event-content-01 .the-seal {
+  width: 33%;
+  float: left;
+  padding: 15px 25px 25px 25px;
+  text-align: center;
+  position: relative;
+}
+
+.lottery-container .event-content-01 .the-seal img {
+  display: inline-block;
+  max-width: 189px;
+  margin: 0 auto;
+}
+
+.lottery-container .event-content-01 .the-seal p.nb {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: #7c7c7c;
+}
+
+@media all and (max-width: 900px) {
+  .lottery-container .event-content-01 .the-seal p.nb {
+    top: 55px;
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .lottery-container .event-content-01 .the-seal p.nb {
+    top: 40px;
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .lottery-container .event-content-01 .the-seal p.nb {
+    top: 30px;
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .lottery-container .event-content-01 .the-seal p.nb {
+    top: 25px;
+  }
+}
+
+.lottery-container .event-content-01 .the-seal .time {
+  background-color: #FBF8F0;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 5px;
+  max-width: 165px;
+  margin: 0 auto;
+  min-height: 56px;
+}
+
+.lottery-container .event-content-01 .the-seal .time p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #81c23d;
+}
+
+.lottery-container .event-content-01 .the-points {
+  width: 33%;
+  float: left;
+  position: relative;
+}
+
+.lottery-container .event-content-01 .the-points .points {
+  position: absolute;
+  bottom: 12%;
+  width: 100%;
+}
+
+.lottery-container .event-content-01 .the-points .points p {
+  font-size: 55px;
+  font-weight: bold;
+  color: #009688;
+  text-align: center;
+}
+
+.lottery-container .event-content-02 {
+  padding: 15px 10px 20px 35px;
+}
+
+.lottery-container .event-content-02 .nb {
+  padding-top: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lottery-container .event-content-02 .nb p {
+  font-size: 130px;
+  color: #009688;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.lottery-container .event-content-03 {
+  padding: 15px 10px 20px 35px;
+}
+
+@media all and (max-width: 650px) {
+  .lottery-container {
+    padding: 0;
+  }
+  .lottery-container .event-content-top {
+    padding: 15px 25px;
+  }
+  .lottery-container .event-content-01 .the-points .points p {
+    font-size: 50px;
+  }
+  .lottery-container .event-content-01 .the-seal {
+    padding: 5px 20px 20px 20px;
+  }
+  .lottery-container .event-content-01 .the-seal .time {
+    min-height: 44px;
+  }
+  .lottery-container .event-content-01 .the-seal .time p {
+    font-size: 25px;
+  }
+  .lottery-container .event-content-02 .nb p {
+    font-size: 90px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .lottery-container .event-content-01 .the-points .points p {
+    font-size: 35px;
+  }
+  .lottery-container .event-content-01 .the-seal {
+    padding: 5px 20px 10px 20px;
+  }
+  .lottery-container .event-content-01 .the-seal .time {
+    min-height: 30px;
+    padding: 5px;
+  }
+  .lottery-container .event-content-01 .the-seal .time p {
+    font-size: 20px;
+  }
+  .lottery-container .event-content-02 .nb p {
+    font-size: 70px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .lottery-container .event-content-top {
+    padding: 10px 25px 5px 25px;
+  }
+  .lottery-container .event-content-01 {
+    padding: 0px 25px 35px 25px;
+  }
+  .lottery-container .event-content-01 .the-points .points p {
+    font-size: 25px;
+  }
+  .lottery-container .event-content-01 .seal-content {
+    padding: 15px 0;
+  }
+  .lottery-container .event-content-01 .the-seal {
+    padding: 0px 12px 10px 12px;
+  }
+  .lottery-container .event-content-01 .the-seal .time {
+    min-height: 25px;
+  }
+  .lottery-container .event-content-01 .the-seal .time p {
+    font-size: 15px;
+  }
+  .lottery-container .event-content-02 {
+    padding-right: 25px;
+    padding-bottom: 10px;
+  }
+  .lottery-container .event-content-02 .nb p {
+    font-size: 58px;
+  }
+  .lottery-container .event-content-03 {
+    padding: 15px 20px 20px 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
