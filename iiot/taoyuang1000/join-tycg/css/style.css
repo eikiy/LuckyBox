@@ -33,12 +33,11 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .option-list input[type="checkbox"]:not(old),
 .option-list input[type="radio"]:not(old) {  position: absolute;  top: 0;  left: 0;  height: 100%;  width: 100% !important;  margin: 0;  padding: 0;  opacity: 0;  cursor: pointer;}
 
-.option-list input[type="checkbox"]:not(old) + label {  display: inline-block;  padding-left: 36px;  /*line-height: 38px;*/  z-index: 1;  font-size:14px;}
+.option-list input[type="checkbox"]:not(old) + label {   font-weight: bold; display: inline-block;  padding-left: 40px; z-index: 1;  font-size:14px;}
 .option-list input[type="checkbox"]:not(old) + label span {  font-size: 0.688rem;}
-.option-list input[type="checkbox"]:not(old) + label::before {  position: absolute;  content: "";  left: 5px;  top: 0px;  background-color: #fff;  width: 20px;  height: 20px;  border-radius: 5px;  display: block;  z-index: 0;  pointer-events: none;}
+.option-list input[type="checkbox"]:not(old) + label::before {  position: absolute;  content: "";  left: 5px;  top: 5px;   width: 18px;  height: 18px; border: 3px solid #EF6079;  border-radius: 4px;  display: block;  z-index: 0;  pointer-events: none;}
 
-.option-list input[type="checkbox"]:not(old) + label::after { position: absolute;  content: "";  left: 6px;  top: 0px;  width: 23px;  height: 18px;  display: none;  background: url("../images/check-yello.svg") no-repeat center center;  pointer-events: none;}
-.option-list input[type="checkbox"]:not(old):checked + label {  font-weight: bold;}
+.option-list input[type="checkbox"]:not(old) + label::after { position: absolute;  content: "";  left: 5px;  top: 5px;  width: 18px;  height: 18px;border: 3px solid #EF6079; border-radius: 4px; display: none;  background: url("../images/check-w.svg") no-repeat center center #EF6079;  pointer-events: none;}
 .option-list input[type="checkbox"]:not(old):checked + label::after {  display: block;}
 
 .option-list input[type="radio"]:not(old) + label { cursor: pointer; display: inline-block;  padding-left: 34px;  line-height: 38px;  font-size:14px;}
@@ -46,7 +45,8 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .option-list input[type="radio"]:not(old) + label::after { position: absolute;  content: ""; left: 4.5px; top: 13.5px; display: none; background-color: #5CB8B2; width: 11.5px; height: 11.5px; border-radius: 50px;}
 .option-list input[type="radio"]:not(old):checked + label {  font-weight: bold;}
 .option-list input[type="radio"]:not(old):checked + label::after {  display: block;}
-
+.option-list a{ color: #5CB8B2; padding: 0 3px; }
+.option-list a:hover{ text-decoration: underline; }
 
 .logo{ width: 125px; height: 96px; display: block; margin: 10px auto; background: url(../images/logo.svg) center center no-repeat; background-size: contain; }
 .logo-s{ width: 100%; height: 30px; background: url(../images/img-TC-card-s.svg) center center no-repeat; background-size: contain; margin: 10px 0 50px 0; }
@@ -90,7 +90,7 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 
 
 .for-register .logo{ margin-top: 3vh; width: 96px;}
-
+.for-register .option-list input[type="checkbox"]:not(old), .for-registe .option-list input[type="radio"]:not(old){ width: 40px !important; }
 .for-gender label.form-label{ float: left; line-height: 38px; padding-right: 25px; font-size: 14px;}
 .for-gender .gender-list{ float: left; width: initial; }
 .for-gender .gender-list li{float: left; padding-right: 15px;}
@@ -101,6 +101,7 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 .btn-disabled { cursor: no-drop!important; background-color: lightgray!important;}
 .btn-disabled:hover{ opacity: 1; }
 
+.both-btn{ padding: 5px 0 15px 0; }
 .both-btn .btn-default{ margin: 10px 2px;}
 
 .btn-out{ background-color: #ec759c; display: block; margin: 0 auto; }
