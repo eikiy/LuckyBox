@@ -530,3 +530,89 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   -ms-flex-item-align: end !important;
   align-self: flex-end !important;
 }
+
+/*-2022-0917-add-*/
+.for-logo{
+	border-bottom:1px solid #999;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.l-title{
+	float: none;
+	vertical-align: middle;
+	width: 25%;
+	display: inline-block;
+	margin-left: 8%;
+	padding:0 15px;
+}
+.r-info{
+	float: none;
+	vertical-align: middle;
+	width: 66%;
+	display: inline-block;
+	padding:0 15px;
+}
+.r-info p{
+	font-weight: bold;
+}
+.r-info .text-green{
+	font-size: 18px;
+}
+h3.top-title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+ul.notes{
+	color: #999999;
+	padding-inline-start: 20px;
+	list-style-type: decimal;
+}
+ul.notes li p{
+	margin: 4px 0;
+}
+.bottom-btn{
+	text-align: center;
+}
+.bottom-btn .a-btn{
+	margin: 0 5px;
+	display: inline-block;
+	min-width: 150px;
+}
+@media all and (max-width: 970px) {
+	.l-title{
+		margin-left: 0%;
+	}
+	.r-info{
+		width: 74%;
+	}
+}
+@media all and (max-width: 750px) {
+	h3.top-title{
+		font-size: 22px;
+	}
+	.for-logo{
+		text-align: center;
+	}
+	.l-title{
+		width: 45%;
+	}
+	.r-info{
+		width: 54%;
+	}
+	.r-info .text-green{
+		font-size: 15px;
+	}
+	.form-order-info .row{
+		text-align: left;
+		margin-bottom: 0;
+	}
+}
+@media all and (max-width: 550px) {
+	h3.top-title{
+		font-size: 18px;
+	}
+}
+/*-2022-0917-add-END*/

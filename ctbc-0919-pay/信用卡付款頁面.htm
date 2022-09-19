@@ -27,72 +27,74 @@
 </head><body class="bg">
 
 <title>信用卡付款頁面</title>
-
-
 	<div class="box">
 		<div class="container-fluid autofix">
 			<header>
-				
-					
-					<div>
-						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-6">
-								<img src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/CTBC_W.jpg" alt="LOGO" class="logo">
-							</div>
-							<div class="col-xs-12 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4" style="margin-bottom: 10px">
-								<img src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/cardtype_ss.png" class="img-responsive logo-vmj">
-								<span style="color: #AA0000; font-size: 10px;">我們接受VISA、MasterCard、JCB之信用卡交易！</span>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-12 col-md-12">
-								<p class="text-deep"><strong><span>歡迎您光臨本行特約商店：信用卡網路測試端末機</span> </strong></p>
-								<p class="text-deep"><strong><span>您採用本行 SSL PLUS 網路交易安全機制付款！</span></strong></p>
-							</div>
-						</div>
+					<div class="for-logo">
+						<img src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/CTBC_W.jpg" alt="LOGO" class="logo">
 					</div>
 			</header>
-			<hr>
 			<section id="payment-form">
 				<form name="sslForm" id="sslForm" method="post" class="form-horizontal">
-					<div class="row">
-						<div class="col-xs-12 col-md-3 col-md-offset-1">
-							<label>
-								<span class="ch-title">訂單編號</span>
-								<span class="eng-title">Order Number</span>
-							</label>
-						</div>
-						<div class="col-xs-12 col-md-6 align-self-center">
-							<div class="col-12">
-								<p class="text-green" style="line-height: 30px; font-size: medium; font-weight: 700;">Order20220915195009</p>
+					<h3 class="top-title p-text-green">交易資訊(Payment Information)</h3>
+					<div class="form-order-info">
+						<div class="row">
+							<div class="l-title">
+								<label>
+									<span class="ch-title">特約商店</span>
+									<span class="eng-title">Merchant Name</span>
+								</label>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-md-3 col-md-offset-1">
-							<label>
-								<span>訂單金額</span>
-								<span class="eng-title">Purchase Amount</span>
-							</label>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="row" style="margin-bottom: 0;">
-								<div class="col-xs-4 text-center">
-									<span class="text-green font-weight-bold text-large">60</span>
-								</div>
-								<div class="col-xs-5 align-self-end">
-									<label>
-										<span>新台幣</span>
-										<span class="eng-title">NT Dollars</span>
-									</label>
+							<div class="r-info">
+								<div class="col-12">
+									<p class="text-green">XXXX 商店如果名稱很長就會變成這樣哦哦哦</p>
 								</div>
 							</div>
 						</div>
+						<div class="row">
+							<div class="l-title">
+								<label>
+									<span class="ch-title">訂單編號</span>
+									<span class="eng-title">Order Numbe</span>
+								</label>
+							</div>
+							<div class="r-info">
+								<div class="col-12">
+									<p>20220915195009</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="l-title">
+								<label>
+									<span class="ch-title">交易幣別</span>
+									<span class="eng-title">Currency</span>
+								</label>
+							</div>
+							<div class="r-info">
+								<div class="col-12">
+									<p>新台幣 <span class="eng-title" style="display:inline-block;">(Nt Dollars)</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="l-title">
+								<label>
+									<span class="ch-title">訂單金額</span>
+									<span class="eng-title">Purchase Amount</span>
+								</label>
+							</div>
+							<div class="r-info">
+								<div class="col-12">
+									<span class="text-green font-weight-bold text-large">573</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					
+					<hr>	
 
 					<!-- Card Number -->
+					<h3 class="top-title p-text-green">信用卡資訊(Credit Card Information)</h3>
 					<div class="row">
 						<div class="col-xs-12 col-md-3 col-md-offset-1">
 							<label>
@@ -101,14 +103,11 @@
 							</label>
 						</div>
 						<div class="col-xs-12 col-md-8">
-							
-								
 								<div class="panform">
 									<!-- For VMJ -->
 									<img id="pansvg" src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/card.png" alt="">
 									<input type="tel" class="form-control pan-col-all" id="pan_num" name="pan_num" pattern="[0-9 ]*" autocomplete="off" onkeyup="setBlur(this)" onkeypress="setBlur(this)" onkeydown="setBlur(this)" placeholder="xxxx xxxx xxxx xxxx" maxlength="20">
 								</div>
-							
 						</div>
 					</div>
 					<!-- CVV -->
@@ -172,48 +171,16 @@
 						</div>
 					</div>
 
-					
-
-
-					<!--安全驗證碼-->
-					<div class="row">
-						<div class="col-xs-12 col-md-3 col-md-offset-1">
-							<label>
-								<img id="imagesrc" src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/images.jpg" style="display: inline-block;" border="0">
-								<!-- 若該特店有開啟語音驗證碼服務，則顯示此段 Start -->
-								<a>
-									<span onclick="playVoiceCaptcha(); return false;">
-										<img id="voiceSecurityCode" src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/voiceSecurityCode.png" style="display: inline-block;" border="0">	
-									</span>
-								</a>
-								<!-- 若該特店有開啟語音驗證碼服務，則顯示此段  End-->
-								<a>
-									<span onclick="reloadImg(); return false">
-										<img alt="refresh" src="%E4%BF%A1%E7%94%A8%E5%8D%A1%E4%BB%98%E6%AC%BE%E9%A0%81%E9%9D%A2_files/refresh.png" style="display: inline-block;">
-									</span>
-								</a>
-								<span>安全驗證碼</span>
-
-							</label>
-						</div>
-						<div class="col-xs-12 col-md-6 ">
-							<div class="col-xs-12 col-md-12">
-								<input type="tel" name="rand" class="form-control text-center" maxlength="4" pattern="\d{4}" required="" placeholder="請輸入左圖所顯示之數字">
-							</div>
-						</div>
-					</div>
-
 					<!-- button -->
-					<div class="row">
-
-						<div class="col-xs-12 col-md-offset-1 col-md-4 ">
-							<button type="submit" class="btn btn-ctbc sb-btn">
-								<span>確認付款 To Pay</span>
+					<div class="bottom-btn">
+						<div class="a-btn">
+							<button type="button" class="btn btn-ctbc sb-btn" onclick="reversal()">
+								<span>取消付款<br>(Cancel)</span>
 							</button>
 						</div>
-						<div class="col-xs-12 col-md-offset-2 col-md-4 ">
-							<button type="button" class="btn btn-ctbc sb-btn" onclick="reversal()">
-								<span>取消本交易 Cancel</span>
+						<div class="a-btn">
+							<button type="submit" class="btn btn-ctbc sb-btn">
+								<span>確認付款<br>(Pay Now)</span>
 							</button>
 						</div>
 					</div>
@@ -221,11 +188,24 @@
 					<hr>
 					<div class="row" style="margin-top: 20px">
 						<div class="col-xs-12 col-md-12 align-self-center">
-
-							<p class="p-text-gray">建議您在點選刷卡確認鈕前，記下或列印您的訂單編號與消費金額，按下『確認付款 To 
+							<ul class="notes">
+								<li>
+									<p class="p-text-gray">於網路上進行交易時，應慎選信譽卓越的網站，交易前務必三思，以防杜詐騙。</p>
+								</li>
+								<li>
+									<p class="p-text-gray">歡迎光臨本行特約商店，本服務使用SSL PLUS網路交易安全機制，請您放心付款。</p>
+								</li>
+								<li>
+									<p class="p-text-gray">我們接受VISA、MasterCard、JCB之信用卡交易！<span><img height="20" src="信用卡付款頁面_files/cardtype_ss.png"></span></p>
+								</li>
+								<li>
+									<p class="p-text-gray">建議您在點選刷卡確認按鈕前，記下或列印您的訂單編號與消費金額，按下『確認付款(Pay Now)』鍵後，請等待出現授權結果的畫面，才關閉瀏覽器或跳離本網頁；倘若出現作業逾時的回應，請您稍後回到網路商場重新刷卡購物，或請您詢問購物網站是否成功收到該筆訂單及其處理狀況，以保障消費之權益。<br>為了保障您的刷卡安全，請您注意瀏覽器左下角的計時說明，如未能於時間內完成輸入，本交易視同不成功，如欲取消本交易，請問直接關閉瀏覽器，請按下『取消本交易(Cancel)』鍵，本交易則將不會進行相關授權作業。</p>
+								</li>
+							</ul>
+							<!-- <p class="p-text-gray">建議您在點選刷卡確認鈕前，記下或列印您的訂單編號與消費金額，按下『確認付款 To 
 Pay』鍵後，請等待出現授權結果的畫面，才關閉閉瀏覽器或跳離本網頁；倘若出現作業逾時的回應，請您稍後回到網路商場重新刷卡購物，或請您詢問購物網站
 是否成功收到該筆訂單及其處理情況，以保障您消費之權益；</p>
-							<p class="p-text-green">為了保障您的刷卡安全，請您注意瀏覽器左下角的計時說明，如未能於時間內完成輸入，本交易視同交易不成功，如欲取消本交易，請勿直接關閉瀏覽器，請按下『取消本交易 Cancel』鍵，本交易則將不會進行相關授權作業。</p>
+							<p class="p-text-green">為了保障您的刷卡安全，請您注意瀏覽器左下角的計時說明，如未能於時間內完成輸入，本交易視同交易不成功，如欲取消本交易，請勿直接關閉瀏覽器，請按下『取消本交易 Cancel』鍵，本交易則將不會進行相關授權作業。</p> -->
 						</div>
 					</div>
 					<input type="hidden" name="timeOut">
