@@ -1,0 +1,424 @@
+if (typeof String.prototype.trim !== 'function') {
+    String.prototype.trim = function() {
+	return this.replace(/^\s+|\s+$/g, '');
+    }
+}
+var isAE = false;
+var st = null;
+var voiceCaptchaFlag= true;
+
+$(function() {
+    var d = new Date();
+    var obj;
+    for (i = 1; i <= 12; i++) {
+	obj = $("<option/>", {
+	    value : (i >= 10 ? "" : "0") + i,
+	    text : i
+	});
+	$('select[name="expire_month"]').append(obj);
+    }
+    $('select[name="expire_month"]').prop('selectedIndex', d.getMonth());
+
+    for (i = 0; i < 15; i++) {
+	obj = $("<option/>", {
+	    value : d.getFullYear() + i,
+	    text : d.getFullYear() + i
+	})
+	$('select[name="expire_year"]').append(obj);
+    }
+
+    checkAE();
+    timeout();
+
+});
+
+function timeout() {
+    var d = new Date();
+    var nowtime = d.getTime();
+    var timeout = $("[name=ot]").val();
+    st = setTimeout("reversal('Y')", timeout);
+}
+
+function checkAE() {
+    var flag = false;
+    var $elem = $('input[name="txtype"]').val();
+    if ($elem == '6') {
+	$("div[data-meth='ae']").show();
+	$("div[data-meth='ae']").attr('disabled', false);
+
+	$("div[data-meth='vmj']").attr('disabled', true);
+	$("div[data-meth='vmj']").hide();
+
+	$("[name='cvc2']").attr('required', false);
+	$("[name='fourDBC']").attr('required', true);
+
+	isAE = true;
+    } else {
+	$("div[data-meth='ae']").hide();
+	$("div[data-meth='ae']").attr('disabled', true);
+
+	$("div[data-meth='vmj']").show();
+	$("div[data-meth='vmj']").attr('disabled', false);
+
+	$("[name='cvc2']").attr('required', true);
+	$("[name='fourDBC']").attr('required', false);
+	isAE = false;
+    }
+}
+
+$('#pan_num').on('keyup', function(){
+    panAction(this);
+});
+
+function panAction(obj) {
+    var v = $(obj).val();
+    if (!isAE) {
+	$(obj).val(v.replace(/[^\d]/g, '').replace(/(.{4})/g, "$1 "));
+	var type = v.substring(0, 1);
+
+	// 获取当前光标的位置
+	var caret = obj.selectionStart;
+	// 获取当前的value
+	var value = obj.value;
+	// 从左边沿到坐标之间的空格数
+	var sp = (value.slice(0, caret).match(/\s/g) || []).length;
+	// 去掉所有空格
+	var nospace = value.replace(/\s/g, '');
+	// 重新插入空格
+	var curVal = this.value = nospace.replace(/\D+/g, "").replace(
+		/(\d{4})/g, "$1 ").trim();
+	// 从左边沿到原坐标之间的空格数
+	var curSp = (curVal.slice(0, caret).match(/\s/g) || []).length;
+	// 修正光标位置
+	this.selectionEnd = this.selectionStart = caret + curSp - sp;
+	switch (type) {
+	case '3':
+	    $("#pansvg").prop('src', 'images/jcb.png');
+	    break;
+	case '4':
+	    $("#pansvg").prop('src', 'images/visa.png');
+	    break;
+	case '2':
+	case '5':
+	    $("#pansvg").prop('src', 'images/mastercard.png');
+	    break;
+	default:
+	    $("#pansvg").prop('src', 'images/card.png');
+	    break;
+	}
+	// console.log($(this).val().trim().length);
+	if ($(obj).val().trim().length > 19) {
+	    $(obj).val($(obj).val().substring(0, 19));
+	}
+	if ($(obj).val().trim().length == 19) {
+	    $('#cvc2').focus();
+	}
+    } else {
+	var value = v;
+	var nospace = value.replace(/\s/g, '');
+	if (nospace.length == 15) {
+	    $(obj).val(v.replace(/[^\d]/g, '').replace(/(.{4})(.{6})(.{5})/g,"$1 $2 $3"));
+	} else if (nospace.length >= 10) {
+	    $(obj).val(v.replace(/[^\d]/g, '').replace(/(.{4})(.{6})/g, "$1 $2 "));
+	    } else {
+	    $(obj).val(v.replace(/[^\d]/g, '').replace(/(.{4})/g, "$1 "));
+	}
+
+	if ($(obj).val().trim().length > 17) {
+	    $(obj).val($(obj).val().substring(0, 17));
+	    $(obj).val(
+		    v.replace(/[^\d]/g, '').replace(/(.{4})(.{6})(.{5})/g, "$1 $2 $3"));
+	}
+	if ($(obj).val().trim().length == 17) {
+	    $('#fourDBC').focus();
+	}
+    }
+
+}
+
+function setBlur(obj) {
+    var fm = document.sslForm;
+    if (isAE) {
+	if (obj == fm.pan_no1) {
+	    fm.pan_no1.value = fm.pan_no1.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no1.value.length == 4) {
+		fm.pan_no2.focus();
+	    }
+	    return;
+	}
+	if (obj == fm.pan_no2) {
+	    fm.pan_no2.value = fm.pan_no2.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no2.value.length == 6) {
+		fm.pan_no3.focus();
+	    }
+	    return;
+	}
+	if (obj == fm.pan_no3) {
+	    fm.pan_no3.value = fm.pan_no3.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no3.value.length == 5) {
+		fm.fourDBC.focus();
+	    }
+	    return;
+	}
+	if (obj == fm.fourDBC) {
+	    fm.fourDBC.value = fm.fourDBC.value.replace(/[^\d]/g, '')
+	    if (fm.fourDBC.value.length == 4) {
+		fm.expire_month.focus();
+	    }
+	    return;
+	}
+    } else {
+	if (obj == fm.pan_no1) {
+	    fm.pan_no1.value = fm.pan_no1.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no1.value.length == 4) {
+		fm.pan_no2.focus();
+	    }
+	    return;
+	}
+	if (obj == fm.pan_no2) {
+	    fm.pan_no2.value = fm.pan_no2.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no2.value.length == 4) {
+		fm.pan_no3.focus();
+	    }
+	    return;
+	}
+	if (obj == fm.pan_no3) {
+	    fm.pan_no3.value = fm.pan_no3.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no3.value.length == 4) {
+		fm.pan_no4.focus();
+	    }
+	    return;
+	}
+	if (obj == fm.pan_no4) {
+	    fm.pan_no4.value = fm.pan_no4.value.replace(/[^\d]/g, '')
+	    if (fm.pan_no4.value.length == 4) {
+		fm.cvc2.focus();
+	    }
+	    return;
+	}
+
+	if (obj == fm.cvc2) {
+	    fm.cvc2.value = fm.cvc2.value.replace(/[^\d]/g, '')
+	    if (fm.cvc2.value.length == 3) {
+		fm.expire_month.focus();
+	    }
+	    return;
+	}
+    }
+}
+
+/**
+ * 傳送前檢查
+ * 
+ * @returns
+ */
+
+$('#sslForm').on('submit', function() {
+    return checkSubmit();
+});
+function checkSubmit() {
+	if(document.sslForm._action.value != 'cancel'){
+     if(document.sslForm.txtype.value == 6 ){
+    	if(document.sslForm.pan_num.value != undefined && document.sslForm.pan_num.value.length < 17){
+    		alert("卡號長度錯誤！");
+    		$("#pan_num").focus();
+    		return false;
+    	  }
+     }else{
+      if(document.sslForm.pan_num.value != undefined && document.sslForm.pan_num.value.length < 19){
+		alert("卡號長度錯誤！");
+		$("#pan_num").focus();
+		return false;
+	  }
+     }
+	}
+	
+    var $form = $('#sslForm');
+//    var flag = false;
+    $.ajaxSetup({
+	async : false
+    });
+
+    if ($('[name=_action]').val() == 'cancel') {
+	return true;
+    }
+    
+//    $.post('checkRand', "rand=" + $('[name=rand]').val(), function(result) {
+//	console.log(result);
+//	flag = result;
+//	if (!flag) {
+//	    showErrMsg("驗證碼輸入錯誤，請重新輸入！");
+//	    // alert("驗證碼輸入錯誤，請重新輸入！");
+//	    reloadImg();
+//	}
+//    });
+
+//    if (flag) {
+	$form.attr('action', './authPayment');
+	$form.attr('method', 'POST');
+//	$('#pan_num').val($('#pan_num').val().replace(/\s/g, ''));
+	showloading(1);
+	// $form.submit();
+	clearTimeout(st);
+//    }
+    return true;
+}
+
+/**
+ * 交易取消
+ * 
+ * @returns
+ */
+function reversal(timeout) {
+    var $form = $('#sslForm');
+    $('[name=_action]').val('cancel');
+    $('[name=timeOut]').val(timeout);
+    if (isAE) {
+	$('[name=pan_num]').val('000000000000000');
+	$('[name=pan_no1]').val('0000');
+	$('[name=pan_no2]').val('000000');
+	$('[name=pan_no3]').val('00000');
+    } else {
+	$('[name=pan_num]').val('0000000000000000');
+	$('[name=pan_no1]').val('0000');
+	$('[name=pan_no2]').val('0000');
+	$('[name=pan_no3]').val('0000');
+	$('[name=pan_no4]').val('0000');
+    }
+    $('[name=rand]').val('0000');
+    $form.attr('action', './authPayment');
+    $form.attr('method', 'POST');
+    clearTimeout(st);
+    $form.submit();
+}
+
+/**
+ * 驗證碼
+ * 
+ * @returns
+ */
+function reloadImg() {
+    var invwk2 = (function() {
+	var max = Math.pow(2, 32), seed;
+	return {
+	    setSeed : function(val) {
+		seed = val || Math.round(Math.random() * max);
+	    },
+	    getSeed : function() {
+		return seed;
+	    },
+	    rand : function() {
+		// creates randomness...somehow...
+		seed += (seed * seed) | 5;
+		// Shift off bits, discarding the sign. Discarding the sign is
+		// important because OR w/ 5 can give us + or - numbers.
+		return (seed >>> 32) / max;
+	    }
+	};
+    }());
+    invwk2.setSeed(Math.random() * Math.pow(2, 32));
+    var randomnumber2 = invwk2.rand();
+    // document.getElementById('imagesrc').src =
+    // 'https://epos.chinatrust.com.tw/auth/Images.jsp?rand='+ randomnumber2;
+    document.getElementById('imagesrc').src = 'images?rand=' + randomnumber2;
+    var dReloadLink = document.getElementById("reload-img");
+    if (dReloadLink != null) {
+	dReloadLink.onclick = function(e) {
+	    invwk2.setSeed(Math.random() * Math.pow(2, 32));
+	    var randomnumber = invwk2.rand();
+	    document.getElementById('imagesrc').src = 'images?rand='
+		    + randomnumber;
+	    // document.getElementById('imagesrc').src =
+	    // 'https://epos.chinatrust.com.tw/auth/Images.jsp?rand='+
+	    // randomnumber;
+	    if (e)
+		e.preventDefault();
+	    return false;
+	};
+    }
+    //語音驗證碼規格，播放過語音後，需重整圖片驗證碼，才可再播放語音驗證碼
+    voiceCaptchaFlag = true;
+    document.all.rand.value = "";
+    document.all.rand.focus();
+}
+
+function distinguishBrowser() {
+	// Internet Explorer 6-11
+	var isIE = /* @cc_on!@ */false || !!document.documentMode;
+	// Chrome 1 - 71
+	var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+	// Firefox 1.0+
+	var isFirefox = typeof InstallTrigger !== 'undefined'; 
+	// Edge 20+
+	var isEdge = !isIE && !!window.StyleMedia;
+	// iOS
+	var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+	
+	if (isFirefox) {
+		return 'isFirefox';
+	} else if (isChrome) {
+		return 'isChrome';
+	} else if (isIE) {
+		return 'isIE';
+	} else if (isEdge) {
+		return 'isEdge';
+	} else if (iOS) {
+		return 'iOS';
+	} else {
+	}
+}
+
+function playVoiceCaptcha() {
+	if (voiceCaptchaFlag) {
+		if (distinguishBrowser() == 'isIE') {//IE不相容HTML5 Audio Tag，所以若使用者使用IE，則建立bgsound元件播放語音驗證碼
+			//偵測是否有上次播放的元件，將其刪除
+			var oriPlayer = document.getElementById('snd_ie');
+			if (oriPlayer != null) {
+				oriPlayer.setAttribute('src', '');
+				document.body.removeChild(oriPlayer);
+			}
+			//再重新建立新元件，向voiceCaptcha取得新語音驗證碼串流
+			var newPlayer = document.createElement('bgsound');
+			newPlayer.setAttribute('id', 'snd_ie');
+			newPlayer.setAttribute('src', './voiceCaptcha');
+			newPlayer.setAttribute('autostart', 'true');
+			document.body.appendChild(newPlayer);
+		} else if(distinguishBrowser() == 'isFirefox'){
+			//FireFox目前有Cache的Bug存在，會從Cache取得上次的語音驗證碼音訊，所以於SRC加上亂數參數，讓FireFox每次都拿到新的語音驗證碼
+			var audio = new Audio('./voiceCaptcha?nocache=' + Math.random());
+			audio.play();
+		} else if(distinguishBrowser() == 'iOS'){
+			var audio = new Audio('./voiceCaptcha');
+			audio.play();
+		} else {
+			//HTML5 Audio Tag除IE不相容外，其他瀏覽器相容
+			var audio = new Audio('./voiceCaptcha');
+			audio.play();
+		}
+	    //語音驗證碼規格，播放過語音後，需重整圖片驗證碼，才可再播放語音驗證碼
+		voiceCaptchaFlag = false;
+	} else {
+		alert('如需重聽語音驗證碼，請重新整理驗證碼圖示後，再重新點選播放語音驗證碼');
+	}
+}
+
+function showErrMsg(txt) {
+    $('#msgmodal h4').addClass('text-red');
+    $('#msgmodal h4').removeClass('text-primary');
+    $('#msgmodal h4').html('錯誤');
+    $('#errmsg').text(txt);
+    $('#msgmodal').modal('show');
+}
+
+function showCVV2(isAE) {
+    $('#msgmodal h4').removeClass('text-danger').addClass(
+	    'text-primary text-weight-bold').html('提示');
+    if (isAE) {
+	$('#errmsg').html('<img src="images/amexplatinum.jpg"/>');
+	$('#errmsg').append("<p>4DBC為信用卡號右上角四碼數字！</p>");
+    } else {
+	$('#errmsg').html('<img src="images/cvc2_tw.gif"/>');
+    }
+
+    $('#msgmodal').modal('show');
+}
