@@ -1,0 +1,147 @@
+@import "../css/reset.scss";
+.collect-container{
+  width: 100%;
+  background-color: #F09C93;
+  padding: 15px;
+  .middle-container {
+    border-radius: 25px;
+    overflow: hidden;
+    border:2px solid #ffffff52;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 3px 6px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f4b7b1+0,f09d94+100 */
+      background: rgb(244, 183, 177);
+      /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(244, 183, 177, 1) 0%, rgba(240, 157, 148, 1) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(244, 183, 177, 1) 0%, rgba(240, 157, 148, 1) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(244, 183, 177, 1) 0%, rgba(240, 157, 148, 1) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4b7b1', endColorstr='#f09d94', GradientType=0);
+      /* IE6-9 */
+    img{
+      width: 100%;
+    }
+  }
+  .event-content-top{
+    padding: 30px 55px 0 55px;
+     width: 100%;
+     text-align: center;
+     background: url(../images/bg_main.png) center top no-repeat;
+     background-size: contain;
+     img{
+      &.t1 {
+        max-width: 495px;
+        display: inline-block;
+        padding-bottom: 30px;
+        width: 90%;
+      }
+      &.t2 {
+        width: 80%;
+        max-width: 404px;
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .event-content{
+    padding: 55px;
+    .seal-content{
+      padding: 5px 0;
+      vertical-align: middle;
+    }
+    .t-date{
+      width: 45%;
+      max-width: 280px;
+      margin: 0 auto;
+      img{
+        display: inline-block;
+      }
+    }
+    .nb-content{
+      width: 100%;
+      padding: 15px 0 30px 0;
+      li{
+         width: 33%;
+         float: left;
+          padding: 3px 5px;
+         .nb{
+          text-align: center;
+          padding:0 10px;
+          border-radius: 15px;
+          background-color: #fff;
+          min-height: 55px;
+          line-height: 55px;
+          p{
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .the-seal{
+      width: 33%;
+      float: left;
+      padding:10px;
+      text-align: center;
+      position: relative;
+      img{
+          display: inline-block;
+          margin: 0 auto;
+        } 
+      .ok{
+        max-width: calc(100% - 18px);
+        position: absolute;
+        width: 100%;
+        top: 9px;
+        left: 9px;
+      }
+    }
+    .the-00{
+      padding: 10px;
+      width: 66%;
+      float: left;
+      position: relative;
+    }
+  }
+  @media all and (max-width: 650px) {
+    .middle-container{
+      border-radius: 10px;
+    }
+    .event-content-top {
+      padding:15px;
+    }
+    .event-content {
+      padding: 10px;
+      .the-seal{
+        padding: 5px;
+        .ok {
+            max-width: calc(100% - 8px);
+            position: absolute;
+            width: 100%;
+            top: 4px;
+            left: 4px;
+          }
+      }
+      .the-00{ 
+        padding: 5px;
+      }
+      .nb-content{
+        li{
+          .nb{
+            border-radius: 10px;
+            min-height: 35px;
+            line-height: 35px;
+            p{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
