@@ -696,6 +696,21 @@ a.gotop {
   padding-bottom: 15px;
 }
 
+.middle-container .event-content .store-event {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 550px;
+  display: block;
+  padding-bottom: 15px;
+}
+
+@media all and (max-width: 600px) {
+  .middle-container .event-content .store-event {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
 .middle-container .event-content .card {
   padding: 50px 30px 30px 30px;
   border-radius: 20px;
