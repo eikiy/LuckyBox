@@ -258,7 +258,6 @@ body {
 
 .collect-container .event-content-top img.t3 {
   width: 80%;
-  max-width: 800px;
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -343,10 +342,18 @@ body {
   background: url(../images/bg_nb_bg.png) center center repeat;
   background-size: cover;
   padding-bottom: 35px;
+  max-width: 95vw;
+  height: 96vh;
+}
+
+.collect-container .bg-grid .event-content-top {
+  background-size: cover;
+  padding: 10vh 5vw;
 }
 
 .collect-container .nb-border {
-  width: 80%;
+  width: 95%;
+  height: 55vh;
   margin: 0 auto;
   border: 2px solid #555;
   background-color: #fff;
@@ -380,7 +387,7 @@ body {
 }
 
 .collect-container .nb-border .nb-content {
-  min-height: 200px;
+  min-height: calc(52vh - 80px);
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,7 +406,7 @@ body {
 
 .collect-container .nb-border .nb-content div p {
   display: inline-block;
-  font-size: 36px;
+  font-size: 5vw;
   font-weight: bold;
   color: #2ea79f;
   padding: 15px;

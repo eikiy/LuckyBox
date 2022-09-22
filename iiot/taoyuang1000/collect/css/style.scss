@@ -47,7 +47,6 @@
       }
       &.t3 {
         width: 80%;
-        max-width: 800px;
         display: inline-block;
         padding-bottom: 10px;
       }
@@ -120,9 +119,16 @@
     background: url(../images/bg_nb_bg.png) center center repeat;
     background-size: cover;
     padding-bottom:35px;
+    max-width: 95vw;
+    height: 96vh;
+    .event-content-top{
+      background-size: cover;
+      padding: 10vh 5vw;
+    }
   }
   .nb-border{
-    width: 80%;
+    width: 95%;
+    height: 55vh;
     margin: 0 auto;
     border: 2px solid #555;
     background-color: #fff;
@@ -151,7 +157,7 @@
       }
     }
     .nb-content{
-      min-height: 200px;
+      min-height: calc(52vh - 80px);
       padding: 15px;
       display: -webkit-flex;
       display: flex;
@@ -163,7 +169,7 @@
        text-align: center;
         p{
           display: inline-block;
-          font-size: 36px;
+          font-size: 5vw;
           font-weight: bold;
           color: #2ea79f;
           padding: 15px;
