@@ -288,6 +288,7 @@ body {
 .collect-container .event-content .nb-content {
   width: 100%;
   padding: 15px 0 30px 0;
+  position: relative;
 }
 
 .collect-container .event-content .nb-content li {
@@ -361,6 +362,33 @@ body {
   position: relative;
 }
 
+.collect-container .nb-border .btn-info {
+  z-index: 1;
+  position: absolute;
+  top: -5vh;
+  right: 0;
+}
+
+.collect-container .nb-border .btn-info .btn-go {
+  cursor: pointer;
+  height: 30vh;
+  width: 35vh;
+  display: block;
+  background: url(../images/btn-go.png) center center no-repeat;
+  text-indent: -9999px;
+  background-size: contain;
+  margin-left: 3vh;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.collect-container .nb-border .btn-info .btn-go:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+}
+
 .collect-container .nb-border .t-date {
   min-height: 7.5vh;
   width: 100%;
@@ -389,6 +417,7 @@ body {
 }
 
 .collect-container .nb-border .nb-content {
+  position: relative;
   width: 100%;
   min-height: calc(52vh - 80px);
   padding: 15px;
@@ -403,6 +432,18 @@ body {
           justify-content: center;
 }
 
+.collect-container .nb-border .nb-content .nb-r {
+  display: inline-block;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+.collect-container .nb-border .nb-content .nb-r span {
+  color: #ff5722;
+}
+
 .collect-container .nb-border .nb-content div {
   text-align: center;
 }
@@ -413,34 +454,6 @@ body {
   font-weight: bold;
   color: #2ea79f;
   padding: 15px;
-}
-
-.collect-container .nb-border .nb-content .btn-info {
-  width: 100%;
-  padding-left: 10%;
-}
-
-.collect-container .nb-border .nb-content .btn-info .btn-go {
-  cursor: pointer;
-  height: 30vh;
-  width: 35vh;
-  display: block;
-  background: url(../images/btn-go.png) center center no-repeat;
-  text-indent: -9999px;
-  background-size: contain;
-  margin-left: 3vh;
-}
-
-.collect-container .nb-border .nb-content .btn-info .input-nb {
-  height: 12vh;
-  width: 35vh;
-  display: block;
-  background: url(../images/btn-nb.png) center center no-repeat;
-  background-size: contain;
-  text-align: center;
-  color: #fff;
-  font-size: 6vh;
-  text-indent: 1vw;
 }
 
 .collect-container .nb-border .crane {
