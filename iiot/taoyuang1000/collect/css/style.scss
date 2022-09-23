@@ -30,7 +30,7 @@
     padding: 30px 55px 0 55px;
      width: 100%;
      text-align: center;
-     background: url(../images/bg_main.png) center top no-repeat;
+     background: url(../images/bg_main_2.png) center top no-repeat;
      background-size: contain;
      img{
       &.t1 {
@@ -133,7 +133,9 @@
     border: 2px solid #555;
     background-color: #fff;
     border-radius: 4px;
+    position: relative;
     .t-date{
+      min-height: 7.5vh;
       width: 100%;
       position: relative;
       text-align: center;
@@ -157,6 +159,7 @@
       }
     }
     .nb-content{
+      width: 100%;
       min-height: calc(52vh - 80px);
       padding: 15px;
       display: -webkit-flex;
@@ -175,6 +178,41 @@
           padding: 15px;
         }
       }
+      .btn-info{
+        width: 100%; 
+        padding-left:10% ;
+        .btn-go{
+          cursor: pointer;
+          height:30vh;
+          width: 35vh;
+          display: block;
+          background: url(../images/btn-go.png) center center no-repeat;
+          text-indent: -9999px;
+          background-size: contain;
+          margin-left: 3vh;
+          &:hover{
+
+          }
+        }
+        .input-nb{
+          height: 12vh;
+          width: 35vh;
+          display: block;
+          background: url(../images/btn-nb.png) center center no-repeat;
+          background-size: contain;
+          text-align: center;
+          color: #fff;
+          font-size: 6vh;
+          text-indent: 1vw;
+        }
+      }
+    }
+    .crane{
+      position: absolute;
+      width: 54vh;
+      height: 54vh;
+      right: -2vw;
+      bottom: -8vh;
     }
   }
   @media all and (max-width: 650px) {
