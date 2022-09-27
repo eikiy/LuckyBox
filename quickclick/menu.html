@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>菜單管理</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -19,8 +23,14 @@
 </head>
 <body>
     <main class="main-container">
+        <p class="breadcrumb"><span>商店列表</span> > <span>菜單管理</span></p>
         <section class="top-content clearfix">
-            <h3 class="main-title">菜單管理</h3>
+            <h3 class="main-title">
+                <a href="store-list.html">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                    返回商店列表
+                </a>
+            </h3>
             <a class="btn-products btn--primary-l">
                 <p>
                     <span><i class="fas fa-shopping-basket"></i></span>
@@ -77,6 +87,11 @@
                             <li>
                                 <a class="popup-link" href="popup-choose-platform.html"">
                                     <span><i class="fas fa-share-square"></i></span>將此菜單上架到其他平台
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="#"">
+                                    <span><i class="fas fa-download"></i></span>匯出菜單
                                 </a>
                             </li>
                         </ul>

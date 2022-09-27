@@ -3474,6 +3474,30 @@ a.reminder:hover {
   background-color: #ffefd8;
 }
 
+.popup-container .choose-store-list .copystore-switch {
+  padding: 0 10px 15px 10px;
+  text-align: left;
+}
+
+.popup-container .choose-store-list .copystore-switch .item-title {
+  font-size: 0.938rem;
+  display: inline-block;
+  padding-left: 6px;
+  max-width: calc(100% - 55px);
+  vertical-align: middle;
+}
+
+.popup-container .choose-store-list .copystore-switch .item-title .note {
+  font-size: 0.688rem;
+  padding-left: 10px;
+}
+
+.popup-container .choose-store-list .copystore-switch .switch-type {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 0;
+}
+
 .popup-container .choose-add-group-list {
   width: calc(100% - 30px);
   max-width: 580px;
@@ -3922,6 +3946,13 @@ a.reminder:hover {
   }
   .popup-container .choose-store-list .field .store-name {
     width: calc(100% - 106px);
+  }
+  .popup-container .choose-store-list .copystore-switch .item-title {
+    font-size: 0.875rem;
+  }
+  .popup-container .choose-store-list .copystore-switch .item-title .note {
+    display: block;
+    padding: 5px 0 0 0;
   }
   .popup-container .choose-add-group-list .field p,
   .popup-container .choose-add-group-list .field .add-group-time p {
