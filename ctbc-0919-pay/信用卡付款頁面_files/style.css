@@ -265,9 +265,9 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 .pan-col-all {
-	width: 75%;
-	padding-left: 50px !important;
-	margin-left: 8px;
+	/*width: 75%;*/
+	/*padding-left: 50px !important;*/
+	/*margin-left: 8px;*/
 }
 
 .autofix {
@@ -581,6 +581,20 @@ ul.notes li p{
 	display: inline-block;
 	min-width: 150px;
 }
+.panform{
+	padding-left: 8px;
+	text-align: left;
+}
+.panform span{
+	display: inline-block;
+	padding: 0 5px;
+}
+.panform input.pan-col-all{ 
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+}
+
 @media all and (max-width: 970px) {
 	.l-title{
 		margin-left: 0%;
