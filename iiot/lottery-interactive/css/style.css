@@ -247,6 +247,25 @@ body {
   background-size: contain;
   vertical-align: middle;
   margin-bottom: 5%;
+  position: relative;
+}
+
+.collect-container .event-content .seal-content img.all-ok {
+  max-width: 34%;
+  position: absolute;
+  width: 100%;
+  top: 6%;
+  right: 1.5%;
+  -moz-transform-origin: right bottom;
+  -moz-transform: rotate(-15deg);
+  -webkit-transform-origin: right bottom;
+  -webkit-transform: rotate(-15deg);
+  -o-transform-origin: right bottom;
+  -o-transform: rotate(-15deg);
+  -ms-transform-origin: right bottom;
+  -ms-transform: rotate(-15deg);
+  transform-origin: right bottom;
+  transform: rotate(-15deg);
 }
 
 .collect-container .event-content .t-date {
