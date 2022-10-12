@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>popup Loading</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <!-- popup 將此菜單複製到其他店：請選擇複製此菜單的店家 -->
+                <section id="popup-choose-store" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>請選擇複製此菜單的店家</span></h4>
+                        </div>
+                        <div class="choose-store-list">
+                            <div class="tools-bar">
+                                <div class="search-box">
+                                    <input class="default" type="text" placeholder="搜尋商店ID或商店名稱">
+                                </div>
+                            </div>
+                            <div class="copystore-switch">
+                                <div class="switch-type">
+                                    <input id="" name="" type="checkbox" checked="">
+                                    <label class="switch-button" for=""></label>
+                                </div>
+                                <label class="item-title">直接啟用<span class="note">勾選至複製菜單的商店，並直接發佈。</span></label>
+                            </div>
+                            <div class="field-title field">
+                                <div class="option-list">
+                                </div>
+                                <div class="store-id">
+                                    <p>商店ID</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>商店名稱</p>
+                                </div>
+                            </div>
+                            <!-- 有勾選 + selected ：底色變白色 -->
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>153</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>MADAM ROSE玫瑰夫人</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>153</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>羊毛與花 ‧ 光點 youmoutoohana Coffee</p>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>1256</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>May姐健康廚房料理</p>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>125</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>大葉髙島屋Dayeh-Takashimaya</p>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>1588</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>饕之鄉李姐的店</p>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>1256</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>May姐健康廚房料理</p>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>125</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>大葉髙島屋Dayeh-Takashimaya</p>
+                                </div>
+                            </div>
+                            <div class="field selected">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="" checked>
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>1588</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>饕之鄉李姐的店</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>1256</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>May姐健康廚房料理</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>125</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>大葉髙島屋Dayeh-Takashimaya</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="option-list">
+                                    <input id="" type="checkbox" name="" value="">
+                                    <label for="option">勾選</label>
+                                </div>
+                                <div class="store-id">
+                                    <p>1588</p>
+                                </div>
+                                <div class="store-name">
+                                    <p>饕之鄉李姐的店</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pages clearfix">
+                            <p>1-50列(共220列 )</p>
+                            <ul class="page-nb">
+                                <li>
+                                    <a class="none">上一頁</a>
+                                </li>
+                                <li>
+                                    <a class="selected">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    ...
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">9</a>
+                                </li>
+                                <li>
+                                    <a href="#">下一頁</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="複製">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="load-mfp-bg"></div>
+    <div class="load-mfp-wrap">
+        <div>
+            <div class="load-wrap">
+                <div class="load">
+                    <div class="spinner">
+                        <div class="bubble-1"></div>
+                        <div class="bubble-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <h4><span>資料處理中，請稍等哦！</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-container">
+        <p class="breadcrumb"><span>商店列表</span> > <span>菜單管理</span></p>
+        <section class="top-content clearfix">
+            <h3 class="main-title">
+                <a href="store-list.html">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                    返回商店列表
+                </a>
+            </h3>
+            <a class="btn-products btn--primary-l">
+                <p>
+                    <span><i class="fas fa-shopping-basket"></i></span>
+                    商品庫
+                </p>
+            </a>
+        </section>
+        <section class="middle-content">
+            <div class="menu-list">
+                <div class="add-new-card">
+                    <a class="popup-link" href="add_new_menu.html">
+                        <p>新增或匯入菜單</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="features-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fas fa-pencil-alt"></i></span>
+                                    編輯
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="far fa-copy"></i></span>
+                                    複製
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="popup-delete-menu.html">
+                                    <span><i class="far fa-trash-alt"></i></span>
+                                    刪除
+                                </a>
+                            </li>
+                            <li>
+                                <a href="menu-history.html">
+                                    <span><i class="fas fa-history"></i></span>
+                                    歷史紀錄
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="popup-choose-store.html"">
+                                        <span><i class=" fas fa-share-square"></i></span>
+                                    將此菜單複製到其他店
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="popup-choose-platform.html"">
+                                        <span><i class=" fas fa-share-square"></i></span>將此菜單上架到其他平台
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/quickclick-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="假日菜單">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/foodpanda-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                    </div>
+                    <p class="update">上次更新：2021-10-22 下午 3:00 · Amber Liu</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/ubereats-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/gofoodie-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="一到五的商業菜單" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <!-- 編輯過未啟用菜單會一直顯示紅色提醒語 -->
+                        <a class="btn--primary-m popup-link bg-c-red" href="#popup-activate-menu">啟用
+                            <div class="tooltip">
+                                上次的新修改尚未啟用，請點選「啟用」來更新菜單內容。
+                            </div>
+                        </a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/counter-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/quickclick-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
