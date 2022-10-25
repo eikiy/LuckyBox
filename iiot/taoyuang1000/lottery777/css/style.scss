@@ -1,0 +1,121 @@
+@import "../css/reset.scss";
+@import url(animate.css);
+.lottery-container{
+  width: 100%;
+  background-color: #F09C93;
+  .middle-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 3px 6px;
+    img{
+      width: 100%;
+    }
+    background: url(../images/bg.png) top center no-repeat;
+    background-size: cover;
+  }
+  .event-content-top{
+     width: 100%;
+     text-align: center;
+     position: relative;
+     img{
+      &.t1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 70%;
+        z-index: 1;
+        animation-iteration-count: infinite;
+      }
+      &.t2 {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .event-content{
+    .t-date{
+      width: 65%;
+      max-width: 460px;
+      margin: 0 auto;
+      img{
+        display: inline-block;
+      }
+    }
+    .nb-content{
+      width: 100%;
+      padding: 0 15px;
+      position: relative;
+      li{
+         width: 33%;
+         float: left;
+          padding: 3px 5px;
+         .nb{
+          text-align: center;
+          padding:0 10px;
+          border-radius: 15px;
+          background-color: #fff;
+          min-height: 55px;
+          line-height: 55px;
+          p{
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+      li.w100{
+        width: 100%;
+        margin-bottom: 5px;
+        .nb{
+          padding: 15px;
+          p{
+            font-size: 20px;
+            line-height: 28px;
+            
+          }
+          .f-c-red{
+            color: #EC7714;
+          }
+          @media all and (max-width: 550px) {
+            padding: 10px;
+            p{
+              font-size: 15px;
+              line-height: 20px;
+            }
+          }
+        }
+        p.gift-title{
+          color: #fff;
+          font-size: 24px;
+          font-weight: bold;
+          text-shadow:2px 2px 5px rgba(214, 135, 137, 0.8);
+          @media all and (max-width: 550px) {
+            padding-top: 10px;
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  @media all and (max-width: 650px) {
+    .event-content {
+      .nb-content{
+        padding: 0 15px;
+        li{
+          .nb{
+            border-radius: 10px;
+            min-height: 35px;
+            line-height: 35px;
+            p{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
