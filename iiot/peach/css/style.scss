@@ -334,7 +334,8 @@ a.gotop {
         left: 2.5%;
       }
       @media all and (max-width: 600px) {
-        line-height: 24px;
+        font-size: 15px;
+        // line-height: 24px;
         padding: 20px;
         top: -55px;
         span.bg-green{
@@ -345,6 +346,11 @@ a.gotop {
         }
         span.no-block{
           display: none;
+        }
+      }
+      @media all and (max-width: 400px) {
+        span.bg-pink{ 
+          padding: 5px 10px;
         }
       }
     }
@@ -1026,6 +1032,14 @@ a.gotop {
       .card{
         border-radius: 10px;
       }
+      .no-bg{
+        background: none;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        text-align: center;
+      }
       .table-style{
         .info ul.list{ padding-bottom: 0;}
       }
@@ -1037,6 +1051,16 @@ a.gotop {
         }
       }
     }
+    @media all and (max-width: 700px) {
+      .event-content .no-bg{
+        margin-bottom: 10px;
+      }
+    }
+}
+.bg-for-w{
+  .main-container{
+    background-color: #fff !important;
+  }
 }
 .privacy-container{
   .main-container{
