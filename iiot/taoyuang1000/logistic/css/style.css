@@ -205,7 +205,7 @@ body {
 
 .main-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #ef6079;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #ef6079;
   background-position: 50%;
@@ -213,8 +213,36 @@ body {
   background-size: cover;
 }
 
+.main-container .top-banner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.main-container .top-info {
+  padding: 10px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(226, 176, 187, 0.16) 0px 3px 6px;
+          box-shadow: rgba(226, 176, 187, 0.16) 0px 3px 6px;
+}
+
+.main-container .top-info p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-container .top-info p span {
+  color: #5cb8b2;
+}
+
+.main-container .top-info p .c-red {
+  color: #ef6079;
+}
+
 .main-container .middle-content {
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
   width: 90%;
   margin: 0 auto;
   max-width: 500px;
@@ -253,7 +281,7 @@ body {
 .main-container .middle-content .fillin-info .item-title {
   padding: 10px 0;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   display: block;
   color: #333f48;
@@ -278,13 +306,15 @@ body {
 .main-container .middle-content .fillin-info .fillin-box input, .main-container .middle-content .fillin-info .fillin-box textarea {
   background-color: #fff;
   border-radius: 20px;
-  padding: 10px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 25px;
   color: #333f48;
   border: 1px solid #fff;
+  -webkit-box-shadow: rgba(226, 176, 187, 0.16) 0px 3px 6px;
+          box-shadow: rgba(226, 176, 187, 0.16) 0px 3px 6px;
 }
 
 .main-container .middle-content .fillin-info .fillin-box input.has-error, .main-container .middle-content .fillin-info .fillin-box textarea.has-error {
