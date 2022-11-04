@@ -1431,6 +1431,16 @@ a.gotop {
   text-align: center;
 }
 
+.inside-container .main-container .no-bg .both {
+  display: block;
+  text-align: center;
+}
+
+.inside-container .main-container .no-bg .both a {
+  width: 48.5%;
+  display: inline-block;
+}
+
 .inside-container .main-container .table-style .info ul.list {
   padding-bottom: 0;
 }
