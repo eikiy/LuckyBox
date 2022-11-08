@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>popup 將此菜單複製到其他店：請選擇複製此菜單的店家</title>
+    <title>popup 將此菜單複製到其他店：新增店家群組</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -14,90 +14,25 @@
     <div class="mfp-wrap" style="overflow-y: auto;">
         <div class="mfp-container">
             <div class="mfp-content">
-                <!-- popup 將此菜單複製到其他店：請選擇複製此菜單的店家 -->
+                <!-- popup 將此菜單複製到其他店：新增店家群組 -->
                 <section id="popup-choose-store" class="white-popup mfp-hide popup-width-m">
                     <div class="popup-container">
                         <div class="top-title">
-                            <h4><span>請選擇複製此菜單的店家</span></h4>
+                            <h4><span>新增店家群組</span></h4>
                         </div>
                         <div class="choose-store-list">
+                            <p class="sub-title">群組名稱</p>
+                            <div class="tools-bar">
+                                <div class="store-group-edit">
+                                    <input class="default" type="text" placeholder="編輯店家群組名稱">
+                                </div>
+                            </div>
+                            <p class="sub-title">搜尋或選擇店家</p>
                             <div class="tools-bar">
                                 <div class="search-box">
                                     <input class="default" type="text" placeholder="搜尋商店ID或商店名稱">
                                 </div>
                             </div>
-                            <div class="copystore-switch">
-                                <div class="switch-type">
-                                    <input id="" name="" type="checkbox" checked="">
-                                    <label class="switch-button" for=""></label>
-                                </div>
-                                <label class="item-title">直接啟用<span class="note">勾選至複製菜單的商店，並直接發佈。</span></label>
-                            </div>
-                            <!-- 群組 -->
-                            <div class="store-group-list">
-                                <div class="field-title field">
-                                    <div class="option-list">
-                                    </div>
-                                    <div class="store-name">
-                                        <p>店家群組</p>
-                                    </div>
-                                    <div class="add-group-tools">
-                                        <p>設定</p>
-                                    </div>
-                                    <div class="arr arr-down"></div>
-                                </div>
-                                <!-- 有勾選 + selected ：底色變白色 -->
-                                <div class="field selected">
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="" checked>
-                                        <label for="option">勾選</label>
-                                    </div>
-                                    <div class="store-name">
-                                        <p>北區
-                                            <!-- 用、把店隔開 -->
-                                            <span class="branch-store">MADAM ROSE玫瑰夫人、羊毛與花 ‧ 光點 youmoutoohana Coffee、大葉髙島屋Dayeh-Takashimaya、分店名稱</span>
-                                        </p>
-                                    </div>
-                                    <div class="add-group-tools">
-                                        <a href="popup-choose-store-branch-edit.html"><i class="fas fa-cog"></i></a>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="">
-                                        <label for="option">勾選</label>
-                                    </div>
-                                    <div class="store-name">
-                                        <p>中區
-                                            <span class="branch-store">分店名稱LALA、分店AA、1255848代號</span>
-                                        </p>
-                                    </div>
-                                    <div class="add-group-tools">
-                                        <a href="#"><i class="fas fa-cog"></i></a>
-                                    </div>
-                                </div>
-                                <div class="field selected">
-                                    <div class="option-list">
-                                        <input id="" type="checkbox" name="" value="" checked>
-                                        <label for="option">勾選</label>
-                                    </div>
-                                    <div class="store-name">
-                                        <p>南區
-                                            <span class="branch-store">吃到飽旗艦店、吃到飽北車店、吃到飽信義區A9店</span>
-                                        </p>
-                                    </div>
-                                    <div class="add-group-tools">
-                                        <a href="#"><i class="fas fa-cog"></i></a>
-                                    </div>
-                                </div>
-                                <div class="bottom-btn-right clearfix">
-                                    <a class="btn btn--primary-m" href="popup-choose-store-branch-new.html">+ 新增店家群組</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!-- 單店 -->
-                        <div class="choose-store-list">
                             <div class="field-title field">
                                 <div class="option-list">
                                 </div>
@@ -269,7 +204,7 @@
                             </ul>
                         </div>
                         <div class="bottom-btn-tool">
-                            <input class="btn--primary-xl " type="submit" value="複製">
+                            <input class="btn--primary-xl " type="submit" value="完成新增">
                         </div>
                     </div>
                     <button title="Close (Esc)" type="button" class="mfp-close">×</button>

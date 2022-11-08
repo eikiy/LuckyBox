@@ -714,6 +714,31 @@ a.reminder:hover {
   background-size: contain;
 }
 
+.store-group-edit {
+  position: relative;
+  width: 100%;
+}
+
+.store-group-edit input {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
+  padding-left: 45px;
+}
+
+.store-group-edit::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8.5px);
+  left: 15px;
+  width: 17px;
+  height: 17px;
+  display: block;
+  background-image: url(../images/svg/store-solid.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .tools-bar {
   max-width: 580px;
   margin: 0 auto;
@@ -3514,6 +3539,12 @@ a.reminder:hover {
   padding: 0 0 15px 0;
 }
 
+.popup-container .choose-store-list p.sub-title {
+  color: #5e5e5e;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
 .popup-container .choose-store-list .selected {
   background-color: #fff;
 }
@@ -3606,6 +3637,54 @@ a.reminder:hover {
   vertical-align: middle;
   display: inline-block;
   margin-top: 0;
+}
+
+.popup-container .choose-store-list .store-group-list {
+  padding: 15px 0;
+}
+
+.popup-container .choose-store-list .store-group-list .add-group-tools {
+  padding: 5px;
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.popup-container .choose-store-list .store-group-list .add-group-tools p {
+  text-align: center;
+}
+
+.popup-container .choose-store-list .store-group-list .add-group-tools a {
+  width: 35px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #848484;
+  display: inline-block;
+}
+
+.popup-container .choose-store-list .store-group-list .add-group-tools a:hover {
+  color: #f0941d;
+}
+
+.popup-container .choose-store-list .store-group-list .store-name .branch-store {
+  padding: 0 3px;
+  color: #9e9e9e;
+  font-size: 0.688rem;
+}
+
+.popup-container .choose-store-list .bottom-btn-right {
+  padding: 10px 0 0 0;
+}
+
+.popup-container .choose-store-list .bottom-btn-right .btn {
+  float: right;
+  padding: 0 10px;
+  font-size: 0.688rem;
+  line-height: 30px;
+  height: 30px;
 }
 
 .popup-container .choose-add-group-list {
