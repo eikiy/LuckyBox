@@ -764,6 +764,14 @@ a.gotop {
   opacity: .9;
 }
 
+.middle-container .event-content .card p.f-center {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.813rem;
+  color: #555;
+}
+
 .middle-container .event-content .card .tycg-card {
   width: 100%;
   padding: 10px 0;

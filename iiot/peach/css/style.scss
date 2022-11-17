@@ -459,6 +459,13 @@ a.gotop {
           opacity: .9;
         }
       }
+      p.f-center{
+        padding-top: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: $f-size-s;
+        color: #555;
+      }
       .tycg-card{
         width: 100%;
         padding: 10px 0;
