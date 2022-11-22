@@ -1,0 +1,53 @@
+@import "../css/reset.scss";
+
+@mixin has-box-shadow {
+  box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 4px 15px;
+}
+.excelcompiler-container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #efefef;
+  .middle-container{
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+      // @include has-box-shadow;
+    .logo{
+      padding:15px 30px;
+      width: 260px;
+      margin: 0 auto;
+      img{
+        width: 100%;
+      }
+    }
+    h1.main-title{
+      font-size: 1.5rem;
+      padding: 20px;
+      font-weight: bold;
+    }
+    h3.sub-title{
+      padding: 20px;
+    }
+    input.border-style{
+      border:2px  solid #ff9900;
+      background-color: #fff;
+      padding:15px 20px;
+      border-radius:50px;
+      width: 100%;
+      max-width: 400px;
+    }
+    input::file-selector-button {
+      font-weight: bold;
+      color: #fff;
+      background-color: #333;
+      padding:10px 20px;
+      border: thin solid grey;
+      border-radius: 50px;
+      margin-right: 15px;
+    }
+  }
+}
