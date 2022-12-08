@@ -1,0 +1,238 @@
+@import "../css/reset.scss";
+.collect-container{
+  width: 100%;
+  background-color: #F09C93;
+  .middle-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 3px 6px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f4b7b1+0,f09d94+100 */
+      background: rgb(244, 183, 177);
+      /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(244, 183, 177, 1) 0%, rgba(240, 157, 148, 1) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(244, 183, 177, 1) 0%, rgba(240, 157, 148, 1) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(244, 183, 177, 1) 0%, rgba(240, 157, 148, 1) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4b7b1', endColorstr='#f09d94', GradientType=0);
+      /* IE6-9 */
+    img{
+      width: 100%;
+    }
+  }
+  .event-content-top{
+    max-width: 70vw;
+    margin: 0 auto;
+    padding:0px 55px 0 55px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+     h2{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 7vw;
+      font-size: 80px;
+      color: #1aa6ad;
+      font-weight: bold;
+      text-align: center;
+      font-weight: 800;
+      font-family: 'Noto Sans TC', sans-serif;
+     }
+  }
+  .w-90{
+    max-width: 84vw;
+    padding-bottom: 0;
+  }
+  .add-pad{
+    padding-bottom: 35px;
+  }
+  .sub-box{
+    h3 {
+        width: 100%;
+        font-size: 60px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        font-weight: 600;
+        line-height: 70px;
+        padding-bottom: 20px;
+        letter-spacing: 15px;
+        font-family: 'Noto Sans TC', sans-serif;
+        text-shadow: 6px 4px 5px rgba(52, 52, 52, 0.1);
+      }
+  }
+  .gift-list{
+    width: 100%;
+    text-align: center;
+    .box{
+      width: 20%;
+      border-radius: 33px;
+      background-color: #0fa6ae;
+      border: 3px solid #313e45;
+      padding-bottom: 10px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px 20px;
+      span{
+        width: 99%;
+        height: 125px;
+        padding:5px 15px;
+        background-color: #fff;
+        display: block;
+        border: 3px solid #313e45;
+        border-radius: 33px;
+        margin: -10px 0 0 -5px;
+        font-size: 44px;
+        line-height: 50px;
+        color: #1aa6ad;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: 'Noto Sans TC', sans-serif;
+        display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+      }
+    }
+    .bg-yello{
+      span{
+        background-color: #ffeb9d;
+        text-shadow: 3px 3px 0px #fff, 6px 4px 5px rgb(167, 160, 132);
+      }
+    }
+    .img_airplane{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 66%;
+        height: 150px;
+        left: 0;
+        top: -100px;
+        display: block;
+        background: url(../images/img_airplane.png) center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .size-b{
+    padding-top: 10px;
+    .box{
+      width: 15.6%;
+      span{
+        height: 110px;
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+  }
+  .logos{
+    width: 35vw;
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .bg-grid{
+    background: url(../images/bg_nb_bg.png) center center repeat;
+    background-size: cover;
+    width: 100% ;
+    height: 100vh;
+    .event-content-top{
+      background-size: cover;
+    }
+  }
+  .nb-border{
+    width: 95%;
+    height: 53vh;
+    margin: 0 auto;
+    border: 2px solid #555;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    .btn-info{
+      z-index: 1;
+      position: absolute;
+      bottom: -10vh;
+      right: 0;
+      .btn-go{
+        cursor: pointer;
+        height:30vh;
+        width: 35vh;
+        display: block;
+        background: url(../images/btn-go.png) center center no-repeat;
+        text-indent: -9999px;
+        background-size: contain;
+        margin-left: 3vh;
+        transform: scale(1);
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        &:hover {
+          transform: scale(0.95);
+          -webkit-transform: scale(0.95);
+        }
+      }
+    }
+    .t-date{
+      min-height: 7.5vh;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      background-color: #5AAEA8;
+      border-bottom: 2px solid #555;
+      padding: 15px;
+      img{
+        width: 80%;
+        max-width:20vw;
+      }
+      &::after{
+        content: "";
+        top: 10px;
+        left: 10px;
+        width:115px;
+        height: 30px;
+        position: absolute;
+        display: block;
+        background: url(../images/bg_nb_icon.png) center center no-repeat;
+        background-size: contain;
+      }
+    }
+    .nb-content{
+      position: relative;
+      width: 100%;
+      min-height: calc(50vh - 80px);
+      padding: 15px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      .nb-r{
+        display: inline-block;
+        font-size: 4vw;
+        font-weight: bold;
+        padding-bottom: 30px;
+        color: #333;
+        span{
+          color: #EC7714;
+        }
+      }
+      div{
+       text-align: center;
+        p{
+          display: inline-block;
+          font-size: 5vw;
+          font-weight: bold;
+          color: #2ea79f;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
