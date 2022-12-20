@@ -1935,7 +1935,7 @@ ul.edit-tool li a:hover {
 }
 
 .middle-container .data-list .card ul.edit-tool {
-  width: 205px;
+  width: 256px;
   opacity: 0;
   position: absolute;
   right: 10px;
@@ -2091,7 +2091,6 @@ ul.edit-tool li a:hover {
 
 .middle-container .data-list .toptitle-style .controller-order h4,
 .middle-container .data-list .toptitle-style h4.audit-name,
-.middle-container .data-list .toptitle-style p.controller,
 .middle-container .data-list .toptitle-style p.audit-time,
 .middle-container .data-list .toptitle-style p.audit-money,
 .middle-container .data-list .toptitle-style p.audit-project,
@@ -2099,13 +2098,25 @@ ul.edit-tool li a:hover {
 .middle-container .data-list .toptitle-style p.order-owner,
 .middle-container .data-list .toptitle-style p.order-time,
 .middle-container .data-list .toptitle-style h4.order-name,
+.middle-container .data-list .toptitle-style h4.product-name,
+.middle-container .data-list .toptitle-style h4.customer-name,
 .middle-container .data-list .toptitle-style .order-percentage p,
-.middle-container .data-list .toptitle-style .order-day p {
+.middle-container .data-list .toptitle-style .order-day p,
+.middle-container .data-list .toptitle-style .product-description p,
+.middle-container .data-list .toptitle-style p.controller,
+.middle-container .data-list .toptitle-style p.product-valid-period,
+.middle-container .data-list .toptitle-style p.customer-number,
+.middle-container .data-list .toptitle-style p.customer-contact,
+.middle-container .data-list .toptitle-style p.customer-address {
   color: #11948a;
   font-weight: bold;
   line-height: 1.375rem;
   min-height: 22px;
   margin-top: 0;
+}
+
+.middle-container .data-list .toptitle-style h4.product-name::before {
+  display: none;
 }
 
 .middle-container .data-list .toptitle-style:hover {

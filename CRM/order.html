@@ -226,13 +226,18 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="copy popup-link" href="#popup-add-protuct">
+                                <a class="copy popup-link" href="#popup-add-order">
                                     <i class="far fa-copy" title="複製"></i>
                                 </a>
                             </li>
                             <li>
+                                <a class="discontinued popup-link" href="#popup-discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <a class="delete popup-link" href="#popup-delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
+                                    <i class="far fa-trash-alt" title="刪除"></i>
                                 </a>
                             </li>
                         </ul>
@@ -278,8 +283,13 @@
                                 </a>
                             </li>
                             <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
+                                    <i class="far fa-trash-alt" title="刪除"></i>
                                 </a>
                             </li>
                         </ul>
@@ -320,13 +330,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="copy">
-                                    <i class="far fa-copy" title="複製"></i>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
                                 </a>
                             </li>
                             <li>
                                 <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
+                                    <i class="far fa-trash-alt" title="刪除"></i>
                                 </a>
                             </li>
                         </ul>
@@ -370,8 +380,13 @@
                                 </a>
                             </li>
                             <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
+                                    <i class="far fa-trash-alt" title="刪除"></i>
                                 </a>
                             </li>
                         </ul>
@@ -413,8 +428,13 @@
                                 </a>
                             </li>
                             <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <a class="delete">
-                                    <i class="far fa-trash-alt" title="下架"></i>
+                                    <i class="far fa-trash-alt" title="刪除"></i>
                                 </a>
                             </li>
                         </ul>
@@ -1994,8 +2014,13 @@
                             </a>
                         </li>
                         <li>
+                            <a class="discontinued popup-link" href="#popup-discontinued">
+                                <i class="far fa-hand-point-down" title="下架"></i>
+                            </a>
+                        </li>
+                        <li>
                             <a class="delete popup-link" href="#popup-delete">
-                                <i class="far fa-trash-alt" title="下架"></i>
+                                <i class="far fa-trash-alt" title="刪除"></i>
                             </a>
                         </li>
                     </ul>
@@ -2307,7 +2332,7 @@
         </div>
     </section>
     <!-- popup 下架確認-->
-    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+    <section id="popup-discontinued" class="white-popup mfp-hide popup-width-m">
         <div class="popup-container">
             <div class="top-title">
                 <h4><span>下架確認</span></h4>
@@ -2322,7 +2347,23 @@
             </div>
         </div>
     </section>
-    <!-- popup 下架確認-->
+    <!-- popup 刪除確認-->
+    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>刪除確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要刪除此「委刊單」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認下架">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 刪除廣告確認-->
     <section id="popup-delete-ad" class="white-popup mfp-hide popup-width-m">
         <div class="popup-container">
             <div class="top-title">
