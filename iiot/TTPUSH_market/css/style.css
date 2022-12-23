@@ -274,9 +274,10 @@ body {
 
 .market-container .event-content-top a div .over {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -10px;
+  right: -10px;
   z-index: 2;
+  width: 55%;
 }
 
 .market-container .event-content-top a:hover {
