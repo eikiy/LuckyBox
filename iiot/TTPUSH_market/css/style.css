@@ -220,6 +220,7 @@ body {
 .market-container .event-content-top {
   width: 100%;
   position: relative;
+  overflow-y: hidden;
 }
 
 .market-container .event-content-top img {
@@ -235,6 +236,24 @@ body {
 .market-container .event-content-top .an-repeat {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+.market-container .event-content-top .user-photos {
+  position: relative;
+}
+
+.market-container .event-content-top .user-photos .img-user {
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  background: #fbf0f3;
+  border: 2px solid #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.1) 10px 10px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.1) 10px 10px 6px;
+  z-index: 2;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .market-container .event-content-top a {
