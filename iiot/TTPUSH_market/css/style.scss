@@ -120,6 +120,17 @@
   border-radius: 20px;
   box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 3px 6px,
     rgba(rgba(0, 0, 0, 0.2), 0.1) 10px 10px 6px;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    background: url(../images/bg-w2.png) left top repeat-x;
+    height: 40px;
+    z-index: 1;
+  }
 }
 
 .mfp-fade .mfp-bg {
@@ -149,11 +160,14 @@
 
 // pop內樣式---------
 .popup-container {
+  position: relative;
   width: 100%;
-  padding: 35px;
+  padding: 35px 35px 0px 35px;
+  max-height: 80vh;
+  overflow-y: scroll;
   .store-photo{
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     img{
       width: 100%;
       border-radius: 20px;
@@ -192,7 +206,7 @@
   }
   .done-title{
     width: 100%;
-    padding: 30px 0 20px 0;
+    padding: 30px 0;
     text-align: center;
     img{
       display: inline-block;
@@ -229,6 +243,14 @@
     width: 100%;
   }
   .bottom-btn{
+    width: 100%;
+    padding-top:30px;
+    height: 90px;
+    // background-color: #fff;
+    background: url(../images/bg-w.png) center top repeat-x;
+    position: sticky;
+    left: 0;
+    bottom: 0;
     text-align: center;
     .btn-style{
       cursor: pointer ;
@@ -250,7 +272,7 @@
     }
   }
   @media all and (max-width: 600px) {
-    padding:30px 25px 25px 25px;
+    padding:30px 25px 0px 25px;
     .info p{
       font-size: 14px;
     }

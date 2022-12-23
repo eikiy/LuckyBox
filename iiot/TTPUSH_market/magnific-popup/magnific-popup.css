@@ -128,7 +128,8 @@ button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
-  background: transparent;
+  background:#e66995;
+  border-radius: 60px;
   border: 0;
   -webkit-appearance: none;
   display: block;
@@ -149,8 +150,8 @@ button::-moz-focus-inner {
   height: 46px;
   line-height: 46px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -2px;
+  top: -2px;
   text-decoration: none;
   text-align: center;
   opacity: 1;
@@ -169,7 +170,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-close-btn-in .mfp-close {
-  color: #e66995;
+  color: #fff;
 }
 
 .mfp-image-holder .mfp-close,
