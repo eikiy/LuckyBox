@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 使用者列表</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">委刊單審核</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-link">
+                    <a href="user.html">使用者管理</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <a class="logo" href="dashboard.html"></a>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a href="audit.html">委刊單審核</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="selected" href="user.html">使用者管理</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">使用者管理</h3>
+                <div class="tools-bar clearfix">
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋關鍵字">
+                        <p class="btn-text"><a>搜尋</a></p>
+                    </div>
+                    <a href="#popup-add-staff" class="btn-add btn--primary-m popup-link">
+                        <i class="fas fa-plus"></i>
+                        <span>新增使用者</span>
+                    </a>
+                </div>
+                <div class="data-list">
+                    <div class="card toptitle-style clearfix">
+                        <p class="staff-area click-sort">
+                            區域<span class="icon-sort"><i class="fas fa-sort"></i></span>
+                        </p>
+                        <h4 class="staff-name click-sort">
+                            姓名<span class="icon-sort"><i class="fas fa-sort"></i></span>
+                        </h4>
+                        <div class="staff-jobtitle click-sort">
+                            <p>職稱<span class="icon-sort"><i class="fas fa-sort"></i></span></p>
+                        </div>
+                        <p class="staff-ext">分機</p>
+                        <p class="staff-mobile">電話</p>
+                        <div class="staff-supervisor click-sort">
+                            <p>直屬主管<span class="icon-sort"><i class="fas fa-sort"></i></span></p>
+                        </div>
+                        <div class="staff-day click-sort">
+                            <p>建立時間<span class="icon-sort"><i class="fas fa-sort"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-staff-info">
+                            <p class="staff-area"><span class="bg-circle">北</span></p>
+                            <h4 class="staff-name">Robby Wu 吳逸煒</h4>
+                            <p class="staff-jobtitle">業務專員</p>
+                            <p class="staff-ext">333</p>
+                            <p class="staff-mobile">0988-555555</p>
+                            <p class="staff-supervisor">Serena Lien 連心威</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-staff">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail">
+                            <p class="staff-area"><span class="bg-circle">北</span></p>
+                            <h4 class="staff-name">Jessie Wang 王筠惠</h4>
+                            <p class="staff-jobtitle">業務專員</p>
+                            <p class="staff-ext">267</p>
+                            <p class="staff-mobile">0925-256525</p>
+                            <p class="staff-supervisor">Jason Hsiao 蕭裮煜</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail">
+                            <p class="staff-area"><span class="bg-circle">北</span></p>
+                            <h4 class="staff-name">William Chen 陳景茂</h4>
+                            <p class="staff-jobtitle">業務專員</p>
+                            <p class="staff-ext">313</p>
+                            <p class="staff-mobile">0980-567431</p>
+                            <p class="staff-supervisor">Jennifer Lo 羅佑倫</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail">
+                            <p class="staff-area"><span class="bg-circle">北</span></p>
+                            <h4 class="staff-name">Michelle Lee 李怡柔</h4>
+                            <p class="staff-jobtitle">業務主任</p>
+                            <p class="staff-ext">312</p>
+                            <p class="staff-mobile">0909-264789</p>
+                            <p class="staff-supervisor">Irene Hsieh 謝珮宜</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail">
+                            <p class="staff-area"><span class="bg-circle bg-green-apple">中</span></p>
+                            <h4 class="staff-name">Lego Liu 劉彥均</h4>
+                            <p class="staff-jobtitle">業務專員</p>
+                            <p class="staff-ext">台中110</p>
+                            <p class="staff-mobile">0912-123456</p>
+                            <p class="staff-supervisor">Kiki Lin 林佳儀</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail">
+                            <p class="staff-area"><span class="bg-circle bg-green-apple">中</span></p>
+                            <h4 class="staff-name">Taylor Lin 林琬貽</h4>
+                            <p class="staff-jobtitle">業務專員</p>
+                            <p class="staff-ext">台中108</p>
+                            <p class="staff-mobile">0988-888000</p>
+                            <p class="staff-supervisor">Kiki Lin 林佳儀</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail">
+                            <p class="staff-area"><span class="bg-circle">北</span></p>
+                            <h4 class="staff-name">Jennie Li 李依庭</h4>
+                            <p class="staff-jobtitle">業務企劃主任</p>
+                            <p class="staff-ext">315</p>
+                            <p class="staff-mobile">0900-555123</p>
+                            <p class="staff-supervisor">Irene Hsieh 謝珮宜</p>
+                            <p class="staff-day">2023/09/27 15:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-50列(共220列 )</p>
+                    <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul>
+                </p>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2023 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup 新增使用者資料-->
+    <section id="popup-add-staff" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增使用者資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>使用者<br>資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>中文名字</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>英文名字</label>
+                                <input class="default" type="" name="" placeholder="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>行動電話/分機</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="">
+                                    <input class="" type="" name="" value="" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>Email</label>
+                                <input class="default" type="" name="" value="">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>職稱</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇職稱</option>
+                                        <option value="1">業務專員</option>
+                                        <option value="2">業務企劃主任</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>直屬主管</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇直屬主管</option>
+                                        <option value="1">Serena Lien 連心威</option>
+                                        <option value="2">Jason Hsiao 蕭裮煜</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 修改使用者資料-->
+    <section id="popup-edit-staff" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>編輯使用者資料</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>使用者<br>資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>中文名字</label>
+                                <input class="default" type="" name="" placeholder="" value="吳逸煒">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>英文名字</label>
+                                <input class="default" type="" name="" placeholder="" value="Robby Wu">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>行動電話/分機</label>
+                                <div class="confirm both-for-phone clearfix">
+                                    <input class="" type="" name="" value="0988-000000">
+                                    <input class="" type="" name="" value="333" placeholder="分機">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>Email</label>
+                                <input class="default" type="" name="" value="robbywu@weblisher.com.tw ">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>職稱</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇職稱</option>
+                                        <option value="1" selected>業務專員</option>
+                                        <option value="2">業務企劃主任</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>直屬主管</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇直屬主管</option>
+                                        <option value="1" selected>Serena Lien 連心威</option>
+                                        <option value="2">Jason Hsiao 蕭裮煜</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 使用者資料-->
+    <section id="popup-staff-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>使用者資訊</span></h4>
+            </div>
+            <div class="liaison-info">
+                <div class="fillin-box">
+                    <p class="staff-area"><span class="bg-circle">北</span></p>
+                    <div class="field clearfix">
+                        <p class="product-title">Robby Wu 吳逸煒</p>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">Email</label>
+                                <p class="input-value"><a href="mailto:jennieli@weblisher.com.tw"
+                                        target="_blank">robbywu@weblisher.com.tw</a></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">手機</label>
+                                <p class="input-value"><a href="tel:+886-930555153">0930-000123</a></p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">分機</label>
+                                <p class="input-value">333</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">職稱</label>
+                                <p class="input-value">業務專員</p>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">直屬主管</label>
+                                <p class="input-value">Serena Lien 連心威</p>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-btn-tool">
+                    <fieldset class="field">
+                        <ul class="edit-record-user">
+                            <li class="clearfix">
+                                <p class="time">更新：2023/02/29 14:59:00 </p>
+                                <p class="id"><span class="bg-c-1">J</span>Jennie Li</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="time">建立：2023/05/24 15:30:15 </p>
+                                <p class="id"><span class="bg-c-2">I</span>Irene Hsieh</p>
+                            </li>
+                        </ul>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-contact">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="history">
+                                    <i class="fas fa-history" title="變更紀錄"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popup 刪除確認-->
+    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>刪除確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要刪除使用者「<span>Jennie Li 李依庭</span>」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認刪除">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

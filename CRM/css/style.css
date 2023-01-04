@@ -1358,7 +1358,7 @@ ul.edit-tool li a:hover {
 
 .middle-container .main-container .tools-bar .filter-search .search-box .show-add-list {
   top: 42px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .middle-container .main-container .tools-bar .filter-search .search-box input {
@@ -2076,6 +2076,71 @@ ul.edit-tool li a:hover {
   width: calc(37% - 250px);
 }
 
+.middle-container .data-list .card p.staff-area {
+  float: left;
+  width: 70px;
+}
+
+.middle-container .data-list .card p.staff-area .bg-circle {
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  border-radius: 50%;
+  background-color: #11948A;
+  background-color: #11948a;
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+.middle-container .data-list .card p.staff-area .bg-green-apple {
+  background-color: #62CB6C;
+}
+
+.middle-container .data-list .card h4.staff-name {
+  float: left;
+  width: 18%;
+  color: #21534f;
+  font-size: 0.938rem;
+}
+
+.middle-container .data-list .card .staff-jobtitle {
+  float: left;
+  width: calc(64% - 405px);
+}
+
+.middle-container .data-list .card .staff-jobtitle p {
+  width: 100%;
+}
+
+.middle-container .data-list .card .staff-ext {
+  float: left;
+  width: 75px;
+}
+
+.middle-container .data-list .card .staff-mobile {
+  float: left;
+  width: 120px;
+}
+
+.middle-container .data-list .card .staff-supervisor {
+  float: left;
+  width: 18%;
+}
+
+.middle-container .data-list .card .staff-supervisor p {
+  width: 100%;
+}
+
+.middle-container .data-list .card .staff-day {
+  float: left;
+  width: 140px;
+}
+
+.middle-container .data-list .card .staff-day p {
+  width: 100%;
+}
+
 .middle-container .data-list .toptitle-style {
   border-bottom: 1px solid #11948a;
   padding: 12px 20px;
@@ -2107,7 +2172,14 @@ ul.edit-tool li a:hover {
 .middle-container .data-list .toptitle-style p.product-valid-period,
 .middle-container .data-list .toptitle-style p.customer-number,
 .middle-container .data-list .toptitle-style p.customer-contact,
-.middle-container .data-list .toptitle-style p.customer-address {
+.middle-container .data-list .toptitle-style p.customer-address,
+.middle-container .data-list .toptitle-style h4.staff-name,
+.middle-container .data-list .toptitle-style .staff-area,
+.middle-container .data-list .toptitle-style .staff-jobtitle p,
+.middle-container .data-list .toptitle-style .staff-ext,
+.middle-container .data-list .toptitle-style .staff-mobile,
+.middle-container .data-list .toptitle-style .staff-supervisor p,
+.middle-container .data-list .toptitle-style .staff-day p {
   color: #11948a;
   font-weight: bold;
   line-height: 1.375rem;
@@ -2245,6 +2317,51 @@ ul.edit-tool li a:hover {
   .middle-container .data-list .card .order-day {
     width: 25%;
   }
+  .middle-container .data-list .card .staff-area {
+    padding-left: 0;
+  }
+  .middle-container .data-list .card h4.staff-name {
+    width: 40%;
+  }
+  .middle-container .data-list .card .staff-jobtitle {
+    width: calc(60% - 145px);
+    padding-left: 0;
+  }
+  .middle-container .data-list .card .staff-jobtitle p {
+    padding-left: 0;
+  }
+  .middle-container .data-list .card .staff-ext {
+    padding-left: 0;
+    text-align: right;
+    color: #11948a;
+    font-weight: bold;
+  }
+  .middle-container .data-list .card .staff-ext p {
+    padding-left: 0;
+  }
+  .middle-container .data-list .card .staff-supervisor {
+    width: calc(100% - 140px);
+    padding-left: 70px;
+  }
+  .middle-container .data-list .card .staff-supervisor p {
+    padding-left: 0;
+  }
+  .middle-container .data-list .card .staff-mobile {
+    width: calc(100% - 70px);
+    padding-left: 0px;
+  }
+  .middle-container .data-list .card .staff-day {
+    padding-left: 0;
+    float: right;
+    text-align: right;
+  }
+  .middle-container .data-list .card .staff-day p {
+    padding-left: 0;
+  }
+  .middle-container .data-list .toptitle-style .staff-mobile {
+    width: calc(40% + 70px);
+    padding-left: 70px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -2328,6 +2445,32 @@ ul.edit-tool li a:hover {
   .middle-container .data-list .card .day-2 p {
     padding-right: 0;
   }
+  .middle-container .data-list .card h4.staff-name {
+    width: calc(100% - 70px);
+  }
+  .middle-container .data-list .card .staff-ext {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-top: 0;
+  }
+  .middle-container .data-list .card .staff-jobtitle {
+    width: calc(100% - 70px);
+  }
+  .middle-container .data-list .card .staff-jobtitle p {
+    padding-left: 70px;
+  }
+  .middle-container .data-list .card .staff-mobile {
+    padding-left: 70px;
+  }
+  .middle-container .data-list .card .staff-supervisor {
+    width: 100%;
+  }
+  .middle-container .data-list .card .staff-day {
+    width: 100%;
+    text-align: left;
+    padding-left: 70px;
+  }
   .middle-container .data-list .toptitle-style p.controller {
     margin-top: 0;
   }
@@ -2342,6 +2485,12 @@ ul.edit-tool li a:hover {
   }
   .middle-container .data-list .toptitle-style p.order-time {
     margin-bottom: 0;
+  }
+  .middle-container .data-list .toptitle-style .staff-ext {
+    top: 12px;
+  }
+  .middle-container .data-list .toptitle-style .staff-jobtitle {
+    width: calc(100% - 75px);
   }
 }
 
@@ -4796,6 +4945,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-finish .liaison-info .fillin-box {
+  position: relative;
   background-color: #fff;
   border-radius: 18px;
 }
@@ -4814,7 +4964,7 @@ ul.edit-tool li a:hover {
 }
 
 .popup-finish .liaison-info .fillin-box .fillin-info fieldset {
-  padding: 0px;
+  padding: 2px 0px;
 }
 
 .popup-finish .liaison-info .fillin-box .fillin-info fieldset label.item-title,
@@ -4833,6 +4983,30 @@ ul.edit-tool li a:hover {
 .popup-finish .liaison-info .fillin-box .fillin-info fieldset .show-contact-list .info p.input-value {
   width: 100%;
   max-width: 100%;
+}
+
+.popup-finish .liaison-info .fillin-box p.staff-area {
+  font-size: 0.938rem;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.popup-finish .liaison-info .fillin-box p.staff-area .bg-circle {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  background-color: #11948A;
+  background-color: #11948a;
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+.popup-finish .liaison-info .fillin-box p.staff-area .bg-green-apple {
+  background-color: #62CB6C;
 }
 
 .popup-finish .liaison-info .bottom-btn-tool {
