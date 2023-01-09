@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import "../css/reset.scss";
+.admin-invite-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  .middle-container {
+    min-height: 500px;
+    padding: 20px;
+    .top-logo{
+      width: 220px;
+      margin: 0 auto;
+      img{
+        width: 100%;
+      }
+    }
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    p{
+      font-weight: 18px;
+      padding: 5px 0;
+      &.note{
+        padding: 15px 0;
+        font-size: 12px;
+        line-height: 16px;
+        color: #BDBDBD;
+      }
+    }
+    h3{
+      padding: 5px 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    h2{
+      line-height: 52px;
+      font-size: 36px;
+      color: #22798C;
+      font-style: normal;
+      font-weight: 400;
+    }
+    input.btn-invite{
+      font-family: "Noto Sans TC", Arial, "微軟正黑體", "新細明體", sans-serif;
+      width: 180px;
+      padding: 10px 10px 12px 10px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      display: inline-block;
+      border-radius: 99px;
+      background-color: #FF9900;
+    }
+    .main-title{
+      padding: 70px 0 100px 0;
+    }
+    @media all and (max-width: 450px) {
+      input.btn-invite{
+        width: 165px;
+      }
+    }
+  }
+}
+
