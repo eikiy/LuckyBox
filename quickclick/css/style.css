@@ -4095,6 +4095,189 @@ a.reminder:hover {
   max-width: calc(100% - 130px);
 }
 
+.popup-container .menu-schedule-setting {
+  max-width: 580px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.popup-container .menu-schedule-setting .mail-switch {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
+}
+
+.popup-container .menu-schedule-setting .mail-switch .switch-type {
+  float: left;
+  margin: 0;
+}
+
+.popup-container .menu-schedule-setting .mail-switch .switch-type .switch-button {
+  background-color: #fff;
+}
+
+.popup-container .menu-schedule-setting .mail-switch p {
+  float: left;
+  line-height: 22px;
+}
+
+.popup-container .menu-schedule-setting .mail-switch p.state-on {
+  color: #90c31f;
+}
+
+.popup-container .menu-schedule-setting .mail-switch p.state {
+  padding: 0 10px;
+}
+
+.popup-container .menu-schedule-setting .mail-switch p.note {
+  font-size: 12px;
+}
+
+.popup-container .menu-schedule-setting .mail-switch p.note span {
+  color: #ff5555;
+}
+
+.popup-container .menu-schedule-setting .time-set {
+  margin-top: 15px;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.popup-container .menu-schedule-setting .time-set .sub-title {
+  padding: 15px 0 5px 0;
+  color: #666666;
+  font-size: 0.875rem;
+}
+
+.popup-container .menu-schedule-setting .time-set .top-item-title {
+  background-color: #FFEFD8;
+  border-bottom: 1px solid #FFCD85;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.popup-container .menu-schedule-setting .time-set .top-item-title p {
+  font-weight: bold;
+  line-height: 22px;
+  float: left;
+}
+
+.popup-container .menu-schedule-setting .time-set .top-item-title .switch-type {
+  float: right;
+  margin: 0;
+}
+
+.popup-container .menu-schedule-setting .time-set .fillin-info {
+  padding: 10px 0;
+}
+
+.popup-container .menu-schedule-setting .time-set .fillin-info small {
+  padding-top: 5px;
+  display: block;
+  font-size: 0.688rem;
+  color: #9e9e9e;
+}
+
+.popup-container .menu-schedule-setting .time-set .fillin-info fieldset {
+  width: 50%;
+  margin: 0;
+  padding-right: 15px;
+  float: left;
+}
+
+.popup-container .menu-schedule-setting .time-set .fillin-info fieldset .item-title {
+  width: 50px;
+  text-align: left;
+  padding-right: 0;
+}
+
+.popup-container .menu-schedule-setting .time-set .fillin-info fieldset .fillin-box {
+  max-width: calc(100% - 50px);
+}
+
+@media all and (max-width: 650px) {
+  .popup-container .menu-schedule-setting .time-set .fillin-info fieldset {
+    width: 100%;
+  }
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list {
+  width: 100%;
+  padding: 10px 50px;
+  border-top: 1px dashed #c6c6c6;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .week {
+  background-color: #fff;
+  float: left;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  padding: 2px;
+  line-height: initial;
+  padding: 2px 32px 2px 12px;
+  position: relative;
+  margin: 0 6px 6px 0;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .week::after {
+  position: absolute;
+  content: "";
+  right: 3px;
+  top: 3px;
+  width: 23px;
+  height: 23px;
+  float: left;
+  display: block;
+  background-image: url(../images/svg/circle-plus-orange.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .week p {
+  line-height: 25px;
+  font-size: 0.688rem;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .week:hover {
+  border-color: #f0941d;
+  background-color: #fffbf2;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .removeweek {
+  background-color: #f0941d;
+  border-color: #f0941d;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .removeweek::after {
+  background-image: url(../images/svg/circle-minus-w.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .removeweek p {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.popup-container .menu-schedule-setting .time-set .day-week-list .removeweek:hover {
+  background-color: #f0941d;
+  opacity: .9;
+}
+
+@media all and (max-width: 650px) {
+  .popup-container .menu-schedule-setting .time-set .day-week-list {
+    padding: 10px 10px 0 10px;
+  }
+}
+
+.popup-container .menu-schedule-setting .time-turn-off {
+  -webkit-filter: grayscale(1);
+}
+
 .popup-container .bottom-btn-tool {
   padding: 20px 0 30px 0;
   text-align: center;

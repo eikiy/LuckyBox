@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>菜單管理 - popup 菜單排程設定</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="on-server/css/fontawesome-all.css.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="mfp-bg"></div>
+    <div class="mfp-wrap" style="overflow-y: auto;">
+        <div class="mfp-container">
+            <div class="mfp-content">
+                <!-- popup 菜單排程設定 二擇一出現：顯示 週期性上架-->
+                <section id="popup-choose-store" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>菜單排程設定</span></h4>
+                        </div>
+                        <div class="menu-product-info menu-schedule-setting">
+                            <div class="mail-switch clearfix">
+                                <div class="switch-type">
+                                    <input id="" name="" type="checkbox" checked="">
+                                    <label class="switch-button" for=""></label>
+                                </div>
+                                <!-- 啟用中文字需 + state-on 變成綠色字-->
+                                <!-- <p class="state state-on">啟用中</p> -->
+                                <p class="state state-on">已啟用</p>
+                                <p class="note">（此功能<span>不支援</span>根據取餐時間卡商品餐期的功能）</p>
+                            </div>
+                            <div class="set-card time-set">
+                                <div class="top-item-title">
+                                    <div class="title-content clearfix">
+                                        <p>週期性</p>
+                                        <div class="switch-type">
+                                            <input id="" name="" type="checkbox" checked="">
+                                            <label class="switch-button" for=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <from class="fillin-info clearfix">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">時間</label>
+                                        <div class="fillin-box">
+                                            <input type="time" name="" value="">
+                                            <small>時區：(GMT+08:00) 台灣時間</small>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                                <div class="day-week-list clearfix">
+                                    <a class="week removeweek">
+                                        <p>星期一</p>
+                                    </a>
+                                    <a class="week removeweek">
+                                        <p>星期二</p>
+                                    </a>
+                                    <a class="week removeweek">
+                                        <p>星期三</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期四</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期五</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期六</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期日</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 關閉 + time-turn-off -->
+                            <!-- 關閉 裡面的 sub-title 要 + style display: none; -->
+                            <!-- 關閉 裡面的 fillin-info 要 + style display: none; -->
+                            <div class="set-card time-set time-turn-off">
+                                <div class="top-item-title">
+                                    <div class="title-content clearfix">
+                                        <p>一次性</p>
+                                        <div class="switch-type">
+                                            <input id="" name="" type="checkbox">
+                                            <label class="switch-button" for=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="sub-title" style="display: none;">指定時間上架菜單，且下架原菜單</p>
+                                <from class="fillin-info clearfix" style="display: none;">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">日期</label>
+                                        <div class="fillin-box">
+                                            <input type="date" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">時間</label>
+                                        <div class="fillin-box">
+                                            <input type="time" name="" value="">
+                                            <small>時區：(GMT+08:00) 台灣時間</small>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                        </div>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="儲存">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+                <!-- popup 菜單排程設定 二擇一出現：顯示 一次性上架-->
+                <section id="popup-choose-store" class="white-popup mfp-hide popup-width-m">
+                    <div class="popup-container">
+                        <div class="top-title">
+                            <h4><span>菜單排程設定</span></h4>
+                        </div>
+                        <div class="menu-product-info menu-schedule-setting">
+                            <div class="mail-switch clearfix">
+                                <div class="switch-type">
+                                    <input id="" name="" type="checkbox">
+                                    <label class="switch-button" for=""></label>
+                                </div>
+                                <!-- 啟用中文字需 + state-on 變成綠色字-->
+                                <!-- <p class="state state-on">啟用中</p> -->
+                                <p class="state">尚未啟用</p>
+                                <p class="note">（此功能<span>不支援</span>根據取餐時間卡商品餐期的功能）</p>
+                            </div>
+                            <!-- 關閉 + time-turn-off -->
+                            <!-- 關閉 裡面的 fillin-info 要 + display: none; -->
+                            <!-- 關閉 裡面的 day-week-list 要 + display: none; -->
+                            <div class="set-card time-set time-turn-off">
+                                <div class="top-item-title">
+                                    <div class="title-content clearfix">
+                                        <p>週期性</p>
+                                        <div class="switch-type">
+                                            <input id="" name="" type="checkbox">
+                                            <label class="switch-button" for=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <from class="fillin-info clearfix" style="display: none;">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">時間</label>
+                                        <div class="fillin-box">
+                                            <input type="time" name="" value="">
+                                            <small>時區：(GMT+08:00) 台灣時間</small>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                                <div class="day-week-list clearfix" style="display: none;">
+                                    <a class="week removeweek">
+                                        <p>星期一</p>
+                                    </a>
+                                    <a class="week removeweek">
+                                        <p>星期二</p>
+                                    </a>
+                                    <a class="week removeweek">
+                                        <p>星期三</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期四</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期五</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期六</p>
+                                    </a>
+                                    <a class="week">
+                                        <p>星期日</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="set-card time-set">
+                                <div class="top-item-title">
+                                    <div class="title-content clearfix">
+                                        <p>一次性</p>
+                                        <div class="switch-type">
+                                            <input id="" name="" type="checkbox" checked="">
+                                            <label class="switch-button" for=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="sub-title">指定時間上架菜單，且下架原菜單</p>
+                                <from class="fillin-info clearfix">
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">日期</label>
+                                        <div class="fillin-box">
+                                            <input type="date" name="" value="">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="clearfix">
+                                        <label class="item-title">時間</label>
+                                        <div class="fillin-box">
+                                            <input type="time" name="" value="">
+                                            <small>時區：(GMT+08:00) 台灣時間</small>
+                                        </div>
+                                    </fieldset>
+                                </from>
+                            </div>
+                        </div>
+                        <div class="bottom-btn-tool">
+                            <input class="btn--primary-xl " type="submit" value="儲存">
+                        </div>
+                    </div>
+                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <main class="main-container">
+        <p class="breadcrumb"><span>商店列表</span> > <span>菜單管理</span></p>
+        <section class="top-content clearfix">
+            <h3 class="main-title">
+                <a href="store-list.html">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                    返回商店列表
+                </a>
+            </h3>
+            <a class="btn-products btn--primary-l">
+                <p>
+                    <span><i class="fas fa-shopping-basket"></i></span>
+                    商品庫
+                </p>
+            </a>
+        </section>
+        <section class="middle-content">
+            <div class="menu-list">
+                <div class="add-new-card">
+                    <a class="popup-link" href="add_new_menu.html">
+                        <p>新增或匯入菜單</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="features-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fas fa-pencil-alt"></i></span>
+                                    編輯
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="far fa-copy"></i></span>
+                                    複製
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="popup-delete-menu.html">
+                                    <span><i class="far fa-trash-alt"></i></span>
+                                    刪除
+                                </a>
+                            </li>
+                            <li>
+                                <a href="menu-history.html">
+                                    <span><i class="fas fa-history"></i></span>
+                                    歷史紀錄
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="popup-choose-store.html"">
+                                        <span><i class=" fas fa-share-square"></i></span>
+                                    將此菜單複製到其他店
+                                </a>
+                            </li>
+                            <li>
+                                <a class="popup-link" href="popup-choose-platform.html"">
+                                        <span><i class=" fas fa-share-square"></i></span>將此菜單上架到其他平台
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/quickclick-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="假日菜單">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/foodpanda-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                    </div>
+                    <p class="update">上次更新：2021-10-22 下午 3:00 · Amber Liu</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/ubereats-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="label-type">
+                        <p>啟用中</p>
+                    </div>
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/gofoodie-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="一到五的商業菜單" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <!-- 編輯過未啟用菜單會一直顯示紅色提醒語 -->
+                        <a class="btn--primary-m popup-link bg-c-red" href="#popup-activate-menu">啟用
+                            <div class="tooltip">
+                                上次的新修改尚未啟用，請點選「啟用」來更新菜單內容。
+                            </div>
+                        </a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/counter-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+                <div class="card">
+                    <div class="more-features">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="images/platform-logo/quickclick-m.png">
+                    </div>
+                    <div class="menu-title">
+                        <input class="" type="" name="" value="" placeholder="點此新增菜單名稱">
+                    </div>
+                    <div class="btn-menu-actions">
+                        <a class="btn--primary-m" href="#" target="_blank">預覽</a>
+                        <a class="btn--primary-m popup-link" href="#popup-activate-menu">啟用</a>
+                    </div>
+                    <p class="update">上次更新：昨天 下午 6:00 · Kay</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
