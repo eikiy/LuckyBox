@@ -1,0 +1,1134 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url(../css/swiper.min.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active,
+*:focus,
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Noto Sans TC", Arial, "微軟正黑體", "新細明體", sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  font-size: 0.9375em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+}
+
+/* loader_circle animation */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #c2d565;
+}
+
+:root {
+  --swiper-theme-color: #c2d565;
+}
+
+@media (max-width: 499px) {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 30px;
+  }
+}
+
+.btn_default {
+  width: 100%;
+  text-align: center;
+  line-height: 22px;
+}
+
+.btn_default a {
+  background-color: #ed392d;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 40px;
+  display: inline-block;
+  min-width: 160px;
+  min-height: 22px;
+  line-height: 22px;
+  color: #fff;
+  padding: 10px 15px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn_default a:hover {
+  opacity: .9;
+}
+
+.btn_default a.color_gray {
+  background-color: #b1b1b1;
+  margin-left: 10px;
+}
+
+.btn_default a.btn_none {
+  background-color: #dadada;
+  cursor: not-allowed;
+}
+
+.btn_default a.btn_none:hover {
+  background-color: #dadada;
+}
+
+.header_container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  min-height: 65px;
+  z-index: 2;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header_container a.header_eSIM_logo {
+  width: 120px;
+  height: 54px;
+  margin: 0 auto;
+  display: block;
+  text-indent: -9999px;
+  background: url(../images/eSIM-logo.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.header_container .header_content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+.main_container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  background-color: #f4f4f4;
+}
+
+.main_container h3.top_title {
+  padding: 10px 0 35px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+.main_container h4.sub_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #95a83b;
+  text-align: center;
+}
+
+.main_container .main_flexslider {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main_container .area_content {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.main_container .area_content ul.choose_area {
+  width: 100%;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.main_container .area_content ul.choose_area li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.main_container .area_content ul.choose_area li p {
+  color: #333;
+  font-size: 18px;
+  line-height: 30px;
+  line-height: 30px;
+}
+
+.main_container .area_content ul.choose_area li p a {
+  color: #333;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid transparent;
+}
+
+.main_container .area_content ul.choose_area li p a:hover {
+  color: #95a83b;
+}
+
+.main_container .area_content ul.choose_area li p.btn_in a {
+  color: #95a83b;
+  border-color: #95a83b;
+  font-weight: bold;
+}
+
+.main_container .area_content ul.area_list li {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.main_container .area_content ul.area_list li a {
+  display: block;
+  min-height: 285px;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.main_container .area_content ul.area_list li a:hover {
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.main_container .area_content ul.area_list li .area_info {
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  width: 100%;
+  padding: 35px 20px 20px 20px;
+  min-height: 128px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(99%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+}
+
+.main_container .area_content ul.area_list li h3.area_title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  color: #fff;
+  padding: 8px 0;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main_container .area_content ul.area_list li h4.area_sub_title {
+  border-top: 1px solid #ffffff94;
+  font-size: 17px;
+  line-height: 25px;
+  color: #fff;
+  padding: 8px 0;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main_container .area_content ul.area_list li p.more {
+  font-size: 15px;
+  border: 1px solid #ed392d;
+  background-color: #f44336;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  display: block;
+  width: 80%;
+  margin: 5px auto 0 auto;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+.main_container .area_content ul.area_list li a:hover .area_info {
+  padding-bottom: 40px;
+}
+
+.main_container .area_content ul.area_list li a:hover p.more {
+  border-color: #ff665b;
+}
+
+.main_container .area_content ul.area_list li p.label {
+  text-align: left;
+  padding: 10px 0 5px 0;
+}
+
+.main_container .area_content ul.area_list li p.label span {
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  /*9ab0c1*/
+  color: #b6a791;
+  padding: 2px 5px;
+  margin: 0 8px 8px 0;
+  min-width: 40px;
+  border-radius: 40px;
+  border: 1px solid #b8afa1;
+}
+
+.main_container .area_content ul.area_list li p.price {
+  color: #e91e63;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.main_container .area_content ul.country_list li {
+  float: left;
+  width: 33.33%;
+  padding: 10px 15px;
+}
+
+.main_container .area_content ul.country_list li a {
+  display: block;
+}
+
+.main_container .area_content ul.country_list li img {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.main_container .area_content ul.country_list li img:hover {
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.main_container .plan_content {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.main_container .plan_content ul.plan_list {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.main_container .plan_content ul.plan_list li {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.main_container .plan_content ul.plan_list li .plan_info {
+  background-color: #fff;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main_container .plan_content ul.plan_list li .plan_info .plan_info_top {
+  width: 100%;
+  background-color: #f0a900;
+  padding: 15px 10px;
+}
+
+.main_container .plan_content ul.plan_list li .plan_info .plan_info_top h4.plan_title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.main_container .plan_content ul.plan_list li .plan_info .plan_info_top p.plan_price {
+  color: #fff;
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+.main_container .plan_content ul.plan_list li .plan_info .plan_info_top p.plan_price span {
+  font-size: 15px;
+  top: -5px;
+  font-size: 15px;
+  position: relative;
+  padding-right: 2px;
+}
+
+.main_container .plan_content ul.plan_list li .plan_info .plan_info_top p.plan_price span.original-price {
+  text-decoration: line-through;
+}
+
+.main_container .plan_content ul.plan_list li .other_info {
+  padding: 15px 20px 5px 20px;
+  min-height: 120px;
+}
+
+.main_container .plan_content ul.plan_list li .other_info p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+
+.main_container .plan_content ul.plan_list li .plan_info:hover {
+  -webkit-box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main_container .plan_content ul.plan_list li p.plan_order {
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 0 20px 0;
+}
+
+.main_container .plan_content ul.plan_list li p.plan_order a {
+  color: #fff;
+  background-color: #fabd00;
+  padding: 0 15px;
+  width: calc(100% - 40px);
+  display: inline-block;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 40px;
+  line-height: 45px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.main_container .plan_content ul.plan_list li p.plan_order a:hover {
+  opacity: .9;
+}
+
+.main_container .plan_content ul.plan_list li:nth-child(1) .plan_info .plan_info_top,
+.main_container .plan_content ul.plan_list li:nth-child(1) p.plan_order a {
+  background: #ff5722;
+  background: linear-gradient(135deg, #ff5722 2%, #ff8763 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5722', endColorstr='#ff8763', GradientType=1);
+}
+
+.main_container .plan_content ul.plan_list li:nth-child(2) .plan_info .plan_info_top,
+.main_container .plan_content ul.plan_list li:nth-child(2) p.plan_order a {
+  background: #fabd00;
+  background: linear-gradient(135deg, #fabd00 1%, #f7d56f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fabd00', endColorstr='#f7d56f', GradientType=1);
+}
+
+.main_container .plan_content ul.plan_list li:nth-child(3) .plan_info .plan_info_top,
+.main_container .plan_content ul.plan_list li:nth-child(3) p.plan_order a {
+  background: #579cd1;
+  background: linear-gradient(135deg, #579cd1 1%, #7fadd1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#579cd1', endColorstr='#7fadd1', GradientType=1);
+}
+
+.main_container .plan_content ul.plan_list li:nth-child(4) .plan_info .plan_info_top,
+.main_container .plan_content ul.plan_list li:nth-child(4) p.plan_order a {
+  background: #c5bd72;
+  background: linear-gradient(135deg, #c5bd72 1%, #eac97c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5bd72', endColorstr='#eac97c', GradientType=1);
+}
+
+.main_container .plan_content ul.plan_list li:nth-child(5) .plan_info .plan_info_top,
+.main_container .plan_content ul.plan_list li:nth-child(5) p.plan_order a {
+  background: #ae56bd;
+  background: linear-gradient(135deg, #ae56bd 2%, #dd8dbf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ae56bd', endColorstr='#dd8dbf', GradientType=1);
+}
+
+.main_container .plan_content ul.plan_list li:nth-child(6) .plan_info .plan_info_top,
+.main_container .plan_content ul.plan_list li:nth-child(6) p.plan_order a {
+  background: #636363;
+  background: linear-gradient(135deg, #636363 2%, #969696 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#636363', endColorstr='#969696', GradientType=1);
+}
+
+.main_container .wifi_router_info {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+
+.main_container .wifi_router_info .img_wifi_router {
+  float: left;
+  width: 300px;
+  padding-right: 40px;
+}
+
+.main_container .wifi_router_info .img_wifi_router img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main_container .wifi_router_info .other_item {
+  float: left;
+  width: calc(100% - 300px);
+}
+
+.main_container .wifi_router_info .other_item h3.top_title, .main_container .wifi_router_info .other_item h4.sub_title {
+  text-align: left;
+}
+
+.main_container .wifi_router_info ul.specification {
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.main_container .wifi_router_info ul.specification li {
+  padding-bottom: 8px;
+}
+
+.main_container .wifi_router_info ul.specification li p {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.main_container .wifi_router_info ul.specification li .p_w {
+  font-weight: bold;
+}
+
+.main_container .wifi_router_info ul.specification li .c_gray {
+  color: #888;
+  font-size: 12px;
+}
+
+.main_container .shopping_contents {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.main_container .shopping_contents .fillinBox {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main_container .shopping_contents .fillinBox ul li {
+  padding-bottom: 10px;
+}
+
+.main_container .shopping_contents .fillinBox p.label_title {
+  padding: 12px 0;
+  color: #888888;
+}
+
+.main_container .shopping_contents .fillinBox .f_red {
+  color: #ff2121;
+}
+
+.main_container .shopping_contents .fillinBox p.the_reminder {
+  color: #888888;
+  font-size: 13px;
+  text-align: justify;
+  line-height: 22px;
+  padding: 6px 0;
+}
+
+.main_container .shopping_contents .fillinBox p.the_reminder a {
+  color: #27d0ca;
+}
+
+.main_container .shopping_contents .fillinBox p.the_reminder a:hover {
+  text-decoration: underline;
+}
+
+.main_container .shopping_contents .fillinBox input,
+.main_container .shopping_contents .fillinBox textarea {
+  border: 1px solid #e0e0e0;
+  width: calc(100% - 22px);
+  padding: 8px 10px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+}
+
+.main_container .shopping_contents .fillinBox input[type=text],
+.main_container .shopping_contents .fillinBox textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+.main_container .shopping_contents .fillinBox input[type=text]:focus,
+.main_container .shopping_contents .fillinBox textarea:focus {
+  border-color: #9e9e9e;
+}
+
+.main_container .shopping_contents .fillinBox .order-details {
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.main_container .shopping_contents .fillinBox .order-details .name {
+  line-height: 20px;
+}
+
+.main_container .shopping_contents .fillinBox .order-details a {
+  display: block;
+  color: #666;
+}
+
+.main_container .shopping_contents .fillinBox .order-details a:hover {
+  color: #95a83b;
+}
+
+.main_container .shopping_contents .fillinBox .order-details td, .main_container .shopping_contents .fillinBox .order-details th {
+  padding: 10px;
+  vertical-align: middle;
+  word-wrap: break-word;
+  border-top: 1px solid #e0e0e0;
+}
+
+.main_container .shopping_contents .fillinBox .order-details th {
+  color: #666;
+  background-color: #f9f9f9;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.main_container .shopping_contents .fillinBox .order-details .total_amount {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main_container .shopping_contents .fillinBox .order-details .total_amount span {
+  color: #F94F4F;
+}
+
+.main_container .shopping_contents .fillinBox .confirm {
+  padding: 10px 0;
+}
+
+.main_container .shopping_contents .fillinBox .confirm .the_radio {
+  width: 15px;
+  height: 20px;
+  float: left;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.main_container .shopping_contents .fillinBox .confirm label {
+  width: inherit;
+}
+
+.main_container .shopping_contents .fillinBox .confirm p {
+  float: left;
+  line-height: 24px;
+  width: calc(100% - 50px);
+  font-size: 13px;
+}
+
+.main_container .shopping_contents .fillinBox .confirm p a {
+  color: #95a83b;
+  text-decoration: underline;
+  margin: 0 3px;
+}
+
+.main_container .shopping_contents .fillinBox .confirm p a:hover {
+  text-decoration: none;
+}
+
+.main_container .shopping_contents .fillinBox .btn_default {
+  padding-top: 20px;
+}
+
+.footer_info {
+  width: 100%;
+  padding: 25px 20px;
+  background-color: #fff;
+}
+
+.footer_info p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333;
+}
+
+.footer_info p.link {
+  color: #95a83b;
+  font-size: 13px;
+}
+
+.footer_info p.link a {
+  color: #95a83b;
+  margin: 0 5px;
+}
+
+.footer_info p.link a:hover {
+  text-decoration: underline;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader p {
+  padding-left: 10px;
+}
+
+.loader .loader_circle {
+  border: 8px solid #e2e2e2;
+  border-radius: 50%;
+  border-top: 8px solid #f5c021;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1.5s linear infinite;
+  /* Safari */
+  animation: spin 1.5s linear infinite;
+}
+
+@media (max-width: 1200px) {
+  .main_container .area_content ul.area_list li,
+  .main_container .plan_content ul.plan_list li {
+    width: 33.33%;
+  }
+  .main_container .area_content .area_menu ul.choose_country li {
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main_container .area_content ul.country_list li {
+    width: 50%;
+    padding: 10px;
+  }
+  .main_container .wifi_router_info .img_wifi_router {
+    width: 250px;
+  }
+  .main_container .wifi_router_info .other_item {
+    width: calc(100% - 250px);
+  }
+}
+
+@media (max-width: 800px) {
+  .header_container {
+    min-height: 50px;
+  }
+  .header_container .header_content {
+    padding: 0 20px;
+  }
+  .header_container a.header_eSIM_logo {
+    width: 90px;
+  }
+  .main_container {
+    padding-top: 50px;
+  }
+  .main_container h3.top_title {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  .main_container .area_content {
+    padding: 20px 0;
+    width: calc(100% - 20px);
+  }
+  .main_container .area_content .area_menu .search_box {
+    position: initial;
+    margin: 15px 10px;
+  }
+  .main_container .area_content .area_menu ul.choose_area {
+    padding-top: 5px;
+  }
+  .main_container .area_content .area_menu ul.choose_area li p.btn_in a {
+    border-color: transparent;
+  }
+  .main_container .area_content .area_menu ul.choose_country li {
+    min-width: 48%;
+  }
+  .main_container .area_content ul.area_list li {
+    width: 50%;
+  }
+  .main_container .area_content ul.area_list li .area_info {
+    padding: 15px;
+    text-align: center;
+  }
+  .main_container .area_content ul.area_list li a {
+    padding: 15px;
+  }
+  .main_container .area_content ul.area_list li h3.area_title {
+    font-size: 20px;
+  }
+  .main_container .area_content ul.area_list li h4.area_sub_title {
+    font-size: 15px;
+  }
+  .main_container .area_content ul.area_list li p.more {
+    font-size: 15px;
+  }
+  .main_container .area_content ul.plan_list li {
+    width: 50%;
+  }
+  .main_container .plan_content {
+    padding: 20px 0;
+  }
+  .main_container .wifi_router_info .img_wifi_router {
+    width: 100%;
+    max-width: 200px;
+    float: none;
+    margin: 0 auto 20px auto;
+    padding-right: 0px;
+  }
+  .main_container .wifi_router_info .other_item {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .main_container .wifi_router_info .other_item h3.top_title, .main_container .wifi_router_info .other_item h4.sub_title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .main_container .area_content ul.area_list li a {
+    min-height: 220px;
+  }
+  .main_container .area_content ul.area_list li .area_info {
+    min-height: initial;
+  }
+  .main_container .plan_content ul.plan_list {
+    padding-top: 0;
+  }
+  .main_container .plan_content ul.plan_list li {
+    width: 100%;
+    padding: 10px;
+  }
+  .main_container .plan_content ul.plan_list li .other_info {
+    min-height: inherit;
+  }
+  .main_container .wifi_router_info {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .main_container h3.top_title {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .main_container .area_content ul.area_list li a {
+    min-height: 175px;
+  }
+  .main_container .area_content ul.area_list li p.more {
+    line-height: 36px;
+    letter-spacing: 3px;
+  }
+  .main_container .area_content ul.area_list li h3.area_title,
+  .main_container .area_content ul.area_list li h4.area_sub_title {
+    padding: 5px 0;
+  }
+  .main_container .area_content ul.country_list li {
+    padding: 3px 5px;
+  }
+  .main_container .area_content ul.choose_area li p {
+    font-size: 16px;
+  }
+  .main_container .wifi_router_info ul.specification li p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .footer_info p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main_container .area_content ul.area_list li p.more {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .main_container .area_content ul.area_list li h4.area_sub_title {
+    font-size: 14px;
+    padding: 2.5px 0;
+  }
+  .main_container .area_content ul.choose_area li {
+    padding: 0 6px;
+  }
+  .main_container .area_content ul.choose_area li p a {
+    padding-bottom: 2px;
+  }
+  .footer_info {
+    padding: 15px 20px;
+  }
+  .footer_info p, .footer_info p.link {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer_info p {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .header_container a.header_eSIM_logo {
+    width: 75px;
+    height: 45px;
+  }
+  .main_container .area_content {
+    padding: 10px 0;
+  }
+  .main_container .area_content ul.area_list li .area_info {
+    padding: 12px;
+  }
+  .main_container .area_content ul.area_list li a {
+    min-height: 135px;
+  }
+  .main_container .area_content ul.area_list li p.more {
+    font-size: 13px;
+  }
+  .main_container .area_content ul.area_list li h3.area_title {
+    font-size: 17px;
+  }
+  .main_container .area_content ul.area_list li h4.area_sub_title {
+    font-size: 13px;
+  }
+  .main_container .area_content ul.choose_area li p {
+    font-size: 14px;
+  }
+  .main_container .wifi_router_info ul.specification li p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
