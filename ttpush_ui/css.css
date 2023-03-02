@@ -993,6 +993,85 @@ body {
 .body #main.mainSetting .separate {
   margin: 0;
 }
+.body #main.ipassGet > * {
+  margin-bottom: 20px;
+}
+.body #main.ipassGet .flexV {
+  position: relative;
+  padding-top: 48px;
+}
+.body #main.ipassGet .flexV::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(icon/bg-w-store.svg) center center no-repeat;
+  background-size: cover;
+}
+.body #main.ipassGet .flexV span {
+  font-size: 14px;
+  color: #333F48;
+}
+.body #main.ipassGet .Note {
+  padding: 0 13px;
+}
+.body #main.ipassGet .Note span {
+  color: #333;
+  font-weight: bold;
+}
+.body #main.ipassGet .Note ul {
+  list-style-type: decimal;
+  padding-inline-start: 20px;
+}
+.body #main.ipassGet .Note ul li {
+  color: #828282;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body #main.ipassGet .Note ul li a {
+  color: #EF6079;
+  text-decoration: underline !important;
+}
+.body #main.ipassGet .Note ul li a:hover {
+  text-decoration: none;
+}
+.body #main.ipassGet .card {
+  width: calc(100% - 10px);
+  height: 230px;
+  margin-top: 15px;
+  max-width: 384px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(55, 84, 170, 0.2);
+  background: url(img/card-ipass.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center center;
+}
+.body #main.ipassGet .card .bg-dark {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #00000076;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.body #main.ipassGet .card .bg-dark p {
+  font-size: 22px;
+  color: #fff;
+  transform-origin: 50% 0%;
+  transform: rotateZ(-15deg);
+}
 .body .primary {
   color: #E85189;
 }
@@ -1009,6 +1088,10 @@ body {
 }
 .body .background {
   background-color: #F2F1F6;
+}
+.body .grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
 }
 .body .fXL {
   font-size: 36px;
