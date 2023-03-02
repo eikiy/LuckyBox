@@ -1,0 +1,224 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  margin: 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans TC';
+}
+.body .primary {
+  color: #E85189;
+}
+.body .gray {
+  color: #828282;
+}
+.body .disabled {
+  color: #BDBDBD;
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+.body .error {
+  color: #EB5757;
+}
+.body .background {
+  background-color: #F2F1F6;
+}
+.body .fXL {
+  font-size: 36px;
+}
+.body .fL {
+  font-size: 24px;
+}
+.body .fM {
+  font-size: 18px;
+}
+.body .fS {
+  font-size: 14px;
+}
+.body .fXS {
+  font-size: 12px;
+}
+.body .bold {
+  font-weight: bold;
+}
+.body .single {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.body .double {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.body span {
+  color: #333333;
+}
+.body ol,
+.body ul {
+  color: #333333;
+}
+.body a {
+  text-decoration: none !important;
+}
+.body a:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+.body input {
+  border: 0;
+  padding: 0;
+  color: #333333;
+  background-color: transparent;
+  font-family: 'Noto Sans TC';
+}
+.body input:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+.body textarea {
+  border: 0;
+}
+.body textarea:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+.body select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+  font-family: 'Noto Sans TC';
+}
+.body select:hover {
+  cursor: pointer;
+}
+.body iframe {
+  border: 0;
+}
+.body .header {
+  width: calc(100% - 20px);
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(232, 81, 137, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 20px rgba(55, 84, 170, 0.1);
+}
+@media (min-width: 1024px), (max-width: 1023px) and (min-width: 768px) {
+  .body .header {
+    width: calc(100% - 60px);
+    margin: 0 20px;
+  }
+}
+.body .header .fL {
+  color: white;
+}
+.body .main {
+  padding: 70px 20px 90px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.body .main .fM {
+  margin: 10px 0;
+}
+.body .footer {
+  width: calc(100% - 20px);
+  height: 70px;
+  padding: 0 10px;
+  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(232, 81, 137, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -10px 20px rgba(55, 84, 170, 0.1);
+}
+.body .img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.body .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.body .button {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.body .button.cancel {
+  background-color: #D94079;
+}
+.body .button.cancel span {
+  color: white;
+}
+.body .button span {
+  color: #E85189;
+}
+.body .spinner {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.body .spinner > div {
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+.body .spinner > div > div {
+  min-width: 40px;
+  min-height: 40px;
+  border: 3px solid #E85189;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

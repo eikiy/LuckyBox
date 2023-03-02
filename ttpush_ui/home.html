@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TTPush</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="toast.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body mainApp">
+            <!-- Header -->
+            <div id="header">
+                <div class="icon"><i class="fas"></i></div>
+                <div class="img"><img src="img/icon.png"></div>
+                <span class="fM bold primary">TTPush 3.0</span>
+                <a class="icon" href="/notification.html">
+                    <i class="fas fa-bell fa-lg"></i>
+                    <div class="new"></div>
+                </a>
+            </div>
+            <!-- Main -->
+            <div id="main" class="mainHome">
+                <!-- 金幣 -->
+                <div id="coins" class="itemH between background">
+                    <a class="itemV">
+                        <div class="itemH">
+                            <div class="img coinL"><img src="icon/coin.svg"></div>
+                            <span class="fL bold primary">20</span>
+                        </div>
+                        <span class="fXS gray">金幣使用期限為2021年12月16日</span>
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="itemV center" href="/qrcode.html">
+                        <div class="img coinL"><img src="icon/qrcode.svg"></div>
+                        <span class="fXS gray">QR身分碼</span>
+                    </a>
+                    <a class="itemV center" href="/scan.html">
+                        <div class="img coinL"><img src="icon/scan.svg"></div>
+                        <span class="fXS gray">掃描</span>
+                    </a>
+                </div>
+                <!-- Banner -->
+                <div class="banners">
+                    <a class="banner" href="//google.com">
+                        <img src="img/member.jpeg">
+                    </a>
+                    <a class="banner" href="//google.com">
+                        <img src="img/discount.png">
+                    </a>
+                    <a class="banner" href="//google.com">
+                        <img src="img/member.jpeg">
+                        <div class="text">
+                            <span>標題</span>
+                        </div>
+                    </a>
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    <div class="dots">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                </div>
+                <!-- 金幣活動 -->
+                <div class="activities itemV center">
+                    <span class="fM">金幣活動</span>
+                    <div class="lineH"></div>
+                    <a class="activity itemH width">
+                        <div class="img"><img src="img/member.jpeg"></div>
+                        <div class="info itemV width height between">
+                            <div class="itemH">
+                                <!-- <div class="arrow"></div> -->
+                                <div class="category"><span class="fXS primary">活動</span></div>
+                                <span class="fXS primary">縣政快訊</span>
+                            </div>
+                            <span class="fS title">「2020臺灣國際衝浪公開賽事」每年的臺灣國際衝浪公開賽是臺灣每年的臺灣國際衝浪公開賽</span>
+                            <span class="fXS gray">2021-11-13</span>
+                            <div class="area itemH between width">
+                                <div class="itemH">
+                                    <div class="img coinS"><img src="icon/coin.svg"></div>
+                                    <div><span class="fM primary bold">+10</span></div>
+                                </div>
+                                <div class="next on"><span class="fXS">答題拿金幣</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="activity itemH width">
+                        <div class="img"><img src="img/member.jpeg"></div>
+                        <div class="info itemV width height between">
+                            <div class="itemH">
+                                <div class="category"><span class="fXS primary">活動</span></div>
+                                <span class="fXS primary">縣政快訊</span>
+                            </div>
+                            <span class="fS title">「2020臺灣國際衝浪公開賽事」每年的臺灣國際衝浪公開賽是臺灣每年的臺灣國際衝浪公開賽</span>
+                            <span class="fXS gray">2021-11-13</span>
+                            <div class="area itemH between width">
+                                <div class="itemH">
+                                    <div class="img coinS"><img src="icon/coin.svg"></div>
+                                    <div><span class="fM primary bold">+10</span></div>
+                                </div>
+                                <div class="next off"><span class="fXS">金幣已搶完</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="button">
+                        <span class="fM primary">看更多活動</span>
+                        <div class="icon"><i class="fas fa-chevron-right"></i></div>
+                    </a>
+                </div>
+                <!-- 臺東大小事 -->
+                <div class="activities itemV center background">
+                    <span class="fM">臺東大小事</span>
+                    <div class="lineH"></div>
+                    <a class="activity itemH width">
+                        <div class="img"><img src="img/member.jpeg"></div>
+                        <div class="info itemV width height between">
+                            <div class="itemH">
+                                <div class="category"><span class="fXS primary">公告</span></div>
+                                <span class="fXS primary">縣政快訊</span>
+                            </div>
+                            <span class="fS title">「2020臺灣國際衝浪公開賽事」每年的臺灣國際衝浪公開賽是臺灣每年的臺灣國際衝浪公開賽</span>
+                            <span class="fXS gray">2021-11-13</span>
+                            <div class="area itemH between width">
+                                <div class="itemH">
+                                    <!-- <div class="img coinS"><img src="icon/coin.svg"></div>
+                                    <div><span class="fM primary bold">+10</span></div> -->
+                                </div>
+                                <div class="next"><span class="fXS">閱讀文章</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="activity itemH width">
+                        <div class="img"><img src="img/member.jpeg"></div>
+                        <div class="info itemV width height between">
+                            <div class="itemH">
+                                <div class="category"><span class="fXS primary">公告</span></div>
+                                <span class="fXS primary">縣政快訊</span>
+                            </div>
+                            <span class="fS title">「2020臺灣國際衝浪公開賽事」每年的臺灣國際衝浪公開賽是臺灣每年的臺灣國際衝浪公開賽</span>
+                            <span class="fXS gray">2021-11-13</span>
+                            <div class="area itemH between width">
+                                <div class="itemH">
+                                    <!-- <div class="img coinS"><img src="icon/coin.svg"></div>
+                                    <div><span class="fM primary bold">+10</span></div> -->
+                                </div>
+                                <div class="next"><span class="fXS">閱讀文章</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="button">
+                        <span class="fM primary">看更多公告</span>
+                        <div class="icon"><i class="fas fa-chevron-right"></i></div>
+                    </a>
+                </div>
+                <!-- 臺東十大美景 -->
+                <div id="scenery" class="itemV center">
+                    <span class="fM">臺東十大美景</span>
+                    <div class="lineH"></div>
+                    <a class="img full"><img src="img/scenery.jpg"></a>
+                    <a class="itemV width">
+                        <div class="itemH width">
+                            <div class="img"><img src="img/scenery1.png"></div>
+                            <div class="img"><img src="img/scenery2.png"></div>
+                            <div class="img"><img src="img/scenery3.png"></div>
+                        </div>
+                        <div class="itemH width">
+                            <div class="img"><img src="img/scenery4.png"></div>
+                            <div class="img"><img src="img/scenery5.png"></div>
+                            <div class="img"><img src="img/scenery6.png"></div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 智慧臺東 -->
+                <div id="link" class="itemV center">
+                    <span class="fM">智慧臺東</span>
+                    <div class="lineH"></div>
+                    <a class="img"><img src="img/link1.png"></a>
+                    <a class="img"><img src="img/link2.png"></a>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div id="footer">
+                <!-- Button -->
+                <a class="button active" href="home.html">
+                    <div class="img"><img src="icon/home.svg"></div>
+                    <span class="fXS">首頁</span>
+                </a>
+                <a class="button" href="news.html">
+                    <div class="img"><img src="icon/news.svg"></div>
+                    <span class="fXS">臺東大小事</span>
+                </a>
+                <a class="button" onclick="showToast()">
+                    <div class="img"><img src="icon/location.svg"></div>
+                    <span class="fXS">優惠地圖</span>
+                </a>
+                <a class="button" href="service.html">
+                    <div class="img"><img src="icon/wallet.svg"></div>
+                    <span class="fXS">會員服務</span>
+                </a>
+            </div>
+            <!-- Toast -->
+            <div id="toast">
+                <div><span class="fS white">錯誤訊息</span></div>
+            </div>
+        </div>
+        <!-- Script -->
+        <script src="home.js"></script>
+    </body>
+</html>

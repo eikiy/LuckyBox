@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TTPush</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body mainApp">
+            <!-- Header -->
+            <div id="header">
+                <a class="icon" href="javascript:history.back()"><i class="fas fa-chevron-left fa-lg"></i></a>
+                <div class="img"><img src="img/icon.png"></div>
+                <span class="fM bold primary">會員服務</span>
+                <div class="icon"><i class="fas"></i></div>
+            </div>
+            <!-- Main -->
+            <div id="main" class="maincGift">
+                <!-- 金幣 -->
+                <div id="coins" class="itemH between background">
+                    <a class="itemV">
+                        <div class="itemH">
+                            <div class="img coinL"><img src="icon/coin.svg"></div>
+                            <span class="fL bold primary">20</span>
+                        </div>
+                        <span class="fXS gray">金幣使用期限為2021年12月16日</span>
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="itemV center" href="/qrcode.html">
+                        <div class="img coinL"><img src="icon/qrcode.svg"></div>
+                        <span class="fXS gray">QR身分碼</span>
+                    </a>
+                    <a class="itemV center" href="/scan.html">
+                        <div class="img coinL"><img src="icon/scan.svg"></div>
+                        <span class="fXS gray">掃描</span>
+                    </a>
+                </div>
+                <span class="fM title">轉贈金幣</span>
+                <div class="lineH"></div>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <a><span class="fM">+886</span></a>
+                    <div class="lineV"></div>
+                    <input type="text" class="fM" placeholder="手機號碼" value="">
+                </div>
+                <div class="input">
+                    <div class="img coinS"><img src="icon/coin.svg"></div>
+                    <input type="text" class="fM" placeholder="轉贈的金幣數量" value="">
+                </div>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-lock"></i></div>
+                    <input type="text" class="fM" placeholder="請輸入交易密碼" value="">
+                </div>
+                <div class="itemH">
+                    <span class="fS gray">初次設定或忘記密碼請</span>
+                    <a href="/cPassword.html"><span class="fS primary">「點此設定」</span></a>
+                </div>
+                <textarea class="fM" placeholder="給好友的一段話"></textarea>
+                <span class="fS gray">轉贈後金幣剩餘：20</span>
+                <a class="button"><span class="fM">確認轉贈</span></a>
+            </div>
+        </div>
+    </body>
+</html>

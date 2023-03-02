@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TTPush</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body mainApp">
+            <!-- Header -->
+            <div id="header">
+                <a class="icon" href="javascript:history.back()"><i class="fas fa-chevron-left fa-lg"></i></a>
+                <div class="img"><img src="img/icon.png"></div>
+                <span class="fM bold primary">會員服務</span>
+                <div class="icon"><i class="fas"></i></div>
+            </div>
+            <!-- Main -->
+            <div id="main" class="mainProfile">
+                <!-- 會員帳號設定 -->
+                <span class="title fM">會員帳號設定</span>
+                <span class="comment fS gray">設定金幣交易密碼為使用或轉贈金幣時的安全機制。</span>
+                <div class="separate"></div>
+                <a class="setting itemH between width" href="/cPassword.html">
+                    <span class="fM">設定金幣交易密碼</span>
+                    <div class="icon"><i class="fas fa-chevron-right"></i></div>
+                </a>
+                <div class="separate"></div>
+                <!-- 會員資料更新 -->
+                <span class="title fM">會員資料更新</span>
+                <span class="comment fS gray">填寫數位資料成為數位縣民，取得數位縣民優惠，並可在TTPush特約商店中兌換等值商品或服務，如繳臺東市區路邊停車費等。</span>
+                <!-- 數位資料 -->
+                <span class="title fM">數位資料</span>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                    <div class="itemV">
+                        <span class="fXS error">格式錯誤</span>
+                        <input type="text" class="fM" placeholder="姓名" value="">
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-venus-mars"></i></div>
+                    <span class="fM">性別</span>
+                    <!-- Radio -->
+                    <label class="check">
+                        <input type="radio" name="radio1" checked> <!-- checked -->
+                        <span class="checkmark radio"></span>
+                        <span class="text fM">先生</span>
+                    </label>
+                    <!-- Radio -->
+                    <label class="check">
+                        <input type="radio" name="radio1" checked> <!-- checked -->
+                        <span class="checkmark radio"></span>
+                        <span class="text fM">女士</span>
+                    </label>
+                </div>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="itemV">
+                        <span class="fXS error">格式錯誤</span>
+                        <input type="text" class="fM" placeholder="日期" value="">
+                    </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <div class="icon"><i class="fas fa-passport"></i></div>
+                    <select name="type" class="fM">
+                        <option value="台灣">台灣</option>
+                    </select>
+                    <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="input">
+                    <div class="itemV">
+                        <span class="fXS error">格式錯誤</span>
+                        <input type="text" class="fM" placeholder="身分證號" value="">
+                    </div>
+                </div>
+                <!-- 其他基本資料 -->
+                <span class="title fM">其他基本資料</span>
+                <div class="itemH width middle">
+                    <span class="fS primary">其他基本資料填完可獲得</span>
+                    <div class="img coinS"><img src="icon/coin.svg"></div>
+                    <span class="fS bold primary">20</span>
+                </div>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="itemV">
+                        <span class="fXS error">格式錯誤</span>
+                        <input type="text" class="fM" placeholder="Email" value="">
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="itemV">
+                        <span class="fXS error">格式錯誤</span>
+                        <input type="text" class="fM" placeholder="通訊地址" value="">
+                    </div>
+                </div>
+                <a class="button"><span class="fM">更新資料</span></a>
+            </div>
+        </div>
+    </body>
+</html>

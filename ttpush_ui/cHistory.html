@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TTPush</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body mainApp">
+            <!-- Header -->
+            <div id="header">
+                <a class="icon" href="javascript:history.back()"><i class="fas fa-chevron-left fa-lg"></i></a>
+                <div class="img"><img src="img/icon.png"></div>
+                <span class="fM bold primary">會員服務</span>
+                <div class="icon"><i class="fas"></i></div>
+            </div>
+            <!-- Main -->
+            <div id="main" class="maincHistory">
+                <!-- 金幣 -->
+                <div id="coins" class="itemH between background">
+                    <a class="itemV">
+                        <div class="itemH">
+                            <div class="img coinL"><img src="icon/coin.svg"></div>
+                            <span class="fL bold primary">20</span>
+                        </div>
+                        <span class="fXS gray">金幣使用期限為2021年12月16日</span>
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="itemV center" href="/qrcode.html">
+                        <div class="img coinL"><img src="icon/qrcode.svg"></div>
+                        <span class="fXS gray">QR身分碼</span>
+                    </a>
+                    <a class="itemV center" href="/scan.html">
+                        <div class="img coinL"><img src="icon/scan.svg"></div>
+                        <span class="fXS gray">掃描</span>
+                    </a>
+                </div>
+                <!-- Tabs -->
+                <div id="tabs" class="itemH width">
+                    <a class="tab itemV width center active">
+                        <span class="fS">金幣獲得紀錄</span>
+                    </a>
+                    <a class="tab itemV width center">
+                        <span class="fS">金幣使用紀錄</span>
+                    </a>
+                </div>
+                <!-- 時間 -->
+                <div class="dropdown">
+                    <select name="type" class="fS">
+                        <option value="全部">全部</option>
+                        <option value="一週">一週</option>
+                        <option value="一個月">一個月</option>
+                        <option value="半年">半年</option>
+                    </select>
+                    <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <!-- 紀錄 -->
+                <div id="list" class="itemV width">
+                    <div class="history itemV width center">
+                        <div class="itemH width between">
+                            <div class="itemV">
+                                <span class="fM">答題活動獲得</span>
+                                <span class="fS gray">填寫基本資料</span>
+                                <span class="fS gray">2020-12-24</span>
+                            </div>
+                            <div class="itemH">
+                                <div class="img coinS"><img src="icon/coin.svg"></div>
+                                <span class="fL bold primary">20</span>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                    </div>
+                    <div class="history itemV width center">
+                        <div class="itemH width between">
+                            <div class="itemV">
+                                <span class="fM">答題活動獲得</span>
+                                <span class="fS gray">填寫基本資料</span>
+                                <span class="fS gray">2020-12-24</span>
+                            </div>
+                            <div class="itemH">
+                                <div class="img coinS"><img src="icon/coin.svg"></div>
+                                <span class="fL bold primary">20</span>
+                            </div>
+                        </div>
+                        <div class="separate"></div>
+                    </div>
+                </div>
+                <!-- 無紀錄 -->
+                <div class="notfound itemV center middle">
+                    <div class="img"><img src="icon/notfound.svg"></div>
+                    <span class="fS gray">目前尚無資料</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,531 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+// Screen Size
+@sD:    (min-width: 1024px);                            // Desktop
+@sT:    (max-width: 1023px) and (min-width: 768px);     // Tablet
+@sM:    (max-width: 767px);                             // Mobile
+@sMs:   (max-width: 374px);                             // Mobile (Small)
+@sLand: (max-height: 767px) and (min-width: 568px);     // Mobile (Landscape)
+
+// CSS Color
+@c1:    #E85189;
+@c2:    #D94079;
+@cG1:   #333333;
+@cG2:   #4F4F4F;
+@cG3:   #828282;
+@cG4:   #BDBDBD;
+@cG5:   #E0E0E0;
+@cG6:   #F2F2F2;
+@cBg:   #F2F1F6;
+@cRed:  #EB5757;
+@cGreen:#27AE60;
+
+body    { margin: 0; }
+.body   { height: 100vh; display: flex; flex-direction: column; justify-content: space-around; font-family: 'Noto Sans TC';
+
+    // 登入
+    &#bodyLogin { max-height: calc(100vh - 20px); padding: 10px; justify-content: center; background-color: @c1;
+        @media @sD, @sLand { flex-direction: row; align-items: center; }
+        #header { padding: 0; margin: 0 0 10px 0;
+            @media @sD, @sLand { margin: 0 10px 0 0; }
+            .banner { width: 100%; border-radius: 10px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                @media @sD { width: unset; height: 500px; }
+                @media @sLand { height: 100%; }
+            }
+        }
+        #main { height: 100%; border-radius: 10px; justify-content: space-between; background-color: white; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            @media @sD { width: 400px; height: 490px; }
+            @media @sLand { height: calc(100% - 10px;) }
+            .itemH, .itemV { width: 100%; height: fit-content; }
+            .logo { width: 50px; margin: 5px; border-radius: 5px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+            .button { width: calc(100% - 30px); }
+            .code { height: calc(100% - 10px); }
+        }
+    }
+
+    // 綁定成功
+    &#bodySuccess { background-color: @c1;
+        &.tttax { justify-content: flex-start;
+            #header, #main, #footer { margin: 20px 0; }
+            .card { margin-bottom: 0; }
+        }
+        @media @sLand { justify-content: start; }
+        #header, #main, #footer { background-color: @c1; }
+        #header span { color: white; }
+        .close { min-width: 30px; min-height: 30px; top: 10px; right: 10px; position: absolute; color: white; }
+        .card { max-width: 296px; padding: 10px; border: 2px solid rgba(0, 0, 0, 0.1); margin-bottom: 20px; border-radius: 10px; backdrop-filter: blur(20px); box-shadow: 0px 1px 24px rgba(55, 84, 170, 0.05); background: linear-gradient(104.62deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%);
+            .qrcode { min-width: 300px; height: 300px; margin-top: 10px;
+                img { width: 300px; border-radius: 5px; }
+            }
+            .itemV { width: 100%; height: 100%; margin-top: 5px; height: fit-content; }
+            .itemH { height: fit-content; margin: 0; }
+            .icon { margin: 0 5px 0 0; }
+            .fM { white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; }
+            .fS { color: @c1; }
+        }
+        .download { display: flex; flex-direction: column; align-items: center;
+            &:hover { box-shadow: none; }
+            img { max-width: 300px; max-height: 100%; margin-bottom: 10px; border-radius: 10px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                @media @sMs { max-width: 250px; }
+            }
+            .itemH { justify-content: center; }
+            span, .icon { color: white; }
+        }
+        .button { border: 2px solid white; background-color: white;
+            &.cancel { background-color: @c1;
+                span { color: white; text-align: center; }
+            }
+            span { color: @c1; }
+        }
+    }
+
+    // 邀請
+    &#bodyInvite { background-color: @c1; background-image: url("img/logo.png"); background-repeat: no-repeat; background-position: center; background-size: 150px;
+        .button { background-color: white;
+            span { color: @c1; }
+        }
+    }
+
+    // 掃描
+    &#bodyScan { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: space-around; background-color: @cG4;
+        .close { width: 30px; height: 30px; border-radius: 99px; top: 20px; right: 20px; position: absolute; color: white; }
+        #camera { width: 320px; height: 240px; border: 10px solid @cG5; position: relative;
+            .img { min-width: 320px; min-height: 240px; margin: -15px; position: absolute; }
+            canvas { width: 320px; height: 240px; }
+        }
+        .fXS { color: white; margin-top: 20px; }
+        #light { width: 30px; height: 30px; border: 1px solid white; border-radius: 99px; color: white; }
+    }
+
+    // 主頁面
+    &.mainApp { justify-content: flex-start;
+        // Header
+        #header { width: calc(100% - 20px); padding: 10px; top: 0; left: 0; z-index: 2; position: fixed; flex-direction: row; background-color: white; box-shadow: 0px 10px 20px rgba(55, 84, 170, 0.1);
+            .img { width: 20px; height: 20px; margin-left: auto; }
+            span { margin-right: auto; }
+            .icon { color: @cG2; }
+        }
+        // 金幣欄
+        #coins { width: calc(100% - 20px); padding: 10px 20px;
+            .itemV { width: fit-content; }
+            .lineV { width: 1px; height: 100%; background-color: @cG5; }
+        }
+        // Footer
+        #footer { width: 100%; padding: 0; bottom: 0; left: 0; z-index: 1; position: fixed; background-color: @c1;
+            .button { height: 60px; margin: 0; border-radius: 0; flex-direction: column;
+                &.active { background-color: @c2; }
+                .img { width: fit-content; height: 20px; }
+            }
+        }
+        // Common
+        .coinL { width: 30px; height: 30px; }
+        .coinS { width: 20px; min-width: 20px; height: 20px; }
+        .separate { width: 100vw; height: 1px; margin: 20px 0 0 -20px; background-color: @cG5; }
+        #main {
+            .lineH { width: 30px; height: 2px; margin: 5px 0 10px; background-color: @c1; }
+        }
+    }
+    // 新聞
+    #main.mainHome, #main.mainNews {
+        .activities { width: 100%; padding: 20px;
+            .activity { margin: 10px 0;
+                .img:not(.coinS) { min-width: 160px; height: 120px; position: relative;
+                    img { border-radius: 5px; object-fit: cover; }
+                    span { width: 100%; padding: 2.5px 0; border-radius: 0 0 5px 5px; left: 0; bottom: 0; position: absolute; text-align: center; color: white; background: rgba(217, 64, 121, 0.9);
+                        &.off { background: rgba(180, 171, 174, 0.9); }
+                    }
+                }
+                .info { max-width: calc(100% - 180px); height: 120px; margin: 5px;
+                    .category { padding: 0 2.5px 0 5px; border-top: 1px solid @c1; border-left: 1px solid @c1; border-bottom: 1px solid @c1; margin-right: 15px; display: flex; align-items: center; position: relative;
+                        &::after { top: 2px; right: -6.8px; content: ""; border-top: 1px solid @c1; border-right: 1px solid @c1; height: 12px; width: 12px; position: absolute; transform: rotate(45deg); }
+                    }
+                    .title { max-width: 100%; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+                    .next { padding: 5px 10px; border-radius: 99px; background-color: @cG2; display: flex; align-items: center;
+                        &.on { background-color: @c1; }
+                        &.off { background-color: @cG5; }
+                        span { color: white; }
+                    }
+                }
+            }
+            .button { width: fit-content; height: fit-content; padding: 0; background-color: transparent;
+                span { color: @c1; }
+            }
+        }
+    }
+
+    // Webview
+    #main.mainWebview { height: 100%; padding: 60px 10px 10px; justify-content: flex-start;
+        iframe { width: 100%; }
+    }
+
+    // 首頁
+    #main.mainHome { height: 100%; padding: 50px 10px 70px; justify-content: flex-start; overflow-y: auto;
+        #scenery { width: 100%; margin: 40px 0;
+            .itemV { width: 100vw; margin: 10px 0; }
+            .img { width: 100%; height: fit-content; margin: 0; display: flex;
+                &.full { width: calc(100% + 20px); margin: 10px 0; }
+            }
+        }
+        #link { width: 100%; padding: 20px;
+            .img { width: 300px; height: fit-content; border: 1px solid @cG5; margin: 10px 0; border-radius: 5px; }
+        }
+    }
+
+    // 臺東大小事
+    &#bodyNews { height: unset; overflow-x: hidden;
+        #tabs { width: calc(100% - 30px); padding: 0 15px 10px; top: 50px; position: fixed; background-color: white; z-index: 1;
+            .tab { border-bottom: 1px solid @cG5; margin-bottom: -10px;
+                &.active { border-bottom: 2px solid @c1;
+                    span { color: @c1; }
+                }
+                span { padding: 10px; }
+            }
+        }
+        #main { height: 100%; padding: 80px 10px 50px; justify-content: flex-start; }
+    }
+
+    // 會員服務
+    #main.mainService { height: 100%; padding: 50px 10px 70px; justify-content: flex-start; overflow-y: auto;
+        #card { width: calc(100% - 60px); padding: 20px; margin: 20px 10px; border-radius: 10px; background-color: #1EB8D0;
+            #profile { min-width: 60px; min-height: 60px; border: 1px solid white; margin-right: 10px; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center; background-color: @cG5; }
+            .icon { color: white;
+                &.camera { bottom: -5px; right: -5px; position: absolute; background-color: @cG2; }
+                &.card { margin: 0 2.5px 0 0; }
+            }
+            span { color: white; }
+            #edit { padding: 2.5px 12.5px; border-radius: 99px; background-color: white;
+                span { color: #1EB8D0; }
+            }
+        }
+        #invite { width: calc(100% - 40px); padding: 10px; border-radius: 5px; justify-content: center; background-image: url("img/invite.png"); background-size: cover;
+            span { color: white; }
+            .icon { color: white; }
+        }
+        .service { margin: 20px 10px;
+            .dot { min-width: 12px; min-height: 12px; margin: 10px; border-radius: 50%; background-color: @c1; }
+            .services { margin-top: 10px;
+                .icon { min-width: 60px; min-height: 60px; color: @cG2;
+                    img { width: 40px; height: 40px; }}
+            }
+        }
+    }
+
+    // 推播紀錄
+    &#bodyNotification {
+        #subHeader { height: fit-content; min-height: 80px; top: 50px; position: fixed; display: flex; flex-direction: column; justify-content: center; background-color: white;
+            .button { width: fit-content; height: fit-content; padding: 0; margin: 0; background-color: transparent;
+                span { color: @c1; }
+            }
+            > .itemH { width: calc(100% - 20px); padding: 0 10px;
+                .dropdown { margin-bottom: 0; }
+            }
+        }
+        #main.mainNotification { height: 100%; padding: 135px 10px 10px; justify-content: flex-start;
+            .notification { padding-top: 20px;
+                > .itemH { width: 100%;  }
+                .dot { min-width: 10px; min-height: 10px; margin: 5px 10px 0 0; border-radius: 50%; background-color: @c1;
+                    &.off { background-color: transparent; }
+                }
+                .next { padding: 5px 10px; margin-left: 10px; border-radius: 99px; background-color: @c1;
+                    span { color: white; white-space: nowrap; }
+                }
+            }
+        }
+    }
+
+    // QR身分碼
+    #main.mainQrcode { height: 100%; padding: 70px 10px 10px; justify-content: flex-start;
+        #qrcode { width: calc(100% - 80px); padding: 20px; margin: 20px; border-radius: 10px; background-color: #1EB8D0;
+            .img { width: 120px; height: 120px; }
+        }
+        #title { i, span { color: #1EB8D0; } }
+        .info { width: calc(100% - 60px); padding: 5px 10px; margin: 5px 20px; border-radius: 99px; background-color: @cBg; }
+    }
+
+    // 訂閱設定
+    #main.mainSubscribe { height: 100%; padding: 70px 10px 10px; justify-content: flex-start;
+        .fS.gray { margin: 10px 0 30px; }
+        .itemH { width: 310px; flex-wrap: wrap;
+            .itemV { width: 120px; padding: 5px; border: 1.5px solid @c1; margin: 10px; border-radius: 99px; position: relative;
+                &.off { border: 1.5px solid @cG3;
+                    span { color: @cG3; }
+                    .icon { display: none; }
+                }
+                span { white-space: nowrap; }
+                .icon { top: -15px; right: -15px; position: absolute; }
+            }
+        }
+        .button { width: 300px; margin-top: 30px; border-radius: 99px; }
+    }
+
+    // 編輯帳號
+    #main.mainProfile { padding: 50px 10px 20px; justify-content: flex-start;
+        .title { margin-top: 20px; }
+        .comment { width: 90%; margin: 10px 0; }
+        .setting { width: calc(100% - 20px); margin: 10px;
+            .icon { color: @cG2; }
+        }
+        .separate { margin: 0; }
+        .input { width: calc(100% - 80px); padding: 0 20px; border-radius: 99px;
+            span { white-space: nowrap; }
+            .check { margin-left: 20px; }
+        }
+        .dropdown { width: calc(100% - 40px); margin: 10px; position: relative; display: flex; align-items: center;
+            select { width: 100%; height: 50px; padding: 5px 50px; margin: 0; border-radius: 99px; color: @cG1; background-color: @cBg; border: none; }
+            .icon { height: calc(100% - 10px); top: 0; left: 20px; position: absolute; }
+            .arrow { width: 20px; height: 100%; top: 0; right: 20px; position: absolute; display: flex; align-items: center; justify-content: center; color: @cG3; pointer-events: none; }
+        }
+        .button { width: calc(100% - 60px); border-radius: 99px; }
+    }
+
+    // 金幣規則
+    #main.maincRules { height: 100%; padding: 50px 10px 10px; justify-content: flex-start;
+        .fM { margin-top: 20px; }
+        .rules { overflow-y: auto; }
+    }
+
+    // 金幣紀錄
+    #main.maincHistory { height: calc(100% - 60px); padding: 50px 10px 10px; justify-content: flex-start;
+        #tabs { width: calc(100% - 30px); padding: 0 15px 10px; background-color: white; z-index: 1;
+            .tab { border-bottom: 1px solid @cG5; margin-bottom: -10px;
+                &.active { border-bottom: 2px solid @c1;
+                    span { color: @c1; }
+                }
+                span { padding: 10px; }
+            }
+        }
+        .dropdown { width: calc(100% - 30px); margin-top: 20px; }
+        .notfound { width: 100vw; height: 100vh; top: 0; left: 0; position: absolute; pointer-events: none;
+            .img { height: 60px; }
+        }
+        #list { overflow-y: auto;
+            .history { width: 100vw; margin: 15px 0 0 -10px;
+                > .itemH { width: calc(100% - 50px); }
+                > .separate { margin-left: 10px; }
+            }
+        }
+    }
+
+    // 轉贈金幣
+    #main.maincGift { padding: 50px 10px 10px; justify-content: flex-start;
+        .title { margin-top: 20px; }
+        .input { width: calc(100% - 80px); padding: 0 20px; border-radius: 99px;
+            .lineV { width: 1px; height: 50%; margin: 0 10px; background-color: @cG2; }
+        }
+        .fS.gray { margin: 10px 0; }
+        textarea { width: calc(100% - 80px); padding: 20px; border-radius: 10px; }
+        .button { width: calc(100% - 60px); border-radius: 99px; }
+    }
+
+    // 金幣交易密碼
+    #main.maincPassword { padding: 70px 10px 10px; justify-content: flex-start;
+        .title { margin-top: 20px; }
+        .input { width: calc(100% - 80px); padding: 0 20px; border-radius: 99px; position: relative;
+            .lineV { width: 1px; height: 50%; margin: 0 10px; background-color: @cG2; }
+            #code { height: 50px; padding: 0 15px; border-radius: 0 99px 99px 0; top: 0; right: 0; position: absolute; background-color: @c1;
+                span { color: white; white-space: nowrap; }
+            }
+        }
+        .button { width: calc(100% - 60px); border-radius: 99px; }
+    }
+
+    // 服務APP
+    #main.mainApp { height: calc(100% - 60px); padding: 70px 10px 10px; justify-content: flex-start;
+        .dropdown { width: calc(100% - 30px); margin-top: 20px; }
+        .itemH { flex-wrap: wrap;
+            .itemV { width: calc(33% - 30px); margin: 5px; padding: 10px; border-radius: 5px;
+                .img { width: 100%; height: 100%; }
+                span { height: 40px; text-align: center; }
+            }
+        }
+    }
+
+    // 聯絡客服
+    #main.mainContact { height: 100%; padding: 70px 10px 10px; justify-content: flex-start;
+        .fS { width: 80%; margin-top: 20px; }
+        .itemH { width: 110px; padding: 10px; margin: 10px; border: 1.5px solid @c1; border-radius: 5px;
+            &.fb { border: 1.5px solid #4B67AD;
+                .icon { color: #4B67AD; }
+                span { color: #4B67AD; }
+            }
+            span { width: 100%; text-align: center; }
+        }
+    }
+
+    // 設定
+    #main.mainSetting { height: calc(100% - 60px); padding: 70px 10px 10px; justify-content: flex-start;
+        > .itemH { width: calc(100% - 20px); margin: 10px;
+            .icon { color: @cG2; }
+        }
+        .separate { margin: 0; }
+    }
+
+    // Color
+    .primary    { color: @c1; }
+    .gray       { color: @cG3; }
+    .disabled   { color: @cG4; filter: grayscale(100%); pointer-events: none; }
+    .error      { color: @cRed; }
+    .background { background-color: @cBg; }
+
+    // Font
+    .fXL    { font-size: 36px; }
+    .fL     { font-size: 24px; }
+    .fM     { font-size: 18px; }
+    .fS     { font-size: 14px; }
+    .fXS    { font-size: 12px; }
+    .bold   { font-weight: bold; }
+    .single { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .double { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+    
+    // Common
+    span            { color: @cG1; }
+    ol, ul          { color: @cG1; }
+    a               { text-decoration: none !important; }
+    a:hover         { cursor: pointer; box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2); }
+    input           { border: 0; padding: 0; color: @cG1; background-color: transparent; font-family: 'Noto Sans TC'; }
+    input:focus     { box-shadow: none !important; outline: none; }
+    textarea        { border: 0; }
+    textarea:focus  { box-shadow: none !important; outline: none; }
+    select          { -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; border: 0; font-family: 'Noto Sans TC'; }
+    select:hover    { cursor: pointer; }
+    iframe          { border: 0; }
+
+    // Container
+    #header { padding: 5px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    #main   { padding: 5px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    #footer { padding: 5px; display: flex; align-items: center; justify-content: center; }
+    .itemH  { width: fit-content; display: flex; align-items: center; }
+    .itemV  { width: fit-content; display: flex; flex-direction: column; }
+    .itemH, .itemV {
+        &.width     { width: 100%; }
+        &.height    { height: 100%; }
+        &.start     { align-items: flex-start; }
+        &.center    { align-items: center; }
+        &.middle    { justify-content: center; }
+        &.between   { justify-content: space-between; }
+        &.around    { justify-content: space-around; }
+    }
+
+    // Component
+    .img { width: 100px; height: 100px; margin: 5px;
+        img { width: 100%; height: 100%; }
+    }
+    .icon { min-width: 20px; min-height: 20px; margin: 5px; border-radius: 99px; position: relative; display: flex; align-items: center; justify-content: center; color: @c1;
+        .new { width: 10px; height: 10px; border: 1px solid white; border-radius: 99px; top: -3px; right: -3px; position: absolute; background-color: @cRed; }
+    }
+    .textButton { color: @c1;
+        &:hover { color: @cG1; }
+    }
+    .button { width: 100%; min-height: 50px; padding: 0 10px; margin: 5px; border-radius: 5px; display: flex; align-items: center; justify-content: center; background-color: @c1; 
+        &.cancel { background-color: white;
+            &:hover { background-color: @cG5; }
+            span { color: @c1; }
+        }
+        span { color: white; }
+    }
+    .input { width: calc(100% - 30px); height: 50px; padding: 0 5px; margin: 10px; border-radius: 5px; display: flex; align-items: center; background-color: @cBg;
+        input { width: 100%; height: 100%; }
+    }
+    textarea { width: calc(100% - 30px); min-height: 50px; padding: 10px; margin: 5px; border-radius: 5px; background-color: @cBg; color: @cG1; }
+    .dropdown { width: 200px; margin: 5px; position: relative; display: flex; align-items: center;
+        select { width: 100%; height: 30px; padding: 5px 10px; margin: 0; border: 1px solid @cG4; border-radius: 5px; color: @cG1; background-color: transparent; }
+        .arrow { width: 20px; height: 100%; top: 0; right: 5px; position: absolute; display: flex; align-items: center; justify-content: center; color: @cG3; pointer-events: none; }
+    }
+    .banners { width: calc(100% + 20px); margin: 0 0 50px; position: relative;
+        .banner { height: 100%; display: none;
+            img { width: 100%; height: 100%; object-fit: cover; }
+            .text { top: 0; left: 0; width: 100%; height: 100%; position: absolute; display: flex; align-items: center; justify-content: center; background-color:rgba(0,0,0,0.5);
+                span { color: white; }
+            }
+        }
+        .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -29px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 5px 5px 0; user-select: none; }
+        .next { right: 0; border-radius: 5px 0 0 5px; } /* Position the "next button" to the right */
+        .prev:hover, .next:hover { background-color: @cBg; color: @cG1; } /* On hover, add a grey background color */
+        .dots { width: 100%; display: flex; justify-content: center; position: absolute; bottom: -30px;
+            .dot { height: 10px; width: 10px; border: 0px solid white; margin: 0 5px; background-color: @cG5; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+            .active { background-color: @c1; }
+        }
+    }
+    .check { width: fit-content; min-height: 20px; padding: 5px 5px 5px 25px; border-radius: 5px; position: relative; display: flex; align-items: center; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 12px;
+        &:hover { background: @cBg; } 
+        &:hover input ~ .checkmark { background-color: white; } /* On mouse-over, add a grey background color */
+        &:hover .number { background-color: @cBg !important; }
+        .text { margin-left: 2px; }
+        input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; /* Hide the browser's default radio button */
+            &:checked ~ .checkmark { background-color: @c1; } /* When the radio button is checked, add a blue background */
+            &:checked ~ .checkmark:after { display: block; } /* Show the indicator (dot/circle) when checked */
+        }
+        .checkmark.radio { position: absolute; top: auto; bottom: auto; left: 7px; height: 12px; width: 12px; border-radius: 50%; border: 2px solid @c1; background-color: white; 
+            &:after { content: ""; position: absolute; display: none; } /* Create the indicator (the dot/circle - hidden when not checked) */
+            &:after { top: 4px; left: 4px; width: 4px; height: 4px; border-radius: 50%; background: white; } /* Style the indicator (dot/circle) */
+        }
+    }
+
+    // Spinner
+    .spinner { top: 0; left: 0; width: 100vw; height: 100vh; position: fixed; display: flex; align-items: center; justify-content: center; z-index: 2;
+        > div { min-width: 80px; min-height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); 
+            > div { min-width: 40px; min-height: 40px; border: 3px solid @c1; border-top: 3px solid transparent; border-radius: 50%; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite; }
+        }
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } }
+
+    // Popup
+    .popup { width: 100%; height: 100%; left: 0; top: 0; position: fixed; display: none; align-items: center; justify-content: center; overflow-x: hidden; overflow-y: hidden; z-index: 2; background-color: rgba(0,0,0,0.75); backdrop-filter: blur(4px);
+        .close { top: 20px; right: 20px; height: 20px; width: 20px; position: absolute; display: flex; align-items: center; justify-content: center; color: @cG4;
+            &:hover, &:focus { color: @cG1; }
+            &.alt { width: 30px; height: 30px; border-radius: 99px; top: -15px; right: -15px; background-color: @c1; color: white; }
+        }
+        .lineH { width: 30px; height: 2px; margin: 5px 0 10px; background-color: @c1; }
+        &.notice .popBody { width: 300px; height: fit-content; }
+        .body { width: 100%; height: calc(100% - 60px); padding: 10px; margin: 20px; border-radius: 5px; position: relative; display: flex; flex-direction: column; background-color: @cBg;
+            &.notice { width: 300px; height: fit-content; }
+            .full { margin: 10px; border-radius: 5px; background-color: white; overflow-y: auto; 
+                &::-webkit-scrollbar { -webkit-appearance: none; }
+                &::-webkit-scrollbar:vertical { width: 10px; }
+                &::-webkit-scrollbar-thumb { border-radius: 10px; background-color: @cG5; border: 2.5px solid white; } /* should match background, can't be transparent */
+                ol { padding: 0 0 20px 30px;
+                    &.chin { list-style-type: none;
+                        > li { margin-left: -20px; }
+                    }
+                    &.romanU { list-style-type: upper-roman; }
+                    ol { padding: 0 0 10px 20px; } 
+                    ul { padding: 0 0 10px 20px; list-style-type: disc; }
+                    li { margin: 5px 0;
+                        &.none { list-style-type: none; }
+                    }
+                }
+            }
+            .title { width: calc(100% - 10px); margin: 5px; }
+            .message { width: calc(100% - 10px); margin: 5px; text-align: center; }
+        }
+        .popBody { width: 100%; height: calc(100% - 60px); padding: 20px; margin: 20px; border-radius: 5px; position: relative; display: flex; flex-direction: column; background-color: @cBg;
+            .popHeader { margin: 5px; }
+            .popMain { margin: 15px 5px; display: flex; align-items: center; justify-content: center;
+                &.full { height: 100%; border-radius: 5px; align-items: flex-start; justify-content: flex-start; background-color: white; overflow-y: auto; 
+                    &::-webkit-scrollbar { -webkit-appearance: none; }
+                    &::-webkit-scrollbar:vertical { width: 10px; }
+                    &::-webkit-scrollbar-thumb { border-radius: 10px; background-color: @cG5; border: 2.5px solid white; } /* should match background, can't be transparent */
+                    ol { padding: 0 0 20px 30px;
+                        &.chin { list-style-type: none;
+                            > li { margin-left: -20px; }
+                        }
+                        &.romanU { list-style-type: upper-roman; }
+                        ol { padding: 0 0 10px 20px; } 
+                        ul { padding: 0 0 10px 20px; list-style-type: disc; }
+                        li { margin: 5px 0;
+                            &.none { list-style-type: none; }
+                        }
+                    }
+                }
+                .message { width: calc(100% - 10px); margin: 5px; text-align: center; }
+            }
+            .popFooter { display: flex;
+                .button { border-radius: 99px; }
+                .cancel { background-color: @cG4;
+                    span { color: white; }
+                }
+            }
+        }
+    }
+}

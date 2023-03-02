@@ -1,0 +1,66 @@
+#toast {
+  width: calc(100% - 20px);
+  bottom: 80px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+  pointer-events: none;
+}
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#toast div {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 99px;
+  text-align: center;
+  background-color: #333333;
+}
+#toast div span {
+  color: white;
+}
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 80px;
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 80px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 80px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 80px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
