@@ -306,7 +306,7 @@ body {
 }
 
 .header_container a.header_eSIM_logo {
-  width: 120px;
+  width: 270px;
   height: 54px;
   margin: 0 auto;
   display: block;
@@ -340,8 +340,17 @@ body {
 .main_container h4.sub_title {
   font-size: 20px;
   font-weight: 700;
-  color: #95a83b;
+  color: #333;
+  padding: 10px;
+  background-color: #ffd042;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.main_container h4.plan_subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #95a83b;
 }
 
 .main_container .main_flexslider {
@@ -359,7 +368,7 @@ body {
 
 .main_container .area_content ul.choose_area {
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -385,13 +394,41 @@ body {
 }
 
 .main_container .area_content ul.choose_area li p a:hover {
-  color: #95a83b;
+  color: #fabd00;
 }
 
 .main_container .area_content ul.choose_area li p.btn_in a {
-  color: #95a83b;
-  border-color: #95a83b;
+  color: #fabd00;
+  border-color: #fabd00;
   font-weight: bold;
+}
+
+.main_container .area_content ul.sub_area {
+  padding-bottom: 30px;
+}
+
+.main_container .area_content ul.sub_area li {
+  padding: 5px;
+}
+
+.main_container .area_content ul.sub_area li p {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 16px;
+  border-radius: 50px;
+  border: #222 solid 1px;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.main_container .area_content ul.sub_area li p:hover {
+  background-color: #ffedb7;
+}
+
+.main_container .area_content ul.sub_area li p.btn_in {
+  color: #333;
+  background-color: #ffd042;
+  border-color: #ffd042;
 }
 
 .main_container .area_content ul.area_list li {
@@ -530,11 +567,13 @@ body {
 .main_container .plan_content ul.plan_list {
   width: 100%;
   padding-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .main_container .plan_content ul.plan_list li {
   float: left;
-  width: 25%;
+  width: 33%;
   padding: 10px;
 }
 
@@ -666,7 +705,7 @@ body {
 
 .main_container .wifi_router_info {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 0 30px 0;
 }
@@ -679,9 +718,6 @@ body {
 
 .main_container .wifi_router_info .img_wifi_router img {
   width: 100%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main_container .wifi_router_info .other_item {
@@ -691,6 +727,40 @@ body {
 
 .main_container .wifi_router_info .other_item h3.top_title, .main_container .wifi_router_info .other_item h4.sub_title {
   text-align: left;
+  padding-bottom: 15px;
+}
+
+.main_container .wifi_router_info p.line_btn {
+  padding: 15px 0;
+}
+
+.main_container .wifi_router_info p.line_btn a {
+  color: #fff;
+  padding: 10px 18px;
+  background-color: #07b53b;
+  border-radius: 10px;
+}
+
+.main_container .wifi_router_info p.plan_textinfo {
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: #333;
+}
+
+.main_container .wifi_router_info p.plan_textinfo .f_c_red {
+  color: #ff103f;
+}
+
+.main_container .wifi_router_info p.plan_textinfo .f_c_green {
+  color: #07b53b;
+}
+
+.main_container .wifi_router_info p.plan_textinfo a {
+  color: #2196f3;
+  text-decoration: underline;
+  padding: 0 5px;
 }
 
 .main_container .wifi_router_info ul.specification {
@@ -734,6 +804,67 @@ body {
   padding-bottom: 10px;
 }
 
+.main_container .shopping_contents .fillinBox ul li h4 {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item .img_wifi_router {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item .img_wifi_router img {
+  width: 80%;
+  max-width: 200px;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item h3.top_title {
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item h4.plan_subtitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item .f_c_red {
+  color: #ff103f;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item .f_c_green {
+  color: #07b53b;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item p.plan_textinfo {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: #333;
+}
+
+.main_container .shopping_contents .fillinBox ul li.order_contents .other_item p.plan_textinfo a {
+  color: #2196f3;
+  text-decoration: underline;
+  padding: 0 5px;
+}
+
+.main_container .shopping_contents .fillinBox ul li.verify input {
+  float: left;
+  max-width: 200px;
+}
+
 .main_container .shopping_contents .fillinBox p.label_title {
   padding: 12px 0;
   color: #888888;
@@ -757,6 +888,20 @@ body {
 
 .main_container .shopping_contents .fillinBox p.the_reminder a:hover {
   text-decoration: underline;
+}
+
+.main_container .shopping_contents .fillinBox a.btn_verify {
+  float: left;
+  font-size: 13px;
+  padding: 0 15px;
+  line-height: 40px;
+  background-color: #95a83b;
+  color: #fff;
+  display: inline-block;
+}
+
+.main_container .shopping_contents .fillinBox a.btn_verify:hover {
+  opacity: .9;
 }
 
 .main_container .shopping_contents .fillinBox input,
@@ -783,13 +928,81 @@ body {
   border-color: #9e9e9e;
 }
 
+.main_container .shopping_contents .fillinBox ul.result_item {
+  width: 100%;
+  max-width: 180px;
+  display: block;
+  padding: 10px 0 5px 0;
+}
+
+.main_container .shopping_contents .fillinBox ul.result_item li {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.main_container .shopping_contents .fillinBox ul.result_item li input {
+  width: initial;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.main_container .shopping_contents .fillinBox ul.result_item li label {
+  padding-left: 25px;
+}
+
+.main_container .shopping_contents .fillinBox .styled-select {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: calc(100% - 22px);
+  min-height: 22px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  overflow: hidden;
+  background: url(../images/icon_arr.png) right center no-repeat #fff;
+  background-size: contain;
+}
+
+.main_container .shopping_contents .fillinBox .styled-select select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-align: left !important;
+  width: 100%;
+  padding: 0px 15px;
+  height: 40px;
+  line-height: 40px;
+  background: transparent;
+  text-align: center;
+  font-size: 15px;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.main_container .shopping_contents .fillinBox .styled-select select::-ms-expand {
+  display: none;
+}
+
 .main_container .shopping_contents .fillinBox .order-details {
   font-size: 14px;
   border-top: 1px solid #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.main_container .shopping_contents .fillinBox .order-details .name {
-  line-height: 20px;
+.main_container .shopping_contents .fillinBox .order-details .f_c_green {
+  color: #07b53b;
+}
+
+.main_container .shopping_contents .fillinBox .order-details .f_c_red {
+  color: #ff103f;
 }
 
 .main_container .shopping_contents .fillinBox .order-details a {
@@ -802,7 +1015,7 @@ body {
 }
 
 .main_container .shopping_contents .fillinBox .order-details td, .main_container .shopping_contents .fillinBox .order-details th {
-  padding: 10px;
+  padding: 12px 10px;
   vertical-align: middle;
   word-wrap: break-word;
   border-top: 1px solid #e0e0e0;
@@ -810,9 +1023,14 @@ body {
 
 .main_container .shopping_contents .fillinBox .order-details th {
   color: #666;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   font-weight: normal;
   font-size: 13px;
+}
+
+.main_container .shopping_contents .fillinBox .order-details th h4 {
+  font-size: 16px;
+  padding: 8px 0;
 }
 
 .main_container .shopping_contents .fillinBox .order-details .total_amount {
@@ -823,6 +1041,28 @@ body {
 
 .main_container .shopping_contents .fillinBox .order-details .total_amount span {
   color: #F94F4F;
+}
+
+.main_container .shopping_contents .fillinBox .note {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #07b53b;
+  background-color: #fbffe5;
+}
+
+.main_container .shopping_contents .fillinBox .note p {
+  font-size: 14px;
+  color: #07b53b;
+}
+
+.main_container .shopping_contents .fillinBox .both_btn {
+  text-align: center;
+}
+
+.main_container .shopping_contents .fillinBox .both_btn p {
+  margin: 0 5px;
+  width: initial;
+  display: inline-block;
 }
 
 .main_container .shopping_contents .fillinBox .confirm {
@@ -871,17 +1111,17 @@ body {
 .footer_info p {
   text-align: center;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 22px;
   color: #333;
 }
 
 .footer_info p.link {
-  color: #95a83b;
+  color: #d4d4d4;
   font-size: 13px;
 }
 
 .footer_info p.link a {
-  color: #95a83b;
+  color: #ff9800;
   margin: 0 5px;
 }
 
@@ -922,9 +1162,8 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .main_container .area_content ul.area_list li,
-  .main_container .plan_content ul.plan_list li {
-    width: 33.33%;
+  .main_container .area_content ul.area_list li {
+    width: 25%;
   }
   .main_container .area_content .area_menu ul.choose_country li {
     min-width: 30%;
@@ -952,7 +1191,7 @@ body {
     padding: 0 20px;
   }
   .header_container a.header_eSIM_logo {
-    width: 90px;
+    width: 200px;
   }
   .main_container {
     padding-top: 50px;
@@ -1037,6 +1276,9 @@ body {
   .main_container .plan_content ul.plan_list li .other_info {
     min-height: inherit;
   }
+  .main_container .plan_content ul.plan_list li .other_info p {
+    text-align: center;
+  }
   .main_container .wifi_router_info {
     padding: 15px 0;
   }
@@ -1046,6 +1288,9 @@ body {
   .main_container h3.top_title {
     font-size: 20px;
     padding-bottom: 20px;
+  }
+  .main_container h4.sub_title {
+    font-size: 17px;
   }
   .main_container .area_content ul.area_list li a {
     min-height: 175px;
@@ -1088,6 +1333,13 @@ body {
   .main_container .area_content ul.choose_area li p a {
     padding-bottom: 2px;
   }
+  .main_container .area_content ul.sub_area li {
+    padding: 4px;
+  }
+  .main_container .area_content ul.sub_area li p {
+    line-height: 25px;
+    font-size: 15px;
+  }
   .footer_info {
     padding: 15px 20px;
   }
@@ -1103,7 +1355,7 @@ body {
     line-height: 20px;
   }
   .header_container a.header_eSIM_logo {
-    width: 75px;
+    width: 150px;
     height: 45px;
   }
   .main_container .area_content {

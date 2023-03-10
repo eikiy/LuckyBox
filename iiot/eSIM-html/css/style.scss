@@ -97,7 +97,7 @@
   z-index: 2;
   border-bottom: 1px solid #e0e0e0;
   a.header_eSIM_logo {
-    width: 120px;
+    width: 270px;
     height: 54px;
     margin: 0 auto;
     display: block;
@@ -129,8 +129,16 @@
   h4.sub_title {
     font-size: 20px;
     font-weight: 700;
-    color: #95a83b;
+    color: #333;
+    padding: 10px;
+    background-color: #ffd042;
     text-align: center;
+    margin-bottom: 20px;
+  }
+  h4.plan_subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #95a83b;
   }
   .main_flexslider {
     width: 100%;
@@ -144,7 +152,7 @@
     margin: 0 auto;
     ul.choose_area {
       width: 100%;
-      padding-bottom: 25px;
+      padding-bottom: 20px;
       text-align: center;
       li {
         display: inline-block;
@@ -162,13 +170,35 @@
             padding-bottom: 5px;
             border-bottom: 1.5px solid transparent;
             &:hover {
-              color: #95a83b;
+              color: #fabd00;
             }
           }
           &.btn_in a {
-            color: #95a83b;
-            border-color: #95a83b;
+            color: #fabd00;
+            border-color: #fabd00;
             font-weight: bold;
+          }
+        }
+      }
+    }
+    ul.sub_area{
+      padding-bottom: 30px;
+      li{
+        padding: 5px;
+        p{
+          cursor: pointer;
+          font-size: 16px;
+          padding: 0 16px;
+          border-radius: 50px;
+          border: #222 solid 1px;
+          transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+          &:hover{
+            background-color: #ffedb7;
+          }
+          &.btn_in{
+            color: #333;
+            background-color: #ffd042;
+            border-color: #ffd042;
           }
         }
       }
@@ -291,9 +321,11 @@
     ul.plan_list {
       width: 100%;
       padding-top: 20px;
+      max-width: 900px;
+      margin: 0 auto;
       li {
         float: left;
-        width: 25%;
+        width: 33%;
         padding: 10px;
         .plan_info {
           background-color: #fff;
@@ -417,7 +449,7 @@
   }
   .wifi_router_info {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding:0 0 30px 0;
     .img_wifi_router {
@@ -426,8 +458,6 @@
       padding-right: 40px;
       img {
         width: 100%;
-        border-radius: 50%;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
       }
     }
     .other_item {
@@ -435,6 +465,34 @@
       width: calc(100% - 300px);
       h3.top_title, h4.sub_title{
         text-align: left;
+        padding-bottom: 15px;
+      }
+    }
+    p.line_btn{
+      padding: 15px 0;
+      a{
+        color: #fff;
+        padding: 10px 18px;
+        background-color: #07b53b;
+        border-radius: 10px;
+      }
+    }
+    p.plan_textinfo{
+      padding: 10px 0;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: left;
+      color: #333;
+      .f_c_red{
+        color: #ff103f;
+      }
+      .f_c_green{
+        color: #07b53b;
+      }
+      a{
+        color: #2196f3;
+        text-decoration: underline;
+        padding: 0 5px;
       }
     }
     ul.specification {
@@ -468,6 +526,59 @@
       margin: 0 auto;
       ul li {
         padding-bottom: 10px;
+        h4{
+          padding:15px 0;
+          text-align: center;
+        }
+        &.order_contents {
+          .other_item{
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 2px 5px 15px rgba(0, 0, 0, .1);
+            .img_wifi_router{
+              padding-bottom: 15px;
+              text-align: center;
+              img{ 
+                width: 80%;
+                max-width: 200px;
+              }
+            }
+            h3.top_title{
+              font-size: 18px;
+              line-height: 22px;
+              background-color: #f4f4f4;
+              padding: 15px;
+            }
+            h4.plan_subtitle{
+              font-size: 16px;
+              text-align: center;
+            }
+            .f_c_red{
+              color: #ff103f;
+            }
+            .f_c_green{
+              color: #07b53b;
+            }
+            p.plan_textinfo{
+              font-size: 14px;
+              line-height: 24px;
+              text-align: left;
+              color: #333;
+              a{
+                color: #2196f3;
+                text-decoration: underline;
+                padding: 0 5px;
+              }
+            }
+          }
+        }
+        &.verify{
+          input{
+            float: left;
+            max-width: 200px;
+          }
+        }
       }
       p.label_title {
         padding: 12px 0;
@@ -487,6 +598,18 @@
           &:hover {
             text-decoration: underline;
           }
+        }
+      }
+      a.btn_verify{
+        float: left;
+        font-size: 13px;
+        padding:0 15px;
+        line-height: 40px;
+        background-color: #95a83b;
+        color: #fff;
+        display: inline-block;
+        &:hover{
+          opacity: .9;
         }
       }
       input,
@@ -510,11 +633,71 @@
       textarea:focus {
         border-color: #9e9e9e;
       }
+      ul.result_item {
+        width: 100%;
+        max-width: 180px;
+        display: block;
+        padding:10px 0 5px 0;
+        li {
+          position: relative;
+          width: 50%;
+          float: left;
+          input {
+            width: initial;
+            position: absolute;
+            left: 0;
+            // opacity: 0;
+            cursor: pointer;
+          }
+          label{
+            padding-left: 25px;
+          }
+        }
+      }
+      .styled-select { 
+        border: 1px solid #e0e0e0; 
+        width:100%; 
+        max-width: calc(100% - 22px);
+        min-height: 22px; 
+        -webkit-transition: all 0.30s ease-in-out;  
+        -moz-transition: all 0.30s ease-in-out;  
+        -ms-transition: all 0.30s ease-in-out;  
+        -o-transition: all 0.30s ease-in-out; 
+        overflow: hidden; 
+        background: url(../images/icon_arr.png) right center no-repeat #fff; 
+        background-size: contain;
+        select { 
+          appearance:none;  
+          -moz-appearance:none;  
+          -webkit-appearance:none; 
+          text-align: left !important; 
+          width:100%; 
+          padding: 0px 15px; 
+          height: 40px; 
+          line-height: 40px; 
+          // *width:120%; 
+          // _width:120%;  
+          background:transparent; 
+          text-align: center;  
+          font-size: 15px; 
+          border: 0; 
+          border-radius:0; 
+          -webkit-appearance: none; 
+        }
+        select::-ms-expand { display: none;}
+      }
       .order-details{
         font-size: 14px; 
         border-top: 1px solid #e0e0e0;
-        .name{
-          line-height: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 20px;
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, .1);
+        .f_c_green {
+          color: #07b53b;
+        }
+        .f_c_red {
+            color: #ff103f;
         }
         a{
           display: block; 
@@ -524,16 +707,20 @@
           }
         }
         td,th {
-          padding: 10px;
+          padding:12px 10px;
           vertical-align: middle;
           word-wrap: break-word;
           border-top: 1px solid #e0e0e0;
         }
         th{ 
           color: #666; 
-          background-color: #f9f9f9; 
+          background-color: #ffffff; 
           font-weight: normal; 
           font-size: 13px; 
+          h4{
+            font-size: 16px;
+            padding: 8px 0;
+          }
         }
         .total_amount{ 
           background-color: #fff; 
@@ -542,6 +729,25 @@
           span {
             color: #F94F4F;
           }
+        }
+        
+      }
+      .note{
+        margin: 10px 0;
+        padding: 15px;
+        border:1px solid #07b53b;
+        background-color: #fbffe5;
+        p{
+          font-size: 14px;
+          color: #07b53b;
+        }
+      }
+      .both_btn{
+        text-align: center;
+        p{
+          margin: 0 5px;
+          width: initial;
+          display: inline-block;
         }
       }
       .confirm{
@@ -586,13 +792,13 @@
   p {
     text-align: center;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 22px;
     color: #333;
     &.link {
-      color: #95a83b;
+      color: #d4d4d4;
       font-size: 13px;
       a {
-        color: #95a83b;
+        color: #ff9800;
         margin: 0 5px;
         &:hover {
           text-decoration: underline;
@@ -632,9 +838,8 @@
 
 @media (max-width:1200px) {
   .main_container {
-    .area_content ul.area_list li,
-    .plan_content ul.plan_list li {
-      width: 33.33%;
+    .area_content ul.area_list li{
+      width: 25%;
     }
     .area_content .area_menu ul.choose_country li {
       min-width: 30%;
@@ -666,7 +871,7 @@
       padding: 0 20px;
     }
     a.header_eSIM_logo {
-      width: 90px;
+      width: 200px;
     }
   } 
   .main_container {
@@ -757,6 +962,9 @@
           padding: 10px;
           .other_info {
             min-height: inherit;
+            p{
+              text-align: center;
+            }
           }
         }
       }
@@ -772,6 +980,9 @@
     h3.top_title {
       font-size: 20px;
       padding-bottom: 20px;
+    }
+    h4.sub_title{
+      font-size: 17px;
     }
     .area_content {
       ul.area_list li{
@@ -825,6 +1036,13 @@
           padding-bottom: 2px;
         }
       }
+      ul.sub_area li{
+        padding:4px;
+        p{
+          line-height: 25px;
+          font-size: 15px;
+        }
+      }
     }
   } 
   .footer_info {
@@ -843,7 +1061,7 @@
   }
 
   .header_container a.header_eSIM_logo {
-    width: 75px;
+    width: 150px;
     height: 45px;
   }
 
