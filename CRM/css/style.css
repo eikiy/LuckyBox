@@ -2742,7 +2742,7 @@ ul.edit-tool li a:hover {
   float: left;
   width: 100%;
   max-width: 300px;
-  min-height: 120px;
+  min-height: 140px;
   border-radius: 18px 0 0 18px;
   background-color: #ebf5f4;
   display: -webkit-box;
@@ -2762,7 +2762,7 @@ ul.edit-tool li a:hover {
   color: #21534f;
   font-size: 1.125rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   display: block;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -2776,6 +2776,7 @@ ul.edit-tool li a:hover {
 .middle-container .company-contact-list .company-title p,
 .middle-container .company-department-list .company-title p {
   font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .middle-container .company-content .company-information,
@@ -3129,7 +3130,7 @@ ul.edit-tool li a:hover {
 @media all and (max-width: 900px) {
   .middle-container .company-content .company-title {
     max-width: 180px;
-    min-height: 136px;
+    min-height: 168px;
   }
   .middle-container .company-content .company-title h3 {
     font-size: 0.875rem;
