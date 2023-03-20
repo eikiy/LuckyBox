@@ -1022,6 +1022,13 @@ body {
   color: #333;
   font-weight: bold;
 }
+.body #main.ipassGet .Note a {
+  color: #EF6079;
+  text-decoration: underline !important;
+}
+.body #main.ipassGet .Note a:hover {
+  text-decoration: none;
+}
 .body #main.ipassGet .Note ul {
   list-style-type: decimal;
   padding-inline-start: 20px;
@@ -1031,12 +1038,21 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
-.body #main.ipassGet .Note ul li a {
-  color: #EF6079;
-  text-decoration: underline !important;
+.body #main.ipassGet .Note .center {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
-.body #main.ipassGet .Note ul li a:hover {
-  text-decoration: none;
+.body #main.ipassGet .flexH {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+.body #main.ipassGet .flexH a.button {
+  display: inline-block;
+  line-height: 50px;
 }
 .body #main.ipassGet .card {
   width: calc(100% - 10px);
