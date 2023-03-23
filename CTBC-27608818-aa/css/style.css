@@ -1,0 +1,611 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active,
+*:focus,
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Noto Sans TC", Arial, "微軟正黑體", "新細明體", sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  font-size: 0.9375em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+}
+
+/* loader_circle animation */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.sr-only {
+  display: none;
+}
+
+.btn_default {
+  width: 100%;
+  text-align: center;
+  line-height: 22px;
+}
+
+.btn_default a {
+  background-color: #ed392d;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 40px;
+  display: inline-block;
+  min-width: 160px;
+  min-height: 22px;
+  line-height: 22px;
+  color: #fff;
+  padding: 10px 15px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn_default a:hover {
+  opacity: .9;
+}
+
+.btn_default a.color_gray {
+  background-color: #b1b1b1;
+  margin-left: 10px;
+}
+
+.btn_default a.btn_none {
+  background-color: #dadada;
+  cursor: not-allowed;
+}
+
+.btn_default a.btn_none:hover {
+  background-color: #dadada;
+}
+
+.header_container {
+  width: 100%;
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: #007C7D;
+  min-height: 65px;
+  z-index: 2;
+}
+
+.header_container a.header_logo {
+  width: 218px;
+  height: 70px;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.header_container a.header_logo img {
+  width: 100%;
+}
+
+.header_container a.header_logo span {
+  font-size: 20px;
+  position: absolute;
+  left: -5px;
+  top: calc(50% - 8px);
+  color: #fff;
+}
+
+.header_container .header_content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px 10px 35px;
+}
+
+.header_container h1.main_title {
+  border-left: 1px solid #fff;
+  float: left;
+  line-height: 50px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 25px;
+  margin: 5px 0 0 15px;
+  letter-spacing: 2px;
+}
+
+.header_container p.sitemap {
+  margin-top: 13px;
+  float: right;
+  font-size: 20px;
+}
+
+.header_container p.sitemap span {
+  color: #007C7D;
+}
+
+.header_container p.sitemap a {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px 15px;
+  min-width: 142px;
+  text-align: center;
+  font-weight: bold;
+  color: #007C7D;
+  border: 1px solid #007C7D;
+}
+
+.header_container p.sitemap a:hover {
+  background-color: #007C7D;
+  border-color: #fff;
+  color: #fff;
+}
+
+.main_container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: calc(100vh - 178px);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f6f6+0,edfdfd+100 */
+  background: #f6f6f6;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f6f6f6 0%, #edfdfd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#edfdfd',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.main_container .menu_content {
+  width: calc( 100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.main_container .menu_content .menu_list {
+  width: calc(50% - 30px);
+  margin: 0 15px;
+  float: left;
+  padding: 15px 0 25px 0;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 15px;
+}
+
+.main_container .menu_content .menu_list h2.top_title {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 40px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.main_container .menu_content .menu_list h2.top_title span {
+  font-size: 20px;
+  color: #BCBCBC;
+  padding-right: 10px;
+}
+
+.main_container .menu_content .menu_list ul {
+  width: 100%;
+}
+
+.main_container .menu_content .menu_list ul li {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+.main_container .menu_content .menu_list ul li .icon {
+  float: left;
+  width: 35%;
+  text-align: center;
+}
+
+.main_container .menu_content .menu_list ul li .icon img {
+  width: 80%;
+  max-width: 100px;
+  display: inline;
+}
+
+.main_container .menu_content .menu_list ul li h3 {
+  float: left;
+  width: 65%;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.main_container .menu_content .menu_list ul li a {
+  border-radius: 10px;
+  border: 10px solid #C0E2E2;
+  background-color: #F7FFFF;
+  display: block;
+}
+
+.main_container .menu_content .menu_list ul li a:hover {
+  border-color: #007C7D;
+  background-color: #fff;
+}
+
+.main_container .menu_content .menu_list ul li a h3 {
+  color: #007C7D;
+  line-height: 83px;
+  display: inline;
+}
+
+.footer_container {
+  width: 100%;
+  padding: 20px 40px 20px 55px;
+  background-color: #007C7D;
+}
+
+.footer_container p.copyright {
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+}
+
+.footer_container p.copyright span {
+  position: absolute;
+  left: -20px;
+  top: calc( 50% - 15px);
+}
+
+.footer_container p.copyright a {
+  color: #fff;
+}
+
+.footer_container p.copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer_container .aa_logo {
+  float: right;
+}
+
+.footer_container .aa_logo a {
+  width: 150px;
+  display: block;
+}
+
+.footer_container .aa_logo a img {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .main_container .menu_content .menu_list h2.top_title {
+    font-size: 30px;
+  }
+  .main_container .menu_content .menu_list ul li h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main_container .menu_content .menu_list ul li h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header_container {
+    min-height: 50px;
+  }
+  .header_container .header_content {
+    padding: 0 20px;
+  }
+  .header_container a.header_logo {
+    width: 200px;
+  }
+  .main_container .menu_content {
+    padding: 30px 0;
+  }
+  .main_container .menu_content .menu_list {
+    border-radius: 30px;
+    width: calc(100% - 30px);
+    max-width: 600px;
+    float: none;
+    margin: 20px auto;
+  }
+  .footer_container {
+    text-align: center;
+  }
+  .footer_container p.copyright {
+    float: none;
+  }
+  .footer_container p.copyright span {
+    position: initial;
+  }
+  .footer_container .aa_logo {
+    float: none;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .footer_container .aa_logo a {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 750px) {
+  .header_container .header_content {
+    padding: 0;
+  }
+  .header_container .header_content a.header_logo {
+    margin-left: 20px;
+  }
+  .header_container .header_content p.sitemap {
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  .header_container .header_content p.sitemap a {
+    min-width: 120px;
+  }
+  .header_container h1.main_title {
+    width: 100%;
+    border: 1px solid #fff;
+    border-width: 1px 0 0 0;
+    line-height: initial;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0;
+    font-size: 24px;
+  }
+  .main_container .menu_content {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .main_container .menu_content {
+    padding: 0;
+  }
+  .footer_container .aa_logo a {
+    width: 125px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header_container .header_content a.header_logo {
+    width: 170px;
+    height: 60px;
+  }
+  .header_container .header_content a.header_logo span {
+    top: calc(50% - 13px);
+  }
+  .header_container .header_content p.sitemap {
+    font-size: 16px;
+  }
+  .header_container .header_content p.sitemap a {
+    padding: 8px 10px;
+    min-width: 100px;
+  }
+  .main_container .menu_content .menu_list {
+    padding-bottom: 15px;
+  }
+  .main_container .menu_content .menu_list h2.top_title {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+  .main_container .menu_content .menu_list ul li .icon {
+    width: 30%;
+  }
+  .main_container .menu_content .menu_list ul li h3 {
+    font-size: 22px;
+  }
+  .main_container .menu_content .menu_list ul li a h3 {
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main_container .menu_content .menu_list h2.top_title {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
