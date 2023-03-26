@@ -1,15 +1,15 @@
 // popup-link
-// $(function () {
-// 	$('.popup-link').magnificPopup({
-// 		removalDelay: 300,
-// 		mainClass: 'mfp-fade'
-// 	});
-// });
+$(function () {
+	$('.popup-link').magnificPopup({
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+});
 
 // top subnav
 $(function () {
 	$(".subnav").hover(function () {
-		$(this).find(".subnav-content").fadeToggle();
+		$(this).find(".subnav-content").toggle();
 		return false;
 	});
 });
@@ -28,7 +28,13 @@ $(function(){
 	});
 	return false;
 });
-
+// close popup
+// $(function(){
+// 	$("#close-popup").click(function () {
+// 		$(".mfp-bg, .mfp-wrap").removeClass("mfp-close-btn-in");
+// 		return false;
+// 	});
+// });
 // mob tab
 $(function(){
 	$("#active-01").click(function () {
