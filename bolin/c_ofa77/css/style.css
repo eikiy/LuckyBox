@@ -868,6 +868,7 @@ a.header_logo span {
 }
 
 .mob-app {
+  min-width: 320px;
   display: none;
   height: 100%;
   display: -webkit-box;
@@ -893,6 +894,7 @@ a.header_logo span {
           align-items: center;
   padding: 5px 8px;
   width: 100%;
+  min-width: 320px;
 }
 
 .mob-app .header .logo {
@@ -945,6 +947,12 @@ a.header_logo span {
   color: #fff;
   padding: 3px;
   display: block;
+}
+
+@media (max-width: 340px) {
+  .mob-app .header .member-box .id-cover span {
+    font-size: .75rem;
+  }
 }
 
 .mob-app .main_flexslider .swiper-pagination {
@@ -1213,10 +1221,23 @@ a.header_logo span {
   display: block;
 }
 
+@media (max-height: 668px) {
+  .game-box .btn-list li {
+    min-height: initial;
+  }
+  .game-box .btn-list li img {
+    max-width: 35px;
+  }
+  .game-box .btn-list li span {
+    font-size: 0.75rem;
+  }
+}
+
 .footer-mob {
   display: none;
   position: fixed;
   width: 100%;
+  min-width: 320px;
   bottom: 0;
   left: 0;
   z-index: 999;

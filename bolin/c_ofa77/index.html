@@ -10,66 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		<script type="text/javascript">
-			// $(function () {
-			// 	$('.popup-link').magnificPopup({
-			// 		removalDelay: 300,
-			// 		mainClass: 'mfp-fade'
-			// 	});
-			// });
-			$(function () {
-				$(".subnav").hover(function () {
-					$(this).find(".subnav-content").fadeToggle();
-					return false;
-				});
-			});
-			// scrollTop
-            $(function(){
-				$(window).scroll(function(){
-					if( $(window).scrollTop() > 400 ){
-					$("#gotop").stop(true,false).animate({opacity:1},);
-					}else{
-					$("#gotop").stop(true,false).animate({opacity:0},);
-					}
-				});
-				$("#gotop").click(function goTop(){
-					$("html,body").stop(true,false).animate({scrollTop:0},900);
-				});
-				return false;
-			});
-			
-			// mob tab
-			$(function(){
-				$("ul.tab li.active-01").click(function () {
-					$("#active-01-open").show();
-					$(this).parent().find(".game-list").hide();
-				});
-				$("ul.tab li.active-02").click(function () {
-					$("#active-02-open").show();
-					// $("ul.tab li").remove("active");
-					$(this).parent().find("li").remove("active");
-					$(this).addClass("active");
-					
-					$(this).parent().find(".game-list").hide();
-				});
-				$("ul.tab li.active-03").click(function () {
-					$("#active-03-open").show();
-					$(this).parent().find(".game-list").hide();
-				});
-				$("ul.tab li.active-04").click(function () {
-					$("#active-04-open").show();
-					$(this).parent().find(".game-list").hide();
-				});
-				$("ul.tab li.active-05").click(function () {
-					$("#active-05-open").show();	
-					$(this).parent().find(".game-list").hide();
-				});
-				$("ul.tab li.active-06").click(function () {
-					$("#active-06-open").show();
-					$(this).parent().find(".game-list").hide();
-				});
-			});
-		</script>
+		<!-- menu js -->
+		<script type="text/javascript" src="js/menu.js"></script>
 		<!-- Link Swiper's CSS -->
 		<link rel="stylesheet" href="css/swiper.min.css">
 		
@@ -432,7 +374,7 @@
 						<p class="wallet">
 							<span class="hello">親愛的訪客，您好</span>
 						</p>
-						<a href="/m/login" class="id-cover"><span>登入 / 註冊</span> </a>
+						<a href="#" class="id-cover"><span>登入 / 註冊</span> </a>
 						<div class="item drop-down-cover dropdown_lang" style="width: 20px; margin-left: 5px;">
 							<picture class="img-box">
 								<img src="images/mob/mem-worldwide.svg">
@@ -503,34 +445,34 @@
 					<section class="game-box">
 						<section class="btn-list-cover">
 							<ul class="btn-list tab">
-								<li class="active active-01">
+								<li id="active-01" class="active">
 									<img src="images/mob/nav_casino.png">
 									<span> PM廳 </span>
 								</li>
-								<li class="active-02">
+								<li id="active-02">
 									<img src="images/mob/nav_live.png">
 									<span> 真人 </span>
 								</li>
-								<li class="active-03">
+								<li id="active-03">
 									<img src="images/mob/nav_sports.png">
 									<span> 體育 </span>
 								</li>
-								<li class="active-04">
+								<li id="active-04">
 									<img src="images/mob/nav_lottery.png">
 									<span> 彩票 </span>
 								</li>
-								<li class="active-05">
+								<li id="active-05">
 									<img src="images/mob/nav_chess.png">
 									<span> 棋牌 </span>
 								</li>
-								<li class="active-06">
+								<li id="active-06">
 									<img src="images/mob/nav_slots.png">
 									<span> 電子 </span>
 								</li>
 							</ul>
 						</section>
 						<section class="list-cover">
-							<ul class="game-list open" id="active-01-open">
+							<ul class="game-list open" id="a1-open">
 								<li>
 									<a href="#">
 										<img src="images/mob/website_menu_OB_slot.png">
@@ -574,7 +516,7 @@
 									</a>
 								</li>
 							</ul>
-							<ul class="game-list" id="active-02-open">
+							<ul class="game-list" id="a2-open">
 								<li class="">
 									<a href="#">
 										<img src="images/mob/bb01.png">
@@ -611,7 +553,7 @@
 									</a>
 								</li>
 							</ul>
-							<ul class="game-list" id="active-03-open">
+							<ul class="game-list" id="a3-open">
 								<li class="">
 									<a href="#">
 										<img src="images/mob/aa04.png">
@@ -637,7 +579,7 @@
 									</a>
 								</li>
 							</ul>
-							<ul class="game-list" id="active-04-open">
+							<ul class="game-list" id="a4-open">
 								<li class="">
 									<a href="#">
 										<img src="images/mob/lottery-gm.png">
@@ -669,7 +611,7 @@
 									</a>
 								</li>
 							</ul>
-							<ul class="game-list" id="active-05-open">
+							<ul class="game-list" id="a5-open">
 								<li class="">
 									<a href="#">
 										<img src="images/mob/ee01.png">
@@ -677,7 +619,7 @@
 									</a>
 								</li>
 							</ul>
-							<ul class="game-list" id="active-06-open">
+							<ul class="game-list" id="a6-open">
 								<li class="">
 									<a href="#">
 										<img src="images/mob/live-01-mary.png">

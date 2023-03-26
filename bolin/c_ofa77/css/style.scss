@@ -546,6 +546,7 @@
 
 // mob
 .mob-app{
+  min-width: 320px;
   display: none;
   height: 100%;
   display: -webkit-box;
@@ -562,6 +563,7 @@
     align-items: center;
     padding: 5px 8px;
     width: 100%;
+    min-width: 320px;
     .logo{
       width: 80px;
       display: block;   
@@ -595,6 +597,11 @@
           color: #fff;
           padding: 3px;
           display: block;
+        }
+        @media (max-width:340px) {
+          span{
+            font-size: .75rem;
+          }
         }
       }
     }
@@ -786,11 +793,23 @@
       display: block;
     }
   }
+  @media (max-height:668px) {
+    .btn-list li {
+      min-height: initial;
+      img{
+        max-width: 35px;
+      }
+      span{
+        font-size: 0.75rem;
+      }
+    }
+  }
 }
 .footer-mob{
   display: none;
   position: fixed;
   width: 100%;
+  min-width: 320px;
   bottom: 0;
   left: 0;
   z-index: 999;
