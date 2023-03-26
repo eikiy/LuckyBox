@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			// $(function () {
+			// 	$('.popup-link').magnificPopup({
+			// 		removalDelay: 300,
+			// 		mainClass: 'mfp-fade'
+			// 	});
+			// });
+			$(function () {
+				$(".subnav").hover(function () {
+					$(this).find(".subnav-content").fadeToggle();
+					return false;
+				});
+			});
+			// scrollTop
+            $(function(){
+				$(window).scroll(function(){
+					if( $(window).scrollTop() > 400 ){
+					$("#gotop").stop(true,false).animate({opacity:1},);
+					}else{
+					$("#gotop").stop(true,false).animate({opacity:0},);
+					}
+				});
+				$("#gotop").click(function goTop(){
+					$("html,body").stop(true,false).animate({scrollTop:0},900);
+				});
+				return false;
+			});
+		</script>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header_container">
+			<section class="header_content clearfix">
+				<a class="header_logo" href="#">
+					<img src="images/logo_.png" onerror="this.src='upload/logo_home.svg'" alt="鉅城娛樂">
+				</a>
+				<div class="navbar">
+					<!-- PM廳 -->
+					<div class="subnav">
+						<a href="" class="subnavbtn">
+							<span class="nav_text">PM廳</span>
+						</a>
+						<ul class="subnav-content">
+							<div class="box">
+								<div>
+									<ul>
+										<li>
+											<div class="a_card" style="background-image: url(images/website_menu_yabo-slot.png)">
+												<div class="logo_s_icon"><img
+														src="images/yabo-slot.png"><span class="logo_s_title">PM電子</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/yabo-sport.png);">
+												<div class="logo_s_icon">
+													<img src="images/yabo-sport.png">
+													<span class="logo_s_title">PM 體育</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/img_gdqp_h.png);">
+												<div class="logo_s_icon"><img src="images/yabo.png"><span class="logo_s_title">PM棋牌</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/yabo-live2.png);">
+												<div class="logo_s_icon">
+													<img src="images/yabo-live.png">
+													<span class="logo_s_title">PM真人</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/ob_egaming.png);">
+												<div class="logo_s_icon"><img src="images/yabo-egame.png"><span class="logo_s_title">PM電競</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/yabo-lottery.png);">
+												<div class="logo_s_icon"><img src="images/yabo-lottery.png"><span class="logo_s_title">PM彩票</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/yabo-fish.png);">
+												<div class="logo_s_icon"><img src="images/yabo-fish.png"><span class="logo_s_title">PM捕魚</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<!-- 真人 -->
+					<div class="subnav">
+						<a href="#" class="subnavbtn">
+							<span class="nav_text">真人</span>
+						</a>
+						<ul class="subnav-content">
+							<div class="box">
+								<div>
+									<ul>
+										<li>
+											<div class="a_card" style="background-image: url(images/img_bob.png);">
+												<div class="logo_s_icon">
+													<img src="images/dg.png">
+													<span class="logo_s_title">DG真人</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card"
+												style="background-image: url(images/img_chanli.png);">
+												<div class="logo_s_icon"><img src="images/chanli.png"><span class="logo_s_title">全利真人</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card"
+												style="background-image: url(images/img_ag.png);">
+												<div class="logo_s_icon"><img src="images/sa.png"><span class="logo_s_title">SA真人</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card"
+												style="background-image: url(images/hover_img_bg_sele.png);">
+												<div class="logo_s_icon"><img src="images/wm.png"><span class="logo_s_title">WM真人</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card"
+												style="background-image: url(images/img_gd.png);">
+												<div class="logo_s_icon"><img src="images/allbet.png"><span class="logo_s_title">歐博真人</span></div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<!-- 體育 -->
+					<div class="subnav">
+						<a href="#" class="subnavbtn">
+							<span class="nav_text">體育</span>
+						</a>
+						<ul class="subnav-content">
+							<div class="box">
+								<div>
+									<ul>
+										<li>
+											<div class=" a_card" style="background-image:url(images/website_yabo-sport.png);">
+												<div class="logo_s_icon">
+													<img src="images/yabo-sport.png">
+													<span class="logo_s_title">PM 體育</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image:url(images/img_bob_sports.png);">
+												<div class="logo_s_icon">
+													<img src="images/super.png">
+													<span class="logo_s_title">SUPER</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image:url(images/ob_egaming.png);">
+												<div class="logo_s_icon">
+													<img src="images/yabo-egame.png">
+													<span class="logo_s_title">PM電競</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image:url(images/img_saba.png);">
+												<div class="logo_s_icon">
+													<img src="images/ya-sport.png">
+													<span class="logo_s_title">鑫寶</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<!-- 彩票 -->
+					<div class="subnav">
+						<a href="#" class="subnavbtn">
+							<span class="nav_text">彩票</span>
+						</a>
+						<ul class="subnav-content">
+							<div class="box">
+								<div>
+									<ul>
+										<li>
+											<div class=" a_card" style="background-image: url(images/lottery-gm.png);">
+												<div class="logo_s_icon">
+													<img src="images/gm.png">
+													<span class="logo_s_title">四方彩票</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image: url(images/img_bob.png);">
+												<div class="logo_s_icon">
+													<img src="images/apl.png">
+													<span class="logo_s_title">APL彩票</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image: url(images/img_tcg.png);">
+												<div class="logo_s_icon">
+													<img src="images/ya-lotto.png">
+													<span class="logo_s_title">WIN539</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image: url(images/img_dbg.png);">
+												<div class="logo_s_icon">
+													<img src="images/dbg.png">
+													<span class="logo_s_title">DBG餐廳賓果</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<!-- 棋牌 -->
+					<div class="subnav">
+						<a href="#" class="subnavbtn">
+							<span class="nav_text">棋牌</span>
+						</a>
+						<ul class="subnav-content">
+							<div class="box">
+								<div>
+									<ul>
+										<li>
+											<div class=" a_card" style="background-image: url(images/img_bobqp.png);">
+												<div class="logo_s_icon">
+													<img src="images/gr.png">
+													<span class="logo_s_title">好路棋牌</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<!-- 電子 -->
+					<div class="subnav">
+						<a href="#" class="subnavbtn">
+							<span class="nav_text">電子</span>
+						</a>
+						<ul class="subnav-content">
+							<div class="box">
+								<div>
+									<ul>
+										<li>
+											<div class="a_card" style="background-image: url(images/website_menu_mary.png);">
+												<div class="logo_s_icon">
+													<img src="images/gm.png">
+													<span class="logo_s_title">四方電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/img_fishing.png);">
+												<div class="logo_s_icon">
+													<img src="images/gr.png">
+													<span class="logo_s_title">GR電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image: url(images/img_bng.png);">
+												<div class="logo_s_icon">
+													<img src="images/bng.png">
+													<span  class="logo_s_title">BNG電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/slot-bwin.png);">
+												<div class="logo_s_icon">
+													<img src="images/bwin.png">
+													<span class="logo_s_title">BWIN電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/website_menu_rsg.png);">
+												<div class="logo_s_icon">
+													<img src="images/rsg.png">
+													<span class="logo_s_title">RSG電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/website_menu_yabo-slot.png);">
+												<div class="logo_s_icon">
+													<img src="images/yabo-slot.png">
+													<span class="logo_s_title">PM電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="a_card" style="background-image: url(images/slot-zebra.png);">
+												<div class="logo_s_icon">
+													<img src="images/zebra.png">
+													<span class="logo_s_title">ZEBRA電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class=" a_card" style="background-image: url(images/website_menu_zw.png);">
+												<div class="logo_s_icon">
+													<img src="images/zw.png">
+													<span class="logo_s_title">JC電子</span>
+												</div>
+												<div class="go_btn">
+													進入場館
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<!-- 優惠 -->
+					<div class="subnav">
+						<a href="#" class="subnavbtn">
+							<span class="nav_text">優惠</span>
+						</a>
+					</div>
+				</div>
+				<div class="right_tools">
+					<span class="vaild_div">
+						<input type="text" name="USER_ACCOUNT" placeholder="用戶名" class="fillin">
+					</span>
+					<span class="vaild_div">
+						<div class="_fzFk1Wn">
+							<input id="userLogin" name="PASSWORD" type="password" placeholder="密碼" class="fillin">
+							<a href="#" class="forgetPassword">
+								<p class="_18gEKJ46">忘記？</p>
+							</a>
+						</div>
+					</span>
+					<a href="#">
+						<div class="s_btn btn_blue">登入</div>
+					</a>
+					<a href="#" class="">
+						<div class="s_btn btn_lightblue">註冊</div>
+					</a>
+					<select class="_31wIu_-X">
+						<option value="tw">繁中</option>
+						<option value="cn">简中</option>
+						<option value="en">EN</option>
+					</select>
+				</div>
+			</section>
+		</header>
+		<!-- main -->
+		<main class="main_container" id="goThe01">
+			<div id="gotop" class="back_top">
+				<img src="images/icon-top.svg" alt="top">
+			</div>
+			<!-- fixed_line_btn -->
+			<div class="fixed_line_btn">
+				<img src="images/icon-line.svg" width="66">
+			</div>
+			<!-- cm_service -->
+			<div class="cm_service">
+				<img src="images/service.png">
+			</div>
+			<section class="TopMarqueeBox">
+				<div class="text_box">
+					<div class="cont clearfix">
+						<img src="images/icon_announcement.png" class="l_icon">
+						<div class="marqee">
+							<ul>
+								<li>提款/託售公告</li>
+								<li>平台遊戲公告</li>
+								<li>★【每日簽到活動公告】★</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- main_banner -->
+			<section class="main_banner">
+				<img src="images/main_banner/b01.png" width="100%">
+			</section>
+			<div style="position: absolute; margin-top: -35px;">
+				<img src="images/block.png" alt="" width="100%">
+				</div>
+			<!-- carousel Test-->
+			<div class="carousel_container" style="min-height: 600px; margin-top: 20px; background: url(images/index-bg.png);">
+				<div id="wrap" style="width: 980px; margin: 0 auto;">
+					<div id="showcase" class="noselect" style="overflow: inherit;">
+						<li class="cloud9-item"
+							style="position: absolute; width: 400px; overflow: hidden; transform-origin: 0px 0px; z-index: 62; transform: translate(595.626px, 27px) scale(0.625);">
+							<img src="images/slider/chess.png" alt="" width="100%">
+						</li>
+						<li class="cloud9-item"
+							style="position: absolute; width: 400px; overflow: hidden; transform-origin: 0px 0px; z-index: 62; transform: translate(595.626px, 27px) scale(0.625);">
+							<img src="images/slider/sport.png" alt="" width="100%">
+						</li>
+						<li class="cloud9-item"
+							style="position: absolute; width: 400px; overflow: hidden; transform-origin: 0px 0px; z-index: 62; transform: translate(595.626px, 27px) scale(0.625);">
+							<img src="images/slider/live.png" alt="" width="100%">
+						</li>
+						<li class="cloud9-item"
+							style="position: absolute; width: 400px; overflow: hidden; transform-origin: 0px 0px; z-index: 62; transform: translate(595.626px, 27px) scale(0.625);">
+							<img src="images/slider/slot.png" alt="" width="100%">
+						</li>
+						<li class="cloud9-item"
+							style="position: absolute; width: 400px; overflow: hidden; transform-origin: 0px 0px; z-index: 62; transform: translate(595.626px, 27px) scale(0.625);">
+							<img src="images/slider/yabo.png" alt="" width="100%">
+						</li>
+						<li class="cloud9-item"
+							style="position: absolute; width: 400px; overflow: hidden; transform-origin: 0px 0px; z-index: 62; transform: translate(595.626px, 27px) scale(0.625);">
+							<img src="images/slider/lottery.png" alt="" width="100%">
+						</li>
+					</div>
+				</div>
+			</div>
+			<!-- clientPage qrcode app -->
+			<div class="skeleton-placeholder" style="min-height: 640px; background: url(images/app-bg.png) no-repeat; margin-top: 180px;">
+				<div class="clientPage clearfix" style="visibility: visible;">
+					<div class="infobox">
+						<div class="top_title">
+							<img src="images/title_sport.png">
+						</div>
+						<h3 class="sub_title">
+							全新手機服務體驗，隨時隨地輕鬆暢玩，<br>
+							讓您的生活更加精彩，新穎的設計更好玩更便捷，遊戲新人生！
+						</h3>
+						<div class="qrcode">
+							<a href="https://qmfm.net/DgGsA">
+								<img src="images/qrcode.png">
+								<p>掃描進入下載頁面</p>
+							</a>
+						</div>
+					</div>
+					<div class="infobox">
+						<div class="img-phone">
+							<img data-wow-duration="2s" src="images/img_sport1.png" class="TCKxAUnE ls-is-cached wow zoomInRight">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- advantagePage -->
+			<div class="skeleton-placeholder">
+				<div class="advantagePage clearfix">
+					<ul class="list-unstyled">
+						<li data-wow-duration="1s" class="clearfix">
+							<img src="images/professional.png" class="mr-3">
+							<div class="media-body">
+								<h5>專業</h5>
+								<p>近千場精彩體育賽事，更有真人、彩票、電子遊戲等多種娛樂方式選擇，讓您擁有完美遊戲體驗。</p>
+							</div>
+						</li>
+						<li class="media my-5 wow fadeInUp clearfix">
+							<img data-v-30c3c4e6="" src="images/convenient.png" class="mr-3">
+							<div class="media-body">
+								<h5>便捷</h5>
+								<p>引領市場先鋒及卓越技術，自主研發了全套終端應用，讓你在各載具、app上隨時隨地24小時在線暢遊，客服給予最貼心優質的服務。</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="list-unstyled">
+						<li class="clearfix">
+							<img src="images/safe.png" class="mr-3">
+							<div class="media-body">
+								<h5>安全</h5>
+								<p>獨家開發專利，採用128位加密技術和嚴格的安全管理體系，金資得到最完善保障讓你用的開心，玩的也安心，無後顧之憂！</p>
+							</div>
+						</li>
+						<li class="media my-5 wow fadeInUp clearfix">
+							<img src="images/time.png" class="mr-3">
+							<div class="media-body">
+								<h5>專業</h5>
+								<p>自主研發的財務處理系統，真正做到安心快速存、取、轉。獨家網絡優化技術，為您提供安心一流的遊戲體驗，最大優化網路延遲。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- footer -->
+		<footer class="footer_container clearfix">
+			<div class="block">
+				<img src="images/block.png" alt="" width="100%">
+			</div>
+			<div class="container">
+				<div class="logos">
+					<img src="images/footer/yabo.png" width="12%">
+					<img src="images/footer/dg.png" width="12%">
+					<img src="images/footer/wm.png" width="12%">
+					<img src="images/footer/allbet.png" width="12%">
+					<img src="images/footer/super.png" width="12%">
+					<img src="images/footer/rtg.png" width="12%">
+				</div>
+				<div class="logos" style="text-align: left;">
+					<img src="images/footer/og.png" width="12%">
+					<img src="images/footer/gr.png" width="12%">
+					<img src="images/footer/kk.png" width="12%">
+					<img src="images/footer/afb88.png" width="12%">
+					<img src="images/footer/apl.png" width="12%">
+					<img src="images/footer/ka.png" width="12%">
+					<img src="images/footer/sa.png" width="12%">
+				</div>
+				
+			</div>
+			<div class="other_infor_link">
+				<ul>
+					<li>
+						<p>
+							<a href="#" class="" >新手幫助</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#" class="">關於我們</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#" class="" >服務條款</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">聯繫我們</a>
+						</p>
+					</li>
+				</ul>
+				<p class="copyright">
+					鉅城版權所有©2021 LOGO 保留所有權
+				</p>
+			</div>
+		</footer>
+
+		<!-- cloud9carousel -->
+		<script src="js/jquery.reflection.js"></script>
+		<script src="js/jquery.cloud9carousel.js"></script>
+		<script>
+			$(function () {
+				var showcase = $("#showcase")
+
+				showcase.Cloud9Carousel({
+					yPos: 42,
+					yRadius: 48,
+					mirrorOptions: {
+						gap: 12,
+						height: 0.2
+					},
+					buttonLeft: $(".nav > .left"),
+					buttonRight: $(".nav > .right"),
+					autoPlay: true,
+					bringToFront: true,
+					onRendered: showcaseUpdated,
+					onLoaded: function () {
+						showcase.css('visibility', 'visible')
+						// showcase.css('display', 'none')
+						showcase.css('overflow', 'inherit')
+						showcase.fadeIn(1500)
+					}
+				})
+
+				function showcaseUpdated(showcase) {
+					var title = $('#item-title').html(
+						$(showcase.nearestItem()).attr('alt')
+					)
+
+					var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+					title.css('opacity', 0.5 + (0.5 * c))
+				}
+
+				// Simulate physical button click effect
+				$('.nav > button').click(function (e) {
+					var b = $(e.target).addClass('down')
+					setTimeout(function () { b.removeClass('down') }, 80)
+				})
+
+				$(document).keydown(function (e) {
+					//
+					// More codes: http://www.javascripter.net/faq/keycodes.htm
+					//
+					switch (e.keyCode) {
+						/* left arrow */
+						case 37:
+							$('.nav > .left').click()
+							break
+
+						/* right arrow */
+						case 39:
+							$('.nav > .right').click()
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
+
+
+
