@@ -4101,42 +4101,85 @@ a.reminder:hover {
   margin: 0 auto;
 }
 
-.popup-container .menu-schedule-setting .mail-switch {
-  padding: 15px;
+.popup-container .menu-schedule-setting .main-switch {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-container .menu-schedule-setting .main-switch .btn {
+  position: relative;
+  margin: 0;
+  color: #333;
   background-color: #fff;
-  border-radius: 4px;
+  padding-left: 55px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 7px;
 }
 
-.popup-container .menu-schedule-setting .mail-switch .switch-type {
-  float: left;
-  margin: 0;
+.popup-container .menu-schedule-setting .main-switch .btn::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  left: 15px;
+  top: calc(50% - 17.5px);
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/svg/tick-schedule-graay.svg);
 }
 
-.popup-container .menu-schedule-setting .mail-switch .switch-type .switch-button {
-  background-color: #fff;
+.popup-container .menu-schedule-setting .main-switch .state-on {
+  background-color: #90c31f;
+  color: #fff;
 }
 
-.popup-container .menu-schedule-setting .mail-switch p {
-  float: left;
-  line-height: 22px;
+.popup-container .menu-schedule-setting .main-switch .state-on::before {
+  background-image: url(../images/svg/tick-schedule-w.svg);
 }
 
-.popup-container .menu-schedule-setting .mail-switch p.state-on {
-  color: #90c31f;
+.popup-container .menu-schedule-setting .main-switch p.note {
+  margin-left: auto;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 15px;
 }
 
-.popup-container .menu-schedule-setting .mail-switch p.state {
-  padding: 0 10px;
-}
-
-.popup-container .menu-schedule-setting .mail-switch p.note {
-  font-size: 12px;
-}
-
-.popup-container .menu-schedule-setting .mail-switch p.note span {
+.popup-container .menu-schedule-setting .main-switch p.note span {
   color: #ff5555;
+}
+
+@media all and (max-width: 650px) {
+  .popup-container .menu-schedule-setting .main-switch p.note {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+
+.popup-container .menu-schedule-setting .add-mask {
+  width: 100%;
+  position: relative;
+}
+
+.popup-container .menu-schedule-setting .add-mask::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #F6F6F6;
+  opacity: .7;
+  z-index: 5;
 }
 
 .popup-container .menu-schedule-setting .time-set {

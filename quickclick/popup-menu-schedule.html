@@ -21,88 +21,86 @@
                             <h4><span>菜單排程設定</span></h4>
                         </div>
                         <div class="menu-product-info menu-schedule-setting">
-                            <div class="mail-switch clearfix">
-                                <div class="switch-type">
-                                    <input id="" name="" type="checkbox" checked="">
-                                    <label class="switch-button" for=""></label>
-                                </div>
-                                <!-- 啟用中文字需 + state-on 變成綠色字-->
-                                <!-- <p class="state state-on">啟用中</p> -->
-                                <p class="state state-on">已啟用</p>
+                            <div class="main-switch clearfix">
+                                <!-- 未啟用，文字縣市：點選啟用-->
+                                <a class="btn btn--primary-xl" href="#">點選啟用</a>
                                 <p class="note">（此功能<span>不支援</span>根據取餐時間卡商品餐期的功能）</p>
                             </div>
-                            <div class="set-card time-set">
-                                <div class="top-item-title">
-                                    <div class="title-content clearfix">
-                                        <p>週期性</p>
-                                        <div class="switch-type">
-                                            <input id="" name="" type="checkbox" checked="">
-                                            <label class="switch-button" for=""></label>
+                            <!-- 這邊多一層 add-mask -->
+                            <div class="add-mask">
+                                <div class="set-card time-set">
+                                    <div class="top-item-title">
+                                        <div class="title-content clearfix">
+                                            <p>週期性</p>
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox" checked="">
+                                                <label class="switch-button" for=""></label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <from class="fillin-info clearfix">
-                                    <fieldset class="clearfix">
-                                        <label class="item-title">時間</label>
-                                        <div class="fillin-box">
-                                            <input type="time" name="" value="">
-                                            <small>時區：(GMT+08:00) 台灣時間</small>
-                                        </div>
-                                    </fieldset>
-                                </from>
-                                <div class="day-week-list clearfix">
-                                    <a class="week removeweek">
-                                        <p>星期一</p>
-                                    </a>
-                                    <a class="week removeweek">
-                                        <p>星期二</p>
-                                    </a>
-                                    <a class="week removeweek">
-                                        <p>星期三</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期四</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期五</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期六</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期日</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- 關閉 + time-turn-off -->
-                            <!-- 關閉 裡面的 sub-title 要 + style display: none; -->
-                            <!-- 關閉 裡面的 fillin-info 要 + style display: none; -->
-                            <div class="set-card time-set time-turn-off">
-                                <div class="top-item-title">
-                                    <div class="title-content clearfix">
-                                        <p>一次性</p>
-                                        <div class="switch-type">
-                                            <input id="" name="" type="checkbox">
-                                            <label class="switch-button" for=""></label>
-                                        </div>
+                                    <from class="fillin-info clearfix">
+                                        <fieldset class="clearfix">
+                                            <label class="item-title">時間</label>
+                                            <div class="fillin-box">
+                                                <input type="time" name="" value="">
+                                                <small>時區：(GMT+08:00) 台灣時間</small>
+                                            </div>
+                                        </fieldset>
+                                    </from>
+                                    <div class="day-week-list clearfix">
+                                        <a class="week removeweek">
+                                            <p>星期一</p>
+                                        </a>
+                                        <a class="week removeweek">
+                                            <p>星期二</p>
+                                        </a>
+                                        <a class="week removeweek">
+                                            <p>星期三</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期四</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期五</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期六</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期日</p>
+                                        </a>
                                     </div>
                                 </div>
-                                <p class="sub-title" style="display: none;">指定時間上架菜單，且下架原菜單</p>
-                                <from class="fillin-info clearfix" style="display: none;">
-                                    <fieldset class="clearfix">
-                                        <label class="item-title">日期</label>
-                                        <div class="fillin-box">
-                                            <input type="date" name="" value="">
+                                <!-- 關閉 + time-turn-off -->
+                                <!-- 關閉 裡面的 sub-title 要 + style display: none; -->
+                                <!-- 關閉 裡面的 fillin-info 要 + style display: none; -->
+                                <div class="set-card time-set time-turn-off">
+                                    <div class="top-item-title">
+                                        <div class="title-content clearfix">
+                                            <p>一次性</p>
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox">
+                                                <label class="switch-button" for=""></label>
+                                            </div>
                                         </div>
-                                    </fieldset>
-                                    <fieldset class="clearfix">
-                                        <label class="item-title">時間</label>
-                                        <div class="fillin-box">
-                                            <input type="time" name="" value="">
-                                            <small>時區：(GMT+08:00) 台灣時間</small>
-                                        </div>
-                                    </fieldset>
-                                </from>
+                                    </div>
+                                    <p class="sub-title" style="display: none;">指定時間上架菜單，且下架原菜單</p>
+                                    <from class="fillin-info clearfix" style="display: none;">
+                                        <fieldset class="clearfix">
+                                            <label class="item-title">日期</label>
+                                            <div class="fillin-box">
+                                                <input type="date" name="" value="">
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="clearfix">
+                                            <label class="item-title">時間</label>
+                                            <div class="fillin-box">
+                                                <input type="time" name="" value="">
+                                                <small>時區：(GMT+08:00) 台灣時間</small>
+                                            </div>
+                                        </fieldset>
+                                    </from>
+                                </div>
                             </div>
                         </div>
                         <div class="bottom-btn-tool">
@@ -118,88 +116,86 @@
                             <h4><span>菜單排程設定</span></h4>
                         </div>
                         <div class="menu-product-info menu-schedule-setting">
-                            <div class="mail-switch clearfix">
-                                <div class="switch-type">
-                                    <input id="" name="" type="checkbox">
-                                    <label class="switch-button" for=""></label>
-                                </div>
-                                <!-- 啟用中文字需 + state-on 變成綠色字-->
-                                <!-- <p class="state state-on">啟用中</p> -->
-                                <p class="state">尚未啟用</p>
+                            <div class="main-switch clearfix">
+                                <!-- 已啟用，文字顯示：點選關閉 a.btn 需 + state-on 變成綠底按鈕-->
+                                <a class="btn state-on btn--primary-xl" href="#">點選關閉</a>
                                 <p class="note">（此功能<span>不支援</span>根據取餐時間卡商品餐期的功能）</p>
                             </div>
-                            <!-- 關閉 + time-turn-off -->
-                            <!-- 關閉 裡面的 fillin-info 要 + display: none; -->
-                            <!-- 關閉 裡面的 day-week-list 要 + display: none; -->
-                            <div class="set-card time-set time-turn-off">
-                                <div class="top-item-title">
-                                    <div class="title-content clearfix">
-                                        <p>週期性</p>
-                                        <div class="switch-type">
-                                            <input id="" name="" type="checkbox">
-                                            <label class="switch-button" for=""></label>
+                            <!-- 開啟後要移除 add-mask -->
+                            <div>
+                                <!-- 關閉 + time-turn-off -->
+                                <!-- 關閉 裡面的 fillin-info 要 + display: none; -->
+                                <!-- 關閉 裡面的 day-week-list 要 + display: none; -->
+                                <div class="set-card time-set time-turn-off">
+                                    <div class="top-item-title">
+                                        <div class="title-content clearfix">
+                                            <p>週期性</p>
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox">
+                                                <label class="switch-button" for=""></label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <from class="fillin-info clearfix" style="display: none;">
-                                    <fieldset class="clearfix">
-                                        <label class="item-title">時間</label>
-                                        <div class="fillin-box">
-                                            <input type="time" name="" value="">
-                                            <small>時區：(GMT+08:00) 台灣時間</small>
-                                        </div>
-                                    </fieldset>
-                                </from>
-                                <div class="day-week-list clearfix" style="display: none;">
-                                    <a class="week removeweek">
-                                        <p>星期一</p>
-                                    </a>
-                                    <a class="week removeweek">
-                                        <p>星期二</p>
-                                    </a>
-                                    <a class="week removeweek">
-                                        <p>星期三</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期四</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期五</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期六</p>
-                                    </a>
-                                    <a class="week">
-                                        <p>星期日</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="set-card time-set">
-                                <div class="top-item-title">
-                                    <div class="title-content clearfix">
-                                        <p>一次性</p>
-                                        <div class="switch-type">
-                                            <input id="" name="" type="checkbox" checked="">
-                                            <label class="switch-button" for=""></label>
-                                        </div>
+                                    <from class="fillin-info clearfix" style="display: none;">
+                                        <fieldset class="clearfix">
+                                            <label class="item-title">時間</label>
+                                            <div class="fillin-box">
+                                                <input type="time" name="" value="">
+                                                <small>時區：(GMT+08:00) 台灣時間</small>
+                                            </div>
+                                        </fieldset>
+                                    </from>
+                                    <div class="day-week-list clearfix" style="display: none;">
+                                        <a class="week removeweek">
+                                            <p>星期一</p>
+                                        </a>
+                                        <a class="week removeweek">
+                                            <p>星期二</p>
+                                        </a>
+                                        <a class="week removeweek">
+                                            <p>星期三</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期四</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期五</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期六</p>
+                                        </a>
+                                        <a class="week">
+                                            <p>星期日</p>
+                                        </a>
                                     </div>
                                 </div>
-                                <p class="sub-title">指定時間上架菜單，且下架原菜單</p>
-                                <from class="fillin-info clearfix">
-                                    <fieldset class="clearfix">
-                                        <label class="item-title">日期</label>
-                                        <div class="fillin-box">
-                                            <input type="date" name="" value="">
+                                <div class="set-card time-set">
+                                    <div class="top-item-title">
+                                        <div class="title-content clearfix">
+                                            <p>一次性</p>
+                                            <div class="switch-type">
+                                                <input id="" name="" type="checkbox" checked="">
+                                                <label class="switch-button" for=""></label>
+                                            </div>
                                         </div>
-                                    </fieldset>
-                                    <fieldset class="clearfix">
-                                        <label class="item-title">時間</label>
-                                        <div class="fillin-box">
-                                            <input type="time" name="" value="">
-                                            <small>時區：(GMT+08:00) 台灣時間</small>
-                                        </div>
-                                    </fieldset>
-                                </from>
+                                    </div>
+                                    <p class="sub-title">指定時間上架菜單，且下架原菜單</p>
+                                    <from class="fillin-info clearfix">
+                                        <fieldset class="clearfix">
+                                            <label class="item-title">日期</label>
+                                            <div class="fillin-box">
+                                                <input type="date" name="" value="">
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="clearfix">
+                                            <label class="item-title">時間</label>
+                                            <div class="fillin-box">
+                                                <input type="time" name="" value="">
+                                                <small>時區：(GMT+08:00) 台灣時間</small>
+                                            </div>
+                                        </fieldset>
+                                    </from>
+                                </div>
                             </div>
                         </div>
                         <div class="bottom-btn-tool">
