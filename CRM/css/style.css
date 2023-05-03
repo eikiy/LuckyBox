@@ -2724,11 +2724,227 @@ ul.edit-tool li a:hover {
   }
 }
 
+.middle-container .company-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle-container .company-content ul.edit-record-user {
+  padding-left: 10px;
+}
+
+.middle-container .company-content ul.edit-record-user li {
+  float: left;
+}
+
+.middle-container .company-content ul.edit-record-user li p {
+  color: #707070;
+}
+
+.middle-container .company-content ul.edit-record-user a.history {
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px;
+  color: #11948a;
+}
+
+.middle-container .company-content ul.edit-record-user a.history:hover {
+  opacity: .5;
+}
+
+.middle-container .company-content .company-information {
+  margin-left: auto;
+  position: relative;
+  min-height: 120px;
+  max-width: calc(100% - 300px);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0 18px 18px 0;
+}
+
+.middle-container .company-content .company-information .edit-tool {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.middle-container .company-content .company-information .edit-tool li a {
+  font-size: 0.875rem;
+  width: 40px;
+  height: 40px;
+  background-color: #ebf5f4;
+}
+
+.middle-container .company-content .company-information .edit-tool li a:hover {
+  background-color: #11948a;
+  color: #fff;
+}
+
+.middle-container .company-content .company-information .edit-tool li a.add {
+  background-color: #11948a;
+  color: #fff;
+}
+
+.middle-container .company-content .company-information .edit-tool li a.add:hover {
+  opacity: 0.9;
+}
+
+.middle-container .company-content .company-information .menu {
+  position: absolute;
+  z-index: 2;
+  right: -14px;
+  top: 62px;
+}
+
+.middle-container .company-content .company-information .menu::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: calc(50% - 8.5px);
+  border-style: solid;
+  border-width: 0 8.5px 8px 8.5px;
+  border-color: transparent transparent #ebf5f4 transparent;
+}
+
+.middle-container .company-content .company-information .menu ul {
+  width: 94px;
+  background-color: #ebf5f4;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.middle-container .company-content .company-information .menu ul li a {
+  font-weight: bold;
+  color: #11948a;
+  font-size: 0.813rem;
+  padding: 0 10px;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+}
+
+.middle-container .company-content .company-information .menu ul li a:hover {
+  background-color: #289e95;
+  color: #fff;
+}
+
+.middle-container .company-content .company-information ul.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.middle-container .company-content .company-information ul.info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  padding: 2.5px 5px;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.middle-container .company-content .company-information ul.info li p {
+  width: 100%;
+  line-height: 18px;
+  font-size: 0.875rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.middle-container .company-content .company-information ul.info li p a {
+  color: #333;
+}
+
+.middle-container .company-content .company-information ul.info li p a:hover {
+  text-decoration: underline;
+}
+
+.middle-container .company-content .company-information ul.info li p span {
+  display: inline-block;
+  line-height: 24px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  vertical-align: top;
+}
+
+.middle-container .company-content .company-information ul.info li p span:nth-child(2) {
+  max-width: calc(100% - 90px);
+}
+
+.middle-container .company-content .company-information ul.info li .bg {
+  padding: 3px 10px;
+  font-size: 0.813rem;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0 10px 5px 0;
+  line-height: 18px;
+  min-width: 75px;
+  text-align: center;
+}
+
+.middle-container .company-content .company-information ul.info li .bg-greenlight {
+  color: #11948a;
+  background-color: #ebf5f4;
+}
+
+.middle-container .company-content .company-information ul.info li .bg-green {
+  background-color: #11948a;
+  color: #fff;
+}
+
+.middle-container .company-content .company-information ul.info li.flex-2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 66.66%;
+      flex-basis: 66.66%;
+}
+
+.middle-container .company-content .company-information ul.info li.flex-3 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.middle-container .company-content .company-information ul.info li:nth-child(2) {
+  border-bottom: 1px solid #D1E6E3;
+  margin-bottom: 8px;
+}
+
+.middle-container .company-content .company-information ul.info li:nth-child(2) p span:nth-child(2) {
+  max-width: calc(100% - 180px);
+}
+
 .middle-container .company-content,
 .middle-container .company-contact-list,
 .middle-container .company-department-list {
   width: 100%;
-  background-color: #fff;
+  background-color: #ebf5f4;
   border-radius: 18px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
@@ -2739,21 +2955,11 @@ ul.edit-tool li a:hover {
 .middle-container .company-department-list .company-title {
   padding: 15px;
   text-align: center;
-  float: left;
   width: 100%;
   max-width: 300px;
   min-height: 140px;
   border-radius: 18px 0 0 18px;
   background-color: #ebf5f4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .middle-container .company-content .company-title h3,
@@ -2777,191 +2983,6 @@ ul.edit-tool li a:hover {
 .middle-container .company-department-list .company-title p {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.middle-container .company-content .company-information,
-.middle-container .company-contact-list .company-information,
-.middle-container .company-department-list .company-information {
-  position: relative;
-  float: left;
-  min-height: 120px;
-  max-width: calc(100% - 300px);
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.middle-container .company-content .company-information .edit-tool,
-.middle-container .company-contact-list .company-information .edit-tool,
-.middle-container .company-department-list .company-information .edit-tool {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.middle-container .company-content .company-information .edit-tool li a,
-.middle-container .company-contact-list .company-information .edit-tool li a,
-.middle-container .company-department-list .company-information .edit-tool li a {
-  font-size: 0.875rem;
-  width: 40px;
-  height: 40px;
-  background-color: #ebf5f4;
-}
-
-.middle-container .company-content .company-information .edit-tool li a:hover,
-.middle-container .company-contact-list .company-information .edit-tool li a:hover,
-.middle-container .company-department-list .company-information .edit-tool li a:hover {
-  background-color: #11948a;
-  color: #fff;
-}
-
-.middle-container .company-content .company-information .edit-tool li a.add,
-.middle-container .company-contact-list .company-information .edit-tool li a.add,
-.middle-container .company-department-list .company-information .edit-tool li a.add {
-  background-color: #11948a;
-  color: #fff;
-}
-
-.middle-container .company-content .company-information .edit-tool li a.add:hover,
-.middle-container .company-contact-list .company-information .edit-tool li a.add:hover,
-.middle-container .company-department-list .company-information .edit-tool li a.add:hover {
-  opacity: 0.9;
-}
-
-.middle-container .company-content .company-information .menu,
-.middle-container .company-contact-list .company-information .menu,
-.middle-container .company-department-list .company-information .menu {
-  position: absolute;
-  z-index: 2;
-  right: -14px;
-  top: 62px;
-}
-
-.middle-container .company-content .company-information .menu::after,
-.middle-container .company-contact-list .company-information .menu::after,
-.middle-container .company-department-list .company-information .menu::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: calc(50% - 8.5px);
-  border-style: solid;
-  border-width: 0 8.5px 8px 8.5px;
-  border-color: transparent transparent #ebf5f4 transparent;
-}
-
-.middle-container .company-content .company-information .menu ul,
-.middle-container .company-contact-list .company-information .menu ul,
-.middle-container .company-department-list .company-information .menu ul {
-  width: 94px;
-  background-color: #ebf5f4;
-  overflow: hidden;
-  border-radius: 20px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-}
-
-.middle-container .company-content .company-information .menu ul li a,
-.middle-container .company-contact-list .company-information .menu ul li a,
-.middle-container .company-department-list .company-information .menu ul li a {
-  font-weight: bold;
-  color: #11948a;
-  font-size: 0.813rem;
-  padding: 0 10px;
-  line-height: 35px;
-  text-align: center;
-  display: block;
-}
-
-.middle-container .company-content .company-information .menu ul li a:hover,
-.middle-container .company-contact-list .company-information .menu ul li a:hover,
-.middle-container .company-department-list .company-information .menu ul li a:hover {
-  background-color: #289e95;
-  color: #fff;
-}
-
-.middle-container .company-content .company-information ul.info,
-.middle-container .company-contact-list .company-information ul.info,
-.middle-container .company-department-list .company-information ul.info {
-  text-align: left;
-  padding-left: 10px;
-}
-
-.middle-container .company-content .company-information ul.info li,
-.middle-container .company-contact-list .company-information ul.info li,
-.middle-container .company-department-list .company-information ul.info li {
-  vertical-align: top;
-  display: inline-block;
-  padding: 7px 5px;
-}
-
-.middle-container .company-content .company-information ul.info li p,
-.middle-container .company-contact-list .company-information ul.info li p,
-.middle-container .company-department-list .company-information ul.info li p {
-  font-size: 0.875rem;
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-height: 24px;
-  height: 24px;
-  overflow: hidden;
-}
-
-.middle-container .company-content .company-information ul.info li p span,
-.middle-container .company-contact-list .company-information ul.info li p span,
-.middle-container .company-department-list .company-information ul.info li p span {
-  color: #11948a;
-  background-color: #ebf5f4;
-  padding: 3px 10px;
-  font-size: 0.813rem;
-  display: inline-block;
-  border-radius: 10px;
-  margin: 0 10px 5px 0;
-  line-height: 19px;
-  min-width: 54px;
-  text-align: center;
-}
-
-.middle-container .company-content .company-information ul.info li p a,
-.middle-container .company-contact-list .company-information ul.info li p a,
-.middle-container .company-department-list .company-information ul.info li p a {
-  color: #333;
-}
-
-.middle-container .company-content .company-information ul.info li p a:hover,
-.middle-container .company-contact-list .company-information ul.info li p a:hover,
-.middle-container .company-department-list .company-information ul.info li p a:hover {
-  text-decoration: underline;
-}
-
-.middle-container .company-content .company-information ul.info li:nth-child(1), .middle-container .company-content .company-information ul.info li:nth-child(2), .middle-container .company-content .company-information ul.info li:nth-child(3),
-.middle-container .company-contact-list .company-information ul.info li:nth-child(1),
-.middle-container .company-contact-list .company-information ul.info li:nth-child(2),
-.middle-container .company-contact-list .company-information ul.info li:nth-child(3),
-.middle-container .company-department-list .company-information ul.info li:nth-child(1),
-.middle-container .company-department-list .company-information ul.info li:nth-child(2),
-.middle-container .company-department-list .company-information ul.info li:nth-child(3) {
-  width: calc(33% - 30px);
-  min-width: 160px;
-}
-
-.middle-container .company-content .company-information ul.info li:nth-child(4),
-.middle-container .company-contact-list .company-information ul.info li:nth-child(4),
-.middle-container .company-department-list .company-information ul.info li:nth-child(4) {
-  width: calc(66% - 55px);
-}
-
-.middle-container .company-content .company-information ul.info li:nth-child(5),
-.middle-container .company-contact-list .company-information ul.info li:nth-child(5),
-.middle-container .company-department-list .company-information ul.info li:nth-child(5) {
-  width: 33%;
 }
 
 .middle-container .company-contact-list,
@@ -3040,19 +3061,37 @@ ul.edit-tool li a:hover {
   display: block;
 }
 
+.middle-container .company-contact-list ul.info li a:nth-child(2),
+.middle-container .company-department-list ul.info li a:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .middle-container .company-contact-list ul.info li a p,
 .middle-container .company-department-list ul.info li a p {
-  float: left;
-  width: 30%;
-  line-height: 36px;
-  font-size: 0.875rem;
-  padding: 0 10px;
-  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc( 30% - 20px);
+          flex: 0 0 calc( 30% - 20px);
   display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  height: 36px;
-  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  line-height: 20px;
+  min-height: 38px;
+  font-size: 0.875rem;
+  padding: 8px 10px;
+  word-wrap: break-word;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .middle-container .company-contact-list ul.info li a p.name,
@@ -3060,9 +3099,17 @@ ul.edit-tool li a:hover {
   padding-left: 15px;
 }
 
-.middle-container .company-contact-list ul.info li a p:last-child,
-.middle-container .company-department-list ul.info li a p:last-child {
-  width: calc(40% - 15px);
+.middle-container .company-contact-list ul.info li a p.flex-2,
+.middle-container .company-department-list ul.info li a p.flex-2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+  max-width: 39%;
+  display: initial;
 }
 
 .middle-container .company-contact-list ul.info li a:hover p,
@@ -3103,6 +3150,7 @@ ul.edit-tool li a:hover {
   }
   .middle-container .company-content .company-title p {
     font-size: 0.688rem;
+    line-height: 1rem;
   }
   .middle-container .company-content .company-information {
     max-width: calc(100% - 220px);
@@ -3123,6 +3171,10 @@ ul.edit-tool li a:hover {
   }
   .middle-container .company-contact-list ul.info li a p,
   .middle-container .company-department-list ul.info li a p {
+    -webkit-box-flex: calc(30% - 10px);
+        -ms-flex: calc(30% - 10px);
+            flex: calc(30% - 10px);
+    padding: 5px;
     font-size: 0.813rem;
   }
 }
@@ -3141,8 +3193,8 @@ ul.edit-tool li a:hover {
   .middle-container .company-content .company-information ul.info li p span {
     font-size: 0.688rem;
   }
-  .middle-container .company-content .company-information ul.info li:nth-child(4), .middle-container .company-content .company-information ul.info li:nth-child(5) {
-    width: 100%;
+  .middle-container .company-content .company-information ul.info li:nth-child(2) p span:nth-child(2) {
+    max-width: calc(100% - 90px);
   }
   .middle-container .company-contact-list ul.info li a p,
   .middle-container .company-department-list ul.info li a p {
@@ -3154,6 +3206,9 @@ ul.edit-tool li a:hover {
 }
 
 @media all and (max-width: 700px) {
+  .middle-container .company-content {
+    display: block;
+  }
   .middle-container .company-content .company-title {
     max-width: 100%;
     border-radius: 18px 18px 0 0;
@@ -3165,6 +3220,7 @@ ul.edit-tool li a:hover {
   }
   .middle-container .company-content .company-information {
     max-width: 100%;
+    border-radius: 0 0 18px 18px;
   }
   .middle-container .company-content .company-information ul.edit-tool {
     top: initial;
@@ -3172,6 +3228,11 @@ ul.edit-tool li a:hover {
   }
   .middle-container .company-content .company-information .menu {
     top: 132px;
+  }
+  .middle-container .company-content .company-information ul.info li {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
   }
   .middle-container .company-contact-list h4.main-title,
   .middle-container .company-department-list h4.main-title {
@@ -3193,9 +3254,6 @@ ul.edit-tool li a:hover {
   .middle-container .company-content .company-information {
     max-width: 100%;
   }
-  .middle-container .company-content .company-information ul.info li:nth-child(1), .middle-container .company-content .company-information ul.info li:nth-child(2) {
-    width: 100%;
-  }
   .middle-container .company-content .company-information ul.edit-tool {
     bottom: initial;
     top: 10px;
@@ -3203,10 +3261,33 @@ ul.edit-tool li a:hover {
   .middle-container .company-content .company-information .menu {
     top: 62px;
   }
-  .middle-container .company-contact-list ul.info li a p,
-  .middle-container .company-department-list ul.info li a p {
-    padding: 0 0 0 5px;
+  .middle-container .company-content .company-information ul.info li {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
   }
+}
+
+ul.edit-record-user li {
+  padding: 4px 0;
+}
+
+ul.edit-record-user li p {
+  float: left;
+  font-size: 0.75rem;
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+ul.edit-record-user li p.id span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 0.688rem;
+  font-weight: bold;
 }
 
 .footer-inside {
@@ -3481,7 +3562,7 @@ ul.edit-tool li a:hover {
   float: left;
   width: 50%;
   padding: 0 20px 0 20px;
-  text-align: right;
+  text-align: center;
   height: 44px;
   line-height: 44px;
 }
@@ -3503,6 +3584,14 @@ ul.edit-tool li a:hover {
 
 .popup-container .fillin-box .field fieldset .both-for-date .text-error {
   bottom: -14px;
+}
+
+.popup-container .fillin-box .field fieldset .one-field-date input {
+  width: 100%;
+}
+
+.popup-container .fillin-box .field fieldset .one-field-date::before {
+  display: none;
 }
 
 .popup-container .fillin-box .field fieldset .disabled-bg {
@@ -3879,13 +3968,13 @@ ul.edit-tool li a:hover {
 .popup-container .fillin-box .field ul.show-contact-list li .info p {
   font-size: 0.813rem;
   float: left;
+  width: 100%;
 }
 
 .popup-container .fillin-box .field ul.show-contact-list li .info p span {
   vertical-align: top;
   min-width: 50px;
   padding-right: 5px;
-  display: inline-block;
 }
 
 .popup-container .fillin-box .field ul.show-contact-list li .info .add {
@@ -4415,31 +4504,6 @@ ul.edit-tool li a:hover {
   margin: 0 auto;
 }
 
-.popup-container ul.edit-record-user li {
-  padding: 4px 0;
-}
-
-.popup-container ul.edit-record-user li p {
-  float: left;
-  font-size: 0.75rem;
-  line-height: 24px;
-}
-
-.popup-container ul.edit-record-user li p.time {
-  padding-right: 15px;
-}
-
-.popup-container ul.edit-record-user li p.id span {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
-  margin-right: 8px;
-  font-size: 0.688rem;
-  font-weight: bold;
-}
-
 .popup-container .bottom-btn-tool {
   padding: 25px 20px;
   background-color: #ebf5f4;
@@ -4472,6 +4536,10 @@ ul.edit-tool li a:hover {
 
 .popup-container .bottom-btn-tool ul.edit-record-user {
   padding-left: 25px;
+}
+
+.popup-container .bottom-btn-tool ul.edit-record-user li p.time {
+  padding-right: 10px;
 }
 
 .popup-container .both-btn .btn--primary-xl {
@@ -4838,6 +4906,10 @@ ul.edit-tool li a:hover {
 
 .popup-finish .history-box .fillin-box {
   max-width: 480px;
+}
+
+.popup-finish .history-box .fillin-box ul.edit-record-user li p.time {
+  padding-right: 10px;
 }
 
 .popup-finish .fillin-info p.input-value {
