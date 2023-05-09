@@ -759,6 +759,21 @@ a.reminder:hover {
   color: #555;
 }
 
+.text-none p.icon-nostore, .text-none p.icon-notopen {
+  font-size: 26px;
+  line-height: 38px;
+  color: #9e9e9e;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.text-none p.icon-nostore img, .text-none p.icon-notopen img {
+  max-width: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .pages {
   width: 100%;
   padding: 15px 0;
