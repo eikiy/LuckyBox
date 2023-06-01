@@ -18,33 +18,92 @@
     <h5 class="subtitle"><strong>針對這筆資金的投資組合建議，請紀錄客戶以下各項訪談結果</strong>
     </h5>
     <form class="form-con-box">
+        <!-- 下拉狀態 -->
         <fieldset class="form_row">
             <div class="rowCont">
                 <div class="form_group">
                     <div class="a_field">
                         <label class="rowTitle">1.可承受之預期年化報酬率/波動度</label>
-                        <div class="txn-input-select">
-                            <select formcontrolname="riskAttr" id="riskAttr" class="form-select form-select-sm">
-                                <option value="">請選擇</option>
-                                <option value="">1</option>
-                            </select>
+                        <div class="box-x3">
+                            <div class="txn-input-select">
+                                <select formcontrolname="riskAttr" id="riskAttr" class="form-select form-select-sm">
+                                    <option value="">請選擇</option>
+                                    <option value="" selected>A</option>
+                                </select>
+                            </div>
+                            <!-- 無法選擇內容 底色 + bg-gary -->
+                            <div class="txn-input-select bg-gary ">
+                                <select formcontrolname="riskAttr" id="riskAttr" class="form-select form-select-sm" disabled="disabled">
+                                    <option value="">請選擇</option>
+                                    <option valve="" selected>A</option>
+                                </select>
+                                <div class="d-inline"> % / </div>
+                            </div>
+                            <!-- 無法選擇內容 底色 + bg-gary -->
+                            <div class="txn-input-select bg-gary ">
+                                <select formcontrolname="rateStart" id="rateStart" class="form-select form-select-sm" disabled="disabled">
+                                    <option value="">請選擇</option>
+                                    <option valve="" selected>A</option>
+                                </select>
+                                <div class="d-inline"> % </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="a_field both-d top-line">
+                </div>
+            </div>
+        </fieldset>
+        <!-- 輸入框狀態 -->
+        <fieldset class="form_row">
+            <div class="rowCont">
+                <div class="form_group">
+                    <div class="a_field">
+                        <label class="rowTitle">1.可承受之預期年化報酬率/波動度</label>
+                        <div class="box-x3">
+                            <div class="txn-input-select">
+                                <select formcontrolname="riskAttr" id="riskAttr" class="form-select form-select-sm">
+                                    <option value="">請選擇</option>
+                                    <option value="" selected>Z</option>
+                                </select>
+                            </div>
+                            <div class="txn-input bg-gary">
+                                <input id="rateStartZ" type="text" class="form-control " maxlength="50" formcontrolname="rateStart" value="10">
+                                <div class="d-inline"> % / </div>
+                            </div>
+                            <div class="txn-input bg-gary">
+                                <input id="rateEndZ" type="text" class="form-control" maxlength="50" formcontrolname="rateEnd" value="100">
+                                <div class="d-inline"> % </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 輸入框狀態 -->
+                    <!-- <div class="a_field both-d top-line">
+                        <div class="txn-input">
+                            <input id="rateStartZ" type="text" class="form-control " maxlength="50" formcontrolname="rateStart" value="10">
+                            <div class="d-inline"> % / </div>
+                        </div>
+                        <div class="txn-input">
+                            <input id="rateEndZ" type="text" class="form-control" maxlength="50" formcontrolname="rateEnd" value="100">
+                            <div class="d-inline"> % </div>
+                        </div>
+                    </div> -->
+                    <!-- 下拉狀態 -->
+                    <!-- 無法選擇內容 底色 + bg-gary -->
+                    <!-- <div class="a_field both-d top-line bg-gary">
                         <div class="txn-input-select">
-                            <select formcontrolname="riskAttr" id="riskAttr" class="form-select form-select-sm">
+                            <select formcontrolname="riskAttr" id="riskAttr" class="form-select form-select-sm" disabled="disabled">
                                 <option value="">請選擇</option>
+                                <option valve="" selected>10</option>
                             </select>
                             <div class="d-inline"> % / </div>
                         </div>
-                        <div class="d-inline txn-input-select txn-input-select-disabled">
-                            <select formcontrolname="rateStart" id="rateStart" class="form-select form-select-sm"
-                                disabled="disabled">
+                        <div class="txn-input-select">
+                            <select formcontrolname="rateStart" id="rateStart" class="form-select form-select-sm" disabled="disabled">
                                 <option value="">請選擇</option>
+                                <option valve="" selected>15</option>
                             </select>
                             <div class="d-inline"> % </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </fieldset>
@@ -57,98 +116,23 @@
                             <div class="date-picker">
                                 <input id="datepicker-start" class="form-control date-input" title="datepicker">
                                 <span id="datepicker-start-icon" class="icon-calendar">
-                                    <svg width="20" height="20" fill="#4eb5a5" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                                    <svg width="20" height="20" fill="#4eb5a5" class="bi bi-calendar" viewBox="0 0 448 512">
+                                        <path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
                                     </svg>
                                 </span>
-                                <!-- qs-hidden -->
-                                <div class="qs-datepicker-container" style="top: 28px; left: 0px;">
-                                    <div class="qs-datepicker"><div class="qs-controls"><div class="qs-arrow qs-left"></div><div class="qs-month-year"><span class="qs-month">四月</span><span class="qs-year">2024</span></div><div class="qs-arrow qs-right"></div></div><div class="qs-squares"><div class="qs-square qs-day">日</div><div class="qs-square qs-day">一</div><div class="qs-square qs-day">二</div><div class="qs-square qs-day">三</div><div class="qs-square qs-day">四</div><div class="qs-square qs-day">五</div><div class="qs-square qs-day">六</div><div class="qs-square 日 qs-outside-current-month qs-empty" data-direction="-1"></div><div class="qs-square 一 qs-num" data-direction="0">1</div><div class="qs-square 二 qs-num" data-direction="0">2</div><div class="qs-square 三 qs-num" data-direction="0">3</div><div class="qs-square 四 qs-num" data-direction="0">4</div><div class="qs-square 五 qs-num" data-direction="0">5</div><div class="qs-square 六 qs-num" data-direction="0">6</div><div class="qs-square 日 qs-num" data-direction="0">7</div><div class="qs-square 一 qs-num" data-direction="0">8</div><div class="qs-square 二 qs-num" data-direction="0">9</div><div class="qs-square 三 qs-num" data-direction="0">10</div><div class="qs-square 四 qs-num" data-direction="0">11</div><div class="qs-square 五 qs-num" data-direction="0">12</div><div class="qs-square 六 qs-num" data-direction="0">13</div><div class="qs-square 日 qs-num" data-direction="0">14</div><div class="qs-square 一 qs-num" data-direction="0">15</div><div class="qs-square 二 qs-num" data-direction="0">16</div><div class="qs-square 三 qs-num" data-direction="0">17</div><div class="qs-square 四 qs-num" data-direction="0">18</div><div class="qs-square 五 qs-num" data-direction="0">19</div><div class="qs-square 六 qs-num" data-direction="0">20</div><div class="qs-square 日 qs-num" data-direction="0">21</div><div class="qs-square 一 qs-num" data-direction="0">22</div><div class="qs-square 二 qs-num" data-direction="0">23</div><div class="qs-square 三 qs-num" data-direction="0">24</div><div class="qs-square 四 qs-num" data-direction="0">25</div><div class="qs-square 五 qs-num" data-direction="0">26</div><div class="qs-square 六 qs-num" data-direction="0">27</div><div class="qs-square 日 qs-num" data-direction="0">28</div><div class="qs-square 一 qs-num" data-direction="0">29</div><div class="qs-square 二 qs-num" data-direction="0">30</div><div class="qs-square 三 qs-outside-current-month qs-empty" data-direction="1"></div><div class="qs-square 四 qs-outside-current-month qs-empty" data-direction="1"></div><div class="qs-square 五 qs-outside-current-month qs-empty" data-direction="1"></div><div class="qs-square 六 qs-outside-current-month qs-empty" data-direction="1"></div></div><div class="qs-overlay qs-hidden"><div><input class="qs-overlay-year" placeholder="4-digit year" inputmode="numeric"><div class="qs-close">✕</div></div><div class="qs-overlay-month-container"><div class="qs-overlay-month" data-month-num="0">一月</div><div class="qs-overlay-month" data-month-num="1">二月</div><div class="qs-overlay-month" data-month-num="2">三月</div><div class="qs-overlay-month" data-month-num="3">四月</div><div class="qs-overlay-month" data-month-num="4">五月</div><div class="qs-overlay-month" data-month-num="5">六月</div><div class="qs-overlay-month" data-month-num="6">七月</div><div class="qs-overlay-month" data-month-num="7">八月</div><div class="qs-overlay-month" data-month-num="8">九月</div><div class="qs-overlay-month" data-month-num="9">十月</div><div class="qs-overlay-month" data-month-num="10">十一月</div><div class="qs-overlay-month" data-month-num="11">十二月</div></div><div class="qs-submit qs-disabled">確認</div></div></div>
-                                </div>
                             </div>
                             <div class="date-picker-dash">~</div>
                             <div class="date-picker">
                                 <input id="datepicker-end" class="form-control date-input" title="datepicker">
-                                <span id="datepicker-end-icon" class="icon-calendar">
-                                    <svg width="20" height="20" fill="#4eb5a5" class="bi bi-calendar" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z">
-                                        </path>
+                                <span id="datepicker-start-icon" class="icon-calendar">
+                                    <svg width="20" height="20" fill="#4eb5a5" class="bi bi-calendar" viewBox="0 0 448 512">
+                                        <path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+                                    </svg>
+                                </span><span id="datepicker-start-icon" class="icon-calendar">
+                                    <svg width="20" height="20" fill="#4eb5a5" class="bi bi-calendar" viewBox="0 0 448 512">
+                                        <path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
                                     </svg>
                                 </span>
-                                <div class="qs-datepicker-container qs-hidden">
-                                    <div class="qs-datepicker">
-                                        <div class="qs-controls">
-                                            <div class="qs-arrow qs-left"></div>
-                                            <div class="qs-month-year"><span class="qs-month">五月</span><span class="qs-year">2023</span></div>
-                                            <div class="qs-arrow qs-right"></div>
-                                        </div>
-                                        <div class="qs-squares">
-                                            <div class="qs-square qs-day">日</div>
-                                            <div class="qs-square qs-day">一</div>
-                                            <div class="qs-square qs-day">二</div>
-                                            <div class="qs-square qs-day">三</div>
-                                            <div class="qs-square qs-day">四</div>
-                                            <div class="qs-square qs-day">五</div>
-                                            <div class="qs-square qs-day">六</div>
-                                            <div class="qs-square 日 qs-outside-current-month qs-empty" data-direction="-1"></div>
-                                            <div class="qs-square 一 qs-num" data-direction="0">1</div>
-                                            <div class="qs-square 二 qs-num" data-direction="0">2</div>
-                                            <div class="qs-square 三 qs-num" data-direction="0">3</div>
-                                            <div class="qs-square 四 qs-num" data-direction="0">4</div>
-                                            <div class="qs-square 五 qs-num" data-direction="0">5</div>
-                                            <div class="qs-square 六 qs-num" data-direction="0">6</div>
-                                            <div class="qs-square 日 qs-num" data-direction="0">7</div>
-                                            <div class="qs-square 一 qs-num" data-direction="0">8</div>
-                                            <div class="qs-square 二 qs-num" data-direction="0">9</div>
-                                            <div class="qs-square 三 qs-num" data-direction="0">10</div>
-                                            <div class="qs-square 四 qs-num" data-direction="0">11</div>
-                                            <div class="qs-square 五 qs-num" data-direction="0">12</div>
-                                            <div class="qs-square 六 qs-num" data-direction="0">13</div>
-                                            <div class="qs-square 日 qs-num" data-direction="0">14</div>
-                                            <div class="qs-square 一 qs-num" data-direction="0">15</div>
-                                            <div class="qs-square 二 qs-num" data-direction="0">16</div>
-                                            <div class="qs-square 三 qs-num" data-direction="0">17</div>
-                                            <div class="qs-square 四 qs-num qs-current" data-direction="0">18</div>
-                                            <div class="qs-square 五 qs-num" data-direction="0">19</div>
-                                            <div class="qs-square 六 qs-num" data-direction="0">20</div>
-                                            <div class="qs-square 日 qs-num" data-direction="0">21</div>
-                                            <div class="qs-square 一 qs-num" data-direction="0">22</div>
-                                            <div class="qs-square 二 qs-num" data-direction="0">23</div>
-                                            <div class="qs-square 三 qs-num" data-direction="0">24</div>
-                                            <div class="qs-square 四 qs-num" data-direction="0">25</div>
-                                            <div class="qs-square 五 qs-num" data-direction="0">26</div>
-                                            <div class="qs-square 六 qs-num" data-direction="0">27</div>
-                                            <div class="qs-square 日 qs-num" data-direction="0">28</div>
-                                            <div class="qs-square 一 qs-num" data-direction="0">29</div>
-                                            <div class="qs-square 二 qs-num" data-direction="0">30</div>
-                                            <div class="qs-square 三 qs-num" data-direction="0">31</div>
-                                            <div class="qs-square 四 qs-outside-current-month qs-empty" data-direction="1"></div>
-                                            <div class="qs-square 五 qs-outside-current-month qs-empty" data-direction="1"></div>
-                                            <div class="qs-square 六 qs-outside-current-month qs-empty" data-direction="1"></div>
-                                        </div>
-                                        <div class="qs-overlay qs-hidden">
-                                            <div><input class="qs-overlay-year" placeholder="4-digit year" inputmode="numeric">
-                                                <div class="qs-close">✕</div>
-                                            </div>
-                                            <div class="qs-overlay-month-container">
-                                                <div class="qs-overlay-month" data-month-num="0">一月</div>
-                                                <div class="qs-overlay-month" data-month-num="1">二月</div>
-                                                <div class="qs-overlay-month" data-month-num="2">三月</div>
-                                                <div class="qs-overlay-month" data-month-num="3">四月</div>
-                                                <div class="qs-overlay-month" data-month-num="4">五月</div>
-                                                <div class="qs-overlay-month" data-month-num="5">六月</div>
-                                                <div class="qs-overlay-month" data-month-num="6">七月</div>
-                                                <div class="qs-overlay-month" data-month-num="7">八月</div>
-                                                <div class="qs-overlay-month" data-month-num="8">九月</div>
-                                                <div class="qs-overlay-month" data-month-num="9">十月</div>
-                                                <div class="qs-overlay-month" data-month-num="10">十一月</div>
-                                                <div class="qs-overlay-month" data-month-num="11">十二月</div>
-                                            </div>
-                                            <div class="qs-submit qs-disabled">確認</div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,7 +140,8 @@
             </div>
         </fieldset>
         <fieldset class="form_row">
-            <div class="rowCont forError">
+            <!-- 錯誤紅框 rowCont + forError -->
+            <div class="rowCont">
                 <div class="form_group">
                     <div class="a_field">
                         <label class="rowTitle" for="investPrefer">3.投資偏好</label>
@@ -175,7 +160,8 @@
             </div>
         </fieldset>
         <fieldset class="form_row">
-            <div class="rowCont forDisabled">
+            <!-- 不能填寫的深灰框 rowCont +  forDisabled -->
+            <div class="rowCont">
                 <div class="form_group">
                     <div class="a_field">
                         <label class="rowTitle" for="investLimit">4.投資限制</label>
