@@ -2985,6 +2985,30 @@ ul.edit-tool li a:hover {
   line-height: 1.25rem;
 }
 
+.middle-container .company-content .company-title .status-type,
+.middle-container .company-contact-list .company-title .status-type,
+.middle-container .company-department-list .company-title .status-type {
+  padding-top: 18px;
+}
+
+.middle-container .company-content .company-title .status-type p.holkee,
+.middle-container .company-contact-list .company-title .status-type p.holkee,
+.middle-container .company-department-list .company-title .status-type p.holkee {
+  background-color: #11948a;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #fff;
+  display: inline;
+}
+
+.middle-container .company-content .company-title .status-type p.join-date,
+.middle-container .company-contact-list .company-title .status-type p.join-date,
+.middle-container .company-department-list .company-title .status-type p.join-date {
+  color: #11948a;
+  padding-top: 8px;
+  font-size: 0.688rem;
+}
+
 .middle-container .company-contact-list,
 .middle-container .company-department-list {
   margin: 20px 0 15px 0;
@@ -3151,6 +3175,9 @@ ul.edit-tool li a:hover {
   .middle-container .company-content .company-title p {
     font-size: 0.688rem;
     line-height: 1rem;
+  }
+  .middle-container .company-content .company-title .status-type {
+    padding-top: 10px;
   }
   .middle-container .company-content .company-information {
     max-width: calc(100% - 220px);
