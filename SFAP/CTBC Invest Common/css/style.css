@@ -478,4 +478,78 @@ div.date-picker-dash {
 .form-select {
   height: 28px;
 }
+
+.c-popup-modal {
+  padding: 10px;
+}
+
+.c-popup-modal .page-link {
+  color: #107778 !important;
+}
+
+.c-popup-modal .page-selected {
+  color: #fff !important;
+}
+
+.c-popup-modal .popup-pages p {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.c-popup-modal .popup-top-title {
+  color: #107778;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  margin: 0 auto;
+}
+
+.c-popup-modal .ctbc-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  border: 1px solid #d8dfe3;
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style {
+  width: 100%;
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style tr:nth-child(even) {
+  background-color: rgba(216, 223, 227, 0.4);
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style td {
+  text-align: center;
+  min-width: 70px;
+  font-size: 13px;
+  padding: 6px 12px;
+  vertical-align: middle;
+  border-right: 2px solid #d8dfe3;
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style td.for-day {
+  min-width: 130px;
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style td:last-child {
+  border: none;
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style thead tr {
+  background-color: #107778;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+}
+
+.c-popup-modal .ctbc-table-container .ctbc-table-style thead tr td {
+  padding: 6px 5px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -304,3 +304,72 @@ div.date-picker-dash {
 .form-select {
   height: 28px;
 }
+
+
+
+
+// -----popup
+.c-popup-modal{
+  .page-link{
+    color: #107778 !important;
+  }
+  .page-selected{
+    color: #fff !important;
+  }
+  padding: 10px;
+  .popup-pages{
+    p{
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      margin: 0;
+      padding-bottom: 15px;
+    }
+  }
+  .popup-top-title {
+    color: #107778;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin:0 auto;
+  }
+  .ctbc-table-container{
+    width: 100%;
+    overflow-x: auto;
+    // height: 450px;
+    margin-bottom: 20px;
+    border: 1px solid #d8dfe3;
+    .ctbc-table-style{
+      width: 100%;
+      tr:nth-child(even){
+        background-color: rgba(216, 223, 227, .4);
+      }
+      td{
+        text-align: center;
+        min-width: 70px;
+        font-size: 13px;
+        padding: 6px 12px;
+        vertical-align: middle;
+        border-right: 2px solid #d8dfe3;
+        &.for-day{
+          min-width: 130px;
+        }
+      }
+      td:last-child{
+        border: none;
+      }
+      thead tr{
+        background-color: #107778;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        font-size: 16px;
+        td{
+          padding:6px 5px;
+        }
+      }
+    }
+  }
+}
