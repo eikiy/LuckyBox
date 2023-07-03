@@ -255,6 +255,11 @@ body {
   }
 }
 
+.bg_blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
 .btn_default {
   width: 100%;
   text-align: center;
@@ -262,12 +267,12 @@ body {
 }
 
 .btn_default a {
-  background-color: #ed392d;
+  background-color: #FFAF00;
   text-align: center;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 50px;
   display: inline-block;
-  min-width: 160px;
+  min-width: 170px;
   min-height: 22px;
   line-height: 22px;
   color: #fff;
@@ -308,7 +313,7 @@ body {
   top: 0;
   left: 0;
   background-color: #fff;
-  z-index: 2;
+  z-index: 5;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -378,6 +383,38 @@ body {
   background-color: #ffbb28;
 }
 
+.header_wrap .cont_user {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_wrap .cont_user .profile {
+  position: relative;
+  padding-left: 50px;
+}
+
+.header_wrap .cont_user .profile .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header_wrap .cont_user .profile p {
+  line-height: 42px;
+}
+
+.header_wrap .cont_user:hover .profile p {
+  color: #2196f3;
+}
+
 .main_wrap {
   width: 100%;
   margin: 0 auto;
@@ -412,6 +449,41 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main_wrap .inside_banner {
+  width: 100%;
+  height: 215px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main_wrap .inside_banner .bk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0000004e;
+}
+
+.main_wrap .inside_banner h3.bn_title {
+  font-size: 46px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .main_wrap .area_content {
@@ -614,6 +686,57 @@ body {
   float: left;
   width: 33.33%;
   padding: 10px 15px;
+  position: relative;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li {
+  padding: 5px;
+  width: initial;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a {
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 50px;
+  min-width: 50px;
+  color: #fff;
+  background-color: #27d0ca;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a:hover {
+  opacity: .9;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a.bg_c_01 {
+  background-color: #FF3B3B;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a.bg_c_02 {
+  background-color: #EFBF00;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a.bg_c_03 {
+  background-color: #3bd55c;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a.bg_c_04 {
+  background-color: #2ae3be;
+}
+
+.main_wrap .area_content ul.country_list li ul.hashtag li p a.bg_c_05 {
+  background-color: #c362c8;
 }
 
 .main_wrap .area_content ul.country_list li a {
@@ -673,7 +796,6 @@ body {
 
 .main_wrap .plan_content {
   width: calc(100% - 40px);
-  max-width: 1200px;
   padding: 40px 0;
   margin: 0 auto;
 }
@@ -823,6 +945,46 @@ body {
   padding: 0 0 30px 0;
 }
 
+.main_wrap .wifi_router_info .breadcrumb {
+  float: left;
+  width: 100%;
+  padding: 0 10px 25px 10px;
+}
+
+.main_wrap .wifi_router_info .breadcrumb p {
+  color: #989898;
+  font-size: 13px;
+}
+
+.main_wrap .wifi_router_info .breadcrumb p span {
+  color: #333;
+}
+
+.main_wrap .wifi_router_info .breadcrumb p a {
+  color: #333;
+}
+
+.main_wrap .wifi_router_info .breadcrumb p a:hover {
+  text-decoration: underline;
+}
+
+.main_wrap .wifi_router_info .breadcrumb p a.home {
+  position: relative;
+  padding-left: 25px;
+}
+
+.main_wrap .wifi_router_info .breadcrumb p a.home::after {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7.5px);
+  content: "";
+  width: 18px;
+  height: 15px;
+  display: block;
+  background: url(../images/house-chimney-solid.svg) center center no-repeat;
+  background-size: contain;
+}
+
 .main_wrap .wifi_router_info .img_wifi_router {
   float: left;
   width: 300px;
@@ -842,6 +1004,56 @@ body {
 .main_wrap .wifi_router_info .other_item h3.top_title, .main_wrap .wifi_router_info .other_item h4.sub_title {
   text-align: left;
   padding-bottom: 15px;
+}
+
+.main_wrap .wifi_router_info ul.hashtag {
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li {
+  display: inline-block;
+  padding: 5px 10px 5px 0;
+  width: initial;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a {
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 50px;
+  min-width: 50px;
+  color: #fff;
+  background-color: #27d0ca;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a:hover {
+  opacity: .9;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a.bg_c_01 {
+  background-color: #FF3B3B;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a.bg_c_02 {
+  background-color: #EFBF00;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a.bg_c_03 {
+  background-color: #3bd55c;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a.bg_c_04 {
+  background-color: #2ae3be;
+}
+
+.main_wrap .wifi_router_info ul.hashtag li p a.bg_c_05 {
+  background-color: #c362c8;
 }
 
 .main_wrap .wifi_router_info p.plan_textinfo {
@@ -903,74 +1115,153 @@ body {
   margin: 0 auto;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li {
-  padding-bottom: 10px;
-}
-
-.main_wrap .shopping_contents .fillinBox ul li h4 {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item {
+.main_wrap .shopping_contents .fillinBox .other_item {
   background-color: #fff;
   border-radius: 20px;
   padding: 20px;
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item .img_wifi_router {
-  padding-bottom: 15px;
-  text-align: center;
+.main_wrap .shopping_contents .fillinBox .order_contents {
+  margin: 60px 0 40px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item .img_wifi_router img {
-  width: 80%;
-  max-width: 200px;
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item {
+  position: relative;
+  padding-left: 45%;
+  min-height: 180px;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item h3.top_title {
-  font-size: 18px;
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item .img_wifi_router {
+  position: absolute;
+  top: -40px;
+  left: calc(22.5% - 90px);
+  width: 180px;
+  height: 180px;
+}
+
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item .img_wifi_router img {
+  width: 100%;
+  border-radius: 25px;
+  -webkit-box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item h3 {
+  font-size: 20px;
   line-height: 22px;
-  background-color: #f4f4f4;
-  padding: 15px;
+  padding: 15px 0;
+  font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item h4.plan_subtitle {
-  font-size: 16px;
-  text-align: center;
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFAF00;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item .f_c_red {
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item .f_c_red {
   color: #ff103f;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item .f_c_green {
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item .f_c_green {
   color: #07b53b;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item p.plan_textinfo {
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item p.plan_textinfo {
   font-size: 14px;
   line-height: 24px;
   text-align: left;
   color: #333;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.order_contents .other_item p.plan_textinfo a {
+.main_wrap .shopping_contents .fillinBox .order_contents .other_item p.plan_textinfo a {
   color: #2196f3;
   text-decoration: underline;
   padding: 0 5px;
 }
 
+.main_wrap .shopping_contents .fillinBox .order-done {
+  margin: 20px auto 40px auto;
+}
+
+.main_wrap .shopping_contents .fillinBox .order-done .other_item {
+  padding: 30px 40px;
+}
+
+.main_wrap .shopping_contents .fillinBox .order-done p {
+  color: #333;
+}
+
+.main_wrap .shopping_contents .fillinBox .order-done p.pro {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.main_wrap .shopping_contents .fillinBox .order-done p.order-nb {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.main_wrap .shopping_contents .fillinBox .order-done .pro-text {
+  float: left;
+}
+
+.main_wrap .shopping_contents .fillinBox .order-done .btn_default {
+  width: initial;
+  float: right;
+  margin-top: 10px;
+}
+
+.main_wrap .shopping_contents .fillinBox h4.order_subtitle {
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #DBDBDB;
+  border-width: 1px 0 1px;
+  font-weight: bold;
+}
+
+.main_wrap .shopping_contents .fillinBox ul {
+  padding-bottom: 10px;
+}
+
+.main_wrap .shopping_contents .fillinBox ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.main_wrap .shopping_contents .fillinBox ul li p {
+  padding: 10px 0;
+  color: #333;
+}
+
 .main_wrap .shopping_contents .fillinBox ul li.verify input {
   float: left;
-  max-width: 200px;
+  max-width: 180px;
+  color: #FFAF00;
+  font-weight: bold;
+}
+
+.main_wrap .shopping_contents .fillinBox ul li .l_box {
+  float: left;
+  width: 110px;
+}
+
+.main_wrap .shopping_contents .fillinBox ul li .r_box {
+  float: left;
+  width: calc(100% - 110px);
 }
 
 .main_wrap .shopping_contents .fillinBox p.label_title {
+  font-size: 16px;
   padding: 12px 0;
-  color: #888888;
+}
+
+.main_wrap .shopping_contents .fillinBox p.pro_text {
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .main_wrap .shopping_contents .fillinBox .f_red {
@@ -994,27 +1285,31 @@ body {
 }
 
 .main_wrap .shopping_contents .fillinBox a.btn_verify {
+  margin: 4px 5px 3px 8px;
   float: left;
   font-size: 13px;
-  padding: 0 15px;
-  line-height: 40px;
-  background-color: #95a83b;
-  color: #fff;
+  padding: 0 12px;
+  line-height: 28px;
+  border-radius: 40px;
+  border: 2px solid #333;
+  color: #333;
   display: inline-block;
+  font-weight: bold;
 }
 
 .main_wrap .shopping_contents .fillinBox a.btn_verify:hover {
-  opacity: .9;
+  opacity: .8;
 }
 
 .main_wrap .shopping_contents .fillinBox input,
 .main_wrap .shopping_contents .fillinBox textarea {
   border: 1px solid #e0e0e0;
-  width: calc(100% - 22px);
-  padding: 8px 10px;
+  width: 100%;
+  padding: 8px 15px;
   font-size: 15px;
   line-height: 24px;
   color: #333;
+  border-radius: 42px;
 }
 
 .main_wrap .shopping_contents .fillinBox input[type=text],
@@ -1029,6 +1324,46 @@ body {
 .main_wrap .shopping_contents .fillinBox input[type=text]:focus,
 .main_wrap .shopping_contents .fillinBox textarea:focus {
   border-color: #9e9e9e;
+}
+
+.main_wrap .shopping_contents .fillinBox .error_box {
+  position: relative;
+}
+
+.main_wrap .shopping_contents .fillinBox .error_box P.the_reminder {
+  font-size: 12px;
+  position: absolute;
+  right: 5px;
+  bottom: -10px;
+  background-color: #FF3B3B;
+  color: #fff;
+  line-height: initial;
+  padding: 3px 15px;
+  border-radius: 20px;
+}
+
+.main_wrap .shopping_contents .fillinBox .error_box input {
+  border-color: #FF3B3B;
+}
+
+.main_wrap .shopping_contents .fillinBox .both_input {
+  width: 100%;
+}
+
+.main_wrap .shopping_contents .fillinBox .both_input input {
+  width: calc(50% - 20px);
+  display: inline-block;
+}
+
+.main_wrap .shopping_contents .fillinBox .both_input span {
+  text-align: center;
+  width: 30px;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.main_wrap .shopping_contents .fillinBox .both_input p.the_reminder {
+  text-align: right;
 }
 
 .main_wrap .shopping_contents .fillinBox ul.result_item {
@@ -1058,15 +1393,16 @@ body {
 .main_wrap .shopping_contents .fillinBox .styled-select {
   border: 1px solid #e0e0e0;
   width: 100%;
-  max-width: calc(100% - 22px);
+  max-width: 100%;
   min-height: 22px;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   overflow: hidden;
-  background: url(../images/icon_arr.png) right center no-repeat #fff;
+  background: url(../images/chevron-down-solid.svg) right center no-repeat #fff;
   background-size: contain;
+  border-radius: 42px;
 }
 
 .main_wrap .shopping_contents .fillinBox .styled-select select {
@@ -1076,13 +1412,12 @@ body {
   text-align: left !important;
   width: 100%;
   padding: 0px 15px;
-  height: 40px;
-  line-height: 40px;
+  height: 42px;
+  line-height: 42px;
   background: transparent;
   text-align: center;
   font-size: 15px;
   border: 0;
-  border-radius: 0;
   -webkit-appearance: none;
 }
 
@@ -1136,16 +1471,6 @@ body {
   padding: 8px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details .total_amount {
-  background-color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.main_wrap .shopping_contents .fillinBox .order-details .total_amount span {
-  color: #F94F4F;
-}
-
 .main_wrap .shopping_contents .fillinBox .note {
   margin: 10px 0;
   padding: 15px;
@@ -1192,7 +1517,7 @@ body {
 }
 
 .main_wrap .shopping_contents .fillinBox .confirm p a {
-  color: #95a83b;
+  color: #2196F3;
   text-decoration: underline;
   margin: 0 3px;
 }
@@ -1201,8 +1526,44 @@ body {
   text-decoration: none;
 }
 
-.main_wrap .shopping_contents .fillinBox .btn_default {
+.main_wrap .shopping_contents .fillinBox .bottom_btn {
   padding-top: 20px;
+  text-align: right;
+}
+
+.main_wrap .shopping_contents .fillinBox .bottom_btn p.cancel {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.main_wrap .shopping_contents .fillinBox .bottom_btn p.cancel a {
+  color: #333;
+}
+
+.main_wrap .shopping_contents .fillinBox .bottom_btn p.cancel a:hover {
+  text-decoration: underline;
+}
+
+.main_wrap .shopping_contents .fillinBox .bottom_btn p.btn_default {
+  width: initial;
+  display: inline-block;
+}
+
+.main_wrap .shopping_contents .fillinBox .total_amount {
+  font-size: 18px;
+  font-weight: bold;
+  border-color: #333;
+  border-top: 1px solid #333;
+}
+
+.main_wrap .shopping_contents .fillinBox .total_amount p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main_wrap .shopping_contents .fillinBox .total_amount .r_box p {
+  text-align: right;
 }
 
 .wifiotg_info {
@@ -1348,6 +1709,88 @@ body {
   animation: spin 1.5s linear infinite;
 }
 
+.login_cont {
+  width: 100%;
+  height: 100vh;
+  background-color: #00000040;
+  position: fixed;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login_cont .login_type_box {
+  width: 100%;
+  max-width: 400px;
+  min-height: 240px;
+  border-radius: 47px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 35px 20px;
+}
+
+.login_cont .login_type_box p.text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login_cont .login_type_box ul {
+  width: 100%;
+  max-width: 214px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.login_cont .login_type_box ul li {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.login_cont .login_type_box ul li a {
+  width: 100%;
+  height: 50px;
+  display: block;
+  color: #fff;
+  background-color: #333333;
+  border-radius: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.login_cont .login_type_box ul li a::before {
+  content: "";
+  width: 20px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 45px;
+  top: calc(50% - 12px);
+}
+
+.login_cont .login_type_box ul li.apple a::before {
+  background: url(../images/apple.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.login_cont .login_type_box ul li.google a {
+  background-color: #4285F4;
+}
+
+.login_cont .login_type_box ul li.google a::before {
+  background: url(../images/google.svg) center center no-repeat;
+  background-size: contain;
+}
+
 @media (max-width: 1200px) {
   .main_wrap .area_content ul.area_list li {
     width: 25%;
@@ -1463,7 +1906,7 @@ body {
     width: 50%;
   }
   .main_wrap .plan_content {
-    padding: 20px 0;
+    padding: 15px 0;
   }
   .main_wrap .wifi_router_info .img_wifi_router {
     width: 100%;
@@ -1479,6 +1922,10 @@ body {
   }
   .main_wrap .wifi_router_info .other_item h3.top_title, .main_wrap .wifi_router_info .other_item h4.sub_title {
     text-align: center;
+  }
+  .main_wrap .wifi_router_info ul.hashtag {
+    text-align: center;
+    padding-bottom: 5px;
   }
 }
 
@@ -1505,11 +1952,39 @@ body {
   .main_wrap .wifi_router_info {
     padding: 15px 0;
   }
+  .main_wrap .shopping_contents .fillinBox .order_contents .other_item {
+    padding-left: 20px;
+    padding-top: 70px;
+    text-align: center;
+  }
+  .main_wrap .shopping_contents .fillinBox .order_contents .other_item h3 {
+    padding-bottom: 10px;
+  }
+  .main_wrap .shopping_contents .fillinBox .order_contents .other_item .img_wifi_router {
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+  }
+  .main_wrap .shopping_contents .fillinBox .both_input input {
+    width: 100%;
+  }
+  .main_wrap .shopping_contents .fillinBox .both_input span {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .main_wrap .shopping_contents .fillinBox .order-done .pro-text {
+    float: initial;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .main_wrap .shopping_contents .fillinBox .order-done .btn_default {
+    float: initial;
+  }
 }
 
 @media (max-width: 599px) {
   .header_wrap .cont_middle {
-    padding: 0;
+    padding: 0 10px;
   }
   .header_wrap .menu {
     padding: 5px 0;
