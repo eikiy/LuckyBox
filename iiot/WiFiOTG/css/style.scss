@@ -130,13 +130,13 @@
 
       li {
         display: inline-block;
-        padding: 5px;
+        padding: 3px;
         p {
           font-size: 16px;
 
           a {
             color: #333333;
-            padding: 8px 20px;
+            padding: 8px 18px;
             display: block;
 
             &:hover {
@@ -162,6 +162,7 @@
   }
   .cont_user{
     margin-left: auto;
+    margin-left: 10px;
     display: flex;
     .profile{
       position: relative;
@@ -179,11 +180,12 @@
       }
       p{
         line-height: 42px;
-      }
-    }
-    &:hover{
-      .profile p{
-        color: #2196f3;
+        a{
+          color: #333;
+          &:hover {
+            color: #2196f3;
+          }
+        }
       }
     }
   }
@@ -854,7 +856,7 @@
           }
         }
       }
-      .order-done {
+      .order_done {
         margin:20px auto 40px auto;
         .other_item {
           padding: 30px 40px;
@@ -867,13 +869,13 @@
             padding-bottom: 15px;
           }
 
-          &.order-nb {
+          &.order_nb {
             font-size: 22px;
             font-weight: bold;
           }
         }
 
-        .pro-text {
+        .pro_text {
           float: left;
         }
 
@@ -942,18 +944,22 @@
         }
       }
       a.btn_verify{
-        margin:4px 5px 3px 8px;
+        margin:6px 5px 3px 8px;
         float: left;
         font-size: 13px;
         padding:0 12px;
-        line-height: 28px;
+        min-width: 65px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 40px;
         border:2px solid #333;
         color: #333;
-        display: inline-block;
         font-weight: bold;
         &:hover{
-          opacity: .8;
+          background-color: #333;
+          color: #fff;
         }
       }
       input,
@@ -993,6 +999,14 @@
         }
         input {
           border-color: #FF3B3B;
+        }
+      }
+      .for_phone{
+        position: relative;
+        .btn_verify{
+          position: absolute;
+          right: 5px;
+          top: 0;
         }
       }
       .both_input{
@@ -1182,6 +1196,164 @@
           }
         }
       }
+      
+    }
+    .order_fillin{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      .order_history {
+        width: 100%;
+        padding-bottom: 20px;
+        .card {
+          background-color: #fff;
+          border-radius: 25px;
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, .1);
+          margin:25px auto;
+          .top_cont{
+            width: 100%;
+            position: relative;
+            padding:10px 25px;
+            border-bottom: 1px solid #E8E8E8;
+            display: flex;
+            flex-wrap: wrap;
+            align-items:center;
+            cursor: pointer;
+            .arr{
+              content: "";
+              position: absolute;
+              right: 10px;
+              top: 6px;
+              width: 50px;
+              height: 50px;
+              display: block;
+              background: url(../images/chevron-down-solid.svg) center center no-repeat;
+              background-size: contain;
+            }
+            p.state{
+              width: 80px;
+              height: 30px;
+              font-size: 13px;
+              // line-height: 24px;
+              // text-align: center;
+              border-radius: 40px;
+              font-weight: bold;
+              margin:5px 18px 5px 0;
+              color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+            }
+            p.state_online{
+              border: 2px solid #FF3B3B;
+              background-color: #FF3B3B;
+            }
+            p.state_not_yet{
+              border: 2px solid #FF3B3B;
+              color: #FF3B3B;
+            }
+            p.state_done{
+              border: 2px solid #FFAF00;
+              background-color: #FFAF00;
+            }
+            .order_nb_info{
+              padding: 5px 0;
+              .order_date{
+                font-size: 12px;
+                color: #AFAFAF;
+                padding:0 0 3px 1px;
+              }
+              .order_nb{
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 1.5;
+                word-break: break-all;
+              }
+            }
+          }
+          .arr_up{
+            .arr{
+              -moz-transform:rotate(180deg);
+              -webkit-transform:rotate(180deg);
+              -o-transform:rotate(180deg);
+              -ms-transform:rotate(180deg);
+              transform:rotate(180deg);
+              }
+            }
+          .order_info{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .row{
+              display: flex;
+              width: 50%;
+              padding: 15px 25px;
+              ul{
+                width: 100%;
+                li{
+                  width: 100%;
+                  padding: 5px 0;
+                }
+              }
+              p.s_title{
+                font-size: 13px;
+                color: #979797;
+                line-height: 1.5;
+              }
+              p.text{
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 1.5;
+                word-break: break-all;
+                a{
+                  color: #333;
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+          .device_info{
+            padding: 15px 25px 17px 25px;
+            border-top: 1px solid #E8E8E8;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .device_nb{
+              font-size: 14px;
+              span{
+                font-weight: bold;
+              }
+            }
+            .btn{
+              padding-left: 15px;
+              a{
+                font-size: 13px;
+                padding: 0 12px;
+                line-height: 26px;
+                border-radius: 40px;
+                border: 2px solid #333;
+                color: #333;
+                display: inline-block;
+                font-weight: bold;
+                min-width: 65px;
+                text-align: center;
+                &:hover {
+                  background-color: #333;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .bg_end{
+          .top_cont{
+            background-color: #EEEEEE;
+          }
+        }
+      }
     }
   }
 }
@@ -1198,7 +1370,7 @@
 .footer_wrap {
   width: 100%;
   padding: 40px 0px;
-  background-color: #47392A;
+  background-color: #4f4c4c;
   p {
     font-size: 14px;
     line-height: 22px;
@@ -1446,6 +1618,29 @@
       width: 120px;
       height: 52px;
     }
+    .logged_in{
+      justify-content: left;
+      .menu{
+        width: 100%;
+      }
+    }
+    .cont_user{
+      margin-left: initial;
+      position:fixed;
+      right: 15px;
+      top: 10px;
+      .profile{
+        padding-left: 45px;
+        p{
+          line-height: 35px;
+          font-size: 14px;
+        }
+        .photo{
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
   } 
   .main_wrap {
     // padding-top: 50px;
@@ -1572,8 +1767,8 @@
           padding: 5px 0;
         }
       }
-      .order-done{
-        .pro-text{
+      .order_done{
+        .pro_text{
           float: initial;
           text-align: center;
           padding-bottom: 5px;
@@ -1583,6 +1778,42 @@
         }
       }
     }
+    .shopping_contents{
+      .order_fillin {
+        .order_history {
+          .card {
+            .top_cont {
+              .arr{
+                right: 5px;
+              }
+              padding: 10px 20px;
+              .order_nb_info {
+                .order_nb{
+                  font-size: 15px;
+                }
+              }
+            }
+            .order_info{
+              .row {
+                padding: 10px 20px;
+                p.s_title{
+                  font-size: 12px;
+                }
+                p.text{
+                  font-size: 14px;
+                }
+              }
+            }
+            .device_info{
+              padding: 10px 20px 13px 20px;
+              .btn{
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    } 
   } 
 }
 

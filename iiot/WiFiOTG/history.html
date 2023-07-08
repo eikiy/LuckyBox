@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>租借紀錄 - WiFiOTG | WiFi on the Go , Wherever You Go </title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			// 點了top展開與箭頭轉向
+			$(function(){
+				$(".order_history .card .top_cont").click(function(){
+					$(this).next(".order_info").stop(true, true).fadeToggle(0);
+					$(this).toggleClass("arr_up");
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header class="header_wrap">
+			<!-- 帳號登入 + logged_in -->
+			<section class="cont_middle logged_in clearfix">
+				<a class="header_logo" href="index.html">WiFiOTG</a>
+				<nav class="menu">
+					<ul>
+						<li>
+							<p><a href="index.html">首頁</a></p>
+						</li>
+						<li>
+							<p><a href="location.html">取還點查詢</a></p>
+						</li>
+						<li>
+							<p><a href="teaching.html">使用說明</a></p>
+						</li>
+						<li>
+							<p><a href="qa.html">常見問題</a></p>
+						</li>
+					</ul>
+				</nav>
+				<div class="cont_user">
+					<div class="profile">
+						<div class="photo"
+							style="background-image:url(https://lh3.googleusercontent.com/ogw/AGvuzYb52a2kJ6PRLTAuYe3-t0Hg2Dq7pfqEQ6iZ2oBu=s32-c-mo);">
+						</div>
+						<p>wendyshiue00123（<a href="index.html">登出</a>）</p>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main class="main_wrap">
+			<section class="shopping_contents">
+				<div class="order_fillin">
+					<h3 class="top_title">租借紀錄</h3>
+					<div class="order_history">
+						<!-- 租借中（展開） -->
+						<div class="card">
+							<div class="top_cont arr_up">
+								<!-- 租借中 state_online -->
+								<!-- 待取機 state_notyea -->
+								<!-- 已完成 state_done -->
+								<p class="state state_online">租借中</p>
+								<div class="order_nb_info">
+									<p class="order_date">訂單日期：2023-06-30</p>
+									<p class="order_nb">訂購編號：464QWQW4+8415843kaqw</p>
+								</div>
+								<div class="arr"></div>
+							</div>
+							<div class="order_info">
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">方案</p>
+											<p class="text">流量儲值型NT$140/GB</p>
+										</li>
+										<li>
+											<p class="s_title">起迄日期</p>
+											<p class="text">2023-06-20 ~ 2023-06-27</p>
+										</li>
+										<li>
+											<p class="s_title">設備數</p>
+											<p class="text">1</p>
+										</li>
+										<li>
+											<p class="s_title">價格</p>
+											<p class="text">1,000</p>
+										</li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">訂購人名稱</p>
+											<p class="text">Eikiy Chang</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人信箱</p>
+											<p class="text">
+												<a href="#">eikiychang@gmail.com</a>
+											</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人電話</p>
+											<p class="text">0988000123</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="device_info">
+								<p class="device_nb">裝置編號： <span>XXXXQEE</span></p>
+								<p class="btn"><a href="#">充值</a></p>
+							</div>
+						</div>
+						<!-- 租借中（收起） -->
+						<div class="card order_info">
+							<div class="top_cont">
+								<!-- 租借中 state_online -->
+								<!-- 待取機 state_notyea -->
+								<!-- 已完成 state_done -->
+								<p class="state state_online">租借中</p>
+								<div class="order_nb_info">
+									<p class="order_date">訂單日期：2023-06-30</p>
+									<p class="order_nb">訂購編號：464QWQW4+8415843kaqw</p>
+								</div>
+								<div class="arr"></div>
+							</div>
+							<div class="order_info" style="display: none;">
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">方案</p>
+											<p class="text">流量儲值型NT$140/GB</p>
+										</li>
+										<li>
+											<p class="s_title">起迄日期</p>
+											<p class="text">2023-06-20 ~ 2023-06-27</p>
+										</li>
+										<li>
+											<p class="s_title">設備數</p>
+											<p class="text">1</p>
+										</li>
+										<li>
+											<p class="s_title">價格</p>
+											<p class="text">1,000</p>
+										</li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">訂購人名稱</p>
+											<p class="text">Eikiy Chang</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人信箱</p>
+											<p class="text">
+												<a href="#">eikiychang@gmail.com</a>
+											</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人電話</p>
+											<p class="text">0988000123</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="device_info">
+								<p class="device_nb">裝置編號： <span>XXXXQEE</span></p>
+								<p class="btn"><a href="#">充值</a></p>
+							</div>
+						</div>
+						<!-- 待取機 -->
+						<div class="card">
+							<div class="top_cont">
+								<!-- 租借中 state_online -->
+								<!-- 待取機 state_not_yet -->
+								<!-- 已完成 state_done -->
+								<p class="state state_not_yet">待取機</p>
+								<div class="order_nb_info">
+									<p class="order_date">訂單日期：2023-07-05</p>
+									<p class="order_nb">訂購編號：464QWQW4+8415843kaqw</p>
+								</div>
+								<div class="arr"></div>
+							</div>
+							<div class="order_info" style="display: none;">
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">方案</p>
+											<p class="text">流量儲值型NT$140/GB</p>
+										</li>
+										<li>
+											<p class="s_title">起迄日期</p>
+											<p class="text">2023-06-20 ~ 2023-07-05</p>
+										</li>
+										<li>
+											<p class="s_title">設備數</p>
+											<p class="text">1</p>
+										</li>
+										<li>
+											<p class="s_title">價格</p>
+											<p class="text">4,000</p>
+										</li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">訂購人名稱</p>
+											<p class="text">Wendy Shiue</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人信箱</p>
+											<p class="text">
+												<a href="#">wendyshiue00123@gmail.com</a>
+											</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人電話</p>
+											<p class="text">0909123456</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- 已完成（收起）- 標題底為灰色 -->
+						<div class="card bg_end">
+							<div class="top_cont">
+								<!-- 租借中 state_online -->
+								<!-- 待取機 state_not_yet -->
+								<!-- 已完成 state_done -->
+								<p class="state state_done">已完成</p>
+								<div class="order_nb_info">
+									<p class="order_date">訂單日期：2023-07-05</p>
+									<p class="order_nb">訂購編號：464QWQW4+8415843kaqw</p>
+								</div>
+								<div class="arr"></div>
+							</div>
+							<div class="order_info" style="display: none;">
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">方案</p>
+											<p class="text">流量儲值型NT$140/GB</p>
+										</li>
+										<li>
+											<p class="s_title">起迄日期</p>
+											<p class="text">2023-06-20 ~ 2023-07-05</p>
+										</li>
+										<li>
+											<p class="s_title">設備數</p>
+											<p class="text">1</p>
+										</li>
+										<li>
+											<p class="s_title">價格</p>
+											<p class="text">4,000</p>
+										</li>
+									</ul>
+								</div>
+								<div class="row">
+									<ul>
+										<li>
+											<p class="s_title">訂購人名稱</p>
+											<p class="text">Wendy Shiue</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人信箱</p>
+											<p class="text">
+												<a href="#">wendyshiue00123@gmail.com</a>
+											</p>
+										</li>
+										<li>
+											<p class="s_title">訂購人電話</p>
+											<p class="text">0909123456</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer_wrap">
+			<section class="cont_middle">
+				<div class="copyright">
+					<a class="logo">
+						<a href="index.html"></a>
+					</a>
+					<p>WiFi on the Go , Wherever You Go</p>
+					<p class="text-copyright">Copyright © 2023 All Rights Reserved.</p>
+				</div>
+				<ul class="service">
+					<li>
+						<p>客服信箱　<a href="mailto:">service@xxxxx.com</a></p>
+					</li>
+					<li>
+						<p>服務電話　<a href="tel:+886-2-1234-5678">02-1234-5678</a></p>
+					</li>
+					<li>
+						<p><span>（ 服務時間：週一至週日 9：00 ~ 18：00）</span></p>
+					</li>
+				</ul>
+				<div class="link">
+					<p>
+						<a href="#" target="_block">使用條款</a>
+						<a href="#" target="_block">免責聲明</a>
+						<a href="#" target="_block">常見問題</a>
+					</p>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
+
+
+

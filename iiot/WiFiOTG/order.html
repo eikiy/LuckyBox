@@ -13,14 +13,31 @@
 	</head>
 	<body>
 		<header class="header_wrap">
-			<section class="cont_middle clearfix">
+			<!-- 帳號登入 + logged_in -->
+			<section class="cont_middle logged_in clearfix">
 				<a class="header_logo" href="index.html">WiFiOTG</a>
-				<a class="cont_user" href="#">
+				<nav class="menu">
+					<ul>
+						<li>
+							<p><a href="index.html">首頁</a></p>
+						</li>
+						<li>
+							<p><a href="location.html">取還點查詢</a></p>
+						</li>
+						<li>
+							<p><a href="teaching.html">使用說明</a></p>
+						</li>
+						<li>
+							<p><a href="qa.html">常見問題</a></p>
+						</li>
+					</ul>
+				</nav>
+				<div class="cont_user">
 					<div class="profile">
 						<div class="photo" style="background-image:url(https://lh3.googleusercontent.com/ogw/AGvuzYb52a2kJ6PRLTAuYe3-t0Hg2Dq7pfqEQ6iZ2oBu=s32-c-mo);"></div>
-						<p>CHANG</p>
+						<p>wendyshiue00123（<a href="#">登出</a>）</p>
 					</div>
-				</a>
+				</div>
 			</section>
 		</header>
 		<main class="main_wrap">
@@ -131,7 +148,8 @@
 									<p class="label_title">手機號碼<span class="f_red">*</span></p>
 								</label>
 							</div>
-							<div class="r_box error_box">
+							<div class="r_box error_box for_phone">
+								<a class="btn_verify" href="#">簡訊驗證</a>
 								<input id="" name="" type="text" value="0988172456">
 								<p class="the_reminder">欄位為必填資訊</p>
 							</div>

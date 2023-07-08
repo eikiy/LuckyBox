@@ -355,7 +355,7 @@ body {
 
 .header_wrap .menu ul li {
   display: inline-block;
-  padding: 5px;
+  padding: 3px;
 }
 
 .header_wrap .menu ul li p {
@@ -364,7 +364,7 @@ body {
 
 .header_wrap .menu ul li p a {
   color: #333333;
-  padding: 8px 20px;
+  padding: 8px 18px;
   display: block;
 }
 
@@ -385,6 +385,7 @@ body {
 
 .header_wrap .cont_user {
   margin-left: auto;
+  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +412,11 @@ body {
   line-height: 42px;
 }
 
-.header_wrap .cont_user:hover .profile p {
+.header_wrap .cont_user .profile p a {
+  color: #333;
+}
+
+.header_wrap .cont_user .profile p a:hover {
   color: #2196f3;
 }
 
@@ -1183,33 +1188,33 @@ body {
   padding: 0 5px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done {
+.main_wrap .shopping_contents .fillinBox .order_done {
   margin: 20px auto 40px auto;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done .other_item {
+.main_wrap .shopping_contents .fillinBox .order_done .other_item {
   padding: 30px 40px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done p {
+.main_wrap .shopping_contents .fillinBox .order_done p {
   color: #333;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done p.pro {
+.main_wrap .shopping_contents .fillinBox .order_done p.pro {
   font-size: 14px;
   padding-bottom: 15px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done p.order-nb {
+.main_wrap .shopping_contents .fillinBox .order_done p.order_nb {
   font-size: 22px;
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done .pro-text {
+.main_wrap .shopping_contents .fillinBox .order_done .pro_text {
   float: left;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-done .btn_default {
+.main_wrap .shopping_contents .fillinBox .order_done .btn_default {
   width: initial;
   float: right;
   margin-top: 10px;
@@ -1285,20 +1290,30 @@ body {
 }
 
 .main_wrap .shopping_contents .fillinBox a.btn_verify {
-  margin: 4px 5px 3px 8px;
+  margin: 6px 5px 3px 8px;
   float: left;
   font-size: 13px;
   padding: 0 12px;
-  line-height: 28px;
+  min-width: 65px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 40px;
   border: 2px solid #333;
   color: #333;
-  display: inline-block;
   font-weight: bold;
 }
 
 .main_wrap .shopping_contents .fillinBox a.btn_verify:hover {
-  opacity: .8;
+  background-color: #333;
+  color: #fff;
 }
 
 .main_wrap .shopping_contents .fillinBox input,
@@ -1344,6 +1359,16 @@ body {
 
 .main_wrap .shopping_contents .fillinBox .error_box input {
   border-color: #FF3B3B;
+}
+
+.main_wrap .shopping_contents .fillinBox .for_phone {
+  position: relative;
+}
+
+.main_wrap .shopping_contents .fillinBox .for_phone .btn_verify {
+  position: absolute;
+  right: 5px;
+  top: 0;
 }
 
 .main_wrap .shopping_contents .fillinBox .both_input {
@@ -1566,6 +1591,203 @@ body {
   text-align: right;
 }
 
+.main_wrap .shopping_contents .order_fillin {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card {
+  background-color: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 25px auto;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont {
+  width: 100%;
+  position: relative;
+  padding: 10px 25px;
+  border-bottom: 1px solid #E8E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .arr {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url(../images/chevron-down-solid.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state {
+  width: 80px;
+  height: 30px;
+  font-size: 13px;
+  border-radius: 40px;
+  font-weight: bold;
+  margin: 5px 18px 5px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state_online {
+  border: 2px solid #FF3B3B;
+  background-color: #FF3B3B;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state_not_yet {
+  border: 2px solid #FF3B3B;
+  color: #FF3B3B;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state_done {
+  border: 2px solid #FFAF00;
+  background-color: #FFAF00;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info {
+  padding: 5px 0;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info .order_date {
+  font-size: 12px;
+  color: #AFAFAF;
+  padding: 0 0 3px 1px;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info .order_nb {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .arr_up .arr {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 15px 25px;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row ul {
+  width: 100%;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row ul li {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.s_title {
+  font-size: 13px;
+  color: #979797;
+  line-height: 1.5;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text a {
+  color: #333;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text a:hover {
+  text-decoration: underline;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .device_info {
+  padding: 15px 25px 17px 25px;
+  border-top: 1px solid #E8E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .device_nb {
+  font-size: 14px;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .device_nb span {
+  font-weight: bold;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn {
+  padding-left: 15px;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn a {
+  font-size: 13px;
+  padding: 0 12px;
+  line-height: 26px;
+  border-radius: 40px;
+  border: 2px solid #333;
+  color: #333;
+  display: inline-block;
+  font-weight: bold;
+  min-width: 65px;
+  text-align: center;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.main_wrap .shopping_contents .order_fillin .order_history .bg_end .top_cont {
+  background-color: #EEEEEE;
+}
+
 .wifiotg_info {
   width: 100%;
   padding: 40px 0;
@@ -1580,7 +1802,7 @@ body {
 .footer_wrap {
   width: 100%;
   padding: 40px 0px;
-  background-color: #47392A;
+  background-color: #4f4c4c;
 }
 
 .footer_wrap p {
@@ -1862,6 +2084,31 @@ body {
     width: 120px;
     height: 52px;
   }
+  .header_wrap .logged_in {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .header_wrap .logged_in .menu {
+    width: 100%;
+  }
+  .header_wrap .cont_user {
+    margin-left: initial;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+  }
+  .header_wrap .cont_user .profile {
+    padding-left: 45px;
+  }
+  .header_wrap .cont_user .profile p {
+    line-height: 35px;
+    font-size: 14px;
+  }
+  .header_wrap .cont_user .profile .photo {
+    width: 35px;
+    height: 35px;
+  }
   .main_wrap h3.top_title {
     font-size: 22px;
     padding-bottom: 20px;
@@ -1972,13 +2219,37 @@ body {
     width: 100%;
     padding: 5px 0;
   }
-  .main_wrap .shopping_contents .fillinBox .order-done .pro-text {
+  .main_wrap .shopping_contents .fillinBox .order_done .pro_text {
     float: initial;
     text-align: center;
     padding-bottom: 5px;
   }
-  .main_wrap .shopping_contents .fillinBox .order-done .btn_default {
+  .main_wrap .shopping_contents .fillinBox .order_done .btn_default {
     float: initial;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .top_cont {
+    padding: 10px 20px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .arr {
+    right: 5px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info .order_nb {
+    font-size: 15px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row {
+    padding: 10px 20px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.s_title {
+    font-size: 12px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text {
+    font-size: 14px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .device_info {
+    padding: 10px 20px 13px 20px;
+  }
+  .main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn {
+    padding-left: 10px;
   }
 }
 
