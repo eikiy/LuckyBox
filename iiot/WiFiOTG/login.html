@@ -10,6 +10,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!-- Pushy -->
+		<link rel="stylesheet" href="mobilemenu/pushy.css">
+		<script type="text/javascript">
+			// 點了top展開與箭頭轉向
+			$(function () {
+				$(".order_history .card .top_cont").click(function () {
+					$(this).next(".order_info").stop(true, true).fadeToggle(0);
+					$(this).toggleClass("arr_up");
+					return false;
+				});
+			});
+			$(function () {
+				$(".header_wrap .cont_user .profile").click(function () {
+					$(this).parent().find(".sub_list").stop(true, true).fadeToggle(0);
+					return false;
+				});
+			});
+		</script>
 	</head>
 	<!-- 載入中需要把背景卷軸隱藏，可能有別種寫法? -->
 	<body style="overflow: hidden;">

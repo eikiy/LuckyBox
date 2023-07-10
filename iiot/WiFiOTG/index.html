@@ -12,192 +12,229 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 		<!-- Link Swiper's CSS -->
 	  	<!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+		<!-- Pushy -->
+		<link rel="stylesheet" href="mobilemenu/pushy.css">
 	</head>
 	<body>
-		<header class="header_wrap">
-			<section class="cont_middle clearfix">
-				<a class="header_logo" href="index.html">WiFiOTG</a>
-				<nav class="menu">
-					<ul>
-						<li>
-							<p><a href="index.html">首頁</a></p>
-						</li>
-						<li>
-							<p><a href="location.html">取還點查詢</a></p>
-						</li>
-						<li>
-							<p><a href="teaching.html">使用說明</a></p>
-						</li>
-						<li>
-							<p><a href="qa.html">常見問題</a></p>
-						</li>
-						<li>
-							<p class="btn_yello"><a href="history.html">租借紀錄查詢</a></p>
-						</li>
-					</ul>
-				</nav>
-			</section>
-		</header>
-		<main class="main_wrap">
-			<section class="main_flexslider">
-	            <!-- Swiper -->
-			  	<div class="slides swiper-container">
-			    	<div class="swiper-wrapper">
-						<a class="swiper-slide" href="#">
-							<img src="images/main-banner/01.jpg" alt="">
-						</a>
-			     		<a class="swiper-slide" href="#">
-			     			<img src="images/main-banner/30.jpg" alt="">
-						</a>
-						<a class="swiper-slide" href="#">
-							<img src="images/main-banner/39.jpg" alt="">
-						</a>
-				      	<a class="swiper-slide" href="#">
-				      		<img src="images/main-banner/115.jpg" alt="">
-				      	</a>
-				      	<a class="swiper-slide" href="#">
-				      		<img src="images/main-banner/101.jpg" alt="">
-						</a>
-			    	</div>
-			    	<!-- Add Arrows -->
-			    	<div class="swiper-button-next"></div>
-			    	<div class="swiper-button-prev"></div>
-			    	<!-- Add Pagination -->
-			    	<div class="swiper-pagination"></div>
-			  	</div>
-	        </section>
-			<section class="area_content">
-				<h3 class="top_title">請選擇國家或地區</h3>
-				<ul class="choose_area">
-					<li>
-						<p class="btn_in label">
-							<span>NEW!</span>
-							<a href="index.html">中秋特惠</a>
-						</p>
-					</li>	
-					<li>
-						<p><a href="country.html">日本</a></p>
+		<!-- Pushy Menu -->
+		<nav class="pushy pushy-left" data-focus="#first-link">
+			<div class="pushy-content">
+				<ul>
+					<li class="pushy-link">
+						<a href="index.html">首頁</a>
 					</li>
-					<li>
-						<p><a href="#">韓國</a></p>
+					<li class="pushy-link">
+						<a class="c_yello" href="history.html">租借紀錄查詢</a>
 					</li>
-					<li>
-						<p><a href="#">中港澳</a></p>
+					<li class="pushy-link">
+						<a href="location.html">取還點查詢</a>
 					</li>
-					<li>
-						<p><a href="#">歐洲</a></p>
+					<li class="pushy-link">
+						<a href="teaching.html">使用說明</a>
 					</li>
-					<li>
-						<p><a href="#">大洋美加洲</a></p>
+					<li class="pushy-link">
+						<a href="qa.html">常見問題</a>
+					</li>
+					<li class="other-link">
+						<a href="terms.html">服務條款</a>
+						<a href="privacy.html">隱私權政策</a>
 					</li>
 				</ul>
-				<ul class="country_list clearfix">
-					<li>
-						<ul class="hashtag clearfix">
+				<p class="text">Copyright © 2023 All Rights Reserved.</p>
+			</div>
+			
+		</nav>
+		<!-- Site Overlay -->
+		<div class="site-overlay"></div>
+		<div id="container">
+			<header class="header_wrap">
+				<button class="menu-btn">
+					<span></span>
+				</button>
+				<section class="cont_middle clearfix">
+					<a class="header_logo" href="index.html">WiFiOTG</a>
+					<nav class="menu">
+						<ul>
 							<li>
-								<p><a class="bg_c_01" href="#">中秋特惠</a></p>
+								<p><a href="index.html">首頁</a></p>
 							</li>
 							<li>
-								<p><a class="bg_c_02" href="#">日本</a></p>
+								<p><a href="location.html">取還點查詢</a></p>
 							</li>
 							<li>
-								<p><a class="bg_c_03" href="#">優惠</a></p>
+								<p><a href="teaching.html">使用說明</a></p>
 							</li>
 							<li>
-								<p><a class="bg_c_04" href="#">亞洲</a></p>
+								<p><a href="qa.html">常見問題</a></p>
 							</li>
 							<li>
-								<p><a class="bg_c_05" href="#">日本</a></p>
+								<p class="btn_yello"><a href="history.html">租借紀錄查詢</a></p>
 							</li>
 						</ul>
-						<a href="plan.html">
-							<div class="cou_info">
-								<div class="bk">
-									<p class="title">亞洲</p>
-								</div>
-							</div>
-							<img src="images/A1-Japan.png" alt="亞洲">
-						</a>
-					</li>
-					<li>
-						<a href="plan.html">
-							<div class="cou_info">
-								<div class="bk">
-									<p class="title">越南</p>
-								</div>
-							</div>
-							<img src="images/A4-Asia.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="plan.html">
-							<div class="cou_info">
-								<div class="bk">
-									<p class="title">美國</p>
-								</div>
-							</div>
-							<img src="images/A6-Ameaica.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="plan.html">
-							<div class="cou_info">
-								<div class="bk">
-									<p class="title">非洲</p>
-								</div>
-							</div>
-							<img src="images/A7-Africa.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="country.html">
-							<div class="cou_info">
-								<div class="bk">
-									<p class="title">澳大利亞</p>
-								</div>
-							</div>
-							<img src="images/A8-Oceania.png" alt="">
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="wifiotg_info">
-				<div class="cont_middle">
-					<div class="bn-info">
-						<img src="images/bottom-info.png" width="100%" alt="">
+					</nav>
+				</section>
+			</header>
+			<main class="main_wrap">
+				<section class="main_flexslider">
+					<!-- Swiper -->
+					<div class="slides swiper-container">
+						<div class="swiper-wrapper">
+							<a class="swiper-slide" href="#">
+								<img src="images/main-banner/01.jpg" alt="">
+							</a>
+							<a class="swiper-slide" href="#">
+								<img src="images/main-banner/30.jpg" alt="">
+							</a>
+							<a class="swiper-slide" href="#">
+								<img src="images/main-banner/39.jpg" alt="">
+							</a>
+							<a class="swiper-slide" href="#">
+								<img src="images/main-banner/115.jpg" alt="">
+							</a>
+							<a class="swiper-slide" href="#">
+								<img src="images/main-banner/101.jpg" alt="">
+							</a>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
 					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer_wrap">
-			<section class="cont_middle">
-				<div class="copyright">
-					<a class="logo">
-						<a href="index.html"></a>
-					</a>
-					<p>WiFi on the Go , Wherever You Go</p>
-					<p class="text-copyright">Copyright © 2023 All Rights Reserved.</p>
-				</div>
-				<ul class="service">
-					<li>
-						<p>客服信箱　<a href="mailto:">service@xxxxx.com</a></p>
-					</li>
-					<li>
-						<p>服務電話　<a href="tel:+886-2-1234-5678">02-1234-5678</a></p>
-					</li>
-					<li>
-						<p><span>（ 服務時間：週一至週日 9：00 ~ 18：00）</span></p>
-					</li>
-				</ul>
-				<div class="link">
-					<p>
-						<a href="#" target="_block">使用條款</a>
-						<a href="#" target="_block">免責聲明</a>
-						<a href="#" target="_block">常見問題</a>
-					</p>
-				</div>
-			</section>
-		</footer>
+				</section>
+				<section class="area_content">
+					<h3 class="top_title">請選擇國家或地區</h3>
+					<ul class="choose_area">
+						<li>
+							<p class="btn_in label">
+								<span>NEW!</span>
+								<a href="index.html">中秋特惠</a>
+							</p>
+						</li>	
+						<li>
+							<p><a href="country.html">日本</a></p>
+						</li>
+						<li>
+							<p><a href="#">韓國</a></p>
+						</li>
+						<li>
+							<p><a href="#">中港澳</a></p>
+						</li>
+						<li>
+							<p><a href="#">歐洲</a></p>
+						</li>
+						<li>
+							<p><a href="#">大洋美加洲</a></p>
+						</li>
+					</ul>
+					<ul class="country_list clearfix">
+						<li>
+							<ul class="hashtag clearfix">
+								<li>
+									<p><a class="bg_c_01" href="#">中秋特惠</a></p>
+								</li>
+								<li>
+									<p><a class="bg_c_02" href="#">日本</a></p>
+								</li>
+								<li>
+									<p><a class="bg_c_03" href="#">優惠</a></p>
+								</li>
+								<li>
+									<p><a class="bg_c_04" href="#">亞洲</a></p>
+								</li>
+								<li>
+									<p><a class="bg_c_05" href="#">日本</a></p>
+								</li>
+							</ul>
+							<a href="plan.html">
+								<div class="cou_info">
+									<div class="bk">
+										<p class="title">亞洲</p>
+									</div>
+								</div>
+								<img src="images/A1-Japan.png" alt="亞洲">
+							</a>
+						</li>
+						<li>
+							<a href="plan.html">
+								<div class="cou_info">
+									<div class="bk">
+										<p class="title">越南</p>
+									</div>
+								</div>
+								<img src="images/A4-Asia.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="plan.html">
+								<div class="cou_info">
+									<div class="bk">
+										<p class="title">美國</p>
+									</div>
+								</div>
+								<img src="images/A6-Ameaica.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="plan.html">
+								<div class="cou_info">
+									<div class="bk">
+										<p class="title">非洲</p>
+									</div>
+								</div>
+								<img src="images/A7-Africa.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="country.html">
+								<div class="cou_info">
+									<div class="bk">
+										<p class="title">澳大利亞</p>
+									</div>
+								</div>
+								<img src="images/A8-Oceania.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="wifiotg_info">
+					<div class="cont_middle">
+						<div class="bn-info">
+							<img src="images/bottom-info.png" width="100%" alt="">
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer_wrap">
+				<section class="cont_middle">
+					<div class="copyright">
+						<a class="logo">
+							<a href="index.html"></a>
+						</a>
+						<p>WiFi on the Go , Wherever You Go</p>
+						<p class="text-copyright">Copyright © 2023 All Rights Reserved.</p>
+					</div>
+					<ul class="service">
+						<li>
+							<p>客服信箱　<a href="mailto:">service@xxxxx.com</a></p>
+						</li>
+						<li>
+							<p>服務電話　<a href="tel:+886-2-1234-5678">02-1234-5678</a></p>
+						</li>
+						<li>
+							<p><span>（ 服務時間：週一至週日 9：00 ~ 18：00）</span></p>
+						</li>
+					</ul>
+					<div class="link">
+						<p>
+							<a href="#" target="_block">使用條款</a>
+							<a href="#" target="_block">免責聲明</a>
+							<a href="#" target="_block">常見問題</a>
+						</p>
+					</div>
+				</section>
+			</footer>
+		</div>
 		<!-- Swiper JS -->
 	  	<script src="js/swiper.min.js"></script>
 	  	<!-- Initialize Swiper -->
@@ -215,6 +252,40 @@
 				prevEl: '.swiper-button-prev',
 			},
 			});
+		</script>
+
+		<!-- pushy JS -->
+		<script src="mobilemenu/pushy.js"></script>
+		<script>
+			// 按下同意後，呼叫setAllowPrivacy
+			function setAllowPrivacy() {
+				localStorage.setItem('isPrivacyAllowed', true);
+			}
+			// 載入頁面時，呼叫getAllowPrivacy，確認是否需要呈現隱私權
+			function getAllowPrivacy() {
+				var isPrivacyAllowed = localStorage.getItem('isPrivacyAllowed');
+				if (isPrivacyAllowed === 'true') {
+					// 不顯示隱私權
+					console.log('hide');
+					$('#cookie-accept').hide();
+				} else {
+					// 顯示隱私權
+					console.log('show');
+					$('#cookie-accept').show();
+				}
+			}
+			// 建立cookie
+			function createCookie(name, value, days, path) {
+				if (days) {
+					var date = new Date();
+					date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+					var expires = "; expires=" + date.toGMTString();
+				}
+				else var expires = "";
+				document.cookie = name + "=" + value + expires + "; path=/";
+			}
+
+			getAllowPrivacy();
 		</script>
 	</body>
 </html>

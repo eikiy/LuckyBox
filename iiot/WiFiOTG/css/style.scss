@@ -21,6 +21,23 @@
     transform: rotate(360deg);
   }
 }
+.menu-btn {
+  position: absolute;
+  left: 10px;
+  top:calc(50% - 22.5px);
+  margin: 0;
+  padding: 0;
+  background: none;
+  display: none;
+  span {
+    width: 45px;
+    height: 45px;
+    background: url(../images/bars-solid.svg) center center no-repeat;
+    background-size: 40%;
+    display: block;
+    cursor: pointer;
+  }
+}
 
 .swiper-container {
   width: 100%;
@@ -166,7 +183,10 @@
     display: flex;
     .profile{
       position: relative;
+      min-height: 35px;
+      padding-right: 30px;
       padding-left: 50px;
+      cursor: pointer;
       .photo{
         position: absolute;
         left: 0;
@@ -187,6 +207,51 @@
           }
         }
       }
+      &::after{
+        content: "";
+        top: calc(50% - 15px);
+        right: 0px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        display: block;
+        background: url(../images/chevron-down-solid.svg) center center no-repeat;
+        background-size: contain;
+      }
+    }
+    .sub_list{
+      position: absolute;
+      display: none;
+      top: 40px;
+      right: 0px;
+      width: 100px;
+      border: 1px solid #dfdfdf;
+      border-radius: 4px;
+      background-color: #fff;
+      z-index: 100;
+      box-shadow: 0 3px 10px rgba(0,0,0,.2);
+      ul{
+        width: 100%;
+        li{
+          width: 100%;
+          padding: 0;
+          text-align: center;
+          position: inherit;
+          display: block;
+          margin: 0;
+          border-top: 1px solid #dfdfdf;
+          cursor: pointer;
+          p a{
+            color: #333;
+            &:hover {
+              color: #EF950D !important;
+            }
+          }
+          &:first-child{
+            border: none;
+          }
+        }
+      } 
     }
   }
 }
@@ -916,6 +981,10 @@
           .r_box{
             float: left;
             width: calc(100% - 110px);
+            p.text{
+              float: left;
+              line-height: 20px;
+            }
           }
         }
       }
@@ -1606,9 +1675,13 @@
 }
 
 @media (max-width:800px) {
+  .menu-btn{
+    display: block;
+  }
   .header_wrap {
     min-height: 50px;
     .menu{
+      display: none;
       margin: 0 auto;
       ul{
         text-align: center;
@@ -1618,20 +1691,15 @@
       width: 120px;
       height: 52px;
     }
-    .logged_in{
-      justify-content: left;
-      .menu{
-        width: 100%;
-      }
-    }
     .cont_user{
       margin-left: initial;
       position:fixed;
       right: 15px;
       top: 10px;
       .profile{
-        padding-left: 45px;
-        p{
+        padding-left: 35px;
+        p.user_name{
+          display: none;
           line-height: 35px;
           font-size: 14px;
         }
