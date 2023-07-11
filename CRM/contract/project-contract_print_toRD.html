@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CRM 管理後台 - weblisher 專案製作合約</title>
+    <!-- Normalize or reset CSS with your favorite library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    
+    <!-- Load paper.css for happy printing -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
+    
+    <!-- Set page size here: A5, A4 or A3 -->
+    <!-- Set also "landscape" if you need -->
+    <style>
+      @page {
+        size: A4
+      }
+    </style>
+</head>
+
+<body class="A4" style="background-color: #fff;">
+  <section class="" style="padding:15mm;">
+    <!-- 680px*1000px -->
+    <div style="width: 680px; margin: 0 auto; position: relative;">
+      <!-- LOGO fixed 左上角 -->
+      <div style="position: absolute; left: 0; top: -11mm; width: 155px;">
+        <img src="../images/svg/logo.svg" width="100%" style="display: inline-block; opacity: .5;">
+      </div>
+      <!-- 合約編號 fixed 右上角 -->
+      <div style="text-align: right; position: absolute; right: 0px; top: -10mm;">
+        <font
+          style="font-size:12px; color: #888; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          專案製作合約 No.11100000223134<br>
+          中華民國 XXX 年 XX 月 XX 日
+        </font>
+      </div>
+      <!-- 版本 fixed 左下角 -->
+      <div style=" position: absolute; left: 0; bottom: -10mm;">
+        <font
+          style="font-size:11px; color: #c4c4c4; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          Weblisher Data Tech Co., Ltd – Ver.230407
+        </font>
+      </div>
+
+      <!-- 實際 A4 列印的內容 -->
+      <div>
+        <!-- 合約書 - 標題 -->
+        <div style="width: 100%;">
+          <div style="text-align: center;padding: 10px; ">
+            <font
+              style=" display: inline-block; font-size:22px ; color: #555; text-align: center; font-weight: normal; margin: 0 auto; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+              專案製作合約
+            </font>
+          </div>
+        </div>
+        <div style="padding:10px 0;">
+          <font
+            style="font-size:12px; line-height: 1.5; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            立合約人：<br>
+            <span style="font-weight: bold;">
+              XXXXXXX有限公司</span>（以下簡稱「甲方」）
+            <br>地址：<span style="font-weight: bold;"> XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            </span>
+          </font>
+          <font
+            style="font-size:12px; margin-top: 10px; line-height: 1.5; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            威旭數據科技股份有限公司（以下簡稱「乙方」）<br>
+            地址：104 台北市中山區南京東路三段 63 號 8 樓
+          </font>
+          <font
+            style="font-size:12px; margin-top: 10px; line-height: 1.5; text-align: justify;  color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            茲因甲方多項網路廣告投放與行銷活動專案規劃之需求（以下簡稱「本專案」），依照個別委刊單與專案製作的需求委託乙方進行網路廣告投放與行銷服務規劃與執行作業（以下簡稱「本服務」），經雙方協議訂立長期的業務合作合約（以下簡稱「本合約」），其條款如下：
+          </font>
+        </div>
+        <div>
+          <font
+            style="font-size:12px; color: #333; display: block; font-weight: bold; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            一、媒體廣告專案委託方式及威旭專案訂購單（以下簡稱「專案訂購單」）
+          </font>
+          <ul
+            style="font-size:12px;list-style-type: decimal; margin:5px 0 10px 0; padding-inline-start: 40px; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            <li>
+              <font style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                乙方依照雙方合意之目標專案內容，擬定「專案訂購單」，包含專案執行目標、執行走期、操作媒體、專案金額配置、付款方式等所有相關內容，甲方應於 7 個工作日內確認用印回傳予乙方。
+              </font>
+            </li>
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">依照雙方合意之專案內容，除上述(1)
+                所提供之數位媒體廣告以外，為協助達成專案目標，乙方得以另外提供行銷素材及行銷曝光管道包含但不限於網站建製、廣告素材製作、影音拍攝及線下行銷宣傳管道等，依照雙方合意之內容同步列於「專案訂購單」中，並由雙方同意後執行。（執行項目內容請參看雙方合意之「專案訂購單」為主）
+              </font>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 此區塊為專案執行限制，非制式條款，由 Planner 於每次新專案規劃時上架 CRM 條款 -->
+        <div>
+        <font
+          style="font-size:12px; color: #333; display: block; font-weight: bold; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          二、專案執行限制
+        </font>
+        <ul
+          style="font-size:12px;list-style-type: decimal; margin:5px 0 10px 0; padding-inline-start: 40px; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+              專案媒體廣告總金額須符合最小門檻 $90,000，且須於上刊起算 3 個月內花費完畢。
+            </font>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">提出專案製作任一項目申請時，需保持媒體廣告在線狀態，否則不符合專案執行資格。
+            </font>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">所有專案製作及贈送項目執行期限皆為 2023/12/31 前為止，逾期則取消執行資格，不另為退費或找補。
+            </font>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">專案製作一旦進入任一項目執行排程，恕不接受取消執行及退款。
+            </font>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">所有專案製作及贈送項目之內容於完稿後皆不接受任何更改。
+            </font>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">所有專案製作及贈送項目若中途中止專案合約或期限內媒體廣告花費未達規定門檻，則取消所有執行資格，如已執行之專案項目，則需支付該項目之市價金額。
+            </font>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">「給力蘿蔔A/B區」使用注意事項：</font>
+            <ul
+              style="list-style-type: disc; margin: 0; padding-inline-start: 20px; font-size:12px; line-height: 1.5; color: #333;font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif; padding-bottom: 5px;">
+              <li>
+                執行門檻：<br>
+                <ul style="list-style-type: lower-alpha; margin: 0; padding-inline-start: 20px; font-size:12px; line-height: 1.5; color: #333;font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                  <li style="padding-left: 10px;">
+                    須支付福袋金額至少 66,000 元（未稅）不退款，其中 36,000 元（未稅）將認列為乙方之給力蘿蔔押金。
+                  </li>
+                  <li style="padding-left: 10px;">
+                    於福袋規定時間內廣告上線。
+                  </li>
+                </ul>
+              </li>
+              <li>
+                須於媒體廣告上線起3個月內提出申請，若未於時限內提出申請，則失去執行資格。
+              </li>
+              <li>
+                如已支付福袋全額，卻未於時限內提出申請，則可將福袋廣告金外剩餘之 36,000 元轉移至廣告金遞送，恕無法退款。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <font
+              style="font-size:12px; line-height: 1.5; text-align: justify #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">「Bunny 小紅包」使用注意事項：
+            </font>
+            <ul
+              style="list-style-type:disc; margin: 0; padding-inline-start: 20px; font-size:12px; line-height: 1.5; color: #333;font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+              <li>
+                須支付福袋全額方可申請執行，申請期限為 2023/04/30，如逾時申請則視同放棄。
+              </li>
+              <li>
+                Bunny 小紅包為福袋加碼贈送項目，恕不得以其他形式替換。
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+        <!-- 區塊為專案執行限制，非制式條款，由 Planner 於每次新專案規劃時上架 CRM 條款 -- END-->
+        <div>
+        <font
+          style="font-size:12px; color: #333; display: block; font-weight: bold; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          三、專案製作說明
+          </font>
+          <ul
+            style="font-size:12px;list-style-type: decimal; margin:5px 0 10px 0; padding-inline-start: 40px; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                所有專案製作物請於提出製作需求時再三確認需求資訊是否有誤，一旦申請後即進行排件流程，恕不接受取消或修改需求。
+              </font>
+            </li>
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                所有製作物須於乙方提供初版後，由甲方於7個工作天內確認並回覆是否需要調整，如未回覆則視同確認製作物毋需變更。
+              </font>
+            </li>
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                甲方同意乙方及相關製作方對於所有製作物之成果得做為內部紀錄之蒐集與對外商業行為展示以持有本約製作物之副本。若甲方有商業使用機密之考量，須另行以書信通知乙方使用限制或相關規範，如未告知則視同同意上述內容。
+              </font>
+            </li>
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                專案製作項目與各項應對內容與條款應適用以下「專案製作項目清單及製作條款」。本次甲方選擇專案項目如下：
+              </font>
+              <!-- 依照專案訂購單所選加值項目名稱 -->
+              <ul
+                style="list-style-type: disc; margin: 0; padding-inline-start: 20px; font-size:12px; line-height: 1.5; color: #333;font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                <li>
+                  影音製作 - 威旭質感廣告影片
+                </li>
+                <li>
+                  影音製作 - 2D 創意動畫影片
+                </li>
+              </ul>
+              <!-- 依照專案訂購單所選加值項目名稱  END -->
+            </li>
+          </ul>
+        </div>
+
+        <!-- Irene: 專案訂購單所選產品自動帶出該產品之製作條款於此 -->
+        <div>
+          <font
+            style="font-size:12px; color: #333; display: block; font-weight: bold; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            四、專案製作項目清單及製作條款
+          </font>
+          <ul
+            style="list-style-type: disc; margin: 0; padding-inline-start: 40px; font-size:12px; line-height: 1.5; color: #333;font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif; padding-top: 5px;">
+            <li>
+              <b>威旭質感廣告影片</b>
+              <ul
+              style="font-size:12px;list-style-type: decimal; margin:5px 0; padding-inline-start: 20px; font-family: Helvetica, '微軟正黑體',arial,sans-serif; padding-bottom: 5px;">
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    影片規格<br>
+                    HD（1920 x 1080）/介於 23.97 至 30 fps/.mov 或 .mp4。秒數：15 - 60 秒 。支數：1 支。*拍攝完成僅提供剪輯完畢之影片檔結案，不提供毛片。</font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    個案作業：專案內容標準規格說明<br>
+                    本專案影片拍攝僅限腳本規劃、影片拍攝、影片剪輯。（不包含動畫製作）。所有影片所需之道具、產品、演員等其他相關需求，皆由甲方提供。產品運輸之運費亦由甲方支付。如甲方有非專案規格製作需求，請提供範本予乙方影音
+                    負責單位確認是否可安排執行，若超出原專案影片製作規格，則需另外報價，並於雙方皆同意其製作之可行性後安排執行。
+                </font>
+              </li>
+              <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    影片製作時間<br>
+                    乙方與乙方指定製作團隊應按製作準備會議提出雙方同意之進度表履行交片義務，除其中一方遭遇天災、人力不可抗拒之因素，或基於委託方要求變更而致無法遵守進度時，無論該變更是否經乙方同意，雙方得協調順延，另議交片日，且不得更行請求其他賠償。
+                  </font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    腳本製作<br>
+                    由乙方影音負責單位與甲方討論腳本方向與影片風格定調，一旦雙方確認架構方向，即指派予乙方指定拍攝團隊製作文字分鏡腳本，提出第 1 版腳本後，提供 2 次免費修改，惟僅能依原架構不變之方向調整腳本內容或順序。若提出第 1 版腳本後，甲方欲完全更改劇情架構，則需另外加價 3,000/次的腳本重置費用。
+                  </font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    演員需求<br>
+                    如腳本有演員需求，須甲方提供或可選擇由乙方協尋演員報價。乙方提供之合作演員報價至少提供1年肖像權使用，如甲方提出肖像權年限延長或演員肖像權作為其他製作物素材等額外需求時則另行報價。詳細規範須以甲方與演員雙方合作簽署之『模特兒肖像權使用授權書』為最終之法律依據。
+                  </font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify;  color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    拍攝地點<br>
+                    此專案規格為『單點拍攝』，意指僅在同一指定場所之定點拍攝完所有畫面。若腳本設計指定『棚拍』，即單一棚定點拍攝，且皆以專案內指定標準配合攝影棚為主;若腳本設定指定『外拍』，即單一定點場所外拍。若甲方有專案規格以外之拍攝地點需求，則自行提供或廠商另提供車馬費與棚費報價。免費外拍地點區域僅限台北地區及部分新北地區（蘆洲、三重、板橋、新莊、中永和、新店、土城、汐止、泰山），上述地點外，出機車馬費則需另外報價。
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify;  color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    拍攝時長<br>
+                    此專案規格拍攝時數為開拍後 4 小時以內完成為準，腳本皆以 4 小時內可執行完畢為條件設計製作。若雙方討論之腳本有超時疑慮將提前告知甲方，並評估拍攝當天現場超時狀況及預估超時時數做為參考依據。最終超時費用以拍攝當天實際超時時數計算，額外超時報價（工作團隊，不含演員）以 NT$3,000/hr 為單位。
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify;  color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    側拍需求<br>
+                    影片拍攝當天，甲方如需側拍畫面，需由甲方自行到場進行側拍，乙方及當日拍攝團隊皆不提供側拍服務。（註：甲方到場側拍以『不可影響當日影片拍攝之進度』為前提進行，若側拍會影響當日拍攝進度，現場拍攝團隊有權利取消甲方之側拍需求）
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    影片剪輯<br>
+                    此專案規格提供 2 次免費修改，惟僅能以雙方合意之腳本規劃或拍攝當天，由現場拍攝團隊與甲方協議修改內容之方向進行微調整，且僅能以既有影片畫面剪接修改，恕不提供畫面補拍。若甲方有超過 2 次額外修改需求，由乙方影音負責單位評估修改內容之執行可行性。雙方合意修改後，以額外修改報價 NT$3,000/次為基本單位。
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    影片使用權限<br>
+                    於結案時，乙方應將交付影片工作成果檔案給甲方，甲方於取得專案影片後擁有永久之使用權，惟前述使用權非經乙方事前同意，不得與其他影片合成剪輯、或另行截圖作為平面素材使用的情形，除有違反前述情況發生外，乙方與製片商不以著作人格權對抗之。本專案影片之委刊與播送範圍不包含無線、有線或衛星電視頻道上播送。
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    專案取消執行<br>
+                    收到甲方之專案影片拍攝需求後，由乙方影音負責單位主動聯繫甲方溝通腳本架構方向，於此時期即進入正式專案流程並衍生腳本溝通費用。若中途停止影片執行，將扣除專案影片加購費用之 1/3 為腳本溝通成本支出費，剩下費用甲方同意可移轉為數位廣告媒體花費，不另做退款。
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify;  color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    專案執行期間甲方需簽立腳本確認書及現場殺青確認書作為同意執行規格確認。
+                  </font>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul
+          style="list-style-type: disc; margin: 0; padding-inline-start: 40px; font-size:12px; line-height: 1.5; color: #333;font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif; padding-top: 5px;">
+            <li>
+              <b>2D 創意動畫影片</b>
+              <ul
+                style="font-size:12px;list-style-type: decimal; margin:5px 0; padding-inline-start: 20px; font-family: Helvetica, '微軟正黑體',arial,sans-serif; padding-bottom: 5px;">
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    影片規格<br>
+                    HD（1920 x 1080）/介於 23.97 至 30 fps/.mov 或 .mp4。秒數：15 秒 。支數：1 支。</font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    專案內容標準規格說明<br>
+                    本專案動畫影片製作僅限腳本規劃、動畫製作、影片剪輯。所有影片經討論所需之產品圖片素材、影片素材、企業專屬音效/配樂素材…等其他相關需求，皆由甲方提供。甲方應確保提供之內容並無侵害他人之著作權、肖像權及其他權利之情事。如有使用他人權利者，甲方應負責取得合法使用之權。
+                  </font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    動畫製作規格<br>
+                    此專案規格不包含 3D
+                    動畫製作。如甲方有3D動畫或複雜性較高之2D動畫製作需求，請提供範本予乙方影音負責單位確認是否可安排執行，若超出原專案動畫製作規格，則需另外報價，並於雙方皆同意動畫製作之可行性後安排剪輯。
+                  </font>
+                </li>
+                <li>
+                  <font
+                    style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                    影片製作時間<br>
+                    乙方與乙方指定製作團隊應按製作準備會議提出雙方同意之進度表履行交片義務，除其中一方遭遇天災、人力不可抗拒之因素，或因配合甲方要求變更致無法遵守進度時，無論該變更是否經乙方同意，雙方得協調順延，另議交片日，且不得更行請求其他賠償。
+                  </font>
+                </li>
+                <li>
+                    <font
+                      style="font-size:12px; line-height: 1.5; text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                      腳本製作<br>
+                      由乙方影音負責單位與甲方討論腳本方向與影片風格定調，一旦雙方確認架構方向，即指派予乙方指定製作團隊製作文字分鏡腳本，提出第 1 版腳本後，提供 2
+                      次免費修改，惟僅能依原架構不變之方向調整腳本內容或順序。若提出第1版腳本後，甲方欲完全更改劇情架構，則需另外加價 3,000/次的腳本重置費用。
+                    </font>
+                  </li>
+                  <li>
+                    <font
+                      style="font-size:12px; line-height: 1.5;text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                      影片剪輯<br>
+                      此專案規格提供第 1 版剪輯後，可執行 2 次免費修改，惟僅能以雙方合意之腳本規劃，由執行團隊與甲方協議修改內容之方向進行微調整，且僅能以既有影片畫面修改。若甲方有超過 2
+                      次額外修改需求，由乙方影音負責單位評估修改內容之執行可行性。雙方合意修改後，以額外修改報價 NT$3,000/次為基本單位。
+                    </font>
+                  </li>
+                  <li>
+                    <font
+                      style="font-size:12px; line-height: 1.5;text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                      影片使用權限<br>
+                      於結案時，乙方應將交付影片工作成果檔案給甲方，甲方於取得專案影片後擁有永久之使用權，惟前述使用權非經乙方事前同意，不得與其他影片合成剪輯、或另行截圖作為平面素材使用的情形，除有違反前述情況發生外，乙方據與製片商不以著作人格權對抗之。本專案影片之委刊與播送範圍不包含無線、有線或衛星電視頻道上播送。
+                    </font>
+                  <li>
+                    <font
+                      style="font-size:12px; line-height: 1.5;text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                      影片保密義務<br>
+                      乙方對於甲方之未公開商品資訊、影片素材負有保密義務，不得以任何方式洩漏或公開予其他人，亦不得為自己或他人利益使用其資訊。
+                    </font>
+                  <li>
+                    <font
+                      style="font-size:12px; line-height: 1.5;text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                      專案取消執行<br>
+                      收到甲方之專案影片拍攝需求後，由乙方影音負責單位主動聯繫甲方溝通腳本架構方向，於此時期即進入正式專案流程並衍生腳本溝通費用。若中途停止影片執行，將扣除專案影片加購費用之 1/3
+                      為腳本溝通成本支出費，委託方同意剩下費用則可移轉為數位廣告媒體花費，不另做退款。
+                    </font>
+                  </li>
+              </ul>
+    
+            </li>
+          </ul>
+        </div>
+        <!-- Irene: 專案訂購單所選產品自動帶出該產品之製作條款於此 END-->
+  
+        <div>
+          <font
+            style="font-size:12px; color: #333; display: block; font-weight: bold; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            五、 其他
+          </font>
+          <ul
+            style="font-size:12px;list-style-type: decimal; margin:5px 0; padding-inline-start: 40px; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5;text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                因專案委託項目中由乙方所交付之製作物，無論係付費或贈送的服務或方案，該項目所產生之製作物委託方應無償授權與威旭數據得自行或授權關係企業於其內部以任何方式使用，前述使用無任何期間限制。本條所謂內部使用，係指乙方或其關係企業，基於內部或集團運作所需進行非直接營利活動之目的，而公開口述、公開播送、公開上映、公開演出、公開傳輸、公開展示、公開發表及為前述目的而重製、改作、編輯依本合約創作完成之本專案製作物（包括但不限於將該本合約製作物使用於集團或公司介紹、歷史回顧相關製作物，並於內部向來訪賓客或於徵才活動、法說會、Road
+                Show、公司代表人或經理人授課演講等需對外介紹說明集團或公司發展歷史、經營狀況、未來策略時播放展示）。
+              </font>
+            </li>
+            <li>
+              <font
+                style="font-size:12px; line-height: 1.5;text-align: justify; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+                本合約未約定者，雙方同意均應受已簽署之「業務合作合約書」拘束，並優先適用「業務合作合約書」明確約定的各該條款。
+              </font>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 實際 A4 列印的內容 -- EDN-->
+    </div>
+  </section>
+
+
+
+
+  <section class="" style="padding:15mm;">
+    <!-- 680px*1000px -->
+    <div style="width: 680px; height: 1000px; margin: 0 auto; position: relative;">
+      <!-- LOGO fixed 左上角 -->
+      <div style="position: absolute; left: 0; top: -11mm; width: 155px;">
+        <img src="../images/svg/logo.svg" width="100%" style="display: inline-block; opacity: .5;">
+      </div>
+      <!-- 合約編號 fixed 右上角 -->
+      <div style="text-align: right; position: absolute; right: 0px; top: -10mm;">
+        <font
+          style="font-size:12px; color: #888; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          專案製作合約 No.11100000223134<br>
+          中華民國 XXX 年 XX 月 XX 日
+        </font>
+      </div>
+      <!-- 版本 fixed 左下角 -->
+      <div style=" position: absolute; left: 0; bottom: -10mm;">
+        <font
+          style="font-size:11px; color: #c4c4c4; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+          Weblisher Data Tech Co., Ltd – Ver.230407
+        </font>
+      </div>
+
+      <!-- 簽約的部分獨立一頁 -->
+      <!-- 實際 A4 列印的內容 -->
+      <div>
+        <div style="padding: 100px 0 240px 0;">
+          <font
+            style="font-size:12px; line-height: 1.5; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            <span style="font-weight: bold;">約經依雙方合法授權之代表人簽署如下：</span><br>
+            <br>
+            甲　　方： 這邊高度的位置可調 但不知道要留多少範圍<br>
+            負 責 人 ： 因為上方的"條款高度"無法控制<br>
+            地　　址：<br>
+            統　　編：<br>
+            公司電話：<br>
+            用　　印：<br>
+          </font>
+        </div>
+        <div style="padding: 0px 0 240px 0;">
+          <font
+            style="font-size:12px; line-height: 1.5; color: #333; display: block; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif;">
+            乙　　方：威旭數據科技股份有限公司<br>
+            負 責 人 ：張希寧<br>
+            地　　址：104 台北市中山區南京東路三段 63 號 8 樓<br>
+            統　　編：90656422<br>
+            公司電話： (02)2502-1980<br>
+            用　　印：<br>
+          </font>
+        </div>
+        <font style="font-size:12px; color: #333; display: block; text-align: right; font-weight: normal; font-family: Helvetica, '微軟正黑體',arial,sans-serif; position: absolute; right: 6mm;
+                      bottom: 0mm;">
+          簽約日期：中華民國 ________ 年 ________ 月 ________ 日
+        </font>
+      </div>
+      <!-- 實際 A4 列印的內容 -- EDN-->
+    </div>
+  </section>
+</body>
+</html>
