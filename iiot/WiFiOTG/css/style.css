@@ -304,6 +304,44 @@ body {
   opacity: .9;
 }
 
+.btn_square a {
+  color: #fff;
+  font-size: 26px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 120px;
+  height: 120px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffaf00;
+  background: linear-gradient(135deg, #ffaf00 0%, #ff8526 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaf00', endColorstr='#ff8526', GradientType=1);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_square a.bg_blue {
+  background: #4bc4dc;
+  /* Old browsers */
+  background: linear-gradient(135deg, #4bc4dc 0%, #1d6acf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc4dc', endColorstr='#1d6acf',GradientType=1 );
+}
+
+.btn_square a:hover {
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
 .btn_default a.color_gray {
   background-color: #b1b1b1;
   margin-left: 10px;
@@ -459,7 +497,7 @@ body {
   display: none;
   top: 40px;
   right: 0px;
-  width: 100px;
+  min-width: 100px;
   border: 1px solid #dfdfdf;
   border-radius: 4px;
   background-color: #fff;
@@ -483,8 +521,15 @@ body {
   cursor: pointer;
 }
 
+.header_wrap .cont_user .sub_list ul li p {
+  line-height: initial;
+}
+
 .header_wrap .cont_user .sub_list ul li p a {
+  display: inline-block;
+  min-width: 100px;
   color: #333;
+  padding: 10px 15px;
 }
 
 .header_wrap .cont_user .sub_list ul li p a:hover {
@@ -498,12 +543,14 @@ body {
 .main_wrap {
   width: 100%;
   margin: 0 auto;
+  min-height: calc(100vh - 250px);
   background-color: #f4f4f4;
 }
 
 .main_wrap h3.top_title {
   padding: 10px 0 15px 0;
   font-size: 24px;
+  line-height: 1.3;
   font-weight: bold;
   color: #222;
   text-align: center;
@@ -870,10 +917,6 @@ body {
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.main_wrap .bg_c1 {
-  background-color: #E9ECF0;
-}
-
 .main_wrap .plan_content {
   width: calc(100% - 40px);
   padding: 40px 0;
@@ -1189,13 +1232,13 @@ body {
   margin: 0 auto;
 }
 
-.main_wrap .shopping_contents .fillinBox {
+.main_wrap .fillinBox {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.main_wrap .shopping_contents .fillinBox .other_item {
+.main_wrap .fillinBox .other_item {
   background-color: #fff;
   border-radius: 20px;
   padding: 20px;
@@ -1204,17 +1247,17 @@ body {
   position: relative;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents {
+.main_wrap .fillinBox .order_contents {
   margin: 60px 0 40px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item {
+.main_wrap .fillinBox .order_contents .other_item {
   position: relative;
   padding-left: 45%;
   min-height: 180px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item .img_wifi_router {
+.main_wrap .fillinBox .order_contents .other_item .img_wifi_router {
   position: absolute;
   top: -40px;
   left: calc(22.5% - 90px);
@@ -1222,80 +1265,86 @@ body {
   height: 180px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item .img_wifi_router img {
+.main_wrap .fillinBox .order_contents .other_item .img_wifi_router img {
   width: 100%;
   border-radius: 25px;
   -webkit-box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item h3 {
+.main_wrap .fillinBox .order_contents .other_item h3 {
   font-size: 20px;
   line-height: 22px;
   padding: 15px 0;
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item p {
+.main_wrap .fillinBox .order_contents .other_item p {
   font-size: 17px;
   font-weight: bold;
   color: #FFAF00;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item .f_c_red {
+.main_wrap .fillinBox .order_contents .other_item .f_c_red {
   color: #ff103f;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item .f_c_green {
+.main_wrap .fillinBox .order_contents .other_item .f_c_green {
   color: #07b53b;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item p.plan_textinfo {
+.main_wrap .fillinBox .order_contents .other_item p.plan_textinfo {
   font-size: 14px;
   line-height: 24px;
   text-align: left;
   color: #333;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_contents .other_item p.plan_textinfo a {
+.main_wrap .fillinBox .order_contents .other_item p.plan_textinfo a {
   color: #2196f3;
   text-decoration: underline;
   padding: 0 5px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done {
+.main_wrap .fillinBox .order_done {
   margin: 20px auto 40px auto;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done .other_item {
+.main_wrap .fillinBox .order_done .other_item {
   padding: 30px 40px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done p {
+.main_wrap .fillinBox .order_done p {
   color: #333;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done p.pro {
+.main_wrap .fillinBox .order_done p.pro {
   font-size: 14px;
   padding-bottom: 15px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done p.order_nb {
+.main_wrap .fillinBox .order_done p.order_nb {
   font-size: 22px;
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done .pro_text {
+.main_wrap .fillinBox .order_done p.shopping_order_nb {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #919191;
+}
+
+.main_wrap .fillinBox .order_done .pro_text {
   float: left;
 }
 
-.main_wrap .shopping_contents .fillinBox .order_done .btn_default {
+.main_wrap .fillinBox .order_done .btn_default {
   width: initial;
   float: right;
   margin-top: 10px;
 }
 
-.main_wrap .shopping_contents .fillinBox h4.order_subtitle {
+.main_wrap .fillinBox h4.order_subtitle {
   padding: 15px 0;
   text-align: center;
   border: 1px solid #DBDBDB;
@@ -1303,57 +1352,57 @@ body {
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox ul {
+.main_wrap .fillinBox ul {
   padding-bottom: 10px;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li {
+.main_wrap .fillinBox ul li {
   padding: 10px 0;
   border-bottom: 1px solid #E8E8E8;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li p {
+.main_wrap .fillinBox ul li p {
   padding: 10px 0;
   color: #333;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li.verify input {
+.main_wrap .fillinBox ul li.verify input {
   float: left;
   max-width: 180px;
   color: #FFAF00;
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li .l_box {
+.main_wrap .fillinBox ul li .l_box {
   float: left;
   width: 110px;
 }
 
-.main_wrap .shopping_contents .fillinBox ul li .r_box {
+.main_wrap .fillinBox ul li .r_box {
   float: left;
   width: calc(100% - 110px);
 }
 
-.main_wrap .shopping_contents .fillinBox ul li .r_box p.text {
+.main_wrap .fillinBox ul li .r_box p.text {
   float: left;
   line-height: 20px;
 }
 
-.main_wrap .shopping_contents .fillinBox p.label_title {
+.main_wrap .fillinBox p.label_title {
   font-size: 16px;
   padding: 12px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox p.pro_text {
+.main_wrap .fillinBox p.pro_text {
   font-size: 18px;
   line-height: 1.2;
 }
 
-.main_wrap .shopping_contents .fillinBox .f_red {
+.main_wrap .fillinBox .f_red {
   color: #ff2121;
 }
 
-.main_wrap .shopping_contents .fillinBox p.the_reminder {
+.main_wrap .fillinBox p.the_reminder {
   color: #888888;
   font-size: 13px;
   text-align: justify;
@@ -1361,15 +1410,15 @@ body {
   padding: 6px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox p.the_reminder a {
+.main_wrap .fillinBox p.the_reminder a {
   color: #27d0ca;
 }
 
-.main_wrap .shopping_contents .fillinBox p.the_reminder a:hover {
+.main_wrap .fillinBox p.the_reminder a:hover {
   text-decoration: underline;
 }
 
-.main_wrap .shopping_contents .fillinBox a.btn_verify {
+.main_wrap .fillinBox a.btn_verify {
   margin: 6px 5px 3px 8px;
   float: left;
   font-size: 13px;
@@ -1391,13 +1440,13 @@ body {
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .fillinBox a.btn_verify:hover {
+.main_wrap .fillinBox a.btn_verify:hover {
   background-color: #333;
   color: #fff;
 }
 
-.main_wrap .shopping_contents .fillinBox input,
-.main_wrap .shopping_contents .fillinBox textarea {
+.main_wrap .fillinBox input,
+.main_wrap .fillinBox textarea {
   border: 1px solid #e0e0e0;
   width: 100%;
   padding: 8px 15px;
@@ -1407,8 +1456,8 @@ body {
   border-radius: 42px;
 }
 
-.main_wrap .shopping_contents .fillinBox input[type=text],
-.main_wrap .shopping_contents .fillinBox textarea {
+.main_wrap .fillinBox input[type=text],
+.main_wrap .fillinBox textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -1416,16 +1465,16 @@ body {
   outline: none;
 }
 
-.main_wrap .shopping_contents .fillinBox input[type=text]:focus,
-.main_wrap .shopping_contents .fillinBox textarea:focus {
+.main_wrap .fillinBox input[type=text]:focus,
+.main_wrap .fillinBox textarea:focus {
   border-color: #9e9e9e;
 }
 
-.main_wrap .shopping_contents .fillinBox .error_box {
+.main_wrap .fillinBox .error_box {
   position: relative;
 }
 
-.main_wrap .shopping_contents .fillinBox .error_box P.the_reminder {
+.main_wrap .fillinBox .error_box P.the_reminder {
   font-size: 12px;
   position: absolute;
   right: 5px;
@@ -1437,65 +1486,65 @@ body {
   border-radius: 20px;
 }
 
-.main_wrap .shopping_contents .fillinBox .error_box input {
+.main_wrap .fillinBox .error_box input {
   border-color: #FF3B3B;
 }
 
-.main_wrap .shopping_contents .fillinBox .for_phone {
+.main_wrap .fillinBox .for_phone {
   position: relative;
 }
 
-.main_wrap .shopping_contents .fillinBox .for_phone .btn_verify {
+.main_wrap .fillinBox .for_phone .btn_verify {
   position: absolute;
   right: 5px;
   top: 0;
 }
 
-.main_wrap .shopping_contents .fillinBox .both_input {
+.main_wrap .fillinBox .both_input {
   width: 100%;
 }
 
-.main_wrap .shopping_contents .fillinBox .both_input input {
+.main_wrap .fillinBox .both_input input {
   width: calc(50% - 20px);
   display: inline-block;
 }
 
-.main_wrap .shopping_contents .fillinBox .both_input span {
+.main_wrap .fillinBox .both_input span {
   text-align: center;
   width: 30px;
   display: inline-block;
   padding: 0 5px;
 }
 
-.main_wrap .shopping_contents .fillinBox .both_input p.the_reminder {
+.main_wrap .fillinBox .both_input p.the_reminder {
   text-align: right;
 }
 
-.main_wrap .shopping_contents .fillinBox ul.result_item {
+.main_wrap .fillinBox ul.result_item {
   width: 100%;
   max-width: 180px;
   display: block;
   padding: 10px 0 5px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox ul.result_item li {
+.main_wrap .fillinBox ul.result_item li {
   position: relative;
   width: 50%;
   float: left;
 }
 
-.main_wrap .shopping_contents .fillinBox ul.result_item li input {
+.main_wrap .fillinBox ul.result_item li input {
   width: initial;
   position: absolute;
   left: 0;
   cursor: pointer;
 }
 
-.main_wrap .shopping_contents .fillinBox ul.result_item li label {
+.main_wrap .fillinBox ul.result_item li label {
   padding-left: 25px;
 }
 
-.main_wrap .shopping_contents .fillinBox .styled-select {
+.main_wrap .fillinBox .styled-select {
   border: 1px solid #e0e0e0;
   width: 100%;
   max-width: 100%;
@@ -1510,7 +1559,7 @@ body {
   border-radius: 42px;
 }
 
-.main_wrap .shopping_contents .fillinBox .styled-select select {
+.main_wrap .fillinBox .styled-select select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1526,11 +1575,11 @@ body {
   -webkit-appearance: none;
 }
 
-.main_wrap .shopping_contents .fillinBox .styled-select select::-ms-expand {
+.main_wrap .fillinBox .styled-select select::-ms-expand {
   display: none;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details {
+.main_wrap .fillinBox .order-details {
   font-size: 14px;
   border-top: 1px solid #e0e0e0;
   border-radius: 20px;
@@ -1540,69 +1589,70 @@ body {
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details .f_c_green {
+.main_wrap .fillinBox .order-details .f_c_green {
   color: #07b53b;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details .f_c_red {
+.main_wrap .fillinBox .order-details .f_c_red {
   color: #ff103f;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details a {
+.main_wrap .fillinBox .order-details a {
   display: block;
   color: #666;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details a:hover {
+.main_wrap .fillinBox .order-details a:hover {
   color: #95a83b;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details td, .main_wrap .shopping_contents .fillinBox .order-details th {
+.main_wrap .fillinBox .order-details td,
+.main_wrap .fillinBox .order-details th {
   padding: 12px 10px;
   vertical-align: middle;
   word-wrap: break-word;
   border-top: 1px solid #e0e0e0;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details th {
+.main_wrap .fillinBox .order-details th {
   color: #666;
   background-color: #ffffff;
   font-weight: normal;
   font-size: 13px;
 }
 
-.main_wrap .shopping_contents .fillinBox .order-details th h4 {
+.main_wrap .fillinBox .order-details th h4 {
   font-size: 16px;
   padding: 8px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox .note {
+.main_wrap .fillinBox .note {
   margin: 10px 0;
   padding: 15px;
   border: 1px solid #07b53b;
   background-color: #fbffe5;
 }
 
-.main_wrap .shopping_contents .fillinBox .note p {
+.main_wrap .fillinBox .note p {
   font-size: 14px;
   color: #07b53b;
 }
 
-.main_wrap .shopping_contents .fillinBox .both_btn {
+.main_wrap .fillinBox .both_btn {
   text-align: center;
 }
 
-.main_wrap .shopping_contents .fillinBox .both_btn p {
+.main_wrap .fillinBox .both_btn p {
   margin: 0 5px;
   width: initial;
   display: inline-block;
 }
 
-.main_wrap .shopping_contents .fillinBox .confirm {
+.main_wrap .fillinBox .confirm {
   padding: 10px 0;
 }
 
-.main_wrap .shopping_contents .fillinBox .confirm .the_radio {
+.main_wrap .fillinBox .confirm .the_radio {
   width: 15px;
   height: 20px;
   float: left;
@@ -1610,79 +1660,92 @@ body {
   padding: 0;
 }
 
-.main_wrap .shopping_contents .fillinBox .confirm label {
+.main_wrap .fillinBox .confirm label {
   width: inherit;
 }
 
-.main_wrap .shopping_contents .fillinBox .confirm p {
+.main_wrap .fillinBox .confirm p {
   float: left;
   line-height: 24px;
   width: calc(100% - 50px);
   font-size: 13px;
 }
 
-.main_wrap .shopping_contents .fillinBox .confirm p a {
+.main_wrap .fillinBox .confirm p a {
   color: #2196F3;
   text-decoration: underline;
   margin: 0 3px;
 }
 
-.main_wrap .shopping_contents .fillinBox .confirm p a:hover {
+.main_wrap .fillinBox .confirm p a:hover {
   text-decoration: none;
 }
 
-.main_wrap .shopping_contents .fillinBox .bottom_btn {
+.main_wrap .fillinBox .bottom_btn {
   padding-top: 20px;
   text-align: right;
 }
 
-.main_wrap .shopping_contents .fillinBox .bottom_btn p.cancel {
+.main_wrap .fillinBox .bottom_btn p.cancel {
   display: inline-block;
   padding: 0 20px;
   font-size: 16px;
 }
 
-.main_wrap .shopping_contents .fillinBox .bottom_btn p.cancel a {
+.main_wrap .fillinBox .bottom_btn p.cancel a {
   color: #333;
 }
 
-.main_wrap .shopping_contents .fillinBox .bottom_btn p.cancel a:hover {
+.main_wrap .fillinBox .bottom_btn p.cancel a:hover {
   text-decoration: underline;
 }
 
-.main_wrap .shopping_contents .fillinBox .bottom_btn p.btn_default {
+.main_wrap .fillinBox .bottom_btn p.btn_default {
   width: initial;
   display: inline-block;
 }
 
-.main_wrap .shopping_contents .fillinBox .total_amount {
+.main_wrap .fillinBox .ma20 {
+  margin-top: 20px;
+}
+
+.main_wrap .fillinBox .details {
+  padding: 6px 0;
+  border-bottom: none;
+}
+
+.main_wrap .fillinBox .details .r_box p {
+  text-align: right;
+}
+
+.main_wrap .fillinBox .total_amount {
   font-size: 18px;
   font-weight: bold;
   border-color: #333;
   border-top: 1px solid #333;
 }
 
-.main_wrap .shopping_contents .fillinBox .total_amount p {
+.main_wrap .fillinBox .total_amount p {
   font-weight: bold;
   font-size: 18px;
 }
 
-.main_wrap .shopping_contents .fillinBox .total_amount .r_box p {
+.main_wrap .fillinBox .total_amount .r_box p {
   text-align: right;
 }
 
-.main_wrap .shopping_contents .order_fillin {
+.main_wrap .order_fillin {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history {
+.main_wrap .order_fillin .order_history {
   width: 100%;
   padding-bottom: 20px;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card {
+.main_wrap .order_fillin .order_history .card {
   background-color: #fff;
   border-radius: 25px;
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
@@ -1690,7 +1753,7 @@ body {
   margin: 25px auto;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont {
+.main_wrap .order_fillin .order_history .card .top_cont {
   width: 100%;
   position: relative;
   padding: 10px 25px;
@@ -1706,7 +1769,7 @@ body {
   cursor: pointer;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .arr {
+.main_wrap .order_fillin .order_history .card .top_cont .arr {
   content: "";
   position: absolute;
   right: 10px;
@@ -1718,7 +1781,7 @@ body {
   background-size: contain;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state {
+.main_wrap .order_fillin .order_history .card .top_cont p.state {
   width: 80px;
   height: 30px;
   font-size: 13px;
@@ -1737,44 +1800,49 @@ body {
           justify-content: center;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state_online {
-  border: 2px solid #FF3B3B;
-  background-color: #FF3B3B;
-}
-
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state_not_yet {
-  border: 2px solid #FF3B3B;
-  color: #FF3B3B;
-}
-
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont p.state_done {
+.main_wrap .order_fillin .order_history .card .top_cont p.state_online {
   border: 2px solid #FFAF00;
   background-color: #FFAF00;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info {
+.main_wrap .order_fillin .order_history .card .top_cont p.state_not_yet {
+  border: 2px solid #FF3B3B;
+  color: #FF3B3B;
+}
+
+.main_wrap .order_fillin .order_history .card .top_cont p.state_pending {
+  border: 2px solid #4285F4;
+  color: #4285F4;
+}
+
+.main_wrap .order_fillin .order_history .card .top_cont p.state_done {
+  border: 2px solid #909090;
+  background-color: #909090;
+}
+
+.main_wrap .order_fillin .order_history .card .top_cont .order_nb_info {
   padding: 5px 0;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info .order_date {
+.main_wrap .order_fillin .order_history .card .top_cont .order_nb_info .order_date {
   font-size: 12px;
   color: #AFAFAF;
   padding: 0 0 3px 1px;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .top_cont .order_nb_info .order_nb {
+.main_wrap .order_fillin .order_history .card .top_cont .order_nb_info .order_nb {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.5;
   word-break: break-all;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .arr_up .arr {
+.main_wrap .order_fillin .order_history .card .arr_up .arr {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info {
+.main_wrap .order_fillin .order_history .card .order_info {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1783,7 +1851,7 @@ body {
       flex-wrap: wrap;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row {
+.main_wrap .order_fillin .order_history .card .order_info .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1791,37 +1859,37 @@ body {
   padding: 15px 25px;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row ul {
+.main_wrap .order_fillin .order_history .card .order_info .row ul {
   width: 100%;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row ul li {
+.main_wrap .order_fillin .order_history .card .order_info .row ul li {
   width: 100%;
   padding: 5px 0;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.s_title {
+.main_wrap .order_fillin .order_history .card .order_info .row p.s_title {
   font-size: 13px;
   color: #979797;
   line-height: 1.5;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text {
+.main_wrap .order_fillin .order_history .card .order_info .row p.text {
   font-size: 15px;
   font-weight: bold;
   line-height: 1.5;
   word-break: break-all;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text a {
+.main_wrap .order_fillin .order_history .card .order_info .row p.text a {
   color: #333;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .order_info .row p.text a:hover {
+.main_wrap .order_fillin .order_history .card .order_info .row p.text a:hover {
   text-decoration: underline;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .device_info {
+.main_wrap .order_fillin .order_history .card .device_info {
   padding: 15px 25px 17px 25px;
   border-top: 1px solid #E8E8E8;
   display: -webkit-box;
@@ -1834,19 +1902,19 @@ body {
           align-items: center;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .device_nb {
+.main_wrap .order_fillin .order_history .card .device_info .device_nb {
   font-size: 14px;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .device_nb span {
+.main_wrap .order_fillin .order_history .card .device_info .device_nb span {
   font-weight: bold;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn {
+.main_wrap .order_fillin .order_history .card .device_info .btn {
   padding-left: 15px;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn a {
+.main_wrap .order_fillin .order_history .card .device_info .btn a {
   font-size: 13px;
   padding: 0 12px;
   line-height: 26px;
@@ -1859,13 +1927,177 @@ body {
   text-align: center;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .card .device_info .btn a:hover {
+.main_wrap .order_fillin .order_history .card .device_info .btn a:hover {
   background-color: #333;
   color: #fff;
 }
 
-.main_wrap .shopping_contents .order_fillin .order_history .bg_end .top_cont {
+.main_wrap .order_fillin .order_history .bg_end {
+  background-color: #F7F7F7;
+}
+
+.main_wrap .order_fillin .order_history .bg_end .top_cont {
   background-color: #EEEEEE;
+}
+
+.main_wrap .takeBox {
+  width: 100%;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.main_wrap .takeBox .icon_done {
+  margin: 20px auto 10px auto;
+  width: 68px;
+  height: 68px;
+  display: block;
+  background: url(../images/check-circle-regular.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.main_wrap .takeBox .take_text {
+  padding: 20px 0;
+}
+
+.main_wrap .takeBox .take_text p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main_wrap .takeBox .fillinBox p.text {
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main_wrap .takeBox .fillinBox p.text a {
+  color: #2196F3;
+  text-decoration: underline;
+}
+
+.main_wrap .takeBox .fillinBox p.text a:hover {
+  text-decoration: none;
+}
+
+.main_wrap .takeBox .fillinBox p.error_text {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  color: #FF3B3B;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.main_wrap .takeBox .fillinBox input {
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.main_wrap .takeBox .fillinBox .row {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.main_wrap .takeBox .fillinBox .error_box input {
+  color: #FF3B3B;
+}
+
+.main_wrap .takeBox .fillinBox .btn_default {
+  padding-top: 10px;
+  font-size: 18px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.03);
+}
+
+.main_wrap .takeBox .fillinBox .btn_default a {
+  min-width: 200px;
+  line-height: 30px;
+}
+
+.main_wrap .takeBox .bottom_btn {
+  text-align: center;
+}
+
+.main_wrap .takeBox .bottom_btn p.btn_square {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main_wrap .takeBox .login_type_box {
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.main_wrap .takeBox .login_type_box p.text {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.main_wrap .terms_contents {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.main_wrap .terms_contents .cont_middle {
+  max-width: 1000px;
+}
+
+.main_wrap .terms_contents .sub_title {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.main_wrap .terms_contents .s_ul_title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.main_wrap .terms_contents p.s_text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.main_wrap .terms_contents ul.ul_nb {
+  padding: 30px 0;
+  list-style-type: decimal;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.main_wrap .terms_contents ul.ul_nb li {
+  padding-bottom: 15px;
+}
+
+.main_wrap .terms_contents ul.ul_nb li p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.main_wrap .terms_contents ul.ul_disc {
+  padding: 30px 0;
+  list-style-type: disc;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.main_wrap .terms_contents ul.ul_disc li {
+  padding-bottom: 5px;
+}
+
+.main_wrap .terms_contents ul.ul_disc li p {
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .wifiotg_info {
@@ -2028,7 +2260,7 @@ body {
           justify-content: center;
 }
 
-.login_cont .login_type_box {
+.login_type_box {
   width: 100%;
   max-width: 400px;
   min-height: 240px;
@@ -2039,25 +2271,26 @@ body {
   padding: 35px 20px;
 }
 
-.login_cont .login_type_box p.text {
+.login_type_box p.text {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
 
-.login_cont .login_type_box ul {
+.login_type_box ul {
   width: 100%;
   max-width: 214px;
   margin: 0 auto;
   padding-top: 20px;
 }
 
-.login_cont .login_type_box ul li {
+.login_type_box ul li {
   width: 100%;
   padding: 8px 0;
 }
 
-.login_cont .login_type_box ul li a {
+.login_type_box ul li a {
+  font-size: 17px;
   width: 100%;
   height: 50px;
   display: block;
@@ -2069,7 +2302,7 @@ body {
   position: relative;
 }
 
-.login_cont .login_type_box ul li a::before {
+.login_type_box ul li a::before {
   content: "";
   width: 20px;
   height: 24px;
@@ -2079,18 +2312,35 @@ body {
   top: calc(50% - 12px);
 }
 
-.login_cont .login_type_box ul li.apple a::before {
+.login_type_box ul li.apple a {
+  text-indent: 15px;
+}
+
+.login_type_box ul li.apple a::before {
   background: url(../images/apple.svg) center center no-repeat;
   background-size: contain;
 }
 
-.login_cont .login_type_box ul li.google a {
+.login_type_box ul li.google a {
+  text-indent: 15px;
   background-color: #4285F4;
 }
 
-.login_cont .login_type_box ul li.google a::before {
+.login_type_box ul li.google a::before {
   background: url(../images/google.svg) center center no-repeat;
   background-size: contain;
+}
+
+.bg_w {
+  background-color: #fff;
+}
+
+.bg_c1 {
+  background-color: #E9ECF0;
+}
+
+.bg_c2 {
+  background-color: #F4F4F4;
 }
 
 @media (max-width: 1200px) {
@@ -2251,6 +2501,12 @@ body {
     text-align: center;
     padding-bottom: 5px;
   }
+  .main_wrap .terms_contents .sub_title {
+    font-size: 15px;
+  }
+  .main_wrap .terms_contents ul.ul_nb li {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -2276,32 +2532,32 @@ body {
   .main_wrap .wifi_router_info {
     padding: 15px 0;
   }
-  .main_wrap .shopping_contents .fillinBox .order_contents .other_item {
+  .main_wrap .fillinBox .order_contents .other_item {
     padding-left: 20px;
     padding-top: 70px;
     text-align: center;
   }
-  .main_wrap .shopping_contents .fillinBox .order_contents .other_item h3 {
+  .main_wrap .fillinBox .order_contents .other_item h3 {
     padding-bottom: 10px;
   }
-  .main_wrap .shopping_contents .fillinBox .order_contents .other_item .img_wifi_router {
+  .main_wrap .fillinBox .order_contents .other_item .img_wifi_router {
     left: calc(50% - 50px);
     width: 100px;
     height: 100px;
   }
-  .main_wrap .shopping_contents .fillinBox .both_input input {
+  .main_wrap .fillinBox .both_input input {
     width: 100%;
   }
-  .main_wrap .shopping_contents .fillinBox .both_input span {
+  .main_wrap .fillinBox .both_input span {
     width: 100%;
     padding: 5px 0;
   }
-  .main_wrap .shopping_contents .fillinBox .order_done .pro_text {
+  .main_wrap .fillinBox .order_done .pro_text {
     float: initial;
     text-align: center;
     padding-bottom: 5px;
   }
-  .main_wrap .shopping_contents .fillinBox .order_done .btn_default {
+  .main_wrap .fillinBox .order_done .btn_default {
     float: initial;
   }
   .main_wrap .shopping_contents .order_fillin .order_history .card .top_cont {
