@@ -1411,7 +1411,7 @@
         border-radius: 25px;
         box-shadow: 2px 5px 15px rgba(0, 0, 0, .1);
         margin: 25px auto;
-
+        overflow: hidden;
         .top_cont {
           width: 100%;
           position: relative;
@@ -1449,27 +1449,6 @@
             justify-content: center;
 
           }
-
-          p.state_online {
-            border: 2px solid #FFAF00;
-            background-color: #FFAF00;
-          }
-
-          p.state_not_yet {
-            border: 2px solid #FF3B3B;
-            color: #FF3B3B;
-          }
-
-          p.state_pending {
-            border: 2px solid #4285F4;
-            color: #4285F4;
-          }
-
-          p.state_done {
-            border: 2px solid #909090;
-            background-color: #909090;
-          }
-
           .order_nb_info {
             padding: 5px 0;
 
@@ -1535,6 +1514,10 @@
                 &:hover {
                   text-decoration: underline;
                 }
+                &.link{
+                  font-size: 13px;
+                  font-weight: normal;
+                }
               }
             }
           }
@@ -1578,12 +1561,58 @@
           }
         }
       }
+      .state_online {
+        .top_cont{
+          p.state{
+            border: 2px solid #FFAF00;
+            background-color: #FFAF00;
+          }
+        }
+      }
 
-      .bg_end {
+      .state_not_yet {
+        .top_cont {
+          p.state {
+            border: 2px solid #FF3B3B;
+            color: #FF3B3B;
+          }
+        }
+      }
+
+      .state_error {
+        .top_cont {
+          background-color: #FFDFDF;
+          p.state {
+            border: 2px solid #FF3B3B;
+            background-color: #FF3B3B;
+            color: #fff;
+          }
+          .order_nb_info{
+            
+            p.order_date{
+              color: #a3a3a3;
+            }
+          }
+        }
+      }
+
+      .state_pending {
+        .top_cont {
+          p.state {
+            border: 2px solid #4285F4;
+            color: #4285F4;
+          }
+        }
+      }
+
+      .state_done {
         background-color: #F7F7F7;
-
         .top_cont {
           background-color: #EEEEEE;
+          p.state {
+            border: 2px solid #909090;
+            background-color: #909090;
+          }
         }
       }
     }
@@ -1670,6 +1699,69 @@
       p.text{
         font-size: 18px;
         font-weight: normal;
+      }
+    }
+  }
+  .service_info{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+    border-radius: 20px;
+    padding:15px 10px;
+    border: 1px solid #FFAF00;
+    background-color: #FEFFE0;
+    text-align: center;
+    p.text_info{
+      font-size: 14px;
+    }
+    p.phone{
+      padding:15px 0 5px 0;
+      font-size: 24px;
+      display: inline-block;
+      font-weight: 900;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      a {
+        position: relative;
+        color: #555555;
+        padding-left: 25px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: calc(50% - 10px);
+          width: 20px;
+          height: 20px;
+          display: block;
+          background: url(../images/service-phone.svg) center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    p.mail{
+      font-size: 20px;
+      padding: 10px 0;
+      display: inline-block;
+      font-weight: 900;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      a{
+        position: relative;
+        color: #38A1DB;
+        text-decoration: underline;
+        padding-left: 30px;
+        &::after{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: calc(50% - 10px);
+          width: 20px;
+          height: 20px;
+          display: block;
+          background: url(../images/service-mail.svg) center center no-repeat;
+          background-size: contain;
+        }
       }
     }
   }

@@ -1751,6 +1751,7 @@ body {
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
   margin: 25px auto;
+  overflow: hidden;
 }
 
 .main_wrap .order_fillin .order_history .card .top_cont {
@@ -1798,26 +1799,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.main_wrap .order_fillin .order_history .card .top_cont p.state_online {
-  border: 2px solid #FFAF00;
-  background-color: #FFAF00;
-}
-
-.main_wrap .order_fillin .order_history .card .top_cont p.state_not_yet {
-  border: 2px solid #FF3B3B;
-  color: #FF3B3B;
-}
-
-.main_wrap .order_fillin .order_history .card .top_cont p.state_pending {
-  border: 2px solid #4285F4;
-  color: #4285F4;
-}
-
-.main_wrap .order_fillin .order_history .card .top_cont p.state_done {
-  border: 2px solid #909090;
-  background-color: #909090;
 }
 
 .main_wrap .order_fillin .order_history .card .top_cont .order_nb_info {
@@ -1889,6 +1870,11 @@ body {
   text-decoration: underline;
 }
 
+.main_wrap .order_fillin .order_history .card .order_info .row p.text a.link {
+  font-size: 13px;
+  font-weight: normal;
+}
+
 .main_wrap .order_fillin .order_history .card .device_info {
   padding: 15px 25px 17px 25px;
   border-top: 1px solid #E8E8E8;
@@ -1932,12 +1918,46 @@ body {
   color: #fff;
 }
 
-.main_wrap .order_fillin .order_history .bg_end {
+.main_wrap .order_fillin .order_history .state_online .top_cont p.state {
+  border: 2px solid #FFAF00;
+  background-color: #FFAF00;
+}
+
+.main_wrap .order_fillin .order_history .state_not_yet .top_cont p.state {
+  border: 2px solid #FF3B3B;
+  color: #FF3B3B;
+}
+
+.main_wrap .order_fillin .order_history .state_error .top_cont {
+  background-color: #FFDFDF;
+}
+
+.main_wrap .order_fillin .order_history .state_error .top_cont p.state {
+  border: 2px solid #FF3B3B;
+  background-color: #FF3B3B;
+  color: #fff;
+}
+
+.main_wrap .order_fillin .order_history .state_error .top_cont .order_nb_info p.order_date {
+  color: #a3a3a3;
+}
+
+.main_wrap .order_fillin .order_history .state_pending .top_cont p.state {
+  border: 2px solid #4285F4;
+  color: #4285F4;
+}
+
+.main_wrap .order_fillin .order_history .state_done {
   background-color: #F7F7F7;
 }
 
-.main_wrap .order_fillin .order_history .bg_end .top_cont {
+.main_wrap .order_fillin .order_history .state_done .top_cont {
   background-color: #EEEEEE;
+}
+
+.main_wrap .order_fillin .order_history .state_done .top_cont p.state {
+  border: 2px solid #909090;
+  background-color: #909090;
 }
 
 .main_wrap .takeBox {
@@ -2037,6 +2057,76 @@ body {
 .main_wrap .takeBox .login_type_box p.text {
   font-size: 18px;
   font-weight: normal;
+}
+
+.main_wrap .service_info {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 15px 10px;
+  border: 1px solid #FFAF00;
+  background-color: #FEFFE0;
+  text-align: center;
+}
+
+.main_wrap .service_info p.text_info {
+  font-size: 14px;
+}
+
+.main_wrap .service_info p.phone {
+  padding: 15px 0 5px 0;
+  font-size: 24px;
+  display: inline-block;
+  font-weight: 900;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_wrap .service_info p.phone a {
+  position: relative;
+  color: #555555;
+  padding-left: 25px;
+}
+
+.main_wrap .service_info p.phone a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url(../images/service-phone.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.main_wrap .service_info p.mail {
+  font-size: 20px;
+  padding: 10px 0;
+  display: inline-block;
+  font-weight: 900;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_wrap .service_info p.mail a {
+  position: relative;
+  color: #38A1DB;
+  text-decoration: underline;
+  padding-left: 30px;
+}
+
+.main_wrap .service_info p.mail a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url(../images/service-mail.svg) center center no-repeat;
+  background-size: contain;
 }
 
 .main_wrap .terms_contents {
