@@ -337,6 +337,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc4dc', endColorstr='#1d6acf',GradientType=1 );
 }
 
+.btn_square a.bg_red {
+  background: #ff9d52;
+  background: linear-gradient(135deg, #ff9d52 0%, #f80009 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9d52', endColorstr='#f80009', GradientType=1);
+}
+
 .btn_square a:hover {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -1871,8 +1877,35 @@ body {
 }
 
 .main_wrap .order_fillin .order_history .card .order_info .row p.text a.link {
+  color: #1C92CD;
   font-size: 13px;
   font-weight: normal;
+  text-decoration: underline;
+}
+
+.main_wrap .order_fillin .order_history .card .order_info .row p.text a.link:hover {
+  text-decoration: none;
+}
+
+.main_wrap .order_fillin .order_history .card .order_info .row_100 {
+  padding: 10px 25px;
+  border-top: 1px solid #E8E8E8;
+  width: 100%;
+}
+
+.main_wrap .order_fillin .order_history .card .order_info .row_100 ul {
+  vertical-align: middle;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_wrap .order_fillin .order_history .card .order_info .row_100 ul .nb {
+  text-align: right;
+  width: 240px;
 }
 
 .main_wrap .order_fillin .order_history .card .device_info {
@@ -1983,6 +2016,20 @@ body {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.main_wrap .takeBox .take_text p.machine_number {
+  margin: 15px auto;
+  width: 100%;
+  max-width: 350px;
+  background-color: #FEFFE0;
+  border: 1px solid #FFAF00;
+  padding: 8px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #333;
+  border-radius: 42px;
 }
 
 .main_wrap .takeBox .fillinBox p.text {
@@ -2418,6 +2465,26 @@ body {
 
 .login_type_box ul li.google a::before {
   background: url(../images/google.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.login_type_box ul li.line a {
+  text-indent: 15px;
+  background-color: #07B53B;
+}
+
+.login_type_box ul li.line a::before {
+  background: url(../images/service.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.login_type_box ul li.phone a {
+  text-indent: 15px;
+  background-color: #FD7840;
+}
+
+.login_type_box ul li.phone a::before {
+  background: url(../images/service-phone-w.svg) center center no-repeat;
   background-size: contain;
 }
 

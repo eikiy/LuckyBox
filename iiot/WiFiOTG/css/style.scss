@@ -120,6 +120,13 @@
       background: linear-gradient(135deg,  #4bc4dc 0%,#1d6acf 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc4dc', endColorstr='#1d6acf',GradientType=1 ); 
     }
+    &.bg_red{
+      background: #ff9d52;
+      background: -moz-linear-gradient(-45deg, #ff9d52 0%, #f80009 100%);
+      background: -webkit-linear-gradient(-45deg, #ff9d52 0%, #f80009 100%);
+      background: linear-gradient(135deg, #ff9d52 0%, #f80009 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9d52', endColorstr='#f80009', GradientType=1);
+    }
     &:hover{
       box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
     }
@@ -1515,9 +1522,28 @@
                   text-decoration: underline;
                 }
                 &.link{
+                  color: #1C92CD;
                   font-size: 13px;
                   font-weight: normal;
+                  text-decoration: underline;
+                  &:hover {
+                    text-decoration: none;
+                  }
                 }
+              }
+            }
+          }
+          .row_100{
+            padding: 10px 25px;
+            border-top: 1px solid #E8E8E8;
+            width: 100%;
+            ul{
+              vertical-align: middle;
+              align-items: flex-start;
+              display: flex;
+              .nb{
+                text-align: right;
+                width: 240px;
               }
             }
           }
@@ -1635,6 +1661,19 @@
         text-align: center;
         font-size: 16px;
         line-height: 1.5;
+        &.machine_number{
+          margin: 15px auto;
+          width: 100%;
+          max-width: 350px;
+          background-color: #FEFFE0;
+          border: 1px solid #FFAF00;
+          padding: 8px 15px;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 42px;
+          color: #333;
+          border-radius: 42px
+        }
       }
     }
     .fillinBox{
@@ -1999,6 +2038,28 @@
 
           &::before {
             background: url(../images/google.svg) center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      &.line {
+        a {
+          text-indent: 15px;
+          background-color: #07B53B;
+
+          &::before {
+            background: url(../images/service.svg) center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      &.phone {
+        a {
+          text-indent: 15px;
+          background-color: #FD7840;
+
+          &::before {
+            background: url(../images/service-phone-w.svg) center center no-repeat;
             background-size: contain;
           }
         }
