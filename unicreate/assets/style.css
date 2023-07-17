@@ -156,6 +156,12 @@ p.price {
   max-width: 300px;
 }
 
+@media (max-width: 650px) {
+  .for_nutritionist .items4 section {
+    padding: 8px;
+  }
+}
+
 .for_nutritionist .items-row4 {
   display: -webkit-box;
   display: -ms-flexbox;

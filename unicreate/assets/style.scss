@@ -137,6 +137,9 @@ p.price{
         width: 100%;
         max-width: 300px;
       }
+      @media (max-width:650px) {
+        padding: 8px;
+      }
     }
   }
   .items-row4{
