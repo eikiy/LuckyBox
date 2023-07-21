@@ -578,6 +578,76 @@ body {
   color: #FFAF00;
 }
 
+.main_wrap h4.top_title_bgw {
+  color: #2EA3DD;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.main_wrap h4.top_title_bgw span {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 14px 30px;
+  display: inline-block;
+  margin: 0 auto;
+  -webkit-box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main_wrap ul.step_01-04 {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  vertical-align: text-top;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.main_wrap ul.step_01-04 li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  word-wrap: 25%;
+  padding: 10px;
+}
+
+.main_wrap ul.step_01-04 li .images {
+  width: 100%;
+}
+
+.main_wrap ul.step_01-04 li .images img {
+  width: 100%;
+  max-width: 170px;
+}
+
+.main_wrap ul.step_01-04 li .step {
+  color: #2EA3DD;
+  font-weight: bold;
+}
+
+.main_wrap ul.step_01-04 li .s_title {
+  color: #333333;
+  font-size: 17px;
+  padding: 10px 0 15px 0;
+  font-weight: bold;
+}
+
+.main_wrap ul.step_01-04 li .s_text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555555;
+}
+
 .main_wrap .main_flexslider {
   width: 100%;
   max-width: 1200px;
@@ -2009,7 +2079,7 @@ body {
 }
 
 .main_wrap .takeBox .take_text {
-  padding: 20px 0;
+  width: 100%;
 }
 
 .main_wrap .takeBox .take_text p {
@@ -2237,6 +2307,136 @@ body {
   line-height: 1.5;
 }
 
+.main_wrap .teaching_contents {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.main_wrap .teaching_contents ul.step_01-04 {
+  padding: 20px 0 30px 0;
+}
+
+.main_wrap .teaching_contents .cont_middle {
+  max-width: 1000px;
+}
+
+.main_wrap .teaching_contents .top_menu {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.main_wrap .teaching_contents .top_menu ul {
+  width: 100%;
+  text-align: center;
+}
+
+.main_wrap .teaching_contents .top_menu ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.main_wrap .teaching_contents .top_menu ul li::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 8px;
+  width: 1px;
+  height: 24px;
+  background-color: #cacaca;
+  display: block;
+}
+
+.main_wrap .teaching_contents .top_menu ul li:last-child::before {
+  display: none;
+}
+
+.main_wrap .teaching_contents .top_menu ul li p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.main_wrap .teaching_contents .top_menu ul li a {
+  color: #555555;
+}
+
+.main_wrap .teaching_contents .top_menu ul li a:hover {
+  color: #FFAF00;
+}
+
+.main_wrap .teaching_contents .teaching_card {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 0 30px 0;
+  margin: 0 auto;
+}
+
+.main_wrap .teaching_contents .teaching_card img {
+  width: 100%;
+}
+
+.main_wrap .teaching_contents .teaching_card .for_radius {
+  border-radius: 25px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card {
+  width: 100%;
+  padding: 100px 40px 100px 30%;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card .images {
+  position: absolute;
+  width: 100%;
+  max-width: 270px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card .info {
+  background-color: #fff;
+  border-radius: 0px 25px 25px 0;
+  padding: 25px 25px 25px 80px;
+  width: 100%;
+  max-width: 380px;
+  min-height: 176px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card .info p {
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card .info p .c_red {
+  color: #FF1414;
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card .info p a {
+  color: #1C92CD;
+  text-decoration: underline;
+}
+
+.main_wrap .teaching_contents .teaching_card .a_card .info p a:hover {
+  text-decoration: none;
+}
+
 .wifiotg_info {
   width: 100%;
   padding: 40px 0;
@@ -2246,6 +2446,90 @@ body {
 .wifiotg_info .cont_middle {
   width: 100%;
   max-width: 1200px;
+}
+
+.wifiotg_info .bn-info {
+  width: 100%;
+  background-color: #FABE00;
+  border-radius: 25px;
+}
+
+.wifiotg_info .wifiotg_advantage {
+  padding: 20px 20px 20px 22%;
+  width: 100%;
+  background: url(../images/bg_advantage.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wifiotg_info .wifiotg_advantage:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 170px;
+  background: url(../images/img_advantage.png) left bottom no-repeat;
+  background-size: contain;
+  border-radius: 25px;
+}
+
+.wifiotg_info .wifiotg_advantage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.wifiotg_info .wifiotg_advantage ul li {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  padding: 25px 10px 25px 65px;
+  position: relative;
+}
+
+.wifiotg_info .wifiotg_advantage ul li::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  left: 0;
+  top: calc( 50% - 35px);
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wifiotg_info .wifiotg_advantage ul li.icon_01::after {
+  background-image: url(../images/icon_advantage_01.svg);
+}
+
+.wifiotg_info .wifiotg_advantage ul li.icon_02::after {
+  background-image: url(../images/icon_advantage_02.svg);
+  background-size: 90%;
+}
+
+.wifiotg_info .wifiotg_advantage ul li.icon_03::after {
+  background-image: url(../images/icon_advantage_03.svg);
+}
+
+.wifiotg_info .wifiotg_advantage ul li p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 5px #00000030;
+}
+
+.wifiotg_info .wifiotg_advantage ul li p.en {
+  font-size: 14px;
+  padding-top: 5px;
+  font-style: italic;
 }
 
 .footer_wrap {
@@ -2557,6 +2841,23 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .wifiotg_info .wifiotg_advantage {
+    padding: 20px;
+  }
+  .wifiotg_info .wifiotg_advantage ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .wifiotg_info .wifiotg_advantage ul li {
+    min-width: 240px;
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
+  }
+}
+
 @media (max-width: 800px) {
   .menu-btn {
     display: block;
@@ -2771,6 +3072,15 @@ body {
   .main_wrap h4.sub_title {
     font-size: 17px;
   }
+  .main_wrap h4.top_title_bgw {
+    font-size: 16px;
+    padding: 20px 0 5px 0;
+  }
+  .main_wrap ul.step_01-04 li {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
   .main_wrap .area_content ul.area_list li a {
     min-height: 175px;
   }
@@ -2785,6 +3095,13 @@ body {
   .main_wrap .area_content ul.country_list li {
     padding: 3px 5px;
   }
+  .main_wrap .area_content ul.country_list li ul.hashtag {
+    left: 10px;
+    top: 10px;
+  }
+  .main_wrap .area_content ul.country_list li ul.hashtag li p {
+    font-size: 12px;
+  }
   .main_wrap .area_content ul.country_list li a .cou_info .bk p.title {
     font-size: 20px;
   }
@@ -2798,7 +3115,48 @@ body {
     font-size: 14px;
     line-height: 18px;
   }
+  .main_wrap .teaching_contents .top_menu ul li p {
+    font-size: 15px;
+  }
+  .main_wrap .teaching_contents .teaching_card {
+    padding: 0;
+  }
+  .main_wrap .teaching_contents .teaching_card .a_card {
+    padding: 340px 20px 20px 20px;
+    margin-bottom: 0px;
+  }
+  .main_wrap .teaching_contents .teaching_card .a_card .images {
+    max-width: 250px;
+    left: calc(50% - 125px);
+  }
+  .main_wrap .teaching_contents .teaching_card .a_card .info {
+    border-radius: 25px;
+    padding: 25px;
+    min-height: 130px;
+  }
+  .main_wrap .teaching_contents .teaching_card .a_card .info p {
+    font-size: 15px;
+  }
   .footer_info p {
+    font-size: 12px;
+  }
+  .wifiotg_info .wifiotg_advantage {
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+  .wifiotg_info .wifiotg_advantage ul li {
+    min-width: initial;
+    max-width: 50%;
+    padding: 5px 5px 10px 40px;
+  }
+  .wifiotg_info .wifiotg_advantage ul li::after {
+    width: 30px;
+    height: 30px;
+  }
+  .wifiotg_info .wifiotg_advantage ul li p {
+    font-size: 16px;
+  }
+  .wifiotg_info .wifiotg_advantage ul li p.en {
     font-size: 12px;
   }
 }

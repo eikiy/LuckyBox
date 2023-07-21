@@ -1,0 +1,21 @@
+<svg id="Group_139" data-name="Group 139" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.748" height="52.748" viewBox="0 0 52.748 52.748">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_141" data-name="Rectangle 141" width="52.748" height="52.748" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Path_370" data-name="Path 370" d="M15.578,15.881H23.14V12.856l6.806,6.05-6.806,6.05V21.931H17.847" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <path id="Path_371" data-name="Path 371" d="M32.216,22.688h7.563V19.663l6.05,5.294-6.05,5.294V27.226H36.754" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <line id="Line_88" data-name="Line 88" x1="5.294" transform="translate(13.309 18.906)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <line id="Line_89" data-name="Line 89" x1="1.513" transform="translate(10.283 18.906)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <line id="Line_90" data-name="Line 90" x1="6.05" transform="translate(18.603 31.763)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <line id="Line_91" data-name="Line 91" x1="1.513" transform="translate(15.577 31.763)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <line id="Line_92" data-name="Line 92" x1="1.513" transform="translate(12.552 31.763)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <line id="Line_93" data-name="Line 93" x1="1.513" transform="translate(12.552 36.301)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <path id="Path_372" data-name="Path 372" d="M21.628,28.738h7.563V24.2l9.075,8.319L29.191,41.6V36.3H15.578" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.533"/>
+  <g id="Group_138" data-name="Group 138">
+    <g id="Group_137" data-name="Group 137" clip-path="url(#clip-path)">
+      <path id="Path_373" data-name="Path 373" d="M51.428,26.374A25.055,25.055,0,1,1,26.374,1.32,25.054,25.054,0,0,1,51.428,26.374Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2.639"/>
+    </g>
+  </g>
+</svg>
