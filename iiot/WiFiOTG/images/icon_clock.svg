@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17 17" style="enable-background:new 0 0 17 17;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#clock-regular);}
+	.st1{fill:#FFFFFF;}
+</style>
+<filter  filterUnits="userSpaceOnUse" height="35" id="clock-regular" width="35" x="0" y="0">
+	<feOffset  dy="3" input="SourceAlpha"></feOffset>
+	<feGaussianBlur  result="blur" stdDeviation="3"></feGaussianBlur>
+	<feFlood  flood-opacity="0.071"></feFlood>
+	<feComposite  in2="blur" operator="in"></feComposite>
+	<feComposite  in="SourceGraphic" operator="over"></feComposite>
+</filter>
+<g transform="matrix(1, 0, 0, 1, 0, 0)" class="st0">
+	<path id="clock-regular-2_00000142148591729527709780000010996289740264342198_" class="st1" d="M15.4,8.5c0,3.8-3.1,6.9-6.9,6.9
+		s-6.9-3.1-6.9-6.9s3.1-6.9,6.9-6.9S15.4,4.7,15.4,8.5L15.4,8.5z M0,8.5C0,13.2,3.8,17,8.5,17S17,13.2,17,8.5S13.2,0,8.5,0
+		S0,3.8,0,8.5z M7.7,4v4.5c0,0.3,0.1,0.5,0.4,0.7l3.2,2.1c0.3,0.3,0.8,0.2,1.1-0.1c0.3-0.3,0.2-0.8-0.1-1.1c0,0-0.1-0.1-0.1-0.1
+		L9.3,8.1V4c0-0.4-0.3-0.8-0.7-0.9c-0.4,0-0.8,0.3-0.9,0.7C7.7,3.9,7.7,3.9,7.7,4L7.7,4z"/>
+</g>
+</svg>

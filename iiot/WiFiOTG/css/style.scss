@@ -2013,6 +2013,104 @@
       }
     }
   }
+  .mapBox{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    .map_card{
+      width: 100%;
+      max-width: 374px;
+      display: 0;
+      background-color: #0000007c;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+      .l_quantity{
+        width: 68px;
+        border-right: 1px #fff solid;
+        display: flex;
+        flex-wrap: wrap;
+        align-content:stretch;
+        p{
+          color: #fff;
+          text-align: center;
+          &.nb{
+            color: #44E7FF;
+            font-size: 32px;
+            font-weight: bold;
+            padding-top: 8px;
+          }
+        }
+        .nb_box{
+          width: 68px;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+          border-bottom: 1px #fff solid;
+          &:nth-child(2){
+            border: none;
+              .nb{
+              color: #FFBF34;
+            }
+          } 
+        }
+      }
+      .r_info{
+        width: calc(100% - 69px);
+        padding: 15px;
+        position: relative;
+        a.location_arrow{
+          width: 65px;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          img{
+            width: 100%;
+          }
+        }
+        h4{
+          color: #fff;
+          line-height: 1.2;
+          font-size: 19px;
+          font-weight: bold;
+          padding-bottom:5px;
+          width: 100%;
+          max-width: calc(100% - 55px);
+        }
+        p{
+          color: #fff;
+          line-height: 1.2;
+        }
+        ul{
+          li{
+            padding: 3px 0;
+            padding-left: 25px;
+            position: relative;
+            &::before{
+              position: absolute;
+              left: 0;
+              top: 7px;
+              content: "";
+              width: 15px;
+              height: 15px;
+              display: block;
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            &.clock::before{
+              background-image: url(../images/icon_clock.svg);
+            }
+            &.location::before{
+              height: 16px;
+              background-image: url(../images/icon_location.svg);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .wifiotg_info{
   width: 100%;

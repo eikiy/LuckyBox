@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+	<head>
+		<meta charset="UTF-8">
+		<title>取還點查詢 - WiFiOTG | WiFi on the Go , Wherever You Go </title>
+		<meta name='description' content=""/>
+		<meta name='keywords' content=""/>
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta property="og:image" content="images/share_pic.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="images/web-icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/web-icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/web-icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/web-icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/web-icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/web-icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/web-icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/web-icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/web-icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/web-icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/web-icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/web-icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/web-icon/favicon-16x16.png">
+
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!-- Pushy -->
+		<link rel="stylesheet" href="mobilemenu/pushy.css">
+		<script type="text/javascript">
+			// 點了top展開與箭頭轉向
+			$(function () {
+				$(".order_history .card .top_cont").click(function () {
+					$(this).next(".order_info").stop(true, true).fadeToggle(0);
+					$(this).toggleClass("arr_up");
+					return false;
+				});
+			});
+			$(function () {
+				$(".header_wrap .cont_user .profile").click(function () {
+					$(this).parent().find(".sub_list").stop(true, true).fadeToggle(0);
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- Pushy Menu -->
+		<nav class="pushy pushy-left" data-focus="#first-link">
+			<div class="pushy-content">
+				<!-- 有登入才顯示這行 hi_user  -->
+				<!-- <p class="hi_user">Hi, wendyshiue00123</p> -->
+				<ul>
+					<li class="pushy-link">
+						<a href="index.html">首頁</a>
+					</li>
+					<li class="pushy-link">
+						<a class="c_yello" href="history.html">租借紀錄查詢</a>
+					</li>
+					<li class="pushy-link">
+						<a href="location.html">取還點查詢</a>
+					</li>
+					<li class="pushy-link">
+						<a href="teaching.html">使用說明</a>
+					</li>
+					<li class="pushy-link">
+						<a href="qa.html">常見問題</a>
+					</li>
+					<li class="other-link">
+						<a href="terms.html">服務條款</a>
+						<a href="privacy.html">隱私權政策</a>
+					</li>
+				</ul>
+				<p class="text">Copyright © 2023 All Rights Reserved.</p>
+			</div>
+		
+		</nav>
+		<!-- Site Overlay -->
+		<div class="site-overlay"></div>
+		<div id="container">
+			<header class="header_wrap">
+				<button class="menu-btn">
+					<span></span>
+				</button>
+				<section class="cont_middle clearfix">
+					<a class="header_logo" href="index.html">WiFiOTG</a>
+					<nav class="menu">
+						<ul>
+							<li>
+								<p><a href="index.html">首頁</a></p>
+							</li>
+							<li>
+								<p><a href="location.html">取還點查詢</a></p>
+							</li>
+							<li>
+								<p><a href="teaching.html">使用說明</a></p>
+							</li>
+							<li>
+								<p class="btn_yello"><a href="history.html">租借紀錄查詢</a></p>
+							</li>
+						</ul>
+					</nav>
+				</section>
+			</header>
+			<main class="main_wrap">
+				<section class="mapBox">
+					<div class="map_card" style="position:absolute; top: 100px; left: calc(50% - 187px); z-index: 5;">
+						<div class="l_quantity">
+							<div class="nb_box">
+								<p>可租</p>
+								<p class="nb">4</p>
+							</div>
+							<div class="nb_box">
+								<p>可還</p>
+								<p class="nb">14</p>
+							</div>
+						</div>
+						<div class="r_info">
+							<a class="location_arrow" href="#">
+								<img src="images/icon_location_arrow.svg">
+							</a>
+							<h4>百老匯影城站百老匯影城站百老匯影城站百老匯影城站百老匯影城站百老匯影城站</h4>
+							<ul>
+								<li class="clock">
+									<p>24 小時營業</p>
+								</li>
+								<li class="location">
+									<p>116 台北市文山區羅斯福路四段 200
+										號 5 樓</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer_wrap">
+				<section class="cont_middle">
+					<div class="copyright">
+						<a class="logo">
+							<a href="index.html"></a>
+						</a>
+						<p>WiFi on the Go , Wherever You Go</p>
+						<p class="text-copyright">Copyright © 2023 All Rights Reserved.</p>
+					</div>
+					<ul class="service">
+						<li>
+							<p>客服信箱　<a href="mailto:">service@xxxxx.com</a></p>
+						</li>
+						<li>
+							<p>服務電話　<a href="tel:+886-2-1234-5678">02-1234-5678</a></p>
+						</li>
+						<li>
+							<p><span>（ 服務時間：週一至週日 9：00 ~ 18：00）</span></p>
+						</li>
+					</ul>
+					<div class="link">
+						<p>
+							<a href="#" target="_block">使用條款</a>
+							<a href="#" target="_block">免責聲明</a>
+							<a href="#" target="_block">常見問題</a>
+						</p>
+					</div>
+				</section>
+			</footer>		
+		</div>
+		
+		
+		<!-- pushy JS -->
+		<script src="mobilemenu/pushy.js"></script>
+		<script>
+			// 按下同意後，呼叫setAllowPrivacy
+			function setAllowPrivacy() {
+				localStorage.setItem('isPrivacyAllowed', true);
+			}
+			// 載入頁面時，呼叫getAllowPrivacy，確認是否需要呈現隱私權
+			function getAllowPrivacy() {
+				var isPrivacyAllowed = localStorage.getItem('isPrivacyAllowed');
+				if (isPrivacyAllowed === 'true') {
+					// 不顯示隱私權
+					console.log('hide');
+					$('#cookie-accept').hide();
+				} else {
+					// 顯示隱私權
+					console.log('show');
+					$('#cookie-accept').show();
+				}
+			}
+			// 建立cookie
+			function createCookie(name, value, days, path) {
+				if (days) {
+					var date = new Date();
+					date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+					var expires = "; expires=" + date.toGMTString();
+				}
+				else var expires = "";
+				document.cookie = name + "=" + value + expires + "; path=/";
+			}
+
+			getAllowPrivacy();
+		</script>
+	</body>
+</html>
+
+
+
