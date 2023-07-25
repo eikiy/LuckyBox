@@ -28,6 +28,33 @@
   width: 100%;
 }
 
+p.major {
+  color: #488b09;
+  font-weight: bolder;
+}
+
+table.alt tr td {
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+table th {
+  padding: 3px;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+table th.w__ {
+  width: 80px;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: #eff2d042;
+}
+
 .banner .logo {
   width: 105px;
   height: 200px;
@@ -97,6 +124,10 @@ p.price {
   margin: 0 auto;
 }
 
+.for_assess .inner section {
+  padding: 20px;
+}
+
 .for_assess .inner .content {
   padding: 20px;
   background-color: #ffffffeb;
@@ -110,8 +141,33 @@ p.price {
 }
 
 .for_assess .list-d li {
-  padding-left: 0;
   font-size: 16px;
+  padding: 3px 0;
+}
+
+.for_assess .list-d li b {
+  background-color: #488b09;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.for_assess .list-d li b.c_02 {
+  background-color: #67b61c;
+}
+
+.for_assess .list-d li b.c_03 {
+  background-color: #a5c841;
+}
+
+.for_assess .list-d li b.c_04 {
+  background-color: #d68f27;
+}
+
+.for_assess .list-d li b.c_05 {
+  background-color: #f41760;
 }
 
 .for_assess .table-wrapper {
@@ -227,5 +283,71 @@ footer.wrapper.style1 .footer-menu-link li {
 
 footer.wrapper.style1 .footer-menu-link li a {
   text-decoration: none;
+}
+
+@media (max-width: 736px) {
+  h3 {
+    padding: 0 15px;
+  }
+  .mob-left {
+    text-align: left;
+  }
+  .content h2, .inner h2 {
+    font-size: 1.6rem;
+  }
+  p.price {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  table th {
+    padding: 3px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  table th.w__ {
+    width: 42px;
+  }
+  table td {
+    padding: 8px;
+  }
+  .for_nutritionist .items4 section h3 {
+    padding: 0;
+  }
+  .for_nutritionist .items4 section p {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .for_nutritionist .items-row3 section {
+    padding: 10px;
+  }
+  .for_nutritionist .items-row4 section {
+    padding: 10px;
+  }
+  .for_nutritionist .items-row4 section p {
+    text-align: left;
+  }
+  .for_assess .list-d li {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 0;
+  }
+  .mob_block {
+    display: block;
+  }
+}
+
+@media (max-width: 599px) {
+  p.price {
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px 15px;
+  }
+  .for_nutritionist .items-row3 section p {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
