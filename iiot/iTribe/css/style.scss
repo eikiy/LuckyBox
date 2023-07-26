@@ -54,11 +54,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background: url(../images/bg_totem.png) center center repeat-y;
+    background-size: contain;
     background-color: #ffffff5a;
     border-radius: 50px;
     padding-top: 20px;
     overflow: hidden;
     padding-left: 30%;
+    border: 5px solid #ffffff34;
   }
   .img-phone{
     width: 100%;
@@ -76,7 +79,7 @@
   .inputBox{
     height: 90px;
     padding: 15px;
-    background: #ffffff75;
+    background: #ffffff9c;
     border-radius: 50px;
     margin: 15px auto;
     max-width: 800px;
@@ -120,12 +123,20 @@
       }
     }
   }
-  .QRcode{
+  .app_info{
     padding: 30px;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
     img{
-      max-width: 80%;
+      max-width: 100%;
       display: inline-block;
+    }
+    .top_text{
+      width: 100%;
+    }
+    .QRcode{
+      width: 50%;
+      max-width: 200px;
     }
   }
   .footer-info{

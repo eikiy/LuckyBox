@@ -272,11 +272,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(../images/bg_totem.png) center center repeat-y;
+  background-size: contain;
   background-color: #ffffff5a;
   border-radius: 50px;
   padding-top: 20px;
   overflow: hidden;
   padding-left: 30%;
+  border: 5px solid #ffffff34;
 }
 
 .iTribe-container .img-phone {
@@ -298,7 +301,7 @@ body {
 .iTribe-container .inputBox {
   height: 90px;
   padding: 15px;
-  background: #ffffff75;
+  background: #ffffff9c;
   border-radius: 50px;
   margin: 15px auto;
   max-width: 800px;
@@ -363,14 +366,27 @@ body {
   background-color: #8c2f07;
 }
 
-.iTribe-container .QRcode {
+.iTribe-container .app_info {
   padding: 30px;
-  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.iTribe-container .QRcode img {
-  max-width: 80%;
+.iTribe-container .app_info img {
+  max-width: 100%;
   display: inline-block;
+}
+
+.iTribe-container .app_info .top_text {
+  width: 100%;
+}
+
+.iTribe-container .app_info .QRcode {
+  width: 50%;
+  max-width: 200px;
 }
 
 .iTribe-container .footer-info {
