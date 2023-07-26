@@ -299,7 +299,6 @@ body {
 }
 
 .iTribe-container .inputBox {
-  height: 90px;
   padding: 15px;
   background: #ffffff9c;
   border-radius: 50px;
@@ -467,9 +466,6 @@ body {
   .iTribe-container .event-content-top .fillinBox {
     padding: 0;
   }
-  .iTribe-container .event-content-top .inputBox {
-    height: 75px;
-  }
   .iTribe-container .event-content-top .inputBox input {
     font-size: 20px;
     padding: 15px 20px;
@@ -493,8 +489,8 @@ body {
     max-width: 20%;
     display: none;
   }
-  .iTribe-container .event-content-top .QRcode {
-    padding: 10px 30px 20px 30px;
+  .iTribe-container .event-content-top .app_info {
+    padding: 10px;
   }
   .iTribe-container .event-content-top .QRcode img {
     max-width: 100%;
