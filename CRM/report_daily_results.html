@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 客戶管理 - 每日成效</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- 2023-08-02 新增 blackcard/report.css -->
+<!-- 黑卡專區的 CSS 拆出來一支 -->
+    <link rel="stylesheet" href="css/blackcard/report.css" type="text/css" />
+    
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link">
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">委刊單審核</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <a class="logo" href="dashboard.html"></a>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li>
+                    <a href="order.html">委刊單</a>
+                </li>
+                <li>
+                    <a class="selected" href="customer.html">客戶管理</a>
+                </li>
+                <li>
+                    <a href="audit.html">委刊單審核</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container report-container">
+            <section class="content">
+                <h4 class="co-name">佳量企業股份有限公司</h4>
+                <h3 class="main-title">每日成效</h3>
+                <p class="the-reminder">顯示近 1 年資料，快速檢視重點數據</p>
+                <div class="tools-bar clearfix">
+                    <form>
+                        <fieldset>
+                            <label class="item-title">選擇區間</label>
+                            <div class="confirm clearfix">
+                                <!-- 如果有錯誤 + has-error -->
+                                <div class="both-for-date clearfix">
+                                    <input type="date" value="2021-11-06">
+                                    <input type="date" value="2022-05-06">
+                                    <!-- 錯誤訊息文字 -->
+                                    <!-- <p class="text-error c-red">錯誤訊息：error</p> -->
+                                </div>
+                                <p class="btn-text"><a>查詢</a></p>
+                            </div>
+                        </fieldset>
+                    </form>
+                    
+                </div>
+                <ul class="top_tab">
+                    <li>
+                        <h4>
+                            <a href="#.html">原生廣告</a>
+                        </h4>
+                
+                    </li>
+                    <li class="btn-in">
+                        <h4>
+                            <a href="#.html">關鍵字廣告</a>
+                        </h4>
+                    </li>
+                </ul>
+                <div class="blackcard_report">
+                
+                    <!-- 圖表資訊請塞這 -->
+                    <!-- 圖表資訊請塞這 -->
+                    <!-- 圖表資訊請塞這 -->
+                    <div class="report_content">
+                        
+                        <div class="top_data_header">
+                            <div class="t_block">
+                                <div class="s_title">
+                                    <p>曝光數</p>
+                                </div>
+                                <div class="info_text">
+                                    <p class="">758</p>
+                                    <p class="lower">
+                                        <svg class="svg-inline--fa fa-arrow-down fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="arrow-down" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z">
+                                            </path>
+                                        </svg>
+                                        <!-- <i class="fa-solid fa-arrow-down-long"></i> -->
+                                        <!-- <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+                                                                    222 -->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="t_block">
+                                <div class="s_title">
+                                    <p>點擊數</p>
+                                </div>
+                                <div class="info_text">
+                                    <p>71</p>
+                                    <p class="higher">
+                                        <svg class="svg-inline--fa fa-arrow-up fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="arrow-up" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+                                            </path>
+                                        </svg>
+                                        1.99%
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="t_block">
+                                <div class="s_title">
+                                    <p>點擊率<span> (%)</span></p>
+                                </div>
+                                <div class="info_text">
+                                    <p>9.37%</p>
+                                    <p class="lower">
+                                        <svg class="svg-inline--fa fa-arrow-down fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="arrow-down" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z">
+                                            </path>
+                                        </svg>
+                                        -11.99%
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="t_block">
+                                <div class="s_title">
+                                    <p>每次點擊成本</p>
+                                </div>
+                                <div class="info_text">
+                                    <p>$ 10.47</p>
+                                    <p class="higher">
+                                        <svg class="svg-inline--fa fa-arrow-up fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="arrow-up" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+                                            </path>
+                                        </svg>
+                                        6.99%
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="t_block">
+                                <div class="s_title">
+                                    <p>廣告花費</p>
+                                </div>
+                                <div class="info_text">
+                                    <p>$ 745</p>
+                                    <p class="lower">
+                                        <svg class="svg-inline--fa fa-arrow-down fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="arrow-down" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z">
+                                            </path>
+                                        </svg>
+                                        -1.99%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_container">
+                            <br>
+                            Line Graph（待更換）
+                            <br>
+                        </div>
+                        <div class="table_container">
+                            <br>
+                            table（待更換）
+                            <br>
+                            <div class="pages clearfix">
+                                <p>1-50列(共220列 )</p>
+                                <ul class="page-nb">
+                                    <li>
+                                        <a class="none">上一頁</a>
+                                    </li>
+                                    <li>
+                                        <a class="selected">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        ...
+                                    </li>
+                                    <li>
+                                        <a href="#">8</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">9</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">下一頁</a>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2023 <a href="#" target="_blank">Weblisher Co., Ltd.</a> All Rights Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+</body>
+</html>

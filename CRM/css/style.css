@@ -529,6 +529,88 @@ input.has-error:hover, input.has-error:focus {
   display: block;
 }
 
+.btn-switch {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-switch p {
+  color: #333;
+  padding-right: 10px;
+}
+
+.btn-switch p.open {
+  color: #11948a;
+  font-weight: bold;
+}
+
+.switch-type {
+  position: relative;
+}
+
+.switch-type .switch-button {
+  display: inline-block;
+  position: relative;
+  height: 22px;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  border-radius: 22px;
+}
+
+.switch-type .switch-button:before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #eee;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.switch-type .switch-button:after {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 18px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-box-shadow: 0px 1px 3px #bbb;
+          box-shadow: 0px 1px 3px #bbb;
+}
+
+.switch-type input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.switch-type input:checked ~ .switch-button:before {
+  background-color: #11948a;
+  border: 1px solid #11948a;
+}
+
+.switch-type input:checked ~ .switch-button:after {
+  left: 22px;
+}
+
 .show-add-list {
   width: 100%;
   position: absolute;
@@ -1079,6 +1161,13 @@ ul.edit-tool li a:hover {
   font-weight: bold;
   letter-spacing: 10px;
   padding: 10px 20px;
+}
+
+.middle-container .main-container h4.co-name {
+  font-size: 1.25rem;
+  color: #11948a;
+  font-weight: bold;
+  padding: 10px 0px;
 }
 
 .middle-container .main-container .tools-bar {
@@ -3147,6 +3236,73 @@ ul.edit-tool li a:hover {
   opacity: 1;
 }
 
+.middle-container .company-report-list {
+  margin: 20px 0 15px 0;
+  background-color: #ebf5f4;
+  border-radius: 18px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.middle-container .company-report-list h4.main-title {
+  width: 86px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  float: left;
+  color: #11948a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 48px;
+  padding: 10px;
+  text-align: center;
+}
+
+.middle-container .company-report-list ul.info {
+  min-height: 48px;
+  float: left;
+  background-color: #fff;
+  width: calc(100% - 86px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 0 18px 18px 0;
+}
+
+.middle-container .company-report-list ul.info li {
+  padding: 5px 15px;
+}
+
+.middle-container .company-report-list ul.info li:first-child {
+  padding: 0 10px 0 6px;
+}
+
+.middle-container .company-report-list ul.info li p {
+  font-size: 0.875rem;
+}
+
+.middle-container .company-report-list ul.info li p a {
+  color: #333;
+}
+
+.middle-container .company-report-list ul.info li p a:hover {
+  color: #11948a;
+  text-decoration: underline;
+}
+
 .middle-container .company-contact-list {
   margin-top: 25px;
 }
@@ -3193,11 +3349,13 @@ ul.edit-tool li a:hover {
     width: 64%;
   }
   .middle-container .company-contact-list h4.main-title,
-  .middle-container .company-department-list h4.main-title {
+  .middle-container .company-department-list h4.main-title,
+  .middle-container .company-report-list h4.main-title {
     font-size: 0.875rem;
   }
   .middle-container .company-contact-list ul.info li a p,
-  .middle-container .company-department-list ul.info li a p {
+  .middle-container .company-department-list ul.info li a p,
+  .middle-container .company-report-list ul.info li a p {
     -webkit-box-flex: calc(30% - 10px);
         -ms-flex: calc(30% - 10px);
             flex: calc(30% - 10px);
@@ -3223,8 +3381,14 @@ ul.edit-tool li a:hover {
   .middle-container .company-content .company-information ul.info li:nth-child(2) p span:nth-child(2) {
     max-width: calc(100% - 90px);
   }
+  .middle-container .company-contact-list ul.info li p,
+  .middle-container .company-department-list ul.info li p,
+  .middle-container .company-report-list ul.info li p {
+    font-size: 0.688rem;
+  }
   .middle-container .company-contact-list ul.info li a p,
-  .middle-container .company-department-list ul.info li a p {
+  .middle-container .company-department-list ul.info li a p,
+  .middle-container .company-report-list ul.info li a p {
     font-size: 0.688rem;
   }
   .middle-container p.text-more {
@@ -3262,12 +3426,14 @@ ul.edit-tool li a:hover {
             flex: 50%;
   }
   .middle-container .company-contact-list h4.main-title,
-  .middle-container .company-department-list h4.main-title {
+  .middle-container .company-department-list h4.main-title,
+  .middle-container .company-report-list h4.main-title {
     width: 100%;
     min-height: initial;
   }
   .middle-container .company-contact-list ul.info,
-  .middle-container .company-department-list ul.info {
+  .middle-container .company-department-list ul.info,
+  .middle-container .company-report-list ul.info {
     width: 100%;
     border-radius: 0 0 18px 18px;
     min-height: initial;
