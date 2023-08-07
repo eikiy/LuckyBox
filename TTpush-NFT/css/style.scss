@@ -10,6 +10,7 @@
   background: -webkit-linear-gradient(top, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
   background: linear-gradient(to bottom, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b4e6', endColorstr='#ffffff', GradientType=0);
+  background-attachment: fixed;
   .swiper-pagination-bullet{
     width: 10px;
     height: 10px;
@@ -78,7 +79,7 @@
   }
   .item-content{
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 0 130px 0;
     swiper-container {
       width: 100%;
     }
@@ -221,7 +222,7 @@
     }
   }
   .collect-list {
-    padding:5px 20px 20px 20px;
+    padding:5px 20px 80px 20px;
     .pro-content{
       background: none;
       background-color: #e6e6e696;

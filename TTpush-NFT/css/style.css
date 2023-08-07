@@ -212,6 +212,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#59b4e6), color-stop(51%, #ee89a7), to(#ffffff));
   background: linear-gradient(to bottom, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b4e6', endColorstr='#ffffff', GradientType=0);
+  background-attachment: fixed;
 }
 
 .TTPushNFT-container .swiper-pagination-bullet {
@@ -291,7 +292,7 @@ body {
 
 .TTPushNFT-container .item-content {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 130px 0;
 }
 
 .TTPushNFT-container .item-content swiper-container {
@@ -458,7 +459,7 @@ body {
 }
 
 .TTPushNFT-container .collect-list {
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 80px 20px;
 }
 
 .TTPushNFT-container .collect-list .pro-content {
