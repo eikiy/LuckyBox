@@ -1,0 +1,553 @@
+@charset "UTF-8";
+@import url(animate.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active,
+*:focus,
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Noto Sans TC", Arial, "微軟正黑體", "新細明體", sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  font-size: 0.9375em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  border-color: #9e9e9e;
+}
+
+.TTPushNFT-container {
+  width: 100%;
+  background: url(../images/bg_0.png) center center repeat;
+  min-height: 100vh;
+  background: #59b4e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#59b4e6), color-stop(51%, #ee89a7), to(#ffffff));
+  background: linear-gradient(to bottom, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b4e6', endColorstr='#ffffff', GradientType=0);
+}
+
+.TTPushNFT-container .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.TTPushNFT-container .main-title {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5;
+  top: 0px;
+  font-size: 30px;
+  padding: 30px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 5px 5px #72a0c2a3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#59b4e6), color-stop(60%, #59b4e6), to(rgba(89, 180, 230, 0)));
+  background: linear-gradient(to bottom, #59b4e6 0%, #59b4e6 60%, rgba(89, 180, 230, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b4e6', endColorstr='#0059b4e6', GradientType=0);
+}
+
+.TTPushNFT-container .middle-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.TTPushNFT-container .middle-container img {
+  width: 100%;
+}
+
+.TTPushNFT-container p.buy {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.TTPushNFT-container p.buy a {
+  display: block;
+  padding: 8px 10px 8px 33px;
+  position: relative;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #FF6699;
+}
+
+.TTPushNFT-container p.buy a::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  left: 5px;
+  top: calc(50% - 10px);
+  background: url(../images/btn_buy.svg) center center no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.TTPushNFT-container p.buy a:hover {
+  background-color: #FF6699;
+  color: #fff;
+}
+
+.TTPushNFT-container .top-content {
+  width: 100%;
+}
+
+.TTPushNFT-container .top-content .an-repeat {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.TTPushNFT-container .banner-content {
+  width: 100%;
+  margin-top: -38px;
+}
+
+.TTPushNFT-container .item-content {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.TTPushNFT-container .item-content swiper-container {
+  width: 100%;
+}
+
+.TTPushNFT-container .item-content swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 270px;
+  height: 380px;
+  background-color: #fff1f196;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.TTPushNFT-container .item-content swiper-slide .top-photo {
+  position: relative;
+}
+
+.TTPushNFT-container .item-content swiper-slide .top-photo::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  top: -8px;
+  left: -7px;
+}
+
+.TTPushNFT-container .item-content swiper-slide .top-photo::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+  display: block;
+  background: url(../images/img_00.png) center center no-repeat;
+  background-size: contain;
+  top: -14px;
+  right: 2px;
+}
+
+.TTPushNFT-container .item-content .img-new {
+  position: absolute;
+  width: 88px;
+  right: -13px;
+  top: 6px;
+  z-index: 5;
+}
+
+.TTPushNFT-container .item-content .top-photo {
+  padding: 8px 5px 5px 5px;
+}
+
+.TTPushNFT-container .item-content .top-photo img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.TTPushNFT-container .item-content .info {
+  padding: 10px 5px 0 5px;
+  position: relative;
+}
+
+.TTPushNFT-container .item-content .info h3 {
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.TTPushNFT-container .item-content .info p {
+  padding: 2px 0;
+  font-size: 15px;
+}
+
+.TTPushNFT-container .item-content .info p.buy {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
+
+.TTPushNFT-container .item-content .pro-content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  background: url(../images/bg_w.png) center top no-repeat;
+  background-size: contain;
+}
+
+.TTPushNFT-container .item-content .pro-content .gold {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  padding-bottom: 10px;
+  text-shadow: 2px 5px 5px #72a0c2a3;
+}
+
+.TTPushNFT-container .item-content .pro-content .info h3 {
+  font-size: 26px;
+  color: #fff;
+}
+
+.TTPushNFT-container .item-content .pro-content .info h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  padding: 8px 0;
+}
+
+.TTPushNFT-container .item-content .pro-content .info p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.TTPushNFT-container .item-content .pro-content .info a {
+  color: #ea5a85;
+}
+
+.TTPushNFT-container .item-content .pro-content .info a:hover {
+  text-decoration: underline;
+}
+
+.TTPushNFT-container .item-content .pro-content .done {
+  text-align: center;
+}
+
+.TTPushNFT-container .item-content .pro-content .done h3 {
+  font-size: 32px;
+}
+
+.TTPushNFT-container .item-content .pro-content .done h4 {
+  font-size: 24px;
+}
+
+.TTPushNFT-container .item-content .pro-content .done .img-done {
+  max-width: 80px;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.TTPushNFT-container .item-content .pro-content p.buy {
+  position: initial;
+  font-size: 24px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.TTPushNFT-container .item-content .pro-content p.buy a {
+  display: inline-block;
+  padding: 12px 20px 12px 55px;
+}
+
+.TTPushNFT-container .item-content .pro-content p.buy a::after {
+  width: 30px;
+  height: 30px;
+  left: 12px;
+  top: calc(50% - 15px);
+}
+
+.TTPushNFT-container .collect-list {
+  padding: 5px 20px 20px 20px;
+}
+
+.TTPushNFT-container .collect-list .pro-content {
+  background: none;
+  background-color: #e6e6e696;
+  border-radius: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.TTPushNFT-container .collect-list .pro-content .top-photo {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.TTPushNFT-container .collect-list .pro-content .info {
+  padding-left: 8px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.TTPushNFT-container .collect-list .pro-content .info p {
+  font-size: 15px;
+  line-height: 1.1;
+  text-align: justify;
+}
+
+.TTPushNFT-container .footer-btns {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0px;
+  z-index: 5;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+97&0+0,1+73 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(73%, white), color-stop(97%, white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 73%, white 97%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+.TTPushNFT-container .footer-btns ul.menu {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../images/line.svg) center top no-repeat;
+  background-size: contain;
+}
+
+.TTPushNFT-container .footer-btns ul.menu li {
+  display: inline-block;
+  padding: 6px 9px 0 9px;
+  position: relative;
+}
+
+.TTPushNFT-container .footer-btns ul.menu li a {
+  min-width: 90px;
+  display: block;
+  position: relative;
+}
+
+.TTPushNFT-container .footer-btns ul.menu li a .icon {
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffffffea;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
+.TTPushNFT-container .footer-btns ul.menu li a p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #EE89A7;
+  padding: 10px 0;
+}
+
+.TTPushNFT-container .footer-btns ul.menu li a:hover .icon {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
