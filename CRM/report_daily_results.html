@@ -134,20 +134,78 @@
                 <div class="tools-bar clearfix">
                     <form>
                         <fieldset>
-                            <label class="item-title">選擇區間</label>
+                            <label class="item-title">廣告媒體</label>
                             <div class="confirm clearfix">
-                                <!-- 如果有錯誤 + has-error -->
-                                <div class="both-for-date clearfix">
-                                    <input type="date" value="2021-11-06">
-                                    <input type="date" value="2022-05-06">
-                                    <!-- 錯誤訊息文字 -->
-                                    <!-- <p class="text-error c-red">錯誤訊息：error</p> -->
+                                <div class="the-select w_50">
+                                    <select class="" name="">
+                                        <option value="0">請選擇公司</option>
+                                        <option value="1" selected>Facebook</option>
+                                        <option value="2">Google</option>
+                                        <option value="3">Yahoo</option>
+                                    </select>
                                 </div>
-                                <p class="btn-text"><a>查詢</a></p>
                             </div>
                         </fieldset>
+                        <fieldset class="dotted-text">
+                            <p class="the-reminder">系統需要一些時間間隔才能處理並顯示數據，當日中午後才顯示昨日數據；或因時間間隔關係，過往資料可能會有矯正情形，有些微數據差距，其屬正常情況。</p>
+                        </fieldset>
+                        <fieldset>
+                            <label class="item-title">選擇區間</label>
+                            <div class="confirm">
+                                <div class="filter-tools">
+                                    <div class="a-condition">
+                                        <a href="#">
+                                            <p>昨日</p>
+                                        </a>
+                                    </div>
+                                    <!-- 預設為本月 + btn-in -->
+                                    <div class="a-condition btn-in">
+                                        <a href="#">
+                                            <p>本月</p>
+                                        </a>
+                                    </div>
+                                    <div class="a-condition">
+                                        <a href="#">
+                                            <p>過去 7 天</p>
+                                        </a>
+                                    </div>
+                                    <div class="a-condition">
+                                        <a href="#">
+                                            <p>過去 14 天</p>
+                                        </a>
+                                    </div>
+                                    <div class="a-condition">
+                                        <a href="#">
+                                            <p>過去 30 天</p>
+                                        </a>
+                                    </div>
+                                    <!-- 自訂區間 -->
+                                    <div class="a-condition">
+                                        <a href="#">
+                                            <p>自訂區間
+                                                <i class="far fa-calendar-alt"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <!-- 自訂區間：已選中 + btn-in  -->
+                                    <!-- 點了變下面 -->
+                                    <div class="a-condition btn-in">
+                                        <div class="calendar">
+                                            <p class="left-p">自訂區間</p>
+                                            <div class="both-for-date clearfix">
+                                                <input type="date" value="2021-11-06">
+                                                <input type="date" value="2022-05-06">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="bottom-btn">
+                            <p class="btn-text"><a>查詢</a></p>
+                        </div>
                     </form>
-                    
+                
                 </div>
                 <ul class="top_tab">
                     <li>
