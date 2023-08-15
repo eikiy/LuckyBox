@@ -503,9 +503,15 @@
                             <fieldset class="clearfix">
                                 <label class="item-title">聯絡人</label>
                                 <div class="confirm">
+                                    <ul class="list-project-single pa-none clearfix">
+                                        <li>
+                                            <p>eikiy Eikiy Chang</p>
+                                            <a class="delete"><i class="fas fa-times"></i></a>
+                                        </li>
+                                    </ul>
                                     <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
                                         <i class="fas fa-plus"></i>
-                                        <span>新增聯絡人</span>
+                                        <span>修改聯絡人</span>
                                     </a>
                                 </div>
                             </fieldset>
@@ -517,13 +523,13 @@
                         </div>
                         <div class="fillin-info">
                             <fieldset class="clearfix">
-                                <label class="item-title">委刊客戶</label>
+                                <label class="item-title"><span class="c-red">*</span>委刊客戶</label>
                                 <div class="confirm search-list">
                                     <a class="btn-search popup-link" href="#popup-add-projects">
                                         <i class="fas fa-search"></i>
                                     </a>
                                     <input class="" type="" name="" value="威旭" placeholder="搜尋名稱">
-                                    <div class="show-add-list">
+                                    <!-- <div class="show-add-list">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -546,8 +552,15 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </div>
+                            </fieldset>
+                            <!-- 新增負責人 -->
+                            <!-- a.只顯示資訊 -->
+                            <!-- b.跟著所選公司而連動變更 -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>負責人</label>
+                                <input class="default" type="" name="" value="">
                             </fieldset>
                             <!-- 預設付款人帶入上方客戶資料（可改他人） -->
                             <fieldset class="clearfix">
@@ -556,15 +569,6 @@
                                     <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
                                         <i class="fas fa-plus"></i>
                                         <span>新增付款人</span>
-                                    </a>
-                                </div>
-                            </fieldset>
-                            <fieldset class="clearfix">
-                                <label class="item-title">聯絡人</label>
-                                <div class="confirm">
-                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
-                                        <i class="fas fa-plus"></i>
-                                        <span>新增聯絡人</span>
                                     </a>
                                 </div>
                             </fieldset>
@@ -577,6 +581,15 @@
                                         <option value="1">設計部門</option>
                                         <option value="2">業務部門</option>
                                     </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">聯絡人</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-choose-contact">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增聯絡人</span>
+                                    </a>
                                 </div>
                             </fieldset>
                         </div>
@@ -809,7 +822,7 @@
                         </div>
                         <div class="fillin-info">
                             <fieldset class="clearfix">
-                                <label class="item-title">委刊客戶</label>
+                                <label class="item-title"><span class="c-red">*</span>委刊客戶</label>
                                 <div class="confirm">
                                     <ul class="list-project-single pa-none clearfix">
                                         <li>
@@ -818,6 +831,13 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </fieldset>
+                            <!-- 新增負責人 -->
+                            <!-- a.只顯示資訊 -->
+                            <!-- b.跟著所選公司而連動變更 -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>負責人</label>
+                                <input class="default" type="" name="" value="小熊維尼">
                             </fieldset>
                             <!-- 預設付款人帶入上方客戶資料（可改他人） -->
                             <fieldset class="clearfix">
@@ -850,6 +870,17 @@
                                     </a>
                                 </div>
                             </fieldset>
+                            <!-- 非必填，無部門不會出現 -->
+                            <fieldset>
+                                <label class="item-title">部門</label>
+                                <div class="the-select">
+                                    <select class="" name="">
+                                        <option value="0">請選擇公司部門</option>
+                                        <option value="1" selected>設計部門</option>
+                                        <option value="2">業務部門</option>
+                                    </select>
+                                </div>
+                            </fieldset>
                             <fieldset class="clearfix">
                                 <label class="item-title">聯絡人</label>
                                 <div class="confirm">
@@ -877,17 +908,6 @@
                                         <i class="fas fa-plus"></i>
                                         <span>新增聯絡人</span>
                                     </a>
-                                </div>
-                            </fieldset>
-                            <!-- 非必填，無部門不會出現 -->
-                            <fieldset>
-                                <label class="item-title">部門</label>
-                                <div class="the-select">
-                                    <select class="" name="">
-                                        <option value="0">請選擇公司部門</option>
-                                        <option value="1" selected>設計部門</option>
-                                        <option value="2">業務部門</option>
-                                    </select>
                                 </div>
                             </fieldset>
                         </div>
@@ -965,9 +985,9 @@
                                             <div class="ad-subtotal">
                                                 <p>刊登費用小計<br><span>(未稅)</span></p>
                                             </div>
-                                            <!-- <div class="ad-other">
-                                                <p><span>備註 / 移除</span></p>
-                                            </div> -->
+                                            <div class="ad-other">
+                                                <!-- <p><span>刪除</span></p> -->
+                                            </div>
                                         </li>
                                         <li class="clearfix">
                                             <div class="ad-media">
@@ -1092,9 +1112,6 @@
                                             <div class="ad-media">
                                                 <p>廣告媒體金額小計</p>
                                             </div>
-                                            <div class="ad-type">
-                                                <p></p>
-                                            </div>
                                             <div class="ad-money">
                                                 <p class="total">$50,000</p>
                                             </div>
@@ -1130,9 +1147,9 @@
                                             <div class="ad-subtotal">
                                                 <p>刊登費用小計<br><span>(未稅)</span></p>
                                             </div>
-                                            <!-- <div class="ad-other">
-                                                <p><span>備註 / 移除</span></p>
-                                            </div> -->
+                                            <div class="ad-other">
+                                                <!-- <p><span>備註 / 移除</span></p> -->
+                                            </div>
                                         </li>
                                         <li class="clearfix">
                                             <div class="ad-title-other">
@@ -1227,9 +1244,9 @@
                                             <div class="ad-media">
                                                 <p>其他產品額小計</p>
                                             </div>
-                                            <div class="ad-type">
+                                            <!-- <div class="ad-type">
                                                 <p></p>
-                                            </div>
+                                            </div> -->
                                             <div class="ad-money">
                                                 <p class="total">$10,000</p>
                                             </div>
@@ -1665,6 +1682,10 @@
                                 <p class="input-value"><span class="">一之鄉股份有限公司</span></p>
                             </fieldset>
                             <fieldset class="clearfix">
+                                <label class="item-title">負責人</label>
+                                <p class="input-value"><span class="">小熊維尼</span></p>
+                            </fieldset>
+                            <fieldset class="clearfix">
                                 <label class="item-title">付款人</label>
                                 <ul class="show-contact-list">
                                     <li>
@@ -1688,6 +1709,11 @@
                                     </li>
                                 </ul>
                             </fieldset>
+                            <!-- 非必填，無部門不會出現 -->
+                            <fieldset>
+                                <label class="item-title">部門</label>
+                                <p class="input-value"><span class="">設計部門</span></p>
+                            </fieldset>
                             <fieldset class="clearfix">
                                 <label class="item-title">聯絡人</label>
                                 <ul class="show-contact-list">
@@ -1710,11 +1736,6 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </fieldset>
-                            <!-- 非必填，無部門不會出現 -->
-                            <fieldset>
-                                <label class="item-title">部門</label>
-                                <p class="input-value"><span class="">設計部門</span></p>
                             </fieldset>
                         </div>
                     </div>
@@ -1802,6 +1823,9 @@
                                             </div>
                                             <div class="ad-subtotal">
                                                 <p>$60,000</p>
+                                            </div>
+                                            <div class="ad-other">
+
                                             </div>
                                         </li>
                                         <li class="clearfix">

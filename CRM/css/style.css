@@ -4247,12 +4247,18 @@ ul.edit-record-user li p.id span {
   position: relative;
   border-bottom: 1px #cdcdcd dashed;
   padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .popup-container .fillin-box .field .media-details ul li div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0 5px;
-  float: left;
-  width: 20%;
   min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4266,7 +4272,8 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container .fillin-box .field .media-details ul li div p {
-  font-size: 0.813rem;
+  line-height: 1.2;
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -4286,16 +4293,7 @@ ul.edit-record-user li p.id span {
   padding: 0 5px;
 }
 
-.popup-container .fillin-box .field .media-details ul li div.ad-media {
-  width: 25%;
-}
-
-.popup-container .fillin-box .field .media-details ul li div.ad-type {
-  width: 15%;
-}
-
 .popup-container .fillin-box .field .media-details ul li div.ad-title-other {
-  width: 40%;
   text-align: left;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -4309,7 +4307,9 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-note {
-  width: calc(55% - 10px);
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   margin: 0 5px;
 }
 
@@ -4322,7 +4322,9 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-other {
-  width: 10%;
+  -webkit-box-flex: .5;
+      -ms-flex: .5;
+          flex: .5;
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-other a {
@@ -4341,8 +4343,9 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-description {
-  float: left;
-  width: 100%;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
   height: initial;
   padding: 10px 15px 5px 15px;
 }
@@ -4356,7 +4359,9 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container .fillin-box .field .media-details ul li div.ad-note-edit {
-  width: 100%;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
   padding-top: 8px;
 }
 
@@ -4422,10 +4427,19 @@ ul.edit-record-user li p.id span {
 
 .popup-container .fillin-box .field .media-details .bottom-total p.total {
   float: right;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .popup-container .fillin-box .field .media-details .bottom-total p.total span.c-green {
   color: #11948a;
+}
+
+.popup-container .fillin-box .field .media-details .bottom-total .ad-media {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .popup-container .fillin-box .field .media-details .confirm {
@@ -5116,6 +5130,7 @@ ul.edit-record-user li p.id span {
       -ms-flex-align: center;
           align-items: center;
   min-height: 46px;
+  line-height: 1.5;
 }
 
 .popup-finish .fillin-info p.input-value span {
