@@ -1,17 +1,21 @@
 @import "../css/reset.scss";
 @import url(animate.css);
 
-.TTPushNFT-container{
+.TTPushNFT-container {
   width: 100%;
-  background: url(../images/bg_0.png) center center repeat;
   min-height: 100vh;
   background: #59b4e6;
   background: -moz-linear-gradient(top, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
-  background: -webkit-linear-gradient(top, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #59b4e6 0%,
+    #ee89a7 51%,
+    #ffffff 100%
+  );
   background: linear-gradient(to bottom, #59b4e6 0%, #ee89a7 51%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b4e6', endColorstr='#ffffff', GradientType=0);
   background-attachment: fixed;
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
   }
@@ -20,36 +24,49 @@
     z-index: 5;
     top: 0px;
     font-size: 30px;
-    padding:30px 0;
+    padding: 30px 0;
     text-align: center;
     font-weight: bold;
     color: #fff;
     text-shadow: 2px 5px 5px #72a0c2a3;
-    background: -moz-linear-gradient(top, rgba(89, 180, 230, 1) 0%, rgba(89, 180, 230, 1) 60%, rgba(89, 180, 230, 0) 100%);
-    background: -webkit-linear-gradient(top, rgba(89, 180, 230, 1) 0%, rgba(89, 180, 230, 1) 60%, rgba(89, 180, 230, 0) 100%);
-    background: linear-gradient(to bottom, rgba(89, 180, 230, 1) 0%, rgba(89, 180, 230, 1) 60%, rgba(89, 180, 230, 0) 100%);
+    background: -moz-linear-gradient(
+      top,
+      rgba(89, 180, 230, 1) 0%,
+      rgba(89, 180, 230, 1) 60%,
+      rgba(89, 180, 230, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(89, 180, 230, 1) 0%,
+      rgba(89, 180, 230, 1) 60%,
+      rgba(89, 180, 230, 0) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(89, 180, 230, 1) 0%,
+      rgba(89, 180, 230, 1) 60%,
+      rgba(89, 180, 230, 0) 100%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59b4e6', endColorstr='#0059b4e6', GradientType=0);
   }
-  .middle-container{
-    // padding:20px;
+  .middle-container {
     max-width: 800px;
-    // box-shadow: 3px 3px 14px 6px #d1b8bd;
     margin: 0 auto;
-    img{
+    img {
       width: 100%;
     }
   }
-  p.buy{
+  p.buy {
     font-size: 17px;
     font-weight: bold;
-    a{
+    a {
       display: block;
       padding: 8px 10px 8px 33px;
       position: relative;
       border-radius: 50px;
       background-color: #fff;
-      color: #FF6699;
-      &::after{
+      color: #ff6699;
+      &::after {
         position: absolute;
         width: 20px;
         height: 20px;
@@ -60,24 +77,24 @@
         background-size: contain;
         content: "";
       }
-      &:hover{
-        background-color: #FF6699;
+      &:hover {
+        background-color: #ff6699;
         color: #fff;
       }
     }
   }
-  .top-content{
+  .top-content {
     width: 100%;
-    
-    .an-repeat{
+
+    .an-repeat {
       animation-iteration-count: infinite;
     }
   }
-  .banner-content{
+  .banner-content {
     width: 100%;
     margin-top: -38px;
   }
-  .item-content{
+  .item-content {
     width: 100%;
     padding: 10px 0 130px 0;
     swiper-container {
@@ -95,7 +112,7 @@
       position: relative;
       .top-photo {
         position: relative;
-        &::before{
+        &::before {
           position: absolute;
           content: "";
           width: 15px;
@@ -106,7 +123,7 @@
           top: -8px;
           left: -7px;
         }
-        &::after{
+        &::after {
           position: absolute;
           content: "";
           width: 17px;
@@ -119,46 +136,46 @@
         }
       }
     }
-    .img-new{
+    .img-new {
       position: absolute;
       width: 88px;
-      right:-13px;
+      right: -13px;
       top: 6px;
       z-index: 5;
     }
     .top-photo {
-      padding:8px 5px 5px 5px;
+      padding: 8px 5px 5px 5px;
       img {
         display: block;
         width: 100%;
         border-radius: 15px;
       }
     }
-    .info{
-      padding:10px 5px 0 5px;
+    .info {
+      padding: 10px 5px 0 5px;
       position: relative;
-      h3{
+      h3 {
         font-size: 18px;
         padding-bottom: 5px;
         font-weight: bold;
       }
-      p{
+      p {
         padding: 2px 0;
         font-size: 15px;
-        &.buy{
+        &.buy {
           position: absolute;
-          right:0px;
+          right: 0px;
           bottom: 0;
         }
       }
     }
-    .pro-content{
+    .pro-content {
       max-width: 500px;
       margin: 0 auto;
-      padding:15px 25px;
+      padding: 15px 25px;
       background: url(../images/bg_w.png) center top no-repeat;
       background-size: contain;
-      .gold{
+      .gold {
         text-align: center;
         font-weight: bold;
         font-size: 36px;
@@ -166,38 +183,38 @@
         padding-bottom: 10px;
         text-shadow: 2px 5px 5px #72a0c2a3;
       }
-      .info{
-        h3{
+      .info {
+        h3 {
           font-size: 26px;
           color: #fff;
         }
-        h4{
+        h4 {
           font-weight: bold;
           font-size: 20px;
           color: #fff;
           padding: 8px 0;
         }
-        p{
+        p {
           font-size: 18px;
           color: #fff;
           line-height: 1.4;
         }
-        a{
+        a {
           color: #ea5a85;
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
       }
-      .done{
+      .done {
         text-align: center;
-        h3{
+        h3 {
           font-size: 32px;
         }
-        h4{
+        h4 {
           font-size: 24px;
         }
-        .img-done{
+        .img-done {
           max-width: 80px;
           display: inline-block;
           padding: 20px 0;
@@ -208,10 +225,10 @@
         font-size: 24px;
         margin: 20px auto;
         text-align: center;
-        a{
+        a {
           display: inline-block;
           padding: 12px 20px 12px 55px;
-          &::after{
+          &::after {
             width: 30px;
             height: 30px;
             left: 12px;
@@ -222,8 +239,8 @@
     }
   }
   .collect-list {
-    padding:5px 20px 80px 20px;
-    .pro-content{
+    padding: 5px 20px 80px 20px;
+    .pro-content {
       background: none;
       background-color: #e6e6e696;
       border-radius: 20px;
@@ -231,13 +248,13 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 15px;
-      .top-photo{
+      .top-photo {
         flex: 50%;
       }
-      .info{
+      .info {
         padding-left: 8px;
         flex: 50%;
-        p{
+        p {
           font-size: 15px;
           line-height: 1.1;
           text-align: justify;
@@ -245,7 +262,7 @@
       }
     }
   }
-  .footer-btns{
+  .footer-btns {
     width: 100%;
     position: fixed;
     left: 0;
@@ -253,48 +270,73 @@
     padding: 10px 0px;
     z-index: 5;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+97&0+0,1+73 */
-background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 97%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 97%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 73%,
+      rgba(255, 255, 255, 1) 97%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 73%,
+      rgba(255, 255, 255, 1) 97%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 73%,
+      rgba(255, 255, 255, 1) 97%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
-    ul.menu{
+    ul.menu {
       max-width: 400px;
       margin: 0 auto;
       text-align: center;
-      background: url(../images/line.svg) center top no-repeat;
+      background: url(../images/line_new.svg) center top no-repeat;
       background-size: contain;
-      li{
+      li {
         display: inline-block;
-        padding:6px 9px 0 9px;
+        padding: 6px 9px 0 9px;
         position: relative;
-        a{
+        a {
           min-width: 90px;
           display: block;
           position: relative;
-          .icon{
+          .icon {
             width: 62px;
             height: 62px;
             display: block;
             margin: 0 auto;
-            background-color:#ffffffea;
+            background-color: #ffffffea;
             border: 1px solid #fff;
             border-radius: 50px;
           }
-          p{
+          p {
             font-size: 16px;
             font-weight: bold;
-            color: #EE89A7;
+            color: #ee89a7;
             padding: 10px 0;
           }
-          &:hover{
+          &:hover {
             .icon {
               background-color: #fff;
             }
           }
         }
       }
+      @media all and (max-width: 399px) {
+        li{
+          padding: 6px 6px 0 6px;
+          a{
+            .icon{
+              width: 58px;
+              height: 58px;
+            }
+          }
+        }
+      }
     }
   }
-  @media all and (max-width: 700px) {}
 }

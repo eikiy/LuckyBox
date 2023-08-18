@@ -206,7 +206,6 @@ body {
 
 .TTPushNFT-container {
   width: 100%;
-  background: url(../images/bg_0.png) center center repeat;
   min-height: 100vh;
   background: #59b4e6;
   background: -webkit-gradient(linear, left top, left bottom, from(#59b4e6), color-stop(51%, #ee89a7), to(#ffffff));
@@ -256,7 +255,7 @@ body {
   position: relative;
   border-radius: 50px;
   background-color: #fff;
-  color: #FF6699;
+  color: #ff6699;
 }
 
 .TTPushNFT-container p.buy a::after {
@@ -272,7 +271,7 @@ body {
 }
 
 .TTPushNFT-container p.buy a:hover {
-  background-color: #FF6699;
+  background-color: #ff6699;
   color: #fff;
 }
 
@@ -515,7 +514,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
-  background: url(../images/line.svg) center top no-repeat;
+  background: url(../images/line_new.svg) center top no-repeat;
   background-size: contain;
 }
 
@@ -544,11 +543,21 @@ body {
 .TTPushNFT-container .footer-btns ul.menu li a p {
   font-size: 16px;
   font-weight: bold;
-  color: #EE89A7;
+  color: #ee89a7;
   padding: 10px 0;
 }
 
 .TTPushNFT-container .footer-btns ul.menu li a:hover .icon {
   background-color: #fff;
+}
+
+@media all and (max-width: 399px) {
+  .TTPushNFT-container .footer-btns ul.menu li {
+    padding: 6px 6px 0 6px;
+  }
+  .TTPushNFT-container .footer-btns ul.menu li a .icon {
+    width: 58px;
+    height: 58px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
