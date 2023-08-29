@@ -1,0 +1,328 @@
+@import "../css/reset.scss";
+@import url(animate.css);
+
+.TPUF-stamp-container{
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  img{
+    width: 100%;
+  }
+  .img{
+    position: relative;
+    .text-w{
+
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 13%;
+      p{
+        font-size: 55px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+      }
+      @media all and (max-width: 600px) {
+        font-size: 36px;
+      }
+    }
+  }
+  .right_qrcode {
+    width: 20vw;
+    max-width: 160px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 0;
+    box-shadow: 0 2px 5px 5px #0000002f;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 5;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .middle-container{
+    padding:30px 20px;
+    max-width:790px;
+    margin: 0 auto;
+    @media all and (max-width: 700px) {
+      padding: 5px;
+    }
+  }
+  .event-content-top{
+    width: 100%;
+    position: relative;
+    .an-repeat{
+      animation-iteration-count: infinite;
+    }
+    .main-title{
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    @media all and (max-width: 600px) {
+      padding-top: 50px;
+    }
+  }
+  .m-one{
+    position: relative;
+    min-height: calc(100vh - 330px); 
+    // padding: 50px 20px 40px 20px;
+    background: url(../images/bg_00.png) center top no-repeat;
+    background-size: cover;
+    @media all and (max-width: 700px) {
+      background: none;
+    }
+
+  }
+  
+  @media all and (max-width: 700px) {
+  .login-bg{
+      background: url(../images/bg_login.png) center top no-repeat;
+      background-size: cover;
+      min-height {
+        min-height: calc(100vh - 406px);
+      }
+    }
+    .event-content-top{
+      background: url(../images/bg_00_mob.png) center top no-repeat;
+      background-size: contain;
+      .right_icon{
+        top: -40px;
+        width: 120px;
+        right: 50px;
+      }
+      .inputBox{
+        // height: 75px;
+        input{
+          font-size: 20px;
+          padding: 15px 20px;
+          max-width: calc(100% - 85px);
+        }
+        button{
+          font-size: 16px;
+          padding: 10px;
+          min-width: 80px;
+        }
+        .text{
+         padding: 6px 15px;
+          font-size: 13px;
+          left: 25px;
+        }
+      }
+    }
+  }
+}
+.bg_blue_img{
+  background: url(../images/bg_blue.png) center bottom no-repeat;
+}
+.login_box{
+    padding: 50px;
+    text-align: center;
+    .top-title{
+      font-size: 28px;
+      padding: 10px 0;
+      color: #fff;
+    }
+    .fillin{
+      width: 100%;
+      padding: 20px 0;
+      input{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 80px;
+        padding:22px 5px;
+        font-size: 28px;
+        text-align: center;
+      }
+    }
+    button.btn{
+      background-color: #EED700 ;
+      color: #005CA0;
+      text-align: center;
+      border-radius: 50px;
+      font-weight: bold;
+      padding: 10px 20px;
+      font-size: 25px;
+    } 
+    @media all and (max-width: 600px) {
+      padding: 20px;
+    }
+}
+.bg_blue{
+  width: 100%;
+  background-color: #005CA0;
+  .note{
+    padding: 20px;
+    p{
+      line-height: 1.2;
+    }
+    p.title{
+      font-size: 40px;  
+      padding-bottom: 15px;
+      @media all and (max-width: 600px) {
+        font-size: 30px;
+      }
+    }
+    ul.nb{
+      list-style-type:decimal;
+      padding-left: 30px;
+      font-size: 20px;
+      li{
+        padding: 5px 0;
+        
+        color: #fff;
+        p{
+          font-size: 22px;
+        }
+      }
+    } 
+    ul.other{
+      text-align: center;
+      li{
+        display: inline-block;
+        padding: 10px;
+        width: 49%;
+        p{
+          font-size: 18px;
+          margin: 0 auto;
+          text-align: center;
+          color: #fff;
+          padding:10px 15px;
+          background-color: #80BC26;
+          display: block;
+          border-radius: 40px;
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  @media all and (max-width: 600px) {
+    .note p.title{
+      font-size: 24px;
+    }
+    .note ul.nb li p{
+      font-size: 17px;
+    }
+    .note{
+      padding: 10px;
+      ul.other li{
+        // width: 100%;
+        padding:10px 5px;
+        p{
+        font-size: 15px;
+        }
+      } 
+    }
+  }
+}
+
+ul.nbsss {
+  width: 100%;
+  text-align: center;
+  li {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    min-height: 60px;
+    background-color: #fff;
+    border-radius: 40px;
+    vertical-align: text-top;
+    p {
+      font-size: 26px;
+      line-height:60px ;
+    }
+    &.ya{
+      background-color: #80bc26;
+      p{
+        color: #fff;
+      }
+    }
+  }
+  @media all and (max-width: 600px) {
+    li{
+      width: 42%;
+    }
+  }
+}
+.table-img{
+  width: 100%;
+  background: url(../images/stamp.png) center center no-repeat;
+  tr{
+    td{
+      position: relative;
+      padding:15px 5px;
+      .done{
+        width: calc(100% - 10px);
+        position: absolute;
+        top: 10px;
+        left: 5px;
+      }
+    }
+  }
+  @media all and (max-width: 600px) {
+    background-size: cover;
+  }
+}
+.text{
+  width: 90%;
+  margin: 0 auto;
+  p {
+      color: #005CA0;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.5;
+      padding: 5px 0;
+      span{
+        text-align: center;
+        background-color: #005CA0;
+        color: #fff;
+        padding: 2px 15px;
+        border-radius: 30px;
+        min-width: 120px;
+        margin: 0 5px;
+        display: inline-block;
+      }
+    }
+  @media all and (max-width: 600px) {
+   p{
+     font-size: 20px;
+   }
+  }
+}
+.note {
+  padding: 20px 20px 0 20px;
+
+  p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  @media all and (max-width: 600px) {
+    font-size: 15px;
+  }
+}
+.footer-info {
+  background-color: #005CA0;
+  width: 100%;
+
+  .logos {
+    width: 100%;
+
+    img {
+      max-width: 864px;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    .logos {
+      padding:20px 10px;
+    }
+  }
+}
