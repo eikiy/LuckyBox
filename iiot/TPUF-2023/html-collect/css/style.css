@@ -468,6 +468,7 @@ body {
 ul.nbsss {
   width: 100%;
   text-align: center;
+  min-height: 240px;
 }
 
 ul.nbsss li {
@@ -483,6 +484,8 @@ ul.nbsss li {
 ul.nbsss li p {
   font-size: 26px;
   line-height: 60px;
+  font-weight: bold;
+  color: #555;
 }
 
 ul.nbsss li.ya {
@@ -491,6 +494,15 @@ ul.nbsss li.ya {
 
 ul.nbsss li.ya p {
   color: #fff;
+}
+
+ul.nbsss li.c_gray {
+  background-color: #c6c6c6;
+}
+
+ul.nbsss li.c_gray p {
+  color: #fff;
+  font-weight: bold;
 }
 
 @media all and (max-width: 600px) {

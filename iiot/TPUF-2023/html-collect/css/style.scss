@@ -225,6 +225,7 @@
 ul.nbsss {
   width: 100%;
   text-align: center;
+  min-height: 240px;
   li {
     width: 30%;
     display: inline-block;
@@ -236,11 +237,20 @@ ul.nbsss {
     p {
       font-size: 26px;
       line-height:60px ;
+      font-weight: bold;
+      color: #555;
     }
     &.ya{
       background-color: #80bc26;
       p{
         color: #fff;
+      }
+    }
+    &.c_gray{
+      background-color: #c6c6c6;
+      p{
+        color: #fff;
+        font-weight: bold;
       }
     }
   }
