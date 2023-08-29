@@ -225,7 +225,7 @@
 ul.nbsss {
   width: 100%;
   text-align: center;
-  min-height: 240px;
+  
   li {
     width: 30%;
     display: inline-block;
@@ -255,6 +255,7 @@ ul.nbsss {
     }
   }
   @media all and (max-width: 600px) {
+    min-height: 240px;
     li{
       width: 42%;
     }

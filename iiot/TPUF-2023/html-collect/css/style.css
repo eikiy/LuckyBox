@@ -468,7 +468,6 @@ body {
 ul.nbsss {
   width: 100%;
   text-align: center;
-  min-height: 240px;
 }
 
 ul.nbsss li {
@@ -506,6 +505,9 @@ ul.nbsss li.c_gray p {
 }
 
 @media all and (max-width: 600px) {
+  ul.nbsss {
+    min-height: 240px;
+  }
   ul.nbsss li {
     width: 42%;
   }
