@@ -519,6 +519,7 @@ ul.nbsss li.c_gray p {
 }
 
 .table-img tr td {
+  width: 25%;
   position: relative;
   padding: 15px 5px;
 }
