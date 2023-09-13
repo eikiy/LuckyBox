@@ -3637,7 +3637,7 @@ ul.edit-record-user li p.id span {
 .popup-container .fillin-box {
   width: 100%;
   padding: 15px;
-  max-width: 640px;
+  max-width: 670px;
   margin: 0 auto;
 }
 
@@ -3930,22 +3930,16 @@ ul.edit-record-user li p.id span {
 
 .popup-container .fillin-box .field ul.list-terms-single li .delete {
   position: absolute;
-  width: calc(100% + 30px);
+  width: calc(100% + 40px);
   height: 100%;
-  display: block;
+  display: inline-table;
   left: -30px;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #11948a;
   border-radius: 10px;
+  z-index: 5;
+  text-align: right;
+  padding: 5px;
 }
 
 .popup-container .fillin-box .field ul.list-terms-single li .delete a.icon {
@@ -3953,7 +3947,7 @@ ul.edit-record-user li p.id span {
   height: 45px;
   line-height: 45px;
   text-align: center;
-  display: block;
+  display: inline-block;
   opacity: 0;
   border-radius: 50%;
   background-color: #fff;
@@ -3969,8 +3963,12 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container .fillin-box .field ul.list-terms-single li .delete:hover a.icon {
-  display: block;
+  display: inline-block;
   opacity: 1;
+}
+
+.popup-container .fillin-box .field ul.list-terms-single .terms-description ul li {
+  padding: 0;
 }
 
 .popup-container .fillin-box .field ul.list-project-single {
@@ -4682,6 +4680,59 @@ ul.edit-record-user li p.id span {
   padding-right: 10px;
 }
 
+.popup-container .fillin-box .terms-description {
+  width: 100%;
+}
+
+.popup-container .fillin-box .terms-description .title_underline {
+  border-bottom: 1px solid #333;
+  padding: 2px 0px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popup-container .fillin-box .terms-description ul {
+  padding: 2.5px 0;
+  width: 100%;
+}
+
+.popup-container .fillin-box .terms-description ul li {
+  padding-bottom: 2.5px;
+}
+
+.popup-container .fillin-box .terms-description ul li p {
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.popup-container .fillin-box .terms-description ul.ul_decimal {
+  list-style-type: decimal;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.popup-container .fillin-box .terms-description ul.ul_upper_alpha {
+  list-style-type: upper-alpha;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.popup-container .fillin-box .terms-description ul.ul_lower_alpha {
+  list-style-type: lower-alpha;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.popup-container .fillin-box .terms-description ul.ul_lower_alpha li {
+  padding-left: 10px;
+}
+
 .popup-container .pw-box p {
   font-size: 0.875rem;
   text-align: center;
@@ -4853,6 +4904,15 @@ ul.edit-record-user li p.id span {
   max-height: 35vh;
   min-height: 65px;
   overflow-y: auto;
+}
+
+.popup-choose .popup-container .fillin-box .confirm .option-list label {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 24px;
+  overflow: hidden;
 }
 
 .popup-choose .popup-container .fillin-box .field .fillin-info {
@@ -5169,13 +5229,6 @@ ul.edit-record-user li p.id span {
   text-align: center;
 }
 
-.popup-finish .terms-info .terms-field p.terms-description {
-  font-size: 0.875rem;
-  line-height: 1.75rem;
-  letter-spacing: 1px;
-  text-align: justify;
-}
-
 .popup-finish p.text-confirm {
   float: left;
   width: 100%;
@@ -5333,15 +5386,11 @@ ul.edit-record-user li p.id span {
     padding-top: 20px;
   }
   .popup-finish .terms-info .terms-field {
-    padding: 15px 25px;
+    padding: 15px 20px;
   }
   .popup-finish .terms-info .terms-field p.terms-title {
     font-size: 0.938rem;
     padding: 10px 0 15px;
-  }
-  .popup-finish .terms-info .terms-field p.terms-description {
-    font-size: 0.813rem;
-    line-height: 1.375rem;
   }
   .popup-finish p.text-confirm {
     text-align: left;

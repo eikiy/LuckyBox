@@ -484,9 +484,21 @@
     padding: 15px;
   }
   .middle-container .report-container .blackcard_report .report_content .top_data_header .t_block {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  .middle-container .report-container .blackcard_report .report_content .top_data_header .t_block .s_title {
+    min-height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .middle-container .report-container .blackcard_report .report_content .chart_container .chart_block {
     -webkit-box-flex: inherit;
