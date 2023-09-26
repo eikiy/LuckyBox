@@ -116,7 +116,13 @@
   }
 }
 .bg_blue_img{
-  background: url(../images/bg_blue.png) center bottom no-repeat;
+  background: url(../images/bg_blue_a.png) center bottom no-repeat;
+}
+.bg_color_blue{
+  background-color: #005ca0;
+  .middle-container{
+    padding: 0 20px;
+  }
 }
 .login_box{
     padding: 50px;
