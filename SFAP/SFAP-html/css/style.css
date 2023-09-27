@@ -878,4 +878,43 @@ div.date-picker-dash {
 .glyphicon-pencil {
   background: url(../images/icon/pencil.svg);
 }
+
+.h_loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 1002;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.h_loader div {
+  text-align: center;
+}
+
+.h_loader p {
+  font-size: 16px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.h_loader .loader_circle {
+  display: inline-block;
+  border: 10px solid #007B81;
+  border-radius: 50%;
+  border-top: 10px solid #4EB5A5;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 1.5s linear infinite;
+  /* Safari */
+  animation: spin 1.5s linear infinite;
+}
 /*# sourceMappingURL=style.css.map */
