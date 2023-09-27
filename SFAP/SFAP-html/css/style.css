@@ -865,6 +865,9 @@ div.date-picker-dash {
   margin: 0 5px;
   font-size: 16px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .glyphicon:hover {
@@ -872,11 +875,15 @@ div.date-picker-dash {
 }
 
 .glyphicon-eye {
-  background: url(../images/icon/eye.svg);
+  background-image: url(../images/icon/eye.svg);
 }
 
 .glyphicon-pencil {
-  background: url(../images/icon/pencil.svg);
+  background-image: url(../images/icon/pencil.svg);
+}
+
+.glyphicon-crosses {
+  background-image: url(../images/icon/crosses.svg);
 }
 
 .h_loader {
