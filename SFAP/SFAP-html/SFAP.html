@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html>
+<head>
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CTBC Invest Common</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/scss/_pagination.scss" rel="stylesheet" crossorigin="anonymous"> -->
+</head>
+<body>
+    <main class="main-container" style="background-color: #fff;">
+        <!-- tab -->
+        <section class="top-tab">
+            <ul>
+                <li class="">
+                    <span class="tab-title">陪訪記錄維護</span>
+                    <span aria-hidden="true" class="remove">
+                        <svg height="1em" viewBox="0 0 384 512">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </span>
+                </li>
+                <li class="">
+                    <span class="tab-title">陪訪記錄內容</span>
+                    <span aria-hidden="true" class="remove">
+                        <svg height="1em" viewBox="0 0 384 512">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </span>
+                </li>
+                <li class=" active">
+                    <span class="tab-title">專案列管客戶記錄查詢</span>
+                    <span aria-hidden="true" class="remove">
+                        <svg height="1em" viewBox="0 0 384 512">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- tab container -->
+        <section class="tab-container">
+            <div class="txn-title">
+                <span>陪訪記錄維護</span>
+            </div>
+            <div class="info-container">
+                <div class="app-toggle-btn">
+                    <div class="txn-query-title toggle-title">
+                        <span>查詢條件</span>
+                    </div>
+                </div>
+                <div id="queryContent" class="">
+                    <form class="form-con-box">
+                        <fieldset class="form_row">
+                            <div class="rowCont">
+                                <div class="form_group _flex_wrap">
+                                    <div class="a_field r_line">
+                                        <label class="rowTitle"><span class="c_red">*</span>紀錄歸屬日期</label>
+                                        <div class="txn-input">
+                                            <input class="form-control" type="text-number" maxlength="4" formcontrolname="year" value="2023">
+                                            <span>年　</span>
+                                        </div>
+                                    </div>
+                                    <div class="a_field _flex_wrap">
+                                        <div class="txn-input">
+                                            <input class="form-control text-center" type="text-number" maxlength="2" formcontrolname="qmValue" value="8">
+                                        </div>
+                                        <div class="txn-input-select">
+                                            <select formcontrolname="quarterOrMonth" class="text-center ng-untouched ng-pristine">
+                                                <option value="0: null">請選擇</option>
+                                                <option value="1: 1" class="">季</option>
+                                                <option value="2: 2" class="">月</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form_row">
+                            <div class="rowCont forError">
+                                <div class="form_group _flex_wrap">
+                                    <div class="a_field">
+                                        <label class="rowTitle">客戶身分證字號</label>
+                                        <div class="txn-input">
+                                            <input type="text" maxlength="16" class="form-control" placeholder="請填入身分證號">
+                                            <!-- 錯誤訊息，可出現位置 A -->
+                                            <p class="text-note">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                                                    </path>
+                                                </svg>
+                                                身分證號檢核錯誤
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="a_field _flex_wrap">
+                                        <label class="checkbox-format">
+                                            <input type="checkbox">
+                                            <i style="margin-top: .15rem;"></i> 含HouseHold成員
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- 錯誤訊息，可出現位置 B ，看要 A 或 B 哪一個-->
+                                <p class="text-note">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                                        </path>
+                                    </svg>
+                                    錯誤內容錯誤內容錯誤內容
+                                </p>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form_row">
+                            <div class="rowCont">
+                                <div class="form_w_group _flex_wrap">
+                                    <div class="a_field">
+                                        <label class="rowTitle">客戶姓名中文／英文</label>
+                                    </div>
+                                    <div class="a_field">
+                                        <label class="rowTitle">客戶風險屬性</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form_row">
+                            <div class="rowCont">
+                                <div class="form_w_group _flex_wrap">
+                                    <div class="a_field">
+                                        <label class="rowTitle">客戶分行代碼及名稱</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                
+                        <fieldset class="form_row">
+                            <div class="rowCont">
+                                <div class="form_group _flex_wrap">
+                                    <div class="a_field r_line">
+                                        <label class="rowTitle" for="">分行</label>
+                                        <div class="txn-input-select">
+                                            <select _ngcontent-fek-c136="" formcontrolname="branch" class="ng-untouched ng-pristine ng-valid">
+                                                <option _ngcontent-fek-c136="" value="0: null">請選擇</option>
+                                                <option _ngcontent-fek-c136="" value="1: 0003" class="ng-star-inserted"> 0003-法人信託客服部 </option>
+                                                <option _ngcontent-fek-c136="" value="2: 0015" class="ng-star-inserted"> 0015-敦北分行 </option>
+                                                <option _ngcontent-fek-c136="" value="3: 0026" class="ng-star-inserted"> 0026-台中分行 </option>
+                                                <option _ngcontent-fek-c136="" value="4: 0037" class="ng-star-inserted"> 0037-高雄分行 </option>
+                                                <option _ngcontent-fek-c136="" value="5: 0059" class="ng-star-inserted"> 0059-台南分行 </option>
+                                                <option _ngcontent-fek-c136="" value="6: 0060" class="ng-star-inserted"> 0060-三重分行 </option>
+                                                <option _ngcontent-fek-c136="" value="7: 0071" class="ng-star-inserted"> 0071-城東分行 </option>
+                                                <option _ngcontent-fek-c136="" value="8: 0082" class="ng-star-inserted"> 0082-嘉義分行 </option>
+                                                <option _ngcontent-fek-c136="" value="9: 0093" class="ng-star-inserted"> 0093-中崙分行 </option>
+                                                <option _ngcontent-fek-c136="" value="10: 0107" class="ng-star-inserted"> 0107-城中分行 </option>
+                                                <option _ngcontent-fek-c136="" value="11: 0118" class="ng-star-inserted"> 0118-三民分行 </option>
+                                                <option _ngcontent-fek-c136="" value="12: 0129" class="ng-star-inserted"> 0129-中壢分行 </option>
+                                                <option _ngcontent-fek-c136="" value="13: 0130" class="ng-star-inserted"> 0130-雙和分行 </option>
+                                                <option _ngcontent-fek-c136="" value="14: 0141" class="ng-star-inserted"> 0141-中山分行 </option>
+                                                <option _ngcontent-fek-c136="" value="15: 0152" class="ng-star-inserted"> 0152-仁愛分行 </option>
+                                                <option _ngcontent-fek-c136="" value="16: 0163" class="ng-star-inserted"> 0163-敦南分行 </option>
+                                                <option _ngcontent-fek-c136="" value="17: 0174" class="ng-star-inserted"> 0174-板橋分行 </option>
+                                                <option _ngcontent-fek-c136="" value="18: 0185" class="ng-star-inserted"> 0185-忠孝分行 </option>
+                                                <option _ngcontent-fek-c136="" value="19: 0196" class="ng-star-inserted"> 0196-新興分行 </option>
+                                                <option _ngcontent-fek-c136="" value="20: 0200" class="ng-star-inserted"> 0200-南京東路分行 </option>
+                                                <option _ngcontent-fek-c136="" value="21: 0211" class="ng-star-inserted"> 0211-信託部 </option>
+                                                <option _ngcontent-fek-c136="" value="22: 0222" class="ng-star-inserted"> 0222-西台南分行 </option>
+                                                <option _ngcontent-fek-c136="" value="23: 0244" class="ng-star-inserted"> 0244-國際金融業務分行 </option>
+                                                <option _ngcontent-fek-c136="" value="24: 0255" class="ng-star-inserted"> 0255-松山分行 </option>
+                                                <option _ngcontent-fek-c136="" value="25: 0266" class="ng-star-inserted"> 0266-新莊分行 </option>
+                                                <option _ngcontent-fek-c136="" value="26: 0277" class="ng-star-inserted"> 0277-桃園分行 </option>
+                                                <option _ngcontent-fek-c136="" value="27: 0288" class="ng-star-inserted"> 0288-中港分行 </option>
+                                                <option _ngcontent-fek-c136="" value="28: 0299" class="ng-star-inserted"> 0299-新竹分行 </option>
+                                                <option _ngcontent-fek-c136="" value="29: 0303" class="ng-star-inserted"> 0303-蘆洲分行 </option>
+                                                <option _ngcontent-fek-c136="" value="30: 0314" class="ng-star-inserted"> 0314-新店分行 </option>
+                                                <option _ngcontent-fek-c136="" value="31: 0325" class="ng-star-inserted"> 0325-員林分行 </option>
+                                                <option _ngcontent-fek-c136="" value="32: 0336" class="ng-star-inserted"> 0336-東新竹分行 </option>
+                                                <option _ngcontent-fek-c136="" value="33: 0347" class="ng-star-inserted"> 0347-公館分行 </option>
+                                                <option _ngcontent-fek-c136="" value="34: 0358" class="ng-star-inserted"> 0358-永康分行 </option>
+                                                <option _ngcontent-fek-c136="" value="35: 0369" class="ng-star-inserted"> 0369-土城分行 </option>
+                                                <option _ngcontent-fek-c136="" value="36: 0370" class="ng-star-inserted"> 0370-頭份分行 </option>
+                                                <option _ngcontent-fek-c136="" value="37: 0381" class="ng-star-inserted"> 0381-基隆簡易分行 </option>
+                                                <option _ngcontent-fek-c136="" value="38: 0392" class="ng-star-inserted"> 0392-豐原分行 </option>
+                                                <option _ngcontent-fek-c136="" value="39: 0406" class="ng-star-inserted"> 0406-天母分行 </option>
+                                                <option _ngcontent-fek-c136="" value="40: 0417" class="ng-star-inserted"> 0417-板新分行 </option>
+                                                <option _ngcontent-fek-c136="" value="41: 0428" class="ng-star-inserted"> 0428-彰化分行 </option>
+                                                <option _ngcontent-fek-c136="" value="42: 0439" class="ng-star-inserted"> 0439-東高雄分行 </option>
+                                                <option _ngcontent-fek-c136="" value="43: 0440" class="ng-star-inserted"> 0440-中華分行 </option>
+                                                <option _ngcontent-fek-c136="" value="44: 0451" class="ng-star-inserted"> 0451-內湖分行 </option>
+                                                <option _ngcontent-fek-c136="" value="45: 0462" class="ng-star-inserted"> 0462-斗六分行 </option>
+                                                <option _ngcontent-fek-c136="" value="46: 0473" class="ng-star-inserted"> 0473-文心分行 </option>
+                                                <option _ngcontent-fek-c136="" value="47: 0484" class="ng-star-inserted"> 0484-重陽分行 </option>
+                                                <option _ngcontent-fek-c136="" value="48: 0495" class="ng-star-inserted"> 0495-永吉分行 </option>
+                                                <option _ngcontent-fek-c136="" value="49: 0509" class="ng-star-inserted"> 0509-前鎮分行 </option>
+                                                <option _ngcontent-fek-c136="" value="50: 0510" class="ng-star-inserted"> 0510-南崁分行 </option>
+                                                <option _ngcontent-fek-c136="" value="51: 0521" class="ng-star-inserted"> 0521-永和分行 </option>
+                                                <option _ngcontent-fek-c136="" value="52: 0532" class="ng-star-inserted"> 0532-太平分行 </option>
+                                                <option _ngcontent-fek-c136="" value="53: 0543" class="ng-star-inserted"> 0543-市府分行 </option>
+                                                <option _ngcontent-fek-c136="" value="54: 0554" class="ng-star-inserted"> 0554-六家庄分行 </option>
+                                                <option _ngcontent-fek-c136="" value="55: 0565" class="ng-star-inserted"> 0565-右昌分行 </option>
+                                                <option _ngcontent-fek-c136="" value="56: 0576" class="ng-star-inserted"> 0576-江翠分行 </option>
+                                                <option _ngcontent-fek-c136="" value="57: 0587" class="ng-star-inserted"> 0587-東湖分行 </option>
+                                                <option _ngcontent-fek-c136="" value="58: 0598" class="ng-star-inserted"> 0598-中原分行 </option>
+                                                <option _ngcontent-fek-c136="" value="59: 0602" class="ng-star-inserted"> 0602-大安分行 </option>
+                                                <option _ngcontent-fek-c136="" value="60: 0613" class="ng-star-inserted"> 0613-北高雄分行 </option>
+                                                <option _ngcontent-fek-c136="" value="61: 0624" class="ng-star-inserted"> 0624-承德分行 </option>
+                                                <option _ngcontent-fek-c136="" value="62: 0635" class="ng-star-inserted"> 0635-復興分行 </option>
+                                                <option _ngcontent-fek-c136="" value="63: 0646" class="ng-star-inserted"> 0646-石牌分行 </option>
+                                                <option _ngcontent-fek-c136="" value="64: 0657" class="ng-star-inserted"> 0657-城北分行 </option>
+                                                <option _ngcontent-fek-c136="" value="65: 0668" class="ng-star-inserted"> 0668-萬華分行 </option>
+                                                <option _ngcontent-fek-c136="" value="66: 0679" class="ng-star-inserted"> 0679-西松分行 </option>
+                                                <option _ngcontent-fek-c136="" value="67: 0680" class="ng-star-inserted"> 0680-北投分行 </option>
+                                                <option _ngcontent-fek-c136="" value="68: 0691" class="ng-star-inserted"> 0691-安和分行 </option>
+                                                <option _ngcontent-fek-c136="" value="69: 0705" class="ng-star-inserted"> 0705-西湖分行 </option>
+                                                <option _ngcontent-fek-c136="" value="70: 0716" class="ng-star-inserted"> 0716-瑞光分行 </option>
+                                                <option _ngcontent-fek-c136="" value="71: 0727" class="ng-star-inserted"> 0727-宜蘭簡易分行 </option>
+                                                <option _ngcontent-fek-c136="" value="72: 0738" class="ng-star-inserted"> 0738-民生分行 </option>
+                                                <option _ngcontent-fek-c136="" value="73: 0749" class="ng-star-inserted"> 0749-中和分行 </option>
+                                                <option _ngcontent-fek-c136="" value="74: 0750" class="ng-star-inserted"> 0750-重新分行 </option>
+                                                <option _ngcontent-fek-c136="" value="75: 0761" class="ng-star-inserted"> 0761-丹鳳分行 </option>
+                                                <option _ngcontent-fek-c136="" value="76: 0772" class="ng-star-inserted"> 0772-北新店分行 </option>
+                                                <option _ngcontent-fek-c136="" value="77: 0777" class="ng-star-inserted"> 0777-蘭嶼分行 </option>
+                                                <option _ngcontent-fek-c136="" value="78: 0783" class="ng-star-inserted"> 0783-汐止分行 </option>
+                                                <option _ngcontent-fek-c136="" value="79: 0794" class="ng-star-inserted"> 0794-金城分行 </option>
+                                                <option _ngcontent-fek-c136="" value="80: 0808" class="ng-star-inserted"> 0808-樹林分行 </option>
+                                                <option _ngcontent-fek-c136="" value="81: 0819" class="ng-star-inserted"> 0819-南勢角分行 </option>
+                                                <option _ngcontent-fek-c136="" value="82: 0820" class="ng-star-inserted"> 0820-北新莊分行 </option>
+                                                <option _ngcontent-fek-c136="" value="83: 0853" class="ng-star-inserted"> 0853-南桃園分行 </option>
+                                                <option _ngcontent-fek-c136="" value="84: 0864" class="ng-star-inserted"> 0864-北桃園分行 </option>
+                                                <option _ngcontent-fek-c136="" value="85: 0875" class="ng-star-inserted"> 0875-竹科分行 </option>
+                                                <option _ngcontent-fek-c136="" value="86: 0888" class="ng-star-inserted"> 0888-客戶服務部 </option>
+                                                <option _ngcontent-fek-c136="" value="87: 0901" class="ng-star-inserted"> 0901-營業部 </option>
+                                                <option _ngcontent-fek-c136="" value="88: 0992" class="ng-star-inserted"> 0992-消貸管理部 </option>
+                                                <option _ngcontent-fek-c136="" value="89: 0993" class="ng-star-inserted"> 0993-消貸管理部 </option>
+                                                <option _ngcontent-fek-c136="" value="90: 1012" class="ng-star-inserted"> 1012-八德分行 </option>
+                                                <option _ngcontent-fek-c136="" value="91: 1023" class="ng-star-inserted"> 1023-林口分行 </option>
+                                                <option _ngcontent-fek-c136="" value="92: 1034" class="ng-star-inserted"> 1034-竹北分行 </option>
+                                                <option _ngcontent-fek-c136="" value="93: 1045" class="ng-star-inserted"> 1045-南屯分行 </option>
+                                                <option _ngcontent-fek-c136="" value="94: 1056" class="ng-star-inserted"> 1056-大里分行 </option>
+                                                <option _ngcontent-fek-c136="" value="95: 1067" class="ng-star-inserted"> 1067-洲際分行 </option>
+                                                <option _ngcontent-fek-c136="" value="96: 1078" class="ng-star-inserted"> 1078-南投分行 </option>
+                                                <option _ngcontent-fek-c136="" value="97: 1090" class="ng-star-inserted"> 1090-仁德簡易型分行 </option>
+                                                <option _ngcontent-fek-c136="" value="98: 1104" class="ng-star-inserted"> 1104-中台南分行 </option>
+                                                <option _ngcontent-fek-c136="" value="99: 1115" class="ng-star-inserted"> 1115-東台南分行 </option>
+                                                <option _ngcontent-fek-c136="" value="100: 1126" class="ng-star-inserted"> 1126-台東分行 </option>
+                                                <option _ngcontent-fek-c136="" value="101: 1137" class="ng-star-inserted"> 1137-南台南分行 </option>
+                                                <option _ngcontent-fek-c136="" value="102: 1148" class="ng-star-inserted"> 1148-新營分行 </option>
+                                                <option _ngcontent-fek-c136="" value="103: 1159" class="ng-star-inserted"> 1159-科博館分行 </option>
+                                                <option _ngcontent-fek-c136="" value="104: 1160" class="ng-star-inserted"> 1160-西屯分行 </option>
+                                                <option _ngcontent-fek-c136="" value="105: 1171" class="ng-star-inserted"> 1171-民族分行 </option>
+                                                <option _ngcontent-fek-c136="" value="106: 1182" class="ng-star-inserted"> 1182-南高雄分行 </option>
+                                                <option _ngcontent-fek-c136="" value="107: 1193" class="ng-star-inserted"> 1193-九如分行 </option>
+                                                <option _ngcontent-fek-c136="" value="108: 1207" class="ng-star-inserted"> 1207-屏東分行 </option>
+                                                <option _ngcontent-fek-c136="" value="109: 1218" class="ng-star-inserted"> 1218-復北分行 </option>
+                                                <option _ngcontent-fek-c136="" value="110: 1229" class="ng-star-inserted"> 1229-鳳山分行 </option>
+                                                <option _ngcontent-fek-c136="" value="111: 1230" class="ng-star-inserted"> 1230-五甲分行 </option>
+                                                <option _ngcontent-fek-c136="" value="112: 1241" class="ng-star-inserted"> 1241-延吉分行 </option>
+                                                <option _ngcontent-fek-c136="" value="113: 1252" class="ng-star-inserted"> 1252-信義分行 </option>
+                                                <option _ngcontent-fek-c136="" value="114: 1263" class="ng-star-inserted"> 1263-青年簡易分行 </option>
+                                                <option _ngcontent-fek-c136="" value="115: 1274" class="ng-star-inserted"> 1274-岡山簡易型分行 </option>
+                                                <option _ngcontent-fek-c136="" value="116: 1285" class="ng-star-inserted"> 1285-士林分行 </option>
+                                                <option _ngcontent-fek-c136="" value="117: 1296" class="ng-star-inserted"> 1296-東民生分行 </option>
+                                                <option _ngcontent-fek-c136="" value="118: 1300" class="ng-star-inserted"> 1300-文山分行 </option>
+                                                <option _ngcontent-fek-c136="" value="119: 2101" class="ng-star-inserted"> 2101-淡水分行 </option>
+                                                <option _ngcontent-fek-c136="" value="120: 2112" class="ng-star-inserted"> 2112-民安分行 </option>
+                                                <option _ngcontent-fek-c136="" value="121: 2123" class="ng-star-inserted"> 2123-二重埔簡易型分行 </option>
+                                                <option _ngcontent-fek-c136="" value="122: 2134" class="ng-star-inserted"> 2134-富錦分行 </option>
+                                                <option _ngcontent-fek-c136="" value="123: 2145" class="ng-star-inserted"> 2145-站前分行 </option>
+                                                <option _ngcontent-fek-c136="" value="124: 2156" class="ng-star-inserted"> 2156-惠中分行 </option>
+                                                <option _ngcontent-fek-c136="" value="125: 2167" class="ng-star-inserted"> 2167-東蘆洲分行 </option>
+                                                <option _ngcontent-fek-c136="" value="126: 2178" class="ng-star-inserted"> 2178-木柵分行 </option>
+                                                <option _ngcontent-fek-c136="" value="127: 2189" class="ng-star-inserted"> 2189-東花蓮分行 </option>
+                                                <option _ngcontent-fek-c136="" value="128: 2190" class="ng-star-inserted"> 2190-寶山分行 </option>
+                                                <option _ngcontent-fek-c136="" value="129: 2204" class="ng-star-inserted"> 2204-藝文分行 </option>
+                                                <option _ngcontent-fek-c136="" value="130: 2215" class="ng-star-inserted"> 2215-東門分行 </option>
+                                                <option _ngcontent-fek-c136="" value="131: 2226" class="ng-star-inserted"> 2226-新板特區分行 </option>
+                                                <option _ngcontent-fek-c136="" value="132: 2237" class="ng-star-inserted"> 2237-三和分行 </option>
+                                                <option _ngcontent-fek-c136="" value="133: 2248" class="ng-star-inserted"> 2248-劍潭分行 </option>
+                                                <option _ngcontent-fek-c136="" value="134: 2259" class="ng-star-inserted"> 2259-北蘆洲分行 </option>
+                                                <option _ngcontent-fek-c136="" value="135: 2260" class="ng-star-inserted"> 2260-寶強分行 </option>
+                                                <option _ngcontent-fek-c136="" value="136: 2271" class="ng-star-inserted"> 2271-華山分行 </option>
+                                                <option _ngcontent-fek-c136="" value="137: 2282" class="ng-star-inserted"> 2282-龍江分行 </option>
+                                                <option _ngcontent-fek-c136="" value="138: 2293" class="ng-star-inserted"> 2293-成功分行 </option>
+                                                <option _ngcontent-fek-c136="" value="139: 3108" class="ng-star-inserted"> 3108-市政分行 </option>
+                                                <option _ngcontent-fek-c136="" value="140: 3119" class="ng-star-inserted"> 3119-大直分行 </option>
+                                                <option _ngcontent-fek-c136="" value="141: 3120" class="ng-star-inserted"> 3120-景美分行 </option>
+                                                <option _ngcontent-fek-c136="" value="142: 3131" class="ng-star-inserted"> 3131-內壢分行 </option>
+                                                <option _ngcontent-fek-c136="" value="143: 3142" class="ng-star-inserted"> 3142-重慶分行 </option>
+                                                <option _ngcontent-fek-c136="" value="144: 3153" class="ng-star-inserted"> 3153-長安分行 </option>
+                                                <option _ngcontent-fek-c136="" value="145: 3164" class="ng-star-inserted"> 3164-羅東分行 </option>
+                                                <option _ngcontent-fek-c136="" value="146: 3175" class="ng-star-inserted"> 3175-南中壢分行 </option>
+                                                <option _ngcontent-fek-c136="" value="147: 3186" class="ng-star-inserted"> 3186-板和分行 </option>
+                                                <option _ngcontent-fek-c136="" value="148: 3197" class="ng-star-inserted"> 3197-花蓮分行 </option>
+                                                <option _ngcontent-fek-c136="" value="149: 3201" class="ng-star-inserted"> 3201-北天母分行 </option>
+                                                <option _ngcontent-fek-c136="" value="150: 3212" class="ng-star-inserted"> 3212-民權西路分行 </option>
+                                                <option _ngcontent-fek-c136="" value="151: 3223" class="ng-star-inserted"> 3223-佳里分行 </option>
+                                                <option _ngcontent-fek-c136="" value="152: 3234" class="ng-star-inserted"> 3234-博愛分行 </option>
+                                                <option _ngcontent-fek-c136="" value="153: 3245" class="ng-star-inserted"> 3245-鹽行分行 </option>
+                                                <option _ngcontent-fek-c136="" value="154: 3267" class="ng-star-inserted"> 3267-光復分行 </option>
+                                                <option _ngcontent-fek-c136="" value="155: 3278" class="ng-star-inserted"> 3278-埔墘簡易型分行 </option>
+                                                <option _ngcontent-fek-c136="" value="156: 3289" class="ng-star-inserted"> 3289-黎明分行 </option>
+                                                <option _ngcontent-fek-c136="" value="157: 3290" class="ng-star-inserted"> 3290-新富分行 </option>
+                                                <option _ngcontent-fek-c136="" value="158: 3603" class="ng-star-inserted"> 3603-三峽分行 </option>
+                                                <option _ngcontent-fek-c136="" value="159: 3614" class="ng-star-inserted"> 3614-東林口分行 </option>
+                                                <option _ngcontent-fek-c136="" value="160: 8253" class="ng-star-inserted"> 8253-保險代理人部 </option>
+                                                <option _ngcontent-fek-c136="" value="161: 9999" class="ng-star-inserted"> 9999-測試分行 </option><!---->
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="a_field">
+                                        <label class="rowTitle" for="">填寫部隊</label>
+                                        <div class="txn-input-select">
+                                            <select _ngcontent-fek-c136="" formcontrolname="team" class="ng-untouched ng-pristine ng-valid">
+                                                <option _ngcontent-fek-c136="" value="0: null">請選擇</option>
+                                                <option _ngcontent-fek-c136="" value="1: 1" class="ng-star-inserted"> PA/FP </option>
+                                                <option _ngcontent-fek-c136="" value="2: 2" class="ng-star-inserted"> IP </option>
+                                                <option _ngcontent-fek-c136="" value="3: 3" class="ng-star-inserted"> FPI-稅 </option>
+                                                <option _ngcontent-fek-c136="" value="4: 4" class="ng-star-inserted"> FPI-不動產 </option>
+                                                <option _ngcontent-fek-c136="" value="5: 6" class="ng-star-inserted"> FPI-信託 </option>
+                                                <option _ngcontent-fek-c136="" value="6: 5" class="ng-star-inserted"> IS </option>
+                                                <option _ngcontent-fek-c136="" value="7: 7" class="ng-star-inserted"> RM </option>
+                                                <option _ngcontent-fek-c136="" value="8: 8" class="ng-star-inserted"> FPI-HQ </option><!---->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form_row">
+                            <div class="rowCont forFocus">
+                                <div class="form_group _flex_wrap">
+                                    <div class="a_field">
+                                        <label class="rowTitle" for="">Advisory Pool</label>
+                                        <div class="txn-input-select">
+                                            <select _ngcontent-fek-c136="" formcontrolname="advsPool" class="ng-untouched ng-pristine ng-valid">
+                                                <option _ngcontent-fek-c136="" value="0: null">請選擇</option>
+                                                <option _ngcontent-fek-c136="" value="1: 主" class="ng-star-inserted"> 主 </option>
+                                                <option _ngcontent-fek-c136="" value="2: 主N" class="ng-star-inserted"> 主N </option>
+                                                <option _ngcontent-fek-c136="" value="3: 主R_IS" class="ng-star-inserted"> 主R_IS </option>
+                                                <option _ngcontent-fek-c136="" value="4: 主R_IS主" class="ng-star-inserted"> 主R_IS主 </option>
+                                                <option _ngcontent-fek-c136="" value="5: 主R_張昭嵐_N" class="ng-star-inserted"> 主R_張昭嵐_N </option>
+                                                <option _ngcontent-fek-c136="" value="6: 主R_徐博康_N" class="ng-star-inserted"> 主R_徐博康_N </option>
+                                                <option _ngcontent-fek-c136="" value="7: 主R_林志陽_N" class="ng-star-inserted"> 主R_林志陽_N </option>
+                                                <option _ngcontent-fek-c136="" value="8: 主R_胡嘉昌_N" class="ng-star-inserted"> 主R_胡嘉昌_N </option>
+                                                <option _ngcontent-fek-c136="" value="9: 主R_陳光陽_N" class="ng-star-inserted"> 主R_陳光陽_N </option>
+                                                <option _ngcontent-fek-c136="" value="10: 主R_韓翔_N" class="ng-star-inserted"> 主R_韓翔_N </option>
+                                                <option _ngcontent-fek-c136="" value="11: 主S_Ij" class="ng-star-inserted"> 主S_Ij </option>
+                                                <option _ngcontent-fek-c136="" value="12: 主S_Im" class="ng-star-inserted"> 主S_Im </option>
+                                                <option _ngcontent-fek-c136="" value="13: 主_N" class="ng-star-inserted"> 主_N </option>
+                                                <option _ngcontent-fek-c136="" value="14: 主保_N" class="ng-star-inserted"> 主保_N </option>
+                                                <option _ngcontent-fek-c136="" value="15: 主稅" class="ng-star-inserted"> 主稅 </option><!---->
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="a_field">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="formRow-m">
+                            <button id="" type="button" class="c-btn c-btn--primary">建立新Report</button>
+                            <button id="" type="button" class="c-btn c-btn--primary">查詢</button>
+                            <button id="" type="button" class="c-btn c-btn--line">清除</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-page">
+                <p class="text-right">共1頁/共7筆資料</p>
+            </div>
+            <div class="info-container">
+                <div class="ctbc-table-container">
+                    <table class="ctbc-table-style">
+                        <thead>
+                            <tr>
+                                <td width="80">動作</td>
+                                <td>文件編號</td>
+                                <td>客戶身分證編號</td>
+                                <td>客戶姓名</td>
+                                <td>Advisory pool</td>
+                                <td>分行</td>
+                                <td>填寫部隊</td>
+                                <td>填寫人姓名</td>
+                                <td>陪訪日期</td>
+                                <td>最後修改日</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-eye" title="查詢明細"></span>
+                                    <span class="glyphicon glyphicon-pencil" title="編輯"></span>
+                                </td>
+                                <td>A0543-20230617-15-005</td>
+                                <td>X200***261</td>
+                                <td>Ｘ２ＯＯＯＯＯＯ專用</td>
+                                <td>主N</td>
+                                <td>永吉分行</td>
+                                <td>FPI-信託</td>
+                                <td>張昭嵐</td>
+                                <td>2023/06/13</td>
+                                <td>2023/06/17</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-eye" title="查詢明細"></span>
+                                    <span class="glyphicon glyphicon-pencil" title="編輯"></span>
+                                </td>
+                                <td>A0543-20230617-15-005</td>
+                                <td>X200***261</td>
+                                <td>Ｘ２ＯＯＯＯＯＯ專用</td>
+                                <td>主N</td>
+                                <td>永吉分行</td>
+                                <td>FPI-信託</td>
+                                <td>張昭嵐</td>
+                                <td>2023/06/13</td>
+                                <td>2023/06/17</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-eye" title="查詢明細"></span>
+                                    <span class="glyphicon glyphicon-pencil" title="編輯"></span>
+                                </td>
+                                <td>A0543-20230617-15-005</td>
+                                <td>X200***261</td>
+                                <td>Ｘ２ＯＯＯＯＯＯ專用</td>
+                                <td>主N</td>
+                                <td>永吉分行</td>
+                                <td>FPI-信託</td>
+                                <td>張昭嵐</td>
+                                <td>2023/06/13</td>
+                                <td>2023/06/17</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-eye" title="查詢明細"></span>
+                                    <span class="glyphicon glyphicon-pencil" title="編輯"></span>
+                                </td>
+                                <td>A0543-20230617-15-005</td>
+                                <td>C220***370</td>
+                                <td>７此ＯＯＯＯＯＯＯＯＯＯＯＯＯＯＯＯＯＯＯ F</td>
+                                <td></td>
+                                <td>敦北分行</td>
+                                <td>FPI-信託</td>
+                                <td>張昭嵐</td>
+                                <td>2023/06/13</td>
+                                <td>2023/06/17</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-eye" title="查詢明細"></span>
+                                    <span class="glyphicon glyphicon-pencil" title="編輯"></span>
+                                </td>
+                                <td>A0543-20230617-15-005</td>
+                                <td>X200***261</td>
+                                <td>Ｘ２ＯＯＯＯＯＯ專用</td>
+                                <td>主N</td>
+                                <td>永吉分行</td>
+                                <td>FPI-信託</td>
+                                <td>張昭嵐</td>
+                                <td>2023/06/13</td>
+                                <td>2023/06/17</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            <div id="pagination" class="page-area">
+                <ul class="pagination">
+                    <li class="page-item"><span class="page-link" style="color: lightgray">«</span></li>
+                    <li class="page-item"><span class="page-link" style="color: lightgray">‹</span></li>
+            
+                    <li class="page-item"><span class="page-link page-selected">1</span></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">2</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">3</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">4</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">5</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">6</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">7</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">8</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">9</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">10</a></li>
+            
+                    <li class="page-item"><a class="page-link page-can-select" href="#">›</a></li>
+                    <li class="page-item"><a class="page-link page-can-select" href="#">»</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
