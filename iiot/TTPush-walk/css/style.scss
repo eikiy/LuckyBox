@@ -1,6 +1,4 @@
 @import "../css/reset.scss";
-@import url(animate.css);
-
 body{
   background-color: #FAFAFA;
 }
@@ -556,6 +554,96 @@ body{
     font-size: .5em;
     font-weight: bold;
     text-anchor: middle;
+  }
+}
+.pages{
+  width: 100%;
+  ul{
+    text-align: center;
+    padding: 10px 0;
+    li{
+      display: inline-block;
+      padding: 2.5px 0px;
+      a{
+        background-color: #E85189;
+        color: #fff;
+        opacity: 0.25;
+        font-size: 13px;
+        padding:8px 10px;
+        border-radius: 4px;
+        display: block;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover{
+          opacity: .5;
+        }
+        &.selected{
+          opacity: 1;
+        }
+        
+        &.prev, &.next{
+          border: 1px solid #E85189;
+          opacity: 1;
+          background-color: transparent;
+          color: #E85189;
+          position: relative;
+          &:hover{
+            background-color: #ff5f9922;
+          }
+        }
+        &.disabled{
+          cursor: text;
+          opacity: .5;
+          &:hover{
+            background-color: transparent;
+          }
+        }
+        &.prev::after, &.next::before{
+          position: absolute;
+          content: "";
+          width: 8px;
+          height: 6px;
+          display: block;
+          top: calc(50% - 3px);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &.prev{
+          padding-left: 18px;
+          &::after{
+            background-image: url(../images/arr-left-pink.svg);
+            left: 6px;
+          }
+        }
+        &.next{
+          padding-right: 18px;
+          &::before{
+            background-image: url(../images/arr-right-pink.svg);
+            right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+.search-page{
+  text-align: center;
+  input{
+    padding: 7px 12px;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #E85189;
+    color: #E85189;
+    font-weight: bold;
+    background: transparent;
+  }
+  p{
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
   }
 }
 @media all and (max-width: 700px) {}

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(animate.css);
 html,
 body,
 div,
@@ -886,5 +885,112 @@ body {
   font-size: .5em;
   font-weight: bold;
   text-anchor: middle;
+}
+
+.pages {
+  width: 100%;
+}
+
+.pages ul {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.pages ul li {
+  display: inline-block;
+  padding: 2.5px 0px;
+}
+
+.pages ul li a {
+  background-color: #E85189;
+  color: #fff;
+  opacity: 0.25;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pages ul li a:hover {
+  opacity: .5;
+}
+
+.pages ul li a.selected {
+  opacity: 1;
+}
+
+.pages ul li a.prev, .pages ul li a.next {
+  border: 1px solid #E85189;
+  opacity: 1;
+  background-color: transparent;
+  color: #E85189;
+  position: relative;
+}
+
+.pages ul li a.prev:hover, .pages ul li a.next:hover {
+  background-color: #ff5f9922;
+}
+
+.pages ul li a.disabled {
+  cursor: text;
+  opacity: .5;
+}
+
+.pages ul li a.disabled:hover {
+  background-color: transparent;
+}
+
+.pages ul li a.prev::after, .pages ul li a.next::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 6px;
+  display: block;
+  top: calc(50% - 3px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pages ul li a.prev {
+  padding-left: 18px;
+}
+
+.pages ul li a.prev::after {
+  background-image: url(../images/arr-left-pink.svg);
+  left: 6px;
+}
+
+.pages ul li a.next {
+  padding-right: 18px;
+}
+
+.pages ul li a.next::before {
+  background-image: url(../images/arr-right-pink.svg);
+  right: 6px;
+}
+
+.search-page {
+  text-align: center;
+}
+
+.search-page input {
+  padding: 7px 12px;
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #E85189;
+  color: #E85189;
+  font-weight: bold;
+  background: transparent;
+}
+
+.search-page p {
+  display: inline-block;
+  font-size: 12px;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */
