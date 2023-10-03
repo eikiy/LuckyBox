@@ -76,7 +76,7 @@ main.wrapper{ width: 100%; padding: 15px; }
 	.wrapper .pay_item .pay_list li a{ width: 144px; height: 72px; border-width: 2px; }
 	.wrapper .pay_item .pay_list li a img{ max-width: 69%; }
 	.wrapper .pay_item .pay_list li a img.apple_pay{ max-width: 47%;}
-	.wrapper .pay_item .pay_list li a img.american_express{ max-width: 90%;}
+	.wrapper .pay_item .pay_list li a img.m_width{ max-width: 90%;}
 	.wrapper .pay_item .pay_list li a img.UnionPay{ max-width: 44%;}
 
 	.wrapper .pay_item .pay_list li p{ font-size: 14px; }
