@@ -1,0 +1,120 @@
+@import "../css/reset.scss";
+@import url(animate.css);
+ .an-repeat {
+   animation-iteration-count: infinite;
+ }
+.tycg-screen-container{
+  width: 100%;
+  position: relative;
+  background: url(../images/bg_00.png) center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  img{
+    width: 100%;
+  }
+  footer{
+    padding:15px 20px 10px 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: url(../images/bg_footer.png) right center no-repeat;
+    background-size: cover;
+    text-align: right;
+    .logos{
+      display: inline-block;
+      max-width: 35vw;
+    }
+  }
+  .top-title-content{
+    width: 100%;
+    padding:0 3vh;
+    position: relative;
+    .go-btn{
+      z-index: 1;
+      position: absolute;
+      top: calc(50% - 4vh);
+      right: 6vw;
+      width: 25vw;
+      cursor: pointer;
+      img {
+        transform: scale(1, 1);
+        transition: all .5s ease-out;
+        &:hover{
+          transform: scale(1.1, 1.1);
+        }
+      }
+    }
+  }
+  .subtitle{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .menu{
+    width: 90%;
+    margin: 0 auto;
+    img {
+        transform: scale(1, 1);
+        transition: all .5s ease-out;
+      }
+    a{
+      &:hover{
+        img{
+          transform:scale(1.1,1.1);
+        }
+      }
+    }
+  }
+  .info-content{
+    width: 90%;
+    margin: 0 auto;
+    height: 45vh;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    .text-card{
+      width: 100%;
+      .text{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        p{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #333;
+          letter-spacing: 5px;
+          font-family: 'Noto Sans TC', sans-serif;
+          font-weight: 800;
+          padding:2vh 3vh;
+          text-align: center;
+        }
+      }
+      ul{
+        text-align: left;
+        padding-top: 20px;
+        li{
+          display: inline-block;
+          padding:5px 7px;
+          color: #fff;
+          font-size: 24px;
+        }
+        &.nb_50{
+          li{
+            font-size: 15px;
+          }
+        }
+        &.nb_100{
+          li{
+            padding: 3px 5px;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
