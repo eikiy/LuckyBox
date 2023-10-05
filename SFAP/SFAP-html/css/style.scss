@@ -159,7 +159,7 @@ td{
         padding: 8px;
         font-size: 16px;
         flex: 40%;
-        // max-width: 150px;
+        max-width: 180px;
         padding-right: 6px;
         line-height: 20px;
         font-weight: 600;
@@ -313,6 +313,9 @@ td{
         top: calc(50% - 15px);
       }
     }
+    ._flex_50{
+      flex: 50%;
+    }
     .r_line{
       position: relative;
       &::after{
@@ -438,6 +441,12 @@ div.date-picker-dash {
   }
 }
 // -----popup
+.popup-w-ss{
+  max-width: 500px;
+  h5.popup-top-title{
+    color: #333;
+  }
+}
 .c-popup-modal{
   padding: 10px;
   .popup-top-title {

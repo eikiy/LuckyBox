@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CTBC Invest Common - popup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 建立新 Report -->
+    <div class="modal c-popup-modal popup-w-ss">
+        <div class="modal-content">
+            <h5 class="popup-top-title">
+                <span>建立新 Report</span>
+            </h5>
+            <form class="form-con-box">
+                <fieldset class="form_row">
+                    <div class="rowCont forError">
+                        <div class="form_group _flex_wrap">
+                            <div class="a_field">
+                                <label class="rowTitle">客戶身分證字號</label>
+                                <div class="txn-input">
+                                    <input type="text" maxlength="16" class="form-control" placeholder="請填入身分證號">
+                                    <!-- 錯誤訊息，可出現位置 A -->
+                                    <p class="text-note">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                                            </path>
+                                        </svg>
+                                        身分證號檢核錯誤
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 錯誤訊息，可出現位置 B ，看要 A 或 B 哪一個-->
+                        <p class="text-note">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                                </path>
+                            </svg>
+                            錯誤內容錯誤內容錯誤內容
+                        </p>
+                    </div>
+                </fieldset>
+                <fieldset class="form_row">
+                    <div class="rowCont ">
+                        <div class="form_group _flex_wrap">
+                            <div class="a_field">
+                                <label class="rowTitle">紀錄歸屬日期</label>
+                                <div class="_flex_wrap _flex_50">
+                                    <div class="txn-input">
+                                        <input class="form-control" type="text-number" maxlength="4" formcontrolname="year"
+                                            value="2023">
+                                        <span>年　</span>
+                                    </div>
+                                    <div class="txn-input">
+                                        <input class="form-control text-center" type="text-number" maxlength="2"
+                                            formcontrolname="qmValue" value="8">
+                                        <span>月　</span>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="formRow-m">
+                <button id="" type="button" class="c-btn c-btn--primary">新增紀錄</button>
+                <button id="" type="button" class="c-btn c-btn--line">關閉</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 是否確定取消？ -->
+    <div class="modal c-popup-modal popup-w-ss">
+        <div class="modal-content">
+            <h5 class="popup-top-title">
+                <span>是否確定取消？</span>
+            </h5>
+            <div class="formRow-m">
+                <button id="" type="button" class="c-btn c-btn--primary">確認</button>
+                <button id="" type="button" class="c-btn c-btn--line">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

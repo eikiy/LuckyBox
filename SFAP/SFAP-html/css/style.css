@@ -349,6 +349,7 @@ td {
   -webkit-box-flex: 40%;
       -ms-flex: 40%;
           flex: 40%;
+  max-width: 180px;
   padding-right: 6px;
   line-height: 20px;
   font-weight: 600;
@@ -545,6 +546,12 @@ td {
   top: calc(50% - 15px);
 }
 
+.form_row .rowCont ._flex_50 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
 .form_row .rowCont .r_line {
   position: relative;
 }
@@ -682,6 +689,14 @@ div.date-picker-dash {
   font-size: 14px;
   margin: 0;
   padding-bottom: 15px;
+}
+
+.popup-w-ss {
+  max-width: 500px;
+}
+
+.popup-w-ss h5.popup-top-title {
+  color: #333;
 }
 
 .c-popup-modal {
