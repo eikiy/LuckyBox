@@ -329,6 +329,9 @@ td {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form_row .rowCont .a_field .c_red {
@@ -343,9 +346,9 @@ td {
   display: flex;
   padding: 8px;
   font-size: 16px;
-  -webkit-box-flex: 150px;
-      -ms-flex: 150px;
-          flex: 150px;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
   padding-right: 6px;
   line-height: 20px;
   font-weight: 600;
@@ -353,7 +356,6 @@ td {
 
 .form_row .rowCont .a_field .txn-input,
 .form_row .rowCont .a_field .date-select {
-  width: calc(100% - 150px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,9 +533,9 @@ td {
 
 .form_row .rowCont ._flex_wrap .txn-input,
 .form_row .rowCont ._flex_wrap .txn-input-select {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
 }
 
 .form_row .rowCont ._flex_wrap .text-note {
@@ -707,8 +709,90 @@ div.date-picker-dash {
   width: 100%;
 }
 
+.ctbc-table-container .ctbc-table-style p.more-btn {
+  text-align: right;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.ctbc-table-container .ctbc-table-style p.more-btn a {
+  padding: 5px 10px;
+  border-radius: 40px;
+  color: #4EB5A5;
+  background-color: #EDF6F6;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list {
+  list-style: none;
+  text-align: left;
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 5px 0;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50px;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-01 {
+  color: #EB9769;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-01::before {
+  background-color: #EB9769;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-02 {
+  color: #BFA823;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-02::before {
+  background-color: #BFA823;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-03 {
+  color: #3F5D8D;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-03::before {
+  background-color: #3F5D8D;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-04 {
+  color: #0099CC;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-04::before {
+  background-color: #0099CC;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-05 {
+  color: #333333;
+}
+
+.ctbc-table-container .ctbc-table-style ul.c-c-list li.c-c-05::before {
+  background-color: #333333;
+}
+
 .ctbc-table-container .ctbc-table-style tr:nth-child(even) {
   background-color: rgba(216, 223, 227, 0.4);
+}
+
+.ctbc-table-container .ctbc-table-style tr:nth-child(even) p.more-btn a {
+  background-color: #FFFFFF;
 }
 
 .ctbc-table-container .ctbc-table-style td {
@@ -886,6 +970,10 @@ div.date-picker-dash {
   background-image: url(../images/icon/crosses.svg);
 }
 
+.glyphicon-calendar {
+  background-image: url(../images/icon/calendar.svg);
+}
+
 .h_loader {
   width: 100%;
   height: 100vh;
@@ -923,5 +1011,82 @@ div.date-picker-dash {
   -webkit-animation: spin 1.5s linear infinite;
   /* Safari */
   animation: spin 1.5s linear infinite;
+}
+
+.question-content {
+  width: 100%;
+  padding: 15px;
+}
+
+.question-content .nav-tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.question-content .nav-tabs::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #E1E4E7;
+}
+
+.question-content .nav-tabs li {
+  padding: 10px 15px;
+  border-bottom: 2px solid #E1E4E7;
+  cursor: pointer;
+}
+
+.question-content .nav-tabs li:hover p {
+  color: #007B81;
+}
+
+.question-content .nav-tabs li p {
+  color: #A9AAAB;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.question-content .nav-tabs li.btn_in {
+  position: relative;
+}
+
+.question-content .nav-tabs li.btn_in p {
+  color: #007B81;
+}
+
+.question-content .nav-tabs li.btn_in::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 5px;
+  display: block;
+  background-color: #FF5441;
+}
+
+.question-content .tab-content {
+  width: 100%;
+}
+
+.question-content .tab-content .info-container {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+}
+
+.question-content .tab-content .info-container .ctbc-table-container {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

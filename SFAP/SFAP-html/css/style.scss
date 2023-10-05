@@ -148,6 +148,7 @@ td{
       position: relative;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       .c_red{
         color: #FF0000;
         padding-right: 2px;
@@ -157,7 +158,8 @@ td{
         display: flex;
         padding: 8px;
         font-size: 16px;
-        flex: 150px;
+        flex: 40%;
+        // max-width: 150px;
         padding-right: 6px;
         line-height: 20px;
         font-weight: 600;
@@ -168,7 +170,7 @@ td{
   
       .txn-input,
       .date-select {
-        width: calc(100% - 150px);
+        // width: calc(100% - 150px);
         display: flex;
         vertical-align: middle;
         align-items: center;
@@ -302,7 +304,7 @@ td{
       }
       .txn-input,
       .txn-input-select{
-        flex: 50%;
+        flex: 45%;
       }
       .text-note{
         font-size: 12px;
@@ -458,8 +460,73 @@ div.date-picker-dash {
   .ctbc-table-style {
     width: 100%;
 
+    p.more-btn{
+      text-align: right;
+      font-size: 12px;
+      padding: 10px 0;
+      a{
+        padding: 5px 10px;
+        border-radius: 40px;
+        color: #4EB5A5;
+        background-color: #EDF6F6;
+      }
+    }
+    ul.c-c-list{
+      list-style: none;
+      text-align: left;
+      padding-inline-start: 18px;
+      li{
+        position: relative;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 5px 0;
+        &::before{
+          content: "";
+          position: absolute;
+          left: -15px;
+          top: 10px;
+          width: 6px;
+          height: 6px;
+          display: block;
+          border-radius: 50px;
+        }
+        &.c-c-01{
+          color: #EB9769;
+          &::before {
+            background-color: #EB9769;
+          }
+        }
+        &.c-c-02{
+          color: #BFA823;
+          &::before {
+            background-color: #BFA823;
+          }
+        }
+        &.c-c-03{
+          color: #3F5D8D;
+          &::before {
+            background-color: #3F5D8D;
+          }
+        }
+        &.c-c-04{
+          color: #0099CC;
+          &::before {
+            background-color: #0099CC;
+          }
+        }
+        &.c-c-05{
+          color: #333333;
+          &::before {
+            background-color: #333333;
+          }
+        }
+      }
+    }
     tr:nth-child(even) {
       background-color: rgba(216, 223, 227, .4);
+      p.more-btn a{
+        background-color: #FFFFFF;
+      }
     }
 
     td {
@@ -495,6 +562,8 @@ div.date-picker-dash {
     tbody tr td{
       white-space: nowrap;
     }
+
+    
   }
 }
 
@@ -620,7 +689,9 @@ div.date-picker-dash {
 .glyphicon-crosses{
   background-image: url(../images/icon/crosses.svg);
 }
-
+.glyphicon-calendar {
+  background-image: url(../images/icon/calendar.svg);
+}
 // loader
 .h_loader {
   width: 100%;
@@ -655,5 +726,67 @@ div.date-picker-dash {
     -webkit-animation: spin 1.5s linear infinite;
     /* Safari */
     animation: spin 1.5s linear infinite;
+  }
+}
+
+.question-content{
+  width: 100%;
+  padding: 15px;
+  .nav-tabs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color:#E1E4E7 ;
+    }
+    li{
+      padding: 10px 15px;
+      border-bottom: 2px solid #E1E4E7;
+      cursor: pointer;
+      &:hover p{
+        color: #007B81;
+      }
+      p{
+        color: #A9AAAB;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      &.btn_in{
+        position: relative;
+        p{
+          color: #007B81;
+        }
+        &::before{
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: -2px;
+          width: 100%;
+          height: 5px;
+          display: block;
+          background-color:#FF5441 ;
+        }
+      }
+    }
+  }
+  .tab-content{
+    width: 100%;
+    .info-container{
+      box-shadow: none;
+      margin-bottom: 0;
+      .ctbc-table-container{
+        margin-bottom: 0;
+      }
+    }
   }
 }
