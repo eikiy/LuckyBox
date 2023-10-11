@@ -7,6 +7,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>CTBC Invest Common - popup 家庭(過去)</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".checkbox-shows").click(function () {
+                $(this).next(".checkbox-group").stop(true, true).slideToggle();
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -28,6 +37,96 @@
                         <tr>
                             <td>家庭</td>
                             <td class="text-left">
+                                <p class="s-subtitle">客戶KYC家庭單選題</p>
+                                <div class="bg-c01 qabox">
+                                    <div class="txn-input-select">
+                                        <select formcontrolname="quarterOrMonth" class=" ng-untouched ng-pristine">
+                                            <option value="0: null">請選擇</option>
+                                            <option value="1: 1" class="">222</option>
+                                            <option value="2: 2" class="">222</option>
+                                        </select>
+                                    </div>
+                                    <div class="txn-textare pa10">
+                                        <div class="txn-input">
+                                            <textarea>123</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="s-subtitle">客戶KYC家庭(現在)單選題</p>
+                                <!-- 未選擇 -->
+                                <div class="bg-c01 qabox">
+                                    <div class="txn-input-select">
+                                        <select formcontrolname="quarterOrMonth" class=" ng-untouched ng-pristine">
+                                            <option value="0: null">請選擇</option>
+                                            <option value="1: 1" class="">222</option>
+                                            <option value="2: 2" class="">222</option>
+                                        </select>
+                                    </div>
+                                    <div class="txn-textare pa10">
+                                        <div class="txn-input">
+                                            <textarea>123</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="s-subtitle">客戶KYC家庭(過去)複選題</p>
+                                <!-- 已選擇 -->
+                                <div class="bg-c01 qabox">
+                                    <div class="txn-input-select has-list">
+                                        <div class="checkbox-shows">
+                                            <ul class="checkbox-list">
+                                                <li>
+                                                    <p>複選題選項1<span class="glyphicon glyphicon-crosses" title="刪除"></span></p>
+                                                </li>
+                                                <li>
+                                                    <p>複選題選項2<span class="glyphicon glyphicon-crosses" title="刪除"></span></p>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>複選題選項3<span class="glyphicon glyphicon-crosses" title="刪除"></span></p>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>複選題選項4<span class="glyphicon glyphicon-crosses" title="刪除"></span></p>
+                                                    </p>
+                                                </li>
+                                    
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-group" style="display: none;">
+                                            <label class="control control--checkbox">複選題選項1
+                                                <input type="checkbox" checked="checked" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--checkbox">複選題選項2
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--checkbox">Disabled 複選題選項3
+                                                <input type="checkbox" disabled="disabled" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--checkbox">Disabled & checked 複選題選項4
+                                                <input type="checkbox" disabled="disabled" checked="checked" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--checkbox">複選題選項5
+                                                <input type="checkbox" checked="checked" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                            <label class="control control--checkbox">複選題選項6
+                                                <input type="checkbox" checked="checked" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="txn-textare pa10">
+                                        <div class="txn-input">
+                                            <textarea>123</textarea>
+                                        </div>
+                                    </div>
+                                </div>
                                 <p class="s-subtitle">狀態描述</p>
                                 <ul class="c-c-list">
                                     <li class="c-c-01">12/9用許正揚測試12/3(補)</li>
