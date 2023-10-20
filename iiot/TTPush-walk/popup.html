@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TTPush 陪你走路運動</title>
+    <meta name='description'content="" />
+    <meta name='keywords' content="TTPush, 陪你走路運動" />
+    <meta property="og:title" content="TTPush 陪你走路運動" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/share_pic.png" />
+    <meta property="og:url" content="#" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+    <!-- animate -->
+    <script src="js/wow.js"></script>
+    <script>
+        $(function () {
+            new WOW().init();
+        });
+    </script>
+</head>
+
+<!-- 載入中需要把背景卷軸隱藏 + overflow -->
+<body style="overflow: hidden;">
+    <section class="popup_cont">
+        <div class="block-box">
+            <a class="closed" href="#"></a>
+            <p class="main-title">發生錯誤</p>
+            <p class="text">發生錯誤，但別擔心，稍微再試吧</p>
+            <div class="btn">
+                <a class="pink-btn" href="#">
+                    <p>重新整理</p>
+                </a>
+                <a class="pink-btn pink-line-btn" href="#">
+                    <p>關閉</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <header class="TTPush-header-container">
+        <section class="block-box">
+            <h2><span>TTPush 陪你走路運動</span></h2>
+            <a class="closed" href="#"></a>
+        </section>
+    </header>
+    <main class="TTPush-walk-container">
+        <section class="block-box">
+            <div class="walk">
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart pink">
+                        <path class="circle-bg" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <text x="18" y="20.35" class="percentage">7,708</text>
+                    </svg>
+                    <p class="text">今日步數</p>
+                    <p class="total">/10,000</p>
+                </div>
+            </div>
+            <div class="a-card walk-info">
+                <ul>
+                    <li>
+                        <p class="icon icon-01">卡路里</p>
+                        <p class="text-info"><span class="c-pink">73.05</span>大卡</p>
+                    </li>
+                    <li>
+                        <p class="icon icon-02">距離</p>
+                        <p class="text-info"><span class="c-blue">1.38</span>公里</p>
+                    </li>
+                    <li>
+                        <p class="icon icon-03">減碳量</p>
+                        <p class="text-info"><span class="c-green">0.33</span>公斤</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="a-card result-info">
+                <div class="text-info">
+                    <p>已完成人數 <span>1,000人</span></p>
+                    <p>尚餘名額 <span>0人</span></p>
+                </div>
+            </div>
+            <div class="other-info">
+                <a class="a-card pink-btn" href="event.html">
+                    <p>線上運動</p>
+                </a>
+                <div class="a-card">
+                    <div class="bell wow pulse" data-wow-iteration="20"></div>
+                    <p>
+                        <span class="gold">
+                            今日獲得 
+                            <span class="c-pink">$2,054</span>
+                            <b>金幣</b>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="a-card ranking-list">
+                <h4>每日排行榜</h4>
+                <div class="top-text">
+                    <p class="t-l">排名</p>
+                    <p class="t-r">累積步數</p>
+                </div>
+                <ul>
+                    <li class="top1">
+                        <p class="nb">1</p>
+                        <div class="user-img">
+                            <img src="images/p_01.png">
+                        </div>
+                        <p class="t-l">歐莫</p>
+                        <p class="t-r">11,524 步</p>
+                    </li>
+                    <li class="top2">
+                        <p class="nb">2</p>
+                        <div class="user-img">
+                            <img src="images/p_02.png">
+                        </div>
+                        <p class="t-l">Nanana</p>
+                        <p class="t-r">10,821 步</p>
+                    </li>
+                    <li class="top3">
+                        <p class="nb">3</p>
+                        <div class="user-img">
+                            <img src="images/p_03.png">
+                        </div>
+                        <p class="t-l">Appple girl</p>
+                        <p class="t-r">9,524 步</p>
+                    </li>
+                    <li>
+                        <p class="nb">4</p>
+                        <div class="user-img">
+                            <!-- 有圖換圖，沒圖~有就這張預設圖 -->
+                            <img src="images/p_00.png">
+                        </div>
+                        <p class="t-l">Appple girl</p>
+                        <p class="t-r">7,524 步</p>
+                    </li>
+                    <li>
+                        <p class="nb">5</p>
+                        <div class="user-img">
+                            <img src="images/p_04.png">
+                        </div>
+                        <p class="t-l">Appple girl</p>
+                        <p class="t-r">5,024 步</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul>
+                    <!-- 看是不出現或是出現了不能點  -->
+                    <li>
+                        <a class="prev disabled">Prev</a>
+                    </li>
+                    <li>
+                        <a class="selected">1</a>
+                    </li>
+                    <li>
+                        <a>2</a>
+                    </li>
+                    <li>
+                        <a>3</a>
+                    </li>
+                    <li>
+                        <a>4</a>
+                    </li>
+                    <li>
+                        <a>5</a>
+                    </li>
+                    <li>
+                        <a class="next">next</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li>
+                        <a class="prev">Prev</a>
+                    </li>
+                    <li>
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a>2</a>
+                    </li>
+                    <li>
+                        <a class="selected">3</a>
+                    </li>
+                    <li>
+                        <a>4</a>
+                    </li>
+                    <li>
+                        <a>5</a>
+                    </li>
+                    <li>
+                        <a class="next">next</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li>
+                        <a class="prev ">Prev</a>
+                    </li>
+                    <li>
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a>...</a>
+                    </li>
+                    <li>
+                        <a>6</a>
+                    </li>
+                    <li>
+                        <a class="selected">7</a>
+                    </li>
+                    <li>
+                        <a>8</a>
+                    </li>
+                    <li>
+                        <a>...</a>
+                    </li>
+                    <li>
+                        <a>5</a>
+                    </li>
+                    <li>
+                        <a class="next">next</a>
+                    </li>
+                </ul>
+                <div class="search-page">
+                    <!-- 前後都可以放字 -->
+                    <p>text</p> 
+                    <input type="text" value="5">
+                    <p>1 of 50 pages</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
