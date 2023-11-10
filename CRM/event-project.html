@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CRM 管理後台 - 活動專案</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/menu.js"></script>
+            
+    <!-- Pushy -->
+    <link rel="stylesheet" href="mobilemenu/pushy.css">
+   
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+</head>
+<body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-submenu">
+                    <button>委刊單管理</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="audit.html">委刊單審核</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-link">
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-submenu">
+                    <button>服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="event-project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>使用者管理</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="user.html">使用者</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div id="container">
+    <header class="header-container clearfix">
+        <button class="menu-btn"><span><i class="fas fa-bars"></i></span></button>
+        <a class="logo" href="dashboard.html"></a>
+        <p class="text-title">CRM 管理後台</p>
+        <div class="user-info clearfix">
+            <div class="profile">
+                <div class="photo-portrait">E</div>
+                <p class="user-name">Eikiy</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="member.html">帳號資料</a>
+                    </li>
+                    <li>
+                        <a href="login.html">登出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="middle-container clearfix">
+        <nav class="side-menu">
+            <ul>
+                <li class="pushy-submenu">
+                    <button>委刊單管理</button>
+                    <ul>
+                        <li>
+                            <a href="order.html">委刊單</a>
+                        </li>
+                        <li>
+                            <a href="audit.html">委刊單審核</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="customer.html">客戶管理</a>
+                </li>
+                <li class="pushy-submenu pushy-submenu-open">
+                    <button class="selected">服務項目</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a class="sub-selected" href="event-project.html">活動專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="product.html">產品</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="project.html">促銷專案</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="terms.html">附加條款</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>權限控制</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="authority-order.html">委刊單</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="authority-customer.html">客戶</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>使用者管理</button>
+                    <ul>
+                        <li class="pushy-link">
+                            <a href="user.html">使用者</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-container">
+            <section class="content">
+                <h3 class="main-title">活動專案</h3>
+                <div class="tools-bar clearfix">
+                    <div class="search-box">
+                        <input class="default" type="text" placeholder="搜尋活動專案名稱">
+                        <p class="btn-text"><a>進階搜尋</a></p>
+                    </div>
+                    <div class="filter-box">
+                        <a href="#" class=" btn--primary-line-m">
+                            <i class="fas fa-eye"></i>
+                            <span>全部顯示</span>
+                        </a>
+                        <div class="filter-list">
+                            <ul>
+                                <li>
+                                    <div class="option-list">
+                                        <input type="radio" name="filter-show" value="內含" checked>
+                                        <label for="option">全部顯示</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list circle-green">
+                                        <input type="radio" name="filter-show" value="內含">
+                                        <label for="option">上架中</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option-list circle-gray">
+                                        <input type="radio" name="filter-show" value="已下架">
+                                        <label for="option">已下架</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#popup-add-project" class="btn-add btn--primary-m popup-link">
+                        <i class="fas fa-plus"></i>
+                        <span>新增活動專案</span>
+                    </a>
+                </div>
+                <div class="data-list">
+                    <div class="card toptitle-style clearfix">
+                        <h4 class="product-name">活動專案名稱<span class="icon-sort"><i class="fas fa-sort"></i></span></h4>
+                        <p class="product-valid-period">廣告走期</p>
+                        <div class="order-day click-sort">
+                            <p>建立日期<span class="icon-sort"><i class="fas fa-sort"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail popup-link" href="#popup-project-info">
+                            <h4 class="product-name">2024 活動專案名稱</h4>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit popup-link" href="#popup-edit-project">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy popup-link" href="#popup-copy-project">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="discontinued popup-link" href="#popup-discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete popup-link" href="#popup-delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">喜氣雙門巄總來</h4>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                       <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 下架：class + state-off -->
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">1231跨年專案</h4>
+                           <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">年度大大大回饋專案</h4>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 下架：class + state-off -->
+                    <div class="card state-off clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">2024_龍年一起來</h4>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">2024 活動專案名稱 - test1</h4>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card clearfix">
+                        <a class="go-detail" href="#">
+                            <h4 class="product-name">2024 活動專案名稱 - test2</h4>
+                            <p class="product-valid-period">
+                                <span class="calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                2023-11-30 - 20214-06-30
+                            </p>
+                            <p class="date">2021/09/16 10:10</p>
+                        </a>
+                        <ul class="edit-tool">
+                            <li>
+                                <a class="edit">
+                                    <i class="fas fa-pencil-alt" title="編輯"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="copy">
+                                    <i class="far fa-copy" title="複製"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="discontinued">
+                                    <i class="far fa-hand-point-down" title="下架"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="delete">
+                                    <i class="far fa-trash-alt" title="刪除"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages clearfix">
+                    <p>1-7列(共7列 )</p>
+                    <!-- <ul class="page-nb">
+                        <li>
+                            <a class="none">上一頁</a>
+                        </li>
+                        <li>
+                            <a class="selected">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">下一頁</a>
+                        </li>
+                    </ul> -->
+                </p>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer-inside">
+            <p>Copyright© 2023 <a href="https://www.weblisher.com.tw/" target="_blank">Weblisher Data Tech Co., Ltd.</a> All Rights
+                Reserved.</p>
+        </footer>
+    </section>
+    </div>
+    <!-- pushy JS -->
+    <script src="https://www.holkee.com/scripts/libs/pushyjs/pushy.min.js"></script>
+
+    <!-- popup 新增活動專案-->
+    <section id="popup-add-project" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增活動專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>專案資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <!-- 錯誤 input + has-error -->
+                                <input class="default" type="" name="" value="">
+                                <!-- <p class="text-error c-red">此為必填寫欄位。</p> -->
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">描述</label>
+                                <textarea></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>銷售日期</label>
+                                <div class="confirm clearfix">
+                                    <div class="both-for-date clearfix">
+                                        <input type="date" value="2021-11-06">
+                                        <input type="date" value="2022-05-06">
+                                        <!-- <p class="text-error c-red">錯誤訊息，ex：銷售期間勿小於30天。</p> -->
+                                    </div>
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="永久刊登">
+                                        <label for="option">永久刊登</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">是否需審核</label>
+                                <div class="confirm clearfix">
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="需審核同意">
+                                        <label for="option">需審核同意</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                   <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品項目</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">產品選項</label>
+                                <!-- <div class="confirm search-list">
+                                    <a class="btn-search popup-link" href="#popup-add-products">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                    <input class="" type="" name="" value="威旭" placeholder="搜尋專案">
+                                    <div class="show-add-list">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <p><span>威旭</span>質感廣告影片 1支</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <p><span>威旭</span>季繳回饋專案如果文字太長會怎麼辦呢??會怎麼辦呢</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <p><span>威旭</span>炫光短影音-直or橫 1支</p>
+                                                </a>
+                                            </li>   
+                                            <li>
+                                                <a href="#">
+                                                    <p>"<span>威旭</span>"（新建）</p>
+                                                </a>
+                                            </li>
+                                            <li class="set">
+                                                <a href="#">
+                                                    <p>前往設定<span><i class="fas fa-cog"></i></span></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                                <!-- 統一按鈕 -->
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增產品</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>專案</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">促銷專案</label>
+                                <!-- 統一按鈕 -->
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-projects">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增促銷專案</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>附加條款</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">條款項目</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-terms">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增條款</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 修改活動專案-->
+    <section id="popup-edit-project" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>修改活動專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>專案資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" value="2024 年約回饋專案">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">描述</label>
+                                <textarea>我想想門檻該打什麼好哩??? 我想想門檻該打什麼好哩??? 我想想門檻該打什麼好哩???? 我想想門檻該打什麼好哩我想想門檻該打什麼好哩我想想門檻該打什麼好哩
+                                
+                                如果你是影片編輯新手，想學習如何製作TikTok影片，請別擔心，可以參考威力導演部落格中的文章，每一篇都有詳細介紹所有影片編輯入門者必須知道的專業知識。事不宜遲，本篇文章將馬上為你介紹威力導演可套用在TikTok中的特效列表，這些功能都能提高你的帳號熱度，並且將你的內容轉化成發燒話題。</textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">起迄日期</label>
+                                <div class="confirm clearfix">
+                                    <!-- 當勾選"永久刊登" class:"both-for-date" + disabled-bg -->
+                                    <!-- 狀態變成不能點 input也要 + disabled -->
+                                    <div class="both-for-date disabled-bg clearfix">
+                                        <input type="date" value="" disabled>
+                                        <input type="date" value="" disabled>
+                                    </div>
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="永久刊登" checked>
+                                        <label for="option">永久刊登</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">是否需審核</label>
+                                <div class="confirm clearfix">
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="需審核同意" checked>
+                                        <label for="option">需審核同意</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品項目</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">產品選項</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增產品</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <ul class="list-project-single clearfix">
+                            <li>
+                                <p>Facebook 廣告</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                            <li>
+                                <p>Google 廣告</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>專案</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">促銷專案</label>
+                                <!-- 統一按鈕 -->
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-projects">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增促銷專案</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                       <ul class="list-project-single clearfix">
+                            <li>
+                                <p>1607_4G專案</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                            <li>
+                                <p>1612_金多利專案</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                            <li>
+                                <p>1702_Google 16專案</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>附加條款</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">條款項目</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-terms">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增條款</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <ul class="list-terms-single">
+                            <li>
+                                <div class="delete">
+                                    <a class="icon">
+                                        <i class="far fa-trash-alt" title="刪除"></i>
+                                    </a>
+                                </div>
+                                <p>本案配合媒體為競價模式，可能會依循競價環境變化而有所提升或降低。</p>
+                            </li>
+                            <li>
+                                <div class="delete">
+                                    <a class="icon">
+                                        <i class="far fa-trash-alt" title="刪除"></i>
+                                    </a>
+                                </div>
+                                <p>本專案媒體金額須於廣告上線起算3個月內花費完畢。</p>
+                            </li>
+                            <li>
+                                <div class="delete">
+                                    <a class="icon">
+                                        <i class="far fa-trash-alt" title="刪除"></i>
+                                    </a>
+                                </div>
+                                <p>「優惠加購項目6選1」、「小額購一波3選1」使用注意事項</p>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="delete popup-link" href="#popup-delete">
+                                <i class="far fa-trash-alt" title="刪除"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 複製專案-->
+    <section id="popup-copy-project" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增活動專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>專案資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>名稱</label>
+                                <input class="default" type="" name="" value="2024 年約回饋專案">
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">描述</label>
+                                <textarea></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">起迄日期</label>
+                                <div class="confirm clearfix">
+                                    <div class="both-for-date clearfix">
+                                        <input type="date" value="2021-11-06">
+                                        <input type="date" value="2022-05-06">
+                                    </div>
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="永久刊登">
+                                        <label for="option">永久刊登</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label class="item-title">是否需審核</label>
+                                <div class="confirm clearfix">
+                                    <div class="option-list">
+                                        <input id="" type="checkbox" name="" value="需審核同意" checked>
+                                        <label for="option">需審核同意</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品項目</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">產品選項</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-products">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增產品</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <ul class="list-project-single clearfix">
+                            <li>
+                                <p>Facebook 廣告</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                            <li>
+                                <p>Google 廣告</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>專案</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">促銷專案</label>
+                                <!-- 統一按鈕 -->
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-projects">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增促銷專案</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <ul class="list-project-single clearfix">
+                            <li>
+                                <p>1607_4G專案</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                            <li>
+                                <p>1612_金多利專案</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                            <li>
+                                <p>1702_Google 16專案</p>
+                                <a class="delete"><i class="fas fa-times"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>附加條款</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <label class="item-title">條款項目</label>
+                                <div class="confirm">
+                                    <a class="btn-add btn--primary-s popup-link" href="#popup-add-terms">
+                                        <i class="fas fa-plus"></i>
+                                        <span>新增條款</span>
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <ul class="list-terms-single">
+                            <li>
+                                <div class="delete">
+                                    <a class="icon">
+                                        <i class="far fa-trash-alt" title="刪除"></i>
+                                    </a>
+                                </div>
+                                <p>本案配合媒體為競價模式，可能會依循競價環境變化而有所提升或降低。</p>
+                            </li>
+                            <li>
+                                <div class="delete">
+                                    <a class="icon">
+                                        <i class="far fa-trash-alt" title="刪除"></i>
+                                    </a>
+                                </div>
+                                <p>本專案媒體金額須於廣告上線起算3個月內花費完畢。</p>
+                            </li>
+                            <li>
+                                <div class="delete">
+                                    <a class="icon">
+                                        <i class="far fa-trash-alt" title="刪除"></i>
+                                    </a>
+                                </div>
+                                <p>「優惠加購項目6選1」、「小額購一波3選1」使用注意事項</p>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="delete popup-link" href="#popup-delete">
+                                <i class="far fa-trash-alt" title="下架"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 活動專案 - 內容-->
+    <section id="popup-project-info" class="popup-finish white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>活動專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <div class="field">
+                    <p class="product-title">2024 年約回饋專案</p>
+                    <p class="product-description">我想想門檻該打什麼好哩??? 我想想門檻該打什麼好哩??? 我想想門檻該打什麼好哩???? 我想想門檻該打什麼好哩我想想門檻該打什麼好哩我想想門檻該打什麼好哩<br>
+                        <br>                    
+                    如果你是影片編輯新手，想學習如何製作TikTok影片，請別擔心，可以參考威力導演部落格中的文章，每一篇都有詳細介紹所有影片編輯入門者必須知道的專業知識。事不宜遲，本篇文章將馬上為你介紹威力導演可套用在TikTok中的特效列表，這些功能都能提高你的帳號熱度，並且將你的內容轉化成發燒話題。</p>
+                </div>
+                <form>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>產品資訊</p>
+                        </div>
+                        <div class="fillin-info">
+                            <fieldset>
+                                <label class="item-title">銷售期間</label>
+                                <p class="input-value">
+                                    <span class="calendar">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </span>
+                                    2023-11-30 - 20214-06-30
+                                </p>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">產品項目</label>
+                                <ul class="list-product-single">
+                                    <li class="clearfix">
+                                        <p class="project">Facebook 廣告</p>
+                                        <p class="input-value"><span class="">$10,000</span></p>
+                                    </li>
+                                    <li class="clearfix">
+                                        <p class="project">Google 廣告</p>
+                                        <p class="input-value"><span class="">$10,000</span></p>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title">促銷專案</label>
+                                <ul class="list-product-single">
+                                    <li class="project-group clearfix">
+                                        <div class="group">
+                                            <p class="p-title">2023 Weblisher 年度影音專案(2選1)</p>
+                                            <p class="f-ss">影音加值優惠 <span class="c-gray">(已下架)</span></p>
+                                            <p class="f-ss">影音加值優惠項目</p>
+                                        </div>
+                                        <p class="input-value"><span class="">$306,000</span></p>
+                                    </li>
+                                    <li class="project-group clearfix">
+                                        <div class="group">
+                                            <p class="p-title">TEST 測試用專案(3選1)</p>
+                                            <p class="f-ss">Google 關鍵字廣告</p>
+                                            <p class="f-ss">LINE 廣告</p>
+                                            <p class="f-ss">FB 貼文廣告</p>
+                                        </div>
+                                        <p class="input-value"><span class="">$156,000</span></p>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                        <p class="text-confirm"><span>若有此活動專案之委刊單，需審核同意才可成立。</span></p>
+                    </div>
+                    <div class="field clearfix">
+                        <div class="left-sub-title">
+                            <p>附加條款</p>
+                        </div>
+                        <div class="fillin-info">
+                            <ul class="list-terms-single">
+                                <li>
+                                    <p>本案配合媒體為競價模式，可能會依循競價環境變化而有所提升或降低。</p>
+                                </li>
+                                <li>
+                                    <p>本專案媒體金額須於廣告上線起算3個月內花費完畢。</p>
+                                </li>
+                                <li>
+                                    <p>「優惠加購項目6選1」、「小額購一波3選1」使用注意事項</p>
+                                </li>
+                                <li>
+                                    <p>‣ (1) 執行門檻-於廣告媒體月預算金額達專案門檻並廣告上線，且支付該選購項目款項，方可安排執行，選購項目款項如下：
+- 優惠加購項目6選1：31,500(含稅)。8/31前簽約享專案優惠價85折：26,775(含稅)
+- 小額購一波3選1：18,900(含稅)
+(2) 一旦進入任一加購項目執行排程，恕不接受取消及退款。若遇尚未安排之情形，可接受將加購項目之未稅金額轉移至專案委刊註記之廣告媒體費用花費。
+(3) 加購項目須於專案委刊執行期間內提出申請並支付該加購款項，如未使用則視同放棄該項目加購及使用權益。
+(4) 如已支付加購金額，卻未於專案委刊執行期間內提出申請，則可將加購金額轉移至媒體費遞送，恕無法退款。
+(5) 加購項目提出申請後，須於申請日起算3個月內執行完畢。
+(6) 加購項目詳細使用規範請參照工作物製作合約詳細說明。
+‣ 所有加購項目之內容於完稿上刊後皆不接受任何更改。
+‣ 所有加購項目之內容皆不得以其他形式替換，如不執行則視同放棄。
+‣ 「專案上線禮」為專案贈送項目，恕不得以其他形式替換，如不執行則視同放</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <ul class="edit-record-user">
+                        <li class="clearfix">
+                            <p class="time">更新：2024/02/29 14:59:00 </p>
+                            <p class="id"><span class="bg-c-1">E</span>Eikiy Chang</p>
+                        </li>
+                        <li class="clearfix">
+                            <p class="time">建立：2024/05/24 15:30:15 </p>
+                            <p class="id"><span class="bg-c-2">S</span>Yaya Shiue</p>
+                        </li>
+                    </ul>
+                    <ul class="edit-tool">
+                        <li>
+                            <a class="edit popup-link" href="#popup-edit-project">
+                                <i class="fas fa-pencil-alt" title="編輯"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="history">
+                                <i class="fas fa-history" title="變更紀錄"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="copy popup-link" href="#popup-copy-project">
+                                <i class="far fa-copy" title="複製"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="discontinued popup-link" href="#popup-discontinued">
+                                <i class="far fa-hand-point-down" title="下架"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="delete popup-link" href="#popup-delete">
+                                <i class="far fa-trash-alt" title="刪除"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 選擇專案-->
+    <section id="popup-add-projects" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>促銷專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <input type="" name="" value="" placeholder="搜尋活動專案">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm field-three clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <!-- 專案名稱-->
+                                <label class="name" for="option">威旭質感廣告影片 1支</label>
+                                <!-- 專案描述 -->
+                                <p class="description">15~60秒，含腳本、拍攝、剪輯</p>
+                                <!-- 銷售日期 -->
+                                <p class="day">2022/05/02 - 2022/12/30</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="" checked>
+                                <label class="name" for="option">威旭炫光短影音-直+橫 1組</label>
+                                <p class="description">15秒，含腳本、一次拍攝、剪輯</p>
+                                <p class="day">永久刊登</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="name" for="option">小額購一波-3選1</label>
+                                <p class="description">專案優惠價$18,000</p>
+                                <p class="day">永久刊登</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="name" for="option">專案名稱這裡出現業配口碑行銷 3篇/月</label>
+                                <p class="description">日流量3,000以上部落客、粉絲人數5,000以上IG網紅</p>
+                                <p class="day">2023/01/01 - 2024/01/30</p>
+                            </div>
+                        </div>
+                        <p class="text-add"><a class="" href="#">新增專案</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 選擇附加條款-->
+    <section id="popup-add-terms" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>選擇附加條款</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <a class="btn-search popup-link" href="#popup-add-products">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                    <input type="" name="" value="" placeholder="搜尋條款">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="條款文字捷徑">
+                                <label for="option">條款文字捷徑條款文字捷徑</label>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="條款文字捷徑" checked>
+                                <label for="option">條款文字捷徑條款文字捷徑</label>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="條款內容條款內容條款內容條款內容條款內容條款內容條款內容條款內容條款內容">
+                                <label for="option">條款內容條款內容條款內容條款內容條款內容條款內容條款內容條款48489w如果太長會怎麼樣呢內容條款內容如果太長會怎麼樣呢內容條款內容</label>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="條款文字捷徑">
+                                <label for="option">條款文字捷徑條款文字捷徑</label>
+                            </div>
+                            <p class="text-add"><a class="popup-link" href="#popup-add-terms-new">新增條款</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 選擇產品-->
+    <section id="popup-add-products" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>產品</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <a class="btn-search popup-link" href="#popup-add-products">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                    <input type="" name="" value="" placeholder="搜尋產品">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm field-four clearfix">
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Yahoo</label>
+                                <p class="name">關鍵字廣告</p>
+                                <!-- 產品規格描述 -->
+                                <p class="description">譬如：15~60秒影片拍攝 含腳本、拍攝、剪輯等等</p>
+                                <p class="fee">5%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Google</label>
+                                <p class="name">原生廣告</p>
+                                <p class="description">威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯) 威旭炫光短影音-直+橫 1組 (15秒，含腳本、一次拍攝、剪輯)</p>
+                                <p class="fee">3%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="" checked>
+                                <label class="media" for="option">Google</label>
+                                <p class="name">素人口碑</p>
+                                <p class="description">威旭BN製作*2</p>
+                                <p class="fee">10%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Google</label>
+                                <p class="name">聯播網</p>
+                                <p class="description">社區電梯螢幕看板廣告 200面 (含素材設計1款)</p>
+                                <p class="fee">5%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">Google</label>
+                                <p class="name">威旭質感影片</p>
+                                <p class="description">15~60秒影片拍攝 含腳本、拍攝、剪輯等等</p>
+                                <p class="fee">5%</p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">其他</label>
+                                <p class="name">威旭質感影片</p>
+                                <p class="description">社區電梯螢幕看板廣告 200面 (含素材設計1款)</p>
+                                <p class="fee"></p>
+                            </div>
+                            <div class="option-list clearfix">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="media" for="option">其他</label>
+                                <p class="name">素人口碑</p>
+                                <p class="description">社區電梯螢幕看板廣告 200面 (含素材設計1款)</p>
+                                <p class="fee">1500</p>
+                            </div>
+                        </div>
+                        <p class="text-add"><a class="" href="#">新增產品</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 下架確認-->
+    <section id="popup-discontinued" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>下架確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要下架此「活動活動專案」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認下架">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 刪除確認-->
+    <section id="popup-delete" class="white-popup mfp-hide popup-width-m">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>刪除確認</span></h4>
+            </div>
+            <div class="fillin-box text-center">
+                <p>確定要刪除此「活動專案」嗎？</p>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="確認刪除">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 附加條款 – 新增條款-->
+    <section id="popup-add-terms-new" class="popup-bg-white white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增條款</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info width-100">
+                            <fieldset class="clearfix">
+                                <input class="default" type="" name="" placeholder="新增文字捷徑，捷徑必須至少包含 3 個字元。" value="">
+                            </fieldset>
+                            <fieldset>
+                                <textarea placeholder="請輸入條款內容"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="建立">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
