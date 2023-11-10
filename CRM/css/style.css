@@ -4106,6 +4106,29 @@ ul.edit-record-user li p.id span {
   color: #11948a;
 }
 
+.popup-container .fillin-box .field ul.list-product-single li.project-group .group {
+  float: left;
+  width: calc(100% - 100px);
+  padding-bottom: 10px;
+}
+
+.popup-container .fillin-box .field ul.list-product-single li.project-group .group p {
+  line-height: 2;
+}
+
+.popup-container .fillin-box .field ul.list-product-single li.project-group .group p.p-title {
+  padding-top: 8px;
+}
+
+.popup-container .fillin-box .field ul.list-product-single li.project-group .group p .c-gray {
+  color: #9D9D9D;
+}
+
+.popup-container .fillin-box .field ul.list-product-single li.project-group .group .f-ss {
+  color: #666666;
+  font-size: 11px;
+}
+
 .popup-container .fillin-box .field ul.show-contact-list {
   padding: 3px 0;
 }
@@ -5373,6 +5396,12 @@ ul.edit-record-user li p.id span {
   .popup-finish .fillin-box .field .fillin-info ul.list-product-single {
     float: left;
     width: calc(100% - 120px);
+  }
+  .popup-finish .fillin-box .field .fillin-info ul.list-product-single .project-group .group {
+    max-width: calc(100% - 70px);
+  }
+  .popup-finish .fillin-box .field .fillin-info ul.list-product-single .project-group .group .p-title {
+    line-height: 1.5;
   }
   .popup-finish .fillin-box .field .fillin-info ul.show-contact-list {
     width: calc(100% - 120px);
