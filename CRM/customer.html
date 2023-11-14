@@ -468,10 +468,29 @@
                                 <label class="item-title"><span class="c-red">*</span>負責人</label>
                                 <input class="default" type="" name="" placeholder="負責人姓名">
                             </fieldset>
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>公司地區</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <input type="radio" name="company" value="本國公司">
+                                        <label for="option">本國公司</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="company" value="外國公司">
+                                        <label for="option">外國公司</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- 本國公司-->
                             <fieldset>
                                 <label class="item-title"><span class="c-red">*</span>統編/身分證編號</label>
                                 <input class="default" type="" name="" placeholder="統一編號/身分證編號">
                             </fieldset>
+                            <!-- 外國公司-->
+                            <!-- <fieldset>
+                                <label class="item-title"><span class="c-red">*</span>公司編號/護照號碼</label>
+                                <input class="default" type="" name="" placeholder="公司編號/護照號碼">
+                            </fieldset> -->
                             <fieldset>
                                 <label class="item-title"><span class="c-red">*</span>公司地址</label>
                                 <div class="confirm both-for-add clearfix">
@@ -694,6 +713,21 @@
                             <fieldset class="clearfix">
                                 <label class="item-title"><span class="c-red">*</span>負責人</label>
                                 <input class="default" type="" name="" placeholder="負責人姓名" value="王老太太">
+                            </fieldset>
+                            <!-- 公司地區 -->
+                            <fieldset class="clearfix">
+                                <label class="item-title"><span class="c-red">*</span>公司地區</label>
+                                <div class="confirm both-for-discount clearfix">
+                                    <div class="option-list">
+                                        <!-- 不可修改 input + disabled-->
+                                        <input type="radio" name="company" value="本國公司" checked disabled>
+                                        <label for="option">本國公司</label>
+                                    </div>
+                                    <div class="option-list">
+                                        <input type="radio" name="company" value="外國公司" disabled>
+                                        <label for="option">外國公司</label>
+                                    </div>
+                                </div>
                             </fieldset>
                             <!-- 統編/身分證編號 不可修改 input + disabled-->
                             <fieldset>
