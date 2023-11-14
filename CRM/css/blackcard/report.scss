@@ -1,0 +1,482 @@
+/* blackcard Data 黑卡專區 */
+$color-green-grass: #11948a;
+$color-green-light: #ebf5f4;
+$color-gray: #888888;
+$color-red: #f44336;
+
+$f-size-m: 0.875rem; //14px
+$f-size-s: 0.813rem; //13px
+$f-size-ss: 0.688rem; //11px
+
+$radius-m: 18px;
+$radius-l: 50px;
+
+$phone-media: 650px; // 手機尺寸
+$phone-s-media: 479px;
+
+@mixin has-box-shadow {
+  box-shadow: rgba(rgba(0, 0, 0, 0.2), 0.16) 0px 3px 6px;
+}
+
+.middle-container .report-container{
+  p.sub-title{
+    padding: 15px 0;
+    font-size: 1rem;
+    color: $color-green-grass;
+  }
+  p.the-reminder{
+    padding: 5px 0;
+    font-size: $f-size-s;
+    color: $color-gray;
+    line-height: 1.2;
+    @media all and (max-width: $phone-media) {
+      font-size: $f-size-ss;
+    }
+  }
+  h3.main-title{
+    padding: 15px 0;
+  }
+  .tools-bar{
+    max-width: 1000px;
+    padding: 18px 25px;
+    background-color: #fff;
+    border-radius:$radius-m ;
+    @include has-box-shadow;
+    margin: 25px 0;
+
+    form{
+      position: relative;
+      fieldset{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        &.dotted-text{
+          padding: 8px 5px;
+          border-bottom: 1px dashed #AEAEAE;
+          margin-bottom: 10px;
+        }
+      } 
+    } 
+    
+    label.item-title {
+      width: 92px;
+      padding: 0 5px;
+      color: $color-green-grass;
+      line-height: 42px;
+      font-size: $f-size-m;
+      font-weight: bold;
+    }
+    p.btn-text {
+      width: 105px;
+      text-align: center;
+      line-height: 42px;
+      color: $color-green-grass;
+      font-weight: bold;
+      font-size: $f-size-s;
+
+      a {
+        display: block;
+        background-color: $color-green-light;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        border-radius: $radius-l $radius-l;
+
+        &:hover {
+          background-color: #dfedeb;
+        }
+      }
+    }
+    .confirm{
+      width: calc( 100% - 92px);
+      .w_50{
+        max-width: 348px;
+      }
+      .the-select{
+        select{
+          height: 42px;
+          line-height: 42px;
+          font-size: $f-size-s;
+        }
+      }
+      .both-for-date{
+        width: 100%;
+        max-width: 330px;
+        background-color: #F8F8F8;
+        border-radius: $radius-l 0 0 $radius-l;
+        position: relative;
+        float: left;
+        &::before {
+          content: "～";
+          line-height: 42px;
+          position: absolute;
+          top: 0;
+          left: calc(50% - 8px);
+          color: $color-green-grass;
+          font-weight: bold;
+        }
+        input{
+          float: left;
+          width: 50%;
+          background: transparent;
+          height: 42px;
+          line-height: 42px;
+        }
+      }
+      .has-error {
+        background-color: #ffe9e9;
+      }
+      p.text-error {
+        color: $color-red;
+        position: absolute;
+        left: 20px;
+        bottom: -13px;
+        font-size: $f-size-ss;
+      }
+      p.btn-text {
+        float: left;
+        a {
+          border-radius: 0 $radius-l $radius-l 0;
+        }
+      }  
+    }
+    .bottom-btn{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      p.btn-text{
+        margin: 0 auto;
+        a{
+          background-color: $color-green-grass;
+          color: #fff;
+          &:hover{
+            opacity: .9;
+          }
+        }
+      }
+    }
+    @media all and (max-width: $phone-media) {
+      padding: 15px 20px;
+      .confirm{
+        width: 100%;
+        .both-for-date{
+          float: none;  
+          max-width: 100%;
+          border-radius: $radius-l;
+        }
+        p.btn-text {
+          float: none;
+          padding-top: 15px;
+          margin: 0 auto;
+          a{
+            border-radius: $radius-l;
+          }
+        }
+        .filter-tools{
+          max-width: 100%;
+        }
+      }
+      .bottom-btn{
+        padding-top: 10px;
+        position: initial;
+      }
+    }
+  }
+
+  .filter-tools {
+    width: 100%;
+    text-align: left;
+    max-width: calc(100% - 115px);
+    vertical-align: text-top;
+    .a-condition {
+      cursor: pointer;
+      display: inline-block;
+      margin: 3.5px 1.5px;
+      border: 1px solid #C7C7C7;
+      border-radius: $radius-l;
+      a {
+        padding: 8px 15px;
+        display: inline-block;
+      }
+      p {
+        color: #C7C7C7;
+        font-size:$f-size-s;
+        i {
+          padding-left: 10px;
+        }
+      }
+      &:hover {
+        border-color: $color-green-grass;
+        p {
+          color: $color-green-grass;
+        }
+      }
+      
+      .calendar {
+        display: inline-block;
+        .left-p{
+          float: left;
+          color: $color-green-grass;
+          padding: 8px 0px 8px 15px;
+        }
+        .both-for-date{
+          float: left;
+          width: initial;
+          background: transparent;
+          &::before{
+            line-height: 28px;
+          }
+          input {
+            padding: 0 10px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+          }
+        }
+        @media all and (max-width: $phone-s-media) {
+        .both-for-date {
+            width: calc(100% - 75px);
+
+            input {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .btn-in {
+      border-color: $color-green-grass;
+      background-color: #EBF5F4;
+      a p{
+        color: $color-green-grass;
+      }
+      &:hover {
+        border-color: $color-green-grass;
+      }
+    }
+    p,
+    .btn-in:hover p {
+      color: $color-green-grass;
+    }
+  }
+
+
+  ul.top_tab {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px 4px 0 0;
+
+    li {
+      display: flex;
+      margin: 0 10px 10px 0;
+
+      h4 {
+        text-align: center;
+        width: 100%;
+
+        a {
+          color: #B4B4B4;
+          background-color: #fff;
+          display: block;
+          text-align: center;
+          padding: 15px 10px;
+          min-width: 150px;
+          border-radius: 8px;
+          border: 1px #D1D1D1 solid;
+
+          &:hover {
+            color: $color-green-grass;
+            border-color: $color-green-grass;
+          }
+        }
+      }
+
+      &.btn-in a {
+        font-weight: bold;
+        background-color: #EBF5F4;
+        color: $color-green-grass;
+        border-color: $color-green-grass;
+
+        &:hover {
+          color: $color-green-grass;
+          border-color: $color-green-grass;
+          background-color: #dfedeb;
+        }
+      }
+    }
+     @media all and (max-width: $phone-media) {
+      margin-bottom: 15px;
+      li {
+        flex: 30%;
+        margin: 2.5px;
+        h4{
+          font-size: $f-size-s;
+          a{
+            min-width: 100px;
+            padding: 12px 8px;
+          }
+        }
+      }
+     }
+  }
+
+  // 報表 標頭
+  .blackcard_report {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: $radius-m ;
+    @include has-box-shadow;
+    img{
+      width: 100%;
+    }
+    p{
+      font-family: "Roboto","微軟正黑體", sans-serif;
+    }
+    .report_content {
+      width: 100%;
+
+      .top_data_header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .t_block {
+          flex: 1;
+          margin: 5px;
+          border-radius: 5px;
+          border: 5px solid #EBF5F4;
+
+          .s_title {
+            background-color: #EBF5F4;
+            text-align: center;
+            padding: 5px;
+
+            p {
+              font-size: $f-size-s;
+              color: #333333;
+
+              span {
+                // font-family: Roboto, serif;
+                // font-weight: 400;
+              }
+            }
+          }
+
+          .info_text {
+            width: 100%;
+            
+            padding: 5px;
+            text-align: center;
+
+            p {
+              font-size: 30px;
+              line-height: 1.2;
+              font-weight: bold;
+              color: #11948A;
+
+              &.higher,
+              &.lower {
+                font-weight: normal;
+                font-size: 14px;
+
+                i {
+                  padding: 0 5px;
+                }
+              }
+
+              &.higher {
+                color: #00D10F;
+              }
+
+              &.lower {
+                color: #FF0000;
+              }
+            }
+          }
+        }
+      }
+
+      .chart_container {
+        width: 100%;
+        padding: 10px 5px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .chart_block {
+          flex: 1;
+          padding: 5px;
+        }
+      }
+
+      .table_container {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    @media all and (max-width: 900px) {
+      .report_content {
+        .top_data_header {
+          .t_block {
+            .s_title p {
+              font-size: 13px;
+            }
+
+            .info_text p {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    @media all and (max-width: 700px) {
+      .report_content {
+        .top_data_header {
+          .t_block {
+            .s_title p {
+              font-size: 12px;
+            }
+
+            .info_text p {
+              font-size: 20px;
+
+              &.higher,
+              &.lower {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media all and (max-width: $phone-media) {
+      padding: 15px;
+      .report_content {
+        .top_data_header {
+          .t_block {
+            flex: 30%;
+            .s_title{
+              min-height: 34px;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              align-items: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+            }
+          }
+        }
+        .chart_container {
+          .chart_block {
+            flex: inherit;
+          }
+        }
+      }
+    }
+  }
+}
