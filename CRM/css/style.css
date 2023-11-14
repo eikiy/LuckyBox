@@ -4756,6 +4756,28 @@ ul.edit-record-user li p.id span {
   padding-left: 10px;
 }
 
+.popup-container .order-mode {
+  padding: 10px 10px 30px 10px;
+}
+
+.popup-container .order-mode .field {
+  border: none;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.popup-container .order-mode .field .btn--primary-line-m {
+  width: 100%;
+  min-width: initial;
+  max-width: 300px;
+  background-color: #fff;
+}
+
+.popup-container .order-mode .field .btn--primary-line-m:hover {
+  background-color: #11948a;
+  color: #fff;
+}
+
 .popup-container .pw-box p {
   font-size: 0.875rem;
   text-align: center;
@@ -4901,6 +4923,9 @@ ul.edit-record-user li p.id span {
     width: 100%;
     padding-left: 50px;
     padding-bottom: 5px;
+  }
+  .popup-container .order-mode {
+    padding-bottom: 30px;
   }
   .popup-container .bottom-btn-tool ul.edit-tool {
     position: initial;

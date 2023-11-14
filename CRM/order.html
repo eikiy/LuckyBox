@@ -40,6 +40,9 @@
                     <button>服務項目</button>
                     <ul>
                         <li class="pushy-link">
+                            <a href="event-project.html">活動專案</a>
+                        </li>
+                        <li class="pushy-link">
                             <a href="product.html">產品</a>
                         </li>
                         <li class="pushy-link">
@@ -117,6 +120,9 @@
                     <button>服務項目</button>
                     <ul>
                         <li class="pushy-link">
+                            <a href="event-project.html">活動專案</a>
+                        </li>
+                        <li class="pushy-link">
                             <a href="product.html">產品</a>
                         </li>
                         <li class="pushy-link">
@@ -190,7 +196,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#popup-add-order" class="btn-add btn--primary-m popup-link">
+                    <a href="#popup-order-mode" class="btn-add btn--primary-m popup-link">
                         <i class="fas fa-plus"></i>
                         <span>新增委刊單</span>
                     </a>
@@ -543,7 +549,7 @@
                                 </div>
                             </fieldset>
                         </div>
-                     </div>
+                    </div>
                     <div class="field clearfix">
                         <div class="left-sub-title">
                             <p>委刊客戶<br>聯絡資訊</p>
@@ -557,29 +563,29 @@
                                     </a>
                                     <input class="" type="" name="" value="威旭" placeholder="搜尋名稱">
                                     <!-- <div class="show-add-list">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <p><span>威旭</span>數位</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <p><span>威旭</span>媒體如果文字太長會怎麼辦呢??會怎麼辦呢</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <p><span>威旭</span>數位有限公司-台灣分公司</p>
-                                                </a>
-                                            </li>
-                                            <li class="set">
-                                                <a href="#">
-                                                    <p>"威旭"（新建）</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <p><span>威旭</span>數位</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p><span>威旭</span>媒體如果文字太長會怎麼辦呢??會怎麼辦呢</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <p><span>威旭</span>數位有限公司-台灣分公司</p>
+                                                    </a>
+                                                </li>
+                                                <li class="set">
+                                                    <a href="#">
+                                                        <p>"威旭"（新建）</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div> -->
                                 </div>
                             </fieldset>
                             <!-- 新增負責人 -->
@@ -807,6 +813,27 @@
             </div>
         </div>
     </section>
+    <!-- popup 選擇委刊單模式-->
+    <section id="popup-order-mode" class="white-popup mfp-hide popup-width-s">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>新增委刊單</span></h4>
+            </div>
+            <div class="fillin-box order-mode">
+                <fieldset class="field">
+                    <a class="popup-link" onclick="select_promotion();" href="#popup-add-event-projects">
+                        <input class="btn--primary-line-m" type="submit" value="活動專案">
+                    </a>
+                </fieldset>
+                <fieldset class="field">
+                    <a class="popup-link" onclick="select_promotion();" href="#popup-add-order">
+                        <input class="btn--primary-line-m" type="submit" value="自訂">
+                    </a>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    
     <!-- popup 修改委刊單-->
     <section id="popup-edit-order" class="white-popup mfp-hide">
         <div class="popup-container">
@@ -2395,6 +2422,71 @@
             <div class="bottom-btn-tool">
                 <fieldset class="field">
                     <input class="btn--primary-xl " type="submit" value="套用選擇">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup 請選擇活動專案-->
+    <section id="popup-add-event-projects" class="popup-choose white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>請選擇活動專案</span></h4>
+            </div>
+            <div class="fillin-box">
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info">
+                            <fieldset class="clearfix">
+                                <div class="confirm search-list">
+                                    <input type="" name="" value="" placeholder="搜尋活動專案">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="confirm field-three clearfix">
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <!-- 活動專案名稱-->
+                                <label class="name" for="option">喜氣雙門巄總來</label>
+                                <!-- 活動專案描述 -->
+                                <p class="description"></p>
+                                <!-- 銷售日期 -->
+                                <p class="day">2022/12/20 - 2023/12/3</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="name" for="option">1231跨年專案</label>
+                                <p class="description">影音加值優惠 + 影音加值優惠項目</p>
+                                <p class="day">永久刊登</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="" checked>
+                                <label class="name" for="option">2024 年約回饋專案</label>
+                                <p class="description">Google 廣告 + LINE 廣告</p>
+                                <p class="day">永久刊登</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="name" for="option">年度大大大回饋專案</label>
+                                <p class="description"></p>
+                                <p class="day">2023/01/01 - 2024/01/30</p>
+                            </div>
+                            <div class="option-list">
+                                <input id="" type="checkbox" name="" value="">
+                                <label class="name" for="option">2024_龍年一起來</label>
+                                <p class="description"></p>
+                                <p class="day">2023/01/01 - 2024/01/30</p>
+                            </div>
+                        </div>
+                        <!-- <p class="text-add"><a class="" href="#">新增專案</a></p> -->
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <!-- 帶入加入活動專案的委刊單 -->
+                    <a class="popup-link" onclick="select_promotion();" href="#popup-add-order">
+                        <input class="btn--primary-xl " type="submit" value="套用選擇">
+                    </a>
                 </fieldset>
             </div>
         </div>
