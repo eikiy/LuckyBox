@@ -255,7 +255,37 @@ a:hover {
     }
   }  
 }
+.btn-line {
+  padding: 10px;
+  text-align: center;
 
+  p {
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 10px;
+    a {
+      min-width: 165px;
+      text-align: center;
+      border: 1px solid #1E56AB;
+      padding: 8px 10px;
+      color: #1E56AB;
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      align-items: center;
+      align-content: center;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      &:hover {
+        color: #fff;
+        background-color: #1E56AB;
+      }
+    }
+  }
+}
 .menu-btn {
   background: none;
   display: none;
@@ -424,24 +454,11 @@ a.go_top {
       }
     }
 
-    // @media (max-width: 770px) {
-    //   float: none;
-    //   width: 100%;
-    //   ul {
-    //     text-align: center;
-    //     li {
-    //       padding: 0 5px;
-    //     }
-    //   }
-    // }
-    // @media (max-width: 500px) {
-    //   ul li p {
-    //     font-size: 13.5px;
-    //     a {
-    //       line-height: 24px;
-    //     }
-    //   }
-    // }
+    @media (max-width: 1000px) {
+      ul li p a {
+        padding: 8px 10px;
+      }
+    }
     @media (max-width: 900px) {
       display: none;
     }
@@ -710,6 +727,63 @@ a.go_top {
       }
     }
   }
+  .download-box{
+    width: 100%;
+    padding-bottom: 20px;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      li{
+        margin: 15px;
+        .d-card{
+          padding: 15px;
+          background: #fff;
+          border-radius: 4px;
+          border: 1px solid #E0E0E0;
+          @include has-box-shadow;
+        }
+        .a_cover{
+          display: block;
+          transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+          @include img-default;
+          .img-box{
+            width: 200px;
+            height: 200px;
+            position: relative;
+          }
+          .text-contents{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00000020;
+            padding-bottom: 0;
+            .bg-k-10{
+              width: 100%;
+              height: 100%;
+              position: relative;
+            }
+            p{
+              width: 100%;
+              font-weight: bold;
+              color: #fff;
+              text-shadow: 0 3px 5px #33333336;
+              padding: 20px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              text-align: center;
+              font-size: 18px;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
 
   // 分頁
   .in-b-01{
@@ -732,6 +806,9 @@ a.go_top {
   }
   .in-b-07{
     background-image: url(../images/main_banner/inside_07.png);
+  }
+  .in-b-08{
+    background-image: url(../images/main_banner/inside_08.png);
   }
   .title-banner-wrap{
     position: relative;
@@ -861,6 +938,9 @@ a.go_top {
   }
   .bg-gray{
     background-color: #F2F2F2;
+  }
+  .bg-light-gray{
+    background-color: #FAFAFA;
   }
   .for-founder{
     .block-both{
