@@ -564,6 +564,12 @@ a.go_top {
         }
       }
     }
+    .k100-title{
+      h3, p{
+        color: #333 !important;
+        text-shadow: none !important;
+      }
+    }
     // 2
     .text-contents{
       p{
@@ -600,6 +606,52 @@ a.go_top {
   .bg-index{
     min-height:calc( 100vh - 112px);
     background: radial-gradient(ellipse at center,  rgba(245,247,248,1) 23%,rgba(160,233,255,1) 100%);
+  }
+  .submenu-wrap{
+    background-color: #F2F2F2;
+    @include has-box-shadow;
+    .block-box{
+      padding:16px 20px;
+    }
+    ul.submenu{
+      text-align: center;
+      li{
+        padding: 0px 10px;
+        display: inline-block;
+        p{
+          font-size: 15px;
+          text-align: center;
+          a{
+            min-width: 120px;
+            color: #333;
+            display: block;
+            padding:15px 25px;
+            border-radius: 50px;
+            background-color: transparent;
+            &:hover{
+              background-color: #fff;
+              @include has-box-shadow;
+            }
+            &.Selected{
+              color: #fff;
+              background-color: #00AFDE;
+            }
+          }
+        }
+      }
+      @media (max-width: 760px){
+        li {
+          padding: 0px 5px;
+          p {
+            font-size: 13px;
+            a{
+              padding: 10px 20px;
+              min-width: 80px;
+            }
+          }
+        }
+      }
+    }
   }
   .bg-datatech {
     padding: 40px 0 20px 0;
@@ -678,14 +730,8 @@ a.go_top {
   .in-b-06{
     background-image: url(../images/main_banner/inside_06.png);
   }
-  .bg-philosophy{
-    @media (max-width: 760px) {
-      background: none;
-      background-color: #F1F1F1;
-      .block-both .abox:last-child {
-        background-color: #fff;
-      }
-    }
+  .in-b-07{
+    background-image: url(../images/main_banner/inside_07.png);
   }
   .title-banner-wrap{
     position: relative;
@@ -804,6 +850,14 @@ a.go_top {
     .abox:last-child{
       flex: 60%;
     }
+    @media (max-width: 760px){
+      .abox{
+        flex: 100%;
+        .img-box{
+          padding: 0;
+        }
+      }
+    }
   }
   .bg-gray{
     background-color: #F2F2F2;
@@ -834,8 +888,6 @@ a.go_top {
     } 
   }
   .bg-support{
-    .block-box{
-    }
     ul.support-list{
       display: flex;
       flex-wrap: wrap;
@@ -877,16 +929,20 @@ a.go_top {
           flex: 50%;
           padding: 10px;
            .a_card{
-            width: 35vw;
-            height: 35vw;
+            width: 37vw;
+            height: 37vw;
             margin: 0 auto;
             padding-top: 25px;
             .img-box{
-              width: 70%;
+              width: 45%;
+              img{
+                width: 100%;
+                min-height: initial;
+              }
             }
             p{
               padding: 10px 0;
-              font-size: 15px;
+              font-size: 14px;
             }
           }
         }
@@ -894,7 +950,11 @@ a.go_top {
       @media (max-width: 499px) {
         li{
           .a_card{
-            padding-top: 20px;
+            padding-top: 10px;
+            p{
+              padding: 0;
+              font-size: 12px;
+            }
           }
         }
       }
@@ -915,7 +975,7 @@ a.go_top {
     }
   }
   .contact-form{
-    background: url(../images/bg_contact.jpg) center center no-repeat;
+    background: url(../images/bg_contact.png) left top no-repeat;
     background-size: cover;
     padding: 40px 0;
     .box-w{
@@ -1108,7 +1168,6 @@ a.go_top {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      // flex-direction: row;
       vertical-align: middle;
       align-items: center;
       li{
@@ -1133,12 +1192,6 @@ a.go_top {
               background-image: url(../images/icon_youtube_blue.svg);
             }
           }
-          // img{
-          //   width: 100%;
-          // }
-          // &:hover{
-          //   color:#11948A;
-          // }
         }
       }
     }
@@ -1159,10 +1212,13 @@ a.go_top {
      }
     } 
     .company-info .img-box{
-      margin: 0 auto 15px auto
+      margin: 0 auto 15px auto;
     }
-    .contact-list li p{
-      font-size: 14px;
+    ul.contact-list li p{
+      font-size: 13px;
+      span::before {
+        top: .5px;
+      }
     }
     .social-info ul.social-link{
       justify-content: center;
