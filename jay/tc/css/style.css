@@ -209,17 +209,6 @@ a:hover {
   margin: 5px 10px;
 }
 
-.btn p span.text {
-  text-align: right;
-}
-
-.btn p span.icon {
-  font-size: 13px;
-  padding: 0 5px;
-  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-}
-
 .btn p a {
   min-width: 165px;
   text-align: center;
@@ -245,12 +234,6 @@ a:hover {
           justify-content: center;
 }
 
-.btn p a span {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-}
-
 .btn p a:hover .icon {
   padding: 0 0px 0 20px;
 }
@@ -258,6 +241,68 @@ a:hover {
 .btn p.w_line a {
   border-color: #fff;
   color: #fff;
+}
+
+.btn span {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.btn span.text {
+  text-align: right;
+}
+
+.btn span.icon {
+  font-size: 13px;
+  padding: 0 5px;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.btn button {
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 165px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#00afde), to(#52cff2));
+  background: linear-gradient(to right, #00afde 0%, #52cff2 100%);
+  border-radius: 80px;
+  padding: 15px 10px;
+  color: #fff;
+  display: inline-block;
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+}
+
+.btn button span {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.btn button:hover .icon {
+  padding: 0 0px 0 20px;
+}
+
+@media (max-width: 1000px) {
+  .btn button {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1000px) {

@@ -189,18 +189,7 @@ a:hover {
       font-weight: 500;
       display: inline-block;
       margin: 5px 10px;
-      span {
-        
-        &.text {
-          text-align: right;
-        }
-
-        &.icon {
-          font-size: 13px;
-          padding:0 5px;
-          transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-        }
-      }
+      
 
     a {
       min-width: 165px;
@@ -219,9 +208,6 @@ a:hover {
       align-items: center;
       -webkit-justify-content: center;
       justify-content: center;
-      span{
-        flex: auto;
-      }
       &:hover {
         .icon {
           padding: 0 0px 0 20px;
@@ -236,7 +222,50 @@ a:hover {
       }
     }
   }
-
+  span {
+    flex: auto;
+    &.text {
+      text-align: right;
+    }
+  
+    &.icon {
+      font-size: 13px;
+      padding: 0 5px;
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
+  }
+  button{
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 165px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 175, 222, 1) 0%, rgba(82, 207, 242, 1) 100%);
+    border-radius: 80px;
+    padding: 15px 10px;
+    color: #fff;
+    display: inline-block;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    align-items: center;
+    align-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: flex;
+    display: inline-block;
+    span {
+      flex: auto;
+    }
+    &:hover {
+      .icon {
+        padding: 0 0px 0 20px;
+      }
+    }
+    @media (max-width: 1000px) {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
   @media (max-width: 1000px) {
     padding: 15px 10px;
 
@@ -748,19 +777,6 @@ a:hover {
       }
     }
   }
-  // .bg-datatech {
-  //   padding: 40px 0 20px 0;
-  //   .block-box{
-  //     position: relative;
-  //     z-index: 5;
-  //   }
-  //   @media (max-width: 760px) {
-  //     padding: 20px 0 0 0;
-  //     background-repeat: no-repeat;
-  //     background-attachment: initial;
-  //     background-size: cover;
-  //   }
-  // }
   .video-box{
     width: 100%;
     padding: 20px 0;
