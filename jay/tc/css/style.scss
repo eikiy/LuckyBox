@@ -1043,6 +1043,7 @@ a:hover {
   }
   .in-b-04{
     background-image: url(../images/main_banner/inside_04.png);
+    @include img-default;
   }
   .in-b-05{
     background-image: url(../images/main_banner/inside_05.png);
@@ -1588,6 +1589,179 @@ a:hover {
                 height: 100%;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .mrs-wrap{
+    .block-box{
+      max-width: 1440px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 2.5%;
+    }
+    .l-box{
+      width: 35%;
+      min-height: 100vh;
+      background-color: #fff;
+      @include has-box-shadow;
+      .main-title{
+        padding: 20px 10% 40px 10%;
+        background-color: #00AFDE;
+        h3,p{
+          color: #fff;
+          text-shadow: 0 1px 2px #00aad8;
+        }
+        h3{
+          font-size: 45px;
+          text-transform: uppercase;
+        }
+      }
+      .year-filter{
+        width: 100%;
+        padding:10px 15px;
+        
+        ul{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        li{
+          flex: 20%;
+          padding:2.5px 5px;
+          p{
+            text-align: center;
+            a{
+              padding: 5px 10px;
+              color: #00AFDE;
+              border: 1px solid #00AFDE;
+              display: block;
+              &:hover {
+                background-color: #edfbff;
+              }
+            }
+            &.Selected a{
+              color: #fff;
+              background-color: #00AFDE;
+            }
+          }
+        }
+      }
+      .show-year-info{
+        width: 100%;
+        padding: 20px 0;
+        h3.yeat-title{
+          padding: 5px 20px 20px 20px;
+          font-size: 22px;
+          font-weight: bold;
+          color: #00AFDE;
+        }
+        ul{
+          width: 100%;
+          li{
+            position: relative;
+            width: 100%;
+            min-height: 110px;
+            padding:15px 10px 20px 60px;
+            h4{
+              font-size: 18px;
+              padding: 10px 0;
+            }
+            p{
+              font-size: 14px;
+              line-height: 1.5;
+            }
+            &::after{
+              content: "";
+              position: absolute;
+              left: 37px;
+              top: 0;
+              width: 1px;
+              height: 100%;
+              display: block;
+              background-color: #00AFDE;
+            }
+            &::before{
+              content: "";
+              position: absolute;
+              left: 30px;
+              top: 60px;
+              width: 14px;
+              height:14px;
+              border-radius: 50%;
+              display: block;
+              background-color: #00AFDE;
+            }
+            &:hover{
+              background-color: #edfbff;
+            }
+            &.Selected{
+              background-color: #00AFDE;
+              h4, p{
+                color: #fff;
+              }
+              &::after, &::before{
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .r-box{
+      flex: 60%;
+      padding: 40px 5%;
+      .btns{
+        width: 100%;
+        padding-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-end;
+        a{
+          width: 50px;
+          height: 50px;
+          color: #1F4B8E;
+          background-color: #ffffff8f;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          &:hover{
+            background-color: #ffffffe6;
+          }
+        }
+      }
+      .no-click{
+        cursor: none;
+        a{
+          color: #555;
+        }
+      }
+      .a_info__card{
+        width: 100%;
+        .abox{
+          background-color: #ffffffc7;
+          width: 100%;
+          // @include has-box-shadow;
+          .top-block-title{
+            background-color: #1F4B8E;
+            padding: 10px 20px;
+            h3{
+              font-size: 28px;
+              color: #fff;
+            }
+          }
+          .main-title{
+            h3{
+              color: #1F4B8E;
+              font-size: 22px;
+            }
+          }
+          .img-box{
+            padding: 5px 15px 15px 15px;
           }
         }
       }
