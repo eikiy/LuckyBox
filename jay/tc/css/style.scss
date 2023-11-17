@@ -1603,6 +1603,7 @@ a:hover {
     }
     .l-box{
       width: 35%;
+      margin: 40px 0;
       min-height: 100vh;
       background-color: #fff;
       @include has-box-shadow;
@@ -1732,16 +1733,21 @@ a:hover {
           &:hover{
             background-color: #ffffffe6;
           }
-        }
-      }
-      .no-click{
-        cursor: none;
-        a{
-          color: #555;
+        
+          &.no-click{
+            cursor: no-drop;
+            color: #8e8e8e;
+            background-color: #ffffff8f;
+            &:hover{
+              background-color: #ffffff8f;
+            }
+          }
         }
       }
       .a_info__card{
         width: 100%;
+        position: sticky;
+        top: 105px;
         .abox{
           background-color: #ffffffc7;
           width: 100%;
