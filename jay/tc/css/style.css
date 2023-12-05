@@ -422,6 +422,42 @@ a:hover {
       align-content: center;
 }
 
+.the_select {
+  width: 100%;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.the_select select {
+  width: 100%;
+  border: #E0E0E0 1px solid;
+  padding: 9px 12px;
+  line-height: 1.5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: ' ';
+}
+
+.the_select select::-ms-expand {
+  display: none;
+}
+
+.the_select::after {
+  content: "\f107";
+  position: absolute;
+  top: calc(50% - 8px);
+  color: #555;
+  right: 15px;
+  display: inline-block;
+  font-family: Font Awesome\ 5 Free;
+  font-size: inherit;
+  text-rendering: auto;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .header-wrapper {
   width: 100%;
   top: 0;
@@ -628,6 +664,25 @@ a:hover {
 
 .main-wrapper .section-wrap .text-right {
   text-align: right;
+}
+
+.main-wrapper .home-mob-wrap .block-box {
+  padding: 0;
+  position: relative;
+}
+
+.main-wrapper .home-mob-wrap .detail_list {
+  position: absolute;
+  bottom: 10px;
+}
+
+.main-wrapper .home-mob-wrap .detail_list .the_detail_box {
+  background-color: #fff;
+}
+
+.main-wrapper .home-mob-wrap .img__3d {
+  width: 100%;
+  height: calc(100vh - 72px - 46px);
 }
 
 .main-wrapper .home-3d-wrap {
@@ -982,6 +1037,23 @@ a:hover {
   .main-wrapper .submenu-wrap ul.submenu li p a {
     padding: 10px 20px;
     min-width: 80px;
+  }
+}
+
+.main-wrapper .submenu-wrap .the_select select {
+  text-align: center;
+}
+
+.main-wrapper .submenu-wrap .mob-show {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper .submenu-wrap ul.submenu {
+    display: none;
+  }
+  .main-wrapper .submenu-wrap .mob-show {
+    display: block;
   }
 }
 
@@ -1595,42 +1667,6 @@ a:hover {
   padding-right: 15px;
 }
 
-.main-wrapper .contact-form .form-contents .field .the_select {
-  width: 100%;
-  padding: 5px 0px;
-  position: relative;
-}
-
-.main-wrapper .contact-form .form-contents .field .the_select select {
-  width: 100%;
-  border: #E0E0E0 1px solid;
-  padding: 9px 12px;
-  line-height: 1.5;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: ' ';
-}
-
-.main-wrapper .contact-form .form-contents .field .the_select select::-ms-expand {
-  display: none;
-}
-
-.main-wrapper .contact-form .form-contents .field .the_select::after {
-  content: "\f107";
-  position: absolute;
-  top: calc(50% - 8px);
-  color: #555;
-  right: 15px;
-  display: inline-block;
-  font-family: Font Awesome\ 5 Free;
-  font-size: inherit;
-  text-rendering: auto;
-  font-weight: 900;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .main-wrapper .contact-form .form-contents .field .confirm {
   width: 100%;
   padding: 10px 0;
@@ -1743,13 +1779,13 @@ a:hover {
   background: url(../images/bg_map.png) top center no-repeat #F2F2F2;
 }
 
-.main-wrapper .case-wrap .block-box .country_xy {
+.main-wrapper .case-wrap .country_xy {
   position: absolute;
   text-align: center;
   cursor: pointer;
 }
 
-.main-wrapper .case-wrap .block-box .country_xy .icon {
+.main-wrapper .case-wrap .country_xy .icon {
   width: 40px;
   height: 52px;
   margin: 0 auto;
@@ -1760,19 +1796,19 @@ a:hover {
   background-size: 70%;
 }
 
-.main-wrapper .case-wrap .block-box .country_xy .Selected {
+.main-wrapper .case-wrap .country_xy .Selected {
   background-image: url(../images/icon_location_red.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main-wrapper .case-wrap .block-box .country_xy p {
+.main-wrapper .case-wrap .country_xy p {
   padding-top: 10px;
   display: block;
 }
 
-.main-wrapper .case-wrap .block-box .case-list-box {
+.main-wrapper .case-wrap .case-list-box {
   width: 55%;
   max-width: 555px;
   height: 100%;
@@ -1784,7 +1820,7 @@ a:hover {
   background-color: #00000010;
 }
 
-.main-wrapper .case-wrap .block-box .case-list-box .main-title {
+.main-wrapper .case-wrap .case-list-box .main-title {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -1792,7 +1828,7 @@ a:hover {
   padding: 5px 10px;
 }
 
-.main-wrapper .case-wrap .block-box .case-list-box ul.logos {
+.main-wrapper .case-wrap .case-list-box ul.logos {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1801,11 +1837,11 @@ a:hover {
       flex-wrap: wrap;
 }
 
-.main-wrapper .case-wrap .block-box .case-list-box ul.logos li {
+.main-wrapper .case-wrap .case-list-box ul.logos li {
   padding: 7.5px;
 }
 
-.main-wrapper .case-wrap .block-box .case-list-box ul.logos li .img-logo {
+.main-wrapper .case-wrap .case-list-box ul.logos li .img-logo {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1819,9 +1855,45 @@ a:hover {
   overflow: hidden;
 }
 
-.main-wrapper .case-wrap .block-box .case-list-box ul.logos li .img-logo img {
+.main-wrapper .case-wrap .case-list-box ul.logos li .img-logo img {
   width: 100%;
   height: 100%;
+}
+
+.main-wrapper .case-wrap .mob-show {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper .case-wrap .block-box {
+    height: initial;
+  }
+  .main-wrapper .case-wrap .country_xy {
+    display: none;
+  }
+  .main-wrapper .case-wrap .case-list-box {
+    width: 100%;
+    position: static;
+  }
+  .main-wrapper .case-wrap .case-list-box .main-title {
+    display: none;
+  }
+  .main-wrapper .case-wrap .case-list-box .mob-show {
+    padding: 16px 20px;
+    background-color: #F2F2F2;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  }
+  .main-wrapper .case-wrap .case-list-box ul.logos li .img-logo {
+    width: calc((100vw - 85px) / 3);
+    height: calc((100vw - 85px) / 3);
+  }
+  .main-wrapper .case-wrap ul.submenu {
+    display: none;
+  }
+  .main-wrapper .case-wrap .mob-show {
+    display: block;
+  }
 }
 
 .main-wrapper .mrs-wrap .block-box {
@@ -1910,6 +1982,10 @@ a:hover {
   color: #00AFDE;
 }
 
+.main-wrapper .mrs-wrap .l-box .show-year-info .mob-show {
+  display: none;
+}
+
 .main-wrapper .mrs-wrap .l-box .show-year-info ul {
   width: 100%;
 }
@@ -1968,6 +2044,65 @@ a:hover {
 
 .main-wrapper .mrs-wrap .l-box .show-year-info ul li.Selected::after, .main-wrapper .mrs-wrap .l-box .show-year-info ul li.Selected::before {
   background-color: #fff;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox {
+  width: 100%;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox .img-box {
+  position: relative;
+  padding: 0;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox a.arr-btn {
+  position: absolute;
+  top: calc(50% - 18px);
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  background-color: #1f4b8ea5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox a.prev {
+  left: 10px;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox a.next {
+  right: 10px;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox a:hover {
+  background-color: #1f4b8e;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox a.no-click {
+  cursor: no-drop;
+  background-color: #51515195;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox a.no-click:hover {
+  background-color: #51515195;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox .top-block-title {
+  background-color: #1F4B8E;
+  padding: 10px;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox .top-block-title h3 {
+  font-size: 15px;
+  color: #fff;
 }
 
 .main-wrapper .mrs-wrap .r-box {
@@ -2049,6 +2184,24 @@ a:hover {
 
 .main-wrapper .mrs-wrap .r-box .a_info__card .abox .img-box {
   padding: 5px 15px 15px 15px;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper .mrs-wrap .block-box {
+    position: static;
+    padding: 0;
+  }
+  .main-wrapper .mrs-wrap .l-box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-wrapper .mrs-wrap .l-box .show-year-info .mob-show {
+    display: block;
+  }
+  .main-wrapper .mrs-wrap .r-box {
+    display: none;
+  }
 }
 
 .footer-wrapper {
@@ -2233,6 +2386,9 @@ a:hover {
   }
   .footer-wrapper .flex-box .fbox {
     padding-bottom: 25px;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
   }
   .footer-wrapper .flex-box .fbox .text-info {
     padding-bottom: 5px;
