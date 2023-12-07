@@ -1962,6 +1962,7 @@ a:hover {
         
         .abox{
           width: 100%;
+          background-color: #e4e4e4;
           .img-box{
             position: relative;
             padding: 0;
@@ -2007,6 +2008,15 @@ a:hover {
               font-size: 15px;
               color: #fff;
             }
+          }
+          .main-title{
+             background: none;
+             padding: 0;
+             h3{
+              font-size: 16px;
+              text-shadow: none;
+              color: #1F4B8E;
+             }
           }
         }
       }

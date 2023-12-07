@@ -2255,6 +2255,7 @@ a:hover {
 
 .main-wrapper .mrs-wrap .l-box .show-year-info .abox {
   width: 100%;
+  background-color: #e4e4e4;
 }
 
 .main-wrapper .mrs-wrap .l-box .show-year-info .abox .img-box {
@@ -2310,6 +2311,17 @@ a:hover {
 .main-wrapper .mrs-wrap .l-box .show-year-info .abox .top-block-title h3 {
   font-size: 15px;
   color: #fff;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox .main-title {
+  background: none;
+  padding: 0;
+}
+
+.main-wrapper .mrs-wrap .l-box .show-year-info .abox .main-title h3 {
+  font-size: 16px;
+  text-shadow: none;
+  color: #1F4B8E;
 }
 
 .main-wrapper .mrs-wrap .r-box {
