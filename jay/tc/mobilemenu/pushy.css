@@ -58,6 +58,23 @@
 .pushy ul li.pushy-link a.c_yello {
   color: #fabd00;
 }
+.pushy .languageBox{
+  padding: 15px 20px;
+}
+.pushy .languageBox .styled-select{
+  border: 1px solid #fff;
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pushy .languageBox select{
+    background-color: transparent;
+    color: #fff;
+}
+.pushy .languageBox select option{
+  color: #333;
+  background-color: #f9f9f9;
+}
 /* .pushy ul:first-child {
   margin-top: 20px;
 } */

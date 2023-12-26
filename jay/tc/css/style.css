@@ -511,6 +511,15 @@ a:hover {
   color: #666666;
 }
 
+.header-wrapper .languageBox {
+  margin-left: 10px;
+}
+
+.header-wrapper .languageBox .md-input {
+  height: 35px;
+  line-height: 35px;
+}
+
 .header-wrapper .menu {
   padding-left: 20px;
   display: -webkit-box;
@@ -2005,12 +2014,20 @@ a:hover {
   }
 }
 
+.main-wrapper .case-wrap {
+  background-color: #f2f2f2;
+  overflow-x: auto;
+}
+
 .main-wrapper .case-wrap .block-box {
   padding: 0;
+  width: 100%;
   max-width: 100%;
   position: relative;
-  height: 808px;
-  background: url(../images/bg_map.png) top center no-repeat #F2F2F2;
+  max-width: 1440px;
+  height: 812px;
+  margin: 0 auto;
+  background: url(../images/bg_map.png) left center no-repeat #F2F2F2;
 }
 
 .main-wrapper .case-wrap .country_xy {
@@ -2098,6 +2115,12 @@ a:hover {
   display: none;
 }
 
+@media (max-width: 1100px) {
+  .main-wrapper .case-wrap .case-list-box {
+    width: 372px;
+  }
+}
+
 @media (max-width: 768px) {
   .main-wrapper .case-wrap .block-box {
     height: initial;
@@ -2107,6 +2130,7 @@ a:hover {
   }
   .main-wrapper .case-wrap .case-list-box {
     width: 100%;
+    max-width: 100%;
     position: static;
   }
   .main-wrapper .case-wrap .case-list-box .main-title {
