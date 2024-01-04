@@ -380,10 +380,6 @@ a:hover {
   }
 }
 
-.img-box img {
-  width: 100%;
-}
-
 /*===== start ======*/
 .block-box {
   width: 100%;
@@ -627,6 +623,7 @@ a:hover {
 
 .main-wrapper .section-wrap .main-title p {
   font-size: 16px;
+  text-align: justify;
 }
 
 .main-wrapper .section-wrap .main-title h3 {
@@ -641,6 +638,7 @@ a:hover {
   font-size: 16px;
   padding-bottom: 20px;
   line-height: 1.8;
+  text-align: justify;
 }
 
 @media (max-width: 760px) {
@@ -666,6 +664,7 @@ a:hover {
 .main-wrapper .section-wrap .text-contents p {
   font-size: 16px;
   font-weight: 500;
+  text-align: justify;
   line-height: 1.8;
 }
 
@@ -973,6 +972,7 @@ a:hover {
 
 .main-wrapper .home-3d-wrap .img__3d .the_3dtitle_box .show-text h3 {
   font-size: 13px;
+  text-align: justify;
 }
 
 .main-wrapper .home-3d-wrap .img__3d .the_3dtitle_box .show-text .list-ol-d {
@@ -1531,6 +1531,7 @@ a:hover {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  text-align: justify;
   text-shadow: 0 3px 5px #33333336;
 }
 
@@ -2261,8 +2262,10 @@ a:hover {
 }
 
 .main-wrapper .mrs-wrap .l-box .show-year-info ul li p {
+  text-align: justify;
   font-size: 14px;
   line-height: 1.5;
+  padding-right: 10px;
 }
 
 .main-wrapper .mrs-wrap .l-box .show-year-info ul li::after {

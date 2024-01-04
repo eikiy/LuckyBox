@@ -332,7 +332,7 @@ a:hover {
 }
 .img-box{
   img{
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -625,6 +625,7 @@ a:hover {
     .main-title{
       p{
         font-size: 16px;
+        text-align: justify;
       }
       h3{
         padding: 15px 0;
@@ -637,6 +638,7 @@ a:hover {
         font-size: 16px;
         padding-bottom: 20px;
         line-height: 1.8;
+        text-align: justify;
       }
       @media (max-width: 760px){
         p{
@@ -663,7 +665,7 @@ a:hover {
       p{
         font-size: 16px;
         font-weight: 500;
-        // text-align: justify;
+        text-align: justify;
         line-height: 1.8;
       }
       ul.list-ol-d{
@@ -917,6 +919,7 @@ a:hover {
           overflow-y: auto;
           h3{
             font-size: 13px;
+            text-align: justify;
           }
           .list-ol-d{
             font-size: 16px;
@@ -1370,6 +1373,7 @@ a:hover {
           color: #fff;
           font-size: 16px;
           font-weight: 400;
+          text-align: justify;
           text-shadow: 0 3px 5px #33333336;
         }
       }
@@ -1965,8 +1969,10 @@ a:hover {
               padding: 10px 0;
             }
             p{
+              text-align: justify;
               font-size: 14px;
               line-height: 1.5;
+              padding-right: 10px;
             }
             &::after{
               content: "";
