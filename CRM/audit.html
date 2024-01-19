@@ -182,7 +182,8 @@
                                 <a class="yes">同意</a>
                             </li>
                             <li>
-                                <a class="no selected-no">拒絕</a>
+                                <!-- 拒絕，跳出下方 popup 填寫備註 -->
+                                <a class="no selected-no popup-link" href="#popup-order-review-note">拒絕</a>
                             </li>
                         </ul>
                         <a class="go-detail popup-link" href="#popup-order-info">
@@ -648,7 +649,34 @@
             <div class="bottom-btn-tool both-btn">
                 <fieldset class="field">
                     <input class="btn--primary-xl btn-audit-yes" type="submit" value="同意">
+                    <!-- 拒絕，跳出下方 popup：popup-order-review-note 填寫備註 -->
                     <input class="btn--primary-xl btn-audit-no" type="submit" value="拒絕">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- popup  拒絕請填寫審核備註-->
+    <section id="popup-order-review-note" class="white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>審核備註</span></h4>
+            </div>
+            <div class="fillin-box">
+                <!-- 字數限制：50字 -->
+                <!-- 儲存後，寄 email 通知 -->
+                <form>
+                    <div class="field clearfix">
+                        <div class="fillin-info width-100">
+                            <fieldset>
+                                <textarea placeholder="請輸入備註"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-btn-tool">
+                <fieldset class="field">
+                    <input class="btn--primary-xl " type="submit" value="儲存">
                 </fieldset>
             </div>
         </div>

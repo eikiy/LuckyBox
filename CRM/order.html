@@ -1709,8 +1709,114 @@
             <div class="top-title">
                 <h4><span>委刊單</span></h4>
             </div>
+            <a class="order-history popup-link" target="_blank" href="#popup-order-history-info"></a>
             <div class="fillin-box">
                 <form>
+                    <div class="field border_4 clearfix">
+                        <div class="left-sub-title">
+                            <p>審核狀態</p>
+                        </div>
+                        <div class="fillin-info">
+                            <ul class="order-step-list">
+                                <li class="on">
+                                    <div class="icon icon-a">
+                                        <p>委刊單建立</p>
+                                    </div>             
+                                </li>
+                                <li>
+                                    <div class="icon icon-b">
+                                        <p>小組長審核</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon icon-c">
+                                        <p>Planner 審核</p>
+                                    </div>                                   
+                                </li>
+                                <li>
+                                    <div class="icon icon-d">
+                                        <p>VP 審核</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon icon-e">
+                                        <p>審核完成</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 進行中 狀態 + on-->
+                    <div class="field border_4 clearfix">
+                        <div class="left-sub-title">
+                            <p>審核狀態</p>
+                        </div>
+                        <div class="fillin-info">
+                            <ul class="order-step-list">
+                                <li>
+                                    <div class="icon icon-a">
+                                        <p>委刊單建立</p>
+                                    </div>
+                                </li>
+                                <li class="on">
+                                    <div class="icon icon-b">
+                                        <p>小組長審核</p>
+                                    </div>
+                                </li>
+                               <li class="on">
+                                    <div class="icon icon-c">
+                                        <p>Planner 審核</p>
+                                    </div>
+                                </li>
+                                <li class="on">
+                                    <div class="icon icon-d">
+                                        <p>VP 審核</p>
+                                    </div>
+                                </li>
+                                <li class="on">
+                                    <div class="icon icon-e">
+                                        <p>審核完成</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 拒絕狀態 + 變更文字 + no-->
+                    <!-- 該狀態 div 變成 a 可看 popup 審核備註-->
+                    <div class="field border_4 clearfix">
+                        <div class="left-sub-title">
+                            <p>審核狀態</p>
+                        </div>
+                        <div class="fillin-info">
+                            <ul class="order-step-list">
+                                <li>
+                                    <div class="icon icon-a">
+                                        <p>委刊單建立</p>
+                                    </div>
+                                </li>
+                                <li class="no">
+                                    <a class="icon icon-b popup-link" href="#popup-order-review-note">
+                                        <p>小組長拒絕</p>
+                                    </a>
+                                </li>
+                                <li class="no">
+                                    <a class="icon icon-b popup-link" href="#popup-order-review-note">
+                                        <p>Planner 拒絕</p>
+                                    </a>
+                                </li>
+                                <li class="no">
+                                    <a class="icon icon-b popup-link" href="#popup-order-review-note">
+                                        <p>VP 拒絕</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="icon icon-e">
+                                        <p>審核完成</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="field clearfix">
                         <div class="left-sub-title">
                             <p>受刊公司<br>聯絡資訊</p>
@@ -2568,6 +2674,83 @@
             </div>
         </div>
     </section>
+
+    <!-- popup 審核備註 - 內容-->
+    <section id="popup-order-review-note" class="popup-finish popup-width-s white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>審核備註</span></h4>
+            </div>
+            <div class="fillin-box">
+                <p class="review-note">主要聯絡人名稱和電話不完整。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup 審核紀錄 - 內容-->
+    <section id="popup-order-history-info" class="popup-finish popup-width-s white-popup mfp-hide">
+        <div class="popup-container">
+            <div class="top-title">
+                <h4><span>審核紀錄</span></h4>
+            </div>
+            <div class="liaison-info history-box">
+                <div class="fillin-box">
+                    <ul class="order-record">
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text"><span class="c-green">審核完成</span></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text">VP Zoe <span class="c-green">審核同意</span></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text">Planner Janis <span class="c-green">審核同意</span></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text">小組長 Nina <span class="c-green">審核同意</span></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text">委刊單重新提交審核</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <!-- 拒絕 div 變 a 可點選跳 popup 審核備註 -->
+                            <a class="info popup-link"href="#popup-order-review-note">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text">Planner Janis <span class="c-red">審核拒絕</span></p>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2021/02/29 14:59:00 </p>
+                                <p class="text">小組長 Nina <span class="c-green">審核同意</span></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="info">
+                                <p class="time">2024/01/09 16:42:04 </p>
+                                <p class="text">委刊單提交審核</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- popup 變更紀錄 - 內容-->
     <section id="popup-history-info" class="popup-finish popup-width-s white-popup mfp-hide">
         <div class="popup-container">

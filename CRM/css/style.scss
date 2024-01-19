@@ -3071,11 +3071,143 @@ ul.edit-record-user {
     min-height: 90px;
     @include box-center;
   }
+  .order-history {
+    position: absolute;
+    right: 15px;
+    top: 115px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50%;
+    background: url(../images/svg/icon_order_history.svg) center center no-repeat #EBF5F4;
+    background-size: 55%;
+    z-index: 2;
+    &:hover {
+      background: url(../images/svg/icon_order_history_white.svg) center center no-repeat $color-green-grass;
+      background-size: 55%;
+    }
+  }
+  .review-note{
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
+  }
+  ul.order-step-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px 0px 10px 25px;
+    li{
+      flex: 1;
+      text-align: center;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: -3px;
+        width: 8.5px;
+        height: 7.5px;
+        display: block;
+        background: url(../images/svg/icon_step_arr.svg) center center no-repeat;
+        background-size: contain;
+      }
+      &:last-child::after{
+        display: none;
+      }
+      .icon{
+        border-radius: 50px;
+        background-color: #fff;
+        text-align: center;
+        display: inline-block;
+        p{
+          font-size: 13px;
+          font-weight: bold;
+          color: #87C9C4;
+          position: relative;
+          padding-top: 55px;
+          line-height: 1.2;
+        }
+        p::before{
+          position: absolute;
+          content: "";
+          width: 34px;
+          height: 32px;
+          display: block;
+          top:10px;
+          left: calc(50% - 15px);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      .icon-a p::before{
+        background-image: url(../images/svg/icon_order_step_a.svg);
+      }
+      .icon-b p::before{
+        width: 26px;
+        left: calc(50% - 11px);
+        background-image: url(../images/svg/icon_order_step_b.svg);
+      }
+      .icon-c p::before{
+        width: 29px;
+        background-image: url(../images/svg/icon_order_step_c.svg);
+      }
+      .icon-d p::before{
+        width: 29px;
+        background-image: url(../images/svg/icon_order_step_d.svg);
+      }
+      .icon-e p::before{
+        width: 38px;
+        height: 38px;
+        top: 7px;
+        left: calc(50% - 19px);
+        background-image: url(../images/svg/icon_order_step_e.svg);
+      }
+      &.on{
+        p{
+          color: $color-green-grass;
+        }
+        .icon-a p::before{
+          background-image: url(../images/svg/icon_order_step_a_on.svg);
+        }
+        .icon-b p::before{
+          background-image: url(../images/svg/icon_order_step_b_on.svg);
+        }
+        .icon-c p::before{
+          background-image: url(../images/svg/icon_order_step_c_on.svg);
+        }
+        .icon-d p::before{
+          background-image: url(../images/svg/icon_order_step_d_on.svg);
+        }
+        .icon-e p::before{
+          background-image: url(../images/svg/icon_order_step_e_on.svg);
+        }
+      }
+      &.no{
+        .icon p{
+          color: $color-red-wine;
+        }
+        .icon-b p::before{
+          background-image: url(../images/svg/icon_order_step_b_no.svg);
+        }
+        .icon-c p::before{
+          background-image: url(../images/svg/icon_order_step_c_no.svg);
+        }
+        .icon-d p::before{
+          background-image: url(../images/svg/icon_order_step_d_no.svg);
+        }
+        a:hover p{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   .fillin-box {
     width: 100%;
     padding: 15px;
     max-width: 670px;
     margin: 0 auto;
+
     input {
       @extend %input;
       background-color: #f8f8f8;
@@ -3087,6 +3219,9 @@ ul.edit-record-user {
       width: 100%;
       padding: 15px 0;
       border-bottom: 1px #cdcdcd dashed;
+      &.border_4{
+        border-bottom: 4px #EBF5F4 solid;
+      }
       &:last-child {
         border: none;
       }
@@ -4156,6 +4291,12 @@ ul.edit-record-user {
           top: 0;
           z-index: 1;
         }
+        ul.order-step-list{
+          padding: 0;
+          li .icon p{
+            font-size: 11px;
+          }
+        }
         .fillin-info {
           width: 100%;
           fieldset {
@@ -4458,6 +4599,87 @@ ul.edit-record-user {
       max-width: 480px;
       ul.edit-record-user li p.time{
         padding-right: 10px;
+      }
+    }
+    .order-record {
+      li {
+        position: relative;
+        
+        &::before{
+          position: absolute;
+          content: "";
+          width: 2px;
+          height:calc( 100% - 13px);
+          top: 0;
+          left: 18px;
+          display: block;
+          background-color:$color-green-light;
+          visibility:initial;
+          z-index: 0;
+        }
+        &::after{
+          position: absolute;
+          content: "";
+          width: 2px;
+          height:calc( 100% - 13px);
+          top: 13px;
+          left: 18px;
+          display: block;
+          background-color:$color-green-light;
+          visibility:initial;
+          z-index: 0;
+        }
+        &:first-child::before{
+          display: none;
+        }
+        &:last-child::after{
+          display: none;
+        }
+        .info{
+          padding:10px;
+          display: flex;
+          flex-wrap: wrap;
+          
+        }
+        
+        p{
+          font-size: $f-size-s;
+          flex: 1;
+        
+          &.time{
+            padding-left: 25px;
+            position: relative;
+            &::before{
+              position: absolute;
+              content: "";
+              width: 7px;
+              height: 7px;
+              top: 3px;
+              left: 5px;
+              display: block;
+              border-radius: 50%;
+              background-color: $color-green-grass;
+              z-index: 1;
+            }
+          }
+          &.text {
+            .c-green {
+              color: $color-green-grass;
+            }
+            .c-red{
+              color: $color-red;
+            }
+          }
+        }
+        a.info{
+          .time::before {
+            background-color: $color-red;
+          }
+          &:hover{
+            background-color: $color-green-light;
+            border-radius: 20px;
+          }
+        }
       }
     }
   }

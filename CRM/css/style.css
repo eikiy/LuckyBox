@@ -3634,6 +3634,164 @@ ul.edit-record-user li p.id span {
           justify-content: center;
 }
 
+.popup-container .order-history {
+  position: absolute;
+  right: 15px;
+  top: 115px;
+  width: 45px;
+  height: 45px;
+  display: block;
+  border-radius: 50%;
+  background: url(../images/svg/icon_order_history.svg) center center no-repeat #EBF5F4;
+  background-size: 55%;
+  z-index: 2;
+}
+
+.popup-container .order-history:hover {
+  background: url(../images/svg/icon_order_history_white.svg) center center no-repeat #11948a;
+  background-size: 55%;
+}
+
+.popup-container .review-note {
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px;
+}
+
+.popup-container ul.order-step-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 0px 10px 25px;
+}
+
+.popup-container ul.order-step-list li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.popup-container ul.order-step-list li::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -3px;
+  width: 8.5px;
+  height: 7.5px;
+  display: block;
+  background: url(../images/svg/icon_step_arr.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.popup-container ul.order-step-list li:last-child::after {
+  display: none;
+}
+
+.popup-container ul.order-step-list li .icon {
+  border-radius: 50px;
+  background-color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+
+.popup-container ul.order-step-list li .icon p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #87C9C4;
+  position: relative;
+  padding-top: 55px;
+  line-height: 1.2;
+}
+
+.popup-container ul.order-step-list li .icon p::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 32px;
+  display: block;
+  top: 10px;
+  left: calc(50% - 15px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.popup-container ul.order-step-list li .icon-a p::before {
+  background-image: url(../images/svg/icon_order_step_a.svg);
+}
+
+.popup-container ul.order-step-list li .icon-b p::before {
+  width: 26px;
+  left: calc(50% - 11px);
+  background-image: url(../images/svg/icon_order_step_b.svg);
+}
+
+.popup-container ul.order-step-list li .icon-c p::before {
+  width: 29px;
+  background-image: url(../images/svg/icon_order_step_c.svg);
+}
+
+.popup-container ul.order-step-list li .icon-d p::before {
+  width: 29px;
+  background-image: url(../images/svg/icon_order_step_d.svg);
+}
+
+.popup-container ul.order-step-list li .icon-e p::before {
+  width: 38px;
+  height: 38px;
+  top: 7px;
+  left: calc(50% - 19px);
+  background-image: url(../images/svg/icon_order_step_e.svg);
+}
+
+.popup-container ul.order-step-list li.on p {
+  color: #11948a;
+}
+
+.popup-container ul.order-step-list li.on .icon-a p::before {
+  background-image: url(../images/svg/icon_order_step_a_on.svg);
+}
+
+.popup-container ul.order-step-list li.on .icon-b p::before {
+  background-image: url(../images/svg/icon_order_step_b_on.svg);
+}
+
+.popup-container ul.order-step-list li.on .icon-c p::before {
+  background-image: url(../images/svg/icon_order_step_c_on.svg);
+}
+
+.popup-container ul.order-step-list li.on .icon-d p::before {
+  background-image: url(../images/svg/icon_order_step_d_on.svg);
+}
+
+.popup-container ul.order-step-list li.on .icon-e p::before {
+  background-image: url(../images/svg/icon_order_step_e_on.svg);
+}
+
+.popup-container ul.order-step-list li.no .icon p {
+  color: #d54848;
+}
+
+.popup-container ul.order-step-list li.no .icon-b p::before {
+  background-image: url(../images/svg/icon_order_step_b_no.svg);
+}
+
+.popup-container ul.order-step-list li.no .icon-c p::before {
+  background-image: url(../images/svg/icon_order_step_c_no.svg);
+}
+
+.popup-container ul.order-step-list li.no .icon-d p::before {
+  background-image: url(../images/svg/icon_order_step_d_no.svg);
+}
+
+.popup-container ul.order-step-list li.no a:hover p {
+  text-decoration: underline;
+}
+
 .popup-container .fillin-box {
   width: 100%;
   padding: 15px;
@@ -3653,6 +3811,10 @@ ul.edit-record-user li p.id span {
   width: 100%;
   padding: 15px 0;
   border-bottom: 1px #cdcdcd dashed;
+}
+
+.popup-container .fillin-box .field.border_4 {
+  border-bottom: 4px #EBF5F4 solid;
 }
 
 .popup-container .fillin-box .field:last-child {
@@ -4882,6 +5044,12 @@ ul.edit-record-user li p.id span {
     top: 0;
     z-index: 1;
   }
+  .popup-container .fillin-box .field ul.order-step-list {
+    padding: 0;
+  }
+  .popup-container .fillin-box .field ul.order-step-list li .icon p {
+    font-size: 11px;
+  }
   .popup-container .fillin-box .field .fillin-info {
     width: 100%;
   }
@@ -5225,6 +5393,95 @@ ul.edit-record-user li p.id span {
 
 .popup-finish .history-box .fillin-box ul.edit-record-user li p.time {
   padding-right: 10px;
+}
+
+.popup-finish .history-box .order-record li {
+  position: relative;
+}
+
+.popup-finish .history-box .order-record li::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: calc( 100% - 13px);
+  top: 0;
+  left: 18px;
+  display: block;
+  background-color: #ebf5f4;
+  visibility: initial;
+  z-index: 0;
+}
+
+.popup-finish .history-box .order-record li::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: calc( 100% - 13px);
+  top: 13px;
+  left: 18px;
+  display: block;
+  background-color: #ebf5f4;
+  visibility: initial;
+  z-index: 0;
+}
+
+.popup-finish .history-box .order-record li:first-child::before {
+  display: none;
+}
+
+.popup-finish .history-box .order-record li:last-child::after {
+  display: none;
+}
+
+.popup-finish .history-box .order-record li .info {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup-finish .history-box .order-record li p {
+  font-size: 0.813rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.popup-finish .history-box .order-record li p.time {
+  padding-left: 25px;
+  position: relative;
+}
+
+.popup-finish .history-box .order-record li p.time::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  top: 3px;
+  left: 5px;
+  display: block;
+  border-radius: 50%;
+  background-color: #11948a;
+  z-index: 1;
+}
+
+.popup-finish .history-box .order-record li p.text .c-green {
+  color: #11948a;
+}
+
+.popup-finish .history-box .order-record li p.text .c-red {
+  color: #f44336;
+}
+
+.popup-finish .history-box .order-record li a.info .time::before {
+  background-color: #f44336;
+}
+
+.popup-finish .history-box .order-record li a.info:hover {
+  background-color: #ebf5f4;
+  border-radius: 20px;
 }
 
 .popup-finish .fillin-info p.input-value {
