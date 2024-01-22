@@ -314,6 +314,11 @@ body {
   padding-left: 6px;
 }
 
+.btn--bg-w {
+  background-color: #fff;
+  color: #11948a;
+}
+
 .login-container input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
