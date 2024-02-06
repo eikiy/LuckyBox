@@ -15,8 +15,19 @@
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
     
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     
+    <script type="text/javascript">
+        $(function () {
+            $('.popup-link').magnificPopup({
+                removalDelay: 300,
+                mainClass: 'mfp-fade'
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -30,7 +41,7 @@
                 </div>
                 <!-- 這個不能刪哦 -->
                 <!-- 之後放其他功能用 -->
-                <a class="icon icon-myclass-add popup-link" href="#"></a>
+                <a class="icon icon-myclass-add popup-link" href="#popup-myclass-add"></a>
             </div>
         </div>
         <div class="mid-content">
@@ -40,7 +51,7 @@
                 <div class="class-info">
                     <p class="date">現在 10:30 am - 11:30 am</p>
                     <h4 class="class-year">數學 小二2023 職校</h4>
-                    <a class="classroom" href="#">
+                    <a class="classroom popup-link" href="#popup-myclass-edit">
                         <span>A501 教室</span>
                     </a>
                     <div class="progress-box">
@@ -56,7 +67,7 @@
                 <div class="tools-btns">
                     <ul>
                         <li class="bg-yello">
-                            <a class="icon icon-class" href="#">點名</a>
+                            <a class="icon icon-class" href="myclass_rollcall.html">點名</a>
                         </li>
                         <li class="bg-yello">
                             <a class="icon icon-check" href="#">結案</a>
@@ -155,6 +166,90 @@
             </ul>
         </nav>
     </main>
+    <!-- popup 新增上課-->
+    <section id="popup-myclass-add" class="popup mfp-hide popup-width-s">
+        <div class="popup-container">
+            <div class="top-text-wrap">
+                <h3 class="main-title">新增上課</h3>
+            </div>
+            <form class="form-style">
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">請選擇班級</option>
+                        <option value="1">班級一</option>
+                        <option value="2">班級二</option>
+                    </select>
+                </div>
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">請選擇教室</option>
+                        <option value="1">A05</option>
+                        <option value="2">A03</option>
+                        <option value="3">B555</option>
+                    </select>
+                </div>
+                <label class="label-title" for="">上課時間</label>
+                <div class="a-row input-date"> 
+                    <input class="default" type="date" value="">
+                </div>
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">6:00 PM</option>
+                        <option value="1">6:30 PM</option>
+                        <option value="2">7:00 PM</option>
+                        <option value="3">7:30 PM</option>
+                    </select>
+                </div>
+                <div class="btn both-btn">
+                    <a class="btn-primary-xl" href="#">
+                        <span>確認開課</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- popup 編輯上課-->
+    <section id="popup-myclass-edit" class="popup mfp-hide popup-width-s">
+        <div class="popup-container">
+            <div class="top-text-wrap">
+                <h3 class="main-title">編輯上課</h3>
+            </div>
+            <form class="form-style">
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">請選擇班級</option>
+                        <option value="1" selected>數學 小二2023 職校</option>
+                        <option value="2">班級二</option>
+                    </select>
+                </div>
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">請選擇教室</option>
+                        <option value="1">A05</option>
+                        <option value="2" selected>A501</option>
+                        <option value="3">B555</option>
+                    </select>
+                </div>
+                <label class="label-title" for="">上課時間</label>
+                <div class="a-row input-date">
+                    <input class="default" type="date" value="2024-05-02">
+                </div>
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">6:00 PM</option>
+                        <option value="1">6:30 PM</option>
+                        <option value="2" selected>7:00 PM</option>
+                        <option value="3">7:30 PM</option>
+                    </select>
+                </div>
+                <div class="btn both-btn">
+                    <a class="btn-primary-xl" href="#">
+                        <span>確認開課</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
 

@@ -42,25 +42,27 @@
                 </div>
                 <!-- 這個不能刪哦 -->
                 <!-- 之後放其他功能用 -->
-                <a class="icon icon-otherclass-add popup-link" href="#popup-otherclass-add"></a>
+                <a class="icon icon-otherclass-add popup-link" href="#"></a>
             </div>
             <div class="class-status">
                 <div class="btn">
-                    <a class="btn-primary-xl" href="otherclass.html">
+                    <a class="btn-primary-xl btn-bg-w" href="otherclass.html">
                         <span class="">即將開課</span>
                     </a>
-                    <a class="btn-primary-xl btn-bg-w" href="otherclass_end.html">
+                    <a class="btn-primary-xl" href="otherclass_end.html">
                         <span class="">課程已結束</span>
                     </a>
                 </div>
             </div>
         </div>
         <div class="mid-content">
-
-            <!-- 最近的 + first -->
-            <div class="a-card first">
+            <p class="top-card-year">2024</p>
+            <!-- 這邊進行中和結束都是 + online -->
+            <!-- 但只有點名是當下 黃色按鈕 -->
+            <div class="a-card online">
                 <div class="class-info">
                     <p class="date">現在 10:30 am - 11:30 am</p>
+                    <!-- 未結束的教室，可再變更 classroom 是 a -->
                     <a class="classroom" href="#">
                         <span>A501 教室</span>
                     </a>
@@ -77,7 +79,7 @@
                 <div class="tools-btns">
                     <ul>
                         <li class="fl-100 bg-yello">
-                            <a class="f-s-l" href="otherclass_rollcall.html">上課點名</a>
+                            <a class="f-s-l" href="#">上課點名</a>
                         </li>
                         <li>
                             <a class="icon icon-feed" href="#">近況</a>
@@ -90,102 +92,158 @@
                 </div>
             </div>
 
-            <!-- 第二個 + second -->
-            <div class="a-card second">
+            <p class="top-card-year">2023</p>
+            <div class="a-card first">
                 <div class="class-info">
-                    <p class="date">今日 12:30 pm - 01:30 pm</p>
-                    <a class="classroom" href="#">
-                        <span>A501 教室</span>
-                    </a>
+                    <p class="date">12/12 10:30 am - 11:30 am</p>
+                    <!-- 已結束的教室，不可變更 classroom 是 p -->
+                    <p class="classroom">
+                        A502 教室
+                    </p>
+                    <div class="progress-box">
+                        <div class="text">
+                            <p>出缺勤 22%</p>
+                            <p class="nb">4/28</p>
+                        </div>
+                        <div class="progress">
+                            <progress id="file" max="100" value="22">22%</progress>
+                        </div>
+                    </div>
                 </div>
                 <div class="tools-btns">
                     <ul>
                         <li class="fl-100">
-                            <a class="f-s-l line-btn" href="#">上課點名</a>
+                            <a class="f-s-l" href="#">上課點名</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-feed" href="#">近況</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-myclass" href="#">作業</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="a-card">
+            <div class="a-card first">
                 <div class="class-info">
-                    <p class="date">明天 12:30 pm - 01:30 pm</p>
-                    <a class="classroom" href="#">
-                        <span>A501 教室</span>
-                    </a>
+                    <p class="date">12/1 10:30 am - 11:30 am</p>
+                    <p class="classroom">
+                        A502 教室
+                    </p>
+                    <div class="progress-box">
+                        <div class="text">
+                            <p>出缺勤 50%</p>
+                            <p class="nb">28/56</p>
+                        </div>
+                        <div class="progress">
+                            <progress id="file" max="100" value="50">50%</progress>
+                        </div>
+                    </div>
                 </div>
                 <div class="tools-btns">
                     <ul>
                         <li class="fl-100">
-                            <a class="f-s-l line-btn" href="#">上課點名</a>
+                            <a class="f-s-l" href="#">上課點名</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-feed" href="#">近況</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-myclass" href="#">作業</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="a-card">
+            <div class="a-card first">
                 <div class="class-info">
-                    <p class="date">112/12/05
-                    12:30 pm - 01:30 pm</p>
-                    <a class="classroom" href="#">
-                        <span>A501 教室</span>
-                    </a>
+                    <p class="date">12/1 10:30 am - 11:30 am</p>
+                    <p class="classroom">
+                        A502 教室
+                    </p>
+                    <div class="progress-box">
+                        <div class="text">
+                            <p>出缺勤 50%</p>
+                            <p class="nb">28/56</p>
+                        </div>
+                        <div class="progress">
+                            <progress id="file" max="100" value="50">50%</progress>
+                        </div>
+                    </div>
                 </div>
                 <div class="tools-btns">
                     <ul>
                         <li class="fl-100">
-                            <a class="f-s-l line-btn" href="#">上課點名</a>
+                            <a class="f-s-l" href="#">上課點名</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-feed" href="#">近況</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-myclass" href="#">作業</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="a-card">
+
+            <div class="a-card first">
                 <div class="class-info">
-                    <p class="date">112/12/05
-                        12:30 pm - 01:30 pm</p>
-                    <h4 class="class-year">數學 小二2023 職校</h4>
-                    <a class="classroom" href="#">
-                        <span>A501 教室</span>
-                    </a>
+                    <p class="date">11/30 10:30 am - 11:30 am</p>
+                    <p class="classroom">
+                        A502 教室
+                    </p>
+                    <div class="progress-box">
+                        <div class="text">
+                            <p>出缺勤 10%</p>
+                            <p class="nb">6/56</p>
+                        </div>
+                        <div class="progress">
+                            <progress id="file" max="100" value="10">10%</progress>
+                        </div>
+                    </div>
                 </div>
                 <div class="tools-btns">
                     <ul>
                         <li class="fl-100">
-                            <a class="f-s-l line-btn" href="#">上課點名</a>
+                            <a class="f-s-l" href="#">上課點名</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-feed" href="#">近況</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-myclass" href="#">作業</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="a-card">
+
+            <div class="a-card first">
                 <div class="class-info">
-                    <p class="date">112/12/05
-                        12:30 pm - 01:30 pm</p>
-                    <h4 class="class-year">數學 小二2023 職校</h4>
-                    <a class="classroom" href="#">
-                        <span>A501 教室</span>
-                    </a>
+                    <p class="date">11/30 10:30 am - 11:30 am</p>
+                    <p class="classroom">
+                        A502 教室
+                    </p>
+                    <div class="progress-box">
+                        <div class="text">
+                            <p>出缺勤 10%</p>
+                            <p class="nb">6/56</p>
+                        </div>
+                        <div class="progress">
+                            <progress id="file" max="100" value="10">10%</progress>
+                        </div>
+                    </div>
                 </div>
                 <div class="tools-btns">
                     <ul>
                         <li class="fl-100">
-                            <a class="f-s-l line-btn" href="#">上課點名</a>
+                            <a class="f-s-l" href="#">上課點名</a>
                         </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="a-card">
-                <div class="class-info">
-                    <p class="date">112/12/05
-                        12:30 pm - 01:30 pm</p>
-                    <h4 class="class-year">數學 小二2023 職校</h4>
-                    <a class="classroom" href="#">
-                        <span>A501 教室</span>
-                    </a>
-                </div>
-                <div class="tools-btns">
-                    <ul>
-                        <li class="fl-100">
-                            <a class="f-s-l line-btn" href="#">上課點名</a>
+                        <li>
+                            <a class="icon icon-feed" href="#">近況</a>
+                        </li>
+                        <li>
+                            <a class="icon icon-myclass" href="#">作業</a>
                         </li>
                     </ul>
                 </div>
