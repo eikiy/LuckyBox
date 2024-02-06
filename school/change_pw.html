@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>鄭賦文理教室 修改密碼</title>
+    <meta name='description' content="" />
+    <meta name='keywords' content="" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+</head>
+
+<body>
+    <!-- login -->
+    <main class="login-wrap">
+        <div class="top-breadcrumb">
+            <div class="mid-cont">
+                <a class="icon icon-back" href="#"></a>
+                <div class="top-text-wrap">
+                    <h3 class="main-title">修改密碼</h3>
+                </div>
+                <!-- 這個不能刪哦 -->
+                <!-- 之後放其他功能用 -->
+                <div class="icon"></div>
+            </div>
+        </div>
+        <div class="mid-content form-style">
+            <form>
+                
+                <div class="a-row">
+                    <label class="label-title" for="">舊密碼</label>
+                    <input class="default" type="text" placeholder="請輸入舊密碼" value="">
+                </div>
+                <div class="a-row">
+                    <label class="label-title" for="">新密碼</label>
+                    <input class="default" type="password" placeholder="請輸入新密碼">
+                </div>
+                <div class="a-row">
+                    <label class="label-title" for="">確認新密碼</label>
+                    <!-- 錯誤 input + has-error -->
+                    <input class="default has-error" type="password" placeholder="請再次輸入新密碼">
+                    <!-- 出現錯誤訊息 -->
+                    <p class="text-reminder c-red">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        密碼不相符
+                    </p>
+                </div>
+                <p class="text-enable">密碼修改完成將會請您重新登入，請確認自已輸入的密碼無誤。</p>
+                <div class="btn">
+                    <!-- 未填寫不給點選按鈕 + btn-disabled -->
+                    <a class="btn-primary-xl" href="#">
+                        <span class="">儲存</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+
