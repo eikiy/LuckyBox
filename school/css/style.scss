@@ -153,11 +153,6 @@ $min-w: 320px;
 }
 
 
-textarea {
-  width: 100%;
-  min-height: 105px;
-}
-
 .the-select {
   position: relative;
   display: block;
@@ -245,6 +240,11 @@ textarea.default {
   @media all and (max-width: 500px) {
     padding: 0 15px;
   }
+}
+textarea.default{
+  min-height: 240px;
+  padding: 20px;
+  line-height: 1.5;
 }
 
 input.has-error {
@@ -731,6 +731,24 @@ main{
   background: url(../images/bg_login.png) center bottom no-repeat;
   background-size: contain;
 }
+.user-photo{
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius:10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #dbdbdb;
+  @include img-default;
+  span{
+    font-size: $f-size-xxl;
+    font-weight: bold;
+  }
+}
 
 // setting
 .setting-wrap{
@@ -749,10 +767,8 @@ main{
   .user-photo{
     width: 80px;
     height: 80px;
-    display: block;
-    border-radius: 50%;
     margin: 0 auto;
-    @include img-default;
+    border-radius: 50%;
   }
   .btn{
     padding: 10px 0;
@@ -861,6 +877,10 @@ main{
     background-image: url(../images/svg/icon_otherclass_add.svg);
     background-size: 75%;
   }
+  .icon-feed-add{
+    background-image: url(../images/svg/icon_feed_add.svg);
+    background-size: 75%;
+  }
   .mid-cont {
     padding: 10px;
     max-width: 1090px;
@@ -885,6 +905,15 @@ main{
   .edit-test-title{
     input{
       text-align: center;
+    }
+  }
+  .input-search{
+    padding: 0px 20px 15px 20px;
+    max-width: 1060px;
+    margin: 0 auto;
+    .icon-search{
+      top: 14px;
+      right: 37px;
     }
   }
 }
@@ -1285,6 +1314,12 @@ main{
   .mid-content{
     padding:10px 0;
   }
+  .feed-content{
+    padding-top: 0;
+    .the-select{
+      margin-bottom: 10px;
+    }
+  }
   .top-card-year{
     width: calc(100% + 40px);
     padding:10px 50px;
@@ -1399,7 +1434,68 @@ main{
   .second{
     background-color: #86BCEE;
   }
-  
+  .a-feed-card{
+    width: 100%;
+    border-radius: $radius-m;
+    background-color: #fff;
+    padding: 18px;
+    margin-bottom: 14px;
+    @include has-box-shadow;
+    .card-info{
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      p{
+        padding: 0 10px;
+        font-weight: bold;
+        font-size: $f-size-l;
+      }
+      .date{
+        margin-left: auto;
+        font-size: $f-size-s;
+        padding: 10px 0;
+        span{
+          position: relative;
+          padding-right: 22px;
+          color: $color-gray;
+          font-weight: bold;
+          &::after{
+            position: absolute;
+            right: 0;
+            top: calc(50% - 7px);
+            content: "";
+            width: 14px;
+            height: 14px;
+            display: block;
+            background-image: url(../images/svg/icon_edit.svg);
+            filter: grayscale(100%);
+            @include img-default;
+            // opacity: .5;
+          }
+        }
+        &:hover{
+          span::after{
+            opacity: 1;
+          }
+        }
+      }
+      .user-photo{
+        span{
+          font-size: $f-size-m;
+        }
+      }
+    }
+    .hashtag{
+      padding-top: 8px;
+      color: $color-main-blue;
+      font-size: $f-size-s;
+    }
+    .text{
+      text-align: justify;
+      line-height: 1.5;
+      font-size: $f-size-m;
+    }
+  }
   .class-list{
     width: 100%;
     padding: 15px 0;

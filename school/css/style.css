@@ -319,11 +319,6 @@ body {
   background-color: #eaeaea;
 }
 
-textarea {
-  width: 100%;
-  min-height: 105px;
-}
-
 .the-select {
   position: relative;
   display: block;
@@ -435,6 +430,12 @@ textarea.default:disabled {
   textarea.default {
     padding: 0 15px;
   }
+}
+
+textarea.default {
+  min-height: 240px;
+  padding: 20px;
+  line-height: 1.5;
 }
 
 input.has-error {
@@ -927,6 +928,31 @@ main {
   background-size: contain;
 }
 
+.user-photo {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #dbdbdb;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.user-photo span {
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+
 .setting-wrap .top-text {
   text-align: center;
   color: #8E8E8E;
@@ -944,12 +970,8 @@ main {
 .setting-wrap .user-photo {
   width: 80px;
   height: 80px;
-  display: block;
-  border-radius: 50%;
   margin: 0 auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 50%;
 }
 
 .setting-wrap .btn {
@@ -1075,6 +1097,11 @@ main {
   background-size: 75%;
 }
 
+.top-breadcrumb .icon-feed-add {
+  background-image: url(../images/svg/icon_feed_add.svg);
+  background-size: 75%;
+}
+
 .top-breadcrumb .mid-cont {
   padding: 10px;
   max-width: 1090px;
@@ -1107,6 +1134,17 @@ main {
 
 .top-breadcrumb .edit-test-title input {
   text-align: center;
+}
+
+.top-breadcrumb .input-search {
+  padding: 0px 20px 15px 20px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.top-breadcrumb .input-search .icon-search {
+  top: 14px;
+  right: 37px;
 }
 
 .class-status {
@@ -1555,6 +1593,14 @@ main {
   padding: 10px 0;
 }
 
+.main-wrap .feed-content {
+  padding-top: 0;
+}
+
+.main-wrap .feed-content .the-select {
+  margin-bottom: 10px;
+}
+
 .main-wrap .top-card-year {
   width: calc(100% + 40px);
   padding: 10px 50px;
@@ -1697,6 +1743,81 @@ main {
 
 .main-wrap .second {
   background-color: #86BCEE;
+}
+
+.main-wrap .a-feed-card {
+  width: 100%;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 18px;
+  margin-bottom: 14px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 12px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 12px;
+}
+
+.main-wrap .a-feed-card .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.main-wrap .a-feed-card .card-info p {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 0.938rem;
+}
+
+.main-wrap .a-feed-card .card-info .date {
+  margin-left: auto;
+  font-size: 0.813rem;
+  padding: 10px 0;
+}
+
+.main-wrap .a-feed-card .card-info .date span {
+  position: relative;
+  padding-right: 22px;
+  color: #8E8E8E;
+  font-weight: bold;
+}
+
+.main-wrap .a-feed-card .card-info .date span::after {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 7px);
+  content: "";
+  width: 14px;
+  height: 14px;
+  display: block;
+  background-image: url(../images/svg/icon_edit.svg);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-wrap .a-feed-card .card-info .date:hover span::after {
+  opacity: 1;
+}
+
+.main-wrap .a-feed-card .card-info .user-photo span {
+  font-size: 0.875rem;
+}
+
+.main-wrap .a-feed-card .hashtag {
+  padding-top: 8px;
+  color: #509BF8;
+  font-size: 0.813rem;
+}
+
+.main-wrap .a-feed-card .text {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 0.875rem;
 }
 
 .main-wrap .class-list {

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>鄭賦文理教室 一般上課 - 學生近況</title>
+    <meta name='description' content="" />
+    <meta name='keywords' content="" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.popup-link').magnificPopup({
+                removalDelay: 300,
+                mainClass: 'mfp-fade'
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+    <!-- main -->
+    <main class="main-wrap">
+        <div class="top-breadcrumb">
+            <div class="mid-cont">
+                <a class="icon icon-back" href="myclass.html"></a>
+                <div class="top-text-wrap">
+                    <h3 class="main-title">學生近況</h3>
+                </div>
+                <a class="icon icon-feed-add popup-link" href="#feed-add"></a>
+            </div>
+            <div class="a-row input-search">
+                <div class="icon-search"></div>
+                <input class="default" type="text" placeholder="搜尋同學名字" value="">
+            </div>
+        </div>
+        <div class="mid-content feed-content">
+            <div class="a-feed-card">
+                <div class="card-info">
+                    <div class="user-photo" style="background-image:url(images/img_00002.png);"></div>
+                    <p>Mavis 這裡填寫學生名稱</p>
+                    <a class="date popup-link" href="#popup-myclass-edit">
+                        <span>9:00 AM</span>
+                    </a>
+                </div>
+                <p class="text">先前獲得蘋果WWDC23學生挑戰賽大獎，只花20天就研發出一款用柯爾文手勢彈奏音樂的APP，是350名得獎者中唯一台灣代表...</p>
+                <p class="hashtag">#新生</p>
+            </div>
+            <div class="a-feed-card">
+                <div class="card-info">
+                    <div class="user-photo" style="background-image:url(images/img_00001.png);"></div>
+                    <p>小娜</p>
+                    <a class="date popup-link" href="#popup-myclass-edit">
+                        <span>8:45 AM</span>
+                    </a>
+                </div>
+                <p class="text">更好的學習行為、 更順暢課室教學流程，而且無須做惱人的資料輸入-它是專為教師和家長所建立的免費服務！</p>
+                <p class="hashtag">#作業未完成</p>
+            </div>
+            <div class="a-feed-card">
+                <div class="card-info">
+                    <div class="user-photo" style="background-image:url(images/img_00002.png);"></div>
+                    <p>小娜</p>
+                    <a class="date popup-link" href="#popup-myclass-edit">
+                        <span>8:45 AM</span>
+                    </a>
+                </div>
+                <p class="text">更好的學習行為、 更順暢課室教學流程，而且無須做惱人的資料輸入-它是專為教師和家長所建立的免費服務！</p>
+                <p class="hashtag">#進步鼓勵</p>
+            </div>
+            <div class="a-feed-card">
+                <div class="card-info">
+                    <!-- 文字版 -->
+                    <div class="user-photo" style="">
+                        <span>貝</span>
+                    </div>
+                    <p>貝克漢</p>
+                    <a class="date popup-link" href="#popup-myclass-edit">
+                        <span>8:45 AM</span>
+                    </a>
+                </div>
+                <p class="text">更好的學習行為、 更順暢課室教學流程，而且無須做惱人的資料輸入-它是專為教師和家長所建立的免費服務！</p>
+                <p class="hashtag">#作業未完成</p>
+            </div>
+            <div class="a-feed-card">
+                <div class="card-info">
+                    <div class="user-photo" style="background-image:url(images/img_00002.png);"></div>
+                    <p>多ㄌ拉A夢</p>
+                    <a class="date popup-link" href="#popup-myclass-edit">
+                        <span>1/5 6:32 AM</span>
+                    </a>
+                </div>
+                <p class="text">更好的學習行為、 更順暢課室教學流程，而且無須做惱人的資料輸入-它是專為教師和家長所建立的免費服務！</p>
+                <p class="hashtag">#進步鼓勵</p>
+            </div>
+        </div>
+        <nav class="bottom-tools">
+            <ul>
+                <!-- 選到 li + btn-in -->
+                <li class="btn-in">
+                    <a class="icon-feed" href="feed.html"><span class="nb">5</span>學生近況</a>
+                </li>
+                <li>
+                    <a class="icon-otherclass" href="otherclass.html">輔導課</a>
+                </li>
+                <li>
+                    <a class="icon-myclass" href="myclass.html">一般上課</a>
+                </li>
+                <li>
+                    <a class="icon-class" href="class.html">我的班級</a>
+                </li>
+                <li>
+                    <a class="icon-setting" href="setting.html">設定</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <!-- popup 新增學生近況-->
+    <section id="feed-add" class="popup mfp-hide popup-width-s">
+        <div class="popup-container">
+            <div class="top-text-wrap">
+                <h3 class="main-title">新增學生近況</h3>
+            </div>
+            <form class="form-style">
+                <div class="a-row input-search">
+                    <div class="icon-search"></div>
+                    <input class="default" type="text" placeholder="搜尋同學名字" value="">
+                </div>
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">請選擇學生姓名</option>
+                        <option value="1">AAA</option>
+                        <option value="2">喬治</option>
+                    </select>
+                </div>
+                <div class="a-row the-select">
+                    <select class="" name="">
+                        <option value="0">請選擇學習狀態</option>
+                        <option value="1">沒做完</option>
+                        <option value="2">不太行</option>
+                        <option value="3">尚可</option>
+                    </select>
+                </div>
+                <div class="a-row">
+                    <textarea class="default" type="text">先前獲得蘋果WWDC23學生挑戰賽大獎，只花20天就研發出一款用柯爾文手勢彈奏音樂的APP，是350名得獎者中唯一台灣代表...|</textarea>
+                </div>
+                <div class="btn both-btn">
+                    <a class="btn-primary-xl" href="#">
+                        <span>發佈</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
