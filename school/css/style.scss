@@ -882,19 +882,28 @@ main{
       text-align: center;
     }
   }
+  .edit-test-title{
+    input{
+      text-align: center;
+    }
+  }
 }
 .class-status {
   padding: 0px 15px 10px 15px;
   max-width: 1060px;
   margin: 0 auto;
-  .student-nb{
+  position: relative;
+  p{
+    padding: 0px 20px;
     color: $color-gray;
     font-size: $f-size-s;
-    padding: 0px 20px 15px 20px;
-    span{
-      color: $color-main-blue;
-      font-size: $f-size-l;
-      font-weight: bold;
+    &.student-nb {
+      padding-bottom: 10px;
+      span {
+        color: $color-main-blue;
+        font-size: $f-size-l;
+        font-weight: bold;
+      }
     }
   }
   .btn-primary-xl {
@@ -1208,8 +1217,8 @@ main{
       }
       &.icon-score::before {
         top: 6px;
-        height: 20px;
-        left: calc(50% - 10px);
+        height: 21px;
+        left: calc(50% - 8px);
         background-image: url(../images/svg/tools_icon_score.svg);
       }
       &.icon-myclass::before {
@@ -1241,8 +1250,38 @@ main{
   }
 }
 
+
 .main-wrap{
-  padding-bottom: 75px;
+  .icon-add-plus{
+    position: fixed;
+    bottom: 20px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    z-index: 3;
+    @include has-box-shadow;
+    background: url(../images/svg/icon_plus_w.svg) center center no-repeat $color-main-blue;
+    &:active{
+      background-color: #006cf8;
+    }
+  }
+  .icon-add-edit{
+    position: absolute;
+    top:-5px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 50%;
+    z-index: 3;
+    @include has-box-shadow;
+    background: url(../images/svg/icon_edit.svg) center center no-repeat #fff;
+    &:active{
+      background-color: #67abff25;
+    }
+  }
   .mid-content{
     padding:10px 0;
   }
@@ -1311,7 +1350,7 @@ main{
             width: 14px;
             height: 14px;
             display: block;
-            background-image: url(../images/svg/icon_edit.svg);
+            background-image: url(../images/svg/icon_edit_w.svg);
             @include img-default;
             opacity: .5;
           }
@@ -1360,7 +1399,7 @@ main{
   .second{
     background-color: #86BCEE;
   }
-
+  
   .class-list{
     width: 100%;
     padding: 15px 0;
@@ -1380,15 +1419,88 @@ main{
       align-items: center;
       -webkit-justify-content: center;
       justify-content: center;
-      &:active{
-        background-color: #67abff25;
-      }
       p{
         font-weight: bold;
         display: inline-block;
         line-height: 1.5;
         font-size: $f-size-m;
         color:#333;
+      }
+      &:active{
+        background-color: #67abff25;
+      }
+    }
+  }
+
+  .icon-star{
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 15px;
+      left: 25px;
+      top: calc(50% - 7.5px);
+      display: block;
+      background-image: url(../images/svg/icon_star.svg);
+      @include img-default;
+    }
+  }
+  .test-list{
+    width: 100%;
+    border-radius: $radius-m;
+    background-color: #fff;
+    overflow-y: auto;
+    @include has-box-shadow;
+    max-height: calc(100vh - 140px) ;
+    
+    li{
+      align-items: center;
+      p{
+        line-height: 1.5;
+        font-size: $f-size-m;
+        font-weight: bold;
+      }
+      display: flex;
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      padding: 15px 30px;
+      padding-left: 55px;
+      border-bottom: 1px solid #DCDCDC;
+      cursor: pointer;
+      &:active {
+        background-color: #67abff25;
+      }
+      .fraction{
+        margin-left: auto;
+      }
+    }
+  }
+  .edit-test{
+    max-height: calc(100vh - 165px);
+    margin-bottom: 20px;
+    input{
+      font-weight: bold;
+      text-align: center;
+      background-color: #ECEDF2;
+      border-radius: $radius-s;
+    }
+    li{
+      padding: 10px 30px 10px 55px;
+      &.test-title{
+        padding: 12px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        input{
+          height: 44px;
+        }
+      }
+    }
+    .fraction{
+      input{
+        width: 70px;
+        height: 35px;
       }
     }
   }
@@ -1407,8 +1519,33 @@ main{
       }
     }
   }
+  .icon-right-arr {
+    padding: 0;
+    li {
+      a{
+        width: 100%;
+        display: block;
+        text-align: left;
+      }
+      justify-content:left;
+      padding: 10px 25px;
+      &::after {
+        position: absolute;
+        content: "";
+        right: 15px;
+        top: calc(50% - 6px);
+        width: 13px;
+        height: 12px;
+        display: block;
+        background-image: url(../images/svg/arr_right.svg);
+        @include img-default;
+      }
+    }
+  }
 }
-
+.pa-b-75{
+  padding-bottom: 75px;
+}
 // popup - style
 .popup {
   position: relative;
