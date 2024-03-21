@@ -3669,7 +3669,7 @@ ul.edit-record-user li p.id span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0px 0px 10px 25px;
+  padding: 0px 0px 10px 5px;
 }
 
 .popup-container ul.order-step-list li {
@@ -3683,7 +3683,7 @@ ul.edit-record-user li p.id span {
 .popup-container ul.order-step-list li::after {
   content: "";
   position: absolute;
-  top: 24px;
+  top: calc(50% - 4px);
   right: -3px;
   width: 8.5px;
   height: 7.5px;
@@ -3708,7 +3708,7 @@ ul.edit-record-user li p.id span {
   font-weight: bold;
   color: #87C9C4;
   position: relative;
-  padding-top: 55px;
+  padding-top: 52px;
   line-height: 1.2;
 }
 
@@ -3730,8 +3730,7 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container ul.order-step-list li .icon-b p::before {
-  width: 26px;
-  left: calc(50% - 11px);
+  width: 29px;
   background-image: url(../images/svg/icon_order_step_b.svg);
 }
 
@@ -3746,11 +3745,16 @@ ul.edit-record-user li p.id span {
 }
 
 .popup-container ul.order-step-list li .icon-e p::before {
-  width: 38px;
-  height: 38px;
-  top: 7px;
-  left: calc(50% - 19px);
+  width: 29px;
   background-image: url(../images/svg/icon_order_step_e.svg);
+}
+
+.popup-container ul.order-step-list li .icon-f p::before {
+  width: 36px;
+  height: 36px;
+  top: 7px;
+  left: calc(50% - 18px);
+  background-image: url(../images/svg/icon_order_step_f.svg);
 }
 
 .popup-container ul.order-step-list li.on p {
@@ -3777,6 +3781,10 @@ ul.edit-record-user li p.id span {
   background-image: url(../images/svg/icon_order_step_e_on.svg);
 }
 
+.popup-container ul.order-step-list li.on .icon-f p::before {
+  background-image: url(../images/svg/icon_order_step_f_on.svg);
+}
+
 .popup-container ul.order-step-list li.no .icon p {
   color: #d54848;
 }
@@ -3791,6 +3799,10 @@ ul.edit-record-user li p.id span {
 
 .popup-container ul.order-step-list li.no .icon-d p::before {
   background-image: url(../images/svg/icon_order_step_d_no.svg);
+}
+
+.popup-container ul.order-step-list li.no .icon-e p::before {
+  background-image: url(../images/svg/icon_order_step_e_no.svg);
 }
 
 .popup-container ul.order-step-list li.no a:hover p {
@@ -5332,7 +5344,7 @@ ul.edit-record-user li p.id span {
 .popup-finish .fillin-box p.product-title {
   text-align: center;
   color: #11948a;
-  padding: 15px 0 20px 0;
+  padding: 10px 0 20px 0;
   font-weight: bold;
   font-size: 1rem;
   line-height: 22px;

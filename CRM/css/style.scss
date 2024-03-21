@@ -3101,7 +3101,7 @@ ul.edit-record-user {
   ul.order-step-list{
     display: flex;
     flex-wrap: wrap;
-    padding:0px 0px 10px 25px;
+    padding:0px 0px 10px 5px;
     li{
       flex: 1;
       text-align: center;
@@ -3109,7 +3109,7 @@ ul.edit-record-user {
       &::after{
         content: "";
         position: absolute;
-        top: 24px;
+        top: calc(50% - 4px);
         right: -3px;
         width: 8.5px;
         height: 7.5px;
@@ -3130,7 +3130,7 @@ ul.edit-record-user {
           font-weight: bold;
           color: #87C9C4;
           position: relative;
-          padding-top: 55px;
+          padding-top: 52px;
           line-height: 1.2;
         }
         p::before{
@@ -3150,8 +3150,7 @@ ul.edit-record-user {
         background-image: url(../images/svg/icon_order_step_a.svg);
       }
       .icon-b p::before{
-        width: 26px;
-        left: calc(50% - 11px);
+        width: 29px;
         background-image: url(../images/svg/icon_order_step_b.svg);
       }
       .icon-c p::before{
@@ -3163,11 +3162,15 @@ ul.edit-record-user {
         background-image: url(../images/svg/icon_order_step_d.svg);
       }
       .icon-e p::before{
-        width: 38px;
-        height: 38px;
-        top: 7px;
-        left: calc(50% - 19px);
+        width: 29px;
         background-image: url(../images/svg/icon_order_step_e.svg);
+      }
+      .icon-f p::before{
+        width: 36px;
+        height: 36px;
+        top: 7px;
+        left: calc(50% - 18px);
+        background-image: url(../images/svg/icon_order_step_f.svg);
       }
       &.on{
         p{
@@ -3188,6 +3191,9 @@ ul.edit-record-user {
         .icon-e p::before{
           background-image: url(../images/svg/icon_order_step_e_on.svg);
         }
+        .icon-f p::before{
+          background-image: url(../images/svg/icon_order_step_f_on.svg);
+        }
       }
       &.no{
         .icon p{
@@ -3201,6 +3207,9 @@ ul.edit-record-user {
         }
         .icon-d p::before{
           background-image: url(../images/svg/icon_order_step_d_no.svg);
+        }
+        .icon-e p::before{
+          background-image: url(../images/svg/icon_order_step_e_no.svg);
         }
         a:hover p{
           text-decoration: underline;
@@ -4546,7 +4555,7 @@ ul.edit-record-user {
     p.product-title {
       text-align: center;
       color: $color-green-grass;
-      padding: 15px 0 20px 0;
+      padding: 10px 0 20px 0;
       font-weight: bold;
       font-size: 1rem;
       line-height: 22px;
