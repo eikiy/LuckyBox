@@ -1474,7 +1474,7 @@ ul.edit-tool {
         color: $color-green-dark;
         font-size: $f-size-l;
         line-height: 1.2rem;
-        width: calc(65% - 380px);
+        width: calc(68% - 476px);
         padding-left: 55px;
         position: relative;
         letter-spacing: 1px;
@@ -1531,9 +1531,18 @@ ul.edit-tool {
         float: left;
         line-height: 1.25rem;
       }
+      .order-nb{
+        float: left;
+        width: 130px;
+        p{
+          float: none;
+          width: initial;
+          line-height: 18px;
+        }
+      }
       .order-day{
         float: left;
-        width: 100px;
+        width: 95px;
         p{
           float: none;
           width: initial;
@@ -1602,7 +1611,7 @@ ul.edit-tool {
       }
       .order-percentage {
         float: left;
-        width: 80px;
+        width: 60px;
         p {
           text-align: center;
           font-weight: bold;
@@ -1727,7 +1736,7 @@ ul.edit-tool {
       }
       .audit-time,.order-time {
         float: left;
-        width: 23%;
+        width: 20%;
       }
       p.audit-money {
         float: left;
@@ -1816,6 +1825,7 @@ ul.edit-tool {
       h4.customer-name,
       .order-percentage p,
       .order-day p,
+      .order-nb p,
       .product-description p,
       p.controller,
       p.product-valid-period,
@@ -1933,13 +1943,21 @@ ul.edit-tool {
           text-align: right;
         }
         .order-percentage {
-          width: 50%;
+          width: 25%;
           p {
             padding: 0;
             font-size: $f-size-m;
             text-align: right;
           }
         }
+        // .order-nb{
+        //   width: 50%;
+        //   p{
+        //     padding: 0;
+        //     font-size: $f-size-m;
+        //     text-align: right;
+        //   }
+        // }
         p.controller {
           width: 25%;
           padding-left: 0;
@@ -2080,7 +2098,7 @@ ul.edit-tool {
           padding-bottom: 32px;
         }
         p.order-owner{
-          width: 50%;
+          width: 100%;
         }
         .order-percentage{
           width: 50px;
@@ -2089,15 +2107,16 @@ ul.edit-tool {
           width: calc(100% - 50px);
           margin-bottom: 2px;
         }
-        .order-day{
+        .order-day, .order-nb{
           width: 50%;
         }
-        .day-2{
+        .day-2, .order-nb{
           text-align: right;
           p{
             padding-right: 0;
           }
         }
+
         h4.staff-name{
           width: calc(100% - 70px);
         }

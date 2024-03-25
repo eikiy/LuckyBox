@@ -1857,7 +1857,7 @@ ul.edit-tool li a:hover {
   color: #21534f;
   font-size: 0.938rem;
   line-height: 1.2rem;
-  width: calc(65% - 380px);
+  width: calc(68% - 476px);
   padding-left: 55px;
   position: relative;
   letter-spacing: 1px;
@@ -1930,9 +1930,20 @@ ul.edit-tool li a:hover {
   line-height: 1.25rem;
 }
 
+.middle-container .data-list .card .order-nb {
+  float: left;
+  width: 130px;
+}
+
+.middle-container .data-list .card .order-nb p {
+  float: none;
+  width: initial;
+  line-height: 18px;
+}
+
 .middle-container .data-list .card .order-day {
   float: left;
-  width: 100px;
+  width: 95px;
 }
 
 .middle-container .data-list .card .order-day p {
@@ -2005,7 +2016,7 @@ ul.edit-tool li a:hover {
 
 .middle-container .data-list .card .order-percentage {
   float: left;
-  width: 80px;
+  width: 60px;
 }
 
 .middle-container .data-list .card .order-percentage p {
@@ -2152,7 +2163,7 @@ ul.edit-tool li a:hover {
 
 .middle-container .data-list .card .audit-time, .middle-container .data-list .card .order-time {
   float: left;
-  width: 23%;
+  width: 20%;
 }
 
 .middle-container .data-list .card p.audit-money {
@@ -2261,6 +2272,7 @@ ul.edit-tool li a:hover {
 .middle-container .data-list .toptitle-style h4.customer-name,
 .middle-container .data-list .toptitle-style .order-percentage p,
 .middle-container .data-list .toptitle-style .order-day p,
+.middle-container .data-list .toptitle-style .order-nb p,
 .middle-container .data-list .toptitle-style .product-description p,
 .middle-container .data-list .toptitle-style p.controller,
 .middle-container .data-list .toptitle-style p.product-valid-period,
@@ -2379,7 +2391,7 @@ ul.edit-tool li a:hover {
     text-align: right;
   }
   .middle-container .data-list .card .order-percentage {
-    width: 50%;
+    width: 25%;
   }
   .middle-container .data-list .card .order-percentage p {
     padding: 0;
@@ -2521,7 +2533,7 @@ ul.edit-tool li a:hover {
     padding-bottom: 32px;
   }
   .middle-container .data-list .card p.order-owner {
-    width: 50%;
+    width: 100%;
   }
   .middle-container .data-list .card .order-percentage {
     width: 50px;
@@ -2530,13 +2542,13 @@ ul.edit-tool li a:hover {
     width: calc(100% - 50px);
     margin-bottom: 2px;
   }
-  .middle-container .data-list .card .order-day {
+  .middle-container .data-list .card .order-day, .middle-container .data-list .card .order-nb {
     width: 50%;
   }
-  .middle-container .data-list .card .day-2 {
+  .middle-container .data-list .card .day-2, .middle-container .data-list .card .order-nb {
     text-align: right;
   }
-  .middle-container .data-list .card .day-2 p {
+  .middle-container .data-list .card .day-2 p, .middle-container .data-list .card .order-nb p {
     padding-right: 0;
   }
   .middle-container .data-list .card h4.staff-name {
